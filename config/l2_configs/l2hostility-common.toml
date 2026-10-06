@@ -109,7 +109,7 @@ enableEquipmentDatapack = true
 	deathDecayTraitCap = true
 	#Mobs spawned within this range will use lowest player level in range instead of nearest player's level to determine mob level
 	#Range: 0 ~ 128
-	newPlayerProtectRange = 160
+	newPlayerProtectRange = 128
 
 [orb_and_spawner]
 	#Allow to use hostility orb

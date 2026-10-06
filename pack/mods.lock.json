@@ -2835,7 +2835,7 @@
   "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\architectury-9.2.14-forge.jar",
   "category": "lib",
   "status": "dep",
-  "why": "dependency of Uranus",
+  "why": "dependency of ProbeJS",
   "deps": []
  },
  {
@@ -3238,19 +3238,6 @@
   "deps": [
    419699
   ]
- },
- {
-  "addonID": -8,
-  "name": "Jupiter",
-  "fileId": null,
-  "fileName": "jupiter-2.3.7-1.20.1-forge.jar",
-  "sha1": "a2d05f0e70ac59ea44f44642f94c0f99f4e80417",
-  "url": "https://cdn.modrinth.com/data/XbiLGMMU/versions/m0j5CMqc/jupiter-2.3.7-1.20.1-forge.jar",
-  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\jupiter-2.3.7-1.20.1-forge.jar",
-  "category": "lib",
-  "status": "dep",
-  "why": "dependency of IceAndFire Community Edition",
-  "deps": []
  },
  {
   "addonID": 455585,
@@ -3667,21 +3654,6 @@
   "status": "dep",
   "why": "dependency of Extra Compat",
   "deps": []
- },
- {
-  "addonID": -7,
-  "name": "Uranus",
-  "fileId": null,
-  "fileName": "uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
-  "sha1": "e412a3c61e2ce9c93437adacab291d45d532870e",
-  "url": "https://cdn.modrinth.com/data/3Acxy864/versions/py0cld87/uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
-  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
-  "category": "lib",
-  "status": "dep",
-  "why": "dependency of IceAndFire Community Edition",
-  "deps": [
-   419699
-  ]
  },
  {
   "addonID": 667299,
@@ -4416,19 +4388,18 @@
   "deps": []
  },
  {
-  "addonID": -2,
-  "name": "IceAndFire Community Edition",
-  "fileId": null,
-  "fileName": "IceAndFireCE-1.2.7-1.20.1-forge.jar",
-  "sha1": "3055710405d3850721142513f59c8b6ce0794a25",
-  "url": "https://cdn.modrinth.com/data/VpmCsizY/versions/er2PNtdp/IceAndFireCE-1.2.7-1.20.1-forge.jar",
-  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\IceAndFireCE-1.2.7-1.20.1-forge.jar",
+  "addonID": 264231,
+  "name": "Ice and Fire: Dragons",
+  "fileId": 5633453,
+  "fileName": "iceandfire-2.1.13-1.20.1-beta-5.jar",
+  "sha1": "7e828cbb046ca3d622e92c68f956bd1c0155dc6f",
+  "url": "https://edge.forgecdn.net/files/5633/453/iceandfire-2.1.13-1.20.1-beta-5.jar",
+  "localJar": "G:\\CurseForge\\Instances\\Cisco's Fantasy Medieval RPG [Dragonfyre]\\mods\\iceandfire-2.1.13-1.20.1-beta-5.jar",
   "category": "mobs",
   "status": "core",
   "why": "candidate",
   "deps": [
-   -7,
-   -8
+   331936
   ]
  },
  {

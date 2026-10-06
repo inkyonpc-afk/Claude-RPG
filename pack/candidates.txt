@@ -479,7 +479,7 @@ magic | Blood Magic | skip |
 magic | Occultism | skip |
 ext | goety | std | necromancy and summoning
 ext | eidolon-repraised | test |
-ext | iceandfire-ce | core | dragons (Community Edition)
+ext | iceandfire-ce | skip | Community Edition: client registry ID mismatch when it is the only Ice and Fire; the original 2.1.13 is tested
 ext | wyrmroost | std | dragons
 ext | cataclysm-spellbooks | skip | all 1.2.x builds extend Cataclysm Ancient_Remnant_Rework_Renderer, renamed in Cataclysm 3.31: client crash
 ext | to-tweaks-irons-spells | std | T.O Magic 'n Extras (CurseForge only)
@@ -558,7 +558,7 @@ mobs | Companions! | skip |
 mobs | Domestication Innovation | std |
 mobs | Tameable Beasts | std |
 mobs | Eyes of Ice and Fire | std |
-mobs | Ice and Fire: Dragons | skip | replaced by iceandfire-ce
+mobs | Ice and Fire: Dragons | core | dragons (original 1.20.1 build; every mount/flight test ran on it)
 mobs | Ice And Fire Patcher | skip |
 mobs | Ice and Fire: Dragonseeker | skip |
 mobs | Hellion's Sniffer+ | skip |

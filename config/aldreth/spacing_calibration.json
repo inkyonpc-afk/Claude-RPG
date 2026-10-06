@@ -1,0 +1,33 @@
+{
+ "area_km2": 4.13,
+ "targets": {
+  "boss": 0.4,
+  "great": 0.5,
+  "settlement": 1.5,
+  "vanilla": 3.0,
+  "dungeon": 4.0,
+  "clutter": 12.0,
+  "default": 3.0
+ },
+ "factors": {
+  "realm": 1.0,
+  "boss": 3.0,
+  "settlement": 1.35,
+  "great": 2.6,
+  "vanilla": 2.55,
+  "dungeon": 3.35,
+  "ocean_decor": 4.5,
+  "clutter": 3.8,
+  "default": 1.5
+ },
+ "starts": {
+  "ocean_decor": 283,
+  "dungeon": 71,
+  "vanilla": 45,
+  "clutter": 133,
+  "boss": 16,
+  "settlement": 5,
+  "great": 6,
+  "default": 3
+ }
+}

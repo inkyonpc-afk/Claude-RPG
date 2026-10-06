@@ -26,7 +26,7 @@
   "name": "IceAndFire Community Edition",
   "replaces": "",
   "category": "mobs",
-  "status": "core",
+  "status": "skip",
   "fileName": "IceAndFireCE-1.2.7-1.20.1-forge.jar",
   "url": "https://cdn.modrinth.com/data/VpmCsizY/versions/er2PNtdp/IceAndFireCE-1.2.7-1.20.1-forge.jar",
   "sha1": "3055710405d3850721142513f59c8b6ce0794a25",
@@ -42,7 +42,8 @@
   "source": "modrinth:iceandfire-ce",
   "version": "1.2.7",
   "published": "2026-07-18",
-  "license": "LGPL-3.0-or-later"
+  "license": "LGPL-3.0-or-later",
+  "note": "never booted alone: registry ID mismatch on the client (2026-10-06); the original Ice and Fire 2.1.13 is what every test ran on"
  },
  {
   "name": "Wyrmroost",

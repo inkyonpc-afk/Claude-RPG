@@ -8,6 +8,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 ap = argparse.ArgumentParser()
 ap.add_argument("world", nargs="?", default=os.path.join(ROOT, ".build", "server", "world"))
 ap.add_argument("--top", type=int, default=25)
+ap.add_argument("--outside", type=int, default=0, help="ignore chunks within this many blocks of the origin (skip an earlier, differently-configured pregen)")
 ap.add_argument("--json", default="")
 a = ap.parse_args()
 
@@ -68,23 +69,10 @@ def region_chunks(path):
             if nbt: yield nbt
 
 
-# ---- tiers from tune_structures.py (same regex table; first match wins)
-src = open(os.path.join(ROOT, "tools", "tune_structures.py"), encoding="utf-8").read().split("assign, counts")[0].replace('os.path.dirname(os.path.abspath(__file__)), ".."', '"' + ROOT.replace("\\", "/") + '"')
-ns = {}
-exec(src, ns)
-TIERS, DEFAULT = ns["TIERS"], ns["DEFAULT"]
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import spacing_tiers as ST  # noqa: E402  (shared tier rules)
 reg = json.load(open(os.path.join(ROOT, "pack", "registries_snapshot.json"), encoding="utf-8"))
-struct_to_set = {}   # a structure's tier is judged by its structure_set when known, else by its own id
-for s in reg["structure_set"]:
-    struct_to_set[s] = s
-
-
-def tier_of(sid):
-    for tier, f, why, rx in TIERS:
-        if re.search(rx, sid):
-            return tier
-    return "default"
-
+tier_of = ST.classify
 
 starts = collections.Counter()
 area = 0
@@ -95,6 +83,8 @@ for rdir in glob.glob(os.path.join(a.world, "**", "region"), recursive=True):
     seen, chunks = set(), 0
     for mca in glob.glob(os.path.join(rdir, "*.mca")):
         for nbt in region_chunks(mca):
+            if a.outside and abs(nbt.get("xPos", 9999) * 16) < a.outside and abs(nbt.get("zPos", 9999) * 16) < a.outside:
+                continue
             chunks += 1
             st = (nbt.get("structures") or {}).get("starts") or {}
             for sid, v in st.items():
