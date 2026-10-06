@@ -4,7 +4,7 @@
  "loader": "forge",
  "loaderVersion": "47.4.10",
  "generated": "2026-10-06",
- "count": 825,
+ "count": 813,
  "mods": [
   {
    "name": "[WTC]Wizard Terra Curios",
@@ -15,16 +15,6 @@
    "url": "https://edge.forgecdn.net/files/7845/833/wizard_terra_cuiros-1.4.99.jar",
    "category": "acc",
    "status": "test"
-  },
-  {
-   "name": "Additional Jewelry (RPG Series Plus)",
-   "file": "additional_rpg_jewelry-forge-2.3.1+1.20.1.jar",
-   "sha1": "09a6996d589789c9f950055f7b4ab0e2c1aaf6c2",
-   "curseforgeProject": 1015097,
-   "curseforgeFile": 8933676,
-   "url": "https://edge.forgecdn.net/files/8933/676/additional_rpg_jewelry-forge-2.3.1%2b1.20.1.jar",
-   "category": "acc",
-   "status": "std"
   },
   {
    "name": "Artifacts",
@@ -133,16 +123,6 @@
    "curseforgeProject": 428151,
    "curseforgeFile": 8247925,
    "url": "https://edge.forgecdn.net/files/8247/925/Icarus-Forge-2.14.0.jar",
-   "category": "acc",
-   "status": "std"
-  },
-  {
-   "name": "Jewelry (RPG Series)",
-   "file": "jewelry-forge-2.4.0+1.20.1.jar",
-   "sha1": "a1ad6b07d79933cc8b8c48651504c1d85033b97f",
-   "curseforgeProject": 910706,
-   "curseforgeFile": 8891374,
-   "url": "https://edge.forgecdn.net/files/8891/374/jewelry-forge-2.4.0%2b1.20.1.jar",
    "category": "acc",
    "status": "std"
   },
@@ -463,16 +443,6 @@
    "curseforgeProject": 491890,
    "curseforgeFile": 5999495,
    "url": "https://edge.forgecdn.net/files/5999/495/etched-3.0.4.jar",
-   "category": "build",
-   "status": "std"
-  },
-  {
-   "name": "Every Compat (Wood Good)",
-   "file": "everycomp-1.20-2.9.24-forge.jar",
-   "sha1": "5a058a363e1d907a08e210fd0739b7268e45b339",
-   "curseforgeProject": 628539,
-   "curseforgeFile": 8332989,
-   "url": "https://edge.forgecdn.net/files/8332/989/everycomp-1.20-2.9.24-forge.jar",
    "category": "build",
    "status": "std"
   },
@@ -1033,16 +1003,6 @@
    "curseforgeProject": 543610,
    "curseforgeFile": 6151448,
    "url": "https://edge.forgecdn.net/files/6151/448/woodworks-1.20.1-3.0.2.jar",
-   "category": "build",
-   "status": "std"
-  },
-  {
-   "name": "WorldEdit",
-   "file": "worldedit-mod-7.2.15.jar",
-   "sha1": "9c52765ca56f917ef8cbafc20e9a4f45c346508f",
-   "curseforgeProject": 225608,
-   "curseforgeFile": 4586218,
-   "url": "https://edge.forgecdn.net/files/4586/218/worldedit-mod-7.2.15.jar",
    "category": "build",
    "status": "std"
   },
@@ -1627,16 +1587,6 @@
    "status": "std"
   },
   {
-   "name": "Alex's Caves Delight",
-   "file": "alexscavesdelight-1.0.27-final.jar",
-   "sha1": "94ed216a12ee0c477801ac2153179380b8fe7246",
-   "curseforgeProject": 1035901,
-   "curseforgeFile": 6602388,
-   "url": "https://edge.forgecdn.net/files/6602/388/alexscavesdelight-1.0.27-final.jar",
-   "category": "food",
-   "status": "std"
-  },
-  {
    "name": "Alex's Delight",
    "file": "alexsdelight-1.5.jar",
    "sha1": "ef7049ba6f16df22c8d98dd4dad2d9dc2aa6b6ba",
@@ -1898,11 +1848,11 @@
   },
   {
    "name": "Miner's Delight +",
-   "file": "miners_delight-1.20.1-1.2.3.jar",
-   "sha1": "817ab785307e34895900fa23ce9d5dc4ee8eadf5",
+   "file": "miners_delight-1.20.1-1.4.5-backport.jar",
+   "sha1": "638438679800711939e7a8029ae3d5340f8c17bd",
    "curseforgeProject": 689630,
    "curseforgeFile": 5038950,
-   "url": "https://edge.forgecdn.net/files/5038/950/miners_delight-1.20.1-1.2.3.jar",
+   "url": "https://cdn.modrinth.com/data/qMxbM4BQ/versions/p0INUam7/miners_delight-1.20.1-1.4.5-backport.jar",
    "category": "food",
    "status": "std"
   },
@@ -2078,11 +2028,11 @@
   },
   {
    "name": "AzureLib",
-   "file": "azurelib-neo-1.20.1-3.0.24.jar",
-   "sha1": "062b818055f936ac328edaa8cadaa4e96cbdf10b",
+   "file": "azurelib-neo-1.20.1-3.1.17.jar",
+   "sha1": "f43023b86f3c02bf2f45ea797a88676da2126795",
    "curseforgeProject": 817423,
    "curseforgeFile": 7066970,
-   "url": "https://edge.forgecdn.net/files/7066/970/azurelib-neo-1.20.1-3.0.24.jar",
+   "url": "https://cdn.modrinth.com/data/7zlUOZvb/versions/xLZ34avd/azurelib-neo-1.20.1-3.1.17.jar",
    "category": "lib",
    "status": "dep"
   },
@@ -2507,16 +2457,6 @@
    "status": "dep"
   },
   {
-   "name": "More RPG Library",
-   "file": "more_rpg_library-forge-2.7.2+1.20.1.jar",
-   "sha1": "02c98b6afc1216ae6b876379191b965c6000e266",
-   "curseforgeProject": 923030,
-   "curseforgeFile": 8932963,
-   "url": "https://edge.forgecdn.net/files/8932/963/more_rpg_library-forge-2.7.2%2b1.20.1.jar",
-   "category": "lib",
-   "status": "dep"
-  },
-  {
    "name": "Necronomicon API",
    "file": "Necronomicon-Forge-1.6.0+1.20.1.jar",
    "sha1": "2ad4ffa0fb087e4467c6f7496d456fc1ac949ebf",
@@ -2687,26 +2627,6 @@
    "status": "dep"
   },
   {
-   "name": "Spell Engine",
-   "file": "spell_engine-forge-1.10.7+1.20.1.jar",
-   "sha1": "e47ba0fffae96cc7d67a930bfb7175490007a8b2",
-   "curseforgeProject": 807653,
-   "curseforgeFile": 8940895,
-   "url": "https://edge.forgecdn.net/files/8940/895/spell_engine-forge-1.10.7%2b1.20.1.jar",
-   "category": "lib",
-   "status": "dep"
-  },
-  {
-   "name": "Spell Power Attributes",
-   "file": "spell_power-forge-1.6.1+1.20.1.jar",
-   "sha1": "11073d202f70e543d46ceda95e264652ebafd558",
-   "curseforgeProject": 771265,
-   "curseforgeFile": 8981606,
-   "url": "https://edge.forgecdn.net/files/8981/606/spell_power-forge-1.6.1%2b1.20.1.jar",
-   "category": "lib",
-   "status": "dep"
-  },
-  {
    "name": "SuperMartijn642's Config Lib",
    "file": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
    "sha1": "f80f9eed728966adcfbcc848633e789645057281",
@@ -2765,16 +2685,6 @@
    "url": "https://edge.forgecdn.net/files/6336/646/yet_another_config_lib_v3-3.6.6%2b1.20.1-forge.jar",
    "category": "lib",
    "status": "dep"
-  },
-  {
-   "name": "Alshanex's Familiars",
-   "file": "alshanex_familiars-1.20.1_v1.1.2_HotFix.jar",
-   "sha1": "bccbfd68c60c272f9a5498bcffa731d2e26285f1",
-   "curseforgeProject": 1171602,
-   "curseforgeFile": 6250904,
-   "url": "https://edge.forgecdn.net/files/6250/904/alshanex_familiars-1.20.1_v1.1.2_HotFix.jar",
-   "category": "magic",
-   "status": "std"
   },
   {
    "name": "Ars 'n Spells",
@@ -2878,11 +2788,11 @@
   },
   {
    "name": "Iron's Rpg Tweaks",
-   "file": "irons_rpg_tweaks-1.20.1-2.2.2.1.jar",
-   "sha1": "c7cc1d290d24f26e9543efccdc374375fab05034",
+   "file": "irons_rpg_tweaks-1.20.1-2.2.3.jar",
+   "sha1": "610d660a9044fa15a07f84cec59c01ab5dfc7fed",
    "curseforgeProject": 871799,
    "curseforgeFile": 7907337,
-   "url": "https://edge.forgecdn.net/files/7907/337/irons_rpg_tweaks-1.20.1-2.2.2.1.jar",
+   "url": "https://cdn.modrinth.com/data/otXdBiS4/versions/MzBQUoDf/irons_rpg_tweaks-1.20.1-2.2.3.jar",
    "category": "magic",
    "status": "std"
   },
@@ -3053,16 +2963,6 @@
    "curseforgeProject": 686437,
    "curseforgeFile": 7917933,
    "url": "https://edge.forgecdn.net/files/7917/933/born_in_chaos_%5bForge%5d1.20.1_1.7.5.jar",
-   "category": "mobs",
-   "status": "std"
-  },
-  {
-   "name": "Born In Configuration",
-   "file": "borninconfiguration-2.2.2.jar",
-   "sha1": "492afc101cfdf12dd3d41ab3f78186d16f0921be",
-   "curseforgeProject": 1019091,
-   "curseforgeFile": 5905273,
-   "url": "https://edge.forgecdn.net/files/5905/273/borninconfiguration-2.2.2.jar",
    "category": "mobs",
    "status": "std"
   },
@@ -3353,16 +3253,6 @@
    "curseforgeProject": 837157,
    "curseforgeFile": 6826898,
    "url": "https://edge.forgecdn.net/files/6826/898/legendarycreatures-1.20.1-1.1.1.3.jar",
-   "category": "mobs",
-   "status": "std"
-  },
-  {
-   "name": "Legendary Monsters",
-   "file": "legendarymonsters-2.2.1 MC 1.20.1.jar",
-   "sha1": "beee5915ea3e9b7be9101974735af61bfef1884d",
-   "curseforgeProject": 944035,
-   "curseforgeFile": 8657289,
-   "url": "https://edge.forgecdn.net/files/8657/289/legendarymonsters-2.2.1%20MC%201.20.1.jar",
    "category": "mobs",
    "status": "std"
   },
@@ -7863,16 +7753,6 @@
    "curseforgeProject": 535489,
    "curseforgeFile": 6352920,
    "url": "https://edge.forgecdn.net/files/6352/920/sound-physics-remastered-forge-1.20.1-1.4.10.jar",
-   "category": "vis",
-   "status": "std"
-  },
-  {
-   "name": "Subtle Effects",
-   "file": "SubtleEffects-forge-1.20.1-1.14.3.jar",
-   "sha1": "a96fc73389b3323c28d697ef6e216bc4addd3a06",
-   "curseforgeProject": 1023913,
-   "curseforgeFile": 8008318,
-   "url": "https://edge.forgecdn.net/files/8008/318/SubtleEffects-forge-1.20.1-1.14.3.jar",
    "category": "vis",
    "status": "std"
   },

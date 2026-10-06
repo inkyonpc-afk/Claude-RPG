@@ -1,0 +1,2 @@
+# Undeclared hard dependencies discovered by testing.  Format:  Mod name -> Required mod name   (bracket-stripped, case-insensitive)
+Prodigium Dungeons -> Ancient Aether

@@ -33,8 +33,19 @@ for mid, nm in ALIAS.items():
 unmet = {}
 
 
+extra = {}
+_ef = os.path.join(PACK, "extra_deps.txt")
+if os.path.isfile(_ef):
+    for _ln in open(_ef, encoding="utf-8"):
+        if "->" in _ln and not _ln.startswith("#"):
+            _a, _b = [x.strip().lower() for x in _ln.split("->", 1)]
+            extra.setdefault(_a, []).append(_b)
+
+
 def deps_of(k):
     ds = [str(d) for d in mods[k]["deps"] if str(d) in mods]
+    for _b in extra.get(norm(mods[k]["name"]), []):
+        ds += [h for h in by_name.get(_b, [])]
     for mid in jm.get(k, {}).get("requires", []):
         pk = provider.get(mid)
         if pk is None:

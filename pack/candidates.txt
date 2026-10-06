@@ -234,7 +234,7 @@ vis | Falling Leaves | std |
 vis | Snow! Real Magic! | std |
 vis | Cool Rain Reforged | skip |
 vis | Pretty Rain | skip |
-vis | Subtle Effects | std |
+vis | Subtle Effects | skip | requires Forge 47.4.14+ (pack stays on recommended 47.4.10)
 vis | Visuality | std |
 vis | Better Burning | std |
 vis | Smart Particles | test |
@@ -499,7 +499,7 @@ mobs | Born In Configuration | skip | requires older Born in Chaos than installe
 mobs | Bosses of Mass Destruction | std |
 mobs | Bosses'Rise | std |
 mobs | Ash Of Sin | std |
-mobs | Legendary Monsters | std |
+mobs | Legendary Monsters | skip | common mixin targets client class (crashes dedicated servers)
 mobs | Legendary Creatures | std |
 mobs | Meet Your Fight | std |
 mobs | Mutant Monsters | std |
@@ -739,7 +739,7 @@ trav | Pyrotechnic Elytra | skip |
 food | Farmer's Delight | core |
 food | Farmer's Respite | std |
 food | Alex's Delight | std |
-food | Alex's Caves Delight | std |
+food | Alex's Caves Delight | skip | needs Farmer's Delight ShepherdsPieBlock (missing in cached FD)
 food | Aquamirae Delight | std |
 food | Aquaculture Delight | std |
 food | Ocean's Delight | std |
@@ -832,7 +832,7 @@ build | Woodworks | std |
 build | Quark | core |
 build | Quark Oddities | std |
 build | Zeta | core |
-build | Every Compat | std |
+build | Every Compat | skip | suspected cause of registry ID mismatch (testing)
 build | Extra Compat | test |
 build | The New Shutters | std |
 build | Double Doors | std |
@@ -874,7 +874,7 @@ build | VerdantVibes | std |
 build | Just Outdoor Stuffs | std |
 build | Tumbleweed | std |
 build | SelectiveBounds | std |
-build | WorldEdit | std |
+build | WorldEdit | skip | blocks Server thread for minutes building state maps for ~29k blocks
 build | Medieval Buildings | skip | duplicate-name check
 build | Dramatic Doors | skip | Connor RPG: invalid recipes
 build | KleeSlabs | skip |

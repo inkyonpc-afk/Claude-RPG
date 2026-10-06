@@ -65,7 +65,7 @@ def reader():
         lines.append(ln.rstrip("\n"))
         if done_at[0] is None and re.search(r"Done \(\d", ln):
             done_at[0] = time.time()
-        if fatal_at[0] is None and re.search(r"Crash report saved to|Failed to start the minecraft server|Mod Loading has failed|Encountered an unexpected exception", ln):
+        if fatal_at[0] is None and re.search(r"Crash report saved to|Failed to load datapacks|Failed to start the minecraft server|Mod Loading has failed|Encountered an unexpected exception", ln):
             fatal_at[0] = time.time()
 
 

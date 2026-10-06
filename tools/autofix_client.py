@@ -15,7 +15,7 @@ for attempt in range(8):
         break
     log = open(os.path.join(ROOT, ".build", "logs", tag + ".log"), encoding="utf-8", errors="replace").read()
     blocks = re.findall(r"Mod File: [^\n]*?/mods/([^\n/]+\.jar)\n\s*Failure message: [^\n]*has failed to load correctly\n((?:[^\n]*\n){0,6})", log)
-    cj = [j for j, body in blocks if "net/minecraft/client" in body or "net.minecraft.client" in body or "invalid dist" in body]
+    cj = [j for j, body in blocks if "invalid dist" in body or "net.minecraft.client.renderer" in body or "net/minecraft/client/renderer" in body]
     if cj:
         names = [by_file[j] for j in sorted(set(cj)) if j in by_file]
         with open(os.path.join(ROOT, "pack", "client_only.txt"), "a", encoding="utf-8") as f:
@@ -28,7 +28,7 @@ for attempt in range(8):
         break
     scan = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "mixin_scan.py"), os.path.join(ROOT, ".build", "server", "mods"),
                            re.findall(r"load class (net/minecraft/client/[\w/$]+) for invalid dist", log)[-1]], capture_output=True, text=True).stdout
-    jars = sorted({l.split()[0] for l in scan.splitlines() if l.strip()})
+    jars = sorted({m.group(1) for l in scan.splitlines() for m in [re.match(r"^(.+?\.jar) ", l)] if m})
     names = [by_file[j] for j in jars if j in by_file]
     if not names:
         print("could not attribute; scan output:", scan[:300]); break

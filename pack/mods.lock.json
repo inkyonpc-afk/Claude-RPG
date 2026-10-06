@@ -659,21 +659,6 @@
   "deps": []
  },
  {
-  "addonID": 628539,
-  "name": "Every Compat (Wood Good)",
-  "fileId": 8332989,
-  "fileName": "everycomp-1.20-2.9.24-forge.jar",
-  "sha1": "5a058a363e1d907a08e210fd0739b7268e45b339",
-  "url": "https://edge.forgecdn.net/files/8332/989/everycomp-1.20-2.9.24-forge.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Society Sunlit Valley\\mods\\everycomp-1.20-2.9.24-forge.jar",
-  "category": "build",
-  "status": "std",
-  "why": "candidate",
-  "deps": [
-   499980
-  ]
- },
- {
   "addonID": 923005,
   "name": "Extra Compat",
   "fileId": 6385039,
@@ -1449,19 +1434,6 @@
   "deps": [
    382216
   ]
- },
- {
-  "addonID": 225608,
-  "name": "WorldEdit",
-  "fileId": 4586218,
-  "fileName": "worldedit-mod-7.2.15.jar",
-  "sha1": "9c52765ca56f917ef8cbafc20e9a4f45c346508f",
-  "url": "https://edge.forgecdn.net/files/4586/218/worldedit-mod-7.2.15.jar",
-  "localJar": "G:\\CurseForge\\Instances\\ciscos updated\\mods\\worldedit-mod-7.2.15.jar",
-  "category": "build",
-  "status": "std",
-  "why": "candidate",
-  "deps": []
  },
  {
   "addonID": 968868,
@@ -2302,22 +2274,6 @@
   ]
  },
  {
-  "addonID": 1035901,
-  "name": "Alex's Caves Delight",
-  "fileId": 6602388,
-  "fileName": "alexscavesdelight-1.0.27-final.jar",
-  "sha1": "94ed216a12ee0c477801ac2153179380b8fe7246",
-  "url": "https://edge.forgecdn.net/files/6602/388/alexscavesdelight-1.0.27-final.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\alexscavesdelight-1.0.27-final.jar",
-  "category": "food",
-  "status": "std",
-  "why": "candidate",
-  "deps": [
-   398521,
-   924854
-  ]
- },
- {
   "addonID": 556448,
   "name": "Alex's Delight",
   "fileId": 5028450,
@@ -2705,10 +2661,10 @@
   "addonID": 689630,
   "name": "Miner's Delight +",
   "fileId": 5038950,
-  "fileName": "miners_delight-1.20.1-1.2.3.jar",
-  "sha1": "817ab785307e34895900fa23ce9d5dc4ee8eadf5",
-  "url": "https://edge.forgecdn.net/files/5038/950/miners_delight-1.20.1-1.2.3.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\miners_delight-1.20.1-1.2.3.jar",
+  "fileName": "miners_delight-1.20.1-1.4.5-backport.jar",
+  "sha1": "638438679800711939e7a8029ae3d5340f8c17bd",
+  "url": "https://cdn.modrinth.com/data/qMxbM4BQ/versions/p0INUam7/miners_delight-1.20.1-1.4.5-backport.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\miners_delight-1.20.1-1.4.5-backport.jar",
   "category": "food",
   "status": "std",
   "why": "candidate",
@@ -4687,19 +4643,6 @@
   "deps": [
    388172
   ]
- },
- {
-  "addonID": 944035,
-  "name": "Legendary Monsters",
-  "fileId": 8657289,
-  "fileName": "legendarymonsters-2.2.1 MC 1.20.1.jar",
-  "sha1": "beee5915ea3e9b7be9101974735af61bfef1884d",
-  "url": "https://edge.forgecdn.net/files/8657/289/legendarymonsters-2.2.1%20MC%201.20.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Cisco's Fantasy Medieval RPG [Dragonfyre]\\mods\\legendarymonsters-2.2.1 MC 1.20.1.jar",
-  "category": "mobs",
-  "status": "std",
-  "why": "candidate",
-  "deps": []
  },
  {
   "addonID": 1078066,
@@ -9543,7 +9486,9 @@
   "category": "struct",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   886751
+  ]
  },
  {
   "addonID": 656079,
@@ -11065,21 +11010,6 @@
   "status": "std",
   "why": "candidate",
   "deps": []
- },
- {
-  "addonID": 1023913,
-  "name": "Subtle Effects",
-  "fileId": 8008318,
-  "fileName": "SubtleEffects-forge-1.20.1-1.14.3.jar",
-  "sha1": "a96fc73389b3323c28d697ef6e216bc4addd3a06",
-  "url": "https://edge.forgecdn.net/files/8008/318/SubtleEffects-forge-1.20.1-1.14.3.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\SubtleEffects-forge-1.20.1-1.14.3.jar",
-  "category": "vis",
-  "status": "std",
-  "why": "candidate",
-  "deps": [
-   1005914
-  ]
  },
  {
   "addonID": 704256,

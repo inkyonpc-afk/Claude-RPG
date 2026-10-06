@@ -1,0 +1,18 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "Embers of Aldreth: compatibility fixes (blocks broken third-party resources; see docs/KNOWN_ISSUES.md)"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "prodigium_dungeons",
+        "path": "worldgen/structure/glider_tower(_crystal)?\\.json"
+      },
+      {
+        "namespace": "prodigium_dungeons",
+        "path": "worldgen/structure_set/glider_tower(_crystal)?\\.json"
+      }
+    ]
+  }
+}

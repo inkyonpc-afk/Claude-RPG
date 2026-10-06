@@ -44,3 +44,4 @@ Blaze Gear
 CoFH Core
 Blowguns
 Fragmentum
+Enhanced Boss Bars
