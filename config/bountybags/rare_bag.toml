@@ -1,0 +1,145 @@
+# Bounty Bags - Rare Bag
+# Drop chance uses 0.0 to 1.0 (0% to 100%).
+# Item chance is controlled by weight relative to the total weight of all items.
+
+version = 2
+enabled = true
+drop_chance = 0.02
+nether_drop_multiplier = 1.25
+end_drop_multiplier = 1.4
+bagStackSize = 16
+minimum_loot_amount = 1
+maximum_loot_amount = 1
+allow_duplicate_items = true
+
+[[items]]
+item = "minecraft:iron_sword"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 22
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_pickaxe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 20
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_axe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 18
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_shovel"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 16
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_helmet"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 17
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_chestplate"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 19
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_leggings"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 18
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_boots"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 16
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:shield"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 14
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:bow"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 15
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:diamond_helmet"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 3
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:diamond_boots"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 2
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 25
+allow_treasure_enchantments = false
+exact_enchantments = []

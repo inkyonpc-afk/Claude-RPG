@@ -1,0 +1,167 @@
+# Bounty Bags - Dragon Bag
+# Drop chance uses 0.0 to 1.0 (0% to 100%).
+# Item chance is controlled by weight relative to the total weight of all items.
+
+version = 2
+enabled = true
+drop_chance = 0.5
+nether_drop_multiplier = 1.0
+end_drop_multiplier = 1.0
+bagStackSize = 16
+minimum_loot_amount = 1
+maximum_loot_amount = 1
+allow_duplicate_items = true
+
+[[items]]
+item = "minecraft:netherite_sword"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 22
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_pickaxe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 20
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_axe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 18
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_shovel"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 14
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_hoe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 12
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_helmet"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 16
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_chestplate"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 18
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_leggings"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 16
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_boots"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 15
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 28
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:elytra"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 28
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:dragon_breath"
+minimum_quantity = 2
+maximum_quantity = 8
+weight = 20
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:end_crystal"
+minimum_quantity = 1
+maximum_quantity = 3
+weight = 10
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:chorus_fruit"
+minimum_quantity = 4
+maximum_quantity = 16
+weight = 14
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:dragon_egg"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 1
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []

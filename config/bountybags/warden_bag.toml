@@ -1,0 +1,156 @@
+# Bounty Bags - Warden Bag
+# Drop chance uses 0.0 to 1.0 (0% to 100%).
+# Item chance is controlled by weight relative to the total weight of all items.
+
+version = 2
+enabled = true
+drop_chance = 0.5
+nether_drop_multiplier = 1.0
+end_drop_multiplier = 1.0
+bagStackSize = 16
+minimum_loot_amount = 1
+maximum_loot_amount = 1
+allow_duplicate_items = true
+
+[[items]]
+item = "minecraft:sculk_catalyst"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 14
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:sculk_shrieker"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 10
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:recovery_compass"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 12
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:echo_shard"
+minimum_quantity = 2
+maximum_quantity = 6
+weight = 18
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_sword"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 16
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 25
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_pickaxe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 14
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 25
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_axe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 13
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 25
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_shovel"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 10
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 25
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_helmet"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 11
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 25
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_chestplate"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 11
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 25
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_leggings"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 10
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 25
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:netherite_boots"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 10
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 25
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:enchanted_book"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 16
+enchantment_mode = "EXACT"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = ["minecraft:swift_sneak=3"]

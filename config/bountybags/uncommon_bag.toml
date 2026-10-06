@@ -1,0 +1,178 @@
+# Bounty Bags - Uncommon Bag
+# Drop chance uses 0.0 to 1.0 (0% to 100%).
+# Item chance is controlled by weight relative to the total weight of all items.
+
+version = 2
+enabled = true
+drop_chance = 0.06
+nether_drop_multiplier = 1.0
+end_drop_multiplier = 1.0
+bagStackSize = 16
+minimum_loot_amount = 1
+maximum_loot_amount = 1
+allow_duplicate_items = true
+
+[[items]]
+item = "minecraft:cooked_beef"
+minimum_quantity = 4
+maximum_quantity = 8
+weight = 25
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:cooked_porkchop"
+minimum_quantity = 4
+maximum_quantity = 8
+weight = 23
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:bread"
+minimum_quantity = 6
+maximum_quantity = 12
+weight = 22
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:cooked_chicken"
+minimum_quantity = 4
+maximum_quantity = 8
+weight = 20
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_ingot"
+minimum_quantity = 3
+maximum_quantity = 8
+weight = 22
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:coal"
+minimum_quantity = 8
+maximum_quantity = 16
+weight = 20
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:charcoal"
+minimum_quantity = 8
+maximum_quantity = 16
+weight = 18
+enchantment_mode = "NONE"
+minimum_enchantment_power = 15
+maximum_enchantment_power = 30
+allow_treasure_enchantments = true
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_sword"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 14
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 1
+maximum_enchantment_power = 5
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_pickaxe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 13
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 1
+maximum_enchantment_power = 5
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_axe"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 12
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 1
+maximum_enchantment_power = 5
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_shovel"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 10
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 1
+maximum_enchantment_power = 5
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_helmet"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 9
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 1
+maximum_enchantment_power = 5
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_chestplate"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 8
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 1
+maximum_enchantment_power = 5
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_leggings"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 7
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 1
+maximum_enchantment_power = 5
+allow_treasure_enchantments = false
+exact_enchantments = []
+
+[[items]]
+item = "minecraft:iron_boots"
+minimum_quantity = 1
+maximum_quantity = 1
+weight = 6
+enchantment_mode = "RANDOM"
+minimum_enchantment_power = 1
+maximum_enchantment_power = 5
+allow_treasure_enchantments = false
+exact_enchantments = []

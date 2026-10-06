@@ -267,5 +267,45 @@
   "version": "3.1.5-1.20.1-forge",
   "published": "2026-08-01",
   "license": "LicenseRef-DSMSLv3"
+ },
+ {
+  "name": "Entity Texture Features",
+  "replaces": "Entity Texture Features",
+  "category": "vis",
+  "status": "core",
+  "fileName": "entity_texture_features_1.20.1-forge-7.1.jar",
+  "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/GQlTHleX/entity_texture_features_1.20.1-forge-7.1.jar",
+  "sha1": "e13ba95a0388d7d5b1f479e5bd7e2df78e4c4a23",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\entity_texture_features_1.20.1-forge-7.1.jar",
+  "modids": [
+   "entity_texture_features"
+  ],
+  "requires": [],
+  "loader": "forge",
+  "source": "modrinth:entitytexturefeatures",
+  "version": "7.1-forge-1.20.1",
+  "published": "2026-04-15",
+  "license": "LGPL-3.0-only"
+ },
+ {
+  "name": "Entity Model Features",
+  "replaces": "Entity Model Features",
+  "category": "vis",
+  "status": "core",
+  "fileName": "entity_model_features-3.2.4-1.20.1-forge.jar",
+  "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/VSBDdOOY/entity_model_features-3.2.4-1.20.1-forge.jar",
+  "sha1": "535a94543d295f9609808a7e3e205d17547570bc",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\entity_model_features-3.2.4-1.20.1-forge.jar",
+  "modids": [
+   "entity_model_features"
+  ],
+  "requires": [
+   "entity_texture_features"
+  ],
+  "loader": "forge",
+  "source": "modrinth:entity-model-features",
+  "version": "3.2.4-forge-1.20.1",
+  "published": "2026-05-09",
+  "license": "LGPL-3.0-only"
  }
 ]

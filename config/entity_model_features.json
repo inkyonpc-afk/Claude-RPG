@@ -32,6 +32,5 @@
   "showReloadErrorToast": true,
   "exportRotations": false,
   "asmMaths": true,
-  "logASM": false,
-  "parrotShoulderPositionAnimatesByDefault": true
+  "logASM": false
 }
