@@ -57,7 +57,15 @@ while stack:
     stack.extend(byid[i]["deps"])
 
 if a.server:
-    sel = {i: e for i, e in sel.items() if norm(e["name"]) not in client_only}
+    gone = {i for i, e in sel.items() if norm(e["name"]) in client_only}
+    changed = True
+    while changed:   # drop anything that requires an excluded mod
+        changed = False
+        for i, e in sel.items():
+            if i not in gone and any(d in gone for d in e["deps"]):
+                gone.add(i); changed = True
+                print("server-excluded (needs client-only dep):", e["name"])
+    sel = {i: e for i, e in sel.items() if i not in gone}
 
 dest = a.dest or os.path.join(ROOT, "mods")
 os.makedirs(dest, exist_ok=True)

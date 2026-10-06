@@ -39,7 +39,7 @@ perf | Saturn | test |
 perf | Memory Settings | std |
 perf | MCreatorMemFix | std |
 perf | fix GPU memory leak | std |
-perf | Despawn Tweaks | std |
+perf | Despawn Tweaks | skip | needs TxniLib which bundles Fabric Loader
 perf | Let Me Despawn | std |
 perf | Chunky | std | pregeneration
 perf | spark | std | profiler

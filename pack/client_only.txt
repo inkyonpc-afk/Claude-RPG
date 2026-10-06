@@ -35,3 +35,6 @@ Blur
 Bobby Reforged
 CameraOverhaul
 EMI
+Dynamic Crosshair
+Loot Beams: Relooted!
+Ok Zoomer - It's Zoom!

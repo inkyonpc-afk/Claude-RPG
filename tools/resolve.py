@@ -122,6 +122,11 @@ while queue:
             selected[d] = dict(cat="lib", status="dep", why="dependency of " + mods[k]["name"])
             queue.append(d)
 
+BANNED = {"txnilib", "connectormod", "fabric_api", "forgified_fabric_api", "fabricloader", "connector_extras"}
+banned_hits = [(mods[k]["name"], selected[k]["why"]) for k in selected if BANNED & set(jm.get(k, {}).get("modids", []))]
+if banned_hits:
+    print("BANNED MODS SELECTED:", banned_hits)
+    sys.exit(2)
 lock = []
 for k, s in sorted(selected.items(), key=lambda kv: (kv[1]["cat"], mods[kv[0]]["name"].lower())):
     m = mods[k]

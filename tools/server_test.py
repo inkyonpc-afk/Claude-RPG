@@ -48,6 +48,7 @@ for dp, dn, fn in os.walk(os.path.join(SRV, "libraries", "net", "minecraftforge"
 cmd = [JAVA, "@user_jvm_args.txt", "@" + args_file, "nogui"]
 t0 = time.time()
 p = subprocess.Popen(cmd, cwd=SRV, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding="utf-8", errors="replace")
+open(os.path.join(ROOT, ".build", "server.pid"), "w").write(str(p.pid))
 lines, done_at = [], [None]
 
 

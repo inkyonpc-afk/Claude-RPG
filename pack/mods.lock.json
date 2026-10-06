@@ -3906,19 +3906,6 @@
   "deps": []
  },
  {
-  "addonID": 1104882,
-  "name": "TxniLib",
-  "fileId": 6533724,
-  "fileName": "txnilib-forge-1.0.24-1.20.1.jar",
-  "sha1": "a1e16b7d61f0f16a162d429ee1eab9b4e3eeb9ef",
-  "url": "https://edge.forgecdn.net/files/6533/724/txnilib-forge-1.0.24-1.20.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\txnilib-forge-1.0.24-1.20.1.jar",
-  "category": "lib",
-  "status": "dep",
-  "why": "dependency of Despawn Tweaks",
-  "deps": []
- },
- {
   "addonID": -8,
   "name": "Uranus",
   "fileId": null,
@@ -5657,21 +5644,6 @@
   "status": "std",
   "why": "candidate",
   "deps": []
- },
- {
-  "addonID": 1191080,
-  "name": "Despawn Tweaks",
-  "fileId": 6145371,
-  "fileName": "despawntweaks-forge-1.0.0-1.20.1.jar",
-  "sha1": "2a46154c5b58aa803aca4eb0a0e9682557e4422f",
-  "url": "https://edge.forgecdn.net/files/6145/371/despawntweaks-forge-1.0.0-1.20.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Cisco's Fantasy Medieval RPG [Dragonfyre]\\mods\\despawntweaks-forge-1.0.0-1.20.1.jar",
-  "category": "perf",
-  "status": "std",
-  "why": "candidate",
-  "deps": [
-   1104882
-  ]
  },
  {
   "addonID": 296646,

@@ -33,3 +33,4 @@ __pycache__/
 # CurseForge app-managed
 minecraftinstance.json
 .curseclient
+kubejs/exported/
