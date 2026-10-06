@@ -51,3 +51,7 @@
 - Title screen: three mods that hijacked it (Ancient Aether menu, Ice and Fire bestiary menu, Blue Skies panorama) switched off; our panorama and logo verified in-client.
 - Quests: every quest with a structure task is now optional (233 optional quests), so a far-away or biome-bound structure can never stall the story (an optional quest counts as satisfied for dependents; rewards are kept).
 - Realm gate messages no longer print raw item keys; PERFORMANCE.md filled with measured data; first export built and audited (no caches or runtime state).
+
+## 2026-10-06: spacing calibration, realm gate verified
+- Structure spacing calibrated from two world censuses (6.9 km2 pooled, `tools/calibrate_spacing.py`); final tier factors boss 2.55, great 2.35, settlement 1.4, vanilla 2.5, dungeon 3.55, clutter 4.25, ocean decor 4.5 (WORLDGEN.md has the measurements and caveats).
+- Realm gate verified on a dedicated server with a joined client (`tests/mp_realms.txt`): teleport into the Nether refused without the Sigil of Flame, advancement fires on receiving it, teleport then succeeds, the Aether stays sealed; 6/6 KubeJS server scripts, 0 errors, 20 TPS.
