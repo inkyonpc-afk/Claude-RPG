@@ -27,6 +27,14 @@ Principle: **exploration is fun before and after flight.** Every method keeps a 
 5. **Wings belong to the End.** Every Icarus, Deeper Darker, Enigmatic, Cataclysm, Tameable Beasts and Alex's Mobs wing/elytra recipe consumes a vanilla elytra. `kubejs/server_scripts/progression_loot_gates.js` (LootJS) strips elytra from every loot table except the End's own (End city, ender dragon, Lootr's elytra chest, End variants of Repurposed Structures/Tide/Botania, dragon bounty bags), which closes the Incendium *Infernal Wings* Nether artifact, Nether-brick shipwrecks, epic/legendary bounty bags, Goety vault uniques and Chungus bartering. The Ring of Flight is End city loot (1 %); the Flight Tiara needs Gaia Guardian life essence.
 6. The check runs every 20 ticks server-side, so it is authoritative in multiplayer.
 
+## Fast travel costs (`tools/tune_mounts.py`)
+Waystone travel costs XP, and XP also buys skill points, so a teleport is a real choice:
+- **Distance:** 1 level per 1000 blocks, capped at 5.
+- **Crossing dimensions:** +3 levels.
+- **Portable tools** (warp stone, portstone, sharestone): half cost.
+- **Player-built warp plates:** free.
+- **Inventory button:** disabled.
+
 ## Traversal variety (why you keep using the old ways)
 Roads and forests favour land mounts; rivers and oceans favour ships and the Straddleboard; dungeons favour grapples, climbing and the double jump; known places favour Waystones; emergencies favour recall and Blink; the sky favours hippogryphs and dragons, but not inside fenced places.
 

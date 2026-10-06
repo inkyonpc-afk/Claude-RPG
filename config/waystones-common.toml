@@ -82,25 +82,25 @@
 	#The minimum base xp cost (may be subceeded by multipliers defined below)
 	minimumBaseXpCost = 0.0
 	#The maximum base xp cost (may be exceeded by multipliers defined below), set to 0 to disable all distance-based XP costs
-	maximumBaseXpCost = 3.0
+	maximumBaseXpCost = 5.0
 	#How much xp is needed per leashed animal to travel with you
 	xpCostPerLeashed = 0
 	#The base xp level cost when travelling between dimensions. Ignores block distance.
 	dimensionalWarpXpCost = 3
 	#The multiplier applied to the base xp cost when teleporting to a global waystone through any method.
-	globalWaystoneXpCostMultiplier = 0.0
+	globalWaystoneXpCostMultiplier = 1.0
 	#The multiplier applied to the base xp cost when teleporting using a Warp Stone item (not the Waystone block, Konstantin)
-	warpStoneXpCostMultiplier = 0.0
+	warpStoneXpCostMultiplier = 0.5
 	#The multiplier applied to the base xp cost when teleporting from one waystone to another.
-	waystoneXpCostMultiplier = 0.0
+	waystoneXpCostMultiplier = 1.0
 	#The multiplier applied to the base xp cost when teleporting from one sharestone to another.
-	sharestoneXpCostMultiplier = 0.0
+	sharestoneXpCostMultiplier = 0.5
 	#The multiplier applied to the base xp cost when teleporting from a portstone.
-	portstoneXpCostMultiplier = 0.0
+	portstoneXpCostMultiplier = 0.5
 	#The multiplier applied to the base xp cost when teleporting from one warp plate to another.
 	warpPlateXpCostMultiplier = 0.0
 	#The multiplier applied to the base xp cost when teleporting via the inventory button.
-	inventoryButtonXpCostMultiplier = 0.0
+	inventoryButtonXpCostMultiplier = 1.0
 
 [compatibility]
 	#If enabled, JourneyMap waypoints will be created for each activated waystone.

@@ -722,11 +722,17 @@
 			rewards: [
 					{
 						id: "B56D6123ED2DEE69"
+						type: "item"
+						item: "aldreth:ember_shard"
+						count: 3
+					},
+					{
+						id: "D9FEFE8F5A2C668A"
 						type: "xp"
 						xp: 150
 					},
 					{
-						id: "D9FEFE8F5A2C668A"
+						id: "86DB705759084AB3"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true

@@ -30,20 +30,12 @@ Better Advancements
 BetterF3
 Better Mods Button
 Ping Wheel
-Fusion
 Blur
 Bobby Reforged
 CameraOverhaul
-EMI
 Dynamic Crosshair
 Loot Beams: Relooted!
 Ok Zoomer - It's Zoom!
-Certain Questing Additions
-Relics
-Blaze Gear
-CoFH Core
-Blowguns
-Fragmentum
 Enhanced Boss Bars
 Entity Texture Features
 Entity Texture Features -

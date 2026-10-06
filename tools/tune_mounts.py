@@ -1,4 +1,4 @@
-"""Mount tuning (flight is slow early, fast late; tamed mounts never grief). Patches TOML keys in place; fails loudly if a key is missing.
+"""Mount + fast-travel tuning (flight is slow early, fast late; tamed mounts never grief; waystone travel costs XP, which also buys skill points). Patches TOML keys in place; fails loudly if a key is missing.
 Usage: python tools/tune_mounts.py"""
 import os, re
 
@@ -11,12 +11,23 @@ PATCH = {
         "Amphithere Flight Speed": "1.5",            # fast but below a grown dragon
         "Dragon Moved Wrongly Error Fix": "true",    # dedicated-server log spam / rubber-banding fix
     },
+    "config/waystones-common.toml": {                # 1 level per 1000 blocks, capped at 5; +3 levels across dimensions
+        "maximumBaseXpCost": "5.0",
+        "waystoneXpCostMultiplier": "1.0",
+        "globalWaystoneXpCostMultiplier": "1.0",
+        "inventoryButtonXpCostMultiplier": "1.0",
+        "warpStoneXpCostMultiplier": "0.5",          # portable tools pay half: you earned them
+        "portstoneXpCostMultiplier": "0.5",
+        "sharestoneXpCostMultiplier": "0.5",
+        "warpPlateXpCostMultiplier": "0.0",          # player-built local networks stay free
+        "dimensionalWarpXpCost": "3",
+    },
 }
 for rel, kv in PATCH.items():
     p = os.path.join(ROOT, rel)
     s = open(p, encoding="utf-8").read()
     for k, v in kv.items():
-        rx = re.compile(r'(?m)^(\s*"%s"\s*=\s*)(.*)$' % re.escape(k))
+        rx = re.compile(r'(?m)^(\s*"?%s"?\s*=\s*)(.*)$' % re.escape(k))
         if not rx.search(s):
             raise SystemExit("%s: key not found: %s" % (rel, k))
         s = rx.sub(lambda m: m.group(1) + v, s, count=1)

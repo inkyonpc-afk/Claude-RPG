@@ -2,6 +2,8 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "tools"))
 from questlib import *
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from custom_items import EMBER_SHARD  # noqa: E402
 
 CHAPTERS = []
 
@@ -108,5 +110,5 @@ c.q("bow", "From a Distance", "minecraft:bow",
 c.q("act1_end", "What the Ember Wants", "minecraft:blaze_powder",
     ["The Wroughtnaut's chamber holds a tablet in a language that predates the Crown. You can read it, which is odd: Seven Wardens bound seven realms to the Crown, and the realms are waking.",
      "Westward is a forest where it is always dusk. The tablet calls it the Root Ward. The Ember in your palm burns hot at the name."],
-    [check()], [xp(150), points(2)], deps=["hollow_knight"], shape="diamond", size=1.3)
+    [check()], [item_r(EMBER_SHARD, 3), xp(150), points(2)], deps=["hollow_knight"], shape="diamond", size=1.3)
 CHAPTERS.append(c)

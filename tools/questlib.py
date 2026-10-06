@@ -203,7 +203,8 @@ def chapter_snbt(ch, group_ids, idx, image=None):
 
 
 def validate(ch, reg, errors):
-    R = {"item": set(reg["item"]), "entity": set(reg["entity_type"]), "structure": set(reg["structure"]), "biome": set(reg["biome"]),
+    import custom_items
+    R = {"item": set(reg["item"]) | set(custom_items.ITEMS), "entity": set(reg["entity_type"]), "structure": set(reg["structure"]), "biome": set(reg["biome"]),
          "dimension": set(reg["dimension"]) | set(DIMS.values()), "advancement": set(reg.get("advancement", []))}
     for qd in ch.quests:
         loc = "%s/%s" % (ch.key, qd["key"])

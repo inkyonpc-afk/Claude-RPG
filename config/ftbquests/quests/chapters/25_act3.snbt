@@ -765,11 +765,17 @@
 			rewards: [
 					{
 						id: "4EC2F4D06DF3716C"
+						type: "item"
+						item: "aldreth:ember_shard"
+						count: 3
+					},
+					{
+						id: "2F1840C9400C1653"
 						type: "xp"
 						xp: 300
 					},
 					{
-						id: "2F1840C9400C1653"
+						id: "C469EC7DBCE5B2C2"
 						type: "command"
 						command: "skilltree points add {p} 3"
 						elevate: true
@@ -777,7 +783,7 @@
 						title: "3 skill points"
 					},
 					{
-						id: "C469EC7DBCE5B2C2"
+						id: "E17E11DD42F66B29"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true

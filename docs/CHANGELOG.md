@@ -13,3 +13,25 @@
 - **Weapon taxonomy:** 21 classes tagged `aldreth:weapons/*` (~1,000 items).
 - **Quests:** 29 chapters, 491 quests across 5 groups, every ID registry-validated; chapter art generated.
 - **Tooling:** resolve/install/server_test/autofix/ddmin/launch_client (GUI-automated), build_skilltree/origins/quests/tags/art, registry dump via KubeJS.
+
+## 2026-10-06: Phases 6-9, 13 (traversal, realms, loot, visuals)
+- **Flight:**
+  - The KubeJS stage `aldreth_flight` (granted on entering the Aether in Act III) gates overworld flying mounts.
+  - Fenced structures (490) block flying mounts, elytra and ability flight.
+  - A LootJS gate strips elytra from every loot table except the End's own.
+  - Every forced dismount grants slow falling.
+- **Realms:** Ember Shards + 7 Warden Sigils (KubeJS items, textures, recipes) unseal portals per player through Restricted Portals. Sigil quests are in the Doors chapter; the act finales grant shards. 499 quests total.
+- **Boss rewards:** every kill of the 39 bosses rolls `aldreth:boss/t<tier>`: affix gear, materials, gems, shards.
+- **World:** tiered structure spacing over all 859 structure sets (Sparse Structures only; Structurify neutral).
+- **Mounts and travel:**
+  - Ice and Fire tuned: slow hippogryph, weak-block-only dragon griefing, tamed dragons never grief, server moved-wrongly fix.
+  - Waystone travel costs XP.
+- **Visuals:**
+  - 27 curated resource packs, including the STONEBORN UI theme, Fresh Animations and audio packs. They are referenced by CurseForge id in the export, not bundled.
+  - Complementary Reimagined/Unbound with 4 presets, shaders off by default.
+  - Logo rebuilt for the 1.20 single-strip format; FancyMenu editor overlay hidden; accessibility onboarding off.
+- **Fixes:**
+  - Missing PST icon `potion_blue_big`; the tree build now validates every texture.
+  - The keybind scheme is applied by KubeJS: skill tree K, quests J, roll R.
+  - `server_test` now defaults to the release set `core,std`; the `test` pool caused an Enhanced AI dependency crash.
+- **Exports:** Default Options carries options.txt (first launch only).

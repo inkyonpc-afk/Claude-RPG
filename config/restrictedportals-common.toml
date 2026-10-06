@@ -3,15 +3,15 @@
 	#Prevents Death by Teleporting Player to Spawn if trying to enter an Ender Portal
 	preventdeath = true
 	#Message that displays when Teleport is blocked
-	blockedmessage = "Please obtain a %item% to enter the %dim%"
+	blockedmessage = "The way is sealed. Craft a %item% to open the %dim%."
 	#Title for the Advancements
-	craftedmessage = "%dim% Unlocked!"
+	craftedmessage = "%dim% Unsealed"
 	#Description for the Advancements
-	description = "Obtain a %item%"
+	description = "Craft a %item%"
 	#Comma seperated list of items that when crafted unlock the corresponding dimension
-	craftitems = "minecraft:flint_and_steel,minecraft:ender_eye"
+	craftitems = "aldreth:sigil_of_flame,aldreth:sigil_of_root,aldreth:sigil_of_stone,aldreth:sigil_of_sky,aldreth:sigil_of_dream,aldreth:sigil_of_dream,aldreth:sigil_of_echo,aldreth:sigil_of_the_end"
 	#Comma seperated list of Dimension Resource Names
-	dimresname = "minecraft:the_nether,minecraft:the_end"
+	dimresname = "minecraft:the_nether,twilightforest:twilight_forest,undergarden:undergarden,aether:the_aether,blue_skies:everbright,blue_skies:everdawn,deeperdarker:otherside,minecraft:the_end"
 	#Comma seperated list of Dimension Display Names
-	dimnames = "Nether,End"
+	dimnames = "Nether,Twilight Forest,Undergarden,Aether,Everbright,Everdawn,Otherside,End"
 

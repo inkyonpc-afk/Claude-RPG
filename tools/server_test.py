@@ -11,7 +11,7 @@ SRV = os.path.join(ROOT, ".build", "server")
 JAVA = r"C:\Program Files\Microsoft\jdk-17.0.20.101-hotspot\bin\java.exe"
 ap = argparse.ArgumentParser()
 ap.add_argument("--cats", default="")
-ap.add_argument("--status", default="core,std,test")
+ap.add_argument("--status", default="core,std")
 ap.add_argument("--cmds", default="forge tps")
 ap.add_argument("--timeout", type=int, default=900)
 ap.add_argument("--fresh", action="store_true", help="delete world first")
@@ -20,6 +20,7 @@ ap.add_argument("--tag", default="run")
 ap.add_argument("--xmx", default="6G")
 ap.add_argument("--seed", default="-8310405263479215")
 a = ap.parse_args()
+sys.stdout.reconfigure(line_buffering=True)   # runner logs readable while the server runs
 
 lockf = os.path.join(ROOT, ".build", "server_test.lock")
 if os.path.isfile(lockf):

@@ -5,7 +5,10 @@ import json, os
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 reg = json.load(open(os.path.join(ROOT, "pack", "registries_snapshot.json"), encoding="utf-8"))
-ITEMS = set(reg["item"])
+import sys
+sys.path.insert(0, os.path.join(ROOT, "design"))
+import custom_items  # noqa: E402
+ITEMS = set(reg["item"]) | set(custom_items.ITEMS)
 out = os.path.join(ROOT, "config", "paxi", "datapacks", "aldreth_core", "data", "aldreth", "loot_tables", "quest")
 os.makedirs(out, exist_ok=True)
 errors = []
@@ -56,8 +59,11 @@ GEAR = {1: [affix("common", 50), affix("uncommon", 50)], 2: [affix("uncommon", 6
 bout = os.path.join(os.path.dirname(out), "boss")
 os.makedirs(bout, exist_ok=True)
 for n in range(1, 7):
+    shards = {1: (0, 0), 2: (0, 1), 3: (0, 1), 4: (1, 1), 5: (1, 1), 6: (1, 2)}[n]
     pools = [pool(1, GEAR[n], "gear"), pool(uniform(1, 2), [it(MATS[n], 2, 4, 70), it(MATS[max(1, n - 1)], 3, 6, 30)], "materials"),
              pool(uniform(0, 1) if n < 4 else 1, [gem(1)], "gem")]
+    if shards[1]:
+        pools.append(pool(uniform(*shards), [it(custom_items.EMBER_SHARD)], "ember_shards"))
     json.dump({"type": "minecraft:chest", "pools": pools}, open(os.path.join(bout, "t%d.json" % n), "w"), indent=1)
 
 # boss-reward hook
@@ -97,7 +103,7 @@ doc = ["# Loot", "", "_Generated in part by `tools/build_loot.py`._", "",
        "## Rarity ladder (Apotheosis)", "Common, Uncommon, Rare, Epic, Mythic (shown as Legendary), Ancient. **Unique** items (boss weapons, relics) are fixed, hand-authored drops.", "",
        "## Quest caches", "Quest rewards call `loot give {p} loot aldreth:quest/t<N>`:", "", "| Tier | Gear rarity | Materials | Gems |", "|---|---|---|---|",
        "| t1 | common/uncommon | common | none |", "| t2 | uncommon/rare | uncommon | 0-1 |", "| t3 | rare/epic | rare | 1 |", "| t4 | rare/epic | epic | 1-2 |", "| t5 | epic/mythic | mythic | 1-2 |", "| t6 | mythic/ancient | ancient/mythic | 1-3 |", "",
-       "## Boss tables", "Every boss kill (39 bosses in `design/bosses.py`) rolls `aldreth:boss/t<tier>` at the corpse through `kubejs/server_scripts/boss_rewards.js`, on top of the boss's own unique drops: one affix item of the act's band (t2 uncommon/rare ... t6 mythic/ancient), 1-2 material stacks, and a gem (guaranteed from t4). The quest cache pays the first kill; the boss table pays every kill, so bosses stay worth farming. Multi-entity fights (Phantom Knights) roll once on average.", "",
+       "## Boss tables", "Every boss kill (39 bosses in `design/bosses.py`) rolls `aldreth:boss/t<tier>` at the corpse through `kubejs/server_scripts/boss_rewards.js`, on top of the boss's own unique drops: one affix item of the act's band (t2 uncommon/rare ... t6 mythic/ancient), 1-2 material stacks, and a gem (guaranteed from t4) and Ember Shards (t2-t3 50 %, t4-t5 one, t6 one or two: a backup source for the realm Sigils). The quest cache pays the first kill; the boss table pays every kill, so bosses stay worth farming. Multi-entity fights (Phantom Knights) roll once on average.", "",
        "## World loot (Apotheosis config, `config/apotheosis/adventure.cfg`)", "See the Apotheosis tuning section: affix conversion chances per loot table tier, dimension rarity bands (overworld common-rare, Nether uncommon-epic, End rare-mythic, plus Aether/Blue Skies/Undergarden/Otherside bands), and gem rules.", ""]
 open(os.path.join(ROOT, "docs", "LOOT.md"), "w", encoding="utf-8").write("\n".join(doc))
 print("loot tiers:", len(T), "errors:", errors)

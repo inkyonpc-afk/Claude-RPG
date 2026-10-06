@@ -2,6 +2,8 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "tools"))
 from questlib import *
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from custom_items import EMBER_SHARD  # noqa: E402
 
 CHAPTERS = []
 
@@ -49,7 +51,7 @@ c.q("rare", "A Rare Find", "apotheosis:rare_material", "Rare gear carries three 
 c.q("act2_end", "The Veil Has Edges", "minecraft:nether_star",
     ["Five Wardens remain. Each held a realm: Sky, Dream, Echo, Flame, End. The Root Ward's last words, torn from the Ur-Ghast's ruin, give a direction: up.",
      "Past the clouds is a country built on islands, and the first of its gates is guarded by a sleeping thing. The Ember does not like the sky; it has been there before."],
-    [check()], [xp(200), points(2), cache(3, "Act II cache")], deps=["ur_ghast", "guardian"], shape="diamond", size=1.3)
+    [check()], [item_r(EMBER_SHARD, 4), xp(200), points(2), cache(3, "Act II cache")], deps=["ur_ghast", "guardian"], shape="diamond", size=1.3)
 CHAPTERS.append(c)
 
 # =============================================================== ACT III ==============================================================
@@ -80,5 +82,5 @@ c.q("epic", "Epic", "apotheosis:epic_material", "Your gear has entered the middl
 c.q("act3_end", "What the Sky Remembers", "minecraft:elytra",
     ["The Sun Spirit's flame and the Crusher's stone both carry the same sigil. The Wardens did not just guard realms; they guarded one another. Two have fallen. The Crown's pieces ring like a bell when you hold them close.",
      "Below, a darker place calls: a city at the bottom of the dark, a hall of echoes. And the Ember has begun to speak in whispers."],
-    [check()], [xp(300), points(3), cache(4, "Act III cache")], deps=["sun", "crusher", "arachnarch"], shape="diamond", size=1.3)
+    [check()], [item_r(EMBER_SHARD, 3), xp(300), points(3), cache(4, "Act III cache")], deps=["sun", "crusher", "arachnarch"], shape="diamond", size=1.3)
 CHAPTERS.append(c)

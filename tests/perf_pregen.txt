@@ -1,0 +1,31 @@
+# Performance + spacing test (fresh world): run with tools/server_test.py --fresh --cmds tests/perf_pregen.txt --timeout 2400
+spark tps
+spark health
+# spacing samples across tiers (distances land in the log; compare with docs/WORLDGEN.md tiers)
+locate structure minecraft:village_plains
+locate structure minecraft:pillager_outpost
+locate structure mowziesmobs:wrought_chamber
+locate structure cataclysm:ancient_factory
+locate structure irons_spellbooks:catacombs
+locate structure dungeons_enhanced:castle
+locate structure dungeons_arise:bandit_towers
+locate structure wabi_sabi_structures:abandoned_small_castle
+locate structure mvs:barn
+locate structure bosses_of_mass_destruction:lich_tower
+# pregeneration: 1000-block radius around spawn (a 2000x2000-block square, 15,625 chunks), measured by chunky's own progress lines
+chunky radius 1000
+chunky start
+spark profiler start --timeout 300
+wait 300
+spark tps
+spark health
+chunky progress
+wait 600
+chunky progress
+spark tps
+spark health
+wait 600
+chunky progress
+spark tps
+chunky cancel
+wait 5

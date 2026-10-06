@@ -2,6 +2,8 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "tools"))
 from questlib import *
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from custom_items import EMBER_SHARD  # noqa: E402
 
 CHAPTERS = []
 
@@ -39,7 +41,7 @@ c.q("ench60", "A Level 60 Table", "apotheosis:infused_hellshelf", "High-tier she
 c.q("act4_end", "Seven Roads, Three Open", "minecraft:crying_obsidian",
     ["The Warden of Echoes is down, and the Harbinger. The factory's machines speak of one more place: not a realm but an ending, hung in a darkness above everything.",
      "Four Wardens have fallen. Three realms remain. The Ember has grown large enough to see by."],
-    [check()], [xp(500), points(3), cache(5, "Act IV cache")], deps=["warden", "harbinger", "leviathan", "remnant"], shape="diamond", size=1.3)
+    [check()], [item_r(EMBER_SHARD, 4), xp(500), points(3), cache(5, "Act IV cache")], deps=["warden", "harbinger", "leviathan", "remnant"], shape="diamond", size=1.3)
 CHAPTERS.append(c)
 
 # =============================================================== ACT V ================================================================
