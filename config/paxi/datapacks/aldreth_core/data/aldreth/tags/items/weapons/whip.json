@@ -1,0 +1,11 @@
+{
+ "replace": true,
+ "values": [
+  "alexsmobs:tendon_whip",
+  "simplyswords:diamond_chakram",
+  "simplyswords:gold_chakram",
+  "simplyswords:iron_chakram",
+  "simplyswords:netherite_chakram",
+  "simplyswords:runic_chakram"
+ ]
+}

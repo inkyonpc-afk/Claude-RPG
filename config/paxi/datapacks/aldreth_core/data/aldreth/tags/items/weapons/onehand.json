@@ -1,0 +1,12 @@
+{
+ "replace": true,
+ "values": [
+  "#aldreth:weapons/longsword",
+  "#aldreth:weapons/axe",
+  "#aldreth:weapons/mace",
+  "#aldreth:weapons/spear",
+  "#aldreth:weapons/rapier",
+  "#aldreth:weapons/katana",
+  "#aldreth:weapons/dagger"
+ ]
+}

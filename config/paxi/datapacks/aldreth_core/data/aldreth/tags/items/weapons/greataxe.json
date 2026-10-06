@@ -1,0 +1,22 @@
+{
+ "replace": true,
+ "values": [
+  "ageofweapons:battle_axe_diamond",
+  "ageofweapons:battle_axe_gold",
+  "ageofweapons:battle_axe_iron",
+  "ageofweapons:battle_axe_netherite",
+  "ageofweapons:battle_axe_stone",
+  "ageofweapons:battle_axe_wood",
+  "eeeabsmobs:doombolt_battleaxe",
+  "eeeabsmobs:immortal_executioner_egg",
+  "medievalcraftweapons:battleaxe",
+  "simplyswords:diamond_greataxe",
+  "simplyswords:gold_greataxe",
+  "simplyswords:iron_greataxe",
+  "simplyswords:netherite_greataxe",
+  "simplyswords:runic_greataxe",
+  "undergarden:cloggrum_battleaxe",
+  "undergarden:forgotten_battleaxe",
+  "unusualprehistory:handmade_battleaxe"
+ ]
+}

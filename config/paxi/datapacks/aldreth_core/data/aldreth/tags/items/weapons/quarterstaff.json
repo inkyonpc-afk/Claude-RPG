@@ -1,0 +1,12 @@
+{
+ "replace": true,
+ "values": [
+  "ageofweapons:electrostaff",
+  "ageofweapons:heavy_staff_diamond",
+  "ageofweapons:heavy_staff_gold",
+  "ageofweapons:heavy_staff_iron",
+  "ageofweapons:heavy_staff_netherite",
+  "ageofweapons:heavy_staff_stone",
+  "ageofweapons:heavy_staff_wood"
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "replace": true,
+ "values": [
+  "aether_redux:subzero_crossbow",
+  "ageofweapons:iron_crossbow",
+  "ars_nouveau:spell_crossbow",
+  "better_crossbows:copper_crossbow",
+  "better_crossbows:diamond_crossbow",
+  "better_crossbows:gold_crossbow",
+  "better_crossbows:netherite_crossbow",
+  "irons_spellbooks:autoloader_crossbow",
+  "magistuarmory:heavy_crossbow",
+  "minecraft:crossbow",
+  "soulsweapons:kraken_slayer_crossbow"
+ ]
+}

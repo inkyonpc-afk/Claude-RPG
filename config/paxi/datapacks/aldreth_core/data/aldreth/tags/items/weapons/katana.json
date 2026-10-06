@@ -1,0 +1,30 @@
+{
+ "replace": true,
+ "values": [
+  "ageofweapons:katana_diamond",
+  "ageofweapons:katana_gold",
+  "ageofweapons:katana_iron",
+  "ageofweapons:katana_netherite",
+  "ageofweapons:katana_stone",
+  "ageofweapons:katana_wood",
+  "ageofweapons:ninjato_diamond",
+  "ageofweapons:ninjato_gold",
+  "ageofweapons:ninjato_iron",
+  "ageofweapons:ninjato_netherite",
+  "ageofweapons:ninjato_stone",
+  "ageofweapons:ninjato_wood",
+  "ageofweapons:wakizashi_diamond",
+  "ageofweapons:wakizashi_gold",
+  "ageofweapons:wakizashi_iron",
+  "ageofweapons:wakizashi_netherite",
+  "ageofweapons:wakizashi_stone",
+  "ageofweapons:wakizashi_wood",
+  "eeeabsmobs:netherworld_katana",
+  "medievalcraftweapons:katana",
+  "simplyswords:diamond_katana",
+  "simplyswords:gold_katana",
+  "simplyswords:iron_katana",
+  "simplyswords:netherite_katana",
+  "simplyswords:runic_katana"
+ ]
+}

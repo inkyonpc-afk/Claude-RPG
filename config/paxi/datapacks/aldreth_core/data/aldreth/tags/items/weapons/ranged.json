@@ -1,0 +1,7 @@
+{
+ "replace": true,
+ "values": [
+  "#aldreth:weapons/crossbow",
+  "#aldreth:weapons/bow"
+ ]
+}

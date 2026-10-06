@@ -1,0 +1,9 @@
+{
+ "replace": true,
+ "values": [
+  "#aldreth:weapons/dagger",
+  "#aldreth:weapons/rapier",
+  "#aldreth:weapons/katana",
+  "#aldreth:weapons/whip"
+ ]
+}

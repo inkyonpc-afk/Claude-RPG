@@ -1,0 +1,14 @@
+{
+ "replace": true,
+ "values": [
+  "ageofweapons:double_lightsaber_blue",
+  "ageofweapons:double_lightsaber_green",
+  "ageofweapons:double_lightsaber_red",
+  "ageofweapons:double_lightsaber_yellow",
+  "simplyswords:diamond_twinblade",
+  "simplyswords:gold_twinblade",
+  "simplyswords:iron_twinblade",
+  "simplyswords:netherite_twinblade",
+  "simplyswords:runic_twinblade"
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "replace": true,
+ "values": [
+  "#aldreth:weapons/spellbook",
+  "#aldreth:weapons/wand",
+  "#aldreth:weapons/staff"
+ ]
+}

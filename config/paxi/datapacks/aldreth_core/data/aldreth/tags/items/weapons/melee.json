@@ -1,0 +1,20 @@
+{
+ "replace": true,
+ "values": [
+  "#aldreth:weapons/quarterstaff",
+  "#aldreth:weapons/scythe",
+  "#aldreth:weapons/twinblade",
+  "#aldreth:weapons/greataxe",
+  "#aldreth:weapons/hammer",
+  "#aldreth:weapons/mace",
+  "#aldreth:weapons/polearm",
+  "#aldreth:weapons/spear",
+  "#aldreth:weapons/greatsword",
+  "#aldreth:weapons/katana",
+  "#aldreth:weapons/rapier",
+  "#aldreth:weapons/dagger",
+  "#aldreth:weapons/whip",
+  "#aldreth:weapons/longsword",
+  "#aldreth:weapons/axe"
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "replace": true,
+ "values": [
+  "#aldreth:weapons/greatsword",
+  "#aldreth:weapons/greataxe",
+  "#aldreth:weapons/hammer",
+  "#aldreth:weapons/polearm",
+  "#aldreth:weapons/scythe",
+  "#aldreth:weapons/twinblade"
+ ]
+}

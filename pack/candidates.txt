@@ -800,7 +800,7 @@ build | Supplementaries | core |
 build | Supplementaries Squared | std |
 build | Amendments | std |
 build | Handcrafted | std |
-build | Chipped | std |
+build | Chipped | skip | JEI plugin calls IRecipeSlotBuilder.setPosition missing in EMI 1.1.24 jemi layer: 7k load errors; large block count
 build | Macaw's Bridges | std |
 build | Macaw's Doors | std |
 build | Macaw's Fences and Walls | std |

@@ -1,0 +1,30 @@
+{
+ "replace": true,
+ "values": [
+  "ageofweapons:cudgel_stone",
+  "ageofweapons:cudgel_wood",
+  "ageofweapons:flail_diamond",
+  "ageofweapons:flail_gold",
+  "ageofweapons:flail_iron",
+  "ageofweapons:flail_netherite",
+  "ageofweapons:flail_stone",
+  "ageofweapons:flail_wood",
+  "alexscaves:primitive_club",
+  "alexscaves:primitive_club_inventory",
+  "biomeswevegone:music_disc_pixie_club",
+  "born_in_chaos_v1:shell_mace",
+  "forbidden_arcanus:bat_soup",
+  "forbidden_arcanus:bat_wing",
+  "forbidden_arcanus:edelwood_bat_bucket",
+  "forbidden_arcanus:edelwood_bat_soup_bucket",
+  "goety:philosophers_mace",
+  "magistuarmory:club",
+  "medievalcraftweapons:ib_mace",
+  "medievalcraftweapons:ibh_mace",
+  "medievalcraftweapons:mace",
+  "medievalcraftweapons:morning_star",
+  "tanukidecor:neon_club_sign",
+  "trials:mace",
+  "unusualprehistory:handmade_club"
+ ]
+}
