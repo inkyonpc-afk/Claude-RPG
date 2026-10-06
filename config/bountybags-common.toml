@@ -1,0 +1,62 @@
+
+#Bounty Bags Configuration
+[general]
+	#Whether bounty bags should drop from mobs at all
+	enableDrops = true
+	#Whether mobs in the Nether should have increased drop rates
+	enableNetherBonus = true
+	#Whether mobs in the End should have increased drop rates
+	enableEndBonus = true
+	#Whether boss mobs should use special drop rates
+	enableBossSpecialRates = true
+	#Whether to allow ALL aggressive/hostile mobs to drop bounty bags (ignores allowedMobTypes list)
+	useAllAggressiveMobs = true
+	#Enable detailed debug logging for troubleshooting (logs bag drops, openings, luck upgrades, etc.)
+	enableDebugLogging = false
+	#Allow non-operators to open the read-only bag outcome viewer
+	allowPublicLootView = true
+	#Minecraft command permission level required to edit bag loot on a server (2 is the normal operator level)
+	#Range: 0 ~ 4
+	lootEditorPermissionLevel = 2
+
+#Luck enchantment effects - Luck-based upgrades use diminishing returns: each successive upgrade becomes harder. Formula: chance = baseChance * (1 - diminishingFactor)^upgradesApplied. Example: with 8% base chance and 50% diminishing, first upgrade = 8%, second = 4%, third = 2%, fourth = 1%
+[luck_effects]
+	#Enable luck-based tier upgrades when opening bags
+	enableLuckTierUpgrade = true
+	#Base chance per luck point to upgrade bag tier (0.0 = 0%, 1.0 = 100%)
+	#Range: 0.0 ~ 1.0
+	luckTierUpgradeChance = 0.08
+	#Maximum number of tier upgrades possible per bag opening
+	#Range: 1 ~ 3
+	luckMaxTierUpgrades = 1
+	#Enable diminishing returns for luck-based upgrades (makes each upgrade harder)
+	enableLuckDiminishingReturns = true
+	#Diminishing returns multiplier applied to each successive upgrade (0.0 = no diminishing, <1.0 = diminishing, avoid 1.0 to prevent zero chance)
+	#Range: 0.0 ~ 0.99
+	luckDiminishingReturns = 0.5
+
+#Mob type configuration
+[mob_types]
+	#List of mob types that can drop bounty bags (use entity type registry names)
+	allowedMobTypes = ["minecraft:zombie", "minecraft:skeleton", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "minecraft:enderman", "minecraft:blaze", "minecraft:ghast", "minecraft:witch", "minecraft:pillager", "minecraft:vindicator", "minecraft:evoker", "minecraft:husk", "minecraft:stray", "minecraft:drowned", "minecraft:phantom", "minecraft:ravager", "minecraft:piglin_brute", "minecraft:zombified_piglin", "minecraft:hoglin", "minecraft:zoglin", "minecraft:wither_skeleton", "minecraft:guardian", "minecraft:elder_guardian", "minecraft:shulker", "minecraft:vex", "minecraft:slime", "minecraft:magma_cube"]
+	#List of mob types considered as bosses (use entity type registry names)
+	bossMobTypes = ["minecraft:ender_dragon", "minecraft:warden", "minecraft:wither"]
+
+#Individual mob drop rate multipliers
+[individual_mob_multipliers]
+	#Drop rate multiplier specifically for zombies
+	#Range: 0.0 ~ 10.0
+	zombieDropMultiplier = 1.0
+	#Drop rate multiplier specifically for skeletons
+	#Range: 0.0 ~ 10.0
+	skeletonDropMultiplier = 1.0
+	#Drop rate multiplier specifically for creepers
+	#Range: 0.0 ~ 10.0
+	creeperDropMultiplier = 1.2
+	#Drop rate multiplier specifically for spiders
+	#Range: 0.0 ~ 10.0
+	spiderDropMultiplier = 0.8
+	#Drop rate multiplier specifically for endermen
+	#Range: 0.0 ~ 10.0
+	endermanDropMultiplier = 1.25
+

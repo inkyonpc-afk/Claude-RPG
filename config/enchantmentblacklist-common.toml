@@ -1,0 +1,8 @@
+#Whether or not to strip blacklisted enchantments from previously enchanted items upon world load.
+forceCompliance = false
+#Whether or not to treat the blacklist as a whitelist, causing only listed enchantmetns to be allowed.
+useWhitelist = false
+#A list of enchantments to blacklist on startup. Wildcards are allowed in the path not the namespace. 
+#Example entries: ["minecraft:binding_curse", "minecraft:mending", "somemod:*"]
+enchantments = []
+

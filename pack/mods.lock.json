@@ -2922,19 +2922,6 @@
   "deps": []
  },
  {
-  "addonID": 817423,
-  "name": "AzureLib",
-  "fileId": 7066970,
-  "fileName": "azurelib-neo-1.20.1-3.1.17.jar",
-  "sha1": "f43023b86f3c02bf2f45ea797a88676da2126795",
-  "url": "https://cdn.modrinth.com/data/7zlUOZvb/versions/xLZ34avd/azurelib-neo-1.20.1-3.1.17.jar",
-  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\azurelib-neo-1.20.1-3.1.17.jar",
-  "category": "lib",
-  "status": "dep",
-  "why": "dependency of Cataclysm: Spellbooks",
-  "deps": []
- },
- {
   "addonID": 1264423,
   "name": "BaguetteLib",
   "fileId": 7544807,
@@ -3351,7 +3338,7 @@
   ]
  },
  {
-  "addonID": -9,
+  "addonID": -8,
   "name": "Jupiter",
   "fileId": null,
   "fileName": "jupiter-2.3.7-1.20.1-forge.jar",
@@ -3780,7 +3767,7 @@
   "deps": []
  },
  {
-  "addonID": -8,
+  "addonID": -7,
   "name": "Uranus",
   "fileId": null,
   "fileName": "uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
@@ -3808,7 +3795,7 @@
   "deps": []
  },
  {
-  "addonID": -6,
+  "addonID": -5,
   "name": "Ars 'n Spells",
   "fileId": null,
   "fileName": "ars_n_spells-3.3.5.jar",
@@ -3884,23 +3871,6 @@
   "deps": []
  },
  {
-  "addonID": -5,
-  "name": "Cataclysm: Spellbooks",
-  "fileId": null,
-  "fileName": "cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
-  "sha1": "57fbb161849fca19aa12632944b01ce12760c4c4",
-  "url": "https://cdn.modrinth.com/data/3FEg0A8D/versions/e7VE8bSy/cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
-  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
-  "category": "magic",
-  "status": "std",
-  "why": "candidate",
-  "deps": [
-   551586,
-   817423,
-   855414
-  ]
- },
- {
   "addonID": 639653,
   "name": "Dave's Potioneering",
   "fileId": 6727871,
@@ -3916,7 +3886,7 @@
   ]
  },
  {
-  "addonID": -7,
+  "addonID": -6,
   "name": "Eidolon:Repraised",
   "fileId": null,
   "fileName": "eidolon_repraised-1.20.1-0.3.8.15.jar",
@@ -4555,8 +4525,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   -8,
-   -9
+   -7,
+   -8
   ]
  },
  {
@@ -7277,10 +7247,10 @@
   "addonID": 636608,
   "name": "Open Parties and Claims",
   "fileId": 8472285,
-  "fileName": "open-parties-and-claims-forge-1.20.1-0.28.1.jar",
-  "sha1": "0f7bd20ae44f6e6588da8a7d5bb573bdcedd0ee2",
-  "url": "https://edge.forgecdn.net/files/8472/285/open-parties-and-claims-forge-1.20.1-0.28.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\open-parties-and-claims-forge-1.20.1-0.28.1.jar",
+  "fileName": "open-parties-and-claims-forge-1.20.1-0.32.7.jar",
+  "sha1": "a42e6c94af7067c33e186029bcce42417d694579",
+  "url": "https://cdn.modrinth.com/data/gF3BGWvG/versions/PkZL3SuC/open-parties-and-claims-forge-1.20.1-0.32.7.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\open-parties-and-claims-forge-1.20.1-0.32.7.jar",
   "category": "qol",
   "status": "std",
   "why": "candidate",
@@ -10554,10 +10524,10 @@
   "addonID": 511770,
   "name": "Drippy Loading Screen",
   "fileId": 7248426,
-  "fileName": "drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
-  "sha1": "5c5e9dd39881b9b65dba7d7124690c51430a3ff1",
-  "url": "https://edge.forgecdn.net/files/7248/426/drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
+  "fileName": "drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+  "sha1": "a33d48809db8a2f1eb3667fe140d7a4104d80dca",
+  "url": "https://cdn.modrinth.com/data/v3CYg2V9/versions/Nof419YS/drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
   "category": "vis",
   "status": "core",
   "why": "candidate",

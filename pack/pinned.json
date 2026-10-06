@@ -85,30 +85,6 @@
   "license": "MIT"
  },
  {
-  "name": "Cataclysm: Spellbooks",
-  "replaces": "",
-  "category": "magic",
-  "status": "std",
-  "fileName": "cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
-  "url": "https://cdn.modrinth.com/data/3FEg0A8D/versions/e7VE8bSy/cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
-  "sha1": "57fbb161849fca19aa12632944b01ce12760c4c4",
-  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
-  "modids": [
-   "cataclysm_spellbooks",
-   "mixinextras"
-  ],
-  "requires": [
-   "azurelib",
-   "cataclysm",
-   "irons_spellbooks"
-  ],
-  "loader": "forge",
-  "source": "modrinth:cataclysm-spellbooks",
-  "version": "1.2.9-1.20.1",
-  "published": "2026-02-27",
-  "license": "LGPL-2.1-only"
- },
- {
   "name": "Ars 'n Spells",
   "replaces": "",
   "category": "magic",
@@ -249,5 +225,47 @@
   "version": "1.20.1-1.4.5-backport",
   "published": "2026-05-27",
   "license": "LicenseRef-All-Rights-Reserved"
+ },
+ {
+  "name": "Open Parties and Claims",
+  "replaces": "Open Parties and Claims",
+  "category": "qol",
+  "status": "std",
+  "fileName": "open-parties-and-claims-forge-1.20.1-0.32.7.jar",
+  "url": "https://cdn.modrinth.com/data/gF3BGWvG/versions/PkZL3SuC/open-parties-and-claims-forge-1.20.1-0.32.7.jar",
+  "sha1": "a42e6c94af7067c33e186029bcce42417d694579",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\open-parties-and-claims-forge-1.20.1-0.32.7.jar",
+  "modids": [
+   "openpartiesandclaims"
+  ],
+  "requires": [],
+  "loader": "forge",
+  "source": "modrinth:open-parties-and-claims",
+  "version": "forge-1.20.1-0.32.7",
+  "published": "2026-10-05",
+  "license": "LGPL-3.0-only"
+ },
+ {
+  "name": "Drippy Loading Screen",
+  "replaces": "Drippy Loading Screen",
+  "category": "vis",
+  "status": "core",
+  "fileName": "drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+  "url": "https://cdn.modrinth.com/data/v3CYg2V9/versions/Nof419YS/drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+  "sha1": "a33d48809db8a2f1eb3667fe140d7a4104d80dca",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+  "modids": [
+   "drippyloadingscreen",
+   "mixinextras"
+  ],
+  "requires": [
+   "fancymenu",
+   "konkrete"
+  ],
+  "loader": "forge",
+  "source": "modrinth:drippy-loading-screen",
+  "version": "3.1.5-1.20.1-forge",
+  "published": "2026-08-01",
+  "license": "LicenseRef-DSMSLv3"
  }
 ]

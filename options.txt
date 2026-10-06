@@ -1,0 +1,12 @@
+onboardAccessibility:false
+fullscreen:false
+pauseOnLostFocus:false
+renderDistance:10
+simulationDistance:8
+maxFps:144
+enableVsync:true
+guiScale:2
+tutorialStep:none
+joinedFirstServer:true
+skipMultiplayerWarning:true
+soundCategory_music:0.4

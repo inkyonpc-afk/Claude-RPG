@@ -1,0 +1,3 @@
+# The amount that stew and soup may stack to. Default: 8
+stackable_amount = 8
+

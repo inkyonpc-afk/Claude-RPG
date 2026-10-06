@@ -481,7 +481,7 @@ ext | goety | std | necromancy and summoning
 ext | eidolon-repraised | test |
 ext | iceandfire-ce | core | dragons (Community Edition)
 ext | wyrmroost | std | dragons
-ext | cataclysm-spellbooks | std |
+ext | cataclysm-spellbooks | skip | all 1.2.x builds extend Cataclysm Ancient_Remnant_Rework_Renderer, renamed in Cataclysm 3.31: client crash
 ext | to-tweaks-irons-spells | std | T.O Magic 'n Extras (CurseForge only)
 ext | irons-spells-n-spellbooks-ice-and-fire | std |
 ext | ars-n-spells | std |
