@@ -38,3 +38,9 @@ EMI
 Dynamic Crosshair
 Loot Beams: Relooted!
 Ok Zoomer - It's Zoom!
+Certain Questing Additions
+Relics
+Blaze Gear
+CoFH Core
+Blowguns
+Fragmentum

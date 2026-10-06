@@ -1,4 +1,4 @@
-selected mods: 825  (candidates 753, deps 72)
+selected mods: 818  (candidates 749, deps 69)
 external lines without a pin: eidolon-repraised, to-tweaks-irons-spells, irons-spells-n-spellbooks-ice-and-fire
 unmatched (0): 
 ambiguous (0):

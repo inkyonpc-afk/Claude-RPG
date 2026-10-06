@@ -4,7 +4,7 @@ Usage: python tools/autofix_client.py <server_test args...>   (e.g. --cats qol -
 import json, os, re, subprocess, sys
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 lock = json.load(open(os.path.join(ROOT, "pack", "mods.lock.json"), encoding="utf-8"))
-by_file = {e["fileName"]: e["name"] for e in lock}
+by_file = {e["fileName"]: e["name"] for e in lock if e["status"] != "core"}   # never auto-exclude core mods
 args = sys.argv[1:]
 tag = args[args.index("--tag") + 1] if "--tag" in args else "run"
 for attempt in range(8):

@@ -122,8 +122,11 @@ while queue:
             selected[d] = dict(cat="lib", status="dep", why="dependency of " + mods[k]["name"])
             queue.append(d)
 
-BANNED = {"txnilib", "connectormod", "fabric_api", "forgified_fabric_api", "fabricloader", "connector_extras"}
+BANNED = {"spell_engine", "spell_power", "more_rpg_classes", "txnilib", "connectormod", "fabric_api", "forgified_fabric_api", "fabricloader", "connector_extras"}
 banned_hits = [(mods[k]["name"], selected[k]["why"]) for k in selected if BANNED & set(jm.get(k, {}).get("modids", []))]
+needing = [(mods[k]["name"], sorted(mods[b]["name"] for b in deps_of(k) if b in selected and BANNED & set(jm.get(b, {}).get("modids", [])))) for k in selected if k in jm and any(BANNED & set(jm.get(b, {}).get("modids", [])) for b in deps_of(k))]
+if banned_hits:
+    print("mods requiring banned libs:", needing)
 if banned_hits:
     print("BANNED MODS SELECTED:", banned_hits)
     sys.exit(2)

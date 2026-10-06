@@ -375,8 +375,8 @@ acc | Enigmatic Legacy | std |
 acc | Enigmatic Addons | std |
 acc | Majrusz's Accessories | std |
 acc | Rings of Ascension | std |
-acc | Jewelry | std |
-acc | Additional Jewelry | std |
+acc | Jewelry | skip | RPG Series: needs Spell Engine stack (rejected)
+acc | Additional Jewelry | skip | RPG Series: needs Spell Engine stack (rejected)
 acc | Epic Power Bracelets | test |
 acc | Terra Curio | std |
 acc | Wizard Terra Curios | test |
@@ -460,7 +460,7 @@ magic | Ars Elemental | std |
 magic | Too Many Glyphs | std |
 magic | Ars Ocultas | test |
 magic | Forbidden and Arcanus | std |
-magic | Alshanex's Familiars | std |
+magic | Alshanex's Familiars | skip | 1.20.1 build 1.1.2 too old for Iron's Spells 3.16.3 (ClassNotFound SimpleAttributeCurio)
 magic | Majo's Spell Enchantment | test |
 magic | The Conjurer | test |
 magic | Mahou Tsukai | test |
@@ -495,7 +495,7 @@ mobs | Alex's Mobs | core |
 mobs | Alex's Caves | core |
 mobs | TACT | std |
 mobs | Born in Chaos | std |
-mobs | Born In Configuration | std |
+mobs | Born In Configuration | skip | requires older Born in Chaos than installed
 mobs | Bosses of Mass Destruction | std |
 mobs | Bosses'Rise | std |
 mobs | Ash Of Sin | std |
