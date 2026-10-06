@@ -1,0 +1,341 @@
+{
+	id: "3EE45B1FF632881C"
+	filename: "02_armor"
+	title: "Armor and Defense"
+	subtitle: "A suit of armor is a decision about what you are afraid of."
+	icon: "minecraft:iron_chestplate"
+	order_index: 2
+	group: "40103B7AFEA824B7"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -10.6d
+			y: -8.74d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/armor.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "F2C507BE48502FF7"
+			title: "What Armor Is For"
+			description: ["Armor reduces physical damage. Toughness caps what each hit can do. Resistances and wards cover magic. Armor is never enough alone."]
+			icon: "minecraft:iron_chestplate"
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "C714580EA9E9E2ED"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "817F3B5A9ABC5AC4"
+						type: "xp"
+						xp: 15
+					}
+			]
+		},
+		{
+			id: "1141BF6A1B050AFE"
+			title: "Leather"
+			description: ["Light, quiet, fast. Good for rogues and runners."]
+			icon: "minecraft:leather_chestplate"
+			x: 2.2d
+			y: -2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "C70A6DC3C42A9D55"
+						type: "item"
+						item: "minecraft:leather_chestplate"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "1BBEDE4977748B35"
+						type: "xp"
+						xp: 15
+					}
+			]
+			dependencies: ["F2C507BE48502FF7"]
+		},
+		{
+			id: "E5B0BD8866552606"
+			title: "Chain"
+			description: ["Middle ground: flexible and decently protective."]
+			icon: "minecraft:chainmail_chestplate"
+			x: 2.2d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "2E2EC28E94061318"
+						type: "item"
+						item: "minecraft:chainmail_chestplate"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "EBAADA98015086AC"
+						type: "xp"
+						xp: 20
+					}
+			]
+			dependencies: ["F2C507BE48502FF7"]
+		},
+		{
+			id: "8BB5079ADC7C823E"
+			title: "Iron"
+			description: ["The honest standard: solid, available, repairable."]
+			icon: "minecraft:iron_chestplate"
+			x: 2.2d
+			y: 0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "368452DCEF9355FA"
+						type: "item"
+						item: "minecraft:iron_chestplate"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "92A1EF809873DDE6"
+						type: "xp"
+						xp: 20
+					}
+			]
+			dependencies: ["F2C507BE48502FF7"]
+		},
+		{
+			id: "AF8BA5B98960664C"
+			title: "Knight's Plate"
+			description: ["Epic Knights armors bring distinct medieval silhouettes: barbute, sallet, armet. Heavy plate slows you; the skill tree decides how much you mind."]
+			icon: "minecraft:iron_helmet"
+			x: 4.4d
+			y: 0.3d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "857879DEBAE2F1F4"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "EB8FF9ECB557322E"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["8BB5079ADC7C823E"]
+		},
+		{
+			id: "C8D6C6935B9F34B9"
+			title: "Shield Craft"
+			description: ["Shields block, parry and bash. They use stamina and durability; the best ones are earned, not crafted."]
+			icon: "minecraft:shield"
+			x: 4.4d
+			y: 2.1d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "2F5BA8F35A158C70"
+						type: "item"
+						item: "minecraft:shield"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "DA44843325A64F01"
+						type: "xp"
+						xp: 25
+					}
+			]
+			dependencies: ["8BB5079ADC7C823E"]
+		},
+		{
+			id: "20D8276B978016B6"
+			title: "Naga Scale"
+			description: ["Forest-forged scale armor with a real silhouette and real resistance."]
+			icon: "twilightforest:naga_chestplate"
+			x: 6.6000000000000005d
+			y: -1.5d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "0B9A323BE0C9E0FD"
+						type: "item"
+						item: "twilightforest:naga_chestplate"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "1119A636A257576F"
+						type: "xp"
+						xp: 60
+					}
+			]
+			optional: true
+			dependencies: ["AF8BA5B98960664C"]
+		},
+		{
+			id: "4B99403D749D096E"
+			title: "Arctic Fur"
+			description: ["Warm, light, and surprisingly sturdy. A cold-weather armor for the long road."]
+			icon: "twilightforest:arctic_fur"
+			x: 4.4d
+			y: -3.3d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "09224B8D4EDAE2A3"
+						type: "item"
+						item: "twilightforest:arctic_fur"
+						count: 4
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "5133DE005EC05705"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["1141BF6A1B050AFE"]
+		},
+		{
+			id: "8FD1FD8ABA541229"
+			title: "Netherite Plate"
+			description: ["The last tier of vanilla armor. It is where progression began, not where it ends."]
+			icon: "minecraft:netherite_chestplate"
+			x: 6.6000000000000005d
+			y: 0.3d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "5D0D9D6216183FFE"
+						type: "item"
+						item: "minecraft:netherite_chestplate"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "58A77054B922C5E2"
+						type: "xp"
+						xp: 120
+					}
+			]
+			dependencies: ["AF8BA5B98960664C"]
+		},
+		{
+			id: "F0D685F31A86E73F"
+			title: "Mage Robes"
+			description: ["Robes and cowls add spell power and cooldown reduction at the cost of armor. Choose a school: pyromancer, cryomancer, priest, archevoker."]
+			icon: "irons_spellbooks:pyromancer_helmet"
+			x: 2.2d
+			y: 2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "70FC6A0BEBAC40D3"
+						type: "item"
+						item: "irons_spellbooks:pyromancer_helmet"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "708BA7A23D3FC231"
+						type: "xp"
+						xp: 60
+					}
+			]
+			dependencies: ["F2C507BE48502FF7"]
+		},
+		{
+			id: "4C8B50EF502DD38C"
+			title: "Mythic Armor"
+			description: ["Netherite mage armor is the end of the road for plain casters: sturdy, warded, and ready for sockets."]
+			icon: "irons_spellbooks:netherite_mage_chestplate"
+			x: 8.8d
+			y: 1.5d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "E5BBE679459A6F80"
+						type: "item"
+						item: "irons_spellbooks:netherite_mage_chestplate"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "708A2A527D284E2B"
+						type: "xp"
+						xp: 150
+					}
+			]
+			dependencies: ["F0D685F31A86E73F", "8FD1FD8ABA541229"]
+		},
+		{
+			id: "6ED9CB1458CF239A"
+			title: "A Matching Set"
+			description: ["Armor sets give set bonuses when worn together. Mix and match to chase a build, or commit to one set and love it."]
+			icon: "minecraft:diamond_chestplate"
+			x: 6.6000000000000005d
+			y: 2.1d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D2A1BF1EA2A9D43D"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "82C46670B4B4E66D"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["AF8BA5B98960664C"]
+		}
+	]
+}

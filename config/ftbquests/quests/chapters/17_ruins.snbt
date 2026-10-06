@@ -1,0 +1,476 @@
+{
+	id: "D5472CDE0923FA02"
+	filename: "17_ruins"
+	title: "Ruins, Towers and Camps"
+	subtitle: "Common places hold common things: supplies, a story, a little luck."
+	icon: "minecraft:mossy_stone_bricks"
+	order_index: 17
+	group: "BA29B6D65C079795"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -9.5d
+			y: -8.66d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/structures.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "34CFC877343A8EC2"
+			title: "A World That Remembers"
+			description: ["Structures come in tiers. Camps and ruins hold supplies; towers and forts hold decent gear; dungeons and castles hold real treasure; mega-dungeons and boss fortresses hold legends.", "The harder a place is to reach, the better its loot. A chest in a hovel will not give you endgame gear."]
+			icon: "minecraft:map"
+			x: 0.0d
+			y: 0.0d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "EDB6F6501C5EF515"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "86C2553FA0F673A4"
+						type: "xp"
+						xp: 20
+					}
+			]
+		},
+		{
+			id: "43E4E65DBC1216C6"
+			title: "A Village"
+			description: ["Safe harbour, trading, a bed. Villages are the first places of rest."]
+			icon: "minecraft:bell"
+			x: 2.2d
+			y: -6.3d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D425BDAAE8AF06B3"
+						type: "structure"
+						structure: "minecraft:village_plains"
+					}
+			]
+			rewards: [
+					{
+						id: "6F8C1D3344DD7680"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["34CFC877343A8EC2"]
+		},
+		{
+			id: "E7343E5B16186ECC"
+			title: "Pillager Outpost"
+			description: ["Hard to approach, rewarding to clear."]
+			icon: "minecraft:crossbow"
+			x: 4.4d
+			y: -6.75d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "4363428BA6075AD7"
+						type: "structure"
+						structure: "minecraft:pillager_outpost"
+					}
+			]
+			rewards: [
+					{
+						id: "535E11BE8D5E3E43"
+						type: "xp"
+						xp: 60
+					}
+			]
+			dependencies: ["43E4E65DBC1216C6"]
+		},
+		{
+			id: "37948E5435009B64"
+			title: "An Old Mineshaft"
+			description: ["Cobwebs, spawners, and iron. Take a torch for every exit."]
+			icon: "minecraft:rail"
+			x: 2.2d
+			y: -4.5d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "3F4ACA9CE53F9EAF"
+						type: "structure"
+						structure: "minecraft:mineshaft"
+					}
+			]
+			rewards: [
+					{
+						id: "3A0009322BF767D6"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["34CFC877343A8EC2"]
+		},
+		{
+			id: "BF8304B6EEC535B7"
+			title: "Ruined Portal"
+			description: ["A half-built gate in a field. Loot, obsidian, and a place to rest."]
+			icon: "minecraft:crying_obsidian"
+			x: 2.2d
+			y: -2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "DC6284CA47C81DBD"
+						type: "structure"
+						structure: "minecraft:ruined_portal"
+					}
+			]
+			rewards: [
+					{
+						id: "0FA6AB247EE3C79A"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["34CFC877343A8EC2"]
+		},
+		{
+			id: "58F0C5130B333A97"
+			title: "Abandoned Temple"
+			description: ["A temple pulled into the earth by roots. Smaller than you expect, more dangerous than you hope."]
+			icon: "minecraft:mossy_stone_bricks"
+			x: 2.2d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "DEB297ED04A5D609"
+						type: "structure"
+						structure: "dungeons_arise:abandoned_temple"
+					}
+			]
+			rewards: [
+					{
+						id: "53EC0D90E06587D5"
+						type: "xp"
+						xp: 60
+					}
+			]
+			dependencies: ["34CFC877343A8EC2"]
+		},
+		{
+			id: "73C693D42E5B3508"
+			title: "Bandit Towers"
+			description: ["A tall camp of cutthroats. Bring a shield."]
+			icon: "minecraft:crossbow"
+			x: 6.6000000000000005d
+			y: -6.75d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "26429A262AB2AD3A"
+						type: "structure"
+						structure: "dungeons_arise:bandit_towers"
+					}
+			]
+			rewards: [
+					{
+						id: "07F74981492AC9B3"
+						type: "xp"
+						xp: 70
+					}
+			]
+			dependencies: ["E7343E5B16186ECC"]
+		},
+		{
+			id: "3ECF4C404E7B005C"
+			title: "Illager Fort"
+			description: ["Walls, banners and a heavy door: the Illagers do not hide."]
+			icon: "minecraft:iron_axe"
+			x: 8.8d
+			y: -6.75d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "2A5665A3FA9CC45B"
+						type: "structure"
+						structure: "dungeons_arise:illager_fort"
+					}
+			]
+			rewards: [
+					{
+						id: "D97366A8FFFAAC7E"
+						type: "xp"
+						xp: 80
+					}
+			]
+			dependencies: ["73C693D42E5B3508"]
+		},
+		{
+			id: "09E69AE92907784D"
+			title: "A Lighthouse"
+			description: ["A light on a cliff; a keeper who has been gone a long while."]
+			icon: "minecraft:lantern"
+			x: 2.2d
+			y: 0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "48F59FFFC4DA6A3D"
+						type: "structure"
+						structure: "dungeons_arise:lighthouse"
+					}
+			]
+			rewards: [
+					{
+						id: "761952C0A3CB21CD"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["34CFC877343A8EC2"]
+		},
+		{
+			id: "7EB24978202E628F"
+			title: "Monastery"
+			description: ["Silent monks, quiet corridors and a library of old books."]
+			icon: "minecraft:bell"
+			x: 4.4d
+			y: -1.35d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "61148146B519C6E4"
+						type: "structure"
+						structure: "dungeons_arise:monastery"
+					}
+			]
+			rewards: [
+					{
+						id: "67D937A32D09CAF4"
+						type: "xp"
+						xp: 80
+					},
+					{
+						id: "D6BE6EF054397B5E"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t2"
+						elevate: true
+						silent: true
+						title: "Tier 2 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["58F0C5130B333A97"]
+		},
+		{
+			id: "27C94687CE8F95A3"
+			title: "A Dungeon"
+			description: ["Rooms of spawners and loot, a classic."]
+			icon: "minecraft:spawner"
+			x: 2.2d
+			y: 2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D99422928EA5683C"
+						type: "structure"
+						structure: "betterdungeons:skeleton_dungeon"
+					}
+			]
+			rewards: [
+					{
+						id: "B3713F6B57E886C5"
+						type: "xp"
+						xp: 60
+					}
+			]
+			dependencies: ["34CFC877343A8EC2"]
+		},
+		{
+			id: "2CA53FC2A165217A"
+			title: "Desert Temple"
+			description: ["Deep in the desert, a trap and a chest."]
+			icon: "minecraft:sandstone"
+			x: 4.4d
+			y: 2.25d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "423DB7CE4DC39901"
+						type: "structure"
+						structure: "minecraft:desert_pyramid"
+					}
+			]
+			rewards: [
+					{
+						id: "876A67FD94ACED52"
+						type: "xp"
+						xp: 60
+					}
+			]
+			dependencies: ["27C94687CE8F95A3"]
+		},
+		{
+			id: "2480036DF1F9150D"
+			title: "Jungle Temple"
+			description: ["Arrows, levers and a secret room."]
+			icon: "minecraft:mossy_cobblestone"
+			x: 4.4d
+			y: 4.05d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "90729BBFDFDBBC3D"
+						type: "structure"
+						structure: "minecraft:jungle_pyramid"
+					}
+			]
+			rewards: [
+					{
+						id: "E8F7DC1F08D9F67B"
+						type: "xp"
+						xp: 60
+					}
+			]
+			optional: true
+			dependencies: ["27C94687CE8F95A3"]
+		},
+		{
+			id: "A6CA80F8E2AE3333"
+			title: "Ocean Monument"
+			description: ["A sea-temple with guardians that hate air. Bring water breathing."]
+			icon: "minecraft:prismarine"
+			x: 6.6000000000000005d
+			y: 2.25d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "2FB40374351952D6"
+						type: "structure"
+						structure: "minecraft:monument"
+					}
+			]
+			rewards: [
+					{
+						id: "B5F1FBFED2D640D7"
+						type: "xp"
+						xp: 120
+					},
+					{
+						id: "42F9AE9CB8F76CFC"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t2"
+						elevate: true
+						silent: true
+						title: "Tier 2 supply cache"
+					}
+			]
+			dependencies: ["2CA53FC2A165217A"]
+		},
+		{
+			id: "F2746ED10AB9FB7F"
+			title: "A Shipwreck"
+			description: ["A hull on a reef. Treasure maps and rot."]
+			icon: "minecraft:oak_boat"
+			x: 2.2d
+			y: 4.5d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "B654F7EA157F2842"
+						type: "structure"
+						structure: "minecraft:shipwreck"
+					}
+			]
+			rewards: [
+					{
+						id: "0FDBBE15AA53A3DB"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["34CFC877343A8EC2"]
+		},
+		{
+			id: "AAFB6944B498FC9F"
+			title: "Ancient Ruins"
+			description: ["A ruin from before the Crown's fall. Some holds a staircase down."]
+			icon: "minecraft:mossy_cobblestone"
+			x: 2.2d
+			y: 6.3d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "10A483DE95B55DF5"
+						type: "structure"
+						structure: "minecraft:ocean_ruin_cold"
+					}
+			]
+			rewards: [
+					{
+						id: "56B4B1A599A99DCB"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["34CFC877343A8EC2"]
+		},
+		{
+			id: "2CDB9217FD55D69B"
+			title: "Explorer"
+			description: ["Visit ten different structures. You do not need to clear them all: just remember where the good ones are."]
+			icon: "minecraft:map"
+			x: 11.0d
+			y: -0.75d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "00AB96DFB43B3603"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "099F766D0C504F7B"
+						type: "xp"
+						xp: 150
+					},
+					{
+						id: "EFE82EA62686DBB0"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["A6CA80F8E2AE3333", "3ECF4C404E7B005C", "2CA53FC2A165217A"]
+		}
+	]
+}

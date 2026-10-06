@@ -1,0 +1,19 @@
+{
+ "type": "apoli:attribute",
+ "name": "Veilborn Mind",
+ "description": "+25 maximum mana and +8% mana regeneration.",
+ "modifiers": [
+  {
+   "attribute": "irons_spellbooks:max_mana",
+   "name": "Wisp-touched: Veilborn Mind",
+   "operation": "addition",
+   "value": 25.0
+  },
+  {
+   "attribute": "irons_spellbooks:mana_regen",
+   "name": "Wisp-touched: Veilborn Mind",
+   "operation": "multiply_base",
+   "value": 0.08
+  }
+ ]
+}

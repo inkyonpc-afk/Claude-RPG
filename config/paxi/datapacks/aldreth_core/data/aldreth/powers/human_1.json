@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Fortunate Birth",
+ "description": "A little luck follows the Emberborn.",
+ "modifier": {
+  "attribute": "minecraft:generic.luck",
+  "name": "Emberborn Human: Fortunate Birth",
+  "operation": "addition",
+  "value": 1.0
+ }
+}

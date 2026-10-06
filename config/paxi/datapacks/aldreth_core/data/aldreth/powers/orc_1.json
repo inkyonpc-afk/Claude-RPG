@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Thick Skull",
+ "description": "+5% knockback resistance.",
+ "modifier": {
+  "attribute": "minecraft:generic.knockback_resistance",
+  "name": "Ashen Orc: Thick Skull",
+  "operation": "addition",
+  "value": 0.05
+ }
+}

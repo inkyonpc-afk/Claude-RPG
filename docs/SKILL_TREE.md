@@ -529,9 +529,3 @@ _Steel and sorcery: spell-charged weapons, elemental enchantment, mobility and h
 - *Phantom Edge* (rogue-spellblade-b): +12% critical damage; +7% spell power; +5% attack speed
 - *Steel and Spell* (spellblade-warrior-a): +4% melee damage; +4% spell power
 - *Arcane Edge Training* (spellblade-warrior-b): +8% melee damage while wielding onehand; +7% spell power; +4% cast time reduction
-
-## Progression economy
-- **Points:** PST exchanges raw experience for points: 100 points maximum, costing 8 XP for the first and 700 XP for the last (curve between). Total about 35k XP, roughly the XP of reaching level ~95. Quests add free points via `/skilltree points add @s N`.
-- **Budget:** 100 points of 620 nodes (16%): a focused build reaches one or two keystones plus a bridge into a second region. Hybrids pay with distance.
-- **Respec:** Amnesia Scroll, 10% level penalty (config `defaultconfigs/skilltree-server.toml`). Scroll acquisition is gated in Phase 3 (boss materials).
-- **Validation:** `tools/build_skilltree.py` checks every attribute/effect id against the registry snapshot, connectivity from the four starts, and dangling links. All 620 skills load in-game with zero PST errors (server log `Couldn't load passive skill` count = 0, 2026-10-06).

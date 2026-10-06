@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Short Stride",
+ "description": "-6% movement speed.",
+ "modifier": {
+  "attribute": "minecraft:generic.movement_speed",
+  "name": "Stoneborn Dwarf: Short Stride",
+  "operation": "multiply_base",
+  "value": -0.06
+ }
+}

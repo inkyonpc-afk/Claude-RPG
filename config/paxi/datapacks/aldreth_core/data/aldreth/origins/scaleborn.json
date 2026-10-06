@@ -1,0 +1,14 @@
+{
+ "icon": {
+  "item": "minecraft:dragon_breath"
+ },
+ "order": 6,
+ "impact": 3,
+ "name": "Scaleborn",
+ "description": "Thin-blooded kin of the old dragons: armored, proud and heavy.",
+ "powers": [
+  "aldreth:scaleborn_0",
+  "aldreth:scaleborn_1",
+  "aldreth:scaleborn_2"
+ ]
+}

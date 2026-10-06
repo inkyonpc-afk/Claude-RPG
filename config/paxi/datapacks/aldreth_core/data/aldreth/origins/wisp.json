@@ -1,0 +1,14 @@
+{
+ "icon": {
+  "item": "minecraft:amethyst_shard"
+ },
+ "order": 7,
+ "impact": 1,
+ "name": "Wisp-touched",
+ "description": "Spirit-kissed wanderers, half in the world and half in the Veil.",
+ "powers": [
+  "aldreth:wisp_0",
+  "aldreth:wisp_1",
+  "aldreth:wisp_2"
+ ]
+}

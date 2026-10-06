@@ -16,6 +16,7 @@ ap.add_argument("--shot", default="")
 ap.add_argument("--shot-at", default="")
 ap.add_argument("--tag", default="client")
 ap.add_argument("--keep", action="store_true")
+ap.add_argument("--script", default="", help="timed GUI actions: 'SECONDS:click x,y;SECONDS:key o;SECONDS:shot name'")
 ap.add_argument("--xmx", default="8G")
 a = ap.parse_args()
 
@@ -105,13 +106,19 @@ def reader():
         for ln in p.stdout:
             f.write(ln)
             f.flush()
-            for k, rx in (("sound", r"Sound engine started"), ("world", r"Preparing spawn area|Loaded \d+ advancements"),
+            for k, rx in (("sound", r"Sound engine started"), ("world", r"Preparing spawn area|Loaded \d+ advancements"), ("joined", r"joined the game|logged in with entity"),
                           ("fatal", r"Crash report saved|Mod Loading has failed|Minecraft has crashed")):
                 if k not in marks and re.search(rx, ln):
                     marks[k] = round(time.time() - t0)
 
 
 threading.Thread(target=reader, daemon=True).start()
+script = []
+for part in [x for x in a.script.split(";") if x.strip()]:
+    t, rest = part.split(":", 1)
+    verb, _, arg = rest.strip().partition(" ")
+    script.append((t.strip(), verb, arg))
+si = 0
 shots = [s for s in a.shot.split(",") if s]
 shot_at = [int(s) for s in a.shot_at.split(",") if s]
 done = 0
@@ -123,6 +130,21 @@ while p.poll() is None and time.time() - t0 < a.wait:
                            capture_output=True, text=True)
         print(r.stdout.strip() or r.stderr.strip()[:200], flush=True)
         done += 1
+    while si < len(script):
+        tt = script[si][0]
+        if tt.startswith("j"):
+            if "joined" not in marks or time.time() - t0 < marks["joined"] + int(tt[1:]):
+                break
+        elif time.time() - t0 < int(tt):
+            break
+        _, verb, arg = script[si]
+        si += 1
+        if verb == "shot":
+            outp = ROOT / ".build" / "shots" / (arg + ".png")
+            outp.parent.mkdir(parents=True, exist_ok=True)
+            arg = str(outp)
+        r = subprocess.run(["powershell", "-NoProfile", "-File", str(ROOT / "tools" / "gui.ps1"), "-ProcId", str(p.pid), "-Action", verb, "-Arg", arg], capture_output=True, text=True)
+        print((r.stdout.strip() or r.stderr.strip()[:200]), flush=True)
     if "fatal" in marks and time.time() - t0 - marks["fatal"] > 5:
         break
     time.sleep(2)

@@ -1,0 +1,14 @@
+{
+ "icon": {
+  "item": "minecraft:iron_pickaxe"
+ },
+ "order": 2,
+ "impact": 2,
+ "name": "Stoneborn Dwarf",
+ "description": "Delvers under the Hollow Crown's mountains: sturdy, stubborn and tireless miners.",
+ "powers": [
+  "aldreth:dwarf_0",
+  "aldreth:dwarf_1",
+  "aldreth:dwarf_2"
+ ]
+}

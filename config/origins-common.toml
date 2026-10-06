@@ -91,3 +91,50 @@
 		"origins:fragile" = true
 		"origins:phantomize_overlay" = true
 
+	[origins."aldreth:dwarf"]
+		enabled = true
+		"aldreth:dwarf_0" = true
+		"aldreth:dwarf_1" = true
+		"aldreth:dwarf_2" = true
+
+	[origins."aldreth:hexblood"]
+		enabled = true
+		"aldreth:hexblood_0" = true
+		"aldreth:hexblood_1" = true
+		"aldreth:hexblood_2" = true
+
+	[origins."aldreth:wisp"]
+		enabled = true
+		"aldreth:wisp_0" = true
+		"aldreth:wisp_1" = true
+		"aldreth:wisp_2" = true
+
+	[origins."aldreth:orc"]
+		enabled = true
+		"aldreth:orc_0" = true
+		"aldreth:orc_1" = true
+		"aldreth:orc_2" = true
+
+	[origins."aldreth:elf"]
+		enabled = true
+		"aldreth:elf_0" = true
+		"aldreth:elf_1" = true
+		"aldreth:elf_2" = true
+
+	[origins."aldreth:human"]
+		enabled = true
+		"aldreth:human_0" = true
+		"aldreth:human_1" = true
+
+	[origins."aldreth:halfling"]
+		enabled = true
+		"aldreth:halfling_0" = true
+		"aldreth:halfling_1" = true
+		"aldreth:halfling_2" = true
+
+	[origins."aldreth:scaleborn"]
+		enabled = true
+		"aldreth:scaleborn_0" = true
+		"aldreth:scaleborn_1" = true
+		"aldreth:scaleborn_2" = true
+

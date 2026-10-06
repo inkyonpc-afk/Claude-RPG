@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Dull to Magic",
+ "description": "-10% spell power.",
+ "modifier": {
+  "attribute": "irons_spellbooks:spell_power",
+  "name": "Ashen Orc: Dull to Magic",
+  "operation": "multiply_base",
+  "value": -0.1
+ }
+}

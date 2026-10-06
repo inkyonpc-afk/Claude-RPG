@@ -1,0 +1,379 @@
+{
+	id: "1B20E9021B3A16B0"
+	filename: "11_building"
+	title: "Home, Hearth and Hall"
+	subtitle: "A base is a story you tell with blocks."
+	icon: "minecraft:oak_door"
+	order_index: 11
+	group: "CF1E96262114D2FD"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -11.7d
+			y: -8.44d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/building.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "E1B115E6731AC949"
+			title: "A Place to Come Home To"
+			description: ["The pack has a huge decoration library: furniture, lighting, windows, paths, roofs, paintings and more. Build a house you are proud of; the quest book will not tell you how."]
+			icon: "minecraft:red_bed"
+			x: 0.0d
+			y: 0.0d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "0F36BD192D7E3734"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "0E6EC694DA0BCF7C"
+						type: "xp"
+						xp: 20
+					}
+			]
+		},
+		{
+			id: "BD38A8DC8ED6CBDF"
+			title: "Furniture"
+			description: ["Chairs, tables, couches, shelves. Handcrafted and Macaw's furniture are everywhere."]
+			icon: "minecraft:oak_stairs"
+			x: 2.2d
+			y: -5.4d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "B7794EA5E85AF038"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "70657ACB152C8423"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["E1B115E6731AC949"]
+		},
+		{
+			id: "0B73270ED95979D7"
+			title: "Light and Lamps"
+			description: ["Torches, lanterns, sconces. Good light is the best decoration."]
+			icon: "minecraft:lantern"
+			x: 2.2d
+			y: -3.6d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "3BA4D03BD449C1A4"
+						type: "item"
+						item: "minecraft:lantern"
+						count: 4
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "FEE08FB8E6D0DDE0"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["E1B115E6731AC949"]
+		},
+		{
+			id: "60B581FE81032116"
+			title: "Paths and Roofs"
+			description: ["Macaw's and Twigs give you every roof and path you can imagine."]
+			icon: "minecraft:cobblestone_stairs"
+			x: 2.2d
+			y: -1.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "CD4B61379CEB1A83"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "FDFD22FC1AB5DCEB"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["E1B115E6731AC949"]
+		},
+		{
+			id: "8D25B24D36C0843C"
+			title: "Storage"
+			description: ["Sophisticated Backpacks and Storage replace a wall of chests. Carry a backpack."]
+			icon: "minecraft:chest"
+			x: 2.2d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "A491E7923070B3B7"
+						type: "item"
+						item: "minecraft:chest"
+						count: 4
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "0C1FF432FE44867B"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["E1B115E6731AC949"]
+		},
+		{
+			id: "BF5620C740F50E7E"
+			title: "A Workshop"
+			description: ["A smithing table, anvil, grindstone and enchanting table in one room is a workshop."]
+			icon: "minecraft:smithing_table"
+			x: 4.4d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "2EF443FF0B5A3D55"
+						type: "item"
+						item: "minecraft:smithing_table"
+						count: 1
+						consume_items: false
+					},
+					{
+						id: "5D63CC38B81351C0"
+						type: "item"
+						item: "minecraft:anvil"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "5AB3734595BC3ADB"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["8D25B24D36C0843C"]
+		},
+		{
+			id: "A6DAEE1B80485AEE"
+			title: "A Garden"
+			description: ["Plants make a house a home."]
+			icon: "minecraft:flower_pot"
+			x: 4.4d
+			y: -3.6d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "6DED2F831786A1DD"
+						type: "item"
+						item: "minecraft:flower_pot"
+						count: 2
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "12C1101B1D0C4B87"
+						type: "xp"
+						xp: 30
+					}
+			]
+			optional: true
+			dependencies: ["0B73270ED95979D7"]
+		},
+		{
+			id: "C6EE77C551529696"
+			title: "A Library"
+			description: ["Shelves, tomes, an enchanting table: the nerve centre of a caster's house."]
+			icon: "minecraft:bookshelf"
+			x: 6.6000000000000005d
+			y: -0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "BB59A582351EE125"
+						type: "item"
+						item: "minecraft:bookshelf"
+						count: 12
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "9067EF553DE8F366"
+						type: "xp"
+						xp: 50
+					}
+			]
+			optional: true
+			dependencies: ["BF5620C740F50E7E"]
+		},
+		{
+			id: "B9D33E43A26C6D99"
+			title: "A Stable"
+			description: ["Keep your mounts safe, fed and happy."]
+			icon: "minecraft:hay_block"
+			x: 2.2d
+			y: 1.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "A734165660E3560A"
+						type: "item"
+						item: "minecraft:hay_block"
+						count: 4
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "28DF77917DCEAA7F"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["E1B115E6731AC949"]
+		},
+		{
+			id: "39112235C461D44E"
+			title: "Claim Your Land"
+			description: ["Claim chunks with FTB Chunks or Open Parties and Claims. In multiplayer it is the difference between a home and a ruin."]
+			icon: "minecraft:white_banner"
+			x: 2.2d
+			y: 3.6d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "ABBE7972AD9B51DC"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "4CABC65306166623"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["E1B115E6731AC949"]
+		},
+		{
+			id: "CCB8E57C33027B73"
+			title: "Your Own Keep"
+			description: ["A castle of your own. Walls, towers and a gate."]
+			icon: "minecraft:stone_bricks"
+			x: 6.6000000000000005d
+			y: 1.35d
+			size: 1.3d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "9070F4437B0841EA"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "3F33CD2389210588"
+						type: "xp"
+						xp: 150
+					},
+					{
+						id: "8CED3D061CBCD240"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["BF5620C740F50E7E", "B9D33E43A26C6D99"]
+		},
+		{
+			id: "B5DB3400267CCDC7"
+			title: "A Gallery"
+			description: ["Paintings and posters give a house its personality."]
+			icon: "minecraft:painting"
+			x: 4.4d
+			y: -5.4d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "5745594B5D3EBFFE"
+						type: "item"
+						item: "minecraft:painting"
+						count: 3
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "899B81ED691F3E47"
+						type: "xp"
+						xp: 30
+					}
+			]
+			optional: true
+			dependencies: ["BD38A8DC8ED6CBDF"]
+		},
+		{
+			id: "01F61B6D40AB4582"
+			title: "A Sign Post"
+			description: ["Mark your territory."]
+			icon: "minecraft:oak_sign"
+			x: 2.2d
+			y: 5.4d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "A3F678446FB36A6D"
+						type: "item"
+						item: "minecraft:oak_sign"
+						count: 2
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "D7641C939A7DC275"
+						type: "xp"
+						xp: 20
+					}
+			]
+			optional: true
+			dependencies: ["E1B115E6731AC949"]
+		}
+	]
+}

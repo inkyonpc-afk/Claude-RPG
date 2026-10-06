@@ -1,0 +1,472 @@
+{
+	id: "377EDEE441BA40CC"
+	filename: "16_flying"
+	title: "The Sky Is a Reward"
+	subtitle: "Flight is earned, rationed and fenced. That is what makes it joyful."
+	icon: "iceandfire:hippogryph_egg"
+	order_index: 16
+	group: "BA29B6D65C079795"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -7.3d
+			y: -7.54d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/flying.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "4E5D7BD4A0336494"
+			title: "The Order of Flight"
+			description: ["Flight comes in steps. First the Aether's gentle flyers, confined to the Aether. Then the overworld hippogryph, slow and honest. Then dragons, which take real work. Last, wings: the End's gift.", "Every step is limited: boss arenas refuse fliers, dungeons dismount you at the door, and dragons need to grow up. Flight should feel like a reward, not a bypass."]
+			icon: "minecraft:feather"
+			x: 0.0d
+			y: 0.0d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "8B9021BB992BC0B7"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "FC8248A639AB9938"
+						type: "xp"
+						xp: 20
+					}
+			]
+		},
+		{
+			id: "865056FA118DAB8D"
+			title: "Sky Pigs"
+			description: ["A flying pig, saddled, in a realm made of clouds. This flight stays in the Aether."]
+			icon: "minecraft:saddle"
+			x: 2.2d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "E4812B2500FF106B"
+						type: "advancement"
+						advancement: "aether:mount_phyg"
+					}
+			]
+			rewards: [
+					{
+						id: "4657BB01CB0ECF8E"
+						type: "xp"
+						xp: 100
+					}
+			]
+			dependencies: ["4E5D7BD4A0336494"]
+		},
+		{
+			id: "DCA45D7CD039798B"
+			title: "The Moa"
+			description: ["Tall, fast and a good jumper. Not flight, but a series of soaring leaps."]
+			icon: "aether:blue_moa_egg"
+			x: 4.4d
+			y: -3.6d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "4CA776BE377D1D8E"
+						type: "advancement"
+						advancement: "aether:incubate_moa"
+					}
+			]
+			rewards: [
+					{
+						id: "3695814F02888DCE"
+						type: "xp"
+						xp: 80
+					}
+			]
+			optional: true
+			dependencies: ["865056FA118DAB8D"]
+		},
+		{
+			id: "ED2C00F34CA601EE"
+			title: "Flying Cow"
+			description: ["Cows with wings: a placid, charming mount for the Aether's islands."]
+			icon: "aether:holystone"
+			x: 4.4d
+			y: -1.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "987B22860366C2FB"
+						type: "kill"
+						entity: "aether:flying_cow"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "79F48DE6B6765351"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["865056FA118DAB8D"]
+		},
+		{
+			id: "92E0AD672B1D6BAC"
+			title: "Aerwhale"
+			description: ["A flying whale for the Aether's skies. Slow, steady and enormous."]
+			icon: "deep_aether:aerwhale_saddle"
+			x: 4.4d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "EEC4FAB39CA9D9B8"
+						type: "item"
+						item: "deep_aether:aerwhale_saddle"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "77FAE375C9ECA336"
+						type: "xp"
+						xp: 180
+					}
+			]
+			optional: true
+			dependencies: ["865056FA118DAB8D"]
+		},
+		{
+			id: "0E071C763E3FCE32"
+			title: "Hippogryph"
+			description: ["A real flying mount for the overworld: slow, honest, limited. It tires, it cannot enter dungeons, and it will not land in boss arenas."]
+			icon: "iceandfire:hippogryph_egg"
+			x: 4.4d
+			y: 1.8d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "17B30FE550AE3FC4"
+						type: "item"
+						item: "iceandfire:hippogryph_egg"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "6BE6208ABADBAA2A"
+						type: "xp"
+						xp: 200
+					}
+			]
+			dependencies: ["865056FA118DAB8D"]
+		},
+		{
+			id: "AFED0E8E5DDC3BC9"
+			title: "Amphithere"
+			description: ["A feathered serpent: fast in the air, uncomfortable on the ground. A hunter's mount."]
+			icon: "iceandfire:amphithere_feather"
+			x: 6.6000000000000005d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "B504C1251FEB5DB4"
+						type: "kill"
+						entity: "iceandfire:amphithere"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "9ED67200B0AF76B2"
+						type: "xp"
+						xp: 250
+					}
+			]
+			optional: true
+			dependencies: ["0E071C763E3FCE32"]
+		},
+		{
+			id: "6F19DE2E52DE1667"
+			title: "Subterranodon"
+			description: ["A cave-flier. Perfect for deep caverns and surprisingly agile in the open."]
+			icon: "alexscaves:heavy_bone"
+			x: 6.6000000000000005d
+			y: 0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "8034DF5D680E29E8"
+						type: "kill"
+						entity: "alexscaves:subterranodon"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "F142A3D33BDB8AAA"
+						type: "xp"
+						xp: 200
+					}
+			]
+			optional: true
+			dependencies: ["0E071C763E3FCE32"]
+		},
+		{
+			id: "8D98A5122EBA7D3C"
+			title: "A Wyvern"
+			description: ["Wyrmroost's wyverns and drakes: a family of small flyers, each with its own role and temperament."]
+			icon: "wyrmroost:dragon_egg"
+			x: 6.6000000000000005d
+			y: 2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "AD3149905C9D6C66"
+						type: "item"
+						item: "wyrmroost:dragon_egg"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "61AB1CA178C7E43D"
+						type: "xp"
+						xp: 250
+					}
+			]
+			optional: true
+			dependencies: ["0E071C763E3FCE32"]
+		},
+		{
+			id: "088A8248D9D06BED"
+			title: "A Dragon Hatchling"
+			description: ["A dragon takes five stages to grow up. Early on it is a pet; late on, a mount."]
+			icon: "iceandfire:dragonegg_red"
+			x: 6.6000000000000005d
+			y: 4.5d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "DDB9E5DACF37AF5E"
+						type: "advancement"
+						advancement: "iceandfire:iceandfire/dragon_egg"
+					}
+			]
+			rewards: [
+					{
+						id: "DFEDB4487BE4CD21"
+						type: "xp"
+						xp: 300
+					}
+			]
+			dependencies: ["0E071C763E3FCE32"]
+		},
+		{
+			id: "E515C94B18782D1B"
+			title: "Stage Three"
+			description: ["At stage three your dragon is large enough to carry you. At stage five it is large enough to carry a village."]
+			icon: "iceandfire:dragon_flute"
+			x: 8.8d
+			y: 4.5d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "24EF217131C9EDBB"
+						type: "advancement"
+						advancement: "iceandfire:iceandfire/dragon_staff"
+					}
+			]
+			rewards: [
+					{
+						id: "AEB738EBD455528C"
+						type: "xp"
+						xp: 400
+					}
+			]
+			dependencies: ["088A8248D9D06BED"]
+		},
+		{
+			id: "8B722EC857720829"
+			title: "A Dragon Rider"
+			description: ["You are riding a dragon. It does what you tell it, within limits: it will not fight you, and you will not fly through a boss arena."]
+			icon: "iceandfire:dragonsteel_fire_ingot"
+			x: 11.0d
+			y: 4.5d
+			size: 1.5d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "8C1E466C28D8DBF4"
+						type: "advancement"
+						advancement: "iceandfire:iceandfire/dragonarmor"
+					}
+			]
+			rewards: [
+					{
+						id: "90798EC25D59D893"
+						type: "xp"
+						xp: 600
+					},
+					{
+						id: "B0D4C5D001E2F163"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					},
+					{
+						id: "972826CED15D60D6"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			dependencies: ["E515C94B18782D1B"]
+		},
+		{
+			id: "B44EE0B248D48ED6"
+			title: "Elytra"
+			description: ["End-city wings: the unrestricted, human kind of flight."]
+			icon: "minecraft:elytra"
+			x: 13.200000000000001d
+			y: 3.6d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "5C0359DD7C690FDD"
+						type: "advancement"
+						advancement: "minecraft:end/elytra"
+					}
+			]
+			rewards: [
+					{
+						id: "E0FB032F94C44408"
+						type: "xp"
+						xp: 500
+					}
+			]
+			optional: true
+			dependencies: ["8B722EC857720829"]
+		},
+		{
+			id: "DBD0B093A81DA760"
+			title: "Dragon Wings"
+			description: ["Crafted from End materials, with a stamina bar and a rule: no flying inside the Wardens' places."]
+			icon: "icarus:black_dragon_wings"
+			x: 13.200000000000001d
+			y: 5.4d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "E8A63F93321C20DA"
+						type: "item"
+						item: "icarus:black_dragon_wings"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "43CB7160FBA2D890"
+						type: "xp"
+						xp: 600
+					}
+			]
+			optional: true
+			dependencies: ["8B722EC857720829"]
+		},
+		{
+			id: "6A24D6C24C815824"
+			title: "The Fenced Places"
+			description: ["Boss arenas, mega-dungeons and Warden cities dismount you. A dragon cannot carry you over a wall that the Wardens made to be climbed."]
+			icon: "minecraft:iron_bars"
+			x: 2.2d
+			y: 0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "7D67FF4AE5CFAE53"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "3ABA7ABD4702B1EF"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["4E5D7BD4A0336494"]
+		},
+		{
+			id: "657EAACB24075FCC"
+			title: "Sky-Walker"
+			description: ["Ride a dragon, glide on wings, soar on a Wyrmroost wyvern. The sky is a road."]
+			icon: "minecraft:nether_star"
+			x: 15.400000000000002d
+			y: 4.2d
+			size: 1.6d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "3B17FFD56CA2D644"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "BB34AB071C449442"
+						type: "xp"
+						xp: 1000
+					},
+					{
+						id: "67EB184D61548CE6"
+						type: "command"
+						command: "skilltree points add {p} 3"
+						elevate: true
+						silent: true
+						title: "3 skill points"
+					},
+					{
+						id: "883A5DD7ABF89ED4"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			dependencies: ["8B722EC857720829", "DBD0B093A81DA760", "8D98A5122EBA7D3C"]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+ "type": "apoli:attribute",
+ "name": "Infernal Gift",
+ "description": "+10% fire spell power and +15% fire magic resistance.",
+ "modifiers": [
+  {
+   "attribute": "irons_spellbooks:fire_spell_power",
+   "name": "Hexblood: Infernal Gift",
+   "operation": "multiply_base",
+   "value": 0.1
+  },
+  {
+   "attribute": "irons_spellbooks:fire_magic_resist",
+   "name": "Hexblood: Infernal Gift",
+   "operation": "multiply_base",
+   "value": 0.15
+  }
+ ]
+}

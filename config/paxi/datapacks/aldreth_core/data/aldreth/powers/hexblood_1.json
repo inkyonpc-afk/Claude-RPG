@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Cursed Line",
+ "description": "-15% holy magic resistance.",
+ "modifier": {
+  "attribute": "irons_spellbooks:holy_magic_resist",
+  "name": "Hexblood: Cursed Line",
+  "operation": "multiply_base",
+  "value": -0.15
+ }
+}

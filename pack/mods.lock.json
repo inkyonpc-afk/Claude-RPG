@@ -2612,21 +2612,6 @@
   ]
  },
  {
-  "addonID": 342623,
-  "name": "Healing Campfire",
-  "fileId": 6185733,
-  "fileName": "healingcampfire-1.20.1-6.2.jar",
-  "sha1": "12ece5053d1a95133dca38627d256f90cc94b3aa",
-  "url": "https://edge.forgecdn.net/files/6185/733/healingcampfire-1.20.1-6.2.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Prodigium Reforged\\mods\\healingcampfire-1.20.1-6.2.jar",
-  "category": "food",
-  "status": "std",
-  "why": "candidate",
-  "deps": [
-   342584
-  ]
- },
- {
   "addonID": 625110,
   "name": "Large Meals (An Add-on for Farmer's Delight)",
   "fileId": 5870553,
@@ -6743,21 +6728,6 @@
    404465,
    404468,
    419699
-  ]
- },
- {
-  "addonID": 912469,
-  "name": "FTB Quests Optimizer",
-  "fileId": 7922527,
-  "fileName": "FTBQuestsOptimizer-forge-2.1.0-1.20.1.jar",
-  "sha1": "112f99e8b07e9700678882d9b6245469f8eab00d",
-  "url": "https://edge.forgecdn.net/files/7922/527/FTBQuestsOptimizer-forge-2.1.0-1.20.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Prodigium Reforged\\mods\\FTBQuestsOptimizer-forge-2.1.0-1.20.1.jar",
-  "category": "qol",
-  "status": "std",
-  "why": "candidate",
-  "deps": [
-   289412
   ]
  },
  {

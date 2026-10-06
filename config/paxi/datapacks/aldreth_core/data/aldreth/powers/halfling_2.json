@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Small Frame",
+ "description": "-4 maximum health.",
+ "modifier": {
+  "attribute": "minecraft:generic.max_health",
+  "name": "Hearthfolk Halfling: Small Frame",
+  "operation": "addition",
+  "value": -4.0
+ }
+}

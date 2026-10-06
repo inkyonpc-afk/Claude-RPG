@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Lucky Foot",
+ "description": "+2 luck.",
+ "modifier": {
+  "attribute": "minecraft:generic.luck",
+  "name": "Hearthfolk Halfling: Lucky Foot",
+  "operation": "addition",
+  "value": 2.0
+ }
+}

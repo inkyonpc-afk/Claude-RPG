@@ -1,0 +1,368 @@
+{
+	id: "F412B80E160B6973"
+	filename: "19_dimensions"
+	title: "The Seven Realms and More"
+	subtitle: "Seven realms bound to a Crown; a few more the Crown never knew."
+	icon: "minecraft:ender_pearl"
+	order_index: 19
+	group: "BA29B6D65C079795"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -9.5d
+			y: -8.44d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/dimensions.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "FE4F3514D6AF0829"
+			title: "A Map of Doors"
+			description: ["Aldreth has seven Warden-realms: Root (Twilight Forest), Stone (Undergarden), Sky (Aether), Dream (Blue Skies), Flame (Nether), Echo (Otherside) and the End.", "The order matters: each realm unlocks the materials, bosses and mounts of the next. You can visit early, but you will not come back unchanged."]
+			icon: "minecraft:filled_map"
+			x: 0.0d
+			y: 0.0d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "3863A76BC015A35D"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "E569C8402CE4CE7A"
+						type: "xp"
+						xp: 20
+					}
+			]
+		},
+		{
+			id: "2BF4B5B43CB0CB3D"
+			title: "Flame"
+			description: ["The Nether is the realm of the Warden of Flame. Bring fire resistance and a good bow."]
+			icon: "minecraft:netherrack"
+			x: 2.2d
+			y: -2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "56DB79F6DB2CF210"
+						type: "dimension"
+						dim: "minecraft:the_nether"
+					}
+			]
+			rewards: [
+					{
+						id: "5B185296F399E8BC"
+						type: "xp"
+						xp: 80
+					}
+			]
+			dependencies: ["FE4F3514D6AF0829"]
+		},
+		{
+			id: "0B822C3F5BDC798F"
+			title: "Root"
+			description: ["A forest under a sky that never ends its sunset."]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: 2.2d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "473A8782D1E32AC9"
+						type: "dimension"
+						dim: "twilightforest:twilight_forest"
+					}
+			]
+			rewards: [
+					{
+						id: "106F03BC9C019DEE"
+						type: "xp"
+						xp: 120
+					}
+			]
+			dependencies: ["FE4F3514D6AF0829"]
+		},
+		{
+			id: "90CA8371BE5D19D9"
+			title: "Stone"
+			description: ["A cold, humid second world under the first."]
+			icon: "minecraft:deepslate"
+			x: 4.4d
+			y: -1.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "3BC043083444B8B8"
+						type: "dimension"
+						dim: "undergarden:undergarden"
+					}
+			]
+			rewards: [
+					{
+						id: "E42308B5AF147B38"
+						type: "xp"
+						xp: 120
+					}
+			]
+			dependencies: ["0B822C3F5BDC798F"]
+		},
+		{
+			id: "E5ACEA89B759A938"
+			title: "Sky"
+			description: ["A country on clouds."]
+			icon: "aether:aether_portal_frame"
+			x: 4.4d
+			y: -0.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "ED6267C3CB9BA09A"
+						type: "dimension"
+						dim: "aether:the_aether"
+					}
+			]
+			rewards: [
+					{
+						id: "BCF2E3B8D0F03C4D"
+						type: "xp"
+						xp: 150
+					}
+			]
+			dependencies: ["0B822C3F5BDC798F"]
+		},
+		{
+			id: "C2A0DB22B19B92F5"
+			title: "Dream, Bright"
+			description: ["A world of noon."]
+			icon: "blue_skies:zeal_lighter"
+			x: 6.6000000000000005d
+			y: 0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "55C41DC327EF0DEC"
+						type: "dimension"
+						dim: "blue_skies:everbright"
+					}
+			]
+			rewards: [
+					{
+						id: "159B62F0052C79BF"
+						type: "xp"
+						xp: 150
+					}
+			]
+			dependencies: ["E5ACEA89B759A938"]
+		},
+		{
+			id: "668C743AB520F13D"
+			title: "Dream, Dark"
+			description: ["A world of dusk."]
+			icon: "blue_skies:pyrope_gem"
+			x: 8.8d
+			y: 0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "80900924D4EEE774"
+						type: "dimension"
+						dim: "blue_skies:everdawn"
+					}
+			]
+			rewards: [
+					{
+						id: "25787B314C20E0DD"
+						type: "xp"
+						xp: 150
+					}
+			]
+			dependencies: ["C2A0DB22B19B92F5"]
+		},
+		{
+			id: "BB6E52E34E7ED7D8"
+			title: "Echo"
+			description: ["A mirror of the world, drained of colour and full of listening."]
+			icon: "deeperdarker:soul_crystal"
+			x: 6.6000000000000005d
+			y: -1.35d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "7DFB5AE881FD3635"
+						type: "dimension"
+						dim: "deeperdarker:otherside"
+					}
+			]
+			rewards: [
+					{
+						id: "26EB23808E37E536"
+						type: "xp"
+						xp: 200
+					}
+			]
+			dependencies: ["E5ACEA89B759A938", "90CA8371BE5D19D9"]
+		},
+		{
+			id: "89F6B8DFB19D7329"
+			title: "The End"
+			description: ["A final island, a final dragon."]
+			icon: "minecraft:end_stone"
+			x: 8.8d
+			y: -1.35d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "07E58181C5AE75DA"
+						type: "dimension"
+						dim: "minecraft:the_end"
+					}
+			]
+			rewards: [
+					{
+						id: "40F16677F3E95B1C"
+						type: "xp"
+						xp: 250
+					}
+			]
+			dependencies: ["BB6E52E34E7ED7D8"]
+		},
+		{
+			id: "FF01FAFE528FCD78"
+			title: "A Pocket World"
+			description: ["Iron's Spells' pocket dimension: a private room tucked into the Veil. Few people find the door."]
+			icon: "irons_spellbooks:arcane_essence"
+			x: 2.2d
+			y: 0.9d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "B5ADCCE84CD8B569"
+						type: "dimension"
+						dim: "irons_spellbooks:pocket_dimension"
+					}
+			]
+			rewards: [
+					{
+						id: "79E796DCED4E3EC8"
+						type: "xp"
+						xp: 100
+					}
+			]
+			optional: true
+			dependencies: ["FE4F3514D6AF0829"]
+		},
+		{
+			id: "77FB2B68A260D3F4"
+			title: "Beneath the Surface"
+			description: ["Alex's Caves hides whole biomes under the earth: candy, acid, abyss, forlorn. Pick a biome, descend."]
+			icon: "alexscaves:uranium"
+			x: 2.2d
+			y: 2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "0C1CD1AC3FCF11FE"
+						type: "structure"
+						structure: "alexscaves:ocean_trench"
+					}
+			]
+			rewards: [
+					{
+						id: "D37A223F8062966B"
+						type: "xp"
+						xp: 120
+					}
+			]
+			optional: true
+			dependencies: ["FE4F3514D6AF0829"]
+		},
+		{
+			id: "92B4FCC06F53EA74"
+			title: "Gate Pearls"
+			description: ["A gate pearl opens a wave arena in the open world. Postgame challenge, with prizes."]
+			icon: "gateways:gate_pearl"
+			x: 11.0d
+			y: -2.02d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "AE9BB4278CDB058B"
+						type: "item"
+						item: "gateways:gate_pearl"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "CD8C46B8EE445BD6"
+						type: "xp"
+						xp: 150
+					}
+			]
+			optional: true
+			dependencies: ["89F6B8DFB19D7329"]
+		},
+		{
+			id: "B5C32C147DB7B9EF"
+			title: "Realm-Walker"
+			description: ["Visit every Warden realm. The seven doors are open to you."]
+			icon: "minecraft:nether_star"
+			x: 11.0d
+			y: -0.22d
+			size: 1.5d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "93413FB942AAD0E5"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "53080752608B487A"
+						type: "xp"
+						xp: 600
+					},
+					{
+						id: "2CB7F04EA2BC06DF"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					},
+					{
+						id: "8C2D44B269E940F8"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			dependencies: ["2BF4B5B43CB0CB3D", "0B822C3F5BDC798F", "90CA8371BE5D19D9", "E5ACEA89B759A938", "C2A0DB22B19B92F5", "668C743AB520F13D", "BB6E52E34E7ED7D8", "89F6B8DFB19D7329"]
+		}
+	]
+}

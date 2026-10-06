@@ -1,0 +1,14 @@
+{
+ "icon": {
+  "item": "minecraft:blaze_powder"
+ },
+ "order": 5,
+ "impact": 2,
+ "name": "Hexblood",
+ "description": "Descendants of a banished coven: fire in the veins, holy light a burn.",
+ "powers": [
+  "aldreth:hexblood_0",
+  "aldreth:hexblood_1",
+  "aldreth:hexblood_2"
+ ]
+}

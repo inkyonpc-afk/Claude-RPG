@@ -1,0 +1,1477 @@
+{
+	id: "F8F53CC5173C0FB2"
+	filename: "20_bosses"
+	title: "The Compendium of Bosses"
+	subtitle: "Fifty-odd bosses. Each drops something nobody else does."
+	icon: "minecraft:wither_skeleton_skull"
+	order_index: 20
+	group: "BA29B6D65C079795"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -11.7d
+			y: -8.44d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/bosses.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "AEA574B7C6ED1F66"
+			title: "A Record of Kills"
+			description: ["Bosses drop unique weapons, armor, spells, relics, trophies and crafting materials. They never drop generic diamonds.", "Defeat each once; defeat them again with a different build."]
+			icon: "minecraft:writable_book"
+			x: 0.0d
+			y: 0.0d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "ADF1AC6193B98F98"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "17F070A037FEE0F5"
+						type: "xp"
+						xp: 30
+					}
+			]
+		},
+		{
+			id: "B8E08C6534E82516"
+			title: "Ferrous Wroughtnaut"
+			description: ["Defeat Ferrous Wroughtnaut. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:iron_block"
+			x: 2.2d
+			y: -34.2d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "7EF3166AD545ABFE"
+						type: "kill"
+						entity: "mowziesmobs:ferrous_wroughtnaut"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "EBC7C9C83424ECB4"
+						type: "xp"
+						xp: 250
+					},
+					{
+						id: "548FC035B774A871"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t2"
+						elevate: true
+						silent: true
+						title: "Tier 2 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "0A3C1893B42236C5"
+			title: "The Naga"
+			description: ["Defeat The Naga. Its drops are unique to it; no other source will give you them."]
+			icon: "twilightforest:naga_scale"
+			x: 2.2d
+			y: -32.4d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "160C345FFAC3BB01"
+						type: "kill"
+						entity: "twilightforest:naga"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "C087465A9824B49C"
+						type: "xp"
+						xp: 200
+					},
+					{
+						id: "43695446DFFF320F"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t2"
+						elevate: true
+						silent: true
+						title: "Tier 2 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "06A02EF3CB8703D1"
+			title: "The Lich"
+			description: ["Defeat The Lich. Its drops are unique to it; no other source will give you them."]
+			icon: "twilightforest:lich_trophy"
+			x: 2.2d
+			y: -30.6d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "B764730409B561CB"
+						type: "kill"
+						entity: "twilightforest:lich"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "2E52B070400E2361"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "37AB9303389A6A25"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "80FBC1F720F96721"
+			title: "The Minoshroom"
+			description: ["Defeat The Minoshroom. Its drops are unique to it; no other source will give you them."]
+			icon: "twilightforest:minoshroom_trophy"
+			x: 2.2d
+			y: -28.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "7AFE6FE6743E3245"
+						type: "kill"
+						entity: "twilightforest:minoshroom"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "85E88BEBC69F768C"
+						type: "xp"
+						xp: 220
+					},
+					{
+						id: "A74B1DBE4D17C99B"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "3F436D517672AAED"
+			title: "The Hydra"
+			description: ["Defeat The Hydra. Its drops are unique to it; no other source will give you them."]
+			icon: "twilightforest:hydra_trophy"
+			x: 2.2d
+			y: -27.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "40404B11F4170882"
+						type: "kill"
+						entity: "twilightforest:hydra"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "CC6C18866B0BC665"
+						type: "xp"
+						xp: 350
+					},
+					{
+						id: "E4715850A1AABFBD"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "121CFC3D36356081"
+			title: "The Phantom Knights"
+			description: ["Defeat The Phantom Knights. Its drops are unique to it; no other source will give you them."]
+			icon: "twilightforest:knightmetal_ingot"
+			x: 2.2d
+			y: -25.2d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "1532C17E45B6E89D"
+						type: "kill"
+						entity: "twilightforest:knight_phantom"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "421BF7AC15CC5A92"
+						type: "xp"
+						xp: 250
+					},
+					{
+						id: "68C7CDA072439EF2"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "62AD3CB771EE5B88"
+			title: "The Ur-Ghast"
+			description: ["Defeat The Ur-Ghast. Its drops are unique to it; no other source will give you them."]
+			icon: "twilightforest:ur_ghast_trophy"
+			x: 2.2d
+			y: -23.4d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "6BB44F903512F649"
+						type: "kill"
+						entity: "twilightforest:ur_ghast"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "D2B5FF7FC79E1F78"
+						type: "xp"
+						xp: 400
+					},
+					{
+						id: "471EC7D452D9718A"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "52CC956124294072"
+			title: "The Alpha Yeti"
+			description: ["Defeat The Alpha Yeti. Its drops are unique to it; no other source will give you them."]
+			icon: "twilightforest:arctic_fur"
+			x: 2.2d
+			y: -21.6d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "247763B736149932"
+						type: "kill"
+						entity: "twilightforest:alpha_yeti"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "00E154F347568B14"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "5D7D10C879E3D02B"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "C2CECEA6E8FBE8ED"
+			title: "The Snow Queen"
+			description: ["Defeat The Snow Queen. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:snow_block"
+			x: 2.2d
+			y: -19.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "60DA69397488D75B"
+						type: "kill"
+						entity: "twilightforest:snow_queen"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "803409C194DD6134"
+						type: "xp"
+						xp: 350
+					},
+					{
+						id: "83F528624CC7DD87"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "5876F83C32796C1B"
+			title: "Forgotten Guardian"
+			description: ["Defeat Forgotten Guardian. Its drops are unique to it; no other source will give you them."]
+			icon: "undergarden:forgotten_ingot"
+			x: 2.2d
+			y: -18.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "E707839830F9A28B"
+						type: "kill"
+						entity: "undergarden:forgotten_guardian"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "90B4901A00AC3EAD"
+						type: "xp"
+						xp: 350
+					},
+					{
+						id: "8D0DE0CEE3D2945A"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "70793642B1887646"
+			title: "The Slider"
+			description: ["Defeat The Slider. Its drops are unique to it; no other source will give you them."]
+			icon: "aether:bronze_dungeon_key"
+			x: 2.2d
+			y: -16.2d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "8C9576E016830755"
+						type: "kill"
+						entity: "aether:slider"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "7B02DFDFD48E373D"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "821EF84803C3C4FE"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "C5D404117CD3410A"
+			title: "Valkyrie Queen"
+			description: ["Defeat Valkyrie Queen. Its drops are unique to it; no other source will give you them."]
+			icon: "aether:valkyrie_lance"
+			x: 2.2d
+			y: -14.4d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "F153E38ED5A7E050"
+						type: "kill"
+						entity: "aether:valkyrie_queen"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "758D940F77E74008"
+						type: "xp"
+						xp: 450
+					},
+					{
+						id: "22E9D1E4466FAC7E"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "7E9979754E9CD742"
+			title: "Sun Spirit"
+			description: ["Defeat Sun Spirit. Its drops are unique to it; no other source will give you them."]
+			icon: "aether:victory_medal"
+			x: 2.2d
+			y: -12.6d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "E2A2470B22988C13"
+						type: "kill"
+						entity: "aether:sun_spirit"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "6566581285FEDA38"
+						type: "xp"
+						xp: 600
+					},
+					{
+						id: "AEEC0640BF0F1D5C"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "7812CDB859A1EC40"
+			title: "The Summoner"
+			description: ["Defeat The Summoner. Its drops are unique to it; no other source will give you them."]
+			icon: "blue_skies:diopside_gem"
+			x: 2.2d
+			y: -10.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "A48DFCEB8646C877"
+						type: "kill"
+						entity: "blue_skies:summoner"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "47D357F6FD6B2AFB"
+						type: "xp"
+						xp: 350
+					},
+					{
+						id: "AD84CBBDCAE24AC2"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "5A35344822F9F326"
+			title: "Starlit Crusher"
+			description: ["Defeat Starlit Crusher. Its drops are unique to it; no other source will give you them."]
+			icon: "blue_skies:horizonite_ingot"
+			x: 2.2d
+			y: -9.0d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "CF1BC5DD43EE95BB"
+						type: "kill"
+						entity: "blue_skies:starlit_crusher"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "6796F1E0FC41B91D"
+						type: "xp"
+						xp: 500
+					},
+					{
+						id: "39FF28D5BDC270E7"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "D576D1E0744B6D4A"
+			title: "The Alchemist"
+			description: ["Defeat The Alchemist. Its drops are unique to it; no other source will give you them."]
+			icon: "blue_skies:pyrope_gem"
+			x: 2.2d
+			y: -7.2d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "73F6F7A875E88BAA"
+						type: "kill"
+						entity: "blue_skies:alchemist"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "5E92999EDCCFDBFD"
+						type: "xp"
+						xp: 350
+					},
+					{
+						id: "1BE5F7143CB5FE8E"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "09223D09AF0370AE"
+			title: "The Arachnarch"
+			description: ["Defeat The Arachnarch. Its drops are unique to it; no other source will give you them."]
+			icon: "blue_skies:falsite_ingot"
+			x: 2.2d
+			y: -5.4d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "920675E59799D8D9"
+						type: "kill"
+						entity: "blue_skies:arachnarch"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "EE4DFFE8B000D601"
+						type: "xp"
+						xp: 500
+					},
+					{
+						id: "3B4564DEFD5BE392"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "4B1830FE903FC6AB"
+			title: "Ignis"
+			description: ["Defeat Ignis. Its drops are unique to it; no other source will give you them."]
+			icon: "cataclysm:ignitium_ingot"
+			x: 2.2d
+			y: -3.6d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "B6CC6BC78048791E"
+						type: "kill"
+						entity: "cataclysm:ignis"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "7019B18868941CC2"
+						type: "xp"
+						xp: 700
+					},
+					{
+						id: "77C2A5BBC50CA690"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "2D51010023118371"
+			title: "Netherite Monstrosity"
+			description: ["Defeat Netherite Monstrosity. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:netherite_block"
+			x: 2.2d
+			y: -1.8d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "C7025FF41E3279CF"
+						type: "kill"
+						entity: "cataclysm:netherite_monstrosity"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "6303C0A84A2BE353"
+						type: "xp"
+						xp: 700
+					},
+					{
+						id: "A0B147880D62F101"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "CE34261B6B2E745D"
+			title: "The Harbinger"
+			description: ["Defeat The Harbinger. Its drops are unique to it; no other source will give you them."]
+			icon: "cataclysm:void_core"
+			x: 2.2d
+			y: 0.0d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "8F37CAC2524CC456"
+						type: "kill"
+						entity: "cataclysm:the_harbinger"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "5E0C36FCB8906929"
+						type: "xp"
+						xp: 800
+					},
+					{
+						id: "A125F2F776F80297"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "64DAFF370566C1B0"
+			title: "The Leviathan"
+			description: ["Defeat The Leviathan. Its drops are unique to it; no other source will give you them."]
+			icon: "cataclysm:tidal_claws"
+			x: 2.2d
+			y: 1.8d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "5CFFED93A361549A"
+						type: "kill"
+						entity: "cataclysm:the_leviathan"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "6993E1C9B6831070"
+						type: "xp"
+						xp: 850
+					},
+					{
+						id: "02A9447B840EBA5C"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "775D4792AF50163E"
+			title: "Ancient Remnant"
+			description: ["Defeat Ancient Remnant. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:chiseled_sandstone"
+			x: 2.2d
+			y: 3.6d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "F0EDBF1D3211369E"
+						type: "kill"
+						entity: "cataclysm:ancient_remnant"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "BE52F0D93ECF568F"
+						type: "xp"
+						xp: 850
+					},
+					{
+						id: "B3BE11DCF3887631"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "ED2488360097AF03"
+			title: "Ender Guardian"
+			description: ["Defeat Ender Guardian. Its drops are unique to it; no other source will give you them."]
+			icon: "cataclysm:void_forge"
+			x: 2.2d
+			y: 5.4d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "00860ACB63056D8C"
+						type: "kill"
+						entity: "cataclysm:ender_guardian"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "0879883D891D10F9"
+						type: "xp"
+						xp: 1000
+					},
+					{
+						id: "8983F2F9E7FE7B7A"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "975338D5192448EA"
+			title: "Maledictus"
+			description: ["Defeat Maledictus. Its drops are unique to it; no other source will give you them."]
+			icon: "cataclysm:witherite_ingot"
+			x: 2.2d
+			y: 7.2d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "A3B78E886D6D829B"
+						type: "kill"
+						entity: "cataclysm:maledictus"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "AC819BB0DFF17E83"
+						type: "xp"
+						xp: 1500
+					},
+					{
+						id: "1D0CB8B22F5BB5C5"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "27166BCC7A1CEDAD"
+			title: "Scylla"
+			description: ["Defeat Scylla. Its drops are unique to it; no other source will give you them."]
+			icon: "cataclysm:abyssal_egg"
+			x: 2.2d
+			y: 9.0d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "53AE5815FAEFAA46"
+						type: "kill"
+						entity: "cataclysm:scylla"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "EBE662421174B476"
+						type: "xp"
+						xp: 1500
+					},
+					{
+						id: "69C2B733DE1E0740"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "940211A1F80D9966"
+			title: "The Warden"
+			description: ["Defeat The Warden. Its drops are unique to it; no other source will give you them."]
+			icon: "deeperdarker:warden_carapace"
+			x: 2.2d
+			y: 10.8d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "D5277D753C8E6963"
+						type: "kill"
+						entity: "minecraft:warden"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "6CFA41AEA4ADCE47"
+						type: "xp"
+						xp: 900
+					},
+					{
+						id: "582CB3A92424DE82"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "BB1D4A630CDE69B2"
+			title: "The Dead King"
+			description: ["Defeat The Dead King. Its drops are unique to it; no other source will give you them."]
+			icon: "irons_spellbooks:legendary_spell_book"
+			x: 2.2d
+			y: 12.6d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "40B30C7E90095565"
+						type: "kill"
+						entity: "irons_spellbooks:dead_king"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "2D2203ED42B910D4"
+						type: "xp"
+						xp: 1000
+					},
+					{
+						id: "DEAF7DEB22093FDD"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "DF33B7684E58CD10"
+			title: "The Apostle"
+			description: ["Defeat The Apostle. Its drops are unique to it; no other source will give you them."]
+			icon: "goety:nameless_staff"
+			x: 2.2d
+			y: 14.4d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "46439DC0C9999A0D"
+						type: "kill"
+						entity: "goety:apostle"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "4559F93D6130DB09"
+						type: "xp"
+						xp: 900
+					},
+					{
+						id: "DF8B36E68AC42699"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "1FE10FD954CBBA35"
+			title: "The Lich (BOMD)"
+			description: ["Defeat The Lich (BOMD). Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:soul_lantern"
+			x: 2.2d
+			y: 16.2d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "876B5D88920DB0BB"
+						type: "kill"
+						entity: "bosses_of_mass_destruction:lich"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "9FD99F8F9213FBAF"
+						type: "xp"
+						xp: 800
+					},
+					{
+						id: "1E0507C94CE9EBF3"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "3E2DC14D8E1EE13A"
+			title: "Void Blossom"
+			description: ["Defeat Void Blossom. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:end_rod"
+			x: 2.2d
+			y: 18.0d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "6CE72B0B78A306F2"
+						type: "kill"
+						entity: "bosses_of_mass_destruction:void_blossom"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "69E4B5639D7677E8"
+						type: "xp"
+						xp: 1200
+					},
+					{
+						id: "5B6C2C58128AD95D"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "1FB4C57FAF54DB24"
+			title: "The Obsidilith"
+			description: ["Defeat The Obsidilith. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:obsidian"
+			x: 2.2d
+			y: 19.8d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "6AD2D7F14265DDF3"
+						type: "kill"
+						entity: "bosses_of_mass_destruction:obsidilith"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "A75C4610A2F78B13"
+						type: "xp"
+						xp: 1200
+					},
+					{
+						id: "057A2FF8E3C1B343"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "49D8F43CE2AC27AD"
+			title: "Fire Dragon"
+			description: ["Defeat Fire Dragon. Its drops are unique to it; no other source will give you them."]
+			icon: "iceandfire:dragon_skull_fire"
+			x: 2.2d
+			y: 21.6d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "CA74A0473FDD7CDD"
+						type: "kill"
+						entity: "iceandfire:fire_dragon"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "A280732295492545"
+						type: "xp"
+						xp: 700
+					},
+					{
+						id: "1662F5F61F42701C"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "67C105CFD54A014E"
+			title: "Ice Dragon"
+			description: ["Defeat Ice Dragon. Its drops are unique to it; no other source will give you them."]
+			icon: "iceandfire:dragonsteel_ice_ingot"
+			x: 2.2d
+			y: 23.4d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "D6567AA2E9425B39"
+						type: "kill"
+						entity: "iceandfire:ice_dragon"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "8DB466842CE9F7B1"
+						type: "xp"
+						xp: 1000
+					},
+					{
+						id: "1C5C17DA7D2F8B16"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "A255017B4228725A"
+			title: "Dread Lich"
+			description: ["Defeat Dread Lich. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:wither_skeleton_skull"
+			x: 2.2d
+			y: 25.2d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "834C837E0C801280"
+						type: "kill"
+						entity: "iceandfire:dread_lich"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "937D8F0F8B117371"
+						type: "xp"
+						xp: 1200
+					},
+					{
+						id: "79CD3E25750CF568"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "B20AA096008EAB83"
+			title: "Lord Pumpkinhead"
+			description: ["Defeat Lord Pumpkinhead. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:carved_pumpkin"
+			x: 2.2d
+			y: 27.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "0348B552EF0B11A3"
+						type: "kill"
+						entity: "born_in_chaos_v1:lord_pumpkinhead"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "C61A9BA84E10C890"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "80D9E4072E7415A0"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "3AA3670098908FDD"
+			title: "Mother Spider"
+			description: ["Defeat Mother Spider. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:spider_eye"
+			x: 2.2d
+			y: 28.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D55693971E1CA5A7"
+						type: "kill"
+						entity: "born_in_chaos_v1:mother_spider"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "6993A3AEC212C1BB"
+						type: "xp"
+						xp: 250
+					},
+					{
+						id: "667479B207B3BD1F"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "C5920BD527ADD1BE"
+			title: "The Wither"
+			description: ["Defeat The Wither. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:nether_star"
+			x: 2.2d
+			y: 30.6d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "E1F41DB49A20B4A3"
+						type: "kill"
+						entity: "minecraft:wither"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "CA09901AC5DD3719"
+						type: "xp"
+						xp: 800
+					},
+					{
+						id: "C0EE00F4340D443B"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "4AE82E1F8C4C35F9"
+			title: "The Ender Dragon"
+			description: ["Defeat The Ender Dragon. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:dragon_head"
+			x: 2.2d
+			y: 32.4d
+			size: 1.2d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "73281D4EC13D3538"
+						type: "kill"
+						entity: "minecraft:ender_dragon"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "65434F4A46BBD667"
+						type: "xp"
+						xp: 2000
+					},
+					{
+						id: "D5926566D9C62054"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "E4E839F3438AABC4"
+			title: "Elder Guardian"
+			description: ["Defeat Elder Guardian. Its drops are unique to it; no other source will give you them."]
+			icon: "minecraft:prismarine_crystals"
+			x: 2.2d
+			y: 34.2d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "96EF9233B1E935E6"
+						type: "kill"
+						entity: "minecraft:elder_guardian"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "E5E489A2353946E4"
+						type: "xp"
+						xp: 250
+					},
+					{
+						id: "6CEAB8359D49C68A"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["AEA574B7C6ED1F66"]
+		},
+		{
+			id: "C4E736DE01DD64F2"
+			title: "Slayer"
+			description: ["Defeat ten bosses. You are a dangerous person."]
+			icon: "minecraft:diamond_sword"
+			x: 4.4d
+			y: -21.24d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "5B35087BF62A5DDB"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "7D1C2D2C44ADF877"
+						type: "xp"
+						xp: 500
+					},
+					{
+						id: "C7A4ADAD23A3795B"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					}
+			]
+			dependencies: ["0A3C1893B42236C5", "06A02EF3CB8703D1", "3F436D517672AAED", "7E9979754E9CD742", "4B1830FE903FC6AB"]
+		},
+		{
+			id: "96815B06C679232B"
+			title: "Boss Slayer, Legendary"
+			description: ["Defeat twenty-five bosses. The Wardens would have asked for your help."]
+			icon: "minecraft:nether_star"
+			x: 6.6000000000000005d
+			y: 3.24d
+			size: 1.5d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "490BE820AE50A509"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "BAF6F00281A61431"
+						type: "xp"
+						xp: 1500
+					},
+					{
+						id: "58FD19D16CB66931"
+						type: "command"
+						command: "skilltree points add {p} 3"
+						elevate: true
+						silent: true
+						title: "3 skill points"
+					}
+			]
+			dependencies: ["C4E736DE01DD64F2", "CE34261B6B2E745D", "64DAFF370566C1B0", "4AE82E1F8C4C35F9"]
+		}
+	]
+}

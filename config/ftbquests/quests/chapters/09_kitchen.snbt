@@ -1,0 +1,439 @@
+{
+	id: "09228DAC155633B1"
+	filename: "09_kitchen"
+	title: "The Hearth: Farm and Kitchen"
+	subtitle: "A well-fed hero is a dangerous hero. Food gives real, lasting boons."
+	icon: "farmersdelight:cooking_pot"
+	order_index: 9
+	group: "CF1E96262114D2FD"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -8.4d
+			y: -10.24d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/farming.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "0EF13C1A72F9B48E"
+			title: "A Fire and a Pot"
+			description: ["Meals here are more than hunger: a good stew gives comfort, resistance, speed. The Farmer's Delight family of mods turns a kitchen into a workshop.", "Eat varied food and Spice of Life rewards you with health. Repeat the same meal and it stops mattering."]
+			icon: "farmersdelight:cooking_pot"
+			x: 0.0d
+			y: 0.0d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "E3562B0787F5E47C"
+						type: "item"
+						item: "farmersdelight:cooking_pot"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "0C79DAC1405F24FF"
+						type: "xp"
+						xp: 25
+					}
+			]
+		},
+		{
+			id: "D7CEF9F7705A5410"
+			title: "A Good Knife"
+			description: ["A knife and a cutting board turn raw ingredients into good ones."]
+			icon: "farmersdelight:iron_knife"
+			x: 2.2d
+			y: -2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D41054FBC3936299"
+						type: "item"
+						item: "farmersdelight:iron_knife"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "AF21960954B9791F"
+						type: "xp"
+						xp: 20
+					}
+			]
+			dependencies: ["0EF13C1A72F9B48E"]
+		},
+		{
+			id: "CFE45A4EB8645947"
+			title: "The Cutting Board"
+			description: ["Slice, dice and strip. Cutting is half of cooking."]
+			icon: "farmersdelight:cutting_board"
+			x: 4.4d
+			y: -2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "1AE13FA3D19CCC22"
+						type: "item"
+						item: "farmersdelight:cutting_board"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "BC5F544FA3C065B2"
+						type: "xp"
+						xp: 20
+					}
+			]
+			dependencies: ["D7CEF9F7705A5410"]
+		},
+		{
+			id: "CA9EB3F9E566905D"
+			title: "A Garden"
+			description: ["Onions, cabbages, tomatoes, rice. Plant, wait, harvest."]
+			icon: "farmersdelight:onion"
+			x: 2.2d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "AC5BE9028705F171"
+						type: "item"
+						item: "farmersdelight:onion"
+						count: 4
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "C428B77591542F52"
+						type: "xp"
+						xp: 25
+					}
+			]
+			dependencies: ["0EF13C1A72F9B48E"]
+		},
+		{
+			id: "7F0F6FF100CB8533"
+			title: "A Hearty Stew"
+			description: ["Beef, vegetables and patience. A good stew heals and satisfies."]
+			icon: "farmersdelight:beef_stew"
+			x: 6.6000000000000005d
+			y: -1.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "3E9688ABFD13EF92"
+						type: "item"
+						item: "farmersdelight:beef_stew"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "87D96F505EF51975"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["CFE45A4EB8645947", "CA9EB3F9E566905D"]
+		},
+		{
+			id: "9537E6AD84228FDA"
+			title: "Chicken Soup"
+			description: ["The simple remedy."]
+			icon: "farmersdelight:chicken_soup"
+			x: 8.8d
+			y: -6.3d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "2C6B9A705CE5C718"
+						type: "item"
+						item: "farmersdelight:chicken_soup"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "8C38B86CE7822EA9"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["7F0F6FF100CB8533"]
+		},
+		{
+			id: "61F4A5C413261083"
+			title: "Apple Pie"
+			description: ["Pastry and fruit. A treat; a reward; a boon."]
+			icon: "farmersdelight:apple_pie"
+			x: 8.8d
+			y: -4.5d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "11D48240A370B21C"
+						type: "item"
+						item: "farmersdelight:apple_pie"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "C305F713F962BC46"
+						type: "xp"
+						xp: 50
+					}
+			]
+			optional: true
+			dependencies: ["7F0F6FF100CB8533"]
+		},
+		{
+			id: "EE241D2B27CEF3E5"
+			title: "Honey-Glazed Ham"
+			description: ["A feast dish. It feeds a table and restores a lot."]
+			icon: "farmersdelight:honey_glazed_ham"
+			x: 8.8d
+			y: -2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "915187F2F744A2FB"
+						type: "item"
+						item: "farmersdelight:honey_glazed_ham"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "1BD8352F7A9B5053"
+						type: "xp"
+						xp: 80
+					}
+			]
+			dependencies: ["7F0F6FF100CB8533"]
+		},
+		{
+			id: "D465C6D594E1DEBC"
+			title: "Fish Stew"
+			description: ["From the water, into the pot."]
+			icon: "farmersdelight:fish_stew"
+			x: 8.8d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "14F870DA70C39F86"
+						type: "item"
+						item: "farmersdelight:fish_stew"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "67A11D56BCAF3C48"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["7F0F6FF100CB8533"]
+		},
+		{
+			id: "7A0181C3D8E4B61E"
+			title: "Hamburger"
+			description: ["Humble and filling."]
+			icon: "farmersdelight:hamburger"
+			x: 8.8d
+			y: 0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "607BD3C6D60D6561"
+						type: "item"
+						item: "farmersdelight:hamburger"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "45CF42A2E96B82A0"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["7F0F6FF100CB8533"]
+		},
+		{
+			id: "379407F52E3507B2"
+			title: "Dumplings"
+			description: ["Small and useful: portable healing."]
+			icon: "farmersdelight:dumplings"
+			x: 8.8d
+			y: 2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "BFBE1DF1B1BFD632"
+						type: "item"
+						item: "farmersdelight:dumplings"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "9BB7DEF7DEA61D18"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["7F0F6FF100CB8533"]
+		},
+		{
+			id: "B1A1905EA47C387F"
+			title: "A Varied Diet"
+			description: ["Eat a dozen different dishes. Variety is its own buff."]
+			icon: "minecraft:golden_apple"
+			x: 11.0d
+			y: -2.7d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "56EC1C68355B0C3E"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "2EF3402CB0E40445"
+						type: "xp"
+						xp: 100
+					},
+					{
+						id: "DDFBD9E0823B9880"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["EE241D2B27CEF3E5"]
+		},
+		{
+			id: "686FF05911D11AAB"
+			title: "A Feast"
+			description: ["Prepare a feast for friends. In multiplayer, it is a tradition."]
+			icon: "minecraft:cake"
+			x: 13.200000000000001d
+			y: -2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "8B4700CF0EEBA20D"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "BB164DE586709ED4"
+						type: "xp"
+						xp: 120
+					}
+			]
+			optional: true
+			dependencies: ["B1A1905EA47C387F"]
+		},
+		{
+			id: "FCF30CC7CAEA65BA"
+			title: "Horse Feed"
+			description: ["A good meal for a good mount."]
+			icon: "farmersdelight:horse_feed"
+			x: 2.2d
+			y: 0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "EADFBC4261AAE610"
+						type: "item"
+						item: "farmersdelight:horse_feed"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "68D296F72DDDBC4B"
+						type: "xp"
+						xp: 50
+					}
+			]
+			optional: true
+			dependencies: ["0EF13C1A72F9B48E"]
+		},
+		{
+			id: "D79B7C80E77C1E01"
+			title: "Dog Food"
+			description: ["Feed your dog properly."]
+			icon: "farmersdelight:dog_food"
+			x: 2.2d
+			y: 2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "76A7DE142F5C72DD"
+						type: "item"
+						item: "farmersdelight:dog_food"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "BD8032D6FEE6E8A3"
+						type: "xp"
+						xp: 50
+					}
+			]
+			optional: true
+			dependencies: ["0EF13C1A72F9B48E"]
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Nimble",
+ "description": "+3% dodge chance.",
+ "modifier": {
+  "attribute": "attributeslib:dodge_chance",
+  "name": "Hearthfolk Halfling: Nimble",
+  "operation": "addition",
+  "value": 0.03
+ }
+}

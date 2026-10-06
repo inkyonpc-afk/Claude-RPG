@@ -1,0 +1,19 @@
+{
+ "type": "apoli:attribute",
+ "name": "Draconic Blood",
+ "description": "+20% fire magic resistance and +5% fire spell power.",
+ "modifiers": [
+  {
+   "attribute": "irons_spellbooks:fire_magic_resist",
+   "name": "Scaleborn: Draconic Blood",
+   "operation": "multiply_base",
+   "value": 0.2
+  },
+  {
+   "attribute": "irons_spellbooks:fire_spell_power",
+   "name": "Scaleborn: Draconic Blood",
+   "operation": "multiply_base",
+   "value": 0.05
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Adaptable",
+ "description": "You learn faster than the other peoples (+10% experience).",
+ "modifier": {
+  "attribute": "attributeslib:experience_gained",
+  "name": "Emberborn Human: Adaptable",
+  "operation": "multiply_base",
+  "value": 0.1
+ }
+}

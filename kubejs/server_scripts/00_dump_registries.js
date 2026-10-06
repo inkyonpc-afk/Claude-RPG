@@ -21,6 +21,12 @@ ServerEvents.loaded(event => {
     try { ra.registryOrThrow(dyn[k]).keySet().forEach(id => out[k].push(String(id))) } catch (e) { out[k + '_error'] = String(e) }
     out[k].sort()
   })
+  out.advancement = []
+  try { event.server.getAdvancements().getAllAdvancements().forEach(a => out.advancement.push(String(a.getId()))) } catch (e) { out.advancement_error = String(e) }
+  out.advancement.sort()
+  out.loot_table = []
+  try { event.server.getLootData().getKeys(Java.loadClass('net.minecraft.world.level.storage.loot.LootDataType').TABLE).forEach(id => out.loot_table.push(String(id))) } catch (e) { out.loot_table_error = String(e) }
+  out.loot_table.sort()
   out.dimension = []
   event.server.levelKeys().forEach(key => out.dimension.push(String(key.location())))
   out.dimension.sort()

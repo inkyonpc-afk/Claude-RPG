@@ -1,0 +1,13 @@
+{
+ "icon": {
+  "item": "minecraft:player_head"
+ },
+ "order": 0,
+ "impact": 0,
+ "name": "Emberborn Human",
+ "description": "Adaptable and driven: the Ember burns brightest in those who never settle.",
+ "powers": [
+  "aldreth:human_0",
+  "aldreth:human_1"
+ ]
+}

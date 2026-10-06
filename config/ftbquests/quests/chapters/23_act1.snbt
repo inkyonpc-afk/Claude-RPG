@@ -1,0 +1,740 @@
+{
+	id: "FCAADF4AD9502F37"
+	filename: "23_act1"
+	title: "Act I: The Awakening"
+	subtitle: "The Ember wants fuel. The old ruins are full of it, and so are the things that guard them."
+	icon: "minecraft:iron_sword"
+	order_index: 23
+	group: "66515315CBB6E386"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -7.0d
+			y: -10.15d
+			width: 36.0d
+			height: 20.25d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/act1.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "CC214F471961B804"
+			title: "Into the Dark"
+			description: ["Every kingdom is built on what somebody dug up. Find a mineshaft, take what is useful, and remember where the exits are."]
+			icon: "minecraft:iron_pickaxe"
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "1C8BE8FBC0964E31"
+						type: "structure"
+						structure: "minecraft:mineshaft"
+					}
+			]
+			rewards: [
+					{
+						id: "30099C49656C32A3"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["601EF5F679CC4521"]
+		},
+		{
+			id: "B3DA4BD9C2458D1C"
+			title: "A Crack in the Stone"
+			description: ["Iron is the first honest metal: heavy, plentiful, unromantic. You will need a lot of it."]
+			icon: "minecraft:iron_ingot"
+			x: 2.2d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "17B700AC15B319A4"
+						type: "item"
+						item: "minecraft:iron_ingot"
+						count: 16
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "62090184D0544D5B"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["CC214F471961B804"]
+		},
+		{
+			id: "EE5D556BEF23AC31"
+			title: "A Proper Forge"
+			description: ["A blast furnace doubles smelting speed. Rarer metals will want it."]
+			icon: "minecraft:blast_furnace"
+			x: 4.4d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "312FFF27201A7C6B"
+						type: "item"
+						item: "minecraft:blast_furnace"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "8E64BA18ED0F097B"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["B3DA4BD9C2458D1C"]
+		},
+		{
+			id: "5CD9FDEAB4DA6196"
+			title: "Iron Shell"
+			description: ["Armor is not cowardice. It is the decision to still be standing when the second blow lands."]
+			icon: "minecraft:iron_chestplate"
+			x: 6.6000000000000005d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "783C88A1FE82AD31"
+						type: "item"
+						item: "minecraft:iron_chestplate"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "5DD49C124517CE7F"
+						type: "xp"
+						xp: 40
+					},
+					{
+						id: "101B28A656818A75"
+						type: "item"
+						item: "minecraft:shield"
+						count: 1
+					}
+			]
+			dependencies: ["EE5D556BEF23AC31"]
+		},
+		{
+			id: "D33394F9709D56EC"
+			title: "The Ruin That Hums"
+			description: ["West of the village the traders pointed to: a temple half-swallowed by roots, still humming a note too low to hear.", "Structures hold better loot the harder they are to reach, and the rarer they are. Small ruins give supplies; dungeons give gear; the great fortresses give legends."]
+			icon: "minecraft:mossy_stone_bricks"
+			x: 8.8d
+			y: -2.7d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "2A02A9D898D96F0F"
+						type: "structure"
+						structure: "dungeons_arise:abandoned_temple"
+					}
+			]
+			rewards: [
+					{
+						id: "A6F93411C276BA5A"
+						type: "xp"
+						xp: 60
+					},
+					{
+						id: "AA8AEC7E1A55DD85"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t1"
+						elevate: true
+						silent: true
+						title: "Tier 1 supply cache"
+					}
+			]
+			dependencies: ["5CD9FDEAB4DA6196"]
+		},
+		{
+			id: "BF95F400362745B0"
+			title: "Down the Stairs"
+			description: ["Skeletons, spiders, zombies: three old rooms, three old grudges. Break a dungeon and see what the dark was hoarding."]
+			icon: "minecraft:spawner"
+			x: 8.8d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "6B4D86C2A3FCA7E4"
+						type: "structure"
+						structure: "betterdungeons:small_dungeon"
+					}
+			]
+			rewards: [
+					{
+						id: "93735D6213EBA007"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["5CD9FDEAB4DA6196"]
+		},
+		{
+			id: "A363B3116D3544A1"
+			title: "The Bandit Towers"
+			description: ["Somebody has been robbing the caravans. Their towers are tall and badly defended."]
+			icon: "minecraft:crossbow"
+			x: 11.0d
+			y: -4.05d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "33334881A69A2966"
+						type: "structure"
+						structure: "dungeons_arise:bandit_towers"
+					},
+					{
+						id: "C65C5E1AFA37E6E0"
+						type: "kill"
+						entity: "minecraft:pillager"
+						value: 5
+					}
+			]
+			rewards: [
+					{
+						id: "620ED254C7EF15BA"
+						type: "xp"
+						xp: 60
+					},
+					{
+						id: "6170B74F538E95B6"
+						type: "item"
+						item: "minecraft:arrow"
+						count: 32
+					}
+			]
+			dependencies: ["D33394F9709D56EC"]
+		},
+		{
+			id: "5756762097574B69"
+			title: "Nothing Wasted"
+			description: ["Gear you cannot use is not worthless. Apotheosis lets you break items down into rarity-tinted materials: common, uncommon, rare, and beyond.", "Those materials are your currency for everything that follows: reforging, socketing, augmenting."]
+			icon: "apotheosis:salvaging_table"
+			x: 11.0d
+			y: -0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "F4E97B0098658221"
+						type: "item"
+						item: "apotheosis:salvaging_table"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "0B0ABA4A954012AF"
+						type: "xp"
+						xp: 40
+					},
+					{
+						id: "6540534B9EE7C11E"
+						type: "item"
+						item: "apotheosis:common_material"
+						count: 8
+					}
+			]
+			dependencies: ["BF95F400362745B0"]
+		},
+		{
+			id: "FC56B244B713C5D3"
+			title: "A Glimmer of Power"
+			description: ["Gems are the first gift of the dungeons: small, socketable, strangely heavy. Each carries a bonus keyed to the kind of item it sits in. Find a socketed item; the sigil of socketing opens more slots."]
+			icon: "apotheosis:gem"
+			x: 13.200000000000001d
+			y: -0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "DDAB96BFD5981D18"
+						type: "item"
+						item: "apotheosis:gem"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "05F00F43DAC536CA"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["5756762097574B69"]
+		},
+		{
+			id: "C522DD19382DA2DF"
+			title: "Set in Stone"
+			description: ["A socket is a promise. Fill it with something you believe in."]
+			icon: "apotheosis:sigil_of_socketing"
+			x: 15.400000000000002d
+			y: -0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "4A56397588C41BE1"
+						type: "item"
+						item: "apotheosis:sigil_of_socketing"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "FAE08F720604AE83"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["FC56B244B713C5D3"]
+		},
+		{
+			id: "127C30514CCDDED2"
+			title: "The Table Hums"
+			description: ["Your first enchantment will be small and a little disappointing. Your hundredth will redefine your build. Shelves around the table raise the ceiling; bring many."]
+			icon: "minecraft:enchanting_table"
+			x: 8.8d
+			y: 0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "E17CCA031C1B5C06"
+						type: "item"
+						item: "minecraft:enchanting_table"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "1557587CFDB2ACD1"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["5CD9FDEAB4DA6196"]
+		},
+		{
+			id: "6E44F990A4D6BE19"
+			title: "Something Extra"
+			description: ["Enchant an item. Read the description: every enchantment here explains itself."]
+			icon: "minecraft:enchanted_book"
+			x: 11.0d
+			y: 1.35d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "963B540365614F5B"
+						type: "advancement"
+						advancement: "minecraft:story/enchant_item"
+					}
+			]
+			rewards: [
+					{
+						id: "BA1777BF2E69DD34"
+						type: "xp"
+						xp: 60
+					},
+					{
+						id: "4CC7D0F3CBAB33F5"
+						type: "item"
+						item: "apotheosis:hellshelf"
+						count: 4
+					}
+			]
+			dependencies: ["127C30514CCDDED2"]
+		},
+		{
+			id: "2FD459C51C326CD2"
+			title: "A Whisper on Paper"
+			description: ["Magic is not a different game; it is a different grip. Scrolls hold a single spell each. Cast one to learn what the school feels like.", "Spells use mana and have cooldowns. Your skill tree and gear decide how much of each you have."]
+			icon: "irons_spellbooks:scroll"
+			x: 11.0d
+			y: -2.25d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D22937786E7C4FF0"
+						type: "item"
+						item: "irons_spellbooks:scroll"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "9EF1A2D87838813E"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["D33394F9709D56EC"]
+		},
+		{
+			id: "4FB27A8034769B73"
+			title: "Ink and Intention"
+			description: ["An inscription table writes spells onto spellbooks. A book holds many spells at once; a scroll only one."]
+			icon: "irons_spellbooks:inscription_table"
+			x: 13.200000000000001d
+			y: -2.25d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "8B9AE570D7AA6725"
+						type: "item"
+						item: "irons_spellbooks:inscription_table"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "F2F011523249FB70"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["2FD459C51C326CD2"]
+		},
+		{
+			id: "0B35ACD06752C438"
+			title: "A Book of Your Own"
+			description: ["Spellbooks are your focus. Tier decides slots, and each rarity of book unlocks more. Copper is where everyone begins."]
+			icon: "irons_spellbooks:copper_spell_book"
+			x: 15.400000000000002d
+			y: -2.25d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "B70F045FFF618B72"
+						type: "item"
+						item: "irons_spellbooks:copper_spell_book"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "F6C302F091F1F84E"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["4FB27A8034769B73"]
+		},
+		{
+			id: "5D7F00BE20F218E8"
+			title: "The Arcane Anvil"
+			description: ["Spells can be upgraded: the Arcane Anvil merges scrolls and imbues weapons, and is the beginning of spellblade work."]
+			icon: "irons_spellbooks:arcane_anvil"
+			x: 17.6d
+			y: -2.25d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "3AB2F02B68BD9387"
+						type: "item"
+						item: "irons_spellbooks:arcane_anvil"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "91FE322702AA2878"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["0B35ACD06752C438"]
+		},
+		{
+			id: "955FBD7286A46F72"
+			title: "A Friend with Hooves"
+			description: ["Horses are the oldest mount and the first good one. Find a wild horse, tame it, and ride. They carry a chest, wear armor, and will not abandon you in a fight.", "Much faster, stranger and far larger mounts wait for you later. Keep your first horse. It earned the right."]
+			icon: "minecraft:saddle"
+			x: 0.0d
+			y: 2.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "48A19CB5216BD483"
+						type: "advancement"
+						advancement: "minecraft:husbandry/tame_an_animal"
+					},
+					{
+						id: "85B9936A00E1FBA6"
+						type: "item"
+						item: "minecraft:saddle"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "A957A398D3AEDA17"
+						type: "xp"
+						xp: 60
+					},
+					{
+						id: "9D0C0BE2412FE85C"
+						type: "item"
+						item: "minecraft:golden_carrot"
+						count: 8
+					}
+			]
+			dependencies: ["7FC3B515ABB81E32"]
+		},
+		{
+			id: "CDD2719E552F1554"
+			title: "A Leaf for the Wind"
+			description: ["Gliding spends stamina but costs nothing else. Cliffs become runways; chasms become shortcuts. Stamina grows with spirit orbs found in shrines."]
+			icon: "paraglider:paraglider"
+			x: 2.2d
+			y: 2.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "878D66FEC45117AF"
+						type: "item"
+						item: "paraglider:paraglider"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "6476740D7A38249F"
+						type: "xp"
+						xp: 60
+					}
+			]
+			dependencies: ["955FBD7286A46F72"]
+		},
+		{
+			id: "8AFE70CA8FDB3713"
+			title: "A Hook and a Prayer"
+			description: ["Hooks and chains: swing, climb, cross gaps. Better hooks use better chains and stronger materials."]
+			icon: "rehooked:wood_hook"
+			x: 4.4d
+			y: 2.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "F97755452710FBB5"
+						type: "item"
+						item: "rehooked:wood_hook"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "52EF64EE53206F30"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["CDD2719E552F1554"]
+		},
+		{
+			id: "014760ADC96BE3CC"
+			title: "The Quiet Keep"
+			description: ["Old castles are earned: the walls are thick, the guards have not slept in years. This keep stands near the ruined portal north of the village."]
+			icon: "minecraft:iron_door"
+			x: 13.200000000000001d
+			y: -4.05d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "F4B4AE83E8B14408"
+						type: "structure"
+						structure: "dungeons_enhanced:castle"
+					}
+			]
+			rewards: [
+					{
+						id: "5FB5747A29BD1B99"
+						type: "xp"
+						xp: 80
+					},
+					{
+						id: "70D3119E0570400D"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t2"
+						elevate: true
+						silent: true
+						title: "Tier 2 supply cache"
+					}
+			]
+			dependencies: ["A363B3116D3544A1"]
+		},
+		{
+			id: "1AAD9663D104D15E"
+			title: "The Wrought Chamber"
+			description: ["There is a vault under the hills that was sealed from the inside. The thing within does not sleep; it waits to be asked politely.", "Ferrous Wroughtnaut is a test: big hits, long windups, a pattern you can learn. Roll, wait, strike. If it falls, the dungeons will start to feel small."]
+			icon: "minecraft:iron_block"
+			x: 19.8d
+			y: -3.15d
+			size: 1.5d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "31D9D96E6C140CF4"
+						type: "kill"
+						entity: "mowziesmobs:ferrous_wroughtnaut"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "1A21044DEF2408E5"
+						type: "xp"
+						xp: 250
+					},
+					{
+						id: "E80A5A77C47EB8AA"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					},
+					{
+						id: "7C1FB4B1ED3D2FD6"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t2"
+						elevate: true
+						silent: true
+						title: "Wroughtnaut spoils"
+					}
+			]
+			dependencies: ["014760ADC96BE3CC", "5D7F00BE20F218E8"]
+		},
+		{
+			id: "A351D2D9B2ACC361"
+			title: "Shield Wall"
+			description: ["Block with a raised shield at the right moment and the enemy staggers. Shields are a build of their own: Guardian and Paladin nodes love them."]
+			icon: "minecraft:shield"
+			x: 8.8d
+			y: 2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "23E936CDDDF945E7"
+						type: "item"
+						item: "minecraft:shield"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "F2A9591BBA22C7EC"
+						type: "xp"
+						xp: 30
+					}
+			]
+			optional: true
+			dependencies: ["5CD9FDEAB4DA6196"]
+		},
+		{
+			id: "842E1ECAF1F8EFFF"
+			title: "From a Distance"
+			description: ["Bows reward patience: draw speed, arrow damage and crit chance all scale in the Ranger branch."]
+			icon: "minecraft:bow"
+			x: 0.0d
+			y: 4.0d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "5EC5ADEF006AC63B"
+						type: "item"
+						item: "minecraft:bow"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "0967EC5E1983345C"
+						type: "xp"
+						xp: 30
+					}
+			]
+			optional: true
+			dependencies: ["92AE6D78D04C3825"]
+		},
+		{
+			id: "EA4BB1D5D4A01882"
+			title: "What the Ember Wants"
+			description: ["The Wroughtnaut's chamber holds a tablet in a language that predates the Crown. You can read it, which is odd: Seven Wardens bound seven realms to the Crown, and the realms are waking.", "Westward is a forest where it is always dusk. The tablet calls it the Root Ward. The Ember in your palm burns hot at the name."]
+			icon: "minecraft:blaze_powder"
+			x: 22.0d
+			y: -3.15d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "A7B14AF7B6B7D274"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "B56D6123ED2DEE69"
+						type: "xp"
+						xp: 150
+					},
+					{
+						id: "D9FEFE8F5A2C668A"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					}
+			]
+			dependencies: ["1AAD9663D104D15E"]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	title: "Embers of Aldreth"
+	version: 13
+	default_consume_items: false
+	default_reward_team: false
+	default_autoclaim_rewards: "disabled"
+	progression_mode: "flexible"
+	pause_game: false
+	show_lock_icons: true
+	grid_scale: 0.5d
+	drop_loot_crates: false
+}

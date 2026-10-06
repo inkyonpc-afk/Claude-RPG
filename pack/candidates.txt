@@ -186,7 +186,7 @@ qol | Emojiful | skip |
 qol | Simple Voice Chat | std | multiplayer
 qol | Open Parties and Claims | std |
 qol | Parties | skip |
-qol | FTB Quests Optimizer | std |
+qol | FTB Quests Optimizer | skip | FTB warns it reduces performance and can destabilize servers
 qol | FTB Quest Localizer | skip |
 qol | Time On Display | skip |
 qol | GUI Clock | std |
@@ -784,7 +784,7 @@ food | Smarter Farmers | std |
 food | Buzzier Bees | std |
 food | Bushier Flowers | std |
 food | Stackable Stew and Soup | std |
-food | Healing Campfire | std |
+food | Healing Campfire | skip | player-tick ClassCastException (WeakReference vs BlockEntity) kicks the player via Neruina
 food | Comforts | std |
 food | Ender's Delight | skip |
 food | Stardew Fishing | skip |

@@ -1,0 +1,19 @@
+{
+ "type": "apoli:attribute",
+ "name": "Scaled Hide",
+ "description": "+3 armor and +2 armor toughness.",
+ "modifiers": [
+  {
+   "attribute": "minecraft:generic.armor",
+   "name": "Scaleborn: Scaled Hide",
+   "operation": "addition",
+   "value": 3.0
+  },
+  {
+   "attribute": "minecraft:generic.armor_toughness",
+   "name": "Scaleborn: Scaled Hide",
+   "operation": "addition",
+   "value": 2.0
+  }
+ ]
+}

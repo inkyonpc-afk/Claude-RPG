@@ -1,0 +1,14 @@
+{
+ "icon": {
+  "item": "minecraft:bread"
+ },
+ "order": 4,
+ "impact": 1,
+ "name": "Hearthfolk Halfling",
+ "description": "Small, quick and unreasonably lucky: they find fortune where others find trouble.",
+ "powers": [
+  "aldreth:halfling_0",
+  "aldreth:halfling_1",
+  "aldreth:halfling_2"
+ ]
+}

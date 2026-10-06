@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Insubstantial",
+ "description": "-2 armor.",
+ "modifier": {
+  "attribute": "minecraft:generic.armor",
+  "name": "Wisp-touched: Insubstantial",
+  "operation": "addition",
+  "value": -2.0
+ }
+}

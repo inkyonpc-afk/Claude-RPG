@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Slender Frame",
+ "description": "-2 maximum health.",
+ "modifier": {
+  "attribute": "minecraft:generic.max_health",
+  "name": "Sylvan Elf: Slender Frame",
+  "operation": "addition",
+  "value": -2.0
+ }
+}

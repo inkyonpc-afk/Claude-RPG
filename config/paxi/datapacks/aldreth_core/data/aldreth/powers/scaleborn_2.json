@@ -1,0 +1,19 @@
+{
+ "type": "apoli:attribute",
+ "name": "Heavy Frame",
+ "description": "-8% movement speed and -20% swim speed.",
+ "modifiers": [
+  {
+   "attribute": "minecraft:generic.movement_speed",
+   "name": "Scaleborn: Heavy Frame",
+   "operation": "multiply_base",
+   "value": -0.08
+  },
+  {
+   "attribute": "forge:swim_speed",
+   "name": "Scaleborn: Heavy Frame",
+   "operation": "multiply_base",
+   "value": -0.2
+  }
+ ]
+}

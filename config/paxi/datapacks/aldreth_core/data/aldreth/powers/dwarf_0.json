@@ -1,0 +1,19 @@
+{
+ "type": "apoli:attribute",
+ "name": "Stoneskin",
+ "description": "+2 armor and +10% knockback resistance.",
+ "modifiers": [
+  {
+   "attribute": "minecraft:generic.armor",
+   "name": "Stoneborn Dwarf: Stoneskin",
+   "operation": "addition",
+   "value": 2.0
+  },
+  {
+   "attribute": "minecraft:generic.knockback_resistance",
+   "name": "Stoneborn Dwarf: Stoneskin",
+   "operation": "addition",
+   "value": 0.1
+  }
+ ]
+}

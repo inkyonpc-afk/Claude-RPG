@@ -1,0 +1,378 @@
+{
+	id: "B6BE887CCDA64786"
+	filename: "22_prologue"
+	title: "Prologue: The Ember Wakes"
+	subtitle: "You wake beside a cold hearth with a shard of crown-glass burning in your palm."
+	icon: "minecraft:blaze_powder"
+	order_index: 22
+	group: "66515315CBB6E386"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -8.4d
+			y: -7.99d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/prologue.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "7FDBF26D4C9F59BE"
+			title: "A Spark in the Ash"
+			description: ["The fire is out. The world is quiet in the wrong way, like a bell that has just stopped ringing.", "In your hand: a sliver of crown-glass, warm as a living thing. The old tales called it an Ember. They said the Hollow Crown shattered and the pieces went looking for someone stubborn enough to carry them."]
+			icon: "minecraft:flint_and_steel"
+			x: 0.0d
+			y: 0.0d
+			size: 1.2d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "56B7738760CFE46D"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "B2CE3410AF35B729"
+						type: "xp"
+						xp: 10
+					}
+			]
+		},
+		{
+			id: "45FD000C55B42B75"
+			title: "Remember Your Blood"
+			description: ["Every people of Aldreth carries a gift and a burden. Open the origin screen and choose the blood you were born to. There is no wrong answer, only different roads.", "Elf, dwarf, orc, halfling, hexblood, scaleborn, wisp-touched or plain Emberborn human: the Ember does not care."]
+			icon: "minecraft:player_head"
+			x: 2.2d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "137A1F5813AD36BB"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "4A48E561E7BA409D"
+						type: "xp"
+						xp: 15
+					}
+			]
+			dependencies: ["7FDBF26D4C9F59BE"]
+		},
+		{
+			id: "66A195AAD81B1BD2"
+			title: "The Constellation of Embers"
+			description: ["Press the skill tree key (K by default). Four Oaths hang at the heart of the sky: Might, Finesse, the Arcane and Faith. Choose one to begin. The Constellation is large; you will never fill it. Choose what you are, not what you could be.", "Spend experience to light your first star. Later you may unlearn a path with an Amnesia Scroll, at a small cost."]
+			icon: "minecraft:enchanted_book"
+			x: 4.4d
+			y: -2.25d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "1BB5435F91D1AD6A"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "011CE83831DBA5B8"
+						type: "xp"
+						xp: 20
+					},
+					{
+						id: "D3DE8B5FBB10BFC0"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["45FD000C55B42B75"]
+		},
+		{
+			id: "6E03BFA0BE440DF0"
+			title: "First Tools"
+			description: ["A table, a pick, a place to sleep. Every legend started with someone bad at all three."]
+			icon: "minecraft:crafting_table"
+			x: 2.2d
+			y: 0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "72535CE3375FBC63"
+						type: "item"
+						item: "minecraft:crafting_table"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "1DA97C6179763873"
+						type: "xp"
+						xp: 15
+					},
+					{
+						id: "AB4CF81275B561E6"
+						type: "item"
+						item: "minecraft:torch"
+						count: 8
+					}
+			]
+			dependencies: ["7FDBF26D4C9F59BE"]
+		},
+		{
+			id: "0B57FE7A590C13D6"
+			title: "Roll With It"
+			description: ["You can dodge-roll. Press the roll key (see Controls) to tumble out of danger; rolling grants brief invulnerability but costs a recharge.", "Heavy armor and heavy weapons make rolls slower, a good reason to choose your kit carefully."]
+			icon: "minecraft:leather_boots"
+			x: 4.4d
+			y: -0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "AABCD152C6B8DB62"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "E43DC290C21C42EE"
+						type: "xp"
+						xp: 15
+					}
+			]
+			dependencies: ["6E03BFA0BE440DF0"]
+		},
+		{
+			id: "54984DEE40055BFE"
+			title: "Something Hot"
+			description: ["Hunger is the oldest enemy. Bake bread or cook meat; many foods give small lasting boons while you stay fed."]
+			icon: "minecraft:bread"
+			x: 4.4d
+			y: 1.35d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "B5ACB26C5AA3F53D"
+						type: "item"
+						item: "minecraft:bread"
+						count: 3
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "C1A506172D433710"
+						type: "xp"
+						xp: 15
+					},
+					{
+						id: "0927D32E268A6DF5"
+						type: "item"
+						item: "minecraft:cooked_beef"
+						count: 4
+					}
+			]
+			dependencies: ["6E03BFA0BE440DF0"]
+		},
+		{
+			id: "3AD85FFDA0EC8F29"
+			title: "A Blade for the Road"
+			description: ["Swords, axes, spears, hammers, daggers: the world is full of weapons and each class fights differently. Combat is directional and has weight, so learn the swing before the swing learns you.", "Your first choice of weapon will matter less than you think. Your tenth will matter more."]
+			icon: "minecraft:stone_sword"
+			x: 4.4d
+			y: 3.15d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "BE3717B79C483735"
+						type: "item"
+						item: "minecraft:stone_sword"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "1556217D8DFED2F6"
+						type: "xp"
+						xp: 20
+					}
+			]
+			dependencies: ["6E03BFA0BE440DF0"]
+		},
+		{
+			id: "F213054DDE1EF42F"
+			title: "First Blood"
+			description: ["Night brings the hollow things up out of the earth. Put three of them back."]
+			icon: "minecraft:zombie_head"
+			x: 6.6000000000000005d
+			y: 3.15d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "7D0DEFF5BF241708"
+						type: "kill"
+						entity: "minecraft:zombie"
+						value: 3
+					}
+			]
+			rewards: [
+					{
+						id: "735FB4A6E3B6AB80"
+						type: "xp"
+						xp: 30
+					},
+					{
+						id: "C5C14693A734E647"
+						type: "item"
+						item: "minecraft:iron_ingot"
+						count: 4
+					}
+			]
+			dependencies: ["3AD85FFDA0EC8F29"]
+		},
+		{
+			id: "4CE30D0B3514A889"
+			title: "Four Walls"
+			description: ["A bed sets your spawn and skips the night. A roof keeps you alive until you can afford to be brave."]
+			icon: "minecraft:red_bed"
+			x: 6.6000000000000005d
+			y: 0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "21EB88058A0DCDB9"
+						type: "item"
+						item: "minecraft:red_bed"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "0FC4052B7E53EB35"
+						type: "xp"
+						xp: 20
+					}
+			]
+			dependencies: ["54984DEE40055BFE", "0B57FE7A590C13D6"]
+		},
+		{
+			id: "147D3552E12D98AC"
+			title: "Mark the Road"
+			description: ["Waystones remember where you have been. Build one at home and others will answer as you find them in the wild, letting you travel between the places you have marked."]
+			icon: "waystones:waystone"
+			x: 8.8d
+			y: 1.8d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "C0B532646F5E590F"
+						type: "item"
+						item: "waystones:waystone"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "0FFF020FDA10A205"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["4CE30D0B3514A889", "F213054DDE1EF42F"]
+		},
+		{
+			id: "1D4C104EB604A3C8"
+			title: "Smoke on the Horizon"
+			description: ["Chimney smoke means people. Find a village and listen to what the traders say: there are old ruins beyond the hills, and strange lights over them."]
+			icon: "minecraft:bell"
+			x: 11.0d
+			y: 1.8d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "FA5E390129499A19"
+						type: "structure"
+						structure: "minecraft:village_plains"
+					}
+			]
+			rewards: [
+					{
+						id: "E1F7D2CCFCE8BFE9"
+						type: "xp"
+						xp: 40
+					},
+					{
+						id: "EAD2B88E44DDCA70"
+						type: "item"
+						item: "minecraft:emerald"
+						count: 3
+					}
+			]
+			dependencies: ["147D3552E12D98AC"]
+		},
+		{
+			id: "5DBA91ABE234AA2B"
+			title: "The Road Calls"
+			description: ["You have a hearth, a blade, a name and a direction. The Ember in your palm is pulling west, toward a ruin the traders will not name.", "Take what you can carry. Everything past this point has teeth."]
+			icon: "minecraft:compass"
+			x: 13.200000000000001d
+			y: 1.8d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "AD0E6BAA1219C10C"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "BFC78483A855A089"
+						type: "xp"
+						xp: 100
+					},
+					{
+						id: "100F6421C3CC30DB"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					},
+					{
+						id: "FB4125EBE0257779"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t1"
+						elevate: true
+						silent: true
+						title: "Prologue supply cache"
+					}
+			]
+			dependencies: ["1D4C104EB604A3C8"]
+		}
+	]
+}

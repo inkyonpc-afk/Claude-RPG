@@ -1,0 +1,19 @@
+{
+ "type": "apoli:attribute",
+ "name": "Keen Senses",
+ "description": "+4% dodge chance and +10% bow draw speed.",
+ "modifiers": [
+  {
+   "attribute": "attributeslib:dodge_chance",
+   "name": "Sylvan Elf: Keen Senses",
+   "operation": "addition",
+   "value": 0.04
+  },
+  {
+   "attribute": "attributeslib:draw_speed",
+   "name": "Sylvan Elf: Keen Senses",
+   "operation": "multiply_base",
+   "value": 0.1
+  }
+ ]
+}

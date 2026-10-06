@@ -4,7 +4,7 @@
  "loader": "forge",
  "loaderVersion": "47.4.10",
  "generated": "2026-10-06",
- "count": 813,
+ "count": 807,
  "mods": [
   {
    "name": "[WTC]Wizard Terra Curios",
@@ -303,16 +303,6 @@
    "curseforgeProject": 298187,
    "curseforgeFile": 6850495,
    "url": "https://edge.forgecdn.net/files/6850/495/buildinggadgets2-1.0.8.jar",
-   "category": "build",
-   "status": "std"
-  },
-  {
-   "name": "Chipped",
-   "file": "chipped-forge-1.20.1-3.0.7.jar",
-   "sha1": "25ee2a0846059d8f21d28b94b7e0229b60cb5499",
-   "curseforgeProject": 456956,
-   "curseforgeFile": 5813138,
-   "url": "https://edge.forgecdn.net/files/5813/138/chipped-forge-1.20.1-3.0.7.jar",
    "category": "build",
    "status": "std"
   },
@@ -1827,16 +1817,6 @@
    "status": "std"
   },
   {
-   "name": "Healing Campfire",
-   "file": "healingcampfire-1.20.1-6.2.jar",
-   "sha1": "12ece5053d1a95133dca38627d256f90cc94b3aa",
-   "curseforgeProject": 342623,
-   "curseforgeFile": 6185733,
-   "url": "https://edge.forgecdn.net/files/6185/733/healingcampfire-1.20.1-6.2.jar",
-   "category": "food",
-   "status": "std"
-  },
-  {
    "name": "Large Meals (An Add-on for Farmer's Delight)",
    "file": "largemeals-1.20.1-1.3.0.jar",
    "sha1": "7662138788a75832a0c6bad6b13b006cac383496",
@@ -2013,26 +1993,6 @@
    "curseforgeProject": 419699,
    "curseforgeFile": 5137938,
    "url": "https://edge.forgecdn.net/files/5137/938/architectury-9.2.14-forge.jar",
-   "category": "lib",
-   "status": "dep"
-  },
-  {
-   "name": "Athena",
-   "file": "athena-forge-1.20.1-3.1.2.jar",
-   "sha1": "2acee24454af859988a691f0506271a465f68f7b",
-   "curseforgeProject": 841890,
-   "curseforgeFile": 5176879,
-   "url": "https://edge.forgecdn.net/files/5176/879/athena-forge-1.20.1-3.1.2.jar",
-   "category": "lib",
-   "status": "dep"
-  },
-  {
-   "name": "AzureLib",
-   "file": "azurelib-neo-1.20.1-3.1.17.jar",
-   "sha1": "f43023b86f3c02bf2f45ea797a88676da2126795",
-   "curseforgeProject": 817423,
-   "curseforgeFile": 7066970,
-   "url": "https://cdn.modrinth.com/data/7zlUOZvb/versions/xLZ34avd/azurelib-neo-1.20.1-3.1.17.jar",
    "category": "lib",
    "status": "dep"
   },
@@ -2733,16 +2693,6 @@
    "curseforgeProject": 1298070,
    "curseforgeFile": 7743835,
    "url": "https://edge.forgecdn.net/files/7743/835/BTP-Forge-1.20.1-2.0.0.jar",
-   "category": "magic",
-   "status": "std"
-  },
-  {
-   "name": "Cataclysm: Spellbooks",
-   "file": "cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
-   "sha1": "57fbb161849fca19aa12632944b01ce12760c4c4",
-   "curseforgeProject": null,
-   "curseforgeFile": null,
-   "url": "https://cdn.modrinth.com/data/3FEg0A8D/versions/e7VE8bSy/cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
    "category": "magic",
    "status": "std"
   },
@@ -4797,16 +4747,6 @@
    "status": "std"
   },
   {
-   "name": "FTB Quests Optimizer",
-   "file": "FTBQuestsOptimizer-forge-2.1.0-1.20.1.jar",
-   "sha1": "112f99e8b07e9700678882d9b6245469f8eab00d",
-   "curseforgeProject": 912469,
-   "curseforgeFile": 7922527,
-   "url": "https://edge.forgecdn.net/files/7922/527/FTBQuestsOptimizer-forge-2.1.0-1.20.1.jar",
-   "category": "qol",
-   "status": "std"
-  },
-  {
    "name": "FTB Ultimine (NeoForge)",
    "file": "ftb-ultimine-forge-2001.1.8.jar",
    "sha1": "c2a1eb72c36ad067faafbff4e1618c4db906de74",
@@ -5128,11 +5068,11 @@
   },
   {
    "name": "Open Parties and Claims",
-   "file": "open-parties-and-claims-forge-1.20.1-0.28.1.jar",
-   "sha1": "0f7bd20ae44f6e6588da8a7d5bb573bdcedd0ee2",
+   "file": "open-parties-and-claims-forge-1.20.1-0.32.7.jar",
+   "sha1": "a42e6c94af7067c33e186029bcce42417d694579",
    "curseforgeProject": 636608,
    "curseforgeFile": 8472285,
-   "url": "https://edge.forgecdn.net/files/8472/285/open-parties-and-claims-forge-1.20.1-0.28.1.jar",
+   "url": "https://cdn.modrinth.com/data/gF3BGWvG/versions/PkZL3SuC/open-parties-and-claims-forge-1.20.1-0.32.7.jar",
    "category": "qol",
    "status": "std"
   },
@@ -7238,21 +7178,21 @@
   },
   {
    "name": "[EMF] Entity Model Features [Fabric & Forge]",
-   "file": "entity_model_features-3.3.11-1.20.1-forge.jar",
-   "sha1": "eaf743492f8a38ea54ff1b27ccec5a0f3db0b60f",
+   "file": "entity_model_features-3.2.4-1.20.1-forge.jar",
+   "sha1": "535a94543d295f9609808a7e3e205d17547570bc",
    "curseforgeProject": 844662,
    "curseforgeFile": 9064939,
-   "url": "https://edge.forgecdn.net/files/9064/939/entity_model_features-3.3.11-1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/VSBDdOOY/entity_model_features-3.2.4-1.20.1-forge.jar",
    "category": "vis",
    "status": "core"
   },
   {
    "name": "[ETF] Entity Texture Features - [Fabric & Forge]",
-   "file": "entity_texture_features-7.2.5-1.20.1-forge.jar",
-   "sha1": "90d2eb37c8572bc39246b938d3610d30afe7e509",
+   "file": "entity_texture_features_1.20.1-forge-7.1.jar",
+   "sha1": "e13ba95a0388d7d5b1f479e5bd7e2df78e4c4a23",
    "curseforgeProject": 568563,
    "curseforgeFile": 9055216,
-   "url": "https://edge.forgecdn.net/files/9055/216/entity_texture_features-7.2.5-1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/GQlTHleX/entity_texture_features_1.20.1-forge-7.1.jar",
    "category": "vis",
    "status": "core"
   },
@@ -7428,11 +7368,11 @@
   },
   {
    "name": "Drippy Loading Screen",
-   "file": "drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
-   "sha1": "5c5e9dd39881b9b65dba7d7124690c51430a3ff1",
+   "file": "drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+   "sha1": "a33d48809db8a2f1eb3667fe140d7a4104d80dca",
    "curseforgeProject": 511770,
    "curseforgeFile": 7248426,
-   "url": "https://edge.forgecdn.net/files/7248/426/drippyloadingscreen_forge_3.1.0_MC_1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/v3CYg2V9/versions/Nof419YS/drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
    "category": "vis",
    "status": "core"
   },

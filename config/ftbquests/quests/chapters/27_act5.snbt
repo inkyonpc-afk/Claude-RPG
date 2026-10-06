@@ -1,0 +1,461 @@
+{
+	id: "FC5F48267AA29259"
+	filename: "27_act5"
+	title: "Act V: The End of the Age"
+	subtitle: "The Hollow Crown was never broken. It was split, to be gathered by someone willing to finish what the Wardens started."
+	icon: "minecraft:dragon_egg"
+	order_index: 27
+	group: "66515315CBB6E386"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
+	progression_mode: "flexible"
+	images: [{
+			x: -9.5d
+			y: -8.44d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/act5.png"
+			order: 0
+			alpha: 0.55d
+		}]
+	quests: [
+		{
+			id: "07883EB0022042D3"
+			title: "The End"
+			description: ["Every old story ends here. The stronghold portal is open for you now; the thing waiting is no longer asleep."]
+			icon: "minecraft:end_stone"
+			x: 0.0d
+			y: 0.0d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "A30AEE5D47D5CBE1"
+						type: "dimension"
+						dim: "minecraft:the_end"
+					}
+			]
+			rewards: [
+					{
+						id: "1D1C8337B95CE9E0"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "828D1A2B6E17CD1C"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			dependencies: ["87BADE03B26D28D4"]
+		},
+		{
+			id: "B51ADCC34FDCF1EC"
+			title: "A City at the Edge"
+			description: ["End cities hold shulkers, elytra and the first honest glimpse of what comes next."]
+			icon: "minecraft:purpur_block"
+			x: 2.2d
+			y: -0.9d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "43CCC4E5462BB613"
+						type: "structure"
+						structure: "minecraft:end_city"
+					},
+					{
+						id: "2B4E3AA22A1781FB"
+						type: "advancement"
+						advancement: "minecraft:end/find_end_city"
+					}
+			]
+			rewards: [
+					{
+						id: "2F6BC50E79975E4E"
+						type: "xp"
+						xp: 250
+					}
+			]
+			dependencies: ["07883EB0022042D3"]
+		},
+		{
+			id: "3BB42C7A7C957721"
+			title: "Shell of the Ender"
+			description: ["Shulker shells make the greatest travel storage in the world. They are also very annoying to collect."]
+			icon: "minecraft:shulker_shell"
+			x: 4.4d
+			y: -3.15d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "E26D47F93D609686"
+						type: "item"
+						item: "minecraft:shulker_shell"
+						count: 4
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "F66038E85859E51B"
+						type: "xp"
+						xp: 150
+					}
+			]
+			dependencies: ["B51ADCC34FDCF1EC"]
+		},
+		{
+			id: "517410FDEC06C632"
+			title: "Wings Earned"
+			description: ["Real, unrestricted wings: the last, quickest, loneliest form of flight. Earned only here, only at this price."]
+			icon: "minecraft:elytra"
+			x: 4.4d
+			y: -1.35d
+			size: 1.4d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "612E55D900D5FE75"
+						type: "advancement"
+						advancement: "minecraft:end/elytra"
+					}
+			]
+			rewards: [
+					{
+						id: "F159BCF69B749DBE"
+						type: "xp"
+						xp: 500
+					},
+					{
+						id: "194890D21C527C47"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					}
+			]
+			dependencies: ["B51ADCC34FDCF1EC"]
+		},
+		{
+			id: "12AA1D3AC30FCFB3"
+			title: "The Ender Guardian"
+			description: ["A construct of the End, stranger than the dragon and less merciful. It guards a vault the Wardens never knew existed."]
+			icon: "cataclysm:void_core"
+			x: 4.4d
+			y: 0.45d
+			size: 1.5d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "1B1D1654AF5AC1E5"
+						type: "kill"
+						entity: "cataclysm:ender_guardian"
+						value: 1
+					},
+					{
+						id: "A87EA5C81FF62362"
+						type: "advancement"
+						advancement: "cataclysm:kill_ender_guardian"
+					}
+			]
+			rewards: [
+					{
+						id: "517BA8E6D68F8866"
+						type: "xp"
+						xp: 1000
+					},
+					{
+						id: "06606C44C2C17F58"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			dependencies: ["B51ADCC34FDCF1EC"]
+		},
+		{
+			id: "FEECDEE70BC783D3"
+			title: "The Withered One"
+			description: ["A star made of sorrow. Summon it somewhere you can afford to lose."]
+			icon: "minecraft:nether_star"
+			x: 2.2d
+			y: 0.9d
+			size: 1.4d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "9230F9C98ECB3B8E"
+						type: "kill"
+						entity: "minecraft:wither"
+						value: 1
+					},
+					{
+						id: "ABFB1266BBC5D43E"
+						type: "advancement"
+						advancement: "minecraft:nether/summon_wither"
+					}
+			]
+			rewards: [
+					{
+						id: "2349557462E41AB6"
+						type: "xp"
+						xp: 800
+					},
+					{
+						id: "447D6C5BEB392CCE"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			dependencies: ["07883EB0022042D3"]
+		},
+		{
+			id: "6AAD85AA021192C3"
+			title: "A Light for the Dark"
+			description: ["Beacons light the way for allies, for ships and for gods. A full pyramid is a statement."]
+			icon: "minecraft:beacon"
+			x: 4.4d
+			y: 2.25d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "50AD0C659932F241"
+						type: "advancement"
+						advancement: "minecraft:nether/create_full_beacon"
+					}
+			]
+			rewards: [
+					{
+						id: "E5CF3936121FFAE2"
+						type: "xp"
+						xp: 400
+					}
+			]
+			dependencies: ["FEECDEE70BC783D3"]
+		},
+		{
+			id: "0A37C18E17ACE14B"
+			title: "The Warden of the End"
+			description: ["The last Warden has become the thing it guarded. The Ender Dragon is what happens when duty is left alone for ten thousand years.", "Its breath is slow and brutal, its dives merciless. Take the crystals first. Always take the crystals first."]
+			icon: "minecraft:dragon_head"
+			x: 6.6000000000000005d
+			y: 1.35d
+			size: 1.7d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "F5CDD7B665D760E3"
+						type: "kill"
+						entity: "minecraft:ender_dragon"
+						value: 1
+					},
+					{
+						id: "4D8DDB55118C0EBE"
+						type: "advancement"
+						advancement: "minecraft:end/kill_dragon"
+					}
+			]
+			rewards: [
+					{
+						id: "8F5CCAF11E6C79AE"
+						type: "xp"
+						xp: 2000
+					},
+					{
+						id: "241A69C98BEA7BBB"
+						type: "command"
+						command: "skilltree points add {p} 3"
+						elevate: true
+						silent: true
+						title: "3 skill points"
+					},
+					{
+						id: "1310DC4219D87BB0"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Dragon spoils"
+					}
+			]
+			dependencies: ["12AA1D3AC30FCFB3", "6AAD85AA021192C3"]
+		},
+		{
+			id: "466D606DC036C7B5"
+			title: "An Egg of Quiet"
+			description: ["It does not hatch. It does not need to. It sits and hums a note only the Ember can hear."]
+			icon: "minecraft:dragon_egg"
+			x: 8.8d
+			y: -0.45d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "FF65891501A216BA"
+						type: "item"
+						item: "minecraft:dragon_egg"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "C50273021806E852"
+						type: "xp"
+						xp: 500
+					}
+			]
+			dependencies: ["0A37C18E17ACE14B"]
+		},
+		{
+			id: "6136147E73E6A043"
+			title: "A Pearl Between Worlds"
+			description: ["Gate pearls open arenas of waves. Beyond the story is the long game: gateways, superbosses, and everything you skipped."]
+			icon: "gateways:gate_pearl"
+			x: 8.8d
+			y: 1.35d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "30B7E8EFFA7D570F"
+						type: "item"
+						item: "gateways:gate_pearl"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "6BF35798B3391128"
+						type: "xp"
+						xp: 200
+					}
+			]
+			optional: true
+			dependencies: ["0A37C18E17ACE14B"]
+		},
+		{
+			id: "C912DE2A9B3CEEF7"
+			title: "The Last Wings"
+			description: ["Wing-gear that is not an elytra: craftable only from End materials, only with Ember-fire. They glide, they hover, they have a stamina bar. This is the fastest way to cross the world."]
+			icon: "icarus:black_dragon_wings"
+			x: 6.6000000000000005d
+			y: -1.35d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "A3D7B37C74EEF3F0"
+						type: "item"
+						item: "icarus:black_dragon_wings"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "4B7D1BFC3B59F06C"
+						type: "xp"
+						xp: 600
+					}
+			]
+			optional: true
+			dependencies: ["517410FDEC06C632"]
+		},
+		{
+			id: "47635583ED1ACA7A"
+			title: "The Hollow Crown"
+			description: ["The Crown was never destroyed. It was split into seven sigils and left with seven Wardens, so that no single hand could hold it. You hold all seven now. They are warm, and they are heavy.", "Set them in the ring of a beacon, and the Ember will do the rest."]
+			icon: "minecraft:beacon"
+			x: 8.8d
+			y: 3.15d
+			size: 1.5d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "25B2EAD0860B3089"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "9BFE7E199B2D9736"
+						type: "xp"
+						xp: 1000
+					},
+					{
+						id: "6C0B1A93A61240BF"
+						type: "command"
+						command: "skilltree points add {p} 3"
+						elevate: true
+						silent: true
+						title: "3 skill points"
+					},
+					{
+						id: "1EFF53BE7F15199B"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Tier 6 supply cache"
+					}
+			]
+			dependencies: ["0A37C18E17ACE14B", "97840F175BACF2A4", "19BF2B58EFD9E1B1", "383296697E619404"]
+		},
+		{
+			id: "7841C57FE2AE91FD"
+			title: "End of the Age"
+			description: ["The Crown rekindles. The seven realms do not heal at once, but they stop dying. The sky is, for a moment, exactly the colour it should be.", "You are no longer an ordinary adventurer. The road still goes on; the Wardens are gone, but their enemies are not. The Postgame begins where the story stops."]
+			icon: "minecraft:nether_star"
+			x: 11.0d
+			y: 3.15d
+			size: 1.8d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "C83CE5F803587291"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "96277E15D0805E94"
+						type: "xp"
+						xp: 2000
+					},
+					{
+						id: "B88CC97CF3F8AC4C"
+						type: "command"
+						command: "skilltree points add {p} 5"
+						elevate: true
+						silent: true
+						title: "5 skill points"
+					},
+					{
+						id: "0BE688FA403B54FD"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t6"
+						elevate: true
+						silent: true
+						title: "Ending cache"
+					}
+			]
+			dependencies: ["47635583ED1ACA7A"]
+		}
+	]
+}

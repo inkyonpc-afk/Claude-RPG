@@ -10,3 +10,9 @@ tutorialStep:none
 joinedFirstServer:true
 skipMultiplayerWarning:true
 soundCategory_music:0.4
+key_key.display_skill_tree:key.keyboard.k
+key_quark.keybind.lock_rotation:key.keyboard.unknown
+key_key.ftbquests.quests:key.keyboard.o
+key_iris.keybind.toggleShaders:key.keyboard.unknown
+key_iris.keybind.shaderPackSelection:key.keyboard.unknown
+key_iris.keybind.reload:key.keyboard.unknown

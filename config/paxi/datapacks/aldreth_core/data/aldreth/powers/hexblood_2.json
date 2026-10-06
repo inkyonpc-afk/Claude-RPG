@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Frail Plating",
+ "description": "-1 armor.",
+ "modifier": {
+  "attribute": "minecraft:generic.armor",
+  "name": "Hexblood: Frail Plating",
+  "operation": "addition",
+  "value": -1.0
+ }
+}

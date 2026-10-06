@@ -1,0 +1,14 @@
+{
+ "icon": {
+  "item": "minecraft:iron_axe"
+ },
+ "order": 3,
+ "impact": 2,
+ "name": "Ashen Orc",
+ "description": "Hardened by the ashlands: strong, hardy and impatient with spellcraft.",
+ "powers": [
+  "aldreth:orc_0",
+  "aldreth:orc_1",
+  "aldreth:orc_2"
+ ]
+}

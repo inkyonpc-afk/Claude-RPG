@@ -1,0 +1,14 @@
+{
+ "icon": {
+  "item": "minecraft:bow"
+ },
+ "order": 1,
+ "impact": 1,
+ "name": "Sylvan Elf",
+ "description": "Forest-keepers of old Aldreth: swift, keen and slight of frame.",
+ "powers": [
+  "aldreth:elf_0",
+  "aldreth:elf_1",
+  "aldreth:elf_2"
+ ]
+}

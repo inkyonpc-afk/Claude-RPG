@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Master Delver",
+ "description": "+15% mining speed.",
+ "modifier": {
+  "attribute": "attributeslib:mining_speed",
+  "name": "Stoneborn Dwarf: Master Delver",
+  "operation": "multiply_base",
+  "value": 0.15
+ }
+}

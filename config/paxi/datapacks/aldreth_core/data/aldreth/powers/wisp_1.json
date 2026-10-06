@@ -1,0 +1,11 @@
+{
+ "type": "apoli:attribute",
+ "name": "Flicker",
+ "description": "+3% dodge chance.",
+ "modifier": {
+  "attribute": "attributeslib:dodge_chance",
+  "name": "Wisp-touched: Flicker",
+  "operation": "addition",
+  "value": 0.03
+ }
+}
