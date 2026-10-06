@@ -15,8 +15,15 @@ _Status: skeleton — filled in during its phase (see ARCHITECTURE.md)._
 ## Multiplayer handshake (found 2026-10-06 by the first dedicated-server join test)
 Mods that register network channels must be on BOTH sides, or Forge refuses the join ("mismatched mod list"). Earlier `pack/client_only.txt` entries were guesses and wrongly excluded content/channel mods from the server: Blaze Gear (`blazegear:main`), EMI + EMI Loot (loot sync), Relics, CoFH Core, Blowguns, Fragmentum, Certain Questing Additions, Fusion. They are now installed server-side (679-jar server, boots in ~142 s). Rule: add a mod to `client_only.txt` only with evidence (server crash on a client class), never by category.
 
-## Open items (end of session 2026-10-06)
-- **Title screen (fixed 2026-10-06, verified in-client):** three mods replaced it (Ancient Aether via Cumulus Menus, the original Ice and Fire bestiary menu, Blue Skies' realm panorama). All three are switched off in `config/` (see `tools/tune_mounts.py`). The STONEBORN UI pack was dropped. Rule: when adding a mod, check whether it hijacks the title screen.
-- **Ice and Fire:** the original 2.1.13 is shipped. IceAndFire Community Edition alone crashes the client (registry ID mismatch) and was never tested.
-- **Spacing calibration:** first-pass factors applied from one 4 km2 ocean/ice-heavy sample (`config/aldreth/spacing_calibration.json`). A 4-region census run (`tests/census_regions.txt`, tag census2) was started; combine it with the first sample via `tools/calibrate_spacing.py ".build/census1.json@.build/used_cfg_run1.json5" ".build/census2.json@.build/used_cfg_run2.json5"` after `tools/structure_census.py --json .build/census2.json`, then rerun `tools/tune_structures.py`.
-- **Not yet done:** PERFORMANCE.md data write-up (1000-block pregen: 16,129 chunks in 18m54s, TPS 20, server 6.8/8 GB, boot ~136-161 s, client title ~150 s), final export run (`tools/export_curseforge.py`), `tools/verify.py` final pass (only PERFORMANCE.md size failed), full server+client re-test of the final mod set, balance play-testing.
+## Open items (2026-10-06, end of build session)
+Done and verified this session: title screen, spacing calibration, performance numbers, export audit, validator (43/43), multiplayer join, flight gate, realm gate, boss rewards, elytra loot gate.
+
+Still open:
+- **Balance is unverified by play.** Time-to-kill targets, skill-tree power curve, L2 Hostility scaling against Apotheosis gear and shard income all need real play sessions (BALANCE.md lists what to watch first).
+- **Not measured:** client FPS (vanilla and shaders), long-session client memory, TPS with several players, `/spark` hot spots during boss fights.
+- **Spacing:** clutter structures are still somewhat denser than the 12/km2 target (about 16/km2 expected); factors are a first calibration from 6.9 km2 and should be re-censused after any mod change. Boss-tier structures were not seen at all in 2.8 km2 of the second sample (intended rarity, but unconfirmed by data).
+- **Quest book:** chapter list and groups render, but the story group's position in the scrolled list was not checked visually (data order is correct).
+- **Cosmetic:** custom skill-tree icons (PST's stock set is used); FancyMenu loading-screen layouts; resource packs are not individually license-checked.
+- **Multi-player edge cases not tested:** two simultaneous players (Lootr per-player loot, team quest progress), mount state across dimension changes.
+- **Modrinth jars:** Ars 'n Spells and Goety are bundled in the export (GPL, MIT); Wyrmroost (All Rights Reserved) is downloaded by the player via `fetch_extra_mods.py`.
+- **Client-mod audit:** `pack/client_only.txt` is evidence-based; any new mod that registers network channels must be on both sides.
