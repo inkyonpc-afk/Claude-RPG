@@ -84,7 +84,7 @@ enableEquipmentDatapack = true
 	equipmentDropRate = 0.085
 	#Max number of traits on mobs
 	#Range: 1 ~ 100
-	maxTraitCount = 9
+	maxTraitCount = 6
 	#Allow player to increase difficulty by killing mobs
 	enableAdaptiveLeveling = true
 
@@ -109,7 +109,7 @@ enableEquipmentDatapack = true
 	deathDecayTraitCap = true
 	#Mobs spawned within this range will use lowest player level in range instead of nearest player's level to determine mob level
 	#Range: 0 ~ 128
-	newPlayerProtectRange = 48
+	newPlayerProtectRange = 160
 
 [orb_and_spawner]
 	#Allow to use hostility orb

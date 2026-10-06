@@ -27,10 +27,45 @@ for e in lock:
         files.append({"projectID": e["addonID"], "fileID": e["fileId"], "required": True})
     else:
         extra.append(e["fileName"])
+extra_entries = {e["fileName"]: e for e in lock if e["fileName"] in extra}
 # resource/shader packs tracked on CurseForge are referenced, not bundled
 vis = json.load(open(os.path.join(ROOT, "pack", "visual_packs.json"), encoding="utf-8")) if os.path.isfile(os.path.join(ROOT, "pack", "visual_packs.json")) else []
 vis_cf = {v["fileName"] for v in vis if v.get("projectID") and v.get("fileID")}
 files += [{"projectID": v["projectID"], "fileID": v["fileID"], "required": True} for v in vis if v["fileName"] in vis_cf]
+# Jars without a CurseForge id: bundle only when the jar's own declared license allows redistribution; anything else is downloaded by the player
+import re, zipfile as _zf
+REDIST = re.compile(r"MIT|LGPL|GPL|GNU|Apache|BSD|MPL|Mozilla|CC0|Unlicense|ISC|Zlib", re.I)
+
+
+def jar_license(path):
+    try:
+        t = _zf.ZipFile(path).read("META-INF/mods.toml").decode("utf-8", "replace")
+        m = re.search(r'^\s*license\s*=\s*"([^"]*)"', t, re.M)
+        return m.group(1) if m else ""
+    except Exception:
+        return ""
+
+
+bundled, external = [], []
+for fn in extra:
+    lic = jar_license(os.path.join(mods_dir, fn))
+    (bundled if REDIST.search(lic) else external).append((fn, lic))
+extra = [fn for fn, _ in bundled]
+FETCH_SCRIPT = '''"""Downloads mods whose license does not allow redistribution inside this pack. Run once from the instance folder: python fetch_extra_mods.py
+Each file comes from its author's own page and is verified against the sha1 below."""
+import hashlib, json, os, urllib.request
+here = os.path.dirname(os.path.abspath(__file__))
+os.makedirs(os.path.join(here, "mods"), exist_ok=True)
+for e in json.load(open(os.path.join(here, "EXTRA_DOWNLOADS.json"), encoding="utf-8")):
+    out = os.path.join(here, "mods", e["fileName"])
+    if os.path.isfile(out):
+        continue
+    data = urllib.request.urlopen(urllib.request.Request(e["url"], headers={"User-Agent": "EmbersOfAldreth-fetch"}), timeout=60).read()
+    if e["sha1"] and hashlib.sha1(data).hexdigest() != e["sha1"]:
+        raise SystemExit("checksum mismatch: " + e["fileName"])
+    open(out, "wb").write(data)
+    print("downloaded", e["fileName"], "(" + e["license"] + ")")
+'''
 manifest = {"minecraft": {"version": "1.20.1", "modLoaders": [{"id": "forge-47.4.10", "primary": True}]}, "manifestType": "minecraftModpack", "manifestVersion": 1,
             "name": "Embers of Aldreth", "version": a.version, "author": "Claude + Connor", "overrides": "overrides", "files": files}
 os.makedirs(os.path.join(ROOT, a.out), exist_ok=True)
@@ -53,6 +88,15 @@ with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
     if os.path.isfile(os.path.join(ROOT, "options.txt")):
         keep = [l for l in open(os.path.join(ROOT, "options.txt"), encoding="utf-8").read().splitlines() if not l.startswith(("lastServer:", "fullscreen", "overrideWidth", "overrideHeight"))]
         z.writestr("overrides/config/defaultoptions/options.txt", "\n".join(keep) + "\n")
-    for fn in extra:   # jars without a CurseForge id travel inside the pack (personal/friends distribution)
+    for fn in extra:   # redistributable jars without a CurseForge id travel inside the pack
         z.write(os.path.join(mods_dir, fn), "overrides/mods/" + fn)
-print("exported", zp, "| CurseForge-hosted mods:", len(files), "| bundled jars:", len(extra), "| size MB: %.1f" % (os.path.getsize(zp) / 1e6))
+    # provenance + the download path for jars whose license does not allow redistribution
+    third_party = ["# Bundled third-party jars", "",
+                   "Every jar below was published by its author under the license shown (read from the jar's own mods.toml) and is redistributed unmodified. "
+                   "See each project's page for source and full license text.", "", "| Jar | License | Source |", "|---|---|---|"]
+    third_party += ["| %s | %s | %s |" % (fn, lic, (extra_entries[fn].get("url") or "")[:90]) for fn, lic in bundled]
+    z.writestr("overrides/THIRD_PARTY.md", "\n".join(third_party) + "\n")
+    if external:
+        z.writestr("overrides/EXTRA_DOWNLOADS.json", json.dumps([{"fileName": fn, "license": lic, "url": extra_entries[fn]["url"], "sha1": extra_entries[fn]["sha1"]} for fn, lic in external], indent=1))
+        z.writestr("overrides/fetch_extra_mods.py", FETCH_SCRIPT)
+print("exported", zp, "| CurseForge-hosted mods:", len(files), "| bundled jars:", len(extra), "| external downloads:", len(external), "| size MB: %.1f" % (os.path.getsize(zp) / 1e6))

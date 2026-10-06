@@ -1,4 +1,4 @@
-"""Mount + fast-travel tuning (flight is slow early, fast late; tamed mounts never grief; waystone travel costs XP, which also buys skill points). Patches TOML keys in place; fails loudly if a key is missing.
+"""Mount, fast-travel and mob-safety tuning (flight is slow early, fast late; tamed mounts never grief; waystone travel costs XP, which also buys skill points). Patches TOML keys in place; fails loudly if a key is missing.
 Usage: python tools/tune_mounts.py"""
 import os, re
 
@@ -10,6 +10,10 @@ PATCH = {
         "Hippogryph Flight Speed Modifier": "0.75",  # Act III's first overworld flyer is slow and honest
         "Amphithere Flight Speed": "1.5",            # fast but below a grown dragon
         "Dragon Moved Wrongly Error Fix": "true",    # dedicated-server log spam / rubber-banding fix
+    },
+    "config/l2_configs/l2hostility-common.toml": {   # safety-only changes; scaling numbers stay at defaults until play-tested
+        "newPlayerProtectRange": "160",              # no hostility scaling near a new player (spawn area stays gentle)
+        "maxTraitCount": "6",                        # cap stacked mob traits (default 9)
     },
     "config/waystones-common.toml": {                # 1 level per 1000 blocks, capped at 5; +3 levels across dimensions
         "maximumBaseXpCost": "5.0",

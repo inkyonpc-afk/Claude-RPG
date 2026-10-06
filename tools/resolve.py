@@ -124,12 +124,14 @@ for k, pn in new_pins:
     if pn["status"] != "skip" and not (no_test and pn["status"] == "test"):
         selected[k] = dict(cat=pn["category"], status=pn["status"], why="candidate")
 
-# dependency closure
+# dependency closure (projects in pack/dep_replaced.txt are never pulled in: their mod id is already provided by another selected file)
+_rp = os.path.join(PACK, "dep_replaced.txt")
+replaced = {norm(l.split("|")[0]) for l in open(_rp, encoding="utf-8") if l.strip() and not l.startswith("#")} if os.path.isfile(_rp) else set()
 queue, missing_deps = list(selected), {}
 while queue:
     k = queue.pop()
     for d in deps_of(k):
-        if d not in selected:
+        if d not in selected and norm(mods[d]["name"]) not in replaced:
             selected[d] = dict(cat="lib", status="dep", why="dependency of " + mods[k]["name"])
             queue.append(d)
 

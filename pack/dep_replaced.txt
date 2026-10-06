@@ -1,0 +1,4 @@
+# Projects never pulled in as dependencies: another selected file already provides the same mod id (two jars with one mod id load arbitrarily).
+# Format: Exact project name | reason
+Ice and Fire: Dragons | replaced by IceAndFire Community Edition (modid iceandfire); Eyes of Ice and Fire's CurseForge dependency points at the original
+Easy NPC | superseded by Easy NPC: Core 6.x (modid easy_npc)

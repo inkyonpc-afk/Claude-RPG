@@ -30,5 +30,9 @@ Fun, challenging RPG, not punishing hardcore. Difficulty comes from mechanics an
 | IV | 5-8 min | 50-80 s | 4-8 s |
 | V/Post | 6-12 min (superbosses 12-20) | 60-100 s | 4-8 s |
 
-## Status
-Numbers are design targets. The full balance pass (Phase 16) needs play sessions with real builds (warrior, mage, ranger, summoner) to confirm; automated validation covers loading, ID correctness and rarity distribution only.
+## Mob scaling as configured (L2 Hostility 2.5.19)
+Defaults, unchanged except two safety edits (`tools/tune_mounts.py`): +3 % mob health and +2 % damage per level, +0.3 levels per 100 blocks from spawn (`distanceFactor` 0.003), +10 levels per dimension tier, adaptive leveling from the nearest player's kills, 30 kills per level, 80 % difficulty kept after death. **Changed:** `newPlayerProtectRange` 160 (spawn stays gentle) and `maxTraitCount` 6 (default 9).
+
+## Status: what is verified and what is not
+- **Verified by test:** every ID, loot table, quest, skill and recipe loads (zero errors on server and client); rarity tiers drop per the Apotheosis rules; boss tables roll; flight, realm and elytra gates work on a dedicated server with a joined client.
+- **Not verified (needs human play sessions):** time-to-kill targets above, skill-tree power curve against real gear, L2 Hostility scaling against Apotheosis gear, Act-by-Act pacing. Treat every number in this file as a design target. First things to watch in play: Act II boss HP vs Iron's Spells damage; whether L2's default distance and dimension factors outrun gear in the End; shard income vs sigil costs.

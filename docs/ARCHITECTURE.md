@@ -12,7 +12,7 @@ Source of truth for system decisions. Update deliberately (with a CHANGELOG entr
 |---|---|---|
 | Combat | Better Combat + Combat Roll (+ Apotheosis/Particle compat) | Epic Fight (control conflict; server attack bug #1582); one framework only |
 | Levels/skills | Passive Skill Tree 0.7.6e, ONE custom generated tree (~600 nodes, 14 regions, ~32 keystones). Points via XP levels + quest rewards. Amnesia Scroll respec. | Project MMO / Pufferfish's Skills (second XP system) |
-| Keystone mechanics | KubeJS-registered "flag" attributes granted by keystone nodes; KubeJS server events implement the behavior | custom Java mod (fallback only) |
+| Keystone mechanics | **As built:** PST's own bonus types and conditions implement all 42 keystones (damage conversion, health reservation, condition-gated multipliers, ignite/kill/crit listeners, taken-damage multipliers as the drawback). No KubeJS flag attributes were needed. | KubeJS flag attributes + custom Java mod (kept only as fallback) |
 | Attributes | Apothic Attributes backbone + Iron's spell attrs; AttributeFix + Max Health Fix | RPGStats |
 | Races | Origins (Forge), ~8 original races w/ small perks, no class lock | Origins: Classes, Medieval Origins, Strictly Origins (broken powers per Connor RPG) |
 | Gear | Apotheosis 7.4.8 (rarity/affixes/sockets/gems/reforge/salvage/enchanting) + Apotheotic Additions + Apothic Curios + Lukas' Weapon Leveling + Ancient Reforging | Tetra, Silent Gear (second gear identity) |
@@ -35,3 +35,14 @@ Target 250 minimum (enforced by verify.py), ceiling set by measured startup/memo
 
 ## Rejected-by-evidence list (inherited from prior local attempts)
 Sinytra Connector + Fabric-API bundles, TxniLib (+dependents Cerulean/Despawn... check), BCLib/BetterEnd/BetterNether, Dramatic Doors (invalid BWG recipes), Medieval Origins Revival, Strictly Origins, Particle Effects (server cast failure; client-only), AllTheLeaks/Radium (marked broken), Relics-family caution (server issues seen in another pack).
+
+
+## As built (2026-10-06 audit; supersedes the plan where they differ)
+- **Shipping set: 712 jars** (`tools/verify.py` enforces >= 250, one mod id per jar, every mandatory dependency present, no Fabric/NeoForge-only jars). Server set: 678 jars (client-only list in `pack/client_only.txt`, evidence-based only).
+- **Eidolon Repraised** stayed in the `test` pool (not shipped); magic is Iron's Spells + Ars + Goety + Forbidden & Arcanus + T.O Magic 'n Extras.
+- **Gear spine unchanged:** Apotheosis 7.4.8 + addons, Weapon Leveling, Ancient Reforging. No Tetra, Silent Gear or Epic Fight.
+- **Realm gating:** Restricted Portals + Ember Shards/Warden Sigils (PROGRESSION.md); **flight gating:** KubeJS act-gate stage + fenced structures + elytra loot gate (TRAVERSAL.md); **boss rewards:** per-kill tables (LOOT.md).
+- **Spacing:** Sparse Structures Reforged is the single spacing system, driven by `tools/tune_structures.py`; Structurify stays installed but neutral (WORLDGEN.md).
+- **Resource packs and shaders:** a curated stack referenced by CurseForge id (VISUALS.md); shaders off by default.
+- **Dependency hygiene:** `pack/dep_replaced.txt` blocks CurseForge dependencies that duplicate a mod id already provided by another selected file (Ice and Fire original vs Community Edition; Easy NPC vs Easy NPC: Core).
+- **Testing doctrine:** every claim above is backed by a headless server boot, a client boot, or the multiplayer join test (`tests/`); nothing is declared working from reading configs.

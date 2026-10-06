@@ -1745,19 +1745,6 @@
   "deps": []
  },
  {
-  "addonID": 1155650,
-  "name": "Don't Deflect my FREAKING Projectiles",
-  "fileId": 5973850,
-  "fileName": "dont-deflect-my-freaking-projectiles-1.0.0.jar",
-  "sha1": "e8cf76d01b16ff443234516ff1ba3b456c6fd26b",
-  "url": "https://edge.forgecdn.net/files/5973/850/dont-deflect-my-freaking-projectiles-1.0.0.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Cisco's Fantasy Medieval RPG [Dragonfyre]\\mods\\dont-deflect-my-freaking-projectiles-1.0.0.jar",
-  "category": "combat",
-  "status": "std",
-  "why": "candidate",
-  "deps": []
- },
- {
   "addonID": 630764,
   "name": "Dreadsteel",
   "fileId": 7136299,
@@ -1921,19 +1908,6 @@
   ]
  },
  {
-  "addonID": 1151761,
-  "name": "Projectile Tweaks",
-  "fileId": 5963910,
-  "fileName": "projectile_tweaks-2.0.0-1.20.1.jar",
-  "sha1": "913e667b988c2cbf0b066e7b62e3da71e0b1cd5e",
-  "url": "https://edge.forgecdn.net/files/5963/910/projectile_tweaks-2.0.0-1.20.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Prodigium Reforged\\mods\\projectile_tweaks-2.0.0-1.20.1.jar",
-  "category": "combat",
-  "status": "std",
-  "why": "candidate",
-  "deps": []
- },
- {
   "addonID": 667174,
   "name": "Quality Equipment",
   "fileId": 5523943,
@@ -1960,19 +1934,6 @@
   "deps": [
    309927
   ]
- },
- {
-  "addonID": 962162,
-  "name": "Ranged Weapon API",
-  "fileId": 5655499,
-  "fileName": "ranged_weapon_api-1.1.4+1.20.1.jar",
-  "sha1": "0766a20408c19c5abed47784220f9d33fbac22dd",
-  "url": "https://edge.forgecdn.net/files/5655/499/ranged_weapon_api-1.1.4%2b1.20.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Cisco's Fantasy Medieval RPG [Dragonfyre]\\mods\\ranged_weapon_api-1.1.4+1.20.1.jar",
-  "category": "combat",
-  "status": "std",
-  "why": "candidate",
-  "deps": []
  },
  {
   "addonID": 411896,
@@ -3221,21 +3182,6 @@
   "status": "dep",
   "why": "dependency of By Powder and Steel",
   "deps": []
- },
- {
-  "addonID": 264231,
-  "name": "Ice and Fire: Dragons",
-  "fileId": 5633453,
-  "fileName": "iceandfire-2.1.13-1.20.1-beta-5.jar",
-  "sha1": "7e828cbb046ca3d622e92c68f956bd1c0155dc6f",
-  "url": "https://edge.forgecdn.net/files/5633/453/iceandfire-2.1.13-1.20.1-beta-5.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Cisco's Fantasy Medieval RPG [Dragonfyre]\\mods\\iceandfire-2.1.13-1.20.1-beta-5.jar",
-  "category": "lib",
-  "status": "dep",
-  "why": "dependency of Eyes of Ice and Fire",
-  "deps": [
-   331936
-  ]
  },
  {
   "addonID": 520110,
@@ -5187,19 +5133,6 @@
   "deps": [
    419699
   ]
- },
- {
-  "addonID": 912121,
-  "name": "(ARCHIVE) Faster Random",
-  "fileId": 4747792,
-  "fileName": "Fast Random - 1.1.jar",
-  "sha1": "926677b010ba14dc428fe83d3691d97140667ccc",
-  "url": "https://edge.forgecdn.net/files/4747/792/Fast%20Random%20-%201.1.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Cisco's Fantasy Medieval RPG [Dragonfyre]\\mods\\Fast Random - 1.1.jar",
-  "category": "perf",
-  "status": "std",
-  "why": "candidate",
-  "deps": []
  },
  {
   "addonID": 931925,
@@ -8112,19 +8045,6 @@
   "localJar": "G:\\CurseForge\\Instances\\Prodigium Reforged\\mods\\droppedbuffs-1.20.1-1.5.5.jar",
   "category": "rpg",
   "status": "test",
-  "why": "candidate",
-  "deps": []
- },
- {
-  "addonID": 559312,
-  "name": "Easy NPC",
-  "fileId": 6008907,
-  "fileName": "easy_npc-forge-1.20.1-5.9.0.jar",
-  "sha1": "acc9eeb82cbdc975527f10dbde34985d8936908a",
-  "url": "https://edge.forgecdn.net/files/6008/907/easy_npc-forge-1.20.1-5.9.0.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Prodigium Reforged\\mods\\easy_npc-forge-1.20.1-5.9.0.jar",
-  "category": "rpg",
-  "status": "std",
   "why": "candidate",
   "deps": []
  },

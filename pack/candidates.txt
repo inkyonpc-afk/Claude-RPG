@@ -33,7 +33,7 @@ perf | GeckolibBetterFPS | test |
 perf | Particle Core | std |
 perf | Fast Item Frames | std |
 perf | Fast Paintings | std |
-perf | Faster Random | std |
+perf | Faster Random | skip | Fabric-format jar (no mods.toml)
 perf | Chloride | test |
 perf | Saturn | test |
 perf | Memory Settings | std |
@@ -332,7 +332,7 @@ rpg | Second Chance | skip |
 rpg | PlayerRevive | std | multiplayer revive
 rpg | Soul Bound Enchantment | std |
 rpg | Bed Benefits | std |
-rpg | Easy NPC | std | story NPCs
+rpg | Easy NPC | skip | superseded by Easy NPC: Core (same modid)
 rpg | Easy NPC: Core | std |
 rpg | Custom Villager Trades | std |
 rpg | Society Trading | skip |
@@ -419,10 +419,10 @@ combat | More Bows and Arrows | std |
 combat | Better Crossbows | std |
 combat | Better Tridents | std |
 combat | Multi Arrow Effects | std |
-combat | Projectile Tweaks | std |
+combat | Projectile Tweaks | skip | Fabric-format jar (no mods.toml); its mixins load on Forge and conflict
 combat | Archer's Paradox | std |
 combat | Bow Infinity Fix | std |
-combat | Ranged Weapon API | std |
+combat | Ranged Weapon API | skip | Fabric-format jar (no mods.toml); its mixins load on Forge and conflict
 combat | Shield Expansion | std |
 combat | New Shield Variants | std |
 combat | Blowguns | std |
@@ -430,7 +430,7 @@ combat | Quality Equipment | test |
 combat | Radiant Gear | test |
 combat | Cataclysmic Combat | test |
 combat | Unified Combat | test |
-combat | Don't Deflect my FREAKING Projectiles | std |
+combat | Don't Deflect my FREAKING Projectiles | skip | Fabric-format jar (no mods.toml); its mixins load on Forge and conflict
 combat | Armor Points ++ | std |
 combat | Friendly Fire | std |
 combat | Danger Close | skip |
