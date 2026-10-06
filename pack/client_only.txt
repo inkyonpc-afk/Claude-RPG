@@ -1,0 +1,37 @@
+# Mods excluded from server installs (client-side only). Extend on evidence from server_test boots.
+Oculus
+Embeddium
+Embeddium Extra
+Sodium/Embeddium Extras
+Sodium/Embeddium Options API
+Sodium/Embeddium Options Mod Compat
+ImmediatelyFast
+Entity Culling Fabric/Forge
+FancyMenu
+Drippy Loading Screen
+Konkrete
+Melody
+Xaero's Minimap
+Xaero's World Map
+Controlling
+Mouse Tweaks
+Better Third Person
+Legendary Tooltips
+Item Borders
+Not Enough Animations
+Entity Model Features
+Entity Texture Features - | API
+EntityModelShadersFix
+Colorwheel
+AmbientSounds 6
+Sound Physics Remastered
+Presence Footsteps
+Better Advancements
+BetterF3
+Better Mods Button
+Ping Wheel
+Fusion
+Blur
+Bobby Reforged
+CameraOverhaul
+EMI

@@ -1,0 +1,193 @@
+[
+ {
+  "name": "KubeJS Iron's Spells",
+  "replaces": "KubeJS Iron's Spells",
+  "category": "magic",
+  "status": "core",
+  "fileName": "irons_spells_js-1.20.1-6.5-3.14-r2-release.jar",
+  "url": "https://cdn.modrinth.com/data/XLsvc8Ld/versions/a6NiiKTW/irons_spells_js-1.20.1-6.5-3.14-r2-release.jar",
+  "sha1": "d4ae87daa0003861d2fc949962b3e9a1c488e7b3",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\irons_spells_js-1.20.1-6.5-3.14-r2-release.jar",
+  "modids": [
+   "irons_spells_js",
+   "mixinextras"
+  ],
+  "requires": [
+   "curios",
+   "irons_spellbooks"
+  ],
+  "loader": "forge",
+  "source": "modrinth:isskjs",
+  "version": "6.5-3.14-r2",
+  "published": "2026-03-15",
+  "license": "MIT"
+ },
+ {
+  "name": "IceAndFire Community Edition",
+  "replaces": "",
+  "category": "mobs",
+  "status": "core",
+  "fileName": "IceAndFireCE-1.2.7-1.20.1-forge.jar",
+  "url": "https://cdn.modrinth.com/data/VpmCsizY/versions/er2PNtdp/IceAndFireCE-1.2.7-1.20.1-forge.jar",
+  "sha1": "3055710405d3850721142513f59c8b6ce0794a25",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\IceAndFireCE-1.2.7-1.20.1-forge.jar",
+  "modids": [
+   "iceandfire"
+  ],
+  "requires": [
+   "jupiter",
+   "uranus"
+  ],
+  "loader": "forge",
+  "source": "modrinth:iceandfire-ce",
+  "version": "1.2.7",
+  "published": "2026-07-18",
+  "license": "LGPL-3.0-or-later"
+ },
+ {
+  "name": "Wyrmroost",
+  "replaces": "",
+  "category": "trav",
+  "status": "std",
+  "fileName": "wyrmroost-forge-1.20.1-1.3.4.jar",
+  "url": "https://cdn.modrinth.com/data/8dYAmpGw/versions/pDSBNy4T/wyrmroost-forge-1.20.1-1.3.4.jar",
+  "sha1": "fb5771f1dad9c28687cef00dbbd51301d319617b",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\wyrmroost-forge-1.20.1-1.3.4.jar",
+  "modids": [
+   "wyrmroost"
+  ],
+  "requires": [],
+  "loader": "forge",
+  "source": "modrinth:wyrmroost",
+  "version": "1.3.4",
+  "published": "2026-08-12",
+  "license": "LicenseRef-All-Rights-Reserved"
+ },
+ {
+  "name": "Goety - The Dark Arts",
+  "replaces": "",
+  "category": "magic",
+  "status": "std",
+  "fileName": "goety-2.5.58.4.jar",
+  "url": "https://cdn.modrinth.com/data/4ZVIxU8x/versions/9X8ch5p4/goety-2.5.58.4.jar",
+  "sha1": "35d0410674774a13d85911d81fcbfe5939cc2986",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\goety-2.5.58.4.jar",
+  "modids": [
+   "goety"
+  ],
+  "requires": [
+   "curios"
+  ],
+  "loader": "forge",
+  "source": "modrinth:goety",
+  "version": "2.5.58.4",
+  "published": "2026-09-23",
+  "license": "MIT"
+ },
+ {
+  "name": "Cataclysm: Spellbooks",
+  "replaces": "",
+  "category": "magic",
+  "status": "std",
+  "fileName": "cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
+  "url": "https://cdn.modrinth.com/data/3FEg0A8D/versions/e7VE8bSy/cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
+  "sha1": "57fbb161849fca19aa12632944b01ce12760c4c4",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
+  "modids": [
+   "cataclysm_spellbooks",
+   "mixinextras"
+  ],
+  "requires": [
+   "azurelib",
+   "cataclysm",
+   "irons_spellbooks"
+  ],
+  "loader": "forge",
+  "source": "modrinth:cataclysm-spellbooks",
+  "version": "1.2.9-1.20.1",
+  "published": "2026-02-27",
+  "license": "LGPL-2.1-only"
+ },
+ {
+  "name": "Ars 'n Spells",
+  "replaces": "",
+  "category": "magic",
+  "status": "std",
+  "fileName": "ars_n_spells-3.3.5.jar",
+  "url": "https://cdn.modrinth.com/data/NlMT8pQt/versions/wL7OQNCC/ars_n_spells-3.3.5.jar",
+  "sha1": "25c572207e8a3fd1d28fc01b6fa93150eb058656",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\ars_n_spells-3.3.5.jar",
+  "modids": [
+   "ars_n_spells"
+  ],
+  "requires": [
+   "ars_nouveau"
+  ],
+  "loader": "forge",
+  "source": "modrinth:ars-n-spells",
+  "version": "3.3.5",
+  "published": "2026-10-02",
+  "license": "LicenseRef-All-Rights-Reserved"
+ },
+ {
+  "name": "Eidolon:Repraised",
+  "replaces": "",
+  "category": "magic",
+  "status": "test",
+  "fileName": "eidolon_repraised-1.20.1-0.3.8.15.jar",
+  "url": "https://cdn.modrinth.com/data/eWX2m1eM/versions/NJrT0yyU/eidolon_repraised-1.20.1-0.3.8.15.jar",
+  "sha1": "0567b600fdc0073a6167e8d4834115ac69352e3a",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\eidolon_repraised-1.20.1-0.3.8.15.jar",
+  "modids": [
+   "eidolon"
+  ],
+  "requires": [
+   "curios"
+  ],
+  "loader": "forge",
+  "source": "modrinth:eidolonrepraised",
+  "version": "0.3.8.15",
+  "published": "2024-11-05",
+  "license": "GPL-3.0-only"
+ },
+ {
+  "name": "Uranus",
+  "replaces": "",
+  "category": "lib",
+  "status": "skip",
+  "fileName": "uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
+  "url": "https://cdn.modrinth.com/data/3Acxy864/versions/py0cld87/uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
+  "sha1": "e412a3c61e2ce9c93437adacab291d45d532870e",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
+  "modids": [
+   "uranus"
+  ],
+  "requires": [
+   "architectury"
+  ],
+  "loader": "forge",
+  "source": "modrinth:uranus",
+  "version": "2.2.6-bugfix.2",
+  "published": "2026-03-12",
+  "license": "LGPL-3.0-or-later"
+ },
+ {
+  "name": "Jupiter",
+  "replaces": "",
+  "category": "lib",
+  "status": "skip",
+  "fileName": "jupiter-2.3.7-1.20.1-forge.jar",
+  "url": "https://cdn.modrinth.com/data/XbiLGMMU/versions/m0j5CMqc/jupiter-2.3.7-1.20.1-forge.jar",
+  "sha1": "a2d05f0e70ac59ea44f44642f94c0f99f4e80417",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\jupiter-2.3.7-1.20.1-forge.jar",
+  "modids": [
+   "jupiter"
+  ],
+  "requires": [],
+  "loader": "forge",
+  "source": "modrinth:jupiter",
+  "version": "2.3.7-1.20.1-forge",
+  "published": "2026-03-10",
+  "license": "LGPL-3.0-or-later"
+ }
+]

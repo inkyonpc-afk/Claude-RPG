@@ -5,7 +5,12 @@ Selected = lock entries whose category/status match, plus the transitive require
 Prefers the local cached jar (sha1-verified), falls back to the CDN url. Only jars previously installed by this tool
 (tracked in <dest>/.installed.json) are ever removed. --server skips pack/client_only.txt.
 """
-import argparse, hashlib, json, os, shutil, sys, urllib.request
+import argparse, hashlib, json, os, re, shutil, sys, urllib.request
+
+
+def norm(n):
+    return re.sub(r"\s+", " ", re.sub(r"\s*[\[\(].*?[\]\)]", "", n or "")).strip().lower()
+
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
@@ -26,7 +31,7 @@ only = {x.strip().lower() for x in a.only.split(",") if x.strip()}
 cfile = os.path.join(ROOT, "pack", "client_only.txt")
 client_only = set()
 if a.server and os.path.isfile(cfile):
-    client_only = {l.strip().lower() for l in open(cfile, encoding="utf-8") if l.strip() and not l.startswith("#")}
+    client_only = {norm(l) for l in open(cfile, encoding="utf-8") if l.strip() and not l.startswith("#")}
 rej = os.path.join(ROOT, "pack", "rejects.txt")
 rejected = set()
 if os.path.isfile(rej):
@@ -41,7 +46,7 @@ for e in lock:
         continue
     if only and e["name"].lower() not in only:
         continue
-    if e["name"].lower() in rejected:
+    if norm(e["name"]) in rejected:
         continue
     stack.append(e["addonID"])
 while stack:
@@ -52,7 +57,7 @@ while stack:
     stack.extend(byid[i]["deps"])
 
 if a.server:
-    sel = {i: e for i, e in sel.items() if e["name"].lower() not in client_only}
+    sel = {i: e for i, e in sel.items() if norm(e["name"]) not in client_only}
 
 dest = a.dest or os.path.join(ROOT, "mods")
 os.makedirs(dest, exist_ok=True)

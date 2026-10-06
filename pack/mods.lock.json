@@ -26,10 +26,10 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   923030,
+   309927,
    807653,
    910706,
-   309927
+   923030
   ]
  },
  {
@@ -44,9 +44,10 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   419699,
+   309927,
    348521,
-   309927
+   419699,
+   465066
   ]
  },
  {
@@ -119,8 +120,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   602199,
-   309927
+   309927,
+   602199
   ]
  },
  {
@@ -151,6 +152,9 @@
   "status": "std",
   "why": "candidate",
   "deps": [
+   306770,
+   308989,
+   309927,
    336184
   ]
  },
@@ -198,10 +202,10 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   806044,
+   308989,
    309927,
    714059,
-   308989
+   806044
   ]
  },
  {
@@ -216,8 +220,9 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   927915,
-   309927
+   309927,
+   771265,
+   927915
   ]
  },
  {
@@ -263,9 +268,10 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   924854,
+   309927,
+   445274,
    916747,
-   309927
+   924854
   ]
  },
  {
@@ -282,6 +288,7 @@
   "deps": [
    309927,
    426558,
+   445274,
    916747
   ]
  },
@@ -297,8 +304,10 @@
   "status": "test",
   "why": "candidate",
   "deps": [
+   309927,
    312353,
-   445274
+   445274,
+   916747
   ]
  },
  {
@@ -356,8 +365,8 @@
   "status": "test",
   "why": "candidate",
   "deps": [
-   405077,
-   309927
+   309927,
+   405077
   ]
  },
  {
@@ -512,7 +521,9 @@
   "category": "build",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   382216
+  ]
  },
  {
   "addonID": 826308,
@@ -1414,7 +1425,9 @@
   "category": "build",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   416935
+  ]
  },
  {
   "addonID": 917969,
@@ -1625,8 +1638,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   639842,
-   313970
+   313970,
+   639842
   ]
  },
  {
@@ -1764,8 +1777,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   658587,
-   388172
+   388172,
+   658587
   ]
  },
  {
@@ -1793,8 +1806,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   658587,
-   348521
+   348521,
+   658587
   ]
  },
  {
@@ -1937,8 +1950,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   388172,
-   280510
+   280510,
+   388172
   ]
  },
  {
@@ -1967,7 +1980,9 @@
   "category": "combat",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   419699
+  ]
  },
  {
   "addonID": 884272,
@@ -2102,8 +2117,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   1475755,
    1005914,
+   1475755,
    419699
   ]
  },
@@ -2149,6 +2164,7 @@
   "status": "std",
   "why": "candidate",
   "deps": [
+   309927,
    419699
   ]
  },
@@ -2178,8 +2194,8 @@
   "why": "candidate",
   "deps": [
    639842,
-   855414,
-   678036
+   678036,
+   855414
   ]
  },
  {
@@ -2207,8 +2223,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   864599,
-   419699
+   419699,
+   864599
   ]
  },
  {
@@ -2222,7 +2238,10 @@
   "category": "food",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   1038103,
+   419699
+  ]
  },
  {
   "addonID": 1038103,
@@ -2250,7 +2269,9 @@
   "category": "food",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   419699
+  ]
  },
  {
   "addonID": 821483,
@@ -2264,8 +2285,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   864599,
-   419699
+   419699,
+   864599
   ]
  },
  {
@@ -2280,6 +2301,7 @@
   "status": "std",
   "why": "candidate",
   "deps": [
+   419699,
    704465
   ]
  },
@@ -2310,6 +2332,7 @@
   "status": "std",
   "why": "candidate",
   "deps": [
+   309927,
    419699
   ]
  },
@@ -2342,8 +2365,8 @@
   "why": "candidate",
   "deps": [
    331936,
-   426558,
-   398521
+   398521,
+   426558
   ]
  },
  {
@@ -2387,9 +2410,9 @@
   "status": "std",
   "why": "candidate",
   "deps": [
+   398521,
    536254,
-   638417,
-   398521
+   638417
   ]
  },
  {
@@ -2419,8 +2442,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   353928,
-   228525
+   228525,
+   353928
   ]
  },
  {
@@ -2490,7 +2513,9 @@
   "category": "food",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   398521
+  ]
  },
  {
   "addonID": 276951,
@@ -2532,8 +2557,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   398521,
-   368098
+   368098,
+   398521
   ]
  },
  {
@@ -2563,7 +2588,9 @@
   "category": "food",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   225643
+  ]
  },
  {
   "addonID": 574622,
@@ -2660,7 +2687,9 @@
   "category": "food",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   398521
+  ]
  },
  {
   "addonID": 873866,
@@ -2703,7 +2732,9 @@
   "category": "food",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   398521
+  ]
  },
  {
   "addonID": 689630,
@@ -2746,7 +2777,9 @@
   "category": "food",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   398521
+  ]
  },
  {
   "addonID": 914018,
@@ -2861,9 +2894,9 @@
   "status": "std",
   "why": "candidate",
   "deps": [
+   398521,
    574622,
-   884685,
-   398521
+   884685
   ]
  },
  {
@@ -2951,7 +2984,7 @@
   "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\architectury-9.2.14-forge.jar",
   "category": "lib",
   "status": "dep",
-  "why": "dependency of KubeJS",
+  "why": "dependency of Uranus",
   "deps": []
  },
  {
@@ -2965,6 +2998,19 @@
   "category": "lib",
   "status": "dep",
   "why": "dependency of Chipped",
+  "deps": []
+ },
+ {
+  "addonID": 817423,
+  "name": "AzureLib",
+  "fileId": 7066970,
+  "fileName": "azurelib-neo-1.20.1-3.0.24.jar",
+  "sha1": "062b818055f936ac328edaa8cadaa4e96cbdf10b",
+  "url": "https://edge.forgecdn.net/files/7066/970/azurelib-neo-1.20.1-3.0.24.jar",
+  "localJar": "G:\\CurseForge\\Instances\\Cisco's Fantasy Medieval RPG [Dragonfyre]\\mods\\azurelib-neo-1.20.1-3.0.24.jar",
+  "category": "lib",
+  "status": "dep",
+  "why": "dependency of Cataclysm: Spellbooks",
   "deps": []
  },
  {
@@ -3031,6 +3077,22 @@
   "status": "dep",
   "why": "dependency of Watering Cans [Dew Drop]",
   "deps": []
+ },
+ {
+  "addonID": 225643,
+  "name": "Botania",
+  "fileId": 8901969,
+  "fileName": "Botania-1.20.1-456-FORGE.jar",
+  "sha1": "17e0cab4160e86f434cd137a60faeb2594ae4e15",
+  "url": "https://edge.forgecdn.net/files/8901/969/Botania-1.20.1-456-FORGE.jar",
+  "localJar": "G:\\CurseForge\\Instances\\Codex RPG\\mods\\Botania-1.20.1-456-FORGE.jar",
+  "category": "lib",
+  "status": "dep",
+  "why": "dependency of Croptania",
+  "deps": [
+   306770,
+   309927
+  ]
  },
  {
   "addonID": 955605,
@@ -3174,7 +3236,7 @@
   "localJar": "G:\\CurseForge\\Instances\\Mastering Magic  A Magic World with Quests\\mods\\cupboard-1.20.1-4.2.jar",
   "category": "lib",
   "status": "dep",
-  "why": "dependency of Respawning Structures",
+  "why": "dependency of Loot Integrations",
   "deps": []
  },
  {
@@ -3307,7 +3369,9 @@
   "category": "lib",
   "status": "dep",
   "why": "dependency of Eyes of Ice and Fire",
-  "deps": []
+  "deps": [
+   331936
+  ]
  },
  {
   "addonID": 520110,
@@ -3364,6 +3428,19 @@
   "deps": [
    419699
   ]
+ },
+ {
+  "addonID": -9,
+  "name": "Jupiter",
+  "fileId": null,
+  "fileName": "jupiter-2.3.7-1.20.1-forge.jar",
+  "sha1": "a2d05f0e70ac59ea44f44642f94c0f99f4e80417",
+  "url": "https://cdn.modrinth.com/data/XbiLGMMU/versions/m0j5CMqc/jupiter-2.3.7-1.20.1-forge.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\jupiter-2.3.7-1.20.1-forge.jar",
+  "category": "lib",
+  "status": "dep",
+  "why": "dependency of IceAndFire Community Edition",
+  "deps": []
  },
  {
   "addonID": 455585,
@@ -3551,10 +3628,10 @@
   "status": "dep",
   "why": "dependency of Ars Ocultas",
   "deps": [
-   388172,
    309927,
-   661293,
-   538392
+   388172,
+   538392,
+   661293
   ]
  },
  {
@@ -3635,7 +3712,9 @@
   "category": "lib",
   "status": "dep",
   "why": "dependency of FTB Backups 2",
-  "deps": []
+  "deps": [
+   419699
+  ]
  },
  {
   "addonID": 638111,
@@ -3647,7 +3726,7 @@
   "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\Prism-1.20.1-forge-1.0.5.jar",
   "category": "lib",
   "status": "dep",
-  "why": "dependency of Legendary Tooltips [Neo/Forge]",
+  "why": "dependency of Item Borders [Neo/Forge]",
   "deps": []
  },
  {
@@ -3712,8 +3791,10 @@
   "localJar": "G:\\CurseForge\\Instances\\Beyond Depth\\mods\\OctoLib-FORGE-0.5.0.1+1.20.1.jar",
   "category": "lib",
   "status": "dep",
-  "why": "dependency of Relics: Alex's Mobs Compat",
-  "deps": []
+  "why": "dependency of Reliquified Artifacts",
+  "deps": [
+   419699
+  ]
  },
  {
   "addonID": 661293,
@@ -3753,10 +3834,10 @@
   "status": "dep",
   "why": "dependency of Additional Jewelry (RPG Series Plus)",
   "deps": [
+   309927,
    348521,
-   771265,
    658587,
-   309927
+   771265
   ]
  },
  {
@@ -3769,7 +3850,7 @@
   "localJar": "G:\\CurseForge\\Instances\\ciscos updated\\mods\\spell_power-forge-1.6.1+1.20.1.jar",
   "category": "lib",
   "status": "dep",
-  "why": "dependency of Spell Engine",
+  "why": "dependency of More RPG Library",
   "deps": []
  },
  {
@@ -3838,6 +3919,21 @@
   "deps": []
  },
  {
+  "addonID": -8,
+  "name": "Uranus",
+  "fileId": null,
+  "fileName": "uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
+  "sha1": "e412a3c61e2ce9c93437adacab291d45d532870e",
+  "url": "https://cdn.modrinth.com/data/3Acxy864/versions/py0cld87/uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\uranus-2.2.6-bugfix.2-1.20.1-forge.jar",
+  "category": "lib",
+  "status": "dep",
+  "why": "dependency of IceAndFire Community Edition",
+  "deps": [
+   419699
+  ]
+ },
+ {
   "addonID": 667299,
   "name": "YetAnotherConfigLib",
   "fileId": 6336646,
@@ -3862,6 +3958,21 @@
   "status": "std",
   "why": "candidate",
   "deps": []
+ },
+ {
+  "addonID": -6,
+  "name": "Ars 'n Spells",
+  "fileId": null,
+  "fileName": "ars_n_spells-3.3.5.jar",
+  "sha1": "25c572207e8a3fd1d28fc01b6fa93150eb058656",
+  "url": "https://cdn.modrinth.com/data/NlMT8pQt/versions/wL7OQNCC/ars_n_spells-3.3.5.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\ars_n_spells-3.3.5.jar",
+  "category": "magic",
+  "status": "std",
+  "why": "candidate",
+  "deps": [
+   401955
+  ]
  },
  {
   "addonID": 561470,
@@ -3889,7 +4000,9 @@
   "category": "magic",
   "status": "core",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   309927
+  ]
  },
  {
   "addonID": 907843,
@@ -3903,8 +4016,10 @@
   "status": "test",
   "why": "candidate",
   "deps": [
-   401955,
-   361026
+   306770,
+   309927,
+   361026,
+   401955
   ]
  },
  {
@@ -3919,6 +4034,23 @@
   "status": "std",
   "why": "candidate",
   "deps": []
+ },
+ {
+  "addonID": -5,
+  "name": "Cataclysm: Spellbooks",
+  "fileId": null,
+  "fileName": "cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
+  "sha1": "57fbb161849fca19aa12632944b01ce12760c4c4",
+  "url": "https://cdn.modrinth.com/data/3FEg0A8D/versions/e7VE8bSy/cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\cataclysm_spellbooks-1.2.9-1.20.1-all.jar",
+  "category": "magic",
+  "status": "std",
+  "why": "candidate",
+  "deps": [
+   551586,
+   817423,
+   855414
+  ]
  },
  {
   "addonID": 639653,
@@ -3936,6 +4068,21 @@
   ]
  },
  {
+  "addonID": -7,
+  "name": "Eidolon:Repraised",
+  "fileId": null,
+  "fileName": "eidolon_repraised-1.20.1-0.3.8.15.jar",
+  "sha1": "0567b600fdc0073a6167e8d4834115ac69352e3a",
+  "url": "https://cdn.modrinth.com/data/eWX2m1eM/versions/NJrT0yyU/eidolon_repraised-1.20.1-0.3.8.15.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\eidolon_repraised-1.20.1-0.3.8.15.jar",
+  "category": "magic",
+  "status": "test",
+  "why": "candidate",
+  "deps": [
+   309927
+  ]
+ },
+ {
   "addonID": 309858,
   "name": "Forbidden and Arcanus",
   "fileId": 5198323,
@@ -3948,6 +4095,21 @@
   "why": "candidate",
   "deps": [
    416935
+  ]
+ },
+ {
+  "addonID": -4,
+  "name": "Goety - The Dark Arts",
+  "fileId": null,
+  "fileName": "goety-2.5.58.4.jar",
+  "sha1": "35d0410674774a13d85911d81fcbfe5939cc2986",
+  "url": "https://cdn.modrinth.com/data/4ZVIxU8x/versions/9X8ch5p4/goety-2.5.58.4.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\goety-2.5.58.4.jar",
+  "category": "magic",
+  "status": "std",
+  "why": "candidate",
+  "deps": [
+   309927
   ]
  },
  {
@@ -3978,9 +4140,9 @@
   "why": "candidate",
   "deps": [
    1492763,
-   658587,
    309927,
-   388172
+   388172,
+   658587
   ]
  },
  {
@@ -4002,14 +4164,17 @@
   "addonID": 980834,
   "name": "KubeJS Iron's Spells",
   "fileId": 5736059,
-  "fileName": "irons_spells_js-1.20.1-3.1.1-release.jar",
-  "sha1": "c43a02e22e2972a5a680346d763efb082b3b529b",
-  "url": "https://edge.forgecdn.net/files/5736/59/irons_spells_js-1.20.1-3.1.1-release.jar",
-  "localJar": "G:\\CurseForge\\Instances\\Prodigium Reforged\\mods\\irons_spells_js-1.20.1-3.1.1-release.jar",
+  "fileName": "irons_spells_js-1.20.1-6.5-3.14-r2-release.jar",
+  "sha1": "d4ae87daa0003861d2fc949962b3e9a1c488e7b3",
+  "url": "https://cdn.modrinth.com/data/XLsvc8Ld/versions/a6NiiKTW/irons_spells_js-1.20.1-6.5-3.14-r2-release.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\irons_spells_js-1.20.1-6.5-3.14-r2-release.jar",
   "category": "magic",
   "status": "core",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   309927,
+   855414
+  ]
  },
  {
   "addonID": 342543,
@@ -4136,7 +4301,9 @@
   "category": "mobs",
   "status": "core",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   331936
+  ]
  },
  {
   "addonID": 536254,
@@ -4235,8 +4402,8 @@
   "why": "candidate",
   "deps": [
    348521,
-   955605,
-   388172
+   388172,
+   955605
   ]
  },
  {
@@ -4266,8 +4433,8 @@
   "status": "test",
   "why": "candidate",
   "deps": [
-   551586,
-   1271749
+   1271749,
+   551586
   ]
  },
  {
@@ -4299,9 +4466,9 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   667299,
+   388172,
    419699,
-   388172
+   667299
   ]
  },
  {
@@ -4370,8 +4537,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   570073,
    388172,
+   570073,
    714059
   ]
  },
@@ -4500,10 +4667,10 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   714059,
    388172,
    419699,
-   570073
+   570073,
+   714059
   ]
  },
  {
@@ -4544,6 +4711,22 @@
   "status": "std",
   "why": "candidate",
   "deps": []
+ },
+ {
+  "addonID": -2,
+  "name": "IceAndFire Community Edition",
+  "fileId": null,
+  "fileName": "IceAndFireCE-1.2.7-1.20.1-forge.jar",
+  "sha1": "3055710405d3850721142513f59c8b6ce0794a25",
+  "url": "https://cdn.modrinth.com/data/VpmCsizY/versions/er2PNtdp/IceAndFireCE-1.2.7-1.20.1-forge.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\IceAndFireCE-1.2.7-1.20.1-forge.jar",
+  "category": "mobs",
+  "status": "core",
+  "why": "candidate",
+  "deps": [
+   -8,
+   -9
+  ]
  },
  {
   "addonID": 891324,
@@ -4611,8 +4794,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   309927,
-   1001614
+   1001614,
+   309927
   ]
  },
  {
@@ -4698,8 +4881,8 @@
   "status": "test",
   "why": "candidate",
   "deps": [
-   563928,
-   388172
+   388172,
+   563928
   ]
  },
  {
@@ -4787,8 +4970,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   551586,
-   250498
+   250498,
+   551586
   ]
  },
  {
@@ -4845,7 +5028,9 @@
   "category": "mobs",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   388172
+  ]
  },
  {
   "addonID": 804434,
@@ -4971,7 +5156,9 @@
   "category": "mobs",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   997634
+  ]
  },
  {
   "addonID": 381736,
@@ -5703,8 +5890,8 @@
   "status": "test",
   "why": "candidate",
   "deps": [
-   908741,
-   388172
+   388172,
+   908741
   ]
  },
  {
@@ -6003,8 +6190,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   351264,
-   1005914
+   1005914,
+   351264
   ]
  },
  {
@@ -6159,7 +6346,9 @@
   "category": "qol",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   520110
+  ]
  },
  {
   "addonID": 445838,
@@ -6543,7 +6732,9 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   1264423
+   1264423,
+   309927,
+   316582
   ]
  },
  {
@@ -6672,8 +6863,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   580555,
-   1005914
+   1005914,
+   580555
   ]
  },
  {
@@ -6789,8 +6980,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   576589,
-   419699
+   419699,
+   576589
   ]
  },
  {
@@ -6805,9 +6996,9 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   419699,
+   404465,
    404468,
-   404465
+   419699
   ]
  },
  {
@@ -6880,7 +7071,9 @@
   "category": "qol",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   570073
+  ]
  },
  {
   "addonID": 421377,
@@ -6947,7 +7140,10 @@
   "category": "qol",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   520110,
+   638111
+  ]
  },
  {
   "addonID": 521590,
@@ -7120,8 +7316,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   638111,
-   520110
+   520110,
+   638111
   ]
  },
  {
@@ -7244,8 +7440,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   916747,
-   419699
+   419699,
+   916747
   ]
  },
  {
@@ -7641,8 +7837,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   454372,
-   438332
+   438332,
+   454372
   ]
  },
  {
@@ -7760,10 +7956,11 @@
   "status": "test",
   "why": "candidate",
   "deps": [
+   245755,
    263420,
-   667299,
    351264,
-   245755
+   531761,
+   667299
   ]
  },
  {
@@ -7844,7 +8041,9 @@
   "category": "rpg",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   382216
+  ]
  },
  {
   "addonID": 1115285,
@@ -7902,7 +8101,10 @@
   "category": "rpg",
   "status": "core",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   308989,
+   474438
+  ]
  },
  {
   "addonID": 313970,
@@ -7992,8 +8194,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   313970,
-   309927
+   309927,
+   313970
   ]
  },
  {
@@ -8050,7 +8252,9 @@
   "category": "rpg",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   419699
+  ]
  },
  {
   "addonID": 838573,
@@ -8134,8 +8338,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   916747,
-   419699
+   419699,
+   916747
   ]
  },
  {
@@ -8150,8 +8354,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   419699,
-   289412
+   289412,
+   419699
   ]
  },
  {
@@ -8165,7 +8369,9 @@
   "category": "rpg",
   "status": "test",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   419699
+  ]
  },
  {
   "addonID": 463402,
@@ -8178,7 +8384,9 @@
   "category": "rpg",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   419699
+  ]
  },
  {
   "addonID": 1037427,
@@ -8286,9 +8494,9 @@
   "status": "test",
   "why": "candidate",
   "deps": [
-   985468,
+   313970,
    924640,
-   313970
+   985468
   ]
  },
  {
@@ -8318,9 +8526,9 @@
   "status": "core",
   "why": "candidate",
   "deps": [
+   404465,
    404468,
-   419699,
-   404465
+   419699
   ]
  },
  {
@@ -8335,8 +8543,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   419699,
-   404465
+   404465,
+   419699
   ]
  },
  {
@@ -8351,8 +8559,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   419699,
-   404465
+   404465,
+   419699
   ]
  },
  {
@@ -8439,10 +8647,10 @@
   "status": "core",
   "why": "candidate",
   "deps": [
+   306770,
    309927,
-   758349,
    620203,
-   306770
+   758349
   ]
  },
  {
@@ -8696,8 +8904,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   639842,
    419699,
+   639842,
    644704
   ]
  },
@@ -8743,7 +8951,9 @@
   "category": "script",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   238086
+  ]
  },
  {
   "addonID": 977922,
@@ -8801,8 +9011,8 @@
   "status": "core",
   "why": "candidate",
   "deps": [
-   309927,
-   238086
+   238086,
+   309927
   ]
  },
  {
@@ -8816,7 +9026,9 @@
   "category": "script",
   "status": "core",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   238086
+  ]
  },
  {
   "addonID": 666198,
@@ -8875,7 +9087,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   238086
+   238086,
+   419699
   ]
  },
  {
@@ -8969,7 +9182,9 @@
   "category": "struct",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   255308
+  ]
  },
  {
   "addonID": 1158208,
@@ -8996,8 +9211,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   438332,
-   421850
+   421850,
+   438332
   ]
  },
  {
@@ -9179,7 +9394,9 @@
   "category": "struct",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   398521
+  ]
  },
  {
   "addonID": 1117054,
@@ -9326,7 +9543,9 @@
   "category": "struct",
   "status": "core",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   326652
+  ]
  },
  {
   "addonID": 1003666,
@@ -9993,9 +10212,9 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   563928,
+   388172,
    421850,
-   388172
+   563928
   ]
  },
  {
@@ -10079,7 +10298,9 @@
   "category": "trav",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   388172
+  ]
  },
  {
   "addonID": 465066,
@@ -10170,7 +10391,9 @@
   "category": "trav",
   "status": "core",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   309927
+  ]
  },
  {
   "addonID": 1234653,
@@ -10239,9 +10462,22 @@
   "why": "candidate",
   "deps": [
    1203668,
-   499980,
-   488090
+   488090,
+   499980
   ]
+ },
+ {
+  "addonID": -3,
+  "name": "Wyrmroost",
+  "fileId": null,
+  "fileName": "wyrmroost-forge-1.20.1-1.3.4.jar",
+  "sha1": "fb5771f1dad9c28687cef00dbbd51301d319617b",
+  "url": "https://cdn.modrinth.com/data/8dYAmpGw/versions/pDSBNy4T/wyrmroost-forge-1.20.1-1.3.4.jar",
+  "localJar": "G:\\curseforge\\Instances\\Claude RPG\\.build\\cache\\wyrmroost-forge-1.20.1-1.3.4.jar",
+  "category": "trav",
+  "status": "std",
+  "why": "candidate",
+  "deps": []
  },
  {
   "addonID": 844662,
@@ -10579,7 +10815,9 @@
   "category": "vis",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   348521
+  ]
  },
  {
   "addonID": 438447,
@@ -10678,7 +10916,10 @@
   "category": "vis",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   348521,
+   419699
+  ]
  },
  {
   "addonID": 854949,
@@ -11035,8 +11276,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   398521,
-   379849
+   379849,
+   398521
   ]
  },
  {
@@ -11082,8 +11323,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   398521,
-   255308
+   255308,
+   398521
   ]
  },
  {
@@ -11098,8 +11339,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   378802,
-   255308
+   255308,
+   378802
   ]
  },
  {
@@ -11113,7 +11354,11 @@
   "category": "world",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   255308,
+   563928,
+   852465
+  ]
  },
  {
   "addonID": 695238,
@@ -11213,7 +11458,8 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   419699
+   419699,
+   563928
   ]
  },
  {
@@ -11310,10 +11556,10 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   962544,
    388172,
    563928,
-   693313
+   693313,
+   962544
   ]
  },
  {
@@ -11340,7 +11586,9 @@
   "category": "world",
   "status": "test",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   563928
+  ]
  },
  {
   "addonID": 1098212,
@@ -11368,7 +11616,9 @@
   "category": "world",
   "status": "core",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   936015
+  ]
  },
  {
   "addonID": 563928,
@@ -11421,9 +11671,10 @@
   "status": "std",
   "why": "candidate",
   "deps": [
-   563928,
    255308,
    388172,
+   563928,
+   852465,
    879879
   ]
  },
@@ -11479,7 +11730,9 @@
   "category": "world",
   "status": "std",
   "why": "candidate",
-  "deps": []
+  "deps": [
+   936015
+  ]
  },
  {
   "addonID": 326895,

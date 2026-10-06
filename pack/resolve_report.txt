@@ -1,6 +1,6 @@
-selected mods: 817  (candidates 748, deps 69)
-external (Modrinth) to resolve: goety, eidolon-repraised, iceandfire-ce, wyrmroost, cataclysm-spellbooks, to-tweaks-irons-spells, irons-spells-n-spellbooks-ice-and-fire, ars-n-spells
+selected mods: 827  (candidates 754, deps 73)
+external lines without a pin: eidolon-repraised, to-tweaks-irons-spells, irons-spells-n-spellbooks-ice-and-fire
 unmatched (0): 
 ambiguous (0):
 fabric/quilt-looking files selected (1): Towns and Towers :: Towns-and-Towers-1.12-Fabric+Forge.jar
-deps missing from cache: {'306612': ['Ranged Weapon API', 'Runes', 'Smart Particles', 'Dynamic Crosshair'], '547434': ['Fast Item Frames']}
+unmet required modids (not provided by any cached forge jar): {'satin': ['Blur (Forge)']}

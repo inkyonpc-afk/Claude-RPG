@@ -1,0 +1,9981 @@
+{
+"404468": {
+"modids": [
+"ftbteams"
+],
+"requires": [
+"architectury",
+"ftblibrary"
+],
+"loader": "forge"
+},
+"912104": {
+"modids": [
+"sparsestructuresreforged"
+],
+"requires": [],
+"loader": "forge"
+},
+"430642": {
+"modids": [
+"majruszsdifficulty"
+],
+"requires": [
+"majruszlibrary"
+],
+"loader": "forge"
+},
+"243190": {
+"modids": [
+"shouldersurfing"
+],
+"requires": [],
+"loader": "forge"
+},
+"888150": {
+"modids": [
+"customcredits"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"1294648": {
+"modids": [
+"lavachickenmusicdisc"
+],
+"requires": [],
+"loader": "forge"
+},
+"499826": {
+"modids": [
+"advancementplaques"
+],
+"requires": [
+"iceberg"
+],
+"loader": "forge"
+},
+"567709": {
+"modids": [
+"biomemakeover"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"1420447": {
+"modids": [
+"reliable_remover"
+],
+"requires": [
+"reliable_recipes"
+],
+"loader": "forge"
+},
+"411045": {
+"modids": [
+"getittogetherdrops"
+],
+"requires": [],
+"loader": "forge"
+},
+"500273": {
+"modids": [
+"visualworkbench"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"790626": {
+"modids": [
+"mixinextras",
+"modernfix"
+],
+"requires": [],
+"loader": "forge"
+},
+"1107833": {
+"modids": [
+"snowy_tents"
+],
+"requires": [],
+"loader": "forge"
+},
+"417439": {
+"modids": [
+"majruszsenchantments"
+],
+"requires": [
+"majruszlibrary"
+],
+"loader": "forge"
+},
+"407206": {
+"modids": [
+"chat_heads"
+],
+"requires": [],
+"loader": "forge"
+},
+"515276": {
+"modids": [
+"enhancedai",
+"mixinextras"
+],
+"requires": [
+"insanelib"
+],
+"loader": "forge"
+},
+"941573": {
+"modids": [
+"bosses_of_mass_destruction"
+],
+"requires": [
+"cerbons_api",
+"cloth_config",
+"geckolib"
+],
+"loader": "forge"
+},
+"936730": {
+"modids": [
+"geophilic_reforged"
+],
+"requires": [],
+"loader": "forge"
+},
+"715660": {
+"modids": [
+"obscure_tooltips"
+],
+"requires": [
+"fragmentum"
+],
+"loader": "forge"
+},
+"1023532": {
+"modids": [
+"createcobblestone"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"470193": {
+"modids": [
+"connectivity"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"908314": {
+"modids": [
+"realmrpg_wyrms"
+],
+"requires": [],
+"loader": "forge"
+},
+"257356": {
+"modids": [
+"incontrol"
+],
+"requires": [],
+"loader": "forge"
+},
+"693313": {
+"modids": [
+"corgilib"
+],
+"requires": [],
+"loader": "forge"
+},
+"1102591": {
+"modids": [
+"trading_floor"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"351264": {
+"modids": [
+"kotlinforforge"
+],
+"requires": [],
+"loader": "none"
+},
+"1346978": {
+"modids": [
+"coolrain"
+],
+"requires": [],
+"loader": "forge"
+},
+"570630": {
+"modids": [
+"lootjs"
+],
+"requires": [
+"kubejs"
+],
+"loader": "forge"
+},
+"1274783": {
+"modids": [
+"create_alexscaves_compat"
+],
+"requires": [
+"alexscaves",
+"create"
+],
+"loader": "forge"
+},
+"852667": {
+"modids": [
+"completionistsindex"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"1141533": {
+"modids": [
+"too_many_bows"
+],
+"requires": [
+"architectury",
+"curios"
+],
+"loader": "forge"
+},
+"883287": {
+"modids": [
+"fastpaintings"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"827163": {
+"modids": [
+"endersdelight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"916493": {
+"modids": [
+"astikorcarts"
+],
+"requires": [],
+"loader": "forge"
+},
+"475117": {
+"modids": [
+"fastsuite"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"978125": {
+"modids": [
+"create_ultimate_factory"
+],
+"requires": [],
+"loader": "forge"
+},
+"225738": {
+"modids": [
+"dummmmmmy"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"921066": {
+"modids": [
+"better_beacons"
+],
+"requires": [
+"cerbons_api",
+"cloth_config"
+],
+"loader": "forge"
+},
+"223852": {
+"modids": [
+"storagedrawers"
+],
+"requires": [],
+"loader": "forge"
+},
+"1309246": {
+"modids": [
+"mixinextras",
+"witherreincarnated"
+],
+"requires": [],
+"loader": "forge"
+},
+"621405": {
+"modids": [
+"crackerslib",
+"witherstormmod"
+],
+"requires": [],
+"loader": "forge"
+},
+"388172": {
+"modids": [
+"geckolib"
+],
+"requires": [],
+"loader": "forge"
+},
+"300297": {
+"modids": [
+"projectvibrantjourneys"
+],
+"requires": [],
+"loader": "forge"
+},
+"1345948": {
+"modids": [
+"emberstextapi"
+],
+"requires": [],
+"loader": "forge"
+},
+"316582": {
+"modids": [
+"corpse"
+],
+"requires": [],
+"loader": "forge"
+},
+"456239": {
+"modids": [
+"easymagic"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"229060": {
+"modids": [
+"ichunutil"
+],
+"requires": [],
+"loader": "forge"
+},
+"973463": {
+"modids": [
+"deltaboxlib"
+],
+"requires": [
+"architectury",
+"kotlinforforge"
+],
+"loader": "forge"
+},
+"882495": {
+"modids": [
+"gpumemleakfix"
+],
+"requires": [],
+"loader": "forge"
+},
+"1056812": {
+"modids": [
+"unilib"
+],
+"requires": [],
+"loader": "forge"
+},
+"1191845": {
+"modids": [
+"redirected"
+],
+"requires": [
+"txnilib"
+],
+"loader": "forge"
+},
+"944203": {
+"modids": [
+"ramcompat"
+],
+"requires": [
+"curios",
+"octolib",
+"relics"
+],
+"loader": "forge"
+},
+"492246": {
+"modids": [
+"maxhealthfix"
+],
+"requires": [],
+"loader": "forge"
+},
+"404183": {
+"modids": [
+"endrem"
+],
+"requires": [],
+"loader": "forge"
+},
+"1142875": {
+"modids": [
+"flerovium",
+"mixinextras"
+],
+"requires": [
+"embeddium"
+],
+"loader": "forge"
+},
+"582327": {
+"modids": [
+"smoothchunk"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"561625": {
+"modids": [
+"creeperoverhaul"
+],
+"requires": [
+"geckolib",
+"resourcefulconfig"
+],
+"loader": "forge"
+},
+"638417": {
+"modids": [
+"obscure_api"
+],
+"requires": [],
+"loader": "forge"
+},
+"274259": {
+"modids": [
+"carryon",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"1217518": {
+"modids": [
+"createbetterfps"
+],
+"requires": [
+"embeddium",
+"oculus"
+],
+"loader": "forge"
+},
+"1285475": {
+"modids": [
+"colorwheel_patcher"
+],
+"requires": [],
+"loader": "forge"
+},
+"235577": {
+"modids": [
+"trashslot"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"594013": {
+"modids": [
+"universalbonemeal"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"666941": {
+"modids": [
+"bettertridents"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"254284": {
+"modids": [
+"ambientsounds"
+],
+"requires": [
+"creativecore"
+],
+"loader": "forge"
+},
+"348521": {
+"modids": [
+"cloth_config"
+],
+"requires": [],
+"loader": "forge"
+},
+"738663": {
+"modids": [
+"nerb"
+],
+"requires": [
+"architectury",
+"octolib"
+],
+"loader": "forge"
+},
+"437409": {
+"modids": [
+"majruszlibrary"
+],
+"requires": [],
+"loader": "forge"
+},
+"570463": {
+"modids": [
+"ecologics"
+],
+"requires": [],
+"loader": "forge"
+},
+"949555": {
+"modids": [
+"badoptimizations"
+],
+"requires": [],
+"loader": "forge"
+},
+"1161828": {
+"modids": [
+"mixinextras",
+"questkilltask"
+],
+"requires": [],
+"loader": "forge"
+},
+"495693": {
+"modids": [
+"farsight_view"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"422301": {
+"modids": [
+"sophisticatedbackpacks"
+],
+"requires": [
+"sophisticatedcore"
+],
+"loader": "forge"
+},
+"264738": {
+"modids": [
+"betterthanmending"
+],
+"requires": [],
+"loader": "forge"
+},
+"263420": {
+"modids": [
+"xaerolib",
+"xaerominimap"
+],
+"requires": [],
+"loader": "forge"
+},
+"289412": {
+"modids": [
+"ftbquests"
+],
+"requires": [
+"architectury",
+"ftblibrary",
+"ftbteams"
+],
+"loader": "forge"
+},
+"977300": {
+"modids": [
+"simplemenu"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"1291754": {
+"modids": [
+"cinematiczoom"
+],
+"requires": [],
+"loader": "forge"
+},
+"890755": {
+"modids": [
+"jearchaeology"
+],
+"requires": [
+"jei"
+],
+"loader": "forge"
+},
+"689467": {
+"modids": [
+"packetfixer"
+],
+"requires": [],
+"loader": "forge"
+},
+"574409": {
+"modids": [
+"endermanoverhaul"
+],
+"requires": [
+"geckolib",
+"resourcefulconfig",
+"resourcefullib"
+],
+"loader": "forge"
+},
+"936015": {
+"modids": [
+"lithostitched"
+],
+"requires": [],
+"loader": "forge"
+},
+"570354": {
+"modids": [
+"nullscape"
+],
+"requires": [],
+"loader": "forge"
+},
+"591388": {
+"modids": [
+"incendium"
+],
+"requires": [],
+"loader": "forge"
+},
+"347488": {
+"modids": [
+"valhelsia_structures"
+],
+"requires": [
+"valhelsia_core"
+],
+"loader": "forge"
+},
+"418514": {
+"modids": [
+"connectiblechains"
+],
+"requires": [],
+"loader": "forge"
+},
+"682567": {
+"modids": [
+"easyanvils"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"308240": {
+"modids": [
+"cherishedworlds"
+],
+"requires": [],
+"loader": "forge"
+},
+"1079896": {
+"modids": [
+"crashexploitfixer"
+],
+"requires": [],
+"loader": "forge"
+},
+"551909": {
+"modids": [
+"butchersdelight"
+],
+"requires": [],
+"loader": "forge"
+},
+"1163800": {
+"modids": [
+"particlerain"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"1021685": {
+"modids": [
+"immersiveui"
+],
+"requires": [
+"octolib"
+],
+"loader": "forge"
+},
+"551151": {
+"modids": [
+"enchantinginfuser"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"410295": {
+"modids": [
+"konkrete"
+],
+"requires": [],
+"loader": "forge"
+},
+"618298": {
+"modids": [
+"sophisticatedcore"
+],
+"requires": [],
+"loader": "forge"
+},
+"233019": {
+"modids": [
+"aiimprovements"
+],
+"requires": [],
+"loader": "forge"
+},
+"908741": {
+"modids": [
+"embeddium",
+"mixinextras",
+"rubidium"
+],
+"requires": [],
+"loader": "forge"
+},
+"449655": {
+"modids": [
+"voidtotem"
+],
+"requires": [],
+"loader": "forge"
+},
+"1001614": {
+"modids": [
+"lionfishapi"
+],
+"requires": [],
+"loader": "forge"
+},
+"1473176": {
+"modids": [
+"create_6_0_8_backported_fixes"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"511770": {
+"modids": [
+"drippyloadingscreen",
+"mixinextras"
+],
+"requires": [
+"fancymenu",
+"konkrete"
+],
+"loader": "forge"
+},
+"438332": {
+"modids": [
+"supermartijn642configlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"318833": {
+"modids": [
+"adlods"
+],
+"requires": [
+"forgeendertech"
+],
+"loader": "forge"
+},
+"271009": {
+"modids": [
+"forgivingvoid"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"901344": {
+"modids": [
+"betterendisland"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"654373": {
+"modids": [
+"embeddium_extra"
+],
+"requires": [
+"embeddium"
+],
+"loader": "forge"
+},
+"257814": {
+"modids": [
+"creativecore"
+],
+"requires": [],
+"loader": "forge"
+},
+"1038018": {
+"modids": [
+"taxtg"
+],
+"requires": [],
+"loader": "forge"
+},
+"968398": {
+"modids": [
+"copycats"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"631098": {
+"modids": [
+"galosphere"
+],
+"requires": [],
+"loader": "forge"
+},
+"1208436": {
+"modids": [
+"cosmeticcorpsecompat"
+],
+"requires": [],
+"loader": "forge"
+},
+"602199": {
+"modids": [
+"radiantgear"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"331936": {
+"modids": [
+"citadel"
+],
+"requires": [],
+"loader": "forge"
+},
+"636540": {
+"modids": [
+"structory"
+],
+"requires": [],
+"loader": "forge"
+},
+"1399324": {
+"modids": [
+"cinematiccataclysm"
+],
+"requires": [
+"fdlib"
+],
+"loader": "forge"
+},
+"347898": {
+"modids": [
+"easyelytratakeoff"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"466792": {
+"modids": [
+"create_sa"
+],
+"requires": [],
+"loader": "forge"
+},
+"238086": {
+"modids": [
+"kubejs"
+],
+"requires": [
+"architectury",
+"rhino"
+],
+"loader": "forge"
+},
+"389665": {
+"modids": [
+"bettermineshafts"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"656346": {
+"modids": [
+"lmft"
+],
+"requires": [],
+"loader": "forge"
+},
+"633412": {
+"modids": [
+"smoothboot"
+],
+"requires": [],
+"loader": "forge"
+},
+"391382": {
+"modids": [
+"moreoverlays"
+],
+"requires": [],
+"loader": "forge"
+},
+"228525": {
+"modids": [
+"bookshelf"
+],
+"requires": [],
+"loader": "forge"
+},
+"1337167": {
+"modids": [
+"moogs_structures"
+],
+"requires": [],
+"loader": "forge"
+},
+"550579": {
+"modids": [
+"servercore"
+],
+"requires": [],
+"loader": "forge"
+},
+"378802": {
+"modids": [
+"structure_gel"
+],
+"requires": [],
+"loader": "forge"
+},
+"511733": {
+"modids": [
+"clickadv"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"955605": {
+"modids": [
+"cerbons_api"
+],
+"requires": [],
+"loader": "forge"
+},
+"1210171": {
+"modids": [
+"fastitemframes"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"917285": {
+"modids": [
+"yungsmenutweaks"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"974401": {
+"modids": [
+"mobtimizations"
+],
+"requires": [
+"coroutil"
+],
+"loader": "forge"
+},
+"499980": {
+"modids": [
+"moonlight"
+],
+"requires": [],
+"loader": "forge"
+},
+"1036246": {
+"modids": [
+"explosiveenhancement"
+],
+"requires": [],
+"loader": "forge"
+},
+"686437": {
+"modids": [
+"born_in_chaos_v1"
+],
+"requires": [],
+"loader": "forge"
+},
+"638111": {
+"modids": [
+"prism"
+],
+"requires": [],
+"loader": "forge"
+},
+"1094533": {
+"modids": [
+"mr_limesplatus_ending"
+],
+"requires": [],
+"loader": "forge"
+},
+"678036": {
+"modids": [
+"combatroll"
+],
+"requires": [
+"cloth_config",
+"playeranimator"
+],
+"loader": "forge"
+},
+"363703": {
+"modids": [
+"goblintraders"
+],
+"requires": [
+"framework"
+],
+"loader": "forge"
+},
+"851046": {
+"modids": [
+"neruina"
+],
+"requires": [],
+"loader": "forge"
+},
+"362528": {
+"modids": [
+"decorative_blocks"
+],
+"requires": [],
+"loader": "forge"
+},
+"401648": {
+"modids": [
+"betterf3"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"536254": {
+"modids": [
+"aquamirae"
+],
+"requires": [
+"obscure_api"
+],
+"loader": "forge"
+},
+"790749": {
+"modids": [
+"nocubesbetterfletchingtable"
+],
+"requires": [],
+"loader": "forge"
+},
+"245755": {
+"modids": [
+"waystones"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"1018276": {
+"modids": [
+"betterbiomereblend"
+],
+"requires": [],
+"loader": "forge"
+},
+"1477733": {
+"modids": [
+"swinginglanterns"
+],
+"requires": [],
+"loader": "forge"
+},
+"591149": {
+"modids": [
+"domesticationinnovation"
+],
+"requires": [
+"citadel"
+],
+"loader": "forge"
+},
+"1112793": {
+"modids": [
+"perception"
+],
+"requires": [
+"architectury",
+"octolib"
+],
+"loader": "forge"
+},
+"416294": {
+"modids": [
+"rhino"
+],
+"requires": [],
+"loader": "forge"
+},
+"1264423": {
+"modids": [
+"baguettelib"
+],
+"requires": [],
+"loader": "forge"
+},
+"667245": {
+"modids": [
+"highlight"
+],
+"requires": [
+"resourcefullib"
+],
+"loader": "forge"
+},
+"858542": {
+"modids": [
+"searchables"
+],
+"requires": [],
+"loader": "forge"
+},
+"250498": {
+"modids": [
+"mowziesmobs"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"360203": {
+"modids": [
+"guardvillagers"
+],
+"requires": [],
+"loader": "forge"
+},
+"951499": {
+"modids": [
+"fastasyncworldsave"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"521590": {
+"modids": [
+"highlighter"
+],
+"requires": [
+"iceberg"
+],
+"loader": "forge"
+},
+"924854": {
+"modids": [
+"alexscaves"
+],
+"requires": [
+"citadel"
+],
+"loader": "forge"
+},
+"897669": {
+"modids": [
+"betterjungletemples"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"670986": {
+"modids": [
+"saturn"
+],
+"requires": [],
+"loader": "forge"
+},
+"326652": {
+"modids": [
+"cupboard"
+],
+"requires": [],
+"loader": "forge"
+},
+"659090": {
+"modids": [
+"fuelgoeshere"
+],
+"requires": [],
+"loader": "forge"
+},
+"868333": {
+"modids": [
+"pots_and_mimics"
+],
+"requires": [],
+"loader": "forge"
+},
+"348831": {
+"modids": [
+"doubledoors"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"583345": {
+"modids": [
+"jadeaddons"
+],
+"requires": [
+"jade"
+],
+"loader": "forge"
+},
+"1483318": {
+"modids": [
+"tomsperformantstorage"
+],
+"requires": [
+"ftbteams"
+],
+"loader": "forge"
+},
+"509239": {
+"modids": [
+"secondchanceforge"
+],
+"requires": [],
+"loader": "forge"
+},
+"662413": {
+"modids": [
+"mixinextras",
+"soul_fire_d"
+],
+"requires": [
+"cobweb"
+],
+"loader": "forge"
+},
+"317716": {
+"modids": [
+"elytraslot",
+"mixinsquared"
+],
+"requires": [
+"caelus",
+"curios"
+],
+"loader": "forge"
+},
+"832070": {
+"modids": [
+"footprintparticle"
+],
+"requires": [
+"architectury",
+"cloth_config"
+],
+"loader": "forge"
+},
+"975080": {
+"modids": [
+"seriousplayeranimations"
+],
+"requires": [
+"cloth_config",
+"playeranimator"
+],
+"loader": "forge"
+},
+"704256": {
+"modids": [
+"mixinextras",
+"visuality"
+],
+"requires": [],
+"loader": "forge"
+},
+"867839": {
+"modids": [
+"ender_dragon_loot"
+],
+"requires": [],
+"loader": "forge"
+},
+"1023913": {
+"modids": [
+"mixinextras",
+"subtle_effects"
+],
+"requires": [
+"fzzy_config"
+],
+"loader": "forge"
+},
+"367706": {
+"modids": [
+"fancymenu",
+"mixinextras"
+],
+"requires": [
+"konkrete",
+"melody"
+],
+"loader": "forge"
+},
+"1021581": {
+"modids": [
+"theinkarena"
+],
+"requires": [],
+"loader": "forge"
+},
+"915308": {
+"modids": [
+"cleanswing"
+],
+"requires": [],
+"loader": "forge"
+},
+"563928": {
+"modids": [
+"terrablender"
+],
+"requires": [],
+"loader": "forge"
+},
+"520110": {
+"modids": [
+"iceberg"
+],
+"requires": [],
+"loader": "forge"
+},
+"303657": {
+"modids": [
+"kiwi",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"632624": {
+"modids": [
+"hoporp"
+],
+"requires": [],
+"loader": "forge"
+},
+"556448": {
+"modids": [
+"alexsdelight"
+],
+"requires": [],
+"loader": "forge"
+},
+"1395592": {
+"modids": [
+"trials"
+],
+"requires": [],
+"loader": "forge"
+},
+"844662": {
+"modids": [
+"entity_model_features"
+],
+"requires": [
+"entity_texture_features"
+],
+"loader": "forge"
+},
+"634062": {
+"modids": [
+"nochatreports"
+],
+"requires": [],
+"loader": "forge"
+},
+"579484": {
+"modids": [
+"experienceobelisk"
+],
+"requires": [],
+"loader": "forge"
+},
+"1414959": {
+"modids": [
+"reliable_recipes"
+],
+"requires": [],
+"loader": "forge"
+},
+"412082": {
+"modids": [
+"supplementaries"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"954269": {
+"modids": [
+"aggrofix"
+],
+"requires": [],
+"loader": "forge"
+},
+"904356": {
+"modids": [
+"fastipping"
+],
+"requires": [],
+"loader": "forge"
+},
+"990013": {
+"modids": [
+"alexscaves_torpedoes"
+],
+"requires": [
+"alexscaves"
+],
+"loader": "forge"
+},
+"1154099": {
+"modids": [
+"crash_assistant"
+],
+"requires": [],
+"loader": "forge"
+},
+"568563": {
+"modids": [
+"entity_texture_features"
+],
+"requires": [],
+"loader": "forge"
+},
+"1035901": {
+"modids": [
+"alexscavesdelight"
+],
+"requires": [
+"alexscaves",
+"farmersdelight"
+],
+"loader": "forge"
+},
+"484954": {
+"modids": [
+"morevillagers"
+],
+"requires": [],
+"loader": "forge"
+},
+"431611": {
+"modids": [
+"spectrelib",
+"veinmining"
+],
+"requires": [],
+"loader": "forge"
+},
+"244844": {
+"modids": [
+"forgeendertech"
+],
+"requires": [],
+"loader": "forge"
+},
+"378609": {
+"modids": [
+"toms_storage"
+],
+"requires": [],
+"loader": "forge"
+},
+"441114": {
+"modids": [
+"nebs"
+],
+"requires": [],
+"loader": "forge"
+},
+"1068445": {
+"modids": [
+"alekiships"
+],
+"requires": [],
+"loader": "forge"
+},
+"308653": {
+"modids": [
+"bedspreads"
+],
+"requires": [],
+"loader": "forge"
+},
+"889205": {
+"modids": [
+"anvilrepairing"
+],
+"requires": [],
+"loader": "forge"
+},
+"684459": {
+"modids": [
+"golemsarefriends"
+],
+"requires": [],
+"loader": "forge"
+},
+"237307": {
+"modids": [
+"cosmeticarmorreworked"
+],
+"requires": [],
+"loader": "forge"
+},
+"711216": {
+"modids": [
+"geophilic"
+],
+"requires": [],
+"loader": "forge"
+},
+"841262": {
+"modids": [
+"oceansdelight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"462128": {
+"modids": [
+"taxfreelevels"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"677675": {
+"modids": [
+"netherite_horse_armor"
+],
+"requires": [],
+"loader": "forge"
+},
+"989611": {
+"modids": [
+"royalvariations"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"251730": {
+"modids": [
+"voidscape"
+],
+"requires": [],
+"loader": "forge"
+},
+"416935": {
+"modids": [
+"valhelsia_core"
+],
+"requires": [],
+"loader": "forge"
+},
+"1238567": {
+"modids": [
+"sophisticatedbackpackscreateintegration"
+],
+"requires": [
+"create",
+"sophisticatedbackpacks"
+],
+"loader": "forge"
+},
+"448233": {
+"modids": [
+"entityculling"
+],
+"requires": [],
+"loader": "forge"
+},
+"968105": {
+"modids": [
+"pyrotechnic_elytra"
+],
+"requires": [
+"cobweb"
+],
+"loader": "forge"
+},
+"923005": {
+"modids": [
+"extra_compat"
+],
+"requires": [
+"temporalapi"
+],
+"loader": "forge"
+},
+"377281": {
+"modids": [
+"darkpaintings"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"1127764": {
+"modids": [
+"palegardenbackport"
+],
+"requires": [
+"architectury",
+"deltaboxlib",
+"kotlinforforge",
+"terrablender"
+],
+"loader": "forge"
+},
+"558905": {
+"modids": [
+"sodiumextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"659887": {
+"modids": [
+"simplyswords"
+],
+"requires": [
+"architectury",
+"fzzy_config",
+"simplytooltips"
+],
+"loader": "forge"
+},
+"852663": {
+"modids": [
+"stoneworks"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"361579": {
+"modids": [
+"spark"
+],
+"requires": [],
+"loader": "forge"
+},
+"333287": {
+"modids": [
+"firstperson"
+],
+"requires": [],
+"loader": "forge"
+},
+"1128348": {
+"modids": [
+"mowzies_cataclysm"
+],
+"requires": [
+"cataclysm",
+"mowziesmobs"
+],
+"loader": "forge"
+},
+"576124": {
+"modids": [
+"bygonenether"
+],
+"requires": [],
+"loader": "forge"
+},
+"623800": {
+"modids": [
+"dynamiccrosshair"
+],
+"requires": [],
+"loader": "forge"
+},
+"968456": {
+"modids": [
+"cobweb"
+],
+"requires": [],
+"loader": "forge"
+},
+"232131": {
+"modids": [
+"defaultoptions"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"687118": {
+"modids": [
+"tlc"
+],
+"requires": [],
+"loader": "forge"
+},
+"817651": {
+"modids": [
+"betterfortresses"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"281715": {
+"modids": [
+"leavemybarsalone"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"1103431": {
+"modids": [
+"sodiumoptionsapi"
+],
+"requires": [],
+"loader": "forge"
+},
+"570544": {
+"modids": [
+"eatinganimation"
+],
+"requires": [
+"gml"
+],
+"loader": "forge"
+},
+"456640": {
+"modids": [
+"limitedchunks"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"316873": {
+"modids": [
+"charmofundying",
+"spectrelib"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"224713": {
+"modids": [
+"bowinfinityfix"
+],
+"requires": [],
+"loader": "forge"
+},
+"832983": {
+"modids": [
+"chefsdelight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"970291": {
+"modids": [
+"temporalapi"
+],
+"requires": [],
+"loader": "forge"
+},
+"317780": {
+"modids": [
+"xaerolib",
+"xaeroworldmap"
+],
+"requires": [],
+"loader": "forge"
+},
+"463402": {
+"modids": [
+"customvillagertrades"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"421377": {
+"modids": [
+"treechop"
+],
+"requires": [],
+"loader": "forge"
+},
+"438005": {
+"modids": [
+"caverns_and_chasms"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"873563": {
+"modids": [
+"treasuredistance"
+],
+"requires": [],
+"loader": "forge"
+},
+"543661": {
+"modids": [
+"stylisheffects"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"299540": {
+"modids": [
+"fastfurnace"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"888790": {
+"modids": [
+"clientcrafting"
+],
+"requires": [],
+"loader": "forge"
+},
+"429371": {
+"modids": [
+"kubejs_create"
+],
+"requires": [
+"create",
+"kubejs"
+],
+"loader": "forge"
+},
+"574913": {
+"modids": [
+"crittersandcompanions"
+],
+"requires": [
+"architectury",
+"geckolib",
+"yet_another_config_lib_v3"
+],
+"loader": "forge"
+},
+"828656": {
+"modids": [
+"nanhealthfixer"
+],
+"requires": [],
+"loader": "forge"
+},
+"381605": {
+"modids": [
+"drawerstooltip"
+],
+"requires": [
+"storagedrawers"
+],
+"loader": "forge"
+},
+"831663": {
+"modids": [
+"chunksending"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"698309": {
+"modids": [
+"explorify"
+],
+"requires": [],
+"loader": "forge"
+},
+"880483": {
+"modids": [
+"cataclysmiccombat"
+],
+"requires": [],
+"loader": "forge"
+},
+"457570": {
+"modids": [
+"configured"
+],
+"requires": [],
+"loader": "forge"
+},
+"990265": {
+"modids": [
+"plushie_buddies"
+],
+"requires": [],
+"loader": "forge"
+},
+"832882": {
+"modids": [
+"structureessentials"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"688768": {
+"modids": [
+"create_enchantment_industry"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"631401": {
+"modids": [
+"betterwitchhuts"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"1430698": {
+"modids": [
+"eeeabsmobs_bossbars"
+],
+"requires": [
+"eeeabsmobs"
+],
+"loader": "forge"
+},
+"419699": {
+"modids": [
+"architectury"
+],
+"requires": [],
+"loader": "forge"
+},
+"1217787": {
+"modids": [
+"golem_spawn_fix"
+],
+"requires": [],
+"loader": "forge"
+},
+"404465": {
+"modids": [
+"ftblibrary"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"443570": {
+"modids": [
+"diet",
+"spectrelib"
+],
+"requires": [],
+"loader": "forge"
+},
+"486753": {
+"modids": [
+"spawnbalanceutility"
+],
+"requires": [],
+"loader": "forge"
+},
+"667299": {
+"modids": [
+"yet_another_config_lib_v3"
+],
+"requires": [],
+"loader": "forge"
+},
+"382216": {
+"modids": [
+"blueprint"
+],
+"requires": [],
+"loader": "forge"
+},
+"523327": {
+"modids": [
+"dragonfight"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"451789": {
+"modids": [
+"untitledduckmod"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"658587": {
+"modids": [
+"playeranimator"
+],
+"requires": [],
+"loader": "forge"
+},
+"1274497": {
+"modids": [
+"mixinextras",
+"particle_effects"
+],
+"requires": [],
+"loader": "forge"
+},
+"398521": {
+"modids": [
+"farmersdelight",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"916895": {
+"modids": [
+"realmrpg_skeletons"
+],
+"requires": [],
+"loader": "forge"
+},
+"871962": {
+"modids": [
+"snifferplus"
+],
+"requires": [],
+"loader": "forge"
+},
+"1115285": {
+"modids": [
+"almanac"
+],
+"requires": [],
+"loader": "forge"
+},
+"605235": {
+"modids": [
+"make_bubbles_pop"
+],
+"requires": [],
+"loader": "forge"
+},
+"838411": {
+"modids": [
+"suppsquared"
+],
+"requires": [
+"moonlight",
+"supplementaries"
+],
+"loader": "forge"
+},
+"663477": {
+"modids": [
+"letmedespawn"
+],
+"requires": [
+"almanac"
+],
+"loader": "forge"
+},
+"480006": {
+"modids": [
+"yungsextras"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"960662": {
+"modids": [
+"undergardendelight"
+],
+"requires": [],
+"loader": "forge"
+},
+"309516": {
+"modids": [
+"bountiful"
+],
+"requires": [
+"kambrik"
+],
+"loader": "forge"
+},
+"1224240": {
+"modids": [
+"golem_spawn_animation"
+],
+"requires": [],
+"loader": "forge"
+},
+"714059": {
+"modids": [
+"resourcefulconfig"
+],
+"requires": [],
+"loader": "forge"
+},
+"521480": {
+"modids": [
+"skinlayers3d"
+],
+"requires": [],
+"loader": "forge"
+},
+"888668": {
+"modids": [
+"soulbound"
+],
+"requires": [],
+"loader": "forge"
+},
+"1096362": {
+"modids": [
+"rubinated_nether"
+],
+"requires": [],
+"loader": "forge"
+},
+"892382": {
+"modids": [
+"mes"
+],
+"requires": [
+"moogs_structures"
+],
+"loader": "forge"
+},
+"959431": {
+"modids": [
+"betterendcities"
+],
+"requires": [],
+"loader": "forge"
+},
+"1111833": {
+"modids": [
+"mixinextras",
+"netherexp"
+],
+"requires": [
+"elysium_api"
+],
+"loader": "forge"
+},
+"1141465": {
+"modids": [
+"skyarena"
+],
+"requires": [],
+"loader": "forge"
+},
+"496394": {
+"modids": [
+"nethersdelight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"916747": {
+"modids": [
+"octolib"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"551586": {
+"modids": [
+"cataclysm"
+],
+"requires": [
+"lionfishapi"
+],
+"loader": "forge"
+},
+"465575": {
+"modids": [
+"betterstrongholds"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"388800": {
+"modids": [
+"polymorph",
+"spectrelib"
+],
+"requires": [],
+"loader": "forge"
+},
+"417802": {
+"modids": [
+"gateways"
+],
+"requires": [
+"attributeslib",
+"placebo"
+],
+"loader": "forge"
+},
+"510089": {
+"modids": [
+"betterdungeons"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"1084564": {
+"modids": [
+"wither_spawn_animation"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"946784": {
+"modids": [
+"extrasounds",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"1313811": {
+"modids": [
+"trotting_wagons"
+],
+"requires": [],
+"loader": "forge"
+},
+"1082085": {
+"modids": [
+"horseman"
+],
+"requires": [],
+"loader": "forge"
+},
+"689630": {
+"modids": [
+"miners_delight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"1156187": {
+"modids": [
+"filesjs"
+],
+"requires": [
+"kubejs"
+],
+"loader": "forge"
+},
+"924590": {
+"modids": [
+"medieval_buildings",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"1087551": {
+"modids": [
+"mixinextras",
+"structurify"
+],
+"requires": [
+"yet_another_config_lib_v3"
+],
+"loader": "forge"
+},
+"250398": {
+"modids": [
+"controlling"
+],
+"requires": [
+"searchables"
+],
+"loader": "forge"
+},
+"452834": {
+"modids": [
+"rightclickharvest"
+],
+"requires": [
+"architectury",
+"jamlib"
+],
+"loader": "forge"
+},
+"1219053": {
+"modids": [
+"mixinextras",
+"particular"
+],
+"requires": [],
+"loader": "forge"
+},
+"1020759": {
+"modids": [
+"visual_keybinder"
+],
+"requires": [],
+"loader": "forge"
+},
+"1094104": {
+"modids": [
+"aquamirae_delight"
+],
+"requires": [
+"aquamirae",
+"farmersdelight",
+"obscure_api"
+],
+"loader": "forge"
+},
+"583318": {
+"modids": [
+"mixinextras",
+"shieldexp"
+],
+"requires": [],
+"loader": "forge"
+},
+"1254143": {
+"modids": [
+"colorwheel"
+],
+"requires": [
+"oculus"
+],
+"loader": "forge"
+},
+"326895": {
+"modids": [
+"upgrade_aquatic"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"987539": {
+"modids": [
+"ash_of_sin_soul_like_boss_battle"
+],
+"requires": [],
+"loader": "forge"
+},
+"1382208": {
+"modids": [
+"wither_spawn_fix_wsa_compatible"
+],
+"requires": [
+"wither_spawn_animation"
+],
+"loader": "forge"
+},
+"938661": {
+"modids": [
+"mr_hero_proof"
+],
+"requires": [],
+"loader": "forge"
+},
+"926263": {
+"modids": [
+"tact"
+],
+"requires": [
+"alexscaves"
+],
+"loader": "forge"
+},
+"1082018": {
+"modids": [
+"witherstormcombat"
+],
+"requires": [],
+"loader": "forge"
+},
+"628539": {
+"modids": [
+"everycomp"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"944006": {
+"modids": [
+"jumpanimation"
+],
+"requires": [],
+"loader": "forge"
+},
+"621377": {
+"modids": [
+"curiouslanterns"
+],
+"requires": [
+"curios",
+"radiantgear"
+],
+"loader": "forge"
+},
+"639842": {
+"modids": [
+"bettercombat"
+],
+"requires": [
+"cloth_config",
+"playeranimator"
+],
+"loader": "forge"
+},
+"361276": {
+"modids": [
+"lootr"
+],
+"requires": [],
+"loader": "forge"
+},
+"689238": {
+"modids": [
+"betteroceanmonuments"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"659011": {
+"modids": [
+"deeperdarker"
+],
+"requires": [],
+"loader": "forge"
+},
+"835687": {
+"modids": [
+"betterarcheology"
+],
+"requires": [
+"supermartijn642configlib",
+"yungsapi"
+],
+"loader": "forge"
+},
+"297038": {
+"modids": [
+"craftpresence"
+],
+"requires": [
+"unilib"
+],
+"loader": "forge"
+},
+"570431": {
+"modids": [
+"trade_cycling"
+],
+"requires": [],
+"loader": "forge"
+},
+"550678": {
+"modids": [
+"toofast"
+],
+"requires": [],
+"loader": "forge"
+},
+"308989": {
+"modids": [
+"caelus"
+],
+"requires": [],
+"loader": "forge"
+},
+"976817": {
+"modids": [
+"medievalend"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"455585": {
+"modids": [
+"kambrik"
+],
+"requires": [],
+"loader": "forge"
+},
+"976858": {
+"modids": [
+"invtweaks"
+],
+"requires": [],
+"loader": "forge"
+},
+"231275": {
+"modids": [
+"ding"
+],
+"requires": [
+"ichunutil"
+],
+"loader": "forge"
+},
+"230976": {
+"modids": [
+"fastleafdecay"
+],
+"requires": [],
+"loader": "forge"
+},
+"551520": {
+"modids": [
+"betterfpsdist"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"60089": {
+"modids": [
+"mousetweaks"
+],
+"requires": [],
+"loader": "forge"
+},
+"898963": {
+"modids": [
+"attributeslib"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"664014": {
+"modids": [
+"villagersellanimals"
+],
+"requires": [],
+"loader": "forge"
+},
+"945479": {
+"modids": [
+"watut"
+],
+"requires": [
+"coroutil"
+],
+"loader": "forge"
+},
+"961988": {
+"modids": [
+"aquaculturedelight"
+],
+"requires": [],
+"loader": "forge"
+},
+"416089": {
+"modids": [
+"voicechat",
+"voicechat_api"
+],
+"requires": [],
+"loader": "forge"
+},
+"1138130": {
+"modids": [
+"corpsecurioscompat"
+],
+"requires": [
+"baguettelib",
+"corpse",
+"curios"
+],
+"loader": "forge"
+},
+"296996": {
+"modids": [
+"modder_name_lib",
+"rebind_narrator"
+],
+"requires": [],
+"loader": "forge"
+},
+"445274": {
+"modids": [
+"relics"
+],
+"requires": [
+"curios",
+"octolib"
+],
+"loader": "forge"
+},
+"891880": {
+"modids": [
+"mr_tidal_towns"
+],
+"requires": [],
+"loader": "forge"
+},
+"270441": {
+"modids": [
+"itemphysiclite"
+],
+"requires": [
+"creativecore"
+],
+"loader": "forge"
+},
+"661517": {
+"modids": [
+"commongroovylibrary",
+"gml"
+],
+"requires": [],
+"loader": "none"
+},
+"1284599": {
+"modids": [
+"mixinextras",
+"statuseffectbars"
+],
+"requires": [],
+"loader": "forge"
+},
+"656977": {
+"modids": [
+"mvs"
+],
+"requires": [
+"moogs_structures"
+],
+"loader": "forge"
+},
+"228266": {
+"modids": [
+"restrictedportals"
+],
+"requires": [],
+"loader": "forge"
+},
+"700723": {
+"modids": [
+"loot_journal"
+],
+"requires": [
+"fragmentum"
+],
+"loader": "forge"
+},
+"515708": {
+"modids": [
+"paxi"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"1005914": {
+"modids": [
+"fzzy_config"
+],
+"requires": [
+"kotlinforforge"
+],
+"loader": "forge"
+},
+"324717": {
+"modids": [
+"jade"
+],
+"requires": [],
+"loader": "forge"
+},
+"312353": {
+"modids": [
+"artifacts"
+],
+"requires": [
+"architectury",
+"cloth_config",
+"curios",
+"expandability"
+],
+"loader": "forge"
+},
+"1263927": {
+"modids": [
+"enchantmentblacklist"
+],
+"requires": [],
+"loader": "forge"
+},
+"636608": {
+"modids": [
+"openpartiesandclaims"
+],
+"requires": [],
+"loader": "forge"
+},
+"245028": {
+"modids": [
+"tumbleweed"
+],
+"requires": [],
+"loader": "forge"
+},
+"570073": {
+"modids": [
+"resourcefullib"
+],
+"requires": [],
+"loader": "forge"
+},
+"602059": {
+"modids": [
+"friendsandfoes"
+],
+"requires": [],
+"loader": "forge"
+},
+"1111586": {
+"modids": [
+"yungscavebiomes"
+],
+"requires": [
+"geckolib",
+"terrablender",
+"yungsapi"
+],
+"loader": "forge"
+},
+"237749": {
+"modids": [
+"coroutil"
+],
+"requires": [],
+"loader": "forge"
+},
+"1013424": {
+"modids": [
+"bigger_vanilla_trees"
+],
+"requires": [],
+"loader": "forge"
+},
+"500532": {
+"modids": [
+"alexs_mobs_extra_music"
+],
+"requires": [
+"alexsmobs"
+],
+"loader": "forge"
+},
+"309674": {
+"modids": [
+"itemfilters"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"1158628": {
+"modids": [
+"elysium_api"
+],
+"requires": [],
+"loader": "forge"
+},
+"543610": {
+"modids": [
+"woodworks"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"952356": {
+"modids": [
+"noanimaltemptdelay"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"250419": {
+"modids": [
+"enchdesc"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"1021783": {
+"modids": [
+"realmrpg_quests"
+],
+"requires": [],
+"loader": "forge"
+},
+"531761": {
+"modids": [
+"balm",
+"kuma_api"
+],
+"requires": [],
+"loader": "forge"
+},
+"623764": {
+"modids": [
+"jamlib"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"594006": {
+"modids": [
+"easyshulkerboxes",
+"puzzlesaccessapi",
+"puzzlesapi"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"309927": {
+"modids": [
+"curios"
+],
+"requires": [],
+"loader": "forge"
+},
+"241160": {
+"modids": [
+"netherportalfix"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"532727": {
+"modids": [
+"libraryferret"
+],
+"requires": [],
+"loader": "forge"
+},
+"823106": {
+"modids": [
+"blur"
+],
+"requires": [
+"satin"
+],
+"loader": "forge"
+},
+"491290": {
+"modids": [
+"smarterfarmers"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"1108285": {
+"modids": [
+"underground_rivers"
+],
+"requires": [
+"lithostitched"
+],
+"loader": "forge"
+},
+"663658": {
+"modids": [
+"do_a_barrel_roll"
+],
+"requires": [],
+"loader": "forge"
+},
+"1117070": {
+"modids": [
+"feur_extension_fossil"
+],
+"requires": [],
+"loader": "forge"
+},
+"238222": {
+"modids": [
+"jei",
+"mezz_config"
+],
+"requires": [],
+"loader": "forge"
+},
+"465109": {
+"modids": [
+"insanelib",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"714019": {
+"modids": [
+"shutter"
+],
+"requires": [],
+"loader": "forge"
+},
+"495476": {
+"modids": [
+"mixinextras",
+"puzzlesaccessapi",
+"puzzleslib"
+],
+"requires": [],
+"loader": "forge"
+},
+"626761": {
+"modids": [
+"t_and_t"
+],
+"requires": [
+"cristellib"
+],
+"loader": "forge"
+},
+"433760": {
+"modids": [
+"notenoughanimations"
+],
+"requires": [],
+"loader": "forge"
+},
+"255389": {
+"modids": [
+"enhancedvisuals"
+],
+"requires": [
+"creativecore"
+],
+"loader": "forge"
+},
+"569737": {
+"modids": [
+"philipsruins"
+],
+"requires": [],
+"loader": "forge"
+},
+"580689": {
+"modids": [
+"lootintegrations"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"915324": {
+"modids": [
+"formationsoverworld"
+],
+"requires": [
+"formations"
+],
+"loader": "forge"
+},
+"1340920": {
+"modids": [
+"bmfixer"
+],
+"requires": [],
+"loader": "forge"
+},
+"889915": {
+"modids": [
+"ftbxmodcompat"
+],
+"requires": [
+"architectury",
+"ftblibrary"
+],
+"loader": "forge"
+},
+"353942": {
+"modids": [
+"snowundertrees"
+],
+"requires": [],
+"loader": "forge"
+},
+"856996": {
+"modids": [
+"cristellib"
+],
+"requires": [],
+"loader": "forge"
+},
+"551736": {
+"modids": [
+"sodiumdynamiclights"
+],
+"requires": [],
+"loader": "forge"
+},
+"468893": {
+"modids": [
+"blockswap"
+],
+"requires": [],
+"loader": "forge"
+},
+"694349": {
+"modids": [
+"valhelsia_furniture"
+],
+"requires": [
+"valhelsia_core"
+],
+"loader": "forge"
+},
+"581495": {
+"modids": [
+"oculus"
+],
+"requires": [],
+"loader": "forge"
+},
+"542360": {
+"modids": [
+"aquamirae_mod_extra_music"
+],
+"requires": [
+"aquamirae"
+],
+"loader": "forge"
+},
+"915902": {
+"modids": [
+"euphoria_patcher"
+],
+"requires": [],
+"loader": "forge"
+},
+"921600": {
+"modids": [
+"eeeabsmobs"
+],
+"requires": [],
+"loader": "forge"
+},
+"308663": {
+"modids": [
+"fabric_api_base",
+"fabric_renderer_api_v1",
+"fabric_renderer_indigo",
+"snowrealmagic"
+],
+"requires": [
+"kiwi"
+],
+"loader": "forge"
+},
+"819494": {
+"modids": [
+"glassbreaker"
+],
+"requires": [],
+"loader": "forge"
+},
+"947227": {
+"modids": [
+"illagerraidmusic"
+],
+"requires": [],
+"loader": "forge"
+},
+"1123970": {
+"modids": [
+"fragmentum",
+"yet_another_config_lib_v3"
+],
+"requires": [],
+"loader": "forge"
+},
+"429235": {
+"modids": [
+"ferritecore"
+],
+"requires": [],
+"loader": "forge"
+},
+"256717": {
+"modids": [
+"clumps"
+],
+"requires": [],
+"loader": "forge"
+},
+"1190669": {
+"modids": [
+"opacpvp"
+],
+"requires": [
+"necronomicon",
+"openpartiesandclaims"
+],
+"loader": "forge"
+},
+"433068": {
+"modids": [
+"presencefootsteps"
+],
+"requires": [],
+"loader": "forge"
+},
+"1003666": {
+"modids": [
+"mr_lukis_grandcapitals"
+],
+"requires": [],
+"loader": "forge"
+},
+"1066037": {
+"modids": [
+"stardew_fishing"
+],
+"requires": [],
+"loader": "forge"
+},
+"920268": {
+"modids": [
+"mr_blossom_blade"
+],
+"requires": [],
+"loader": "forge"
+},
+"1063296": {
+"modids": [
+"enhanced_boss_bars"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"504908": {
+"modids": [
+"travelerstitles"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"582387": {
+"modids": [
+"additionaladditions"
+],
+"requires": [],
+"loader": "forge"
+},
+"421850": {
+"modids": [
+"yungsapi"
+],
+"requires": [],
+"loader": "forge"
+},
+"670011": {
+"modids": [
+"netherdepthsupgrade"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"629434": {
+"modids": [
+"torch_hit"
+],
+"requires": [
+"cobweb"
+],
+"loader": "forge"
+},
+"938643": {
+"modids": [
+"melody"
+],
+"requires": [],
+"loader": "forge"
+},
+"627986": {
+"modids": [
+"naturalist"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"907856": {
+"modids": [
+"recipeessentials"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"535489": {
+"modids": [
+"sound_physics_remastered"
+],
+"requires": [],
+"loader": "forge"
+},
+"734339": {
+"modids": [
+"pingwheel"
+],
+"requires": [],
+"loader": "forge"
+},
+"342584": {
+"modids": [
+"collective"
+],
+"requires": [],
+"loader": "forge"
+},
+"1271749": {
+"modids": [
+"fdlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"280510": {
+"modids": [
+"attributefix"
+],
+"requires": [],
+"loader": "forge"
+},
+"1153108": {
+"modids": [
+"mowzie_respawner"
+],
+"requires": [],
+"loader": "forge"
+},
+"918840": {
+"modids": [
+"formationsnether"
+],
+"requires": [
+"formations"
+],
+"loader": "forge"
+},
+"1229975": {
+"modids": [
+"happyghastmod"
+],
+"requires": [],
+"loader": "forge"
+},
+"1224395": {
+"modids": [
+"simply_swords_overhaul"
+],
+"requires": [
+"simplyswords"
+],
+"loader": "forge"
+},
+"655619": {
+"modids": [
+"better_climbing"
+],
+"requires": [],
+"loader": "forge"
+},
+"1100379": {
+"modids": [
+"rarcompat"
+],
+"requires": [
+"artifacts",
+"curios",
+"octolib",
+"relics"
+],
+"loader": "forge"
+},
+"914018": {
+"modids": [
+"notrample"
+],
+"requires": [],
+"loader": "forge"
+},
+"852662": {
+"modids": [
+"overflowingbars"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"570017": {
+"modids": [
+"radium"
+],
+"requires": [],
+"loader": "forge"
+},
+"526901": {
+"modids": [
+"memorysettings"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"793082": {
+"modids": [
+"nocubesbettergrindstone"
+],
+"requires": [],
+"loader": "forge"
+},
+"895618": {
+"modids": [
+"betterdays",
+"whitenoise"
+],
+"requires": [],
+"loader": "forge"
+},
+"1180755": {
+"modids": [
+"difficultychaosintegration"
+],
+"requires": [
+"born_in_chaos_v1",
+"majruszsdifficulty"
+],
+"loader": "forge"
+},
+"622967": {
+"modids": [
+"ribbits"
+],
+"requires": [
+"geckolib",
+"yungsapi"
+],
+"loader": "forge"
+},
+"1367888": {
+"modids": [
+"leaderboards"
+],
+"requires": [
+"ftblibrary"
+],
+"loader": "forge"
+},
+"399413": {
+"modids": [
+"harderspawners"
+],
+"requires": [],
+"loader": "forge"
+},
+"400933": {
+"modids": [
+"mcwtrpdoors"
+],
+"requires": [],
+"loader": "forge"
+},
+"985226": {
+"modids": [
+"raccompat"
+],
+"requires": [
+"curios",
+"octolib",
+"relics"
+],
+"loader": "forge"
+},
+"288885": {
+"modids": [
+"fastbench"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"915115": {
+"modids": [
+"formations"
+],
+"requires": [],
+"loader": "forge"
+},
+"271740": {
+"modids": [
+"toastcontrol"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"1104882": {
+"modids": [
+"txnilib"
+],
+"requires": [],
+"loader": "forge"
+},
+"1455983": {
+"modids": [
+"gbf"
+],
+"requires": [],
+"loader": "forge"
+},
+"1086710": {
+"modids": [
+"create_waystones_recipes"
+],
+"requires": [
+"create",
+"waystones"
+],
+"loader": "forge"
+},
+"549225": {
+"modids": [
+"framework"
+],
+"requires": [],
+"loader": "forge"
+},
+"1583035": {
+"modids": [
+"iris_search"
+],
+"requires": [
+"oculus"
+],
+"loader": "forge"
+},
+"686911": {
+"modids": [
+"immediatelyfast"
+],
+"requires": [],
+"loader": "forge"
+},
+"248787": {
+"modids": [
+"appleskin"
+],
+"requires": [],
+"loader": "forge"
+},
+"1340197": {
+"modids": [
+"xmxw"
+],
+"requires": [
+"balm",
+"waystones",
+"yet_another_config_lib_v3"
+],
+"loader": "forge"
+},
+"398784": {
+"modids": [
+"curious_armor_stands"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"944035": {
+"modids": [
+"legendary_monsters"
+],
+"requires": [],
+"loader": "forge"
+},
+"872712": {
+"modids": [
+"celestisynth"
+],
+"requires": [
+"geckolib",
+"playeranimator"
+],
+"loader": "forge"
+},
+"545467": {
+"modids": [
+"skyvillages"
+],
+"requires": [],
+"loader": "forge"
+},
+"60028": {
+"modids": [
+"aquaculture"
+],
+"requires": [],
+"loader": "forge"
+},
+"985426": {
+"modids": [
+"particle_core"
+],
+"requires": [
+"fzzy_config",
+"kotlinforforge"
+],
+"loader": "forge"
+},
+"283644": {
+"modids": [
+"placebo"
+],
+"requires": [],
+"loader": "forge"
+},
+"792966": {
+"modids": [
+"ncbetterblastfurnace"
+],
+"requires": [],
+"loader": "forge"
+},
+"638535": {
+"modids": [
+"dungeonnowloading"
+],
+"requires": [],
+"loader": "forge"
+},
+"887484": {
+"modids": [
+"w2w2"
+],
+"requires": [
+"waystones"
+],
+"loader": "forge"
+},
+"514371": {
+"modids": [
+"exlinecopperequipment"
+],
+"requires": [],
+"loader": "forge"
+},
+"896746": {
+"modids": [
+"amendments"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"551894": {
+"modids": [
+"bcc"
+],
+"requires": [],
+"loader": "forge"
+},
+"631016": {
+"modids": [
+"betterdeserttemples"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"872577": {
+"modids": [
+"create_crush_everything"
+],
+"requires": [],
+"loader": "forge"
+},
+"272515": {
+"modids": [
+"betteradvancements"
+],
+"requires": [],
+"loader": "forge"
+},
+"418589": {
+"modids": [
+"blazegear"
+],
+"requires": [],
+"loader": "forge"
+},
+"379849": {
+"modids": [
+"undergarden"
+],
+"requires": [],
+"loader": "forge"
+},
+"426558": {
+"modids": [
+"alexsmobs"
+],
+"requires": [
+"citadel"
+],
+"loader": "forge"
+},
+"586157": {
+"modids": [
+"necronomicon"
+],
+"requires": [],
+"loader": "forge"
+},
+"328085": {
+"modids": [
+"create",
+"flywheel",
+"mixinextras",
+"ponder"
+],
+"requires": [],
+"loader": "forge"
+},
+"252848": {
+"modids": [
+"naturescompass"
+],
+"requires": [],
+"loader": "forge"
+},
+"953729": {
+"modids": [
+"create_oxidized"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"704465": {
+"modids": [
+"vinery"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"840788": {
+"modids": [
+"culllessleaves"
+],
+"requires": [],
+"loader": "forge"
+},
+"855414": {
+"modids": [
+"irons_spellbooks"
+],
+"requires": [
+"curios",
+"geckolib",
+"irons_lib",
+"playeranimator"
+],
+"loader": "forge"
+},
+"1022143": {
+"modids": [
+"eyesoficeandfire"
+],
+"requires": [],
+"loader": "forge"
+},
+"480715": {
+"modids": [
+"dungeons_enhanced"
+],
+"requires": [
+"structure_gel"
+],
+"loader": "forge"
+},
+"431430": {
+"modids": [
+"flickerfix"
+],
+"requires": [],
+"loader": "forge"
+},
+"597522": {
+"modids": [
+"eccentrictome"
+],
+"requires": [],
+"loader": "forge"
+},
+"900364": {
+"modids": [
+"towntalk"
+],
+"requires": [],
+"loader": "forge"
+},
+"1155650": {
+"modids": [
+"dont-deflect-my-freaking-projectiles"
+],
+"requires": [],
+"loader": "fabric"
+},
+"909160": {
+"modids": [
+"cisco_mod"
+],
+"requires": [],
+"loader": "forge"
+},
+"681783": {
+"modids": [
+"emi_loot"
+],
+"requires": [
+"emi",
+"fzzy_config"
+],
+"loader": "forge"
+},
+"243121": {
+"modids": [
+"quark"
+],
+"requires": [
+"zeta"
+],
+"loader": "forge"
+},
+"806044": {
+"modids": [
+"commonnetworking"
+],
+"requires": [],
+"loader": "forge"
+},
+"1030121": {
+"modids": [
+"enigmaticaddons"
+],
+"requires": [
+"caelus",
+"curios",
+"enigmaticlegacy",
+"patchouli"
+],
+"loader": "forge"
+},
+"1049891": {
+"modids": [
+"clientsort"
+],
+"requires": [],
+"loader": "forge"
+},
+"250832": {
+"modids": [
+"elevatorid"
+],
+"requires": [],
+"loader": "forge"
+},
+"873788": {
+"modids": [
+"altorigingui",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"311377": {
+"modids": [
+"betternether"
+],
+"requires": [],
+"loader": "fabric"
+},
+"635843": {
+"modids": [
+"takesapillage"
+],
+"requires": [],
+"loader": "forge"
+},
+"548115": {
+"modids": [
+"alternate_current"
+],
+"requires": [],
+"loader": "forge"
+},
+"971973": {
+"modids": [
+"vp"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"560595": {
+"modids": [
+"toomanyglyphs"
+],
+"requires": [
+"ars_nouveau"
+],
+"loader": "forge"
+},
+"336184": {
+"modids": [
+"enigmaticlegacy"
+],
+"requires": [
+"caelus",
+"curios",
+"patchouli"
+],
+"loader": "forge"
+},
+"649722": {
+"modids": [
+"strictly_origins"
+],
+"requires": [
+"origins"
+],
+"loader": "forge"
+},
+"825355": {
+"modids": [
+"doespotatotick"
+],
+"requires": [
+"duplicationless"
+],
+"loader": "forge"
+},
+"549394": {
+"modids": [
+"krypton"
+],
+"requires": [],
+"loader": "forge"
+},
+"985468": {
+"modids": [
+"ancientreforging"
+],
+"requires": [
+"apotheosis",
+"placebo"
+],
+"loader": "forge"
+},
+"853794": {
+"modids": [
+"mr_dungeons_andtaverns"
+],
+"requires": [],
+"loader": "forge"
+},
+"233258": {
+"modids": [
+"badmobs"
+],
+"requires": [],
+"loader": "forge"
+},
+"643780": {
+"modids": [
+"projectile_damage"
+],
+"requires": [],
+"loader": "forge"
+},
+"306770": {
+"modids": [
+"patchouli"
+],
+"requires": [],
+"loader": "forge"
+},
+"411816": {
+"modids": [
+"simplerpc"
+],
+"requires": [
+"craterlib"
+],
+"loader": "forge"
+},
+"276951": {
+"modids": [
+"comforts",
+"spectrelib"
+],
+"requires": [],
+"loader": "forge"
+},
+"474817": {
+"modids": [
+"stalwart_dungeons"
+],
+"requires": [],
+"loader": "forge"
+},
+"835861": {
+"modids": [
+"item_obliterator"
+],
+"requires": [
+"necronomicon"
+],
+"loader": "forge"
+},
+"303278": {
+"modids": [
+"multipiston"
+],
+"requires": [
+"blockui",
+"structurize"
+],
+"loader": "forge"
+},
+"852665": {
+"modids": [
+"mutantmonsters"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"1087831": {
+"modids": [
+"mixinextras",
+"structure_layout_optimizer"
+],
+"requires": [
+"resourcefulconfig"
+],
+"loader": "forge"
+},
+"521932": {
+"modids": [
+"medievalmusic"
+],
+"requires": [],
+"loader": "forge"
+},
+"268647": {
+"modids": [
+"globalxp"
+],
+"requires": [],
+"loader": "forge"
+},
+"905450": {
+"modids": [
+"bocchium"
+],
+"requires": [],
+"loader": "forge"
+},
+"622737": {
+"modids": [
+"ftbbackups2"
+],
+"requires": [
+"architectury",
+"polylib"
+],
+"loader": "forge"
+},
+"1073197": {
+"modids": [
+"aether_villages"
+],
+"requires": [
+"aether"
+],
+"loader": "forge"
+},
+"913445": {
+"modids": [
+"amecsapi",
+"connectorextras",
+"connectorextras_architectury_bridge",
+"connectorextras_emi_bridge",
+"connectorextras_energy_bridge",
+"connectorextras_geckolib_fabric_compat",
+"connectorextras_jei_bridge",
+"connectorextras_kubejs_bridge",
+"connectorextras_modmenu_bridge",
+"connectorextras_pehkui_bridge",
+"connectorextras_rei_bridge",
+"connectorextras_terrablender_bridge",
+"forgeconfigapiport",
+"modmenu",
+"reach_entity_attributes"
+],
+"requires": [],
+"loader": "forge"
+},
+"637808": {
+"modids": [
+"brewinandchewin",
+"mixinextras"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"637529": {
+"modids": [
+"delightful",
+"mixinextras"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"610127": {
+"modids": [
+"origins_classes"
+],
+"requires": [
+"origins"
+],
+"loader": "forge"
+},
+"887125": {
+"modids": [
+"shadowizardlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"997634": {
+"modids": [
+"platform"
+],
+"requires": [],
+"loader": "forge"
+},
+"245506": {
+"modids": [
+"minecolonies"
+],
+"requires": [
+"blockui",
+"domum_ornamentum",
+"structurize"
+],
+"loader": "forge"
+},
+"495336": {
+"modids": [
+"advancednetherite"
+],
+"requires": [],
+"loader": "forge"
+},
+"264231": {
+"modids": [
+"iceandfire"
+],
+"requires": [
+"citadel"
+],
+"loader": "forge"
+},
+"496913": {
+"modids": [
+"twigs"
+],
+"requires": [],
+"loader": "forge"
+},
+"1232237": {
+"modids": [
+"smallcolonies"
+],
+"requires": [
+"minecolonies"
+],
+"loader": "forge"
+},
+"1310491": {
+"modids": [
+"mcreator_mem_fix"
+],
+"requires": [],
+"loader": "forge"
+},
+"912767": {
+"modids": [
+"azurelibarmor"
+],
+"requires": [],
+"loader": "forge"
+},
+"824936": {
+"modids": [
+"armordamagescale"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"576589": {
+"modids": [
+"polylib"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"909207": {
+"modids": [
+"l2damagetracker",
+"l2hostility",
+"mob_weapon_api"
+],
+"requires": [
+"curios",
+"l2complements",
+"l2library",
+"patchouli"
+],
+"loader": "forge"
+},
+"1227334": {
+"modids": [
+"misctweaks"
+],
+"requires": [],
+"loader": "forge"
+},
+"1146393": {
+"modids": [
+"sodiumoptionsmodcompat"
+],
+"requires": [
+"sodiumoptionsapi"
+],
+"loader": "forge"
+},
+"964817": {
+"modids": [
+"sawmill"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"1188673": {
+"modids": [
+"tidesdelight"
+],
+"requires": [
+"culturaldelights",
+"farmersdelight",
+"tide"
+],
+"loader": "forge"
+},
+"850298": {
+"modids": [
+"mixinextras",
+"skilltree"
+],
+"requires": [
+"attributefix"
+],
+"loader": "forge"
+},
+"413596": {
+"modids": [],
+"requires": [],
+"loader": "fabric"
+},
+"1372768": {
+"modids": [
+"bc_particle"
+],
+"requires": [],
+"loader": "forge"
+},
+"1070751": {
+"modids": [
+"biomeswevegone"
+],
+"requires": [
+"corgilib",
+"geckolib",
+"ohthetreesyoullgrow",
+"terrablender"
+],
+"loader": "forge"
+},
+"661293": {
+"modids": [
+"smartbrainlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"1468025": {
+"modids": [
+"apotheotic_hostility",
+"mixinextras"
+],
+"requires": [
+"apotheosis",
+"curios",
+"l2complements",
+"l2library",
+"l2tabs"
+],
+"loader": "forge"
+},
+"1120746": {
+"modids": [
+"mixinextras",
+"particle_effects"
+],
+"requires": [],
+"loader": "forge"
+},
+"889079": {
+"modids": [
+"fabric_api",
+"fabric_api_base",
+"fabric_api_lookup_api_v1",
+"fabric_biome_api_v1",
+"fabric_block_api_v1",
+"fabric_block_view_api_v2",
+"fabric_blockrenderlayer_v1",
+"fabric_client_tags_api_v1",
+"fabric_command_api_v1",
+"fabric_command_api_v2",
+"fabric_content_registries_v0",
+"fabric_convention_tags_v1",
+"fabric_data_attachment_api_v1",
+"fabric_data_generation_api_v1",
+"fabric_dimensions_v1",
+"fabric_entity_events_v1",
+"fabric_events_interaction_v0",
+"fabric_game_rule_api_v1",
+"fabric_item_api_v1",
+"fabric_item_group_api_v1",
+"fabric_key_binding_api_v1",
+"fabric_lifecycle_events_v1",
+"fabric_loot_api_v2",
+"fabric_message_api_v1",
+"fabric_mining_level_api_v1",
+"fabric_model_loading_api_v1",
+"fabric_models_v0",
+"fabric_networking_api_v1",
+"fabric_object_builder_api_v1",
+"fabric_particles_v1",
+"fabric_recipe_api_v1",
+"fabric_registry_sync_v0",
+"fabric_renderer_api_v1",
+"fabric_renderer_indigo",
+"fabric_rendering_data_attachment_v1",
+"fabric_rendering_fluids_v1",
+"fabric_rendering_v1",
+"fabric_resource_conditions_api_v1",
+"fabric_resource_loader_v0",
+"fabric_screen_api_v1",
+"fabric_screen_handler_api_v1",
+"fabric_sound_api_v1",
+"fabric_transfer_api_v1",
+"fabric_transitive_access_wideners_v1",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"538529": {
+"modids": [
+"sons_of_sins"
+],
+"requires": [],
+"loader": "forge"
+},
+"227639": {
+"modids": [
+"twilightforest"
+],
+"requires": [],
+"loader": "forge"
+},
+"492574": {
+"modids": [
+"myserveriscompatible"
+],
+"requires": [],
+"loader": "forge"
+},
+"377794": {
+"modids": [
+"dungeons_plus"
+],
+"requires": [
+"structure_gel"
+],
+"loader": "forge"
+},
+"1191080": {
+"modids": [
+"despawntweaks"
+],
+"requires": [
+"txnilib"
+],
+"loader": "forge"
+},
+"400514": {
+"modids": [
+"easy_villagers"
+],
+"requires": [],
+"loader": "forge"
+},
+"882310": {
+"modids": [
+"jadecolonies"
+],
+"requires": [],
+"loader": "forge"
+},
+"962544": {
+"modids": [
+"ohthetreesyoullgrow"
+],
+"requires": [],
+"loader": "forge"
+},
+"522992": {
+"modids": [
+"blockui"
+],
+"requires": [],
+"loader": "forge"
+},
+"958083": {
+"modids": [
+"playeranimatorapi"
+],
+"requires": [
+"playeranimator"
+],
+"loader": "forge"
+},
+"380617": {
+"modids": [
+"dramaticdoors"
+],
+"requires": [],
+"loader": "forge"
+},
+"585546": {
+"modids": [
+"bhmenu"
+],
+"requires": [],
+"loader": "forge"
+},
+"494475": {
+"modids": [
+"majruszsaccessories"
+],
+"requires": [
+"majruszlibrary"
+],
+"loader": "forge"
+},
+"620203": {
+"modids": [
+"l2itemselector",
+"l2library",
+"l2screentracker",
+"l2tabs",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"931925": {
+"modids": [
+"chloride"
+],
+"requires": [
+"embeddium"
+],
+"loader": "forge"
+},
+"1319251": {
+"modids": [
+"gateways_to_emiloot"
+],
+"requires": [
+"emi_loot",
+"gateways"
+],
+"loader": "forge"
+},
+"1380105": {
+"modids": [
+"duplicationless"
+],
+"requires": [],
+"loader": "forge"
+},
+"758349": {
+"modids": [
+"l2complements",
+"l2damagetracker"
+],
+"requires": [
+"l2library"
+],
+"loader": "forge"
+},
+"368293": {
+"modids": [
+"mixinextras",
+"repurposed_structures"
+],
+"requires": [],
+"loader": "forge"
+},
+"1492763": {
+"modids": [
+"irons_lib"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"399558": {
+"modids": [
+"constructionwand"
+],
+"requires": [],
+"loader": "forge"
+},
+"953637": {
+"modids": [
+"dungeons_arise_seven_seas"
+],
+"requires": [],
+"loader": "forge"
+},
+"924640": {
+"modids": [
+"apotheotic_additions"
+],
+"requires": [
+"apotheosis"
+],
+"loader": "forge"
+},
+"867099": {
+"modids": [
+"craterlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"442508": {
+"modids": [
+"dungeons_arise"
+],
+"requires": [],
+"loader": "forge"
+},
+"450659": {
+"modids": [
+"smallships"
+],
+"requires": [],
+"loader": "forge"
+},
+"656079": {
+"modids": [
+"mr_reds_morestructures"
+],
+"requires": [],
+"loader": "forge"
+},
+"1512727": {
+"modids": [
+"apothsb"
+],
+"requires": [],
+"loader": "forge"
+},
+"491794": {
+"modids": [
+"explorerscompass"
+],
+"requires": [],
+"loader": "forge"
+},
+"1077985": {
+"modids": [
+"featurerecycler"
+],
+"requires": [],
+"loader": "forge"
+},
+"585081": {
+"modids": [
+"medieval_paintings"
+],
+"requires": [],
+"loader": "forge"
+},
+"1030285": {
+"modids": [
+"fastboot"
+],
+"requires": [],
+"loader": "forge"
+},
+"967466": {
+"modids": [
+"mns"
+],
+"requires": [
+"moogs_structures"
+],
+"loader": "forge"
+},
+"950085": {
+"modids": [
+"longnbtkiller"
+],
+"requires": [],
+"loader": "forge"
+},
+"817423": {
+"modids": [
+"azurelib",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"495191": {
+"modids": [
+"bclib"
+],
+"requires": [],
+"loader": "fabric"
+},
+"488090": {
+"modids": [
+"midnightlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"1167848": {
+"modids": [
+"distraction_free_recipes"
+],
+"requires": [
+"txnilib"
+],
+"loader": "forge"
+},
+"1204890": {
+"modids": [
+"cerulean"
+],
+"requires": [
+"txnilib"
+],
+"loader": "forge"
+},
+"1088877": {
+"modids": [
+"farmers_structures"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"417430": {
+"modids": [
+"vanillabackport"
+],
+"requires": [
+"platform"
+],
+"loader": "forge"
+},
+"239197": {
+"modids": [
+"crafttweaker"
+],
+"requires": [],
+"loader": "forge"
+},
+"950712": {
+"modids": [
+"apothiccurios"
+],
+"requires": [
+"apotheosis",
+"curios"
+],
+"loader": "forge"
+},
+"298744": {
+"modids": [
+"structurize"
+],
+"requires": [
+"blockui",
+"domum_ornamentum"
+],
+"loader": "forge"
+},
+"864599": {
+"modids": [
+"doapi",
+"terraform"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"1040210": {
+"modids": [
+"mss"
+],
+"requires": [
+"moogs_structures"
+],
+"loader": "forge"
+},
+"968868": {
+"modids": [
+"mixinextras",
+"zeta"
+],
+"requires": [],
+"loader": "forge"
+},
+"783522": {
+"modids": [
+"structory_towers"
+],
+"requires": [],
+"loader": "forge"
+},
+"313970": {
+"modids": [
+"apotheosis"
+],
+"requires": [
+"attributeslib",
+"placebo"
+],
+"loader": "forge"
+},
+"1199729": {
+"modids": [
+"solapplepie_origins_fix"
+],
+"requires": [
+"origins",
+"solapplepie"
+],
+"loader": "forge"
+},
+"891324": {
+"modids": [
+"illagerinvasion"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"1091339": {
+"modids": [
+"alltheleaks",
+"mixinsquared"
+],
+"requires": [],
+"loader": "forge"
+},
+"314906": {
+"modids": [
+"ftbchunks"
+],
+"requires": [
+"architectury",
+"ftblibrary",
+"ftbteams"
+],
+"loader": "forge"
+},
+"1286032": {
+"modids": [
+"betterworldloading20"
+],
+"requires": [
+"midnightlib"
+],
+"loader": "forge"
+},
+"1285307": {
+"modids": [
+"ixeris"
+],
+"requires": [],
+"loader": "forge"
+},
+"1083306": {
+"modids": [
+"manaunification"
+],
+"requires": [],
+"loader": "forge"
+},
+"897171": {
+"modids": [
+"apugli",
+"medievalorigins",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"296646": {
+"modids": [
+"deuf"
+],
+"requires": [],
+"loader": "forge"
+},
+"890127": {
+"modids": [
+"connectormod",
+"mixinextras"
+],
+"requires": [],
+"loader": "none"
+},
+"1516278": {
+"modids": [
+"apothic_category_compat"
+],
+"requires": [],
+"loader": "forge"
+},
+"1103943": {
+"modids": [
+"obscure_tooltips_fix"
+],
+"requires": [],
+"loader": "forge"
+},
+"975561": {
+"modids": [
+"apoli"
+],
+"requires": [
+"caelus",
+"calio"
+],
+"loader": "forge"
+},
+"386134": {
+"modids": [
+"ftbultimine"
+],
+"requires": [
+"architectury",
+"ftblibrary"
+],
+"loader": "forge"
+},
+"880814": {
+"modids": [
+"hearths"
+],
+"requires": [],
+"loader": "forge"
+},
+"401955": {
+"modids": [
+"ars_nouveau",
+"geckolib",
+"mixinextras"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"625110": {
+"modids": [
+"largemeals"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"391943": {
+"modids": [
+"origins"
+],
+"requires": [
+"connectormod"
+],
+"loader": "forge"
+},
+"1076521": {
+"modids": [
+"better_hp"
+],
+"requires": [],
+"loader": "forge"
+},
+"950401": {
+"modids": [
+"itemproductionlib",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"580681": {
+"modids": [
+"immersive_armors"
+],
+"requires": [],
+"loader": "forge"
+},
+"886559": {
+"modids": [
+"bakery"
+],
+"requires": [
+"architectury",
+"doapi"
+],
+"loader": "forge"
+},
+"561470": {
+"modids": [
+"ars_elemental"
+],
+"requires": [
+"ars_nouveau"
+],
+"loader": "forge"
+},
+"237664": {
+"modids": [
+"ironfurnaces"
+],
+"requires": [],
+"loader": "forge"
+},
+"228756": {
+"modids": [
+"ironchest"
+],
+"requires": [],
+"loader": "forge"
+},
+"324973": {
+"modids": [
+"dungeoncrawl"
+],
+"requires": [],
+"loader": "forge"
+},
+"435044": {
+"modids": [
+"betterthirdperson"
+],
+"requires": [],
+"loader": "forge"
+},
+"344906": {
+"modids": [
+"betterwithminecolonies"
+],
+"requires": [],
+"loader": "forge"
+},
+"319596": {
+"modids": [
+"pehkui"
+],
+"requires": [],
+"loader": "forge"
+},
+"630764": {
+"modids": [
+"dreadsteel"
+],
+"requires": [
+"shadowizardlib"
+],
+"loader": "forge"
+},
+"619320": {
+"modids": [
+"sophisticatedstorage"
+],
+"requires": [
+"sophisticatedcore"
+],
+"loader": "forge"
+},
+"1150370": {
+"modids": [
+"esotericreforging"
+],
+"requires": [],
+"loader": "forge"
+},
+"704584": {
+"modids": [
+"solapplepie"
+],
+"requires": [],
+"loader": "forge"
+},
+"1066111": {
+"modids": [
+"iaf_patcher",
+"mixinextras"
+],
+"requires": [
+"iceandfire"
+],
+"loader": "forge"
+},
+"912121": {
+"modids": [
+"fastrandom"
+],
+"requires": [],
+"loader": "fabric"
+},
+"318602": {
+"modids": [
+"lost_aether_content"
+],
+"requires": [
+"aether",
+"structure_gel"
+],
+"loader": "forge"
+},
+"986982": {
+"modids": [
+"apothiccombat"
+],
+"requires": [],
+"loader": "forge"
+},
+"813369": {
+"modids": [
+"nightconfigfixes"
+],
+"requires": [],
+"loader": "forge"
+},
+"592162": {
+"modids": [
+"clayworks"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"527361": {
+"modids": [
+"domum_ornamentum"
+],
+"requires": [],
+"loader": "forge"
+},
+"634392": {
+"modids": [
+"nanny"
+],
+"requires": [],
+"loader": "forge"
+},
+"632066": {
+"modids": [
+"soulsweapons"
+],
+"requires": [
+"attributefix",
+"geckolib"
+],
+"loader": "forge"
+},
+"551453": {
+"modids": [
+"farmersrespite"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"615352": {
+"modids": [
+"bettervillage",
+"mixinextras"
+],
+"requires": [
+"libraryferret"
+],
+"loader": "forge"
+},
+"827507": {
+"modids": [
+"stylecolonies"
+],
+"requires": [],
+"loader": "forge"
+},
+"1112217": {
+"modids": [
+"armordamagelimit"
+],
+"requires": [],
+"loader": "forge"
+},
+"1158208": {
+"modids": [
+"mr_ati_structuresvanillaedition"
+],
+"requires": [],
+"loader": "forge"
+},
+"580942": {
+"modids": [
+"raided"
+],
+"requires": [],
+"loader": "forge"
+},
+"1206557": {
+"modids": [
+"bountybags"
+],
+"requires": [],
+"loader": "forge"
+},
+"255105": {
+"modids": [
+"friendlyfire"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"1314084": {
+"modids": [
+"block_factorys_bosses"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"379208": {
+"modids": [
+"ringsofascension"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"428151": {
+"modids": [
+"icarus",
+"mixinextras"
+],
+"requires": [
+"caelus",
+"commonnetworking",
+"curios",
+"resourcefulconfig"
+],
+"loader": "forge"
+},
+"933306": {
+"modids": [
+"astemirlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"1220460": {
+"modids": [
+"gnetum"
+],
+"requires": [],
+"loader": "forge"
+},
+"635427": {
+"modids": [
+"yeetusexperimentus"
+],
+"requires": [],
+"loader": "forge"
+},
+"580555": {
+"modids": [
+"emi"
+],
+"requires": [],
+"loader": "forge"
+},
+"1113794": {
+"modids": [
+"ftbquestsfreezefix"
+],
+"requires": [],
+"loader": "forge"
+},
+"309858": {
+"modids": [
+"forbidden_arcanus"
+],
+"requires": [
+"valhelsia_core"
+],
+"loader": "forge"
+},
+"1278431": {
+"modids": [
+"medieval_nether",
+"mixinextras"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"962162": {
+"modids": [
+"ranged_weapon_api"
+],
+"requires": [],
+"loader": "fabric"
+},
+"474438": {
+"modids": [
+"additionalentityattributes",
+"apoli",
+"calio",
+"mixinextras",
+"origins"
+],
+"requires": [],
+"loader": "forge"
+},
+"884685": {
+"modids": [
+"tide"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"840873": {
+"modids": [
+"biomemusic"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"623560": {
+"modids": [
+"logbegone"
+],
+"requires": [],
+"loader": "forge"
+},
+"686097": {
+"modids": [
+"wabi_sabi_structures"
+],
+"requires": [],
+"loader": "forge"
+},
+"574622": {
+"modids": [
+"culturaldelights"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"255308": {
+"modids": [
+"aether",
+"cumulus_menus",
+"curios",
+"mixinextras",
+"nitrogen_internals"
+],
+"requires": [],
+"loader": "forge"
+},
+"538214": {
+"modids": [
+"handcrafted"
+],
+"requires": [
+"resourcefullib"
+],
+"loader": "forge"
+},
+"841890": {
+"modids": [
+"athena"
+],
+"requires": [],
+"loader": "forge"
+},
+"502372": {
+"modids": [
+"mcwlights"
+],
+"requires": [],
+"loader": "forge"
+},
+"513688": {
+"modids": [
+"terralith"
+],
+"requires": [],
+"loader": "forge"
+},
+"1634457": {
+"modids": [
+"geckolib"
+],
+"requires": [],
+"loader": "forge"
+},
+"312918": {
+"modids": [
+"blue_skies"
+],
+"requires": [
+"structure_gel"
+],
+"loader": "forge"
+},
+"502561": {
+"modids": [
+"equipmentcompare"
+],
+"requires": [
+"iceberg"
+],
+"loader": "forge"
+},
+"456956": {
+"modids": [
+"chipped"
+],
+"requires": [
+"athena",
+"resourcefullib"
+],
+"loader": "forge"
+},
+"1475755": {
+"modids": [
+"simplytooltips"
+],
+"requires": [
+"architectury",
+"fzzy_config"
+],
+"loader": "forge"
+},
+"532127": {
+"modids": [
+"legendarytooltips"
+],
+"requires": [
+"iceberg",
+"prism"
+],
+"loader": "forge"
+},
+"352039": {
+"modids": [
+"mcwroofs"
+],
+"requires": [],
+"loader": "forge"
+},
+"538392": {
+"modids": [
+"modonomicon"
+],
+"requires": [],
+"loader": "forge"
+},
+"509041": {
+"modids": [
+"magistuarmory"
+],
+"requires": [
+"architectury",
+"cloth_config"
+],
+"loader": "forge"
+},
+"686836": {
+"modids": [
+"tectonic"
+],
+"requires": [
+"lithostitched"
+],
+"loader": "forge"
+},
+"453925": {
+"modids": [
+"mcwfences"
+],
+"requires": [],
+"loader": "forge"
+},
+"536660": {
+"modids": [
+"yungsbridges"
+],
+"requires": [
+"yungsapi"
+],
+"loader": "forge"
+},
+"351914": {
+"modids": [
+"mutil"
+],
+"requires": [],
+"loader": "forge"
+},
+"225643": {
+"modids": [
+"botania"
+],
+"requires": [
+"curios",
+"patchouli"
+],
+"loader": "forge"
+},
+"361026": {
+"modids": [
+"occultism"
+],
+"requires": [
+"curios",
+"geckolib",
+"modonomicon",
+"smartbrainlib"
+],
+"loader": "forge"
+},
+"532286": {
+"modids": [
+"jeed"
+],
+"requires": [],
+"loader": "forge"
+},
+"363569": {
+"modids": [
+"mcwwindows"
+],
+"requires": [],
+"loader": "forge"
+},
+"292038": {
+"modids": [
+"betterpingdisplay"
+],
+"requires": [],
+"loader": "forge"
+},
+"351725": {
+"modids": [
+"mcwbridges"
+],
+"requires": [],
+"loader": "forge"
+},
+"662675": {
+"modids": [
+"ends_delight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"378646": {
+"modids": [
+"mcwdoors"
+],
+"requires": [],
+"loader": "forge"
+},
+"633252": {
+"modids": [
+"beautify"
+],
+"requires": [],
+"loader": "forge"
+},
+"1031489": {
+"modids": [
+"apothic_amendments__enchanting"
+],
+"requires": [
+"amendments",
+"apotheosis"
+],
+"loader": "forge"
+},
+"1298070": {
+"modids": [
+"beautiful_potions"
+],
+"requires": [],
+"loader": "forge"
+},
+"623908": {
+"modids": [
+"ctov"
+],
+"requires": [
+"lithostitched"
+],
+"loader": "forge"
+},
+"968432": {
+"modids": [
+"monolib"
+],
+"requires": [],
+"loader": "forge"
+},
+"911437": {
+"modids": [
+"sparsestructures"
+],
+"requires": [],
+"loader": "forge"
+},
+"958881": {
+"modids": [
+"timeondisplay"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"1386866": {
+"modids": [
+"entitymodelshaderfix"
+],
+"requires": [],
+"loader": "forge"
+},
+"959446": {
+"modids": [
+"ender_pack"
+],
+"requires": [
+"curios",
+"monolib"
+],
+"loader": "forge"
+},
+"868624": {
+"modids": [
+"automessage"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"906239": {
+"modids": [
+"interiors"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"888468": {
+"modids": [
+"more_bows_and_arrows"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"1010456": {
+"modids": [
+"mixinextras",
+"wider_ender_chests"
+],
+"requires": [],
+"loader": "forge"
+},
+"393149": {
+"modids": [
+"runelic"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"1299553": {
+"modids": [
+"zombie_variants"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"829521": {
+"modids": [
+"dimensionalsycnfixes"
+],
+"requires": [],
+"loader": "forge"
+},
+"368098": {
+"modids": [
+"mysterious_mountain_lib"
+],
+"requires": [],
+"loader": "forge"
+},
+"896219": {
+"modids": [
+"justoutdoorstuffs"
+],
+"requires": [],
+"loader": "forge"
+},
+"882718": {
+"modids": [
+"exclusive_weapons"
+],
+"requires": [
+"super_ore_block"
+],
+"loader": "forge"
+},
+"891328": {
+"modids": [
+"diagonalblocks",
+"diagonalwindows"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"820977": {
+"modids": [
+"create_central_kitchen"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"911386": {
+"modids": [
+"irons_recipe_additions"
+],
+"requires": [
+"irons_spellbooks"
+],
+"loader": "forge"
+},
+"485681": {
+"modids": [
+"chunky"
+],
+"requires": [],
+"loader": "forge"
+},
+"896385": {
+"modids": [
+"new_slab_variants"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"484804": {
+"modids": [
+"bettersafebed"
+],
+"requires": [],
+"loader": "forge"
+},
+"376737": {
+"modids": [
+"prettypipes"
+],
+"requires": [],
+"loader": "forge"
+},
+"261251": {
+"modids": [
+"bwncr"
+],
+"requires": [],
+"loader": "forge"
+},
+"676136": {
+"modids": [
+"modelfix"
+],
+"requires": [],
+"loader": "forge"
+},
+"577805": {
+"modids": [
+"corn_delight"
+],
+"requires": [
+"farmersdelight",
+"mysterious_mountain_lib"
+],
+"loader": "forge"
+},
+"610492": {
+"modids": [
+"another_furniture"
+],
+"requires": [],
+"loader": "forge"
+},
+"291874": {
+"modids": [
+"sereneseasons"
+],
+"requires": [
+"glitchcore"
+],
+"loader": "forge"
+},
+"1012211": {
+"modids": [
+"lootintegrations_yungs"
+],
+"requires": [
+"lootintegrations"
+],
+"loader": "forge"
+},
+"826308": {
+"modids": [
+"cluttered"
+],
+"requires": [],
+"loader": "forge"
+},
+"1689768": {
+"modids": [
+"mezz_config"
+],
+"requires": [],
+"loader": "forge"
+},
+"1083202": {
+"modids": [
+"beb"
+],
+"requires": [],
+"loader": "forge"
+},
+"955399": {
+"modids": [
+"glitchcore"
+],
+"requires": [],
+"loader": "forge"
+},
+"1008327": {
+"modids": [
+"animal_armor_trims"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"544197": {
+"modids": [
+"plushies"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"686435": {
+"modids": [
+"leavesbegone"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"484967": {
+"modids": [
+"kobolds"
+],
+"requires": [],
+"loader": "forge"
+},
+"1402632": {
+"modids": [
+"better_crossbows"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"933354": {
+"modids": [
+"disenchanting_table"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"665260": {
+"modids": [
+"buriedwrecks"
+],
+"requires": [],
+"loader": "forge"
+},
+"1197753": {
+"modids": [
+"underground_rooms"
+],
+"requires": [],
+"loader": "forge"
+},
+"884860": {
+"modids": [
+"aether_enhanced_extinguishing"
+],
+"requires": [
+"aether"
+],
+"loader": "forge"
+},
+"463155": {
+"modids": [
+"fallingleaves"
+],
+"requires": [],
+"loader": "forge"
+},
+"254268": {
+"modids": [
+"torchmaster"
+],
+"requires": [],
+"loader": "forge"
+},
+"852465": {
+"modids": [
+"aeroblender",
+"deep_aether",
+"mixinextras"
+],
+"requires": [
+"aether"
+],
+"loader": "forge"
+},
+"368825": {
+"modids": [
+"inventoryessentials"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"867237": {
+"modids": [
+"aether_redux",
+"mixinextras"
+],
+"requires": [
+"aeroblender",
+"aether",
+"geckolib"
+],
+"loader": "forge"
+},
+"882539": {
+"modids": [
+"loadingbackgrounds"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"458048": {
+"modids": [
+"diagonalblocks",
+"diagonalfences"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"559989": {
+"modids": [
+"companion"
+],
+"requires": [
+"kiwi"
+],
+"loader": "forge"
+},
+"886735": {
+"modids": [
+"stackable_stew_and_soup"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"882731": {
+"modids": [
+"colourfulearth"
+],
+"requires": [],
+"loader": "forge"
+},
+"978148": {
+"modids": [
+"epicpowerbracelets"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"682644": {
+"modids": [
+"bushierflowers"
+],
+"requires": [],
+"loader": "forge"
+},
+"615134": {
+"modids": [
+"badpackets"
+],
+"requires": [],
+"loader": "forge"
+},
+"861181": {
+"modids": [
+"super_ore_block"
+],
+"requires": [],
+"loader": "forge"
+},
+"968047": {
+"modids": [
+"overclocked_watches"
+],
+"requires": [
+"curios",
+"monolib"
+],
+"loader": "forge"
+},
+"659674": {
+"modids": [
+"mixinextras",
+"sliceanddice"
+],
+"requires": [
+"create",
+"kotlinforforge"
+],
+"loader": "forge"
+},
+"394535": {
+"modids": [
+"trashcans"
+],
+"requires": [
+"supermartijn642configlib",
+"supermartijn642corelib"
+],
+"loader": "forge"
+},
+"1038130": {
+"modids": [
+"bakery"
+],
+"requires": [
+"architectury",
+"farm_and_charm"
+],
+"loader": "forge"
+},
+"870275": {
+"modids": [
+"trimeffects"
+],
+"requires": [],
+"loader": "forge"
+},
+"377109": {
+"modids": [
+"toolstats"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"860325": {
+"modids": [
+"more_beautiful_torches"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"709585": {
+"modids": [
+"boatbreakfix"
+],
+"requires": [],
+"loader": "forge"
+},
+"350464": {
+"modids": [
+"chimes"
+],
+"requires": [],
+"loader": "forge"
+},
+"980731": {
+"modids": [],
+"requires": [],
+"loader": "none"
+},
+"579564": {
+"modids": [
+"apexcore",
+"commonality",
+"fantasyfurniture"
+],
+"requires": [],
+"loader": "forge"
+},
+"241895": {
+"modids": [
+"kleeslabs"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"377051": {
+"modids": [
+"bedbenefits"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"1038117": {
+"modids": [
+"candlelight"
+],
+"requires": [
+"architectury",
+"farm_and_charm"
+],
+"loader": "forge"
+},
+"911546": {
+"modids": [
+"tomeofblood"
+],
+"requires": [
+"ars_nouveau",
+"bloodmagic",
+"curios",
+"patchouli"
+],
+"loader": "forge"
+},
+"1148090": {
+"modids": [
+"longer_following_time"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"897116": {
+"modids": [
+"refurbished_furniture"
+],
+"requires": [
+"framework"
+],
+"loader": "forge"
+},
+"626812": {
+"modids": [
+"betterlily"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"561885": {
+"modids": [
+"justzoom",
+"mixinextras"
+],
+"requires": [
+"konkrete"
+],
+"loader": "forge"
+},
+"231484": {
+"modids": [
+"cookingforblockheads"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"526754": {
+"modids": [
+"botanypotstiers"
+],
+"requires": [
+"bookshelf",
+"botanypots"
+],
+"loader": "forge"
+},
+"908310": {
+"modids": [
+"w2pets"
+],
+"requires": [
+"waystones"
+],
+"loader": "forge"
+},
+"873866": {
+"modids": [
+"golden_foods"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"541584": {
+"modids": [
+"bettermodsbutton"
+],
+"requires": [],
+"loader": "forge"
+},
+"246640": {
+"modids": [
+"mysticalagriculture"
+],
+"requires": [
+"cucumber"
+],
+"loader": "forge"
+},
+"1387379": {
+"modids": [
+"better_sword_trims"
+],
+"requires": [],
+"loader": "forge"
+},
+"32274": {
+"modids": [
+"commonnetworking",
+"journeymap",
+"journeymap_api"
+],
+"requires": [],
+"loader": "forge"
+},
+"1477958": {
+"modids": [
+"create_repair",
+"mixinsquared"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"1175325": {
+"modids": [
+"improved_village_placement"
+],
+"requires": [],
+"loader": "forge"
+},
+"289240": {
+"modids": [
+"paraglider"
+],
+"requires": [],
+"loader": "forge"
+},
+"353928": {
+"modids": [
+"botanypots"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"832644": {
+"modids": [
+"resourcepackoverrides"
+],
+"requires": [],
+"loader": "forge"
+},
+"884272": {
+"modids": [
+"new_shield_variants"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"502786": {
+"modids": [
+"enlightened_end"
+],
+"requires": [],
+"loader": "forge"
+},
+"448311": {
+"modids": [
+"waterdripsound"
+],
+"requires": [],
+"loader": "forge"
+},
+"421179": {
+"modids": [
+"bigbrain"
+],
+"requires": [],
+"loader": "forge"
+},
+"256247": {
+"modids": [
+"mysticalagradditions"
+],
+"requires": [
+"cucumber",
+"mysticalagriculture"
+],
+"loader": "forge"
+},
+"306549": {
+"modids": [
+"tipsmod"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"454372": {
+"modids": [
+"supermartijn642corelib"
+],
+"requires": [],
+"loader": "forge"
+},
+"417645": {
+"modids": [
+"justenoughprofessions"
+],
+"requires": [
+"jei"
+],
+"loader": "forge"
+},
+"629153": {
+"modids": [
+"mcwpaths"
+],
+"requires": [],
+"loader": "forge"
+},
+"1038103": {
+"modids": [
+"farm_and_charm"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"224791": {
+"modids": [
+"bloodmagic",
+"mixinextras"
+],
+"requires": [
+"patchouli"
+],
+"loader": "forge"
+},
+"678078": {
+"modids": [
+"blockswapper"
+],
+"requires": [],
+"loader": "forge"
+},
+"241319": {
+"modids": [
+"reliquary"
+],
+"requires": [],
+"loader": "forge"
+},
+"1373339": {
+"modids": [
+"unlocked_typing"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"907843": {
+"modids": [
+"ars_ocultas"
+],
+"requires": [
+"ars_nouveau",
+"curios",
+"occultism",
+"patchouli"
+],
+"loader": "forge"
+},
+"608235": {
+"modids": [
+"weaponmaster_ydm"
+],
+"requires": [],
+"loader": "forge"
+},
+"411357": {
+"modids": [
+"botanytrees"
+],
+"requires": [
+"bookshelf",
+"botanypots"
+],
+"loader": "forge"
+},
+"402924": {
+"modids": [
+"chunkloaders"
+],
+"requires": [
+"supermartijn642configlib",
+"supermartijn642corelib"
+],
+"loader": "forge"
+},
+"639584": {
+"modids": [
+"immersive_paintings"
+],
+"requires": [],
+"loader": "forge"
+},
+"359540": {
+"modids": [
+"mcwfurnitures"
+],
+"requires": [],
+"loader": "forge"
+},
+"961271": {
+"modids": [
+"crabclaws"
+],
+"requires": [],
+"loader": "forge"
+},
+"519759": {
+"modids": [
+"map_atlases"
+],
+"requires": [],
+"loader": "forge"
+},
+"849364": {
+"modids": [
+"hearth_and_home"
+],
+"requires": [],
+"loader": "forge"
+},
+"272335": {
+"modids": [
+"cucumber"
+],
+"requires": [],
+"loader": "forge"
+},
+"879879": {
+"modids": [
+"aeroblender"
+],
+"requires": [
+"aether",
+"terrablender"
+],
+"loader": "forge"
+},
+"509285": {
+"modids": [
+"createdeco"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"1473896": {
+"modids": [
+"floatater"
+],
+"requires": [],
+"loader": "forge"
+},
+"320163": {
+"modids": [
+"ambientenvironment"
+],
+"requires": [],
+"loader": "forge"
+},
+"1257245": {
+"modids": [
+"adorable_eggs"
+],
+"requires": [
+"cerbons_api",
+"cloth_config"
+],
+"loader": "forge"
+},
+"859307": {
+"modids": [
+"eat_an_omelette"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"1003673": {
+"modids": [
+"mynethersdelight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"630342": {
+"modids": [
+"bbs"
+],
+"requires": [],
+"loader": "forge"
+},
+"983503": {
+"modids": [
+"more_useful_copper"
+],
+"requires": [],
+"loader": "forge"
+},
+"243707": {
+"modids": [
+"tombstone"
+],
+"requires": [],
+"loader": "forge"
+},
+"294815": {
+"modids": [
+"aiotbotania"
+],
+"requires": [
+"botania"
+],
+"loader": "forge"
+},
+"342543": {
+"modids": [
+"mahoutsukai"
+],
+"requires": [],
+"loader": "forge"
+},
+"1130125": {
+"modids": [
+"pickaxetrims"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"322765": {
+"modids": [
+"respawninganimals"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"921753": {
+"modids": [
+"healthy_water"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"445838": {
+"modids": [
+"animal_feeding_trough"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"544033": {
+"modids": [
+"convenientcurioscontainer"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"1295438": {
+"modids": [
+"simple_villager_follow"
+],
+"requires": [],
+"loader": "forge"
+},
+"944149": {
+"modids": [
+"startinv"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"1312275": {
+"modids": [
+"similar_prehistory"
+],
+"requires": [],
+"loader": "forge"
+},
+"1193263": {
+"modids": [
+"mixinsquared",
+"tacztweaks"
+],
+"requires": [
+"kotlinforforge",
+"tacz",
+"yet_another_config_lib_v3"
+],
+"loader": "forge"
+},
+"255902": {
+"modids": [
+"wstweaks"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"298187": {
+"modids": [
+"buildinggadgets2"
+],
+"requires": [],
+"loader": "forge"
+},
+"679286": {
+"modids": [
+"medieval_deco"
+],
+"requires": [],
+"loader": "forge"
+},
+"1266524": {
+"modids": [
+"exposure_expanded"
+],
+"requires": [
+"architectury",
+"exposure"
+],
+"loader": "forge"
+},
+"260262": {
+"modids": [
+"toolbelt"
+],
+"requires": [],
+"loader": "forge"
+},
+"1391289": {
+"modids": [
+"potion_blending"
+],
+"requires": [],
+"loader": "forge"
+},
+"399757": {
+"modids": [
+"charginggadgets"
+],
+"requires": [],
+"loader": "forge"
+},
+"297680": {
+"modids": [
+"additionalstructures"
+],
+"requires": [],
+"loader": "forge"
+},
+"969422": {
+"modids": [
+"diagonalblocks",
+"diagonalwalls"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"220318": {
+"modids": [
+"biomesoplenty"
+],
+"requires": [
+"terrablender"
+],
+"loader": "forge"
+},
+"1360543": {
+"modids": [
+"happy_ghasts_boost"
+],
+"requires": [
+"monolib",
+"vanillabackport"
+],
+"loader": "forge"
+},
+"64760": {
+"modids": [
+"securitycraft"
+],
+"requires": [],
+"loader": "forge"
+},
+"357540": {
+"modids": [
+"inventoryhud"
+],
+"requires": [],
+"loader": "forge"
+},
+"268560": {
+"modids": [
+"mekanism"
+],
+"requires": [],
+"loader": "forge"
+},
+"362479": {
+"modids": [
+"the_bumblezone"
+],
+"requires": [],
+"loader": "forge"
+},
+"633483": {
+"modids": [
+"powah"
+],
+"requires": [
+"architectury",
+"cloth_config"
+],
+"loader": "forge"
+},
+"1023882": {
+"modids": [
+"exposure_catalog"
+],
+"requires": [
+"exposure"
+],
+"loader": "forge"
+},
+"871755": {
+"modids": [
+"exposure"
+],
+"requires": [],
+"loader": "forge"
+},
+"1034453": {
+"modids": [
+"peaceful_hunger"
+],
+"requires": [],
+"loader": "forge"
+},
+"323976": {
+"modids": [
+"betteranimationscollection"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"318857": {
+"modids": [
+"hunters_return"
+],
+"requires": [
+"bagus_lib"
+],
+"loader": "forge"
+},
+"857971": {
+"modids": [
+"netherchested",
+"puzzlesaccessapi",
+"puzzlesapi"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"498797": {
+"modids": [
+"mavm"
+],
+"requires": [
+"mavapi"
+],
+"loader": "forge"
+},
+"1554735": {
+"modids": [
+"autofeedanimals"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"679177": {
+"modids": [
+"libipn"
+],
+"requires": [],
+"loader": "forge"
+},
+"866533": {
+"modids": [
+"bagus_lib"
+],
+"requires": [],
+"loader": "forge"
+},
+"696283": {
+"modids": [
+"unusualprehistory"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"967869": {
+"modids": [
+"mobdropsrecipes_overworld"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"858922": {
+"modids": [
+"danger_close"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"968685": {
+"modids": [
+"mobdropsrecipes_end"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"1288333": {
+"modids": [
+"vanimals"
+],
+"requires": [],
+"loader": "forge"
+},
+"350727": {
+"modids": [
+"xercapaint"
+],
+"requires": [],
+"loader": "forge"
+},
+"574300": {
+"modids": [
+"appmek"
+],
+"requires": [
+"mekanism"
+],
+"loader": "forge"
+},
+"427471": {
+"modids": [
+"finsandtails"
+],
+"requires": [],
+"loader": "forge"
+},
+"1145517": {
+"modids": [
+"chocobos"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"490653": {
+"modids": [
+"dragonseeker"
+],
+"requires": [
+"iceandfire"
+],
+"loader": "forge"
+},
+"390717": {
+"modids": [
+"starterkit"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"1117054": {
+"modids": [
+"feur_extension_desert"
+],
+"requires": [],
+"loader": "forge"
+},
+"1028108": {
+"modids": [
+"mixinextras",
+"simplebedrockmodel",
+"tacz"
+],
+"requires": [],
+"loader": "forge"
+},
+"268566": {
+"modids": [
+"mekanismgenerators"
+],
+"requires": [
+"mekanism"
+],
+"loader": "forge"
+},
+"1103436": {
+"modids": [
+"guccivuitton"
+],
+"requires": [
+"tacz"
+],
+"loader": "forge"
+},
+"223794": {
+"modids": [
+"ae2"
+],
+"requires": [
+"guideme"
+],
+"loader": "forge"
+},
+"383129": {
+"modids": [
+"connectedglass"
+],
+"requires": [
+"fusion",
+"supermartijn642corelib"
+],
+"loader": "forge"
+},
+"1173950": {
+"modids": [
+"guideme"
+],
+"requires": [],
+"loader": "forge"
+},
+"320926": {
+"modids": [],
+"requires": [],
+"loader": "none"
+},
+"344787": {
+"modids": [
+"xpbook"
+],
+"requires": [],
+"loader": "forge"
+},
+"265090": {
+"modids": [
+"ageofweapons"
+],
+"requires": [],
+"loader": "forge"
+},
+"709964": {
+"modids": [
+"mavapi"
+],
+"requires": [],
+"loader": "forge"
+},
+"968546": {
+"modids": [
+"mob_drops_recipes_nether"
+],
+"requires": [
+"monolib"
+],
+"loader": "forge"
+},
+"411813": {
+"modids": [
+"stackrefill"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"905183": {
+"modids": [
+"unearthed_journey"
+],
+"requires": [],
+"loader": "forge"
+},
+"351473": {
+"modids": [
+"mushroomquest"
+],
+"requires": [],
+"loader": "forge"
+},
+"1396590": {
+"modids": [
+"multi_arrow_effects"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"353434": {
+"modids": [
+"betterburning"
+],
+"requires": [],
+"loader": "forge"
+},
+"282837": {
+"modids": [
+"quarryplus"
+],
+"requires": [],
+"loader": "forge"
+},
+"1098212": {
+"modids": [
+"seafarer"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"580129": {
+"modids": [
+"questsadditions"
+],
+"requires": [],
+"loader": "forge"
+},
+"266890": {
+"modids": [
+"playerrevive"
+],
+"requires": [
+"creativecore"
+],
+"loader": "forge"
+},
+"669753": {
+"modids": [
+"medievalcraftweapons"
+],
+"requires": [],
+"loader": "forge"
+},
+"278717": {
+"modids": [
+"sit"
+],
+"requires": [],
+"loader": "forge"
+},
+"804434": {
+"modids": [
+"oddorganisms"
+],
+"requires": [],
+"loader": "forge"
+},
+"854949": {
+"modids": [
+"fusion"
+],
+"requires": [],
+"loader": "forge"
+},
+"233071": {
+"modids": [
+"craftingtweaks"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"1308047": {
+"modids": [
+"frozenhappyghast"
+],
+"requires": [
+"vanillabackport"
+],
+"loader": "forge"
+},
+"1054978": {
+"modids": [
+"ancientsand"
+],
+"requires": [],
+"loader": "forge"
+},
+"1221215": {
+"modids": [
+"prehistoric_paintings"
+],
+"requires": [],
+"loader": "forge"
+},
+"807906": {
+"modids": [
+"days_in_the_middle_ages"
+],
+"requires": [],
+"loader": "forge"
+},
+"1207005": {
+"modids": [
+"exposure_polaroid"
+],
+"requires": [
+"exposure"
+],
+"loader": "forge"
+},
+"976768": {
+"modids": [
+"theorcs"
+],
+"requires": [],
+"loader": "forge"
+},
+"240633": {
+"modids": [
+"inventorysorter"
+],
+"requires": [],
+"loader": "forge"
+},
+"568300": {
+"modids": [
+"unusualfishmod"
+],
+"requires": [],
+"loader": "forge"
+},
+"1228716": {
+"modids": [
+"underwater_village"
+],
+"requires": [],
+"loader": "forge"
+},
+"1296310": {
+"modids": [
+"blowguns",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"1129736": {
+"modids": [
+"leather_to_rabbit_hide"
+],
+"requires": [],
+"loader": "forge"
+},
+"1302224": {
+"modids": [
+"customnetherportals"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"460681": {
+"modids": [
+"darkerdepths"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"416811": {
+"modids": [
+"medieval_craft_structures"
+],
+"requires": [
+"medievalcraftweapons"
+],
+"loader": "forge"
+},
+"231095": {
+"modids": [
+"chiselsandbits",
+"scena"
+],
+"requires": [],
+"loader": "forge"
+},
+"1219417": {
+"modids": [
+"gwrexpansions"
+],
+"requires": [
+"gunswithoutroses"
+],
+"loader": "forge"
+},
+"667174": {
+"modids": [
+"quality_equipment"
+],
+"requires": [],
+"loader": "forge"
+},
+"358243": {
+"modids": [
+"sedparties"
+],
+"requires": [],
+"loader": "forge"
+},
+"932359": {
+"modids": [
+"archers"
+],
+"requires": [],
+"loader": "fabric"
+},
+"1105855": {
+"modids": [
+"knightlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"354522": {
+"modids": [
+"quickstack"
+],
+"requires": [],
+"loader": "forge"
+},
+"1318486": {
+"modids": [
+"majospellenchantment"
+],
+"requires": [],
+"loader": "forge"
+},
+"639653": {
+"modids": [
+"davespotioneering"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"1539700": {
+"modids": [
+"worldgen_guard"
+],
+"requires": [],
+"loader": "forge"
+},
+"1132802": {
+"modids": [
+"eventjs"
+],
+"requires": [
+"kubejs"
+],
+"loader": "forge"
+},
+"1078066": {
+"modids": [
+"luminoustag"
+],
+"requires": [],
+"loader": "forge"
+},
+"738627": {
+"modids": [
+"prodigium"
+],
+"requires": [],
+"loader": "forge"
+},
+"901507": {
+"modids": [
+"sdm_orestages"
+],
+"requires": [],
+"loader": "forge"
+},
+"226136": {
+"modids": [
+"simplecorelib"
+],
+"requires": [],
+"loader": "forge"
+},
+"438003": {
+"modids": [
+"allurement"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"968266": {
+"modids": [
+"cardiac"
+],
+"requires": [
+"architectury",
+"octolib"
+],
+"loader": "forge"
+},
+"1205426": {
+"modids": [
+"ali"
+],
+"requires": [],
+"loader": "forge"
+},
+"856548": {
+"modids": [
+"paladins"
+],
+"requires": [],
+"loader": "fabric"
+},
+"233300": {
+"modids": [
+"golems"
+],
+"requires": [],
+"loader": "forge"
+},
+"442169": {
+"modids": [
+"moremcmeta"
+],
+"requires": [],
+"loader": "forge"
+},
+"381736": {
+"modids": [
+"savage_and_ravage"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"628919": {
+"modids": [
+"thitemstages"
+],
+"requires": [],
+"loader": "forge"
+},
+"1243725": {
+"modids": [
+"bypowderandsteel"
+],
+"requires": [
+"gunswithoutroses"
+],
+"loader": "forge"
+},
+"925889": {
+"modids": [
+"sounds"
+],
+"requires": [
+"mru"
+],
+"loader": "forge"
+},
+"1255211": {
+"modids": [
+"kubejs_curios"
+],
+"requires": [],
+"loader": "forge"
+},
+"377798": {
+"modids": [
+"conjurer_illager"
+],
+"requires": [
+"structure_gel"
+],
+"loader": "forge"
+},
+"1451357": {
+"modids": [
+"mixinextras",
+"unified_combat"
+],
+"requires": [],
+"loader": "forge"
+},
+"669659": {
+"modids": [
+"mru"
+],
+"requires": [],
+"loader": "forge"
+},
+"833035": {
+"modids": [
+"hltweaker"
+],
+"requires": [],
+"loader": "forge"
+},
+"630620": {
+"modids": [
+"fastload"
+],
+"requires": [],
+"loader": "forge"
+},
+"593958": {
+"modids": [
+"universalenchants"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"912788": {
+"modids": [
+"achiopt"
+],
+"requires": [],
+"loader": "forge"
+},
+"1294320": {
+"modids": [
+"aether_gloves_for_all"
+],
+"requires": [
+"aether"
+],
+"loader": "forge"
+},
+"969937": {
+"modids": [
+"respawningstructures"
+],
+"requires": [
+"cupboard"
+],
+"loader": "forge"
+},
+"560156": {
+"modids": [
+"bucketlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"1071663": {
+"modids": [
+"terrariastructures"
+],
+"requires": [],
+"loader": "forge"
+},
+"855017": {
+"modids": [
+"clean_tooltips"
+],
+"requires": [],
+"loader": "forge"
+},
+"1421135": {
+"modids": [
+"wizard_terra_cuiros"
+],
+"requires": [
+"confluence"
+],
+"loader": "forge"
+},
+"367178": {
+"modids": [
+"treeharvester"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"1037427": {
+"modids": [
+"droppedbuffs"
+],
+"requires": [],
+"loader": "forge"
+},
+"1203668": {
+"modids": [
+"dataanchor"
+],
+"requires": [],
+"loader": "forge"
+},
+"1109713": {
+"modids": [
+"immersivemessages"
+],
+"requires": [
+"txnilib"
+],
+"loader": "forge"
+},
+"840027": {
+"modids": [
+"mixinextras",
+"usefulspyglass"
+],
+"requires": [],
+"loader": "forge"
+},
+"681693": {
+"modids": [
+"simple_weapons"
+],
+"requires": [],
+"loader": "forge"
+},
+"775518": {
+"modids": [
+"runes"
+],
+"requires": [],
+"loader": "fabric"
+},
+"881096": {
+"modids": [
+"damageindicator"
+],
+"requires": [],
+"loader": "forge"
+},
+"683174": {
+"modids": [
+"gardens_of_the_dead"
+],
+"requires": [
+"architectury",
+"terrablender"
+],
+"loader": "forge"
+},
+"342623": {
+"modids": [
+"healingcampfire"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"959951": {
+"modids": [
+"saturation_plus"
+],
+"requires": [],
+"loader": "forge"
+},
+"1206333": {
+"modids": [
+"witherswrath"
+],
+"requires": [],
+"loader": "forge"
+},
+"849519": {
+"modids": [
+"e4mc"
+],
+"requires": [],
+"loader": "forge"
+},
+"646425": {
+"modids": [
+"tameablebeasts"
+],
+"requires": [],
+"loader": "forge"
+},
+"405077": {
+"modids": [
+"gunswithoutroses"
+],
+"requires": [],
+"loader": "forge"
+},
+"301051": {
+"modids": [
+"quarkoddities"
+],
+"requires": [
+"quark"
+],
+"loader": "forge"
+},
+"886751": {
+"modids": [
+"ancient_aether",
+"mixinextras"
+],
+"requires": [
+"aeroblender",
+"aether",
+"terrablender"
+],
+"loader": "forge"
+},
+"912469": {
+"modids": [
+"ftbqoptimizer"
+],
+"requires": [
+"ftbquests"
+],
+"loader": "forge"
+},
+"782443": {
+"modids": [
+"flowerymooblooms"
+],
+"requires": [
+"friendsandfoes"
+],
+"loader": "forge"
+},
+"1078098": {
+"modids": [
+"luminous_nether"
+],
+"requires": [
+"geckolib",
+"terrablender"
+],
+"loader": "forge"
+},
+"1406545": {
+"modids": [
+"omnisprint"
+],
+"requires": [],
+"loader": "forge"
+},
+"1350406": {
+"modids": [
+"sorcerousnether"
+],
+"requires": [],
+"loader": "forge"
+},
+"1303357": {
+"modids": [
+"rangedjs"
+],
+"requires": [],
+"loader": "forge"
+},
+"1182590": {
+"modids": [
+"blessfulled"
+],
+"requires": [],
+"loader": "forge"
+},
+"1332365": {
+"modids": [
+"foolproof"
+],
+"requires": [],
+"loader": "forge"
+},
+"662563": {
+"modids": [
+"crackerslib",
+"endertrigon"
+],
+"requires": [],
+"loader": "forge"
+},
+"1203888": {
+"modids": [
+"explorerscompass"
+],
+"requires": [],
+"loader": "forge"
+},
+"506624": {
+"modids": [
+"farsightedmobs"
+],
+"requires": [],
+"loader": "forge"
+},
+"247357": {
+"modids": [
+"extraalchemy"
+],
+"requires": [],
+"loader": "fabric"
+},
+"690971": {
+"modids": [
+"seasonhud"
+],
+"requires": [],
+"loader": "forge"
+},
+"248027": {
+"modids": [
+"scalinghealth"
+],
+"requires": [
+"silentlib"
+],
+"loader": "forge"
+},
+"1443253": {
+"modids": [
+"dsnnullplus"
+],
+"requires": [],
+"loader": "forge"
+},
+"285012": {
+"modids": [
+"mobspropertiesrandomness"
+],
+"requires": [
+"insanelib"
+],
+"loader": "forge"
+},
+"1173196": {
+"modids": [
+"cafelib",
+"mixinextras",
+"terra_entity"
+],
+"requires": [],
+"loader": "forge"
+},
+"511172": {
+"modids": [
+"hourglass"
+],
+"requires": [],
+"loader": "forge"
+},
+"438447": {
+"modids": [
+"enhancedcelestials"
+],
+"requires": [
+"corgilib",
+"dataanchor"
+],
+"loader": "forge"
+},
+"1019091": {
+"modids": [
+"borninconfiguration"
+],
+"requires": [
+"born_in_chaos_v1"
+],
+"loader": "forge"
+},
+"1273303": {
+"modids": [
+"areaeffectcloud3d"
+],
+"requires": [
+"insanelib"
+],
+"loader": "forge"
+},
+"1169503": {
+"modids": [
+"wormhole_artifact"
+],
+"requires": [],
+"loader": "forge"
+},
+"1298091": {
+"modids": [
+"domesticationinnovation"
+],
+"requires": [
+"citadel"
+],
+"loader": "forge"
+},
+"1300195": {
+"modids": [
+"smartkeyprompts"
+],
+"requires": [
+"oelib"
+],
+"loader": "forge"
+},
+"568316": {
+"modids": [
+"numismatic-overhaul"
+],
+"requires": [],
+"loader": "fabric"
+},
+"890301": {
+"modids": [
+"simplyskills"
+],
+"requires": [],
+"loader": "fabric"
+},
+"69162": {
+"modids": [
+"cofh_core"
+],
+"requires": [],
+"loader": "forge"
+},
+"506757": {
+"modids": [
+"lootbeams"
+],
+"requires": [],
+"loader": "forge"
+},
+"1212200": {
+"modids": [
+"keybindjs"
+],
+"requires": [],
+"loader": "forge"
+},
+"226138": {
+"modids": [
+"simpleores"
+],
+"requires": [
+"bucketlib",
+"simplecorelib"
+],
+"loader": "forge"
+},
+"396094": {
+"modids": [
+"armorpointspp"
+],
+"requires": [],
+"loader": "forge"
+},
+"880880": {
+"modids": [
+"moremcmeta_emissive_plugin"
+],
+"requires": [
+"moremcmeta"
+],
+"loader": "forge"
+},
+"474822": {
+"modids": [
+"mixinextras",
+"propertymodifier"
+],
+"requires": [],
+"loader": "forge"
+},
+"1349155": {
+"modids": [
+"averagedps"
+],
+"requires": [],
+"loader": "forge"
+},
+"479710": {
+"modids": [
+"undead_revamp2"
+],
+"requires": [],
+"loader": "forge"
+},
+"1089627": {
+"modids": [
+"luminous_beasts"
+],
+"requires": [],
+"loader": "forge"
+},
+"585406": {
+"modids": [
+"probejs"
+],
+"requires": [
+"architectury",
+"kubejs"
+],
+"loader": "forge"
+},
+"1172469": {
+"modids": [
+"legendarytabs"
+],
+"requires": [],
+"loader": "forge"
+},
+"549892": {
+"modids": [
+"spacecatasb"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"398430": {
+"modids": [
+"structureexpansion"
+],
+"requires": [],
+"loader": "forge"
+},
+"1319210": {
+"modids": [
+"oelib"
+],
+"requires": [],
+"loader": "forge"
+},
+"277616": {
+"modids": [
+"solcarrot"
+],
+"requires": [],
+"loader": "forge"
+},
+"659110": {
+"modids": [
+"regions_unexplored"
+],
+"requires": [
+"terrablender"
+],
+"loader": "forge"
+},
+"958094": {
+"modids": [
+"polytone"
+],
+"requires": [],
+"loader": "forge"
+},
+"1066090": {
+"modids": [
+"luminous_monsters"
+],
+"requires": [],
+"loader": "forge"
+},
+"567403": {
+"modids": [
+"lychee"
+],
+"requires": [],
+"loader": "forge"
+},
+"650658": {
+"modids": [
+"sereneseasonsfix"
+],
+"requires": [
+"sereneseasons"
+],
+"loader": "forge"
+},
+"353399": {
+"modids": [
+"archers_paradox"
+],
+"requires": [
+"cofh_core"
+],
+"loader": "forge"
+},
+"817844": {
+"modids": [
+"prodigium_dungeons"
+],
+"requires": [],
+"loader": "forge"
+},
+"438116": {
+"modids": [
+"mcwpaintings"
+],
+"requires": [],
+"loader": "forge"
+},
+"871799": {
+"modids": [
+"irons_rpg_tweaks"
+],
+"requires": [
+"irons_lib"
+],
+"loader": "forge"
+},
+"1507669": {
+"modids": [
+"dsnnullbasic"
+],
+"requires": [],
+"loader": "forge"
+},
+"331983": {
+"modids": [
+"corail_woodcutter"
+],
+"requires": [],
+"loader": "forge"
+},
+"559312": {
+"modids": [
+"easy_npc"
+],
+"requires": [],
+"loader": "forge"
+},
+"980834": {
+"modids": [
+"irons_spells_js"
+],
+"requires": [
+"curios",
+"irons_spellbooks"
+],
+"loader": "forge"
+},
+"571264": {
+"modids": [
+"spyglass_improvements"
+],
+"requires": [],
+"loader": "forge"
+},
+"771265": {
+"modids": [
+"spell_power"
+],
+"requires": [],
+"loader": "forge"
+},
+"690570": {
+"modids": [
+"bosshealthregain"
+],
+"requires": [],
+"loader": "forge"
+},
+"1544334": {
+"modids": [
+"fallcontrol"
+],
+"requires": [],
+"loader": "forge"
+},
+"835091": {
+"modids": [
+"puffish_skills"
+],
+"requires": [],
+"loader": "forge"
+},
+"898104": {
+"modids": [
+"carbonconfig"
+],
+"requires": [],
+"loader": "forge"
+},
+"268655": {
+"modids": [
+"gamestages"
+],
+"requires": [
+"bookshelf"
+],
+"loader": "forge"
+},
+"1151761": {
+"modids": [
+"projectile_tweaks"
+],
+"requires": [],
+"loader": "fabric"
+},
+"983284": {
+"modids": [
+"betterclouds"
+],
+"requires": [],
+"loader": "forge"
+},
+"1420751": {
+"modids": [
+"smart_particles"
+],
+"requires": [],
+"loader": "forge"
+},
+"513769": {
+"modids": [
+"itemborders"
+],
+"requires": [
+"iceberg",
+"prism"
+],
+"loader": "forge"
+},
+"532610": {
+"modids": [
+"owo"
+],
+"requires": [],
+"loader": "fabric"
+},
+"961108": {
+"modids": [
+"aetherdelight"
+],
+"requires": [],
+"loader": "forge"
+},
+"1305235": {
+"modids": [
+"araxers_bestiary"
+],
+"requires": [],
+"loader": "forge"
+},
+"1300341": {
+"modids": [
+"companions"
+],
+"requires": [
+"knightlib"
+],
+"loader": "forge"
+},
+"729120": {
+"modids": [
+"drinkbeer"
+],
+"requires": [],
+"loader": "forge"
+},
+"665658": {
+"modids": [
+"canary"
+],
+"requires": [],
+"loader": "forge"
+},
+"291788": {
+"modids": [
+"servertabinfo"
+],
+"requires": [],
+"loader": "forge"
+},
+"567114": {
+"modids": [
+"extractinator"
+],
+"requires": [
+"resourcefulconfig",
+"resourcefullib"
+],
+"loader": "forge"
+},
+"226889": {
+"modids": [
+"cleanview"
+],
+"requires": [],
+"loader": "forge"
+},
+"807653": {
+"modids": [
+"spell_engine"
+],
+"requires": [
+"cloth_config",
+"playeranimator",
+"spell_power"
+],
+"loader": "forge"
+},
+"977922": {
+"modids": [
+"geckojs"
+],
+"requires": [],
+"loader": "forge"
+},
+"690139": {
+"modids": [
+"enemyexpansion"
+],
+"requires": [],
+"loader": "forge"
+},
+"285690": {
+"modids": [
+"iguanatweaksreborn",
+"mixinextras"
+],
+"requires": [
+"insanelib",
+"maxhealthfix"
+],
+"loader": "forge"
+},
+"358578": {
+"modids": [
+"disenchanting"
+],
+"requires": [],
+"loader": "forge"
+},
+"355467": {
+"modids": [
+"fabric_biome_api_v1",
+"fabric_convention_tags_v1",
+"fabric_resource_loader_v0",
+"fruitfulfun"
+],
+"requires": [
+"kiwi",
+"lychee"
+],
+"loader": "forge"
+},
+"526854": {
+"modids": [
+"starlight"
+],
+"requires": [],
+"loader": "forge"
+},
+"1027625": {
+"modids": [
+"confluence",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"657831": {
+"modids": [
+"piglinproliferation"
+],
+"requires": [],
+"loader": "forge"
+},
+"1171602": {
+"modids": [
+"alshanex_familiars"
+],
+"requires": [],
+"loader": "forge"
+},
+"423602": {
+"modids": [
+"cameraoverhaul"
+],
+"requires": [
+"cloth_config"
+],
+"loader": "forge"
+},
+"918638": {
+"modids": [
+"meed"
+],
+"requires": [],
+"loader": "forge"
+},
+"1156973": {
+"modids": [
+"furattributes"
+],
+"requires": [],
+"loader": "forge"
+},
+"1372051": {
+"modids": [
+"certain_questing_additions"
+],
+"requires": [
+"architectury",
+"ftbquests"
+],
+"loader": "forge"
+},
+"531351": {
+"modids": [
+"continuity"
+],
+"requires": [
+"connectormod",
+"fabric_api"
+],
+"loader": "forge"
+},
+"1336564": {
+"modids": [
+"sweet_charm_o_mine"
+],
+"requires": [
+"curios",
+"gunswithoutroses"
+],
+"loader": "forge"
+},
+"398022": {
+"modids": [
+"earthtojavamobs"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"409371": {
+"modids": [
+"meetyourfight"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"242998": {
+"modids": [
+"silentlib"
+],
+"requires": [],
+"loader": "forge"
+},
+"1544105": {
+"modids": [
+"repair_override"
+],
+"requires": [],
+"loader": "forge"
+},
+"991341": {
+"modids": [
+"puffish_attributes"
+],
+"requires": [],
+"loader": "forge"
+},
+"583228": {
+"modids": [
+"simplebackups"
+],
+"requires": [],
+"loader": "forge"
+},
+"734325": {
+"modids": [
+"wizards"
+],
+"requires": [],
+"loader": "fabric"
+},
+"838573": {
+"modids": [
+"attributizer"
+],
+"requires": [],
+"loader": "forge"
+},
+"878676": {
+"modids": [
+"better_totem_of_undying"
+],
+"requires": [
+"cerbons_api",
+"cloth_config"
+],
+"loader": "forge"
+},
+"851131": {
+"modids": [
+"portfolio"
+],
+"requires": [],
+"loader": "forge"
+},
+"973932": {
+"modids": [
+"quality_food"
+],
+"requires": [],
+"loader": "forge"
+},
+"594387": {
+"modids": [
+"kubejsadditions"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"1231499": {
+"modids": [
+"portable_blueprints"
+],
+"requires": [],
+"loader": "forge"
+},
+"365045": {
+"modids": [
+"autumnity"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"1058468": {
+"modids": [
+"shippingbin"
+],
+"requires": [],
+"loader": "forge"
+},
+"454487": {
+"modids": [
+"online_detector"
+],
+"requires": [],
+"loader": "forge"
+},
+"1140741": {
+"modids": [
+"neo_auth"
+],
+"requires": [],
+"loader": "forge"
+},
+"892827": {
+"modids": [
+"crabbersdelight"
+],
+"requires": [
+"farmersdelight",
+"geckolib"
+],
+"loader": "forge"
+},
+"923510": {
+"modids": [
+"squidnoglitch"
+],
+"requires": [],
+"loader": "forge"
+},
+"1234653": {
+"modids": [
+"simplerecall"
+],
+"requires": [],
+"loader": "forge"
+},
+"1166778": {
+"modids": [
+"serializer_debug"
+],
+"requires": [],
+"loader": "forge"
+},
+"465066": {
+"modids": [
+"expandability"
+],
+"requires": [],
+"loader": "forge"
+},
+"1441305": {
+"modids": [
+"dialog"
+],
+"requires": [],
+"loader": "forge"
+},
+"355458": {
+"modids": [
+"buzzier_bees"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"967617": {
+"modids": [
+"entityjs"
+],
+"requires": [
+"geckolib",
+"kubejs"
+],
+"loader": "forge"
+},
+"1347329": {
+"modids": [
+"society_trading"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"935929": {
+"modids": [
+"createrailwaysnavigator"
+],
+"requires": [
+"create",
+"dragonlib"
+],
+"loader": "forge"
+},
+"1173553": {
+"modids": [
+"gallery"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"525447": {
+"modids": [
+"jmi"
+],
+"requires": [
+"journeymap"
+],
+"loader": "forge"
+},
+"394140": {
+"modids": [
+"simplemagnets"
+],
+"requires": [
+"supermartijn642configlib",
+"supermartijn642corelib"
+],
+"loader": "forge"
+},
+"556861": {
+"modids": [
+"functionalstorage"
+],
+"requires": [
+"titanium"
+],
+"loader": "forge"
+},
+"867232": {
+"modids": [
+"perfectplushieapi",
+"perfectplushies"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"618752": {
+"modids": [
+"golemoverhaul"
+],
+"requires": [
+"architectury",
+"geckolib",
+"resourcefulconfig",
+"resourcefullib"
+],
+"loader": "forge"
+},
+"1240935": {
+"modids": [
+"splendid_slimes"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"623723": {
+"modids": [
+"hopo"
+],
+"requires": [],
+"loader": "forge"
+},
+"362393": {
+"modids": [
+"atmospheric"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"365460": {
+"modids": [
+"pamhc2trees"
+],
+"requires": [],
+"loader": "forge"
+},
+"1062753": {
+"modids": [
+"bots_lib"
+],
+"requires": [],
+"loader": "forge"
+},
+"949719": {
+"modids": [
+"vintagedelight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"491890": {
+"modids": [
+"etched"
+],
+"requires": [],
+"loader": "forge"
+},
+"371813": {
+"modids": [
+"crashutilities"
+],
+"requires": [],
+"loader": "forge"
+},
+"347529": {
+"modids": [
+"guiclock"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"852670": {
+"modids": [
+"moblassos"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"287342": {
+"modids": [
+"titanium"
+],
+"requires": [],
+"loader": "forge"
+},
+"291936": {
+"modids": [
+"findme"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"930131": {
+"modids": [],
+"requires": [],
+"loader": "none"
+},
+"681606": {
+"modids": [
+"justhammers"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"917969": {
+"modids": [
+"verdantvibes"
+],
+"requires": [],
+"loader": "forge"
+},
+"858691": {
+"modids": [
+"beachparty"
+],
+"requires": [
+"architectury",
+"doapi"
+],
+"loader": "forge"
+},
+"509575": {
+"modids": [
+"observable"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"566142": {
+"modids": [
+"snowyspirit"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"1235950": {
+"modids": [
+"littlejoys"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"412013": {
+"modids": [
+"ears"
+],
+"requires": [],
+"loader": "forge"
+},
+"1026508": {
+"modids": [
+"via_romana"
+],
+"requires": [
+"dataanchor",
+"midnightlib",
+"moonlight"
+],
+"loader": "forge"
+},
+"1351745": {
+"modids": [
+"classicpipes"
+],
+"requires": [],
+"loader": "forge"
+},
+"482265": {
+"modids": [
+"trofers"
+],
+"requires": [
+"architectury",
+"cloth_config"
+],
+"loader": "forge"
+},
+"1327508": {
+"modids": [
+"tooltipoverhaul"
+],
+"requires": [],
+"loader": "forge"
+},
+"688231": {
+"modids": [
+"railways"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"821483": {
+"modids": [
+"meadow"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"379887": {
+"modids": [
+"passablefoliage"
+],
+"requires": [
+"kiwi"
+],
+"loader": "forge"
+},
+"556372": {
+"modids": [
+"snuffles"
+],
+"requires": [],
+"loader": "forge"
+},
+"1335492": {
+"modids": [
+"create_slime"
+],
+"requires": [],
+"loader": "forge"
+},
+"930072": {
+"modids": [
+"nethervinery"
+],
+"requires": [
+"architectury",
+"vinery"
+],
+"loader": "forge"
+},
+"769203": {
+"modids": [
+"galena_hats",
+"mixinextras",
+"multikulti_datagen_fixes",
+"oreganized"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"961802": {
+"modids": [
+"scholar"
+],
+"requires": [],
+"loader": "forge"
+},
+"1038106": {
+"modids": [
+"brewery"
+],
+"requires": [
+"architectury",
+"doapi",
+"farm_and_charm"
+],
+"loader": "forge"
+},
+"354047": {
+"modids": [
+"mixinextras",
+"ok_zoomer",
+"wrench_wrapper"
+],
+"requires": [],
+"loader": "forge"
+},
+"636321": {
+"modids": [
+"windswept"
+],
+"requires": [
+"blueprint"
+],
+"loader": "forge"
+},
+"1062863": {
+"modids": [
+"dew_drop_watering_cans"
+],
+"requires": [
+"bots_lib"
+],
+"loader": "forge"
+},
+"1226755": {
+"modids": [
+"sophisticatedstoragecreateintegration"
+],
+"requires": [
+"create",
+"sophisticatedstorage"
+],
+"loader": "forge"
+},
+"878047": {
+"modids": [
+"solonion"
+],
+"requires": [
+"creativecore"
+],
+"loader": "forge"
+},
+"682564": {
+"modids": [
+"puzzlesaccessapi",
+"puzzlesapi",
+"strawstatues"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"686100": {
+"modids": [
+"create_mechanical_extruder"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"1590319": {
+"modids": [
+"cozycafe",
+"libtooltips"
+],
+"requires": [
+"placebo"
+],
+"loader": "forge"
+},
+"986624": {
+"modids": [
+"additional_attributes",
+"mixinextras"
+],
+"requires": [],
+"loader": "forge"
+},
+"1290362": {
+"modids": [
+"skillsexpnotifier"
+],
+"requires": [
+"puffish_skills"
+],
+"loader": "forge"
+},
+"1263228": {
+"modids": [
+"extra_gauges"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"1280129": {
+"modids": [
+"hobbit_hill_village"
+],
+"requires": [],
+"loader": "forge"
+},
+"421897": {
+"modids": [
+"particlerain"
+],
+"requires": [],
+"loader": "forge"
+},
+"1277025": {
+"modids": [
+"longwings"
+],
+"requires": [],
+"loader": "forge"
+},
+"317269": {
+"modids": [
+"controllable"
+],
+"requires": [
+"framework"
+],
+"loader": "forge"
+},
+"410500": {
+"modids": [
+"snowpig"
+],
+"requires": [],
+"loader": "forge"
+},
+"1062904": {
+"modids": [
+"dew_drop_daily_weather"
+],
+"requires": [
+"bots_lib"
+],
+"loader": "forge"
+},
+"345779": {
+"modids": [
+"plonk"
+],
+"requires": [],
+"loader": "forge"
+},
+"953094": {
+"modids": [
+"tanukidecor"
+],
+"requires": [],
+"loader": "forge"
+},
+"1392862": {
+"modids": [
+"trials"
+],
+"requires": [],
+"loader": "forge"
+},
+"688223": {
+"modids": [
+"labels"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"691002": {
+"modids": [
+"mysticaloaktree"
+],
+"requires": [
+"moonlight"
+],
+"loader": "forge"
+},
+"1411826": {
+"modids": [
+"emixx"
+],
+"requires": [
+"emi"
+],
+"loader": "forge"
+},
+"365281": {
+"modids": [
+"serverconfigupdater"
+],
+"requires": [],
+"loader": "forge"
+},
+"695238": {
+"modids": [
+"biomespawnpoint"
+],
+"requires": [
+"collective"
+],
+"loader": "forge"
+},
+"880630": {
+"modids": [
+"fallingtrees"
+],
+"requires": [
+"architectury",
+"pandalib"
+],
+"loader": "forge"
+},
+"883502": {
+"modids": [
+"bobby"
+],
+"requires": [],
+"loader": "forge"
+},
+"1339392": {
+"modids": [
+"numismatics_utils"
+],
+"requires": [
+"create",
+"curios",
+"numismatics"
+],
+"loader": "forge"
+},
+"284324": {
+"modids": [
+"emojiful"
+],
+"requires": [],
+"loader": "forge"
+},
+"1071657": {
+"modids": [
+"wildernature"
+],
+"requires": [
+"architectury",
+"curios"
+],
+"loader": "forge"
+},
+"371033": {
+"modids": [
+"rottencreatures"
+],
+"requires": [
+"platform"
+],
+"loader": "forge"
+},
+"1357430": {
+"modids": [
+"createschematicchecker"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"962921": {
+"modids": [
+"xlpackets"
+],
+"requires": [],
+"loader": "forge"
+},
+"1462779": {
+"modids": [
+"sereneseasonsfix"
+],
+"requires": [
+"sereneseasons"
+],
+"loader": "forge"
+},
+"1099059": {
+"modids": [
+"gamediscs"
+],
+"requires": [],
+"loader": "forge"
+},
+"1062363": {
+"modids": [
+"furniture"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"363363": {
+"modids": [
+"extremesoundmuffler"
+],
+"requires": [],
+"loader": "forge"
+},
+"258881": {
+"modids": [
+"fasterladderclimbing"
+],
+"requires": [],
+"loader": "forge"
+},
+"1197807": {
+"modids": [
+"botania_seeds"
+],
+"requires": [],
+"loader": "forge"
+},
+"261924": {
+"modids": [
+"farmingforblockheads"
+],
+"requires": [
+"balm"
+],
+"loader": "forge"
+},
+"682566": {
+"modids": [
+"armorstatues",
+"puzzlesaccessapi",
+"puzzlesapi"
+],
+"requires": [
+"puzzleslib"
+],
+"loader": "forge"
+},
+"658286": {
+"modids": [
+"automobility"
+],
+"requires": [],
+"loader": "forge"
+},
+"649028": {
+"modids": [
+"balloonbox"
+],
+"requires": [],
+"loader": "forge"
+},
+"1205372": {
+"modids": [
+"croptania"
+],
+"requires": [
+"botania"
+],
+"loader": "forge"
+},
+"1431536": {
+"modids": [
+"rsmixin"
+],
+"requires": [
+"refinedstorage"
+],
+"loader": "forge"
+},
+"222548": {
+"modids": [
+"creeperconfetti"
+],
+"requires": [],
+"loader": "forge"
+},
+"664443": {
+"modids": [
+"maxenchantx"
+],
+"requires": [],
+"loader": "forge"
+},
+"585764": {
+"modids": [
+"farmlife"
+],
+"requires": [],
+"loader": "forge"
+},
+"1167473": {
+"modids": [
+"watervision"
+],
+"requires": [
+"watermedia"
+],
+"loader": "forge"
+},
+"440845": {
+"modids": [
+"moreminecarts"
+],
+"requires": [],
+"loader": "forge"
+},
+"334853": {
+"modids": [
+"sdrp"
+],
+"requires": [
+"architectury",
+"cloth_config"
+],
+"loader": "forge"
+},
+"951221": {
+"modids": [
+"herbalbrews"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"889722": {
+"modids": [
+"numismatics"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"666198": {
+"modids": [
+"morejs"
+],
+"requires": [
+"kubejs"
+],
+"loader": "forge"
+},
+"881586": {
+"modids": [
+"createutilities"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"1172429": {
+"modids": [
+"dew_drop_farmland_growth"
+],
+"requires": [
+"bots_lib"
+],
+"loader": "forge"
+},
+"1096531": {
+"modids": [
+"rehooked"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"1424785": {
+"modids": [
+"society"
+],
+"requires": [
+"perfectplushies",
+"serializer_debug"
+],
+"loader": "forge"
+},
+"1281336": {
+"modids": [
+"create_hypertube"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"651876": {
+"modids": [
+"nightlights"
+],
+"requires": [],
+"loader": "forge"
+},
+"1144296": {
+"modids": [
+"displaydelight"
+],
+"requires": [],
+"loader": "forge"
+},
+"819845": {
+"modids": [
+"powerfuljs"
+],
+"requires": [
+"kubejs"
+],
+"loader": "forge"
+},
+"834607": {
+"modids": [
+"waterframes"
+],
+"requires": [
+"creativecore",
+"watermedia"
+],
+"loader": "forge"
+},
+"1071737": {
+"modids": [
+"ftbquestlocalizer"
+],
+"requires": [],
+"loader": "forge"
+},
+"1029980": {
+"modids": [
+"liltractor"
+],
+"requires": [],
+"loader": "forge"
+},
+"1547351": {
+"modids": [
+"betteradvancedtooltips"
+],
+"requires": [],
+"loader": "forge"
+},
+"1442925": {
+"modids": [
+"nochatrestrictions"
+],
+"requires": [],
+"loader": "forge"
+},
+"869524": {
+"modids": [
+"watermedia"
+],
+"requires": [],
+"loader": "forge"
+},
+"1179699": {
+"modids": [
+"selectivebounds"
+],
+"requires": [],
+"loader": "forge"
+},
+"984099": {
+"modids": [
+"rainbowoaks"
+],
+"requires": [],
+"loader": "forge"
+},
+"975460": {
+"modids": [
+"pandalib"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"952435": {
+"modids": [
+"hamsters"
+],
+"requires": [],
+"loader": "forge"
+},
+"1082807": {
+"modids": [
+"veggiesdelight"
+],
+"requires": [
+"farmersdelight"
+],
+"loader": "forge"
+},
+"837157": {
+"modids": [
+"legendarycreatures"
+],
+"requires": [
+"geckolib"
+],
+"loader": "forge"
+},
+"446870": {
+"modids": [
+"rsinfinitybooster"
+],
+"requires": [
+"refinedstorage"
+],
+"loader": "forge"
+},
+"1308987": {
+"modids": [
+"easy_npc"
+],
+"requires": [],
+"loader": "forge"
+},
+"1256076": {
+"modids": [
+"createentitycontrol"
+],
+"requires": [
+"create"
+],
+"loader": "forge"
+},
+"577850": {
+"modids": [
+"crafting_on_a_stick"
+],
+"requires": [],
+"loader": "forge"
+},
+"443900": {
+"modids": [
+"pipez"
+],
+"requires": [],
+"loader": "forge"
+},
+"1218807": {
+"modids": [
+"create_factory_logistics"
+],
+"requires": [
+"create",
+"create_factory_abstractions"
+],
+"loader": "forge"
+},
+"243076": {
+"modids": [
+"refinedstorage"
+],
+"requires": [],
+"loader": "forge"
+},
+"891054": {
+"modids": [
+"etcetera"
+],
+"requires": [],
+"loader": "forge"
+},
+"631990": {
+"modids": [
+"simplehats"
+],
+"requires": [
+"curios"
+],
+"loader": "forge"
+},
+"622888": {
+"modids": [
+"flywheel",
+"ponder",
+"ponderjs"
+],
+"requires": [
+"kubejs"
+],
+"loader": "forge"
+},
+"694962": {
+"modids": [
+"gag"
+],
+"requires": [
+"architectury",
+"ftblibrary"
+],
+"loader": "forge"
+},
+"272302": {
+"modids": [
+"refinedstorageaddons"
+],
+"requires": [
+"refinedstorage"
+],
+"loader": "forge"
+},
+"1351466": {
+"modids": [
+"whimsy_deco"
+],
+"requires": [],
+"loader": "forge"
+},
+"854213": {
+"modids": [
+"colorfulhearts"
+],
+"requires": [],
+"loader": "forge"
+},
+"857737": {
+"modids": [
+"species"
+],
+"requires": [],
+"loader": "forge"
+},
+"411896": {
+"modids": [
+"sewingkit"
+],
+"requires": [],
+"loader": "forge"
+},
+"465532": {
+"modids": [
+"zetter"
+],
+"requires": [],
+"loader": "forge"
+},
+"225608": {
+"modids": [
+"worldedit"
+],
+"requires": [],
+"loader": "forge"
+},
+"1015097": {
+"modids": [
+"additional_rpg_jewelry"
+],
+"requires": [
+"jewelry",
+"more_rpg_classes",
+"spell_engine"
+],
+"loader": "forge"
+},
+"910706": {
+"modids": [
+"jewelry"
+],
+"requires": [
+"spell_power",
+"structure_pool_api"
+],
+"loader": "forge"
+},
+"927915": {
+"modids": [
+"structure_pool_api"
+],
+"requires": [],
+"loader": "forge"
+},
+"923030": {
+"modids": [
+"more_rpg_classes"
+],
+"requires": [
+"spell_engine"
+],
+"loader": "forge"
+},
+"644704": {
+"modids": [
+"weaponleveling"
+],
+"requires": [
+"architectury"
+],
+"loader": "forge"
+},
+"1509376": {
+"modids": [
+"wl_bc_compat"
+],
+"requires": [
+"architectury",
+"bettercombat",
+"weaponleveling"
+],
+"loader": "forge"
+}
+}

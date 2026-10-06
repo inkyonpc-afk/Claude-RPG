@@ -18,9 +18,55 @@ def norm(s):
 
 
 mods = {k: v for k, v in union.items() if v["kind"] == "mods"}
+jm = json.load(open(os.path.join(PACK, "jarmeta.json"), encoding="utf-8"))
+provider = {}
+for k, m in jm.items():
+    if m["loader"] != "forge":
+        continue
+    for mid in m["modids"]:
+        provider.setdefault(mid, k)
+ALIAS = {"kotlinforforge": "kotlin for forge", "gml": "groovymodloader"}   # language providers have no mods.toml
+for mid, nm in ALIAS.items():
+    for k, v in union.items():
+        if v["kind"] == "mods" and re.sub(r"\s*[\[\(].*?[\]\)]", "", v["name"] or "").strip().lower() == nm:
+            provider[mid] = k
+unmet = {}
+
+
+def deps_of(k):
+    ds = [str(d) for d in mods[k]["deps"] if str(d) in mods]
+    for mid in jm.get(k, {}).get("requires", []):
+        pk = provider.get(mid)
+        if pk is None:
+            unmet.setdefault(mid, set()).add(mods[k]["name"])
+        elif pk != k:
+            ds.append(pk)
+    return sorted(set(ds))
+
 by_name = {}
 for k, v in mods.items():
     by_name.setdefault(norm(v["name"]), []).append(k)
+
+pf = os.path.join(PACK, "pinned.json")
+pins = json.load(open(pf, encoding="utf-8")) if os.path.isfile(pf) else []
+new_pins = []
+for i, pn in enumerate(pins):
+    if pn.get("replaces"):
+        tgt = by_name.get(norm(pn["replaces"])) or [k for nn, ks in by_name.items() if nn.startswith(norm(pn["replaces"])) for k in ks]
+        if len(tgt) != 1:
+            print("PIN replace target not unique/found:", pn["replaces"], tgt); continue
+        k = tgt[0]
+        mods[k].update(fileName=pn["fileName"], downloadUrl=pn["url"], sha1=pn["sha1"], jar=pn["localJar"], deps=[])
+        jm[k] = dict(modids=pn["modids"], requires=pn["requires"], loader=pn["loader"])
+        for mid in pn["modids"]:
+            provider[mid] = k
+    else:
+        k = str(-(i + 1))
+        mods[k] = dict(name=pn["name"], kind="mods", fileName=pn["fileName"], downloadUrl=pn["url"], sha1=pn["sha1"], jar=pn["localJar"], deps=[])
+        jm[k] = dict(modids=pn["modids"], requires=pn["requires"], loader=pn["loader"])
+        for mid in pn["modids"]:
+            provider.setdefault(mid, k)
+        new_pins.append((k, pn))
 
 FABRIC = re.compile(r"fabric|quilt", re.I)
 cands, report = [], []
@@ -63,15 +109,15 @@ for c in cands:
             continue
     selected[hits[0]] = dict(cat=c["cat"], status=c["status"], why="candidate")
 
+for k, pn in new_pins:
+    if pn["status"] != "skip" and not (no_test and pn["status"] == "test"):
+        selected[k] = dict(cat=pn["category"], status=pn["status"], why="candidate")
+
 # dependency closure
 queue, missing_deps = list(selected), {}
 while queue:
     k = queue.pop()
-    for d in mods[k]["deps"]:
-        d = str(d)
-        if d not in mods:
-            missing_deps.setdefault(d, []).append(mods[k]["name"])
-            continue
+    for d in deps_of(k):
         if d not in selected:
             selected[d] = dict(cat="lib", status="dep", why="dependency of " + mods[k]["name"])
             queue.append(d)
@@ -79,20 +125,21 @@ while queue:
 lock = []
 for k, s in sorted(selected.items(), key=lambda kv: (kv[1]["cat"], mods[kv[0]]["name"].lower())):
     m = mods[k]
-    lock.append(dict(addonID=int(k), name=m["name"], fileId=m["fileId"], fileName=m["fileName"], sha1=m["sha1"],
-                     url=m["downloadUrl"], localJar=m["jar"], category=s["cat"], status=s["status"], why=s["why"], deps=[int(d) for d in m["deps"] if str(d) in mods]))
+    lock.append(dict(addonID=int(k), name=m["name"], fileId=m.get("fileId"), fileName=m["fileName"], sha1=m["sha1"],
+                     url=m["downloadUrl"], localJar=m["jar"], category=s["cat"], status=s["status"], why=s["why"], deps=[int(d) for d in deps_of(k)]))
 json.dump(lock, open(os.path.join(PACK, "mods.lock.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 fab = [l["name"] + " :: " + l["fileName"] for l in lock if FABRIC.search(l["fileName"])]
 out = []
 out.append("selected mods: %d  (candidates %d, deps %d)" % (len(lock), sum(1 for l in lock if l["why"] == "candidate"), sum(1 for l in lock if l["why"] != "candidate")))
-out.append("external (Modrinth) to resolve: " + ", ".join(c["name"] for c in external))
+pinned_src = {p["source"] for p in pins}
+out.append("external lines without a pin: " + ", ".join(c["name"] for c in external if "modrinth:" + c["name"] not in pinned_src))
 out.append("unmatched (%d): " % len(unmatched) + "; ".join(c["name"] for c in unmatched))
 out.append("ambiguous (%d):" % len(ambiguous))
 for c, h in ambiguous:
     out.append("  %s -> %s" % (c["name"], h))
 out.append("fabric/quilt-looking files selected (%d): %s" % (len(fab), "; ".join(fab)))
-out.append("deps missing from cache: %s" % missing_deps)
+out.append("unmet required modids (not provided by any cached forge jar): %s" % {k: sorted(v) for k, v in sorted(unmet.items())})
 text = "\n".join(out)
 open(os.path.join(PACK, "resolve_report.txt"), "w", encoding="utf-8").write(text)
 print(text)
