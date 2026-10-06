@@ -35,3 +35,12 @@
   - The keybind scheme is applied by KubeJS: skill tree K, quests J, roll R.
   - `server_test` now defaults to the release set `core,std`; the `test` pool caused an Enhanced AI dependency crash.
 - **Exports:** Default Options carries options.txt (first launch only).
+
+## 2026-10-06: first multiplayer pass (dedicated server + joining client)
+- Dedicated server (678 jars, boots in ~135 s, 20 TPS idle, overall mean tick about 1.2-17 ms with a player) accepts a joining client with the full client mod set.
+- Bugs found and fixed:
+  - Wrong `client_only` guesses blocked the join (Forge "mismatched mod list").
+  - Better Clouds (client mod) threw on the server's login event (fixed: client-only, name must match the lock's name exactly).
+  - The flight guard hit a Rhino scripting bug (`const` inside a nested block): fixed.
+  - `install.py --dry` rewrote the install tracker and orphaned a jar.
+- Verified server-side with `tests/mp_flight.txt`: unstaged flying-mount riders are dropped; staged riders keep flying; elytra loot gate strips the Nether table and keeps the End table; boss kills roll `aldreth:boss/t<tier>` (Naga dropped Apotheosis materials).
