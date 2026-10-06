@@ -1,0 +1,10 @@
+{
+ "replace": true,
+ "values": [
+  "aether:flying_cow",
+  "aether:phyg",
+  "aether:aerwhale",
+  "aether:sheepuff",
+  "aether:moa"
+ ]
+}

@@ -1,536 +1,462 @@
 {
-	id: "72F0E4EB958672BA"
-	filename: "14_traversal"
-	title: "The Many Roads"
-	subtitle: "Every way of crossing the world, and why you will keep using the old ones."
-	icon: "minecraft:leather_boots"
-	order_index: 14
-	group: "BA29B6D65C079795"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "14_traversal"
+	group: ""
+	icon: {
+		Count: 1
+		id: "minecraft:leather_boots"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "72F0E4EB958672BA"
 	images: [{
-			x: -10.6d
-			y: -10.51d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/traversal.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/traversal.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -10.6d
+		y: -10.51d
+	}]
+	order_index: 5
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "A7C29626C8B84763"
-			title: "A World Worth Crossing"
-			description: ["You can sprint, roll, climb, glide, grapple, ride, sail, blink, recall and, eventually, fly. None of them replaces the others: horses win on roads, boats win on rivers, a grapple wins in a dungeon, a recall wins when you are late.", "Flight is the last thing you earn and the most fenced: it should be a reward, not a skip."]
+			description: [
+				"You can sprint, roll, climb, glide, grapple, ride, sail, blink, recall and, eventually, fly. None of them replaces the others: horses win on roads, boats win on rivers, a grapple wins in a dungeon, a recall wins when you are late."
+				"Flight is the last thing you earn and the most fenced: it should be a reward, not a skip."
+			]
 			icon: "minecraft:compass"
+			id: "7E635467FDD53A05"
+			rewards: [{
+				id: "0AAD21C090D2B442"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "1982EF092B9310B2"
+				type: "checkmark"
+			}]
+			title: "A World Worth Crossing"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "1982EF092B9310B2"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "91C153547F49A88D"
-						type: "xp"
-						xp: 20
-					}
-			]
-		},
+		}
 		{
-			id: "076AFE865DB81B75"
-			title: "Roll and Sprint"
 			description: ["The first movement skills cost nothing. Rolls grant a moment of safety and a good chunk of distance."]
-			icon: "minecraft:leather_boots"
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "076AFE865DB81B75"
+			rewards: [{
+				id: "6F26115047D6222C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "3852931EDE9A7144"
+				type: "checkmark"
+			}]
+			title: "Roll and Sprint"
 			x: 2.2d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "3852931EDE9A7144"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "CF9FEA1366854C08"
-						type: "xp"
-						xp: 20
-					}
-			]
-			dependencies: ["A7C29626C8B84763"]
-		},
+		}
 		{
-			id: "00F9432E4AACC958"
-			title: "Jump and Climb"
 			description: ["Step height, jump height and better climbing add up. The Wanderer branch takes all three further."]
 			icon: "minecraft:ladder"
+			id: "00F9432E4AACC958"
+			rewards: [{
+				id: "0AF3AF024C7D945C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "559EF987CBAA47D9"
+				type: "checkmark"
+			}]
+			title: "Jump and Climb"
 			x: 2.2d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "D63936B0C20303DC"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "0AF3AF024C7D945C"
-						type: "xp"
-						xp: 20
-					}
-			]
-			dependencies: ["A7C29626C8B84763"]
-		},
+		}
 		{
-			id: "C0812D1B78C5D785"
-			title: "A Waystone Home"
+			dependencies: ["076AFE865DB81B75"]
 			description: ["Link places you have visited. Cross-world travel is quick but only goes to the places you have already earned."]
 			icon: "waystones:waystone"
+			id: "7CB224E88973A582"
+			rewards: [{
+				id: "31E21BA2A438C230"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "4AF1DD61853D6742"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "A Waystone Home"
 			x: 4.4d
 			y: -6.3d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "4AF1DD61853D6742"
-						type: "item"
-						item: "waystones:waystone"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "AC05C795B7310BA0"
-						type: "xp"
-						xp: 30
-					}
-			]
-			dependencies: ["076AFE865DB81B75"]
-		},
+		}
 		{
-			id: "01A9C8441ED8BDF9"
-			title: "Return Scrolls"
 			description: ["A scroll to bring you back to the last waystone you used. A pocket-sized insurance policy."]
 			icon: "waystones:return_scroll"
+			id: "01A9C8441ED8BDF9"
+			rewards: [{
+				id: "28F7F2B29CC671EF"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "269EC2CBCB8D649C"
+				item: "waystones:return_scroll"
+				type: "item"
+			}]
+			title: "Return Scrolls"
 			x: 6.6000000000000005d
 			y: -7.74d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "269EC2CBCB8D649C"
-						type: "item"
-						item: "waystones:return_scroll"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "F2E1CECB8005A3EE"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["C0812D1B78C5D785"]
-		},
+		}
 		{
-			id: "AC0FE89ADD31949A"
-			title: "A Sharestone"
 			description: ["Sharestones connect in pairs: bind two points for a private shortcut."]
 			icon: "waystones:sharestone"
+			id: "0857104917C1F534"
+			optional: true
+			rewards: [{
+				id: "50BB11D826D231A7"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "2AFDD10A948E1006"
+				item: "waystones:sharestone"
+				type: "item"
+			}]
+			title: "A Sharestone"
 			x: 6.6000000000000005d
 			y: -5.94d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "2AFDD10A948E1006"
-						type: "item"
-						item: "waystones:sharestone"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "50BB11D826D231A7"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["C0812D1B78C5D785"]
-		},
+		}
 		{
-			id: "F426434730A816D6"
-			title: "Portstone"
+			dependencies: ["01A9C8441ED8BDF9"]
 			description: ["Portstones carry you from anywhere to a waystone you know. Use them to save time on the way back from an adventure."]
 			icon: "waystones:portstone"
+			id: "009CD38CADC95BFC"
+			optional: true
+			rewards: [{
+				id: "648619E9B91F001F"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "43269317DA56D44A"
+				item: "waystones:portstone"
+				type: "item"
+			}]
+			title: "Portstone"
 			x: 8.8d
 			y: -8.64d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "43269317DA56D44A"
-						type: "item"
-						item: "waystones:portstone"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "648619E9B91F001F"
-						type: "xp"
-						xp: 80
-					}
-			]
-			optional: true
-			dependencies: ["01A9C8441ED8BDF9"]
-		},
+		}
 		{
-			id: "82468C2A942CA770"
-			title: "Paraglider"
+			dependencies: ["00F9432E4AACC958"]
 			description: ["Glide with stamina; stamina is spirit. A good glider lets you jump off a mountain and keep your dignity."]
 			icon: "paraglider:paraglider"
+			id: "293FBEB28284B09B"
+			rewards: [{
+				id: "5420E4C965D3752B"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "294B65569D489FA6"
+				item: "paraglider:paraglider"
+				type: "item"
+			}]
+			title: "Paraglider"
 			x: 4.4d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "90DF8DD64EF6AE90"
-						type: "item"
-						item: "paraglider:paraglider"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "5420E4C965D3752B"
-						type: "xp"
-						xp: 50
-					}
-			]
-			dependencies: ["00F9432E4AACC958"]
-		},
+		}
 		{
-			id: "561F4A142B1F21CA"
-			title: "Grapple"
+			dependencies: ["00F9432E4AACC958"]
 			description: ["Hooks and chains: stronger materials, longer reach, harder swings. Better in a dungeon than on a mountain."]
 			icon: "rehooked:wood_hook"
+			id: "561F4A142B1F21CA"
+			rewards: [{
+				id: "279558DDD0F7349F"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "07B476AD9FE70FDC"
+				item: "rehooked:wood_hook"
+				type: "item"
+			}]
+			title: "Grapple"
 			x: 4.4d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "07B476AD9FE70FDC"
-						type: "item"
-						item: "rehooked:wood_hook"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "BFA173ED3F5DB43F"
-						type: "xp"
-						xp: 50
-					}
-			]
-			dependencies: ["00F9432E4AACC958"]
-		},
+		}
 		{
-			id: "617FFACA8C931162"
-			title: "A Real Hook"
+			dependencies: ["561F4A142B1F21CA"]
 			description: ["Diamond, ender and blaze hooks carry more weight, more speed and more risk."]
 			icon: "rehooked:diamond_hook"
+			id: "617FFACA8C931162"
+			optional: true
+			rewards: [{
+				id: "191A634E9AB405F8"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "71394F28F3BC258C"
+				item: "rehooked:diamond_hook"
+				type: "item"
+			}]
+			title: "A Real Hook"
 			x: 6.6000000000000005d
 			y: -0.54d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "D8C14BA258273E40"
-						type: "item"
-						item: "rehooked:diamond_hook"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "FB4347FE4F491EAA"
-						type: "xp"
-						xp: 120
-					}
-			]
-			optional: true
-			dependencies: ["561F4A142B1F21CA"]
-		},
+		}
 		{
-			id: "9A8047C035B0773B"
-			title: "Cloud in a Bottle"
+			dependencies: ["00F9432E4AACC958"]
 			description: ["A double jump with real height. It is the cheapest extra dimension of movement."]
 			icon: "artifacts:cloud_in_a_bottle"
+			id: "7B6F49DFC0AD12CB"
+			rewards: [{
+				id: "55AF29A1AB48F4BB"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "1FE383824DC94013"
+				item: "artifacts:cloud_in_a_bottle"
+				type: "item"
+			}]
+			title: "Cloud in a Bottle"
 			x: 4.4d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "1FE383824DC94013"
-						type: "item"
-						item: "artifacts:cloud_in_a_bottle"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "A8BE4495A8013C57"
-						type: "xp"
-						xp: 60
-					}
-			]
-			dependencies: ["00F9432E4AACC958"]
-		},
+		}
 		{
-			id: "B84100E487612F42"
-			title: "Blink"
+			dependencies: ["076AFE865DB81B75"]
 			description: ["Short teleports in combat: the best defence against a boss you cannot read yet."]
 			icon: "ars_nouveau:glyph_blink"
+			id: "6237CDAF88406081"
+			rewards: [{
+				id: "1B937ECCF67406B7"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "2C578EE2CF30E60D"
+				item: "ars_nouveau:glyph_blink"
+				type: "item"
+			}]
+			title: "Blink"
 			x: 4.4d
 			y: -4.5d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "2C578EE2CF30E60D"
-						type: "item"
-						item: "ars_nouveau:glyph_blink"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "C06AFA0F64FB169F"
-						type: "xp"
-						xp: 60
-					}
-			]
-			dependencies: ["076AFE865DB81B75"]
-		},
+		}
 		{
-			id: "7D6C2511EEBAE595"
-			title: "A Boat, a River"
 			description: ["Boats do not need to be fast. They need to be quiet and cheap and exactly where you need them."]
 			icon: "minecraft:oak_boat"
+			id: "7D6C2511EEBAE595"
+			rewards: [{
+				id: "1FDD70D0117C1C0C"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "31991AEC7FB444A4"
+				item: "minecraft:oak_boat"
+				type: "item"
+			}]
+			title: "A Boat, a River"
 			x: 2.2d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "31991AEC7FB444A4"
-						type: "item"
-						item: "minecraft:oak_boat"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "1FDD70D0117C1C0C"
-						type: "xp"
-						xp: 20
-					}
-			]
-			dependencies: ["A7C29626C8B84763"]
-		},
+		}
 		{
-			id: "A8B49CAE519FDCDD"
-			title: "A Ship"
+			dependencies: ["7D6C2511EEBAE595"]
 			description: ["A real vessel: cargo hold, cannons, sails. Oceans become routes."]
 			icon: "smallships:oak_cog"
+			id: "37F8639A15D50AAF"
+			rewards: [{
+				id: "51D8E8FFBCB7174C"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "274E716C1F04CD56"
+				item: "smallships:oak_cog"
+				type: "item"
+			}]
+			title: "A Ship"
 			x: 4.4d
 			y: 2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "274E716C1F04CD56"
-						type: "item"
-						item: "smallships:oak_cog"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "51D8E8FFBCB7174C"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["7D6C2511EEBAE595"]
-		},
+		}
 		{
-			id: "A938256EA990DB95"
-			title: "A Cart"
+			dependencies: ["7D6C2511EEBAE595"]
 			description: ["A cart behind a mount carries more than a horse alone. It is a base on wheels."]
 			icon: "astikorcarts:supply_cart"
+			id: "4133991EEB4A5D59"
+			optional: true
+			rewards: [{
+				id: "6DB6C287BC3988B6"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "4918DC1B85BDD136"
+				item: "astikorcarts:supply_cart"
+				type: "item"
+			}]
+			title: "A Cart"
 			x: 4.4d
 			y: 4.5d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "C5F03ABBF8538984"
-						type: "item"
-						item: "astikorcarts:supply_cart"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "6DB6C287BC3988B6"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["7D6C2511EEBAE595"]
-		},
+		}
 		{
-			id: "0CF16C1934EF9A72"
-			title: "Potion of Recall"
+			dependencies: ["01A9C8441ED8BDF9"]
 			description: ["A one-shot trip home, brewed from rare ingredients. Do not waste it."]
 			icon: "simplerecall:recall_potion"
+			id: "0CF16C1934EF9A72"
+			optional: true
+			rewards: [{
+				id: "32F588F208FE44F4"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "3863D2FE2874FC7A"
+				item: "simplerecall:recall_potion"
+				type: "item"
+			}]
+			title: "Potion of Recall"
 			x: 8.8d
 			y: -6.84d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "8D68A863CA0753B3"
-						type: "item"
-						item: "simplerecall:recall_potion"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "E0C45C5A3E07AC16"
-						type: "xp"
-						xp: 80
-					}
-			]
-			optional: true
-			dependencies: ["01A9C8441ED8BDF9"]
-		},
+		}
 		{
-			id: "AC488C91073F6728"
-			title: "Chunk Loaders"
 			description: ["Keep a base running while you are away. Small areas, big convenience."]
 			icon: "chunkloaders:basic_chunk_loader"
+			id: "34B5B530F675D8DE"
+			optional: true
+			rewards: [{
+				id: "70CEB15D7CBDEA71"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "7F15F2ACB2407E71"
+				item: "chunkloaders:basic_chunk_loader"
+				type: "item"
+			}]
+			title: "Chunk Loaders"
 			x: 6.6000000000000005d
 			y: -4.14d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "7F15F2ACB2407E71"
-						type: "item"
-						item: "chunkloaders:basic_chunk_loader"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "C32DA796DC7FD547"
-						type: "xp"
-						xp: 80
-					}
-			]
-			optional: true
-			dependencies: ["C0812D1B78C5D785"]
-		},
+		}
 		{
-			id: "8F0AEC37F2170FCF"
-			title: "Know the Fences"
-			description: ["Boss arenas, great dungeons and the Wardens' cities refuse flying mounts and flight gear: you will be dismounted at the door. Cliffs and rooftops are not a shortcut here.", "Climb in, fight through, leave by the front. It is the way the old keepers designed it."]
+			description: [
+				"Boss arenas, great dungeons and the Wardens' cities refuse flying mounts and flight gear: you will be dismounted at the door. Cliffs and rooftops are not a shortcut here."
+				"Climb in, fight through, leave by the front. It is the way the old keepers designed it."
+			]
 			icon: "minecraft:iron_bars"
+			id: "2411DEBBDAE55328"
+			rewards: [{
+				id: "3EA68A1AFFC485FB"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "54CCA494FBAACA08"
+				type: "checkmark"
+			}]
+			title: "Know the Fences"
 			x: 2.2d
 			y: 2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "54CCA494FBAACA08"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "3EA68A1AFFC485FB"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["A7C29626C8B84763"]
-		},
+		}
 		{
-			id: "3F5FA6D2A24866C1"
-			title: "Wayfarer"
+			dependencies: ["561F4A142B1F21CA"]
 			description: ["Ride, glide, grapple, swim and blink. You can cross anywhere; the world is smaller and better."]
-			icon: "minecraft:elytra"
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3F5FA6D2A24866C1"
+			rewards: [
+				{
+					id: "775B35014AF72976"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "72850CD24F984783"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			size: 1.4d
+			tasks: [{
+				id: "5D4963F9EFECF413"
+				type: "checkmark"
+			}]
+			title: "Wayfarer"
 			x: 6.6000000000000005d
 			y: -2.34d
-			size: 1.4d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "E0D04EFB46ECEA7F"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "775B35014AF72976"
-						type: "xp"
-						xp: 300
-					},
-					{
-						id: "72850CD24F984783"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					}
-			]
-			dependencies: ["82468C2A942CA770", "561F4A142B1F21CA", "A8B49CAE519FDCDD", "B84100E487612F42", "9A8047C035B0773B"]
 		}
 	]
+	title: "The Many Roads"
 }

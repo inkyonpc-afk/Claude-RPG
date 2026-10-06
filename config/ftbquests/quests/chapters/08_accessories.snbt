@@ -1,408 +1,342 @@
 {
-	id: "464B656ACE0F8BA7"
-	filename: "08_accessories"
-	title: "Rings, Relics and Trinkets"
-	subtitle: "Slots for the small things that make the big difference."
-	icon: "artifacts:feral_claws"
-	order_index: 8
-	group: "40103B7AFEA824B7"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "08_accessories"
+	group: "40103B7AFEA824B7"
+	icon: "artifacts:feral_claws"
+	id: "464B656ACE0F8BA7"
 	images: [{
-			x: -11.7d
-			y: -8.44d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/accessories.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/accessories.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -11.7d
+		y: -8.44d
+	}]
+	order_index: 8
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "2CB603D5E6065AF5"
-			title: "Beyond Armor"
-			description: ["Rings, necklaces, charms, belts, trinkets: accessory slots add power without costing armor. Each slot is one decision; fill them thoughtfully.", "Slots are limited; the skill tree can add more."]
+			description: [
+				"Rings, necklaces, charms, belts, trinkets: accessory slots add power without costing armor. Each slot is one decision; fill them thoughtfully."
+				"Slots are limited; the skill tree can add more."
+			]
 			icon: "artifacts:cloud_in_a_bottle"
+			id: "2CB603D5E6065AF5"
+			rewards: [{
+				id: "693089A40C17695B"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "11E056FE25C5950F"
+				type: "checkmark"
+			}]
+			title: "Beyond Armor"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "AE1715F2869BC381"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "693089A40C17695B"
-						type: "xp"
-						xp: 20
-					}
-			]
-		},
+		}
 		{
-			id: "C47BFA2F406B5748"
-			title: "A Ring"
+			dependencies: ["2CB603D5E6065AF5"]
 			description: ["Rings are the cheapest accessory and the first one you will find. Wear two."]
 			icon: "irons_spellbooks:silver_ring"
+			id: "1CCAB8D8A42EE06B"
+			rewards: [{
+				id: "5AF5C82FA0B93D2B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "2A2F10192E4253CB"
+				item: "irons_spellbooks:silver_ring"
+				type: "item"
+			}]
+			title: "A Ring"
 			x: 2.2d
 			y: -6.3d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "C9C65CDEAD9096DA"
-						type: "item"
-						item: "irons_spellbooks:silver_ring"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "5AF5C82FA0B93D2B"
-						type: "xp"
-						xp: 25
-					}
-			]
-			dependencies: ["2CB603D5E6065AF5"]
-		},
+		}
 		{
-			id: "24829292D13DF2F6"
-			title: "Feral Claws"
+			dependencies: ["2CB603D5E6065AF5"]
 			description: ["Faster attacks. A thoughtful trade for a warrior's off hand."]
 			icon: "artifacts:feral_claws"
+			id: "24829292D13DF2F6"
+			rewards: [{
+				id: "029BFFB2309DD7FE"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "647A187E4FFDCCE1"
+				item: "artifacts:feral_claws"
+				type: "item"
+			}]
+			title: "Feral Claws"
 			x: 2.2d
 			y: -4.5d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "647A187E4FFDCCE1"
-						type: "item"
-						item: "artifacts:feral_claws"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "029BFFB2309DD7FE"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["2CB603D5E6065AF5"]
-		},
+		}
 		{
-			id: "F1FE5AC1F570DAB2"
-			title: "Power Glove"
+			dependencies: ["2CB603D5E6065AF5"]
 			description: ["More damage, no cost: the classic. Some artifacts are simply good."]
 			icon: "artifacts:power_glove"
+			id: "050241CCDE1928B5"
+			rewards: [{
+				id: "2B38D061E69728FC"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "1405EB35CEC6722B"
+				item: "artifacts:power_glove"
+				type: "item"
+			}]
+			title: "Power Glove"
 			x: 2.2d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "9D0921DB8B54E0BE"
-						type: "item"
-						item: "artifacts:power_glove"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "EBEA1AB27A35F167"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["2CB603D5E6065AF5"]
-		},
+		}
 		{
-			id: "F9AA19F7AED6AEE1"
-			title: "Bunny Hoppers"
+			dependencies: ["2CB603D5E6065AF5"]
 			description: ["Jump higher, land softer. A traveller's staple."]
 			icon: "artifacts:bunny_hoppers"
+			id: "4A9A6F1E518D7BF6"
+			rewards: [{
+				id: "0DB9FF24265C23D6"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "50DD9E0094DFDA80"
+				item: "artifacts:bunny_hoppers"
+				type: "item"
+			}]
+			title: "Bunny Hoppers"
 			x: 2.2d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "50DD9E0094DFDA80"
-						type: "item"
-						item: "artifacts:bunny_hoppers"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "89E925CAED42C0FF"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["2CB603D5E6065AF5"]
-		},
+		}
 		{
-			id: "7DE2BB260C754630"
-			title: "Flippers"
+			dependencies: ["2CB603D5E6065AF5"]
 			description: ["Swim faster. For anyone planning to meet the ocean."]
 			icon: "artifacts:flippers"
+			id: "7DE2BB260C754630"
+			rewards: [{
+				id: "1FBD6D5F8F8C3AE8"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "3A02D0AF4124F94E"
+				item: "artifacts:flippers"
+				type: "item"
+			}]
+			title: "Flippers"
 			x: 2.2d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "DBCAF808AEB99F9B"
-						type: "item"
-						item: "artifacts:flippers"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "FAC7874EA59C9BCB"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["2CB603D5E6065AF5"]
-		},
+		}
 		{
-			id: "74CAE22CEA90255B"
-			title: "Cloud in a Bottle"
 			description: ["A mid-air double jump: the best accessory for dungeon-diving and ledge-climbing."]
 			icon: "artifacts:cloud_in_a_bottle"
+			id: "74CAE22CEA90255B"
+			rewards: [{
+				id: "3A5CD6C1F3CECB5A"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "635CBF78E7EEAD62"
+				item: "artifacts:cloud_in_a_bottle"
+				type: "item"
+			}]
+			title: "Cloud in a Bottle"
 			x: 4.4d
 			y: -0.9d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "635CBF78E7EEAD62"
-						type: "item"
-						item: "artifacts:cloud_in_a_bottle"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "3A5CD6C1F3CECB5A"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["F9AA19F7AED6AEE1"]
-		},
+		}
 		{
-			id: "2183FF6B83A01951"
-			title: "Crystal Heart"
+			dependencies: ["2CB603D5E6065AF5"]
 			description: ["More hearts, forever. Don't leave without one."]
 			icon: "artifacts:crystal_heart"
+			id: "2183FF6B83A01951"
+			rewards: [{
+				id: "09C91CE2B0A5C6AB"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "21E3A5CE0C1C2841"
+				item: "artifacts:crystal_heart"
+				type: "item"
+			}]
+			title: "Crystal Heart"
 			x: 2.2d
 			y: 2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "FB44F0D8802BF2B2"
-						type: "item"
-						item: "artifacts:crystal_heart"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "09C91CE2B0A5C6AB"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["2CB603D5E6065AF5"]
-		},
+		}
 		{
-			id: "F786252D160B690B"
-			title: "Elemental Pendants"
+			dependencies: ["2CB603D5E6065AF5"]
 			description: ["Pendants ignite, shock, and ward. Choose the element to match your build."]
 			icon: "artifacts:flame_pendant"
+			id: "5D5FF1C37DA1C9BD"
+			optional: true
+			rewards: [{
+				id: "32821D4074225C92"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "06D29E3B9EA5E6C9"
+				item: "artifacts:flame_pendant"
+				type: "item"
+			}]
+			title: "Elemental Pendants"
 			x: 2.2d
 			y: 4.5d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "06D29E3B9EA5E6C9"
-						type: "item"
-						item: "artifacts:flame_pendant"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "32821D4074225C92"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["2CB603D5E6065AF5"]
-		},
+		}
 		{
-			id: "E52D9BFA33295EB2"
-			title: "Horseshoe"
+			dependencies: ["2CB603D5E6065AF5"]
 			description: ["A little luck and a faster mount. The first accessory every rider wants."]
 			icon: "majruszsaccessories:horseshoe"
+			id: "6A500892CA05234E"
+			rewards: [{
+				id: "6F62F89955234C1F"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "44A4AE604168FFD3"
+				item: "majruszsaccessories:horseshoe"
+				type: "item"
+			}]
+			title: "Horseshoe"
 			x: 2.2d
 			y: 6.3d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "44A4AE604168FFD3"
-						type: "item"
-						item: "majruszsaccessories:horseshoe"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "6F62F89955234C1F"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["2CB603D5E6065AF5"]
-		},
+		}
 		{
-			id: "242A3D98A22087A7"
-			title: "Ancient Scarab"
 			description: ["Majrusz's accessories are subtle, cumulative boosts. A collection is worth more than any one of them."]
 			icon: "majruszsaccessories:ancient_scarab"
+			id: "242A3D98A22087A7"
+			optional: true
+			rewards: [{
+				id: "34BF7D292838D213"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "7F0647B024E6E0BF"
+				item: "majruszsaccessories:ancient_scarab"
+				type: "item"
+			}]
+			title: "Ancient Scarab"
 			x: 4.4d
 			y: 6.3d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "84A45E30F876F71A"
-						type: "item"
-						item: "majruszsaccessories:ancient_scarab"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "D47B87CC2C7B9A59"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["E52D9BFA33295EB2"]
-		},
+		}
 		{
-			id: "182643C60CA47D6E"
-			title: "The Enigmatic Eye"
+			dependencies: ["2183FF6B83A01951"]
 			description: ["Enigmatic Legacy brings a family of powerful, cursed relics. They are among the strongest items in the pack and every one of them has a price."]
 			icon: "enigmaticlegacy:enigmatic_eye"
+			id: "182643C60CA47D6E"
+			optional: true
+			rewards: [{
+				id: "051040E3565CDE6A"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "369F3A37169BD38B"
+				item: "enigmaticlegacy:enigmatic_eye"
+				type: "item"
+			}]
+			title: "The Enigmatic Eye"
 			x: 4.4d
 			y: 2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "369F3A37169BD38B"
-						type: "item"
-						item: "enigmaticlegacy:enigmatic_eye"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "BBE32FDB0FF8106C"
-						type: "xp"
-						xp: 150
-					}
-			]
-			optional: true
-			dependencies: ["2183FF6B83A01951"]
-		},
+		}
 		{
-			id: "90A8932605236B0F"
-			title: "Magnet Ring"
 			description: ["Items fly to you. A QoL luxury that sometimes feels like a necessity."]
 			icon: "enigmaticlegacy:magnet_ring"
+			id: "033334B69836B8A4"
+			optional: true
+			rewards: [{
+				id: "02F7A44FDF223574"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "7CFA1F17C263434E"
+				item: "enigmaticlegacy:magnet_ring"
+				type: "item"
+			}]
+			title: "Magnet Ring"
 			x: 4.4d
 			y: -6.3d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "7CFA1F17C263434E"
-						type: "item"
-						item: "enigmaticlegacy:magnet_ring"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "02F7A44FDF223574"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["C47BFA2F406B5748"]
-		},
+		}
 		{
-			id: "4D0BA6B62932F891"
-			title: "More Slots"
+			dependencies: [
+				"74CAE22CEA90255B"
+				"2183FF6B83A01951"
+			]
 			description: ["The skill tree and certain relics add slots. Fill them with trinkets that overlap: speed, health, and a good luck charm."]
 			icon: "artifacts:villager_hat"
+			id: "4D0BA6B62932F891"
+			rewards: [
+				{
+					id: "5CCAAB94F05E8FF9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "7E5C6D0AFAB10B0D"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "3E9630774423AB65"
+				type: "checkmark"
+			}]
+			title: "More Slots"
 			x: 6.6000000000000005d
 			y: 0.9d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "FB47538AE7CFD8A2"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "F9D610A15AFC7090"
-						type: "xp"
-						xp: 100
-					},
-					{
-						id: "7E5C6D0AFAB10B0D"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			dependencies: ["74CAE22CEA90255B", "2183FF6B83A01951"]
 		}
 	]
+	title: "Rings, Relics and Trinkets"
 }

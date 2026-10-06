@@ -1,0 +1,17 @@
+{
+ "replace": true,
+ "values": [
+  "iceandfire:hippogryph",
+  "iceandfire:amphithere",
+  "iceandfire:fire_dragon",
+  "iceandfire:ice_dragon",
+  "iceandfire:lightning_dragon",
+  "wyrmroost:canari_wyvern",
+  "wyrmroost:royal_red",
+  "wyrmroost:overworld_drake",
+  "wyrmroost:silver_glider",
+  "wyrmroost:butterfly_leviathan",
+  "alexscaves:subterranodon",
+  "endertrigon:baby_ender_dragon"
+ ]
+}

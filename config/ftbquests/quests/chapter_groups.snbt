@@ -1,23 +1,9 @@
 {
-	chapter_groups: [{
-			id: "66515315CBB6E386"
-			title: "The Embers of Aldreth"
-			order_index: 0
-		}, {
-			id: "40103B7AFEA824B7"
-			title: "Arms and Arcana"
-			order_index: 1
-		}, {
-			id: "BA29B6D65C079795"
-			title: "The Wide Road"
-			order_index: 2
-		}, {
-			id: "CF1E96262114D2FD"
-			title: "Hearth and Home"
-			order_index: 3
-		}, {
-			id: "87B3A2C356D6233C"
-			title: "Bounties and Trials"
-			order_index: 4
-		}]
+	chapter_groups: [
+		{ id: "66515315CBB6E386", title: "The Embers of Aldreth" }
+		{ id: "40103B7AFEA824B7", title: "Arms and Arcana" }
+		{ id: "62C5854930DC892B", title: "The Wide Road" }
+		{ id: "158039AC33249A1E", title: "Hearth and Home" }
+		{ id: "157225D483EBC943", title: "Bounties and Trials" }
+	]
 }

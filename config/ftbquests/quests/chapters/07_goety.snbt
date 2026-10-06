@@ -1,348 +1,329 @@
 {
-	id: "2D3C9B75DF534E68"
-	filename: "07_goety"
-	title: "Necromancy and the Dark Arts"
-	subtitle: "A different kind of power: servants, curses, and the price of command."
-	icon: "goety:dark_wand"
-	order_index: 7
-	group: "40103B7AFEA824B7"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "07_goety"
+	group: "40103B7AFEA824B7"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			Parent: {
+				Items: [ ]
+				Size: 1
+			}
+		}
+		id: "goety:dark_wand"
+	}
+	id: "2D3C9B75DF534E68"
 	images: [{
-			x: -9.5d
-			y: -9.19d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/goety.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/goety.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -9.5d
+		y: -9.19d
+	}]
+	order_index: 7
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "8DE9658C55A454AE"
-			title: "The Dark Altar"
-			description: ["Goety is the school of the summoner and necromancer: minions that fight for you, foci that cast for you, and an altar to bring it all together.", "The Dark Wand and Nameless Staff are your tools; foci are your spells. Servants cost souls."]
+			description: [
+				"Goety is the school of the summoner and necromancer: minions that fight for you, foci that cast for you, and an altar to bring it all together."
+				"The Dark Wand and Nameless Staff are your tools; foci are your spells. Servants cost souls."
+			]
 			icon: "goety:dark_altar"
+			id: "6995FE81F384C949"
+			rewards: [{
+				id: "2AB934DC4DA8D49C"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				consume_items: false
+				id: "24284109B9C68E04"
+				item: "goety:dark_altar"
+				type: "item"
+			}]
+			title: "The Dark Altar"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "24284109B9C68E04"
-						type: "item"
-						item: "goety:dark_altar"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "2AB934DC4DA8D49C"
-						type: "xp"
-						xp: 30
-					}
-			]
-		},
+		}
 		{
-			id: "516974AF69A7F503"
-			title: "Dark Wand"
 			description: ["A short staff with a long reach. It fires foci and holds your power."]
-			icon: "goety:dark_wand"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+				id: "goety:dark_wand"
+			}
+			id: "516974AF69A7F503"
+			rewards: [{
+				id: "6D2FF49BDF06021F"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "44FB8172038DE49F"
+				item: "goety:dark_wand"
+				type: "item"
+			}]
+			title: "Dark Wand"
 			x: 2.2d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "BE7712393A56CD9B"
-						type: "item"
-						item: "goety:dark_wand"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "6D2FF49BDF06021F"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["8DE9658C55A454AE"]
-		},
+		}
 		{
-			id: "F95B5F0E63261761"
-			title: "A First Focus"
+			dependencies: ["516974AF69A7F503"]
 			description: ["Foci are the spells you swap into a wand: fireball, ice, summon, command. Mix them for your build."]
 			icon: "goety:empty_focus"
+			id: "7C0609F319EA62AD"
+			rewards: [{
+				id: "67EE657DDB467E4F"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "29124DA827497BB4"
+				item: "goety:empty_focus"
+				type: "item"
+			}]
+			title: "A First Focus"
 			x: 4.4d
 			y: -2.1d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "B51D9F2AA824E8E5"
-						type: "item"
-						item: "goety:empty_focus"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "D761411E9EEC519B"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["516974AF69A7F503"]
-		},
+		}
 		{
-			id: "7E2244EE324523BF"
-			title: "Dark Robe"
+			dependencies: ["516974AF69A7F503"]
 			description: ["Robes boost soul cost reduction and casting power. Put them on before you summon."]
 			icon: "goety:dark_robe"
+			id: "7E2244EE324523BF"
+			rewards: [{
+				id: "34CBAA2E91F183BA"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "3EB7CDE569570072"
+				item: "goety:dark_robe"
+				type: "item"
+			}]
+			title: "Dark Robe"
 			x: 4.4d
 			y: -0.3d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "3EB7CDE569570072"
-						type: "item"
-						item: "goety:dark_robe"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "B27057D140B1BEE7"
-						type: "xp"
-						xp: 50
-					}
-			]
-			dependencies: ["516974AF69A7F503"]
-		},
+		}
 		{
-			id: "ECB80014B3D6B5F4"
-			title: "Focus Bag"
 			description: ["Carry a dozen foci in a bag. Quick-swap in the middle of a fight."]
-			icon: "goety:focus_bag"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 11
+					}
+				}
+				id: "goety:focus_bag"
+			}
+			id: "53A32A1893D27E5D"
+			optional: true
+			rewards: [{
+				id: "4145BB18488431A5"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "4114523416F4AB3F"
+				item: "goety:focus_bag"
+				type: "item"
+			}]
+			title: "Focus Bag"
 			x: 6.6000000000000005d
 			y: -3.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "4114523416F4AB3F"
-						type: "item"
-						item: "goety:focus_bag"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "87F9549D7A266631"
-						type: "xp"
-						xp: 40
-					}
-			]
-			optional: true
-			dependencies: ["F95B5F0E63261761"]
-		},
+		}
 		{
-			id: "C34EBB8B1974E121"
-			title: "A Servant"
 			description: ["Animation cores bind minions: undead, blazes, bears, ghasts. They die, you rebuild, the soul bill keeps coming."]
 			icon: "goety:animation_core"
+			id: "0D2171860B972794"
+			rewards: [{
+				id: "52ACFB7B008B522A"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "39B9AE56704DF14D"
+				item: "goety:animation_core"
+				type: "item"
+			}]
+			title: "A Servant"
 			x: 6.6000000000000005d
 			y: -1.2d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "39B9AE56704DF14D"
-						type: "item"
-						item: "goety:animation_core"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "CA789ACB0039011B"
-						type: "xp"
-						xp: 60
-					}
-			]
-			dependencies: ["F95B5F0E63261761"]
-		},
+		}
 		{
-			id: "ED68007309A86FA0"
-			title: "Become a Lich"
 			description: ["The long road ends in a transformation. It makes you stronger and worse at being alive."]
 			icon: "goety:black_crystal"
+			id: "5B1079C6720ED4C5"
+			rewards: [
+				{
+					id: "60CDC4AE3132A244"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "117E2DE43FB2FC12"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "goety:goety/become_lich"
+				criterion: ""
+				id: "36B0D769738AD668"
+				type: "advancement"
+			}]
+			title: "Become a Lich"
 			x: 8.8d
 			y: -2.1d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "36B0D769738AD668"
-						type: "advancement"
-						advancement: "goety:goety/become_lich"
-					}
-			]
-			rewards: [
-					{
-						id: "B66431142D2B7BCE"
-						type: "xp"
-						xp: 300
-					},
-					{
-						id: "BE70CD251DD9679C"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			dependencies: ["C34EBB8B1974E121"]
-		},
+		}
 		{
-			id: "A92E014FC6CD6525"
-			title: "Crypt Dwellers"
 			description: ["Crypts, graveyards, ruined monasteries: Goety's structures are full of loot and the occasional necromancer."]
 			icon: "goety:crypt_bookshelf"
+			id: "595C6EC22615CB31"
+			rewards: [{
+				id: "42A645C5875F83D7"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "697D87FA342DF52E"
+				structure: "goety:crypt"
+				type: "structure"
+			}]
+			title: "Crypt Dwellers"
 			x: 2.2d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "697D87FA342DF52E"
-						type: "structure"
-						structure: "goety:crypt"
-					}
-			]
-			rewards: [
-					{
-						id: "F40EA54CF85E71D3"
-						type: "xp"
-						xp: 100
-					}
-			]
-			dependencies: ["8DE9658C55A454AE"]
-		},
+		}
 		{
-			id: "E751E46C90B456FF"
-			title: "The Dark Manor"
 			description: ["A haunted manor with a ritual at its heart and a very bad host."]
 			icon: "minecraft:dark_oak_door"
+			id: "6F798C073BC62354"
+			rewards: [
+				{
+					id: "135731289A3EB2C7"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "32D608DE5327CF32"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "33ACA307BCCCA56E"
+				structure: "goety:dark_manor"
+				type: "structure"
+			}]
+			title: "The Dark Manor"
 			x: 4.4d
 			y: 1.5d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "BDE9BC02C634F279"
-						type: "structure"
-						structure: "goety:dark_manor"
-					}
-			]
-			rewards: [
-					{
-						id: "135731289A3EB2C7"
-						type: "xp"
-						xp: 120
-					},
-					{
-						id: "32D608DE5327CF32"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			dependencies: ["A92E014FC6CD6525"]
-		},
+		}
 		{
-			id: "9DCF84D6D12E5D8B"
-			title: "The Apostle"
 			description: ["A priest of the old order, forced to serve a thing he no longer remembers. His staff is one of the best minion casters in the game."]
-			icon: "goety:nameless_staff"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+					}
+				}
+				id: "goety:nameless_staff"
+			}
+			id: "08E6B58D4A74A38D"
+			rewards: [
+				{
+					id: "15FA0D6F62C2D3FD"
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "27EBABD801CAB8DA"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t5"
+					id: "561D38297E5B1857"
+					silent: true
+					title: "Tier 5 supply cache"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				entity: "goety:apostle"
+				id: "65EEF1D6CFED20A3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Apostle"
 			x: 11.0d
 			y: -0.3d
-			size: 1.5d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "65EEF1D6CFED20A3"
-						type: "kill"
-						entity: "goety:apostle"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "15FA0D6F62C2D3FD"
-						type: "xp"
-						xp: 500
-					},
-					{
-						id: "27EBABD801CAB8DA"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					},
-					{
-						id: "901AA0FD6AE08B20"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
-						silent: true
-						title: "Tier 5 supply cache"
-					}
-			]
-			dependencies: ["E751E46C90B456FF", "ED68007309A86FA0"]
-		},
+		}
 		{
-			id: "2C602EB00BD248E7"
-			title: "Cursed Cage"
 			description: ["Cages capture creatures for your use. Capture is easier than command, and command is easier than keeping them alive."]
 			icon: "goety:cursed_cage"
+			id: "2C602EB00BD248E7"
+			optional: true
+			rewards: [{
+				id: "639F515C5CFC1752"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "7B8DD790E4D3A5F0"
+				item: "goety:cursed_cage"
+				type: "item"
+			}]
+			title: "Cursed Cage"
 			x: 8.8d
 			y: -0.3d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "DFE461DD52E15022"
-						type: "item"
-						item: "goety:cursed_cage"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "D9299F9FCDDB8E7F"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["C34EBB8B1974E121"]
 		}
 	]
+	title: "Necromancy and the Dark Arts"
 }

@@ -1,683 +1,635 @@
 {
-	id: "14745FD05FD9002F"
-	filename: "13_bounties"
-	title: "Bounties and Trials"
-	subtitle: "Hunt by contract. Prove yourself on purpose."
-	icon: "minecraft:iron_axe"
-	order_index: 13
-	group: "87B3A2C356D6233C"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "13_bounties"
+	group: ""
+	icon: {
+		Count: 1
+		id: "minecraft:iron_axe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "14745FD05FD9002F"
 	images: [{
-			x: -7.0d
-			y: -11.29d
-			width: 31.6d
-			height: 17.78d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/bounties.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 17.78d
+		image: "aldreth:textures/quests/bounties.png"
+		rotation: 0.0d
+		width: 31.6d
+		x: -7.0d
+		y: -11.29d
+	}]
+	order_index: 4
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "0199A99007E38B50"
-			title: "The Bounty Board"
-			description: ["Bounties are small contracts: kill this, bring that, survive these. Some pay in coin, some in rare materials, some in a title.", "Each one is optional. Together they are a long path through the game's hostile corners."]
+			description: [
+				"Bounties are small contracts: kill this, bring that, survive these. Some pay in coin, some in rare materials, some in a title."
+				"Each one is optional. Together they are a long path through the game's hostile corners."
+			]
 			icon: "minecraft:oak_sign"
+			id: "0199A99007E38B50"
+			rewards: [{
+				id: "43A318579C2252A3"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "5B40EDB26DE04ABC"
+				type: "checkmark"
+			}]
+			title: "The Bounty Board"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "5B40EDB26DE04ABC"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "43A318579C2252A3"
-						type: "xp"
-						xp: 20
-					}
-			]
-		},
+		}
 		{
-			id: "6DEB2AE646DB2EC0"
-			title: "Rotting Dead"
+			dependencies: ["0199A99007E38B50"]
 			description: ["Clear the undead: twenty zombies, ten skeletons."]
 			icon: "minecraft:rotten_flesh"
+			id: "6DEB2AE646DB2EC0"
+			rewards: [
+				{
+					id: "5BC943648D917A57"
+					type: "xp"
+					xp: 60
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t1"
+					id: "305BAD816ACC1AC9"
+					silent: true
+					title: "Tier 1 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "547384645AB0FE62"
+					type: "kill"
+					value: 20L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "62FCCD1D9541973B"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Rotting Dead"
 			x: 2.2d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "547384645AB0FE62"
-						type: "kill"
-						entity: "minecraft:zombie"
-						value: 20
-					},
-					{
-						id: "62FCCD1D9541973B"
-						type: "kill"
-						entity: "minecraft:skeleton"
-						value: 10
-					}
-			]
-			rewards: [
-					{
-						id: "913B366A58829397"
-						type: "xp"
-						xp: 60
-					},
-					{
-						id: "305BAD816ACC1AC9"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t1"
-						elevate: true
-						silent: true
-						title: "Tier 1 supply cache"
-					}
-			]
-			dependencies: ["0199A99007E38B50"]
-		},
+		}
 		{
-			id: "642BDAA1439196C0"
-			title: "Eight-Legged Menace"
+			dependencies: ["0199A99007E38B50"]
 			description: ["Spiders and cave spiders. They are in the dark."]
 			icon: "minecraft:spider_eye"
+			id: "642BDAA1439196C0"
+			rewards: [
+				{
+					id: "2D6CC9661B270D21"
+					type: "xp"
+					xp: 60
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t1"
+					id: "00B3FCB1D2D4AC81"
+					silent: true
+					title: "Tier 1 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					entity: "minecraft:spider"
+					id: "24178FD67FFC9232"
+					type: "kill"
+					value: 15L
+				}
+				{
+					entity: "minecraft:cave_spider"
+					id: "38F07999A79A5AC0"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Eight-Legged Menace"
 			x: 2.2d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "BB61239019E2918E"
-						type: "kill"
-						entity: "minecraft:spider"
-						value: 15
-					},
-					{
-						id: "D5396AED2ADB525E"
-						type: "kill"
-						entity: "minecraft:cave_spider"
-						value: 10
-					}
-			]
-			rewards: [
-					{
-						id: "FD5F1C7342034FA5"
-						type: "xp"
-						xp: 60
-					},
-					{
-						id: "00B3FCB1D2D4AC81"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t1"
-						elevate: true
-						silent: true
-						title: "Tier 1 supply cache"
-					}
-			]
-			dependencies: ["0199A99007E38B50"]
-		},
+		}
 		{
-			id: "F66270ECBE879F41"
-			title: "Fuses"
+			dependencies: ["0199A99007E38B50"]
 			description: ["Creepers: kill them from a distance."]
 			icon: "minecraft:gunpowder"
+			id: "0A9DBBD42E8E7857"
+			rewards: [
+				{
+					id: "0A66CB27D0E55721"
+					type: "xp"
+					xp: 50
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t1"
+					id: "1215573F788B4328"
+					silent: true
+					title: "Tier 1 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "6EAAB26E652246F9"
+				type: "kill"
+				value: 10L
+			}]
+			title: "Fuses"
 			x: 2.2d
 			y: 1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "6EAAB26E652246F9"
-						type: "kill"
-						entity: "minecraft:creeper"
-						value: 10
-					}
-			]
-			rewards: [
-					{
-						id: "C1C9DAF68BA0FBE6"
-						type: "xp"
-						xp: 50
-					},
-					{
-						id: "1215573F788B4328"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t1"
-						elevate: true
-						silent: true
-						title: "Tier 1 supply cache"
-					}
-			]
-			dependencies: ["0199A99007E38B50"]
-		},
+		}
 		{
-			id: "CC705B93F6C79E1C"
-			title: "Brewmasters"
+			dependencies: ["6DEB2AE646DB2EC0"]
 			description: ["Witches cook trouble."]
 			icon: "minecraft:potion"
+			id: "60D07F42FDCE4C70"
+			rewards: [
+				{
+					id: "438BA601C510E287"
+					type: "xp"
+					xp: 80
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t2"
+					id: "2FCE03B080C2F4E5"
+					silent: true
+					title: "Tier 2 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "1CB63EA737255D2F"
+				type: "kill"
+				value: 5L
+			}]
+			title: "Brewmasters"
 			x: 4.4d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "1CB63EA737255D2F"
-						type: "kill"
-						entity: "minecraft:witch"
-						value: 5
-					}
-			]
-			rewards: [
-					{
-						id: "EA40CDE55F0661B0"
-						type: "xp"
-						xp: 80
-					},
-					{
-						id: "8840FBD2052E3903"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
-						silent: true
-						title: "Tier 2 supply cache"
-					}
-			]
-			dependencies: ["6DEB2AE646DB2EC0"]
-		},
+		}
 		{
-			id: "9D21F6637CCBB40C"
-			title: "A Raid"
 			description: ["Defend a village from a raid. Hero of the Village is the prize."]
 			icon: "minecraft:white_banner"
+			id: "6B0DE169576152F0"
+			rewards: [
+				{
+					id: "369480A664A27F75"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t2"
+					id: "633E91C11FF15986"
+					silent: true
+					title: "Tier 2 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					entity: "minecraft:vindicator"
+					id: "03BCC863717E6942"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecraft:evoker"
+					id: "5905407B28C68186"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "A Raid"
 			x: 6.6000000000000005d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "96E7B7C52280A785"
-						type: "kill"
-						entity: "minecraft:vindicator"
-						value: 10
-					},
-					{
-						id: "B467D4AFF0C62132"
-						type: "kill"
-						entity: "minecraft:evoker"
-						value: 3
-					}
-			]
-			rewards: [
-					{
-						id: "369480A664A27F75"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "633E91C11FF15986"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
-						silent: true
-						title: "Tier 2 supply cache"
-					}
-			]
-			dependencies: ["CC705B93F6C79E1C"]
-		},
+		}
 		{
-			id: "F8A57F338833B1C1"
-			title: "Blaze Hunt"
 			description: ["Blazes in the fortress. Bring fire resistance."]
 			icon: "minecraft:blaze_rod"
+			id: "2CACC08355CF224D"
+			rewards: [
+				{
+					id: "1E868CBD3148064E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t2"
+					id: "79E47943F01F8427"
+					silent: true
+					title: "Tier 2 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "minecraft:blaze"
+				id: "3D205B17F18C065B"
+				type: "kill"
+				value: 12L
+			}]
+			title: "Blaze Hunt"
 			x: 8.8d
 			y: -3.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "3D205B17F18C065B"
-						type: "kill"
-						entity: "minecraft:blaze"
-						value: 12
-					}
-			]
-			rewards: [
-					{
-						id: "9100E7C8BEB13DFB"
-						type: "xp"
-						xp: 100
-					},
-					{
-						id: "79E47943F01F8427"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
-						silent: true
-						title: "Tier 2 supply cache"
-					}
-			]
-			dependencies: ["9D21F6637CCBB40C"]
-		},
+		}
 		{
-			id: "335C613A57B1E7E1"
-			title: "Wither Skeletons"
 			description: ["A skull is a bounty. Three skulls are a boss."]
 			icon: "minecraft:wither_skeleton_skull"
+			id: "335C613A57B1E7E1"
+			rewards: [
+				{
+					id: "2FA92F5FA74B1DFC"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "16FED288621D0E63"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "5D93EE6E61C17E27"
+				type: "kill"
+				value: 8L
+			}]
+			title: "Wither Skeletons"
 			x: 11.0d
 			y: -3.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "5D93EE6E61C17E27"
-						type: "kill"
-						entity: "minecraft:wither_skeleton"
-						value: 8
-					}
-			]
-			rewards: [
-					{
-						id: "2FA92F5FA74B1DFC"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "16FED288621D0E63"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			dependencies: ["F8A57F338833B1C1"]
-		},
+		}
 		{
-			id: "A66CA774D2D836A9"
-			title: "Sea Guardians"
 			description: ["Guardians in the monument. Be waterborne."]
 			icon: "minecraft:prismarine_shard"
+			id: "0305C263D614762E"
+			rewards: [
+				{
+					id: "0E0B7B1BBDF8DC12"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "1C6019B52255466D"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "minecraft:guardian"
+				id: "5078578F71474C9B"
+				type: "kill"
+				value: 10L
+			}]
+			title: "Sea Guardians"
 			x: 8.8d
 			y: -2.1d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "5078578F71474C9B"
-						type: "kill"
-						entity: "minecraft:guardian"
-						value: 10
-					}
-			]
-			rewards: [
-					{
-						id: "0E0B7B1BBDF8DC12"
-						type: "xp"
-						xp: 120
-					},
-					{
-						id: "1C6019B52255466D"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			dependencies: ["9D21F6637CCBB40C"]
-		},
+		}
 		{
-			id: "F8D8AE9A73C1AB11"
-			title: "Enderman Hunt"
+			dependencies: ["335C613A57B1E7E1"]
 			description: ["Pearls are valuable and endermen are rude."]
 			icon: "minecraft:ender_pearl"
+			id: "5CBAD1860466BEFA"
+			rewards: [
+				{
+					id: "6C91EFD3E8218060"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "37B47F0851FCC7DF"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "7D6DC7EC4598C6CE"
+				type: "kill"
+				value: 15L
+			}]
+			title: "Enderman Hunt"
 			x: 13.200000000000001d
 			y: -6.6d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "7D6DC7EC4598C6CE"
-						type: "kill"
-						entity: "minecraft:enderman"
-						value: 15
-					}
-			]
-			rewards: [
-					{
-						id: "E577D131BB14A539"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "37B47F0851FCC7DF"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			dependencies: ["335C613A57B1E7E1"]
-		},
+		}
 		{
-			id: "97E31A7E0B14D32E"
-			title: "Shulker Hunt"
 			description: ["Shulkers in the End city."]
 			icon: "minecraft:shulker_shell"
+			id: "36C9F27ECC343752"
+			rewards: [
+				{
+					id: "3803B04078EB1FA8"
+					type: "xp"
+					xp: 200
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t4"
+					id: "48E5FFDF8EA9CA90"
+					silent: true
+					title: "Tier 4 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "minecraft:shulker"
+				id: "770FC1472FA6C0B2"
+				type: "kill"
+				value: 5L
+			}]
+			title: "Shulker Hunt"
 			x: 15.400000000000002d
 			y: -6.6d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "770FC1472FA6C0B2"
-						type: "kill"
-						entity: "minecraft:shulker"
-						value: 5
-					}
-			]
-			rewards: [
-					{
-						id: "9A079DED89C3C487"
-						type: "xp"
-						xp: 200
-					},
-					{
-						id: "C074972E00E83895"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
-						silent: true
-						title: "Tier 4 supply cache"
-					}
-			]
-			dependencies: ["F8D8AE9A73C1AB11"]
-		},
+		}
 		{
-			id: "8F1D7876D88E051E"
-			title: "The Raptor Pack"
+			dependencies: ["335C613A57B1E7E1"]
 			description: ["Umvuthana raptors, in a pack."]
 			icon: "minecraft:feather"
+			id: "3206D8EC3DC11BF6"
+			optional: true
+			rewards: [
+				{
+					id: "22BB6B536EA40C79"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "6F8B4BB411C2CEEF"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "mowziesmobs:umvuthana_raptor"
+				id: "7D98F29FAA1322EE"
+				type: "kill"
+				value: 6L
+			}]
+			title: "The Raptor Pack"
 			x: 13.200000000000001d
 			y: -4.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "90E40E365D10B538"
-						type: "kill"
-						entity: "mowziesmobs:umvuthana_raptor"
-						value: 6
-					}
-			]
-			rewards: [
-					{
-						id: "22BB6B536EA40C79"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "C98C49FB0C4C389B"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["335C613A57B1E7E1"]
-		},
+		}
 		{
-			id: "911366F233957445"
-			title: "Nightmare Hunt"
+			dependencies: ["335C613A57B1E7E1"]
 			description: ["Night creatures from Born in Chaos."]
 			icon: "minecraft:soul_lantern"
+			id: "6A0F06FF70B1E601"
+			optional: true
+			rewards: [
+				{
+					id: "4826A5E4E2F4DD95"
+					type: "xp"
+					xp: 180
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "35E7D5E45B98D9F4"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "born_in_chaos_v1:nightmare_stalker"
+				id: "3C230BEF4533268C"
+				type: "kill"
+				value: 3L
+			}]
+			title: "Nightmare Hunt"
 			x: 13.200000000000001d
 			y: -3.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "3C230BEF4533268C"
-						type: "kill"
-						entity: "born_in_chaos_v1:nightmare_stalker"
-						value: 3
-					}
-			]
-			rewards: [
-					{
-						id: "8841950C84BFBBAC"
-						type: "xp"
-						xp: 180
-					},
-					{
-						id: "35E7D5E45B98D9F4"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["335C613A57B1E7E1"]
-		},
+		}
 		{
-			id: "A424B2B7159F8900"
-			title: "Cave Predators"
+			dependencies: ["335C613A57B1E7E1"]
 			description: ["Raptors, rexes, and other things that bite."]
 			icon: "alexscaves:heavy_bone"
+			id: "50ECEC832224A146"
+			optional: true
+			rewards: [
+				{
+					id: "7936857DD6F0900C"
+					type: "xp"
+					xp: 250
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t4"
+					id: "6A91354FE16D2A22"
+					silent: true
+					title: "Tier 4 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					entity: "alexscaves:vallumraptor"
+					id: "31091B43D67D18AA"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "alexscaves:tremorsaurus"
+					id: "61620C9EF91E9E89"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Cave Predators"
 			x: 13.200000000000001d
 			y: -1.2d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "801C5E1B6F14B1A9"
-						type: "kill"
-						entity: "alexscaves:vallumraptor"
-						value: 5
-					},
-					{
-						id: "FF8B08B877725C71"
-						type: "kill"
-						entity: "alexscaves:tremorsaurus"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "7936857DD6F0900C"
-						type: "xp"
-						xp: 250
-					},
-					{
-						id: "E5C12C2B29FA42E6"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
-						silent: true
-						title: "Tier 4 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["335C613A57B1E7E1"]
-		},
+		}
 		{
-			id: "31254AA34516E7A3"
-			title: "Drake Hunt"
 			description: ["The last bounty on the board: a dragon. It will not be easy."]
 			icon: "iceandfire:dragon_skull_fire"
+			id: "31254AA34516E7A3"
+			rewards: [
+				{
+					id: "3D5F589C1FF5F993"
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "3D74AAAF7E6083BD"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t5"
+					id: "6BAFFA05B1377566"
+					silent: true
+					title: "Tier 5 supply cache"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				entity: "iceandfire:fire_dragon"
+				id: "263DB89D611B3FE3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Drake Hunt"
 			x: 17.6d
 			y: -3.9d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "263DB89D611B3FE3"
-						type: "kill"
-						entity: "iceandfire:fire_dragon"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "3D5F589C1FF5F993"
-						type: "xp"
-						xp: 500
-					},
-					{
-						id: "3D74AAAF7E6083BD"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					},
-					{
-						id: "6BAFFA05B1377566"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
-						silent: true
-						title: "Tier 5 supply cache"
-					}
-			]
-			dependencies: ["97E31A7E0B14D32E", "A424B2B7159F8900"]
-		},
+		}
 		{
-			id: "A671CE35C9C9AFAC"
-			title: "Trial of Blades"
+			dependencies: ["6DEB2AE646DB2EC0"]
 			description: ["Defeat fifty monsters without dying. Count them: the Compendium will not."]
-			icon: "minecraft:iron_sword"
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "697D9509F0A99B65"
+			optional: true
+			rewards: [{
+				id: "6DC4B679825918C7"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "0572CC8ADE0A1637"
+				type: "checkmark"
+			}]
+			title: "Trial of Blades"
 			x: 4.4d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "0572CC8ADE0A1637"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "6DC4B679825918C7"
-						type: "xp"
-						xp: 150
-					}
-			]
-			optional: true
-			dependencies: ["6DEB2AE646DB2EC0"]
-		},
+		}
 		{
-			id: "C7B818017D6DA9EA"
-			title: "Trial of Silence"
 			description: ["Clear a dungeon without a single arrow or spell. Only blades."]
 			icon: "minecraft:feather"
+			id: "7026B9E5567BFEB3"
+			optional: true
+			rewards: [
+				{
+					id: "63123968C5B97097"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "2A3A23F194F76C85"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "3EB0C7D62485D581"
+				type: "checkmark"
+			}]
+			title: "Trial of Silence"
 			x: 6.6000000000000005d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "AC06ABC1262F0B6E"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "B15FF29411D23FA7"
-						type: "xp"
-						xp: 300
-					},
-					{
-						id: "2A3A23F194F76C85"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			optional: true
-			dependencies: ["A671CE35C9C9AFAC"]
-		},
+		}
 		{
-			id: "C5AF0E18FC4B5CE9"
-			title: "Trial of Hunger"
 			description: ["Complete a boss with no food and no potions. You do not need to."]
 			icon: "minecraft:bread"
+			id: "14223E962217B753"
+			optional: true
+			rewards: [
+				{
+					id: "75B9546269F72A90"
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "6BC5C40CAF200FA2"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "2E7E64C8EADD769E"
+				type: "checkmark"
+			}]
+			title: "Trial of Hunger"
 			x: 8.8d
 			y: -0.3d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "2E7E64C8EADD769E"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "75B9546269F72A90"
-						type: "xp"
-						xp: 500
-					},
-					{
-						id: "6BC5C40CAF200FA2"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			optional: true
-			dependencies: ["C7B818017D6DA9EA"]
-		},
+		}
 		{
-			id: "E4E69A190FBA07C2"
-			title: "Trial of One"
 			description: ["Beat a great structure alone, without any pets or summons."]
 			icon: "minecraft:totem_of_undying"
+			id: "4C23DD55E2EF35CD"
+			optional: true
+			rewards: [
+				{
+					id: "3BD9ED006836EACF"
+					type: "xp"
+					xp: 800
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "0C985DB037ADF944"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "4D7DB0B48D019EF5"
+				type: "checkmark"
+			}]
+			title: "Trial of One"
 			x: 11.0d
 			y: -0.3d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "4D7DB0B48D019EF5"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "3BD9ED006836EACF"
-						type: "xp"
-						xp: 800
-					},
-					{
-						id: "AD880E8E24E3F5A2"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					}
-			]
-			optional: true
-			dependencies: ["C5AF0E18FC4B5CE9"]
 		}
 	]
+	title: "Bounties and Trials"
 }

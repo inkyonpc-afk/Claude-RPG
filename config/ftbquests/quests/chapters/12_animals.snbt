@@ -1,266 +1,223 @@
 {
-	id: "A723E3DFB497B24C"
-	filename: "12_animals"
-	title: "Beasts, Bonds and Breeding"
-	subtitle: "A world of creatures worth knowing."
-	icon: "minecraft:lead"
-	order_index: 12
-	group: "CF1E96262114D2FD"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "12_animals"
+	group: ""
+	icon: "minecraft:lead"
+	id: "3B97015E5F693805"
 	images: [{
-			x: -12.8d
-			y: -8.66d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/animals.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/animals.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -12.8d
+		y: -8.66d
+	}]
+	order_index: 3
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "CAC3A0402FD10D4B"
-			title: "A Beast of Your Own"
 			description: ["The pack is full of animals: wolves, cats, parrots, elephants, kangaroos, raptors, dragons. Some tame, some breed, some are just friends."]
 			icon: "minecraft:lead"
+			id: "2DE429AF1C4F1715"
+			rewards: [{
+				id: "601448C0F3495954"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				consume_items: false
+				id: "4B319A3184832F06"
+				item: "minecraft:lead"
+				type: "item"
+			}]
+			title: "A Beast of Your Own"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "4B319A3184832F06"
-						type: "item"
-						item: "minecraft:lead"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "601448C0F3495954"
-						type: "xp"
-						xp: 20
-					}
-			]
-		},
+		}
 		{
-			id: "A8ACEB854E5EA5D9"
-			title: "A Dog"
 			description: ["A tamed wolf is a loyal companion. Feed it well."]
 			icon: "minecraft:bone"
+			id: "672D8939932441AE"
+			rewards: [{
+				id: "79DB7B0EA9C3672D"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "minecraft:husbandry/tame_an_animal"
+				criterion: ""
+				id: "16F2F1D6BE7B1E07"
+				type: "advancement"
+			}]
+			title: "A Dog"
 			x: 2.2d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "DE7FCAE7C838CA05"
-						type: "advancement"
-						advancement: "minecraft:husbandry/tame_an_animal"
-					}
-			]
-			rewards: [
-					{
-						id: "DC625711F24F6E8C"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["CAC3A0402FD10D4B"]
-		},
+		}
 		{
-			id: "9329130F41544BA1"
-			title: "A Cat"
 			description: ["Cats scare creepers. That is worth keeping one."]
 			icon: "minecraft:cod"
+			id: "1B6E3D9BF7FDB958"
+			optional: true
+			rewards: [{
+				id: "319F9ED64C77A3F9"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "1A4FEE89765D0E7A"
+				item: "minecraft:cod"
+				type: "item"
+			}]
+			title: "A Cat"
 			x: 2.2d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "1A4FEE89765D0E7A"
-						type: "item"
-						item: "minecraft:cod"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "319F9ED64C77A3F9"
-						type: "xp"
-						xp: 30
-					}
-			]
-			optional: true
-			dependencies: ["CAC3A0402FD10D4B"]
-		},
+		}
 		{
-			id: "C4C057722B1FF4F7"
-			title: "Breeding"
 			description: ["Breed two animals and get a third. The basics of ranching."]
 			icon: "minecraft:wheat"
+			id: "155EFEC2C8547D69"
+			rewards: [{
+				id: "5BEC4DFA5000A0F5"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "minecraft:husbandry/breed_an_animal"
+				criterion: ""
+				id: "6F8BC118025FCAB4"
+				type: "advancement"
+			}]
+			title: "Breeding"
 			x: 2.2d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "6F8BC118025FCAB4"
-						type: "advancement"
-						advancement: "minecraft:husbandry/breed_an_animal"
-					}
-			]
-			rewards: [
-					{
-						id: "5BEC4DFA5000A0F5"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["CAC3A0402FD10D4B"]
-		},
+		}
 		{
-			id: "BA2D8005DC1717C5"
-			title: "Beekeeping"
 			description: ["Bees pollinate, honey sweetens, and wax lasts."]
 			icon: "minecraft:honeycomb"
+			id: "16709E5FCDBA89D3"
+			optional: true
+			rewards: [{
+				id: "0BC786549F72CB69"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "minecraft:husbandry/safely_harvest_honey"
+				criterion: ""
+				id: "6F2BD1ED757229D2"
+				type: "advancement"
+			}]
+			title: "Beekeeping"
 			x: 4.4d
 			y: 0.45d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "6F2BD1ED757229D2"
-						type: "advancement"
-						advancement: "minecraft:husbandry/safely_harvest_honey"
-					}
-			]
-			rewards: [
-					{
-						id: "0BC786549F72CB69"
-						type: "xp"
-						xp: 50
-					}
-			]
-			optional: true
-			dependencies: ["C4C057722B1FF4F7"]
-		},
+		}
 		{
-			id: "B5DA3A21D1159C74"
-			title: "Alex's Menagerie"
 			description: ["A large menagerie of weird animals; some tamable, some rideable, some just alarming. Catalogue them in the Animal Dictionary."]
 			icon: "alexsmobs:vine_lasso"
+			id: "023BB81EACDF5557"
+			optional: true
+			rewards: [{
+				id: "488F81DADB9D292E"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "31F75F4A19BD623E"
+				type: "checkmark"
+			}]
+			title: "Alex's Menagerie"
 			x: 2.2d
 			y: 2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "A7CE6A9D7479F08B"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "DEF592A051B7C7A5"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["CAC3A0402FD10D4B"]
-		},
+		}
 		{
-			id: "AD498C06970B3B85"
-			title: "A Strange Egg"
 			description: ["Eggs, nests and incubators: some beasts hatch from eggs."]
 			icon: "minecraft:egg"
+			id: "5182A57ECDDF7461"
+			optional: true
+			rewards: [{
+				id: "5FF4878D7BD19E47"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "638F28D3C78654B6"
+				item: "minecraft:egg"
+				type: "item"
+			}]
+			title: "A Strange Egg"
 			x: 4.4d
 			y: 2.25d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "94DD9ED29D8C3711"
-						type: "item"
-						item: "minecraft:egg"
-						count: 2
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "5FF4878D7BD19E47"
-						type: "xp"
-						xp: 30
-					}
-			]
-			optional: true
-			dependencies: ["C4C057722B1FF4F7"]
-		},
+		}
 		{
-			id: "3235945659ED5163"
-			title: "A Dragon's Companion"
 			description: ["A dragon is not a pet or a mount; it is a partner with its own life."]
 			icon: "iceandfire:dragon_flute"
+			id: "3235945659ED5163"
+			optional: true
+			rewards: [{
+				id: "4149B188119ADDAA"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "iceandfire:iceandfire/dragon_flute"
+				criterion: ""
+				id: "788D70753A218D9B"
+				type: "advancement"
+			}]
+			title: "A Dragon's Companion"
 			x: 4.4d
 			y: -3.15d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "BE25D1B02CC830CE"
-						type: "advancement"
-						advancement: "iceandfire:iceandfire/dragon_flute"
-					}
-			]
-			rewards: [
-					{
-						id: "4149B188119ADDAA"
-						type: "xp"
-						xp: 150
-					}
-			]
-			optional: true
-			dependencies: ["A8ACEB854E5EA5D9"]
-		},
+		}
 		{
-			id: "52C983617F92C1D0"
-			title: "A Menagerie"
 			description: ["Keep five different species in your care. You have a zoo."]
 			icon: "minecraft:lead"
+			id: "52C983617F92C1D0"
+			rewards: [
+				{
+					id: "60A21C11F38FF918"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "03F7CE52B2953193"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "48DA467E7F172E7A"
+				type: "checkmark"
+			}]
+			title: "A Menagerie"
 			x: 4.4d
 			y: -1.35d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "A88DC71F2711878E"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "60A21C11F38FF918"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "03F7CE52B2953193"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			dependencies: ["A8ACEB854E5EA5D9", "C4C057722B1FF4F7"]
 		}
 	]
+	title: "Beasts, Bonds and Breeding"
 }

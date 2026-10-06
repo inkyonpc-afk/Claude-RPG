@@ -1,351 +1,295 @@
 {
-	id: "C429E46AFB0D3762"
-	filename: "04_enchanting"
-	title: "Enchanting, Beyond the Table"
-	subtitle: "The ceiling is shelves."
-	icon: "minecraft:enchanting_table"
-	order_index: 4
-	group: "40103B7AFEA824B7"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "04_enchanting"
+	group: "40103B7AFEA824B7"
+	icon: "minecraft:enchanting_table"
+	id: "54E533FB4FFCB12E"
 	images: [{
-			x: -7.3d
-			y: -8.44d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/enchanting.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/enchanting.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -7.3d
+		y: -8.44d
+	}]
+	order_index: 4
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "F374129DA3F597FC"
-			title: "Beyond Level Thirty"
 			description: ["The enchanting table stops at thirty in vanilla. Here it does not: bookshelves, hellshelves, seashelves and more drive the maximum up, and with it the quality of enchantments."]
 			icon: "minecraft:enchanting_table"
+			id: "789CCED5DB8838B1"
+			rewards: [{
+				id: "7CD601E4C75CC285"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "7B87F711CB522483"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Beyond Level Thirty"
 			x: 0.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "7B87F711CB522483"
-						type: "item"
-						item: "minecraft:enchanting_table"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "D975E606C09F662E"
-						type: "xp"
-						xp: 20
-					}
-			]
-		},
+		}
 		{
-			id: "CD33A3C691290106"
-			title: "A Well-Stocked Shelf"
 			description: ["Plain bookshelves give small, steady power. Bring many."]
 			icon: "minecraft:bookshelf"
+			id: "7EC00181FDEC58FC"
+			rewards: [{
+				id: "3646D1ACBDD511C1"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 15L
+				id: "5C88BA1FC073FC7E"
+				item: "minecraft:bookshelf"
+				type: "item"
+			}]
+			title: "A Well-Stocked Shelf"
 			x: 2.2d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "5C88BA1FC073FC7E"
-						type: "item"
-						item: "minecraft:bookshelf"
-						count: 15
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "3646D1ACBDD511C1"
-						type: "xp"
-						xp: 25
-					}
-			]
-			dependencies: ["F374129DA3F597FC"]
-		},
+		}
 		{
-			id: "2D3317BE79F92932"
-			title: "Level Thirty"
 			description: ["Reach a thirty-level enchant. This is where normal enchanting tops out."]
 			icon: "minecraft:experience_bottle"
+			id: "2D3317BE79F92932"
+			rewards: [{
+				id: "4B9811C86E246E03"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:enchanting/30ench"
+				criterion: ""
+				id: "0A2375856A4FE70D"
+				type: "advancement"
+			}]
+			title: "Level Thirty"
 			x: 4.4d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "0A2375856A4FE70D"
-						type: "advancement"
-						advancement: "apotheosis:enchanting/30ench"
-					}
-			]
-			rewards: [
-					{
-						id: "ABAE20D3681687F1"
-						type: "xp"
-						xp: 60
-					}
-			]
-			dependencies: ["CD33A3C691290106"]
-		},
+		}
 		{
-			id: "32C748B78BFC373C"
-			title: "Hellshelf"
+			dependencies: ["2D3317BE79F92932"]
 			description: ["Adds levels and quanta. Made from Nether bricks and fire-touched books."]
 			icon: "apotheosis:hellshelf"
+			id: "32C748B78BFC373C"
+			rewards: [{
+				id: "6485D6A1A5FE3770"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "4DB7E89D3E3F7753"
+				item: "apotheosis:hellshelf"
+				type: "item"
+			}]
+			title: "Hellshelf"
 			x: 6.6000000000000005d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "DB468DA7B213F15E"
-						type: "item"
-						item: "apotheosis:hellshelf"
-						count: 8
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "6485D6A1A5FE3770"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["2D3317BE79F92932"]
-		},
+		}
 		{
-			id: "8B97536CF10F0281"
-			title: "Seashelf"
+			dependencies: ["2D3317BE79F92932"]
 			description: ["Adds arcana and prismarine-tinted power."]
 			icon: "apotheosis:seashelf"
+			id: "5EAB8882EE3ADDE3"
+			rewards: [{
+				id: "4D00667049EF3123"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "6FF115EDE12F88FC"
+				item: "apotheosis:seashelf"
+				type: "item"
+			}]
+			title: "Seashelf"
 			x: 6.6000000000000005d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "BC80742543A3D71C"
-						type: "item"
-						item: "apotheosis:seashelf"
-						count: 8
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "4D00667049EF3123"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["2D3317BE79F92932"]
-		},
+		}
 		{
-			id: "D1C81D0701342BB6"
-			title: "Level Sixty"
+			dependencies: ["32C748B78BFC373C"]
 			description: ["Sixty-level enchants reach into rare and treasure enchantments. Your table is now a project."]
 			icon: "apotheosis:infused_hellshelf"
+			id: "71D211D921A199B9"
+			rewards: [{
+				id: "53A2E808837F3EBA"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:enchanting/60ench"
+				criterion: ""
+				id: "7712C46152A9F0B9"
+				type: "advancement"
+			}]
+			title: "Level Sixty"
 			x: 8.8d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "7712C46152A9F0B9"
-						type: "advancement"
-						advancement: "apotheosis:enchanting/60ench"
-					}
-			]
-			rewards: [
-					{
-						id: "53A2E808837F3EBA"
-						type: "xp"
-						xp: 150
-					}
-			]
-			dependencies: ["32C748B78BFC373C", "8B97536CF10F0281"]
-		},
+		}
 		{
-			id: "B645A2B3E3DFE9B2"
-			title: "Endshelf"
 			description: ["Adds levels and a lot of arcana. Made from End stone and dragon fire."]
 			icon: "apotheosis:endshelf"
+			id: "161C0247177E85D3"
+			rewards: [{
+				id: "4A884FA2AE650113"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "6715AA8DF693258E"
+				item: "apotheosis:endshelf"
+				type: "item"
+			}]
+			title: "Endshelf"
 			x: 11.0d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "6715AA8DF693258E"
-						type: "item"
-						item: "apotheosis:endshelf"
-						count: 4
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "E2E86A9C5CEBEEA9"
-						type: "xp"
-						xp: 150
-					}
-			]
-			dependencies: ["D1C81D0701342BB6"]
-		},
+		}
 		{
-			id: "3D77768A52928044"
-			title: "Level One Hundred"
 			description: ["A hundred-level table is the end of enchanting: rare enchants appear at max and some go beyond."]
 			icon: "apotheosis:ender_library"
+			id: "3D77768A52928044"
+			rewards: [
+				{
+					id: "0BB385E47B82879F"
+					type: "xp"
+					xp: 400
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "5471D8584910BFD0"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:enchanting/100ench"
+				criterion: ""
+				id: "5D8966195B56E385"
+				type: "advancement"
+			}]
+			title: "Level One Hundred"
 			x: 13.200000000000001d
 			y: -2.7d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "5D8966195B56E385"
-						type: "advancement"
-						advancement: "apotheosis:enchanting/100ench"
-					}
-			]
-			rewards: [
-					{
-						id: "E5A7E5375DBB6AEE"
-						type: "xp"
-						xp: 400
-					},
-					{
-						id: "5471D8584910BFD0"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			dependencies: ["B645A2B3E3DFE9B2"]
-		},
+		}
 		{
-			id: "50495A4E33973051"
-			title: "The Library"
 			description: ["Stores enchanted books by type and level: a banker for your best enchants."]
 			icon: "apotheosis:library"
+			id: "50495A4E33973051"
+			rewards: [{
+				id: "04C35C8BE2549021"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "4B79C0C7DFB42143"
+				item: "apotheosis:library"
+				type: "item"
+			}]
+			title: "The Library"
 			x: 11.0d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "4B79C0C7DFB42143"
-						type: "item"
-						item: "apotheosis:library"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "04C35C8BE2549021"
-						type: "xp"
-						xp: 120
-					}
-			]
-			dependencies: ["D1C81D0701342BB6"]
-		},
+		}
 		{
-			id: "EBD926E401E8EA62"
-			title: "Filtering Shelf"
 			description: ["Tune the enchants your table offers by installing a filter."]
 			icon: "apotheosis:filtering_shelf"
+			id: "0550CA6737D2C3C5"
+			optional: true
+			rewards: [{
+				id: "504EE5C708D8E26A"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "695C468FCCE55196"
+				item: "apotheosis:filtering_shelf"
+				type: "item"
+			}]
+			title: "Filtering Shelf"
 			x: 11.0d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "A5123EFE992B2987"
-						type: "item"
-						item: "apotheosis:filtering_shelf"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "504EE5C708D8E26A"
-						type: "xp"
-						xp: 120
-					}
-			]
-			optional: true
-			dependencies: ["D1C81D0701342BB6"]
-		},
+		}
 		{
-			id: "DC0BAD73232E6551"
-			title: "Treasure Shelf"
 			description: ["Unlocks treasure enchantments: mending, frost walker, soul speed. Opens the door to power that normal tables hide."]
 			icon: "apotheosis:treasure_shelf"
+			id: "2234F5709C930BDA"
+			optional: true
+			rewards: [{
+				id: "672683DA5EB042A4"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "0C291A4BCD5B5CA8"
+				item: "apotheosis:treasure_shelf"
+				type: "item"
+			}]
+			title: "Treasure Shelf"
 			x: 11.0d
 			y: 2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "0C291A4BCD5B5CA8"
-						type: "item"
-						item: "apotheosis:treasure_shelf"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "672683DA5EB042A4"
-						type: "xp"
-						xp: 120
-					}
-			]
-			optional: true
-			dependencies: ["D1C81D0701342BB6"]
-		},
+		}
 		{
-			id: "CC88F67ACD4F8B40"
-			title: "Maxed"
+			dependencies: ["3D77768A52928044"]
 			description: ["Reach maximum stability and rectified enchants: max-level, stable, and without the wild swings."]
 			icon: "minecraft:enchanted_golden_apple"
+			id: "694939F12DAA8A29"
+			optional: true
+			rewards: [{
+				id: "4882967FA3442D95"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:enchanting/max_stable"
+				criterion: ""
+				id: "3AD5B4183A1B90D5"
+				type: "advancement"
+			}]
+			title: "Maxed"
 			x: 15.400000000000002d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "B51B093AB6A4B368"
-						type: "advancement"
-						advancement: "apotheosis:enchanting/max_stable"
-					}
-			]
-			rewards: [
-					{
-						id: "4882967FA3442D95"
-						type: "xp"
-						xp: 500
-					}
-			]
-			optional: true
-			dependencies: ["3D77768A52928044"]
 		}
 	]
+	title: "Enchanting, Beyond the Table"
 }

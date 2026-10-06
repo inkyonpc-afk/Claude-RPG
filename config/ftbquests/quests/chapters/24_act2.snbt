@@ -1,901 +1,815 @@
 {
-	id: "8AAE8C5B183F9276"
-	filename: "24_act2"
-	title: "Act II: A Wider World"
-	subtitle: "The tablet named seven Wardens. The first of them kept a forest where it is always dusk."
-	icon: "minecraft:ender_pearl"
-	order_index: 24
-	group: "66515315CBB6E386"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "24_act2"
+	group: "66515315CBB6E386"
+	icon: "minecraft:ender_pearl"
+	id: "6ABD62F72C802B72"
 	images: [{
-			x: -7.0d
-			y: -13.03d
-			width: 40.400000000000006d
-			height: 22.73d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/act2.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 22.73d
+		image: "aldreth:textures/quests/act2.png"
+		rotation: 0.0d
+		width: 40.400000000000006d
+		x: -7.0d
+		y: -13.03d
+	}]
+	order_index: 2
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "4D23F71DA9CEE2F9"
-			title: "Where the Sun Forgot"
-			description: ["The Root Ward is not far: a pool ringed with flowers, a gemstone dropped in, and the world tilts. Beyond is a forest under a sky that never finishes its sunset.", "Things are very large there and very old. Bring armor, food and patience."]
+			description: [
+				"The Root Ward is not far: a pool ringed with flowers, a gemstone dropped in, and the world tilts. Beyond is a forest under a sky that never finishes its sunset."
+				"Things are very large there and very old. Bring armor, food and patience."
+			]
 			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "4D23F71DA9CEE2F9"
+			rewards: [
+				{
+					id: "3BED5161B6489F79"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t2"
+					id: "7C11A637BBD5677C"
+					silent: true
+					title: "Tier 2 supply cache"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				dimension: "minecraft:"
+				id: "1F02753432541599"
+				type: "dimension"
+			}]
+			title: "Where the Sun Forgot"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "BBBEFE0C4659982C"
-						type: "dimension"
-						dim: "twilightforest:twilight_forest"
-					}
-			]
-			rewards: [
-					{
-						id: "3BED5161B6489F79"
-						type: "xp"
-						xp: 120
-					},
-					{
-						id: "A311ED108E9000AF"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
-						silent: true
-						title: "Tier 2 supply cache"
-					}
-			]
-			dependencies: ["26130032E9FC999A"]
-		},
+		}
 		{
-			id: "2BCA19B2DA4C52DD"
-			title: "Hollow Hill"
+			dependencies: ["4D23F71DA9CEE2F9"]
 			description: ["Burrows in the hillsides hold treasure and things that guard it. Start with the small ones."]
 			icon: "minecraft:mossy_cobblestone"
+			id: "2BCA19B2DA4C52DD"
+			rewards: [{
+				id: "3543392127DBBF76"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "2146B624A974D4E7"
+				structure: "twilightforest:small_hollow_hill"
+				type: "structure"
+			}]
+			title: "Hollow Hill"
 			x: 2.2d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "8AD8DF23C5CE29B3"
-						type: "structure"
-						structure: "twilightforest:small_hollow_hill"
-					}
-			]
-			rewards: [
-					{
-						id: "847C1C897F7AE6FF"
-						type: "xp"
-						xp: 60
-					}
-			]
-			dependencies: ["4D23F71DA9CEE2F9"]
-		},
+		}
 		{
-			id: "94D8472B0A009416"
-			title: "Ironwood"
+			dependencies: ["2BCA19B2DA4C52DD"]
 			description: ["A tree that remembers iron. The first honest material of the Twilight."]
 			icon: "twilightforest:ironwood_ingot"
+			id: "1B17D97ED0900B86"
+			rewards: [{
+				id: "00D18E262E0178FB"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "5D3895AC082C2F67"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			title: "Ironwood"
 			x: 4.4d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "D57058B1CF459ABC"
-						type: "item"
-						item: "twilightforest:ironwood_ingot"
-						count: 4
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "DC5043550EEA5400"
-						type: "xp"
-						xp: 50
-					}
-			]
-			dependencies: ["2BCA19B2DA4C52DD"]
-		},
+		}
 		{
-			id: "E06478B6A15D9DF2"
-			title: "The Courtyard Serpent"
-			description: ["The Naga coils through a courtyard of broken stone. It is the Root Warden's first mistake: the oldest, tiredest guardian, still doing its duty.", "Strafe, don't retreat; the tail hits harder than the head."]
+			description: [
+				"The Naga coils through a courtyard of broken stone. It is the Root Warden's first mistake: the oldest, tiredest guardian, still doing its duty."
+				"Strafe, don't retreat; the tail hits harder than the head."
+			]
 			icon: "twilightforest:naga_scale"
+			id: "22B6EDD4E34AE80F"
+			rewards: [
+				{
+					id: "0EA18903CEC3169D"
+					type: "xp"
+					xp: 200
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "70A53E8D55A3E713"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t2"
+					id: "6F5230DE06C7F3F0"
+					silent: true
+					title: "Tier 2 supply cache"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.4d
+			tasks: [
+				{
+					id: "29638F89407A30B4"
+					structure: "twilightforest:naga_courtyard"
+					type: "structure"
+				}
+				{
+					entity: "twilightforest:naga"
+					id: "0867D94FFF74DB28"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Courtyard Serpent"
 			x: 6.6000000000000005d
 			y: -1.8d
-			size: 1.4d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "29638F89407A30B4"
-						type: "structure"
-						structure: "twilightforest:naga_courtyard"
-					},
-					{
-						id: "0867D94FFF74DB28"
-						type: "kill"
-						entity: "twilightforest:naga"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "0EA18903CEC3169D"
-						type: "xp"
-						xp: 200
-					},
-					{
-						id: "891182677B11A08D"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					},
-					{
-						id: "6F5230DE06C7F3F0"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
-						silent: true
-						title: "Tier 2 supply cache"
-					}
-			]
-			dependencies: ["94D8472B0A009416"]
-		},
+		}
 		{
-			id: "248783257B1E3F6F"
-			title: "Serpent Scale"
 			description: ["Naga scales make armor that remembers how to turn a blow. It is worth the several fights it takes."]
-			icon: "twilightforest:naga_chestplate"
+			icon: {
+				Count: 1
+				id: "twilightforest:naga_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "248783257B1E3F6F"
+			rewards: [{
+				id: "25E886F66FB539F5"
+				type: "xp"
+				xp: 70
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 6L
+				id: "613215098C315DCC"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			title: "Serpent Scale"
 			x: 8.8d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "613215098C315DCC"
-						type: "item"
-						item: "twilightforest:naga_scale"
-						count: 6
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "A6C76FC84A545730"
-						type: "xp"
-						xp: 70
-					}
-			]
-			dependencies: ["E06478B6A15D9DF2"]
-		},
+		}
 		{
-			id: "CE05BE5386A43ABD"
-			title: "Down the Labyrinth"
+			dependencies: ["248783257B1E3F6F"]
 			description: ["A maze under the hills, built to be forgotten. The Minoshroom waits at its heart, and the cheese is not worth the trouble."]
 			icon: "minecraft:oak_trapdoor"
+			id: "1868EC129A56B83F"
+			rewards: [{
+				id: "3FB0C92F1E444761"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "06782B4BDB3D829B"
+				structure: "twilightforest:labyrinth"
+				type: "structure"
+			}]
+			title: "Down the Labyrinth"
 			x: 11.0d
 			y: -3.6d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "80475C3B93C379C3"
-						type: "structure"
-						structure: "twilightforest:labyrinth"
-					}
-			]
-			rewards: [
-					{
-						id: "87DD94A353537258"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["248783257B1E3F6F"]
-		},
+		}
 		{
-			id: "2C930645541CA40E"
-			title: "The Minoshroom"
 			description: ["Half bull, half toadstool, entirely angry. Its axe is the first great weapon you will earn from a Warden's guards."]
 			icon: "twilightforest:minoshroom_trophy"
+			id: "2C930645541CA40E"
+			rewards: [
+				{
+					id: "2AB72432ADF1821D"
+					type: "xp"
+					xp: 220
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "112A91B432A0CD12"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.4d
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				id: "1ECC504D69E3C70D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Minoshroom"
 			x: 13.200000000000001d
 			y: -4.5d
-			size: 1.4d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "A7E320AB8C0D3526"
-						type: "kill"
-						entity: "twilightforest:minoshroom"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "B19ABBC556E807AA"
-						type: "xp"
-						xp: 220
-					},
-					{
-						id: "ECCADD69D25E78F2"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			dependencies: ["CE05BE5386A43ABD"]
-		},
+		}
 		{
-			id: "9BB44DAA72034723"
-			title: "A Tower That Hums"
+			dependencies: ["2C930645541CA40E"]
 			description: ["The Lich keeps a tower of floors and spawners, each stronger than the last. Make your way up; the stairs are the easy part."]
 			icon: "minecraft:purple_stained_glass"
+			id: "4EE4667568FEA34A"
+			rewards: [{
+				id: "19A742013431E2F1"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "6409F1C101E44F23"
+				structure: "twilightforest:lich_tower"
+				type: "structure"
+			}]
+			title: "A Tower That Hums"
 			x: 15.400000000000002d
 			y: -4.95d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "87C6FCC1508D17EE"
-						type: "structure"
-						structure: "twilightforest:lich_tower"
-					}
-			]
-			rewards: [
-					{
-						id: "19A742013431E2F1"
-						type: "xp"
-						xp: 100
-					}
-			]
-			dependencies: ["2C930645541CA40E"]
-		},
+		}
 		{
-			id: "463E01E530EBD24E"
-			title: "King of the Dead Hours"
-			description: ["The Lich clones itself, fires bolts, and steals any hope you had of a clean fight. Its scepters are the first in a family of great magical weapons.", "Kill the clones. Reflect the bolts. Do not stand still."]
+			description: [
+				"The Lich clones itself, fires bolts, and steals any hope you had of a clean fight. Its scepters are the first in a family of great magical weapons."
+				"Kill the clones. Reflect the bolts. Do not stand still."
+			]
 			icon: "twilightforest:lich_trophy"
+			id: "463E01E530EBD24E"
+			rewards: [
+				{
+					id: "70DF06D468EEBD9C"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "6AD040F179E8247C"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "58C09FC325C1BAB8"
+					silent: true
+					title: "Lich spoils"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "twilightforest:lich"
+					id: "7D2C46E8E6F66ED9"
+					type: "kill"
+					value: 1L
+				}
+				{
+					advancement: "twilightforest:progress_lich"
+					criterion: ""
+					id: "55C76DBDE58B119D"
+					type: "advancement"
+				}
+			]
+			title: "King of the Dead Hours"
 			x: 17.6d
 			y: -5.33d
-			size: 1.5d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "DBE09ED43F248627"
-						type: "kill"
-						entity: "twilightforest:lich"
-						value: 1
-					},
-					{
-						id: "82FFE49A54A70DE0"
-						type: "advancement"
-						advancement: "twilightforest:progress_lich"
-					}
-			]
-			rewards: [
-					{
-						id: "FEA28B273E59E83F"
-						type: "xp"
-						xp: 300
-					},
-					{
-						id: "6AD040F179E8247C"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					},
-					{
-						id: "EC9B934B6900F354"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Lich spoils"
-					}
-			]
-			dependencies: ["9BB44DAA72034723"]
-		},
+		}
 		{
-			id: "E948F2306ABC51DF"
-			title: "Knightmetal"
+			dependencies: ["463E01E530EBD24E"]
 			description: ["The Knight Phantoms kept their armor when they lost everything else. It is a good metal: green-black, heavy, and a little too loyal."]
 			icon: "twilightforest:knightmetal_ingot"
+			id: "02EEC81A59DF83E1"
+			rewards: [{
+				id: "358D45207C75791C"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 6L
+				id: "5E8CAD5D20FCF1F7"
+				item: "twilightforest:knightmetal_ingot"
+				type: "item"
+			}]
+			title: "Knightmetal"
 			x: 19.8d
 			y: -5.33d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "5E8CAD5D20FCF1F7"
-						type: "item"
-						item: "twilightforest:knightmetal_ingot"
-						count: 6
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "C8BD605B0F84F49D"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["463E01E530EBD24E"]
-		},
+		}
 		{
-			id: "32D3D627098B86C6"
-			title: "The Hydra's Lair"
 			description: ["Three heads, then four, then seven. Burn the stumps. The lair is a volcano of fire and bad decisions."]
 			icon: "twilightforest:hydra_trophy"
+			id: "32D3D627098B86C6"
+			rewards: [
+				{
+					id: "432E8D87012A9B88"
+					type: "xp"
+					xp: 350
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t4"
+					id: "0DA5CD088F05E2A3"
+					silent: true
+					title: "Tier 4 supply cache"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2D4F9423C63D65C2"
+					structure: "twilightforest:hydra_lair"
+					type: "structure"
+				}
+				{
+					entity: "twilightforest:hydra"
+					id: "4DDFCC172F9D8DDD"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Hydra's Lair"
 			x: 22.0d
 			y: -5.33d
-			size: 1.5d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "8F8BB25DFC499D6E"
-						type: "structure"
-						structure: "twilightforest:hydra_lair"
-					},
-					{
-						id: "4DDFCC172F9D8DDD"
-						type: "kill"
-						entity: "twilightforest:hydra"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "432E8D87012A9B88"
-						type: "xp"
-						xp: 350
-					},
-					{
-						id: "0DA5CD088F05E2A3"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
-						silent: true
-						title: "Tier 4 supply cache"
-					}
-			]
-			dependencies: ["E948F2306ABC51DF"]
-		},
+		}
 		{
-			id: "D7BCE9326B41A10C"
-			title: "The Land Below"
-			description: ["The Seven Wardens bound seven realms, and the Nether is the one that never forgave them. It burns, but not for the Warden's reasons.", "Bring fire resistance, a good bow, and a route back: Waystones will not follow you through the portal."]
+			dependencies: ["248783257B1E3F6F"]
+			description: [
+				"The Seven Wardens bound seven realms, and the Nether is the one that never forgave them. It burns, but not for the Warden's reasons."
+				"Bring fire resistance, a good bow, and a route back: Waystones will not follow you through the portal."
+			]
 			icon: "minecraft:netherrack"
+			id: "0AE1AE5E9571B025"
+			rewards: [{
+				id: "56BF041C8BD34D8B"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				dimension: "minecraft:"
+				id: "707F2BBC0BC7AAF3"
+				type: "dimension"
+			}]
+			title: "The Land Below"
 			x: 11.0d
 			y: -1.8d
-			size: 1.0d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "707F2BBC0BC7AAF3"
-						type: "dimension"
-						dim: "minecraft:the_nether"
-					}
-			]
-			rewards: [
-					{
-						id: "56BF041C8BD34D8B"
-						type: "xp"
-						xp: 100
-					}
-			]
-			dependencies: ["248783257B1E3F6F"]
-		},
+		}
 		{
-			id: "ACF3FABA149C39D0"
-			title: "Brick and Cinder"
 			description: ["Fortresses guard blaze spawners and little else. Take the rods; leave the wither skeletons their dignity."]
 			icon: "minecraft:nether_bricks"
+			id: "60D6A21E48120F06"
+			rewards: [
+				{
+					id: "1F5B8CEE0312525F"
+					type: "xp"
+					xp: 80
+				}
+				{
+					count: 4
+					id: "52A2BC841E6F31B4"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "543CE86EBCC74F2A"
+				structure: "minecraft:fortress"
+				type: "structure"
+			}]
+			title: "Brick and Cinder"
 			x: 13.200000000000001d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "543CE86EBCC74F2A"
-						type: "structure"
-						structure: "minecraft:fortress"
-					}
-			]
-			rewards: [
-					{
-						id: "9E627EB1DE0F275B"
-						type: "xp"
-						xp: 80
-					},
-					{
-						id: "52A2BC841E6F31B4"
-						type: "item"
-						item: "minecraft:blaze_rod"
-						count: 4
-					}
-			]
-			dependencies: ["D7BCE9326B41A10C"]
-		},
+		}
 		{
-			id: "2DAEF71D1C4A249C"
-			title: "Gold and Pigs"
 			description: ["Piglins build bastions to hold their gold and their grudges. Wear something gold, and bring a lot of arrows."]
 			icon: "minecraft:gilded_blackstone"
+			id: "2DAEF71D1C4A249C"
+			rewards: [{
+				id: "6352357F92AF7381"
+				type: "xp"
+				xp: 90
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "59E6E15D0F683AE4"
+				structure: "minecraft:bastion_remnant"
+				type: "structure"
+			}]
+			title: "Gold and Pigs"
 			x: 13.200000000000001d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "59E6E15D0F683AE4"
-						type: "structure"
-						structure: "minecraft:bastion_remnant"
-					}
-			]
-			rewards: [
-					{
-						id: "6352357F92AF7381"
-						type: "xp"
-						xp: 90
-					}
-			]
-			dependencies: ["D7BCE9326B41A10C"]
-		},
+		}
 		{
-			id: "274A8F597226C54C"
-			title: "Ancient Debris"
 			description: ["Netherite is not mined so much as persuaded. Dig low, listen to the lava, and come home."]
 			icon: "minecraft:ancient_debris"
+			id: "274A8F597226C54C"
+			rewards: [{
+				id: "551E9D419A271B2E"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "2B4E7C5827ECE19A"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			title: "Ancient Debris"
 			x: 15.400000000000002d
 			y: -3.15d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "2B4E7C5827ECE19A"
-						type: "item"
-						item: "minecraft:ancient_debris"
-						count: 4
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "551E9D419A271B2E"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["ACF3FABA149C39D0"]
-		},
+		}
 		{
-			id: "8DADC9605E959E60"
-			title: "A Heavier Metal"
+			dependencies: [
+				"274A8F597226C54C"
+				"2DAEF71D1C4A249C"
+			]
 			description: ["Netherite is a plateau, not a summit. The gear beyond it makes it look like an apprenticeship."]
 			icon: "minecraft:netherite_ingot"
+			id: "32639BCAFFB1D943"
+			rewards: [
+				{
+					id: "17A48FBF69A92870"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "63029E56C163529B"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "015CC9048462C32A"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			title: "A Heavier Metal"
 			x: 17.6d
 			y: -2.4d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "FD08E98EFB20C32E"
-						type: "item"
-						item: "minecraft:netherite_ingot"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "17A48FBF69A92870"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "63029E56C163529B"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			dependencies: ["274A8F597226C54C", "2DAEF71D1C4A249C"]
-		},
+		}
 		{
-			id: "7F8BB328DB020DA6"
-			title: "The Tower Beyond Twilight"
+			dependencies: ["32D3D627098B86C6"]
 			description: ["The Ur-Ghast floats in a tower of bad ideas. It weeps; it is in pain. The kind thing is to make it stop."]
 			icon: "twilightforest:ur_ghast_trophy"
+			id: "7F8BB328DB020DA6"
+			rewards: [
+				{
+					id: "470AD4D240E94CF3"
+					type: "xp"
+					xp: 400
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "0267F54613740D66"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t4"
+					id: "34EAFC7844689F6A"
+					silent: true
+					title: "Ur-Ghast spoils"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "twilightforest:ur_ghast"
+					id: "548F67221C5EF50F"
+					type: "kill"
+					value: 1L
+				}
+				{
+					advancement: "twilightforest:progress_ur_ghast"
+					criterion: ""
+					id: "6B9E32CDD932D041"
+					type: "advancement"
+				}
+			]
+			title: "The Tower Beyond Twilight"
 			x: 24.200000000000003d
 			y: -3.86d
-			size: 1.5d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "A99059997144B260"
-						type: "kill"
-						entity: "twilightforest:ur_ghast"
-						value: 1
-					},
-					{
-						id: "6B9E32CDD932D041"
-						type: "advancement"
-						advancement: "twilightforest:progress_ur_ghast"
-					}
-			]
-			rewards: [
-					{
-						id: "C0C635AAE542D5C0"
-						type: "xp"
-						xp: 400
-					},
-					{
-						id: "0267F54613740D66"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					},
-					{
-						id: "E7C62AE16EBBB490"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
-						silent: true
-						title: "Ur-Ghast spoils"
-					}
-			]
-			dependencies: ["32D3D627098B86C6", "8DADC9605E959E60"]
-		},
+		}
 		{
-			id: "E10267CB85F6FB04"
-			title: "Beneath the Roots"
+			dependencies: ["248783257B1E3F6F"]
 			description: ["A second world sits under the first. The Undergarden is cold, humid and full of things that evolved without sunlight."]
 			icon: "minecraft:deepslate"
+			id: "72D2E5DE649EC433"
+			rewards: [{
+				id: "1980E74F4F515205"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				dimension: "minecraft:"
+				id: "43796A7837A9AEC5"
+				type: "dimension"
+			}]
+			title: "Beneath the Roots"
 			x: 11.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "43796A7837A9AEC5"
-						type: "dimension"
-						dim: "undergarden:undergarden"
-					}
-			]
-			rewards: [
-					{
-						id: "1980E74F4F515205"
-						type: "xp"
-						xp: 120
-					}
-			]
-			dependencies: ["248783257B1E3F6F"]
-		},
+		}
 		{
-			id: "EBCD7A9FA710B915"
-			title: "Cloggrum"
 			description: ["Wet metal, strange alloy. Surprisingly good armor."]
 			icon: "undergarden:cloggrum_ingot"
+			id: "4951A96420CF7A56"
+			rewards: [{
+				id: "33BF374C1FD503D7"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "0A6779DFE6DAD4F4"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			title: "Cloggrum"
 			x: 13.200000000000001d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "A897539BAF71EB5F"
-						type: "item"
-						item: "undergarden:cloggrum_ingot"
-						count: 8
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "F5D21AA49C279ECD"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["E10267CB85F6FB04"]
-		},
+		}
 		{
-			id: "159D28A8F217413B"
-			title: "The Forgotten Guardian"
 			description: ["Something was left to guard a gate and never told when to stop. It has not stopped."]
 			icon: "undergarden:forgotten_ingot"
+			id: "159D28A8F217413B"
+			rewards: [
+				{
+					id: "3EC7551F36161802"
+					type: "xp"
+					xp: 350
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t4"
+					id: "46F355D5AFBC73B0"
+					silent: true
+					title: "Tier 4 supply cache"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				entity: "undergarden:forgotten_guardian"
+				id: "5D55F939B2D5F2E3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Forgotten Guardian"
 			x: 15.400000000000002d
 			y: 0.45d
-			size: 1.5d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "5D55F939B2D5F2E3"
-						type: "kill"
-						entity: "undergarden:forgotten_guardian"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "B47788E81CB68EC2"
-						type: "xp"
-						xp: 350
-					},
-					{
-						id: "A9AED41BC6C11CDA"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
-						silent: true
-						title: "Tier 4 supply cache"
-					}
-			]
-			dependencies: ["EBCD7A9FA710B915"]
-		},
+		}
 		{
-			id: "2E626F06DA6357C8"
-			title: "Wheels"
+			dependencies: ["4D23F71DA9CEE2F9"]
 			description: ["A cart behind a horse changes everything: more cargo, same mount. Plows and supply wagons come next."]
 			icon: "astikorcarts:animal_cart"
+			id: "2E626F06DA6357C8"
+			optional: true
+			rewards: [{
+				id: "06BBCA9AFD67F237"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "3CB18F11DE4A87FC"
+				item: "astikorcarts:animal_cart"
+				type: "item"
+			}]
+			title: "Wheels"
 			x: 2.2d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "3CB18F11DE4A87FC"
-						type: "item"
-						item: "astikorcarts:animal_cart"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "06BBCA9AFD67F237"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["4D23F71DA9CEE2F9"]
-		},
+		}
 		{
-			id: "D1E3E7860E2CE22C"
-			title: "A Very Fast Bird"
+			dependencies: ["4D23F71DA9CEE2F9"]
 			description: ["Chocobos are the best land mount you can get before the sky opens: fast, quick to jump, willing to carry a second rider. They need nests, greens, and a good reputation."]
 			icon: "chocobos:chocobo_nest"
+			id: "432FADC2023A649B"
+			rewards: [
+				{
+					id: "5BB36665331159A2"
+					type: "xp"
+					xp: 90
+				}
+				{
+					id: "49B75202C6776380"
+					item: "chocobos:leather_chocobo_armor"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "48E3E5677F033C70"
+				item: "chocobos:chocobo_nest"
+				type: "item"
+			}]
+			title: "A Very Fast Bird"
 			x: 2.2d
 			y: 1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "48E3E5677F033C70"
-						type: "item"
-						item: "chocobos:chocobo_nest"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "8B7AF15D8763D62F"
-						type: "xp"
-						xp: 90
-					},
-					{
-						id: "C0A6910F3E6E416A"
-						type: "item"
-						item: "chocobos:leather_chocobo_armor"
-						count: 1
-					}
-			]
-			dependencies: ["4D23F71DA9CEE2F9"]
-		},
+		}
 		{
-			id: "33C720CD41679B37"
-			title: "Giants of the Plains"
 			description: ["Elephants and tusklin are mounts for people who prefer arrival to speed. Lasso one, saddle it, and ride; they plow through anything."]
 			icon: "alexsmobs:vine_lasso"
+			id: "33C720CD41679B37"
+			optional: true
+			rewards: [{
+				id: "04E421010B053811"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "10A487B75D077187"
+				item: "alexsmobs:vine_lasso"
+				type: "item"
+			}]
+			title: "Giants of the Plains"
 			x: 4.4d
 			y: 1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "10A487B75D077187"
-						type: "item"
-						item: "alexsmobs:vine_lasso"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "04E421010B053811"
-						type: "xp"
-						xp: 80
-					}
-			]
-			optional: true
-			dependencies: ["D1E3E7860E2CE22C"]
-		},
+		}
 		{
-			id: "A7ED3045F516C6FE"
-			title: "Out on the Water"
+			dependencies: ["2E626F06DA6357C8"]
 			description: ["A cog is a floating base: cargo, cannons and a very large number of ways to sink. Seas are not obstacles any more; they are roads."]
 			icon: "smallships:oak_cog"
+			id: "4BFA08CD96CBB118"
+			rewards: [{
+				id: "1D96A5FF40ACBE7D"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "454CF19A9E505331"
+				item: "smallships:oak_cog"
+				type: "item"
+			}]
+			title: "Out on the Water"
 			x: 4.4d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "454CF19A9E505331"
-						type: "item"
-						item: "smallships:oak_cog"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "80D16F5B2D2570D3"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["2E626F06DA6357C8"]
-		},
+		}
 		{
-			id: "904AD7DB5B50B5B8"
-			title: "Iron-Bound"
 			description: ["More slots, more spells, more ways to be wrong in public. Upgrade your book as you learn what you actually use."]
 			icon: "irons_spellbooks:iron_spell_book"
+			id: "1DFEE1B1C3869E60"
+			optional: true
+			rewards: [{
+				id: "78C88F006BE969D7"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "41141C5ADDB29E46"
+				item: "irons_spellbooks:iron_spell_book"
+				type: "item"
+			}]
+			title: "Iron-Bound"
 			x: 0.0d
 			y: 2.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "41141C5ADDB29E46"
-						type: "item"
-						item: "irons_spellbooks:iron_spell_book"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "8BF44CCE0B024761"
-						type: "xp"
-						xp: 80
-					}
-			]
-			optional: true
-			dependencies: ["C4453684CC134345"]
-		},
+		}
 		{
-			id: "0CEB43486C2BA243"
-			title: "A Level 30 Table"
 			description: ["Hellshelves, seashelves and endshelves raise the ceiling of your enchanting table. Climb: the real enchantments live above level 30."]
 			icon: "apotheosis:hellshelf"
+			id: "0CEB43486C2BA243"
+			optional: true
+			rewards: [{
+				id: "64516D2AE0A9E75A"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:enchanting/30ench"
+				criterion: ""
+				id: "3A047E4FED6C4A7C"
+				type: "advancement"
+			}]
+			title: "A Level 30 Table"
 			x: 15.400000000000002d
 			y: -1.35d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "8ABA8C69EC727A63"
-						type: "advancement"
-						advancement: "apotheosis:enchanting/30ench"
-					}
-			]
-			rewards: [
-					{
-						id: "A85A450C6CB72036"
-						type: "xp"
-						xp: 120
-					}
-			]
-			optional: true
-			dependencies: ["ACF3FABA149C39D0"]
-		},
+		}
 		{
-			id: "7D63898FEEF4031E"
-			title: "A Rare Find"
+			dependencies: ["0CEB43486C2BA243"]
 			description: ["Rare gear carries three affixes and a real identity. It will not replace itself in ten minutes: invest in it."]
 			icon: "apotheosis:rare_material"
+			id: "7D63898FEEF4031E"
+			optional: true
+			rewards: [
+				{
+					id: "53071B8B8E15C71C"
+					type: "xp"
+					xp: 120
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "5C60D2284B259BA9"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:affix/rare"
+				criterion: ""
+				id: "41283E7CD2CC6A93"
+				type: "advancement"
+			}]
+			title: "A Rare Find"
 			x: 17.6d
 			y: -0.6d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "41283E7CD2CC6A93"
-						type: "advancement"
-						advancement: "apotheosis:affix/rare"
-					}
-			]
-			rewards: [
-					{
-						id: "DCEEFD26BCFFC6A7"
-						type: "xp"
-						xp: 120
-					},
-					{
-						id: "B13342E36A04ED12"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["0CEB43486C2BA243"]
-		},
+		}
 		{
-			id: "C4668D8C5ADC0F5C"
-			title: "The Veil Has Edges"
-			description: ["Five Wardens remain. Each held a realm: Sky, Dream, Echo, Flame, End. The Root Ward's last words, torn from the Ur-Ghast's ruin, give a direction: up.", "Past the clouds is a country built on islands, and the first of its gates is guarded by a sleeping thing. The Ember does not like the sky; it has been there before."]
+			dependencies: [
+				"7F8BB328DB020DA6"
+				"159D28A8F217413B"
+			]
+			description: [
+				"Five Wardens remain. Each held a realm: Sky, Dream, Echo, Flame, End. The Root Ward's last words, torn from the Ur-Ghast's ruin, give a direction: up."
+				"Past the clouds is a country built on islands, and the first of its gates is guarded by a sleeping thing. The Ember does not like the sky; it has been there before."
+			]
 			icon: "minecraft:nether_star"
+			id: "52399792FF8CCA5D"
+			rewards: [
+				{
+					id: "79039A0F173ADBEB"
+					type: "xp"
+					xp: 200
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "4AD0FD91512BAB0C"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "23849BF6BC4CC0B1"
+					silent: true
+					title: "Act II cache"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "5F71A55CC596AAE1"
+				type: "checkmark"
+			}]
+			title: "The Veil Has Edges"
 			x: 26.400000000000002d
 			y: -1.71d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "5F71A55CC596AAE1"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "E4CCE9C6D832AD66"
-						type: "xp"
-						xp: 200
-					},
-					{
-						id: "4AD0FD91512BAB0C"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					},
-					{
-						id: "23849BF6BC4CC0B1"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Act II cache"
-					}
-			]
-			dependencies: ["7F8BB328DB020DA6", "159D28A8F217413B"]
 		}
 	]
+	title: "Act II: A Wider World"
 }

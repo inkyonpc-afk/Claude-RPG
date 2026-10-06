@@ -136,8 +136,18 @@ def walk(o, nid):
             walk(x, nid)
 
 
+# every texture must exist in the PST jar or a resource pack we ship
+import glob, zipfile
+TEX = set()
+for j in glob.glob(os.path.join(ROOT, "mods", "PassiveSkillTree*.jar")):
+    TEX |= {n for n in zipfile.ZipFile(j).namelist() if n.startswith("assets/skilltree/textures/")}
+for d in glob.glob(os.path.join(ROOT, "config", "paxi", "resourcepacks", "*", "assets", "skilltree", "textures")):
+    TEX |= {"assets/skilltree/textures/" + os.path.relpath(os.path.join(dp, f), d).replace(os.sep, "/") for dp, _, fs in os.walk(d) for f in fs}
 for nid, n in nodes.items():
     walk(n["bonuses"], nid)
+    for k in ("iconTexture", "backgroundTexture", "borderTexture"):
+        if TEX and "assets/skilltree/" + n[k].split(":", 1)[1] not in TEX:
+            errors.append("%s: missing texture %s" % (nid, n[k]))
     for c in n["directConnections"]:
         if c not in nodes:
             errors.append("%s: dangling connection %s" % (nid, c))

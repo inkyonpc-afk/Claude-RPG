@@ -1,434 +1,367 @@
 {
-	id: "FAE005CF393A8EC6"
-	filename: "03_gear"
-	title: "Gear and the Craft of Upgrading"
-	subtitle: "Rarity, affixes, sockets, gems and reforging: the long path from found to forged."
-	icon: "apotheosis:gem"
-	order_index: 3
-	group: "40103B7AFEA824B7"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "03_gear"
+	group: "40103B7AFEA824B7"
+	icon: "apotheosis:gem"
+	id: "22E09E58C820BCC1"
 	images: [{
-			x: -9.5d
-			y: -10.02d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/apotheosis.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/apotheosis.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -9.5d
+		y: -10.02d
+	}]
+	order_index: 3
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "C71936BC57E5B82D"
-			title: "From Found to Forged"
-			description: ["Every piece of gear carries a rarity and, from uncommon upward, affixes: extra stats, special effects, even names. Rarity is a ceiling, not a verdict: invest in a favourite and it stays useful.", "Rarities: Common, Uncommon, Rare, Epic, Mythic, Ancient. Chests and bosses decide how high they roll."]
+			description: [
+				"Every piece of gear carries a rarity and, from uncommon upward, affixes: extra stats, special effects, even names. Rarity is a ceiling, not a verdict: invest in a favourite and it stays useful."
+				"Rarities: Common, Uncommon, Rare, Epic, Mythic, Ancient. Chests and bosses decide how high they roll."
+			]
 			icon: "apotheosis:common_material"
+			id: "28ACC471826C6B91"
+			rewards: [{
+				id: "18A36A4A38B9C9E1"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "3FB2EBED73DB8F47"
+				type: "checkmark"
+			}]
+			title: "From Found to Forged"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "A211773BA6EA5E75"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "A34EECD859737228"
-						type: "xp"
-						xp: 20
-					}
-			]
-		},
+		}
 		{
-			id: "891095E71AFEB50A"
-			title: "Salvaging Table"
 			description: ["Break gear into materials. A rare weapon yields rare materials: the cost of a wasted drop is never zero."]
 			icon: "apotheosis:salvaging_table"
+			id: "0F44007C223C433D"
+			rewards: [{
+				id: "4CF29A4CA49CD08D"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "347051259604A810"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			title: "Salvaging Table"
 			x: 2.2d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "8784047E262F6C2F"
-						type: "item"
-						item: "apotheosis:salvaging_table"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "4CF29A4CA49CD08D"
-						type: "xp"
-						xp: 30
-					}
-			]
-			dependencies: ["C71936BC57E5B82D"]
-		},
+		}
 		{
-			id: "F92D6F62419F6540"
-			title: "Reforging Table"
 			description: ["Reroll an item's affixes using materials and levels. Costs rise with rarity: reforge something worth saving."]
 			icon: "apotheosis:reforging_table"
+			id: "3DEE05595AF219F4"
+			rewards: [{
+				id: "19A29A11C5E2285C"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "1028E9B7935B9E6E"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			title: "Reforging Table"
 			x: 4.4d
 			y: -3.6d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "F59A7CA924B9FBB9"
-						type: "item"
-						item: "apotheosis:simple_reforging_table"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "9885A126AF4EE14C"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["891095E71AFEB50A"]
-		},
+		}
 		{
-			id: "07E9AC5B2563FF70"
-			title: "Socketing"
 			description: ["A socket is a slot waiting for a gem. Sigils add sockets; gems fill them."]
 			icon: "apotheosis:sigil_of_socketing"
+			id: "07E9AC5B2563FF70"
+			rewards: [{
+				id: "541964D6C1401348"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "49E8ED5C5ED45977"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
+			title: "Socketing"
 			x: 4.4d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "49E8ED5C5ED45977"
-						type: "item"
-						item: "apotheosis:sigil_of_socketing"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "C903D815C1E95D61"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["891095E71AFEB50A"]
-		},
+		}
 		{
-			id: "FAA9270465EFF82C"
-			title: "Gems"
+			dependencies: ["07E9AC5B2563FF70"]
 			description: ["Gems are keyed to item types: armor gems, weapon gems, tool gems. Pick ones that fit your build."]
 			icon: "apotheosis:gem"
+			id: "601E493CF7DEB560"
+			rewards: [{
+				id: "0853A0F9393D3488"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "7F1EA1B78929302B"
+				item: "apotheosis:gem"
+				type: "item"
+			}]
+			title: "Gems"
 			x: 6.6000000000000005d
 			y: -1.35d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "9A75305F0167523C"
-						type: "item"
-						item: "apotheosis:gem"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "0853A0F9393D3488"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["07E9AC5B2563FF70"]
-		},
+		}
 		{
-			id: "DBDA10606D5DFA3A"
-			title: "Gem Cutting"
 			description: ["Combine gems to improve their purity. A flawless gem is worth a hundred ordinary ones."]
 			icon: "apotheosis:gem_cutting_table"
+			id: "058045AA9C500E7F"
+			rewards: [{
+				id: "70C381FEAE78AAF2"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "1A6868820E2534EE"
+				item: "apotheosis:gem_cutting_table"
+				type: "item"
+			}]
+			title: "Gem Cutting"
 			x: 8.8d
 			y: -1.35d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "EB2B0A123A001664"
-						type: "item"
-						item: "apotheosis:gem_cutting_table"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "E07D859715A99C2A"
-						type: "xp"
-						xp: 60
-					}
-			]
-			dependencies: ["FAA9270465EFF82C"]
-		},
+		}
 		{
-			id: "1D46260A3CDFED91"
-			title: "Augmenting"
 			description: ["Sometimes you keep an item and mold its affixes by hand. The augmenting table is expensive and very good."]
 			icon: "apotheosis:augmenting_table"
+			id: "1D46260A3CDFED91"
+			rewards: [{
+				id: "56CD677EB49F5D1D"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "3992622498D2ED2B"
+				item: "apotheosis:augmenting_table"
+				type: "item"
+			}]
+			title: "Augmenting"
 			x: 6.6000000000000005d
 			y: -4.95d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "3992622498D2ED2B"
-						type: "item"
-						item: "apotheosis:augmenting_table"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "56CD677EB49F5D1D"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["F92D6F62419F6540"]
-		},
+		}
 		{
-			id: "74A868EE4267E969"
-			title: "Rare"
 			description: ["Three affixes, the first set of real choices. It is the first rarity where gear starts to feel like yours."]
 			icon: "apotheosis:rare_material"
+			id: "74A868EE4267E969"
+			rewards: [{
+				id: "4B3432CB723B3579"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:affix/rare"
+				criterion: ""
+				id: "349E3E6017C2FDFE"
+				type: "advancement"
+			}]
+			title: "Rare"
 			x: 2.2d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "F12F2B379F69D3EB"
-						type: "advancement"
-						advancement: "apotheosis:affix/rare"
-					}
-			]
-			rewards: [
-					{
-						id: "C05EEC7A0634E6FD"
-						type: "xp"
-						xp: 80
-					}
-			]
-			dependencies: ["C71936BC57E5B82D"]
-		},
+		}
 		{
-			id: "66CE8A9F61473584"
-			title: "Epic"
+			dependencies: ["74A868EE4267E969"]
 			description: ["Four affixes and a named variant. Your build starts here."]
 			icon: "apotheosis:epic_material"
+			id: "66CE8A9F61473584"
+			rewards: [{
+				id: "7C9EFB624FF2988B"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:affix/epic"
+				criterion: ""
+				id: "2786FC01F458C819"
+				type: "advancement"
+			}]
+			title: "Epic"
 			x: 4.4d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "CDAEFD4E6D7C0C8E"
-						type: "advancement"
-						advancement: "apotheosis:affix/epic"
-					}
-			]
-			rewards: [
-					{
-						id: "7C9EFB624FF2988B"
-						type: "xp"
-						xp: 150
-					}
-			]
-			dependencies: ["74A868EE4267E969"]
-		},
+		}
 		{
-			id: "6AE3F817AF5427EA"
-			title: "Mythic"
+			dependencies: ["66CE8A9F61473584"]
 			description: ["Five affixes and top-tier potency. A mythic piece is a long-term investment."]
 			icon: "apotheosis:mythic_material"
+			id: "6AE3F817AF5427EA"
+			rewards: [
+				{
+					id: "2CBCB58025B94694"
+					type: "xp"
+					xp: 250
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "1FC25507492DD1F1"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:affix/mythic"
+				criterion: ""
+				id: "5FFB3479D934F6FE"
+				type: "advancement"
+			}]
+			title: "Mythic"
 			x: 6.6000000000000005d
 			y: 0.45d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "F46C2F544850310A"
-						type: "advancement"
-						advancement: "apotheosis:affix/mythic"
-					}
-			]
-			rewards: [
-					{
-						id: "2CBCB58025B94694"
-						type: "xp"
-						xp: 250
-					},
-					{
-						id: "C55148FE9C42FA51"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			dependencies: ["66CE8A9F61473584"]
-		},
+		}
 		{
-			id: "3BD6DA2BF11A030A"
-			title: "Ancient"
+			dependencies: ["6AE3F817AF5427EA"]
 			description: ["The rarest tier: only the hardest bosses and the deepest vaults will give you one. They are not 'better': they are scarcer, and that is the point."]
 			icon: "apotheosis:ancient_material"
+			id: "3BD6DA2BF11A030A"
+			rewards: [
+				{
+					id: "775C0FD885F42136"
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "70BCDE22C95745F3"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				advancement: "apotheosis:affix/ancient"
+				criterion: ""
+				id: "6411AD0FDBD54F2B"
+				type: "advancement"
+			}]
+			title: "Ancient"
 			x: 8.8d
 			y: 0.45d
-			size: 1.3d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "AA7ACA9A9A57C076"
-						type: "advancement"
-						advancement: "apotheosis:affix/ancient"
-					}
-			]
-			rewards: [
-					{
-						id: "775C0FD885F42136"
-						type: "xp"
-						xp: 500
-					},
-					{
-						id: "70BCDE22C95745F3"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					}
-			]
-			dependencies: ["6AE3F817AF5427EA"]
-		},
+		}
 		{
-			id: "C04A19F2F1C99AB1"
-			title: "Boss Gear"
+			dependencies: ["74A868EE4267E969"]
 			description: ["Apotheosis bosses roam the world carrying specially affixed gear. Defeat one for your first truly named item."]
 			icon: "apotheosis:boss_summoner"
+			id: "0BC5D3C06F0AFB04"
+			optional: true
+			rewards: [{
+				id: "077C6BA5790A3750"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:affix/boss"
+				criterion: ""
+				id: "5795C0F6D1BC91CC"
+				type: "advancement"
+			}]
+			title: "Boss Gear"
 			x: 4.4d
 			y: 1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "F9491874D5D8B58A"
-						type: "advancement"
-						advancement: "apotheosis:affix/boss"
-					}
-			]
-			rewards: [
-					{
-						id: "077C6BA5790A3750"
-						type: "xp"
-						xp: 100
-					}
-			]
-			optional: true
-			dependencies: ["74A868EE4267E969"]
-		},
+		}
 		{
-			id: "0EEF7E7BBC5D5A9F"
-			title: "Sigil of Rebirth"
 			description: ["Wipe an item's affixes, keeping its rarity; a second chance for something that nearly worked."]
 			icon: "apotheosis:sigil_of_rebirth"
+			id: "0EEF7E7BBC5D5A9F"
+			optional: true
+			rewards: [{
+				id: "60C0B4669F2D5358"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "2D03292ECB9DD3C8"
+				item: "apotheosis:sigil_of_rebirth"
+				type: "item"
+			}]
+			title: "Sigil of Rebirth"
 			x: 6.6000000000000005d
 			y: -3.15d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "2D03292ECB9DD3C8"
-						type: "item"
-						item: "apotheosis:sigil_of_rebirth"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "E02B84153BE354C4"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["F92D6F62419F6540"]
-		},
+		}
 		{
-			id: "DBDEEC65661351C8"
-			title: "Tomes of Making"
 			description: ["Tomes add enchantment rules: weapon tomes unlock weapon enchantments on anything, extraction tomes pull them back out."]
 			icon: "apotheosis:weapon_tome"
+			id: "13E60AB91BBDDCF3"
+			optional: true
+			rewards: [{
+				id: "744C1733966514B0"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "41F4FCE68C8FDBB7"
+				item: "apotheosis:weapon_tome"
+				type: "item"
+			}]
+			title: "Tomes of Making"
 			x: 2.2d
 			y: 1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "41F4FCE68C8FDBB7"
-						type: "item"
-						item: "apotheosis:weapon_tome"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "AAF683D27CA3D2AC"
-						type: "xp"
-						xp: 60
-					}
-			]
-			optional: true
-			dependencies: ["C71936BC57E5B82D"]
-		},
+		}
 		{
-			id: "4669589FFE4E1BF7"
-			title: "Ancient Gems"
+			dependencies: ["3BD6DA2BF11A030A"]
 			description: ["Gems can be ancient: fused slate, stronger than any ordinary stone."]
 			icon: "apotheosis:gem_fused_slate"
+			id: "4669589FFE4E1BF7"
+			optional: true
+			rewards: [{
+				id: "7939BBDE01CE3964"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:affix/ancient_gem"
+				criterion: ""
+				id: "487E4FC0E9E4469F"
+				type: "advancement"
+			}]
+			title: "Ancient Gems"
 			x: 11.0d
 			y: 0.45d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "487E4FC0E9E4469F"
-						type: "advancement"
-						advancement: "apotheosis:affix/ancient_gem"
-					}
-			]
-			rewards: [
-					{
-						id: "7939BBDE01CE3964"
-						type: "xp"
-						xp: 300
-					}
-			]
-			optional: true
-			dependencies: ["3BD6DA2BF11A030A"]
 		}
 	]
+	title: "Gear and the Craft of Upgrading"
 }

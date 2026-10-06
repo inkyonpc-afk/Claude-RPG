@@ -1,312 +1,294 @@
 {
-	id: "819A07AFA4ABC866"
-	filename: "10_fishing"
-	title: "The Patient Hand: Fishing and Foraging"
-	subtitle: "Quiet work for the weary."
-	icon: "aquaculture:iron_fishing_rod"
-	order_index: 10
-	group: "CF1E96262114D2FD"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "10_fishing"
+	group: ""
+	icon: {
+		Count: 1
+		id: "aquaculture:iron_fishing_rod"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "24690FDD5174CBAA"
 	images: [{
-			x: -10.6d
-			y: -8.74d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/fishing.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/fishing.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -10.6d
+		y: -8.74d
+	}]
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "AE8FE9E881CCEE3A"
-			title: "A Rod and a Line"
 			description: ["Fishing is a pastime and an economy: crates, treasure, rare fish, and ingredients for the best meals. Bait and hooks change what you catch."]
-			icon: "aquaculture:iron_fishing_rod"
+			icon: {
+				Count: 1
+				id: "aquaculture:iron_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "66306A9591937AB0"
+			rewards: [{
+				id: "5527295B4FBD03AB"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				consume_items: false
+				id: "7E650D278ACCA53D"
+				item: {
+					Count: 1
+					id: "aquaculture:iron_fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "A Rod and a Line"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "D96AA58344DFD800"
-						type: "item"
-						item: "aquaculture:iron_fishing_rod"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "5527295B4FBD03AB"
-						type: "xp"
-						xp: 25
-					}
-			]
-		},
+		}
 		{
-			id: "705C059C987116CB"
-			title: "A Better Hook"
 			description: ["Hooks matter: light, heavy, double, gold. Match them to the water."]
 			icon: "aquaculture:gold_hook"
+			id: "705C059C987116CB"
+			rewards: [{
+				id: "1407AE2FDB52F5BA"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "1B41BA00C87DEF50"
+				item: "aquaculture:gold_hook"
+				type: "item"
+			}]
+			title: "A Better Hook"
 			x: 2.2d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "1B41BA00C87DEF50"
-						type: "item"
-						item: "aquaculture:gold_hook"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "1407AE2FDB52F5BA"
-						type: "xp"
-						xp: 30
-					}
-			]
-			dependencies: ["AE8FE9E881CCEE3A"]
-		},
+		}
 		{
-			id: "7EC917D1FB5F27A2"
-			title: "A Worm Farm"
 			description: ["Bait for the patient."]
 			icon: "aquaculture:worm_farm"
+			id: "7EC917D1FB5F27A2"
+			optional: true
+			rewards: [{
+				id: "575162141FB4DA2C"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "48316509D20D0FC3"
+				item: "aquaculture:worm_farm"
+				type: "item"
+			}]
+			title: "A Worm Farm"
 			x: 2.2d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "48316509D20D0FC3"
-						type: "item"
-						item: "aquaculture:worm_farm"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "9F91DAC687E7A1C4"
-						type: "xp"
-						xp: 30
-					}
-			]
-			optional: true
-			dependencies: ["AE8FE9E881CCEE3A"]
-		},
+		}
 		{
-			id: "C79EAAADD62FEF99"
-			title: "A Tackle Box"
+			dependencies: ["705C059C987116CB"]
 			description: ["Store your hooks, line and bait."]
 			icon: "aquaculture:tackle_box"
+			id: "2EA300941C4AF540"
+			optional: true
+			rewards: [{
+				id: "05D3090B17155B32"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "1ABF68A4701C48AC"
+				item: "aquaculture:tackle_box"
+				type: "item"
+			}]
+			title: "A Tackle Box"
 			x: 4.4d
 			y: -2.4d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "1ABF68A4701C48AC"
-						type: "item"
-						item: "aquaculture:tackle_box"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "05D3090B17155B32"
-						type: "xp"
-						xp: 40
-					}
-			]
-			optional: true
-			dependencies: ["705C059C987116CB"]
-		},
+		}
 		{
-			id: "78BA7BB545A7CB57"
-			title: "Fish Fillets"
+			dependencies: ["705C059C987116CB"]
 			description: ["Clean, cook and eat."]
 			icon: "aquaculture:fish_fillet_cooked"
+			id: "78BA7BB545A7CB57"
+			rewards: [{
+				id: "0B203E24907C65CD"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "66F026B0E242930D"
+				item: "aquaculture:fish_fillet_cooked"
+				type: "item"
+			}]
+			title: "Fish Fillets"
 			x: 4.4d
 			y: -0.6d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "EECCD042B37F1AC3"
-						type: "item"
-						item: "aquaculture:fish_fillet_cooked"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "AB1FAECC493AF667"
-						type: "xp"
-						xp: 30
-					}
-			]
-			dependencies: ["705C059C987116CB"]
-		},
+		}
 		{
-			id: "210450B2569534A9"
-			title: "Neptunium"
 			description: ["A rare metal from the deep sea. Its tools are among the best for fishing and diving."]
 			icon: "aquaculture:neptunium_ingot"
+			id: "210450B2569534A9"
+			rewards: [
+				{
+					id: "154FDB5C784EEB28"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t3"
+					id: "018D87ECA504FDE9"
+					silent: true
+					title: "Tier 3 supply cache"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "2816E76B7DD6769A"
+				item: "aquaculture:neptunium_ingot"
+				type: "item"
+			}]
+			title: "Neptunium"
 			x: 6.6000000000000005d
 			y: -2.4d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "C29B9DDF47497284"
-						type: "item"
-						item: "aquaculture:neptunium_ingot"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "9BBA1992866C1E45"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "018D87ECA504FDE9"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
-						silent: true
-						title: "Tier 3 supply cache"
-					}
-			]
-			dependencies: ["C79EAAADD62FEF99"]
-		},
+		}
 		{
-			id: "625C03898CEDEFF8"
-			title: "The Neptunium Rod"
+			dependencies: ["210450B2569534A9"]
 			description: ["The finest rod in the pack."]
-			icon: "aquaculture:neptunium_fishing_rod"
+			icon: {
+				Count: 1
+				id: "aquaculture:neptunium_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "625C03898CEDEFF8"
+			optional: true
+			rewards: [{
+				id: "5333391C465DD35A"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "272A54455B7EA098"
+				item: {
+					Count: 1
+					id: "aquaculture:neptunium_fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Neptunium Rod"
 			x: 8.8d
 			y: -2.4d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "272A54455B7EA098"
-						type: "item"
-						item: "aquaculture:neptunium_fishing_rod"
-						count: 1
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "5333391C465DD35A"
-						type: "xp"
-						xp: 200
-					}
-			]
-			optional: true
-			dependencies: ["210450B2569534A9"]
-		},
+		}
 		{
-			id: "68603168F8DD1B40"
-			title: "Foraging"
 			description: ["Berries, mushrooms and herbs: a walk in the woods is also a shopping trip."]
 			icon: "minecraft:sweet_berries"
+			id: "68603168F8DD1B40"
+			optional: true
+			rewards: [{
+				id: "12A6B2D5316A8952"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "1DC84192D1B02FC7"
+				item: "minecraft:sweet_berries"
+				type: "item"
+			}]
+			title: "Foraging"
 			x: 2.2d
 			y: 1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "1DC84192D1B02FC7"
-						type: "item"
-						item: "minecraft:sweet_berries"
-						count: 4
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "F8B3DD7769089548"
-						type: "xp"
-						xp: 25
-					}
-			]
-			optional: true
-			dependencies: ["AE8FE9E881CCEE3A"]
-		},
+		}
 		{
-			id: "495FD9C80A566586"
-			title: "Mushroom Hunter"
+			dependencies: ["68603168F8DD1B40"]
 			description: ["Some mushrooms heal, some poison. Learn which is which."]
 			icon: "minecraft:red_mushroom"
+			id: "495FD9C80A566586"
+			optional: true
+			rewards: [{
+				id: "30CCC46B085FE033"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "0FD0126B33F262A8"
+				item: "minecraft:brown_mushroom"
+				type: "item"
+			}]
+			title: "Mushroom Hunter"
 			x: 4.4d
 			y: 1.2d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "0FD0126B33F262A8"
-						type: "item"
-						item: "minecraft:brown_mushroom"
-						count: 4
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "30CCC46B085FE033"
-						type: "xp"
-						xp: 25
-					}
-			]
-			optional: true
-			dependencies: ["68603168F8DD1B40"]
-		},
+		}
 		{
-			id: "7A1133A07D97E58A"
-			title: "A Patient Hand"
+			dependencies: [
+				"78BA7BB545A7CB57"
+				"68603168F8DD1B40"
+			]
 			description: ["A season of fishing and foraging. You have eaten well."]
 			icon: "minecraft:cod"
+			id: "7A1133A07D97E58A"
+			rewards: [
+				{
+					id: "19882309FF46BBEC"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "620BB713D128C9C0"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "38406E1786B240F9"
+				type: "checkmark"
+			}]
+			title: "A Patient Hand"
 			x: 6.6000000000000005d
 			y: 0.6d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "C4DA3EB1F8EE8381"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "19882309FF46BBEC"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "620BB713D128C9C0"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			dependencies: ["78BA7BB545A7CB57", "68603168F8DD1B40"]
 		}
 	]
+	title: "The Patient Hand: Fishing and Foraging"
 }

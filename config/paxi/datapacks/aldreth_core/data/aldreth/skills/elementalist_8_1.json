@@ -55,7 +55,7 @@
  "oneWayConnections": [],
  "tags": [],
  "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
- "iconTexture": "skilltree:textures/icons/potion_blue_big.png",
+ "iconTexture": "skilltree:textures/icons/potion_cyan_big.png",
  "borderTexture": "skilltree:textures/tooltip/keystone.png",
  "buttonSize": 36,
  "isStartingPoint": false,

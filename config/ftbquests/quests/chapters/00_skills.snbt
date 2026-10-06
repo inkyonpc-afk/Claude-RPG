@@ -1,389 +1,357 @@
 {
-	id: "A658279F9B983958"
-	filename: "00_skills"
-	title: "The Constellation of Embers"
-	subtitle: "620 stars. A hundred points. Every road costs something."
-	icon: "minecraft:enchanted_book"
-	order_index: 0
-	group: "40103B7AFEA824B7"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "00_skills"
+	group: "40103B7AFEA824B7"
+	icon: "minecraft:enchanted_book"
+	id: "7A7CFF861DF2D46A"
 	images: [{
-			x: -8.4d
-			y: -8.44d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/skilltree.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/skilltree.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -8.4d
+		y: -8.44d
+	}]
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "69DC68C386D88E9A"
-			title: "How to Build a Hero"
-			description: ["Aldreth has no classes. You have a people, a handful of stars, and whatever you pick up along the way. A warrior who dabbles in spellcraft is a Spellblade; a ranger who prays is a Hunter-Cleric; nobody will stop you.", "The tree has four Oaths (Might, Finesse, the Arcane, Faith) and fourteen regions. Every star costs experience. Choose a small number of stars well, rather than many badly."]
+			description: [
+				"Aldreth has no classes. You have a people, a handful of stars, and whatever you pick up along the way. A warrior who dabbles in spellcraft is a Spellblade; a ranger who prays is a Hunter-Cleric; nobody will stop you."
+				"The tree has four Oaths (Might, Finesse, the Arcane, Faith) and fourteen regions. Every star costs experience. Choose a small number of stars well, rather than many badly."
+			]
 			icon: "minecraft:knowledge_book"
+			id: "69DC68C386D88E9A"
+			rewards: [{
+				id: "369A6A5895D9A3C7"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "7926FBA16C018E39"
+				type: "checkmark"
+			}]
+			title: "How to Build a Hero"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "7926FBA16C018E39"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "369A6A5895D9A3C7"
-						type: "xp"
-						xp: 20
-					}
-			]
-		},
+		}
 		{
-			id: "B17CB3F8206F68F1"
-			title: "Eight Peoples"
+			dependencies: ["69DC68C386D88E9A"]
 			description: ["Each people carries a gift and a burden: Dwarves dig, Elves dodge, Orcs smash, Halflings stumble into luck. Your choice is permanent: there is no cheap respec for blood."]
 			icon: "minecraft:player_head"
+			id: "46C449B4434C8E16"
+			rewards: [{
+				id: "500AC45355F9FA4D"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "47789E9FC321D051"
+				type: "checkmark"
+			}]
+			title: "Eight Peoples"
 			x: 2.2d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "47789E9FC321D051"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "DA6CF124396DCAF8"
-						type: "xp"
-						xp: 20
-					}
-			]
-			dependencies: ["69DC68C386D88E9A"]
-		},
+		}
 		{
-			id: "2888A377034D31A4"
-			title: "Take an Oath"
+			dependencies: ["69DC68C386D88E9A"]
 			description: ["Open the tree and pick a starting Oath. It is free, but it decides which regions are nearest."]
 			icon: "minecraft:blaze_powder"
+			id: "2888A377034D31A4"
+			rewards: [
+				{
+					id: "742B27C4A9AB1126"
+					type: "xp"
+					xp: 20
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "6E716B1B1BD86199"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "638FFF51346E8DF2"
+				type: "checkmark"
+			}]
+			title: "Take an Oath"
 			x: 2.2d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "638FFF51346E8DF2"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "742B27C4A9AB1126"
-						type: "xp"
-						xp: 20
-					},
-					{
-						id: "84BBBE5658832CCB"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			dependencies: ["69DC68C386D88E9A"]
-		},
+		}
 		{
-			id: "088421092ED1D329"
-			title: "A Region of Your Own"
+			dependencies: ["2888A377034D31A4"]
 			description: ["Warrior, Berserker, Guardian, Paladin, Cleric, Druid, Necromancer, Blood Mage, Elementalist, Arcanist, Spellblade, Ranger, Rogue, Wanderer. Pick the one that sounds like you and walk to its first gate."]
-			icon: "minecraft:iron_sword"
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "088421092ED1D329"
+			rewards: [{
+				id: "47F554ADB5BC7926"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "0C7D39E731648C1E"
+				type: "checkmark"
+			}]
+			title: "A Region of Your Own"
 			x: 4.4d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "E9532E477A7DD5BE"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "96A3A0BE32D62884"
-						type: "xp"
-						xp: 25
-					}
-			]
-			dependencies: ["2888A377034D31A4"]
-		},
+		}
 		{
-			id: "05259D60F9F1E768"
-			title: "Notables"
+			dependencies: ["088421092ED1D329"]
 			description: ["Larger stars pair two effects: your first real choice between 'a bit more of everything' and 'a lot more of one thing'."]
 			icon: "minecraft:gold_ingot"
+			id: "05259D60F9F1E768"
+			rewards: [{
+				id: "4FAF8A5565B26553"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "5BC8E742A1E691C1"
+				type: "checkmark"
+			}]
+			title: "Notables"
 			x: 6.6000000000000005d
 			y: -2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "5BC8E742A1E691C1"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "4FAF8A5565B26553"
-						type: "xp"
-						xp: 25
-					}
-			]
-			dependencies: ["088421092ED1D329"]
-		},
+		}
 		{
-			id: "5EE77653295A5C3C"
-			title: "A Keystone"
-			description: ["Keystones change how you play, and every one carries a real price: Glass Cannon, Blood Pact, Lone Wolf, Avatar of Flame. There are 42. You will afford maybe two.", "Read the tooltip twice, then a third time."]
+			dependencies: ["05259D60F9F1E768"]
+			description: [
+				"Keystones change how you play, and every one carries a real price: Glass Cannon, Blood Pact, Lone Wolf, Avatar of Flame. There are 42. You will afford maybe two."
+				"Read the tooltip twice, then a third time."
+			]
 			icon: "minecraft:nether_star"
+			id: "5EE77653295A5C3C"
+			rewards: [
+				{
+					id: "1DE63E5A694E2808"
+					type: "xp"
+					xp: 60
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "03FCE735B5A42AE4"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "14FA14943660316B"
+				type: "checkmark"
+			}]
+			title: "A Keystone"
 			x: 8.8d
 			y: -3.6d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "14FA14943660316B"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "1DE63E5A694E2808"
-						type: "xp"
-						xp: 60
-					},
-					{
-						id: "B93317F35066737F"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			dependencies: ["05259D60F9F1E768"]
-		},
+		}
 		{
-			id: "8B15AE3AA3DD61AC"
-			title: "Cross-Region Bridges"
+			dependencies: ["5EE77653295A5C3C"]
 			description: ["Between every pair of neighbouring regions sit two hybrid stars. They are the only cheap way to mix archetypes: Battlemage, Blood Knight, Druid-Cleric, Shadowblade."]
 			icon: "minecraft:chain"
+			id: "2606ABCDFA305F3E"
+			rewards: [{
+				id: "7A267FA1EEA886B9"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "4D226293D55F345F"
+				type: "checkmark"
+			}]
+			title: "Cross-Region Bridges"
 			x: 11.0d
 			y: -3.6d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "4D226293D55F345F"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "917C1E07CC9B845F"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["5EE77653295A5C3C"]
-		},
+		}
 		{
-			id: "AF8AE96638A3C630"
-			title: "A Clean Slate"
 			description: ["The Amnesia Scroll resets your tree for a ten percent loss of levels. It is a luxury; use it when your build has changed, not when it has failed."]
 			icon: "minecraft:grindstone"
+			id: "422221321688E762"
+			rewards: [{
+				id: "2A2414E7DDC42006"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "329B60FFC8123E8E"
+				type: "checkmark"
+			}]
+			title: "A Clean Slate"
 			x: 13.200000000000001d
 			y: -4.5d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "FB9367A830FEB0C5"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "89F29B7CAF92FC1D"
-						type: "xp"
-						xp: 40
-					}
-			]
-			dependencies: ["8B15AE3AA3DD61AC"]
-		},
+		}
 		{
-			id: "D127C307ED32723A"
-			title: "XP Is Currency"
+			dependencies: ["05259D60F9F1E768"]
 			description: ["Skill points are bought with experience, not found. Every quest pays XP; some pay points directly. Enchanting and the tree compete for the same pool: plan."]
 			icon: "minecraft:experience_bottle"
+			id: "429F9087D586E8FA"
+			optional: true
+			rewards: [{
+				id: "2D916C52397A4E9E"
+				type: "xp"
+				xp: 30
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "3C990EF39FCA1DEA"
+				type: "checkmark"
+			}]
+			title: "XP Is Currency"
 			x: 8.8d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "AFC0302D0E50B5F6"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "E4EFE5BFA259F1FB"
-						type: "xp"
-						xp: 30
-					}
-			]
-			optional: true
-			dependencies: ["05259D60F9F1E768"]
-		},
+		}
 		{
-			id: "F1C062A3001DEE6E"
-			title: "Oath of Might"
+			dependencies: ["2888A377034D31A4"]
 			description: ["Warrior, Berserker and Spellblade begin here. Hit things; get hit less."]
-			icon: "minecraft:iron_sword"
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32E01A83B8747B48"
+			optional: true
+			rewards: [{
+				id: "706FCAE80D38BDB1"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "4714B1A9362D1B1F"
+				type: "checkmark"
+			}]
+			title: "Oath of Might"
 			x: 4.4d
 			y: -0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "A43A4CDECC0C0767"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "706FCAE80D38BDB1"
-						type: "xp"
-						xp: 15
-					}
-			]
-			optional: true
-			dependencies: ["2888A377034D31A4"]
-		},
+		}
 		{
-			id: "C70FA38512D61976"
-			title: "Oath of Finesse"
+			dependencies: ["2888A377034D31A4"]
 			description: ["Ranger, Rogue and Wanderer begin here. Choose your moment."]
-			icon: "minecraft:bow"
+			icon: {
+				Count: 1
+				id: "minecraft:bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1C2712AD04C0A100"
+			optional: true
+			rewards: [{
+				id: "6569BC1856E857AF"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "325559DC8C0E4168"
+				type: "checkmark"
+			}]
+			title: "Oath of Finesse"
 			x: 4.4d
 			y: 0.9d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "325559DC8C0E4168"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "F6AFFC2B1CAD4DFC"
-						type: "xp"
-						xp: 15
-					}
-			]
-			optional: true
-			dependencies: ["2888A377034D31A4"]
-		},
+		}
 		{
-			id: "7118D693C81472A8"
-			title: "Oath of the Arcane"
+			dependencies: ["2888A377034D31A4"]
 			description: ["Blood Mage, Necromancer, Arcanist, Elementalist and Spellblade begin here. Mana is a budget, not a limit."]
 			icon: "irons_spellbooks:copper_spell_book"
+			id: "7118D693C81472A8"
+			optional: true
+			rewards: [{
+				id: "7F5ED58D028370A8"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "162D93E403108396"
+				type: "checkmark"
+			}]
+			title: "Oath of the Arcane"
 			x: 4.4d
 			y: 2.7d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "162D93E403108396"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "D1C465D0ABFB756B"
-						type: "xp"
-						xp: 15
-					}
-			]
-			optional: true
-			dependencies: ["2888A377034D31A4"]
-		},
+		}
 		{
-			id: "E9E781C3FEBC6B58"
-			title: "Oath of Faith"
+			dependencies: ["2888A377034D31A4"]
 			description: ["Paladin, Cleric, Druid and Guardian begin here. Keep the line standing."]
 			icon: "minecraft:golden_apple"
+			id: "7A283ADAC6A8B711"
+			optional: true
+			rewards: [{
+				id: "0B0F73EADA9F1A07"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "571D9DC10D25626A"
+				type: "checkmark"
+			}]
+			title: "Oath of Faith"
 			x: 4.4d
 			y: 4.5d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "571D9DC10D25626A"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "0B0F73EADA9F1A07"
-						type: "xp"
-						xp: 15
-					}
-			]
-			optional: true
-			dependencies: ["2888A377034D31A4"]
-		},
+		}
 		{
-			id: "63E05099CD405FF2"
-			title: "A True Hybrid"
+			dependencies: ["5EE77653295A5C3C"]
 			description: ["Reach two keystones from different Oaths. You will be very good at a very specific thing, and noticeably worse at everything else."]
 			icon: "minecraft:smithing_table"
+			id: "63E05099CD405FF2"
+			rewards: [
+				{
+					id: "399F8253D0F619C8"
+					type: "xp"
+					xp: 150
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "359211603405EACA"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "44A62C728B6D7857"
+				type: "checkmark"
+			}]
+			title: "A True Hybrid"
 			x: 13.200000000000001d
 			y: -2.7d
-			size: 1.3d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "97C54AEA4DA2127F"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "399F8253D0F619C8"
-						type: "xp"
-						xp: 150
-					},
-					{
-						id: "359211603405EACA"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					}
-			]
-			dependencies: ["5EE77653295A5C3C", "8B15AE3AA3DD61AC"]
 		}
 	]
+	title: "The Constellation of Embers"
 }

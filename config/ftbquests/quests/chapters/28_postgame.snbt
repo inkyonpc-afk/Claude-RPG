@@ -1,633 +1,582 @@
 {
-	id: "1CD1134A1AE99992"
-	filename: "28_postgame"
-	title: "Postgame: The Long Dark After"
-	subtitle: "The Crown is whole and the world is still dangerous. This is where legends are measured."
-	icon: "minecraft:totem_of_undying"
-	order_index: 28
-	group: "66515315CBB6E386"
-	default_quest_shape: "circle"
-	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
-	progression_mode: "flexible"
+	default_quest_shape: "circle"
+	filename: "28_postgame"
+	group: "66515315CBB6E386"
+	icon: "minecraft:totem_of_undying"
+	id: "1CD1134A1AE99992"
 	images: [{
-			x: -11.7d
-			y: -8.44d
-			width: 30.0d
-			height: 16.88d
-			rotation: 0.0d
-			image: "aldreth:textures/quests/postgame.png"
-			order: 0
-			alpha: 0.55d
-		}]
+		alpha: 0
+		height: 16.88d
+		image: "aldreth:textures/quests/postgame.png"
+		rotation: 0.0d
+		width: 30.0d
+		x: -11.7d
+		y: -8.44d
+	}]
+	order_index: 6
+	progression_mode: "flexible"
+	quest_links: [ ]
 	quests: [
 		{
-			id: "1781E94F0461AABC"
-			title: "A Quieter World"
 			description: ["Peace is just the interval between disasters. The Ember keeps burning; it knows there are things left to do."]
 			icon: "minecraft:totem_of_undying"
+			id: "1781E94F0461AABC"
+			rewards: [{
+				id: "30A209017FD7FDA1"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				id: "31469A2BB99D0E69"
+				type: "checkmark"
+			}]
+			title: "A Quieter World"
 			x: 0.0d
 			y: 0.0d
-			size: 1.3d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "EC75B882179AA2FC"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "30A209017FD7FDA1"
-						type: "xp"
-						xp: 200
-					}
-			]
-			dependencies: ["C8CE675E13635F7F"]
-		},
+		}
 		{
-			id: "A9F19A718F13BCDD"
-			title: "Maledictus"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["A cursed warrior in the Cursed Pyramid's deepest vault; strong, fast, hateful. Cataclysm's hardest early superboss."]
 			icon: "cataclysm:witherite_ingot"
+			id: "04613A872BD5C120"
+			rewards: [
+				{
+					id: "6E3C82006DAB7825"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "5893DDD11EF59799"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.6d
+			tasks: [
+				{
+					entity: "cataclysm:maledictus"
+					id: "238FE59BBAA52DB3"
+					type: "kill"
+					value: 1L
+				}
+				{
+					advancement: "cataclysm:kill_maledictus"
+					criterion: ""
+					id: "7188C73168D87533"
+					type: "advancement"
+				}
+			]
+			title: "Maledictus"
 			x: 2.2d
 			y: -10.8d
-			size: 1.6d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "238FE59BBAA52DB3"
-						type: "kill"
-						entity: "cataclysm:maledictus"
-						value: 1
-					},
-					{
-						id: "E169BAE899136416"
-						type: "advancement"
-						advancement: "cataclysm:kill_maledictus"
-					}
-			]
-			rewards: [
-					{
-						id: "908EF73AE152CD10"
-						type: "xp"
-						xp: 1500
-					},
-					{
-						id: "8F225C66F3A5C6BD"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "46118C832B0DAB20"
-			title: "Scylla"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["The siren-queen of the abyssal depths. Her storms are the longest in any fight in the game."]
 			icon: "cataclysm:abyssal_egg"
+			id: "46118C832B0DAB20"
+			rewards: [
+				{
+					id: "68D99B5913DF5267"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "625D18E3F307B6A4"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "octagon"
+			size: 1.6d
+			tasks: [
+				{
+					entity: "cataclysm:scylla"
+					id: "709F5C74177321AE"
+					type: "kill"
+					value: 1L
+				}
+				{
+					advancement: "cataclysm:kill_scylla"
+					criterion: ""
+					id: "67C32A54598FE2DA"
+					type: "advancement"
+				}
+			]
+			title: "Scylla"
 			x: 2.2d
 			y: -9.0d
-			size: 1.6d
-			shape: "octagon"
-			tasks: [
-					{
-						id: "709F5C74177321AE"
-						type: "kill"
-						entity: "cataclysm:scylla"
-						value: 1
-					},
-					{
-						id: "C2374FC760CA0026"
-						type: "advancement"
-						advancement: "cataclysm:kill_scylla"
-					}
-			]
-			rewards: [
-					{
-						id: "C9A8E86ABBF07607"
-						type: "xp"
-						xp: 1500
-					},
-					{
-						id: "CF9B7E01B3D23F2E"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "72753966581602EC"
-			title: "All Cataclysm"
+			dependencies: ["46118C832B0DAB20"]
 			description: ["Every boss from the Nether to the sea. A rare completion, and the gear to prove it."]
 			icon: "cataclysm:gauntlet_of_guard"
+			id: "72753966581602EC"
+			rewards: [
+				{
+					id: "305486F48946062D"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "15402133D6AFC4B3"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "3E9BA2E7DECA67F8"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "cataclysm:kill_all_bosses"
+				criterion: ""
+				id: "4BDC4FBD917F97CD"
+				type: "advancement"
+			}]
+			title: "All Cataclysm"
 			x: 4.4d
 			y: -10.5d
-			size: 1.5d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "4BDC4FBD917F97CD"
-						type: "advancement"
-						advancement: "cataclysm:kill_all_bosses"
-					}
-			]
-			rewards: [
-					{
-						id: "305486F48946062D"
-						type: "xp"
-						xp: 2000
-					},
-					{
-						id: "15402133D6AFC4B3"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					},
-					{
-						id: "923F77DF5DC2042F"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			dependencies: ["A9F19A718F13BCDD", "46118C832B0DAB20"]
-		},
+		}
 		{
-			id: "83D4EE9CF54FC2B2"
-			title: "The Obsidilith"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["A towering monolith in the End's void, summoned and sealed behind obsidian. Its beams repeat and escalate."]
 			icon: "minecraft:obsidian"
+			id: "75708F62C8497DC3"
+			optional: true
+			rewards: [
+				{
+					id: "5B4C0505904060C1"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "7D87F99509EDB31B"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "bosses_of_mass_destruction:obsidilith"
+				id: "09EAA801DB23C1E1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Obsidilith"
 			x: 2.2d
 			y: -7.2d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "09EAA801DB23C1E1"
-						type: "kill"
-						entity: "bosses_of_mass_destruction:obsidilith"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "5B4C0505904060C1"
-						type: "xp"
-						xp: 1200
-					},
-					{
-						id: "AC6033F926625E2A"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "0E5F86DCD9075002"
-			title: "The Void Blossom"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["A lotus in a hole in the world. Its petals are spears; its heart is a sapphire."]
 			icon: "bosses_of_mass_destruction:void_blossom"
+			id: "0E5F86DCD9075002"
+			optional: true
+			rewards: [
+				{
+					id: "41BFB5806270F237"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "1678FE3A6D67B623"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "bosses_of_mass_destruction:void_blossom"
+				id: "43FD78AD20A534DF"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Void Blossom"
 			x: 2.2d
 			y: -5.4d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "AEBCA2ABC9A6547B"
-						type: "kill"
-						entity: "bosses_of_mass_destruction:void_blossom"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "A1CD37724DD12532"
-						type: "xp"
-						xp: 1200
-					},
-					{
-						id: "FC1208A795EAE643"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "DE509B559F6049C8"
-			title: "The Gauntlet"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["A floating fist in a cave of chains. The only thing worse than its punches is the wait between them."]
 			icon: "minecraft:chain"
+			id: "1BDADF28CC500B23"
+			optional: true
+			rewards: [
+				{
+					id: "6F6BFACE2A81372B"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "42CDD6451A79A4DF"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				id: "5A8CB88B5BBC16E1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Gauntlet"
 			x: 2.2d
 			y: -3.6d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "B909A42BF6B0BDB7"
-						type: "kill"
-						entity: "bosses_of_mass_destruction:gauntlet"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "6F6BFACE2A81372B"
-						type: "xp"
-						xp: 1200
-					},
-					{
-						id: "A4CFE9439C19DD1F"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "15834883452D0C8C"
-			title: "The Dread Lich"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["Ice and Fire's dread lich is a siege boss: a wave of wights, a king, and a very large number of ways to die."]
 			icon: "minecraft:wither_skeleton_skull"
+			id: "15834883452D0C8C"
+			optional: true
+			rewards: [
+				{
+					id: "67862925165C74B7"
+					type: "xp"
+					xp: 1200
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "5A214D2F1292C955"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "iceandfire:dread_lich"
+				id: "745E4283B9F980A9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Dread Lich"
 			x: 2.2d
 			y: -1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "745E4283B9F980A9"
-						type: "kill"
-						entity: "iceandfire:dread_lich"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "9F5CC36EB743172E"
-						type: "xp"
-						xp: 1200
-					},
-					{
-						id: "5A214D2F1292C955"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "DCB13284260A5F89"
-			title: "The Hydra of Fire and Flood"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["Its heads regenerate. Its fire spreads. It is the largest non-dragon beast in the game."]
 			icon: "minecraft:dragon_head"
-			x: 2.2d
-			y: -0.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "47EA56DDEE715A8C"
-						type: "kill"
-						entity: "iceandfire:hydra"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "B09FF03A23070B43"
-						type: "xp"
-						xp: 800
-					},
-					{
-						id: "AF6D3C2FAEC9E8C5"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
-						silent: true
-						title: "Tier 5 supply cache"
-					}
-			]
+			id: "748BFEF00CE5BBEE"
 			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+			rewards: [
+				{
+					id: "4D77216BC9091CB7"
+					type: "xp"
+					xp: 800
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t5"
+					id: "3BEDD328BC523912"
+					silent: true
+					title: "Tier 5 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "iceandfire:hydra"
+				id: "47EA56DDEE715A8C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Hydra of Fire and Flood"
+			x: 2.2d
+			y: 0.0d
+		}
 		{
-			id: "9F36E5415B14268F"
-			title: "The Ice Dragon"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["The cold sister. Its glaciers are an obstacle; its steel is a reward."]
 			icon: "iceandfire:dragonsteel_ice_ingot"
+			id: "120FAB4E36F8FED1"
+			optional: true
+			rewards: [
+				{
+					id: "1B18269077EC02AA"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "2E453EFE50C8A812"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				entity: "iceandfire:ice_dragon"
+				id: "13CF953EE32D624B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Ice Dragon"
 			x: 2.2d
 			y: 1.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "13CF953EE32D624B"
-						type: "kill"
-						entity: "iceandfire:ice_dragon"
-						value: 1
-					}
-			]
-			rewards: [
-					{
-						id: "1B18269077EC02AA"
-						type: "xp"
-						xp: 1000
-					},
-					{
-						id: "2E453EFE50C8A812"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "85D75E45776E917A"
-			title: "Ancient"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["Past mythic lies the rarest tier of loot. Items here are not found, they are inherited: only the most dangerous places drop them."]
 			icon: "apotheosis:ancient_material"
+			id: "08991BB5EBF0ACF9"
+			rewards: [
+				{
+					id: "15FC25DEDC1B5C61"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					command: "skilltree points add {p} 2"
+					id: "1DE46E43A4C75D8D"
+					silent: true
+					title: "2 skill points"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "5B8D29750D2BDE6B"
+					silent: true
+					title: "Tier 6 supply cache"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:affix/ancient"
+				criterion: ""
+				id: "6746EAD7C18097CF"
+				type: "advancement"
+			}]
+			title: "Ancient"
 			x: 2.2d
 			y: 3.6d
-			size: 1.0d
-			shape: "hexagon"
-			tasks: [
-					{
-						id: "924B93D18819948E"
-						type: "advancement"
-						advancement: "apotheosis:affix/ancient"
-					}
-			]
-			rewards: [
-					{
-						id: "15FC25DEDC1B5C61"
-						type: "xp"
-						xp: 2000
-					},
-					{
-						id: "9C83381979F4E59A"
-						type: "command"
-						command: "skilltree points add {p} 2"
-						elevate: true
-						silent: true
-						title: "2 skill points"
-					},
-					{
-						id: "5B8D29750D2BDE6B"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Tier 6 supply cache"
-					}
-			]
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "1AC6740817342FAA"
-			title: "An Ancient Gem"
 			description: ["The strongest gems are earned by killing the strongest things."]
 			icon: "apotheosis:gem_fused_slate"
+			id: "1AC6740817342FAA"
+			optional: true
+			rewards: [{
+				id: "45F1E9D0E185548A"
+				type: "xp"
+				xp: 1500
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:affix/ancient_gem"
+				criterion: ""
+				id: "7A3CDC35049D6CB1"
+				type: "advancement"
+			}]
+			title: "An Ancient Gem"
 			x: 4.4d
 			y: 3.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "B2A79FDB3F9BA700"
-						type: "advancement"
-						advancement: "apotheosis:affix/ancient_gem"
-					}
-			]
-			rewards: [
-					{
-						id: "91A94DDC24D1F4C7"
-						type: "xp"
-						xp: 1500
-					}
-			]
-			optional: true
-			dependencies: ["85D75E45776E917A"]
-		},
+		}
 		{
-			id: "89EED253C20D5BE3"
-			title: "A Level 100 Table"
 			description: ["The final shelves. Enchantments here go beyond max level, with a cost."]
 			icon: "apotheosis:ender_library"
+			id: "1905C5ADCDF4E068"
+			optional: true
+			rewards: [
+				{
+					id: "25356AC09C4B23A0"
+					type: "xp"
+					xp: 1500
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "6AC739BB029733AC"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "apotheosis:enchanting/100ench"
+				criterion: ""
+				id: "7F8ED54DF6704350"
+				type: "advancement"
+			}]
+			title: "A Level 100 Table"
 			x: 4.4d
 			y: 4.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "8A2F7170ACEFC17D"
-						type: "advancement"
-						advancement: "apotheosis:enchanting/100ench"
-					}
-			]
-			rewards: [
-					{
-						id: "25356AC09C4B23A0"
-						type: "xp"
-						xp: 1500
-					},
-					{
-						id: "E091D049FF3D0059"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			optional: true
-			dependencies: ["85D75E45776E917A"]
-		},
+		}
 		{
-			id: "C91300BC1426D759"
-			title: "Hero of the Village"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["Protect a village from a raid and the villagers will remember. It is a small honour. It is also, in its way, the biggest."]
 			icon: "minecraft:emerald_block"
+			id: "061C047F742C4FFA"
+			optional: true
+			rewards: [
+				{
+					id: "6FEFA8322CB890E4"
+					type: "xp"
+					xp: 500
+				}
+				{
+					command: "skilltree points add {p} 1"
+					id: "689D2725E78B1FAE"
+					silent: true
+					title: "1 skill point"
+					type: "command"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "minecraft:adventure/hero_of_the_village"
+				criterion: ""
+				id: "2057F50D6FA155F1"
+				type: "advancement"
+			}]
+			title: "Hero of the Village"
 			x: 2.2d
 			y: 5.4d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "A8F3F7809324F286"
-						type: "advancement"
-						advancement: "minecraft:adventure/hero_of_the_village"
-					}
-			]
-			rewards: [
-					{
-						id: "6FEFA8322CB890E4"
-						type: "xp"
-						xp: 500
-					},
-					{
-						id: "EF23DA62ED5FE946"
-						type: "command"
-						command: "skilltree points add {p} 1"
-						elevate: true
-						silent: true
-						title: "1 skill point"
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "861EA66EE600C40A"
-			title: "Every Last One"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["Kill every hostile mob in the base game. The modded ones will come eventually."]
 			icon: "minecraft:wither_skeleton_skull"
+			id: "0921693D2CDE43A6"
+			optional: true
+			rewards: [{
+				id: "7357B0330708D482"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "minecraft:adventure/kill_all_mobs"
+				criterion: ""
+				id: "164B665F3D90B236"
+				type: "advancement"
+			}]
+			title: "Every Last One"
 			x: 2.2d
 			y: 7.2d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "D710A62AD9F3A808"
-						type: "advancement"
-						advancement: "minecraft:adventure/kill_all_mobs"
-					}
-			]
-			rewards: [
-					{
-						id: "C78204EF55934318"
-						type: "xp"
-						xp: 1000
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "9C630232B01ECEB2"
-			title: "A Good Drink"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["Get every potion effect at least once. Many of them are useful, some of them are wonderful."]
 			icon: "minecraft:brewing_stand"
+			id: "5A160BB3414E1D31"
+			optional: true
+			rewards: [{
+				id: "201E8E0A5FC65DBF"
+				type: "xp"
+				xp: 800
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "minecraft:nether/all_potions"
+				criterion: ""
+				id: "148D1FBC76DEDF27"
+				type: "advancement"
+			}]
+			title: "A Good Drink"
 			x: 2.2d
 			y: 9.0d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "98F151BFE5358C6D"
-						type: "advancement"
-						advancement: "minecraft:nether/all_potions"
-					}
-			]
-			rewards: [
-					{
-						id: "9A6682A17A3B97DF"
-						type: "xp"
-						xp: 800
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "2444F0DDFE5BC9A7"
-			title: "Wave Defense"
+			dependencies: ["1781E94F0461AABC"]
 			description: ["Gate pearls summon arenas of enemies in waves. Rewards scale with the arena. Do not attempt the last wave without all your potions."]
 			icon: "gateways:gate_pearl"
+			id: "2444F0DDFE5BC9A7"
+			optional: true
+			rewards: [{
+				id: "14114F6A83FF3E2F"
+				type: "xp"
+				xp: 600
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				count: 3L
+				id: "0F24776DF5C393FA"
+				item: "gateways:gate_pearl"
+				type: "item"
+			}]
+			title: "Wave Defense"
 			x: 2.2d
 			y: 10.8d
-			size: 1.0d
-			shape: "circle"
-			tasks: [
-					{
-						id: "DEEEBE9FFD6296C6"
-						type: "item"
-						item: "gateways:gate_pearl"
-						count: 3
-						consume_items: false
-					}
-			]
-			rewards: [
-					{
-						id: "E1B9321E54DE6222"
-						type: "xp"
-						xp: 600
-					}
-			]
-			optional: true
-			dependencies: ["1781E94F0461AABC"]
-		},
+		}
 		{
-			id: "9C88F489A61739C7"
-			title: "Legend"
-			description: ["There are builds and then there are legends. Stand in front of the skill tree and count: how many keystones can you put in one character, and what does each one cost you?", "That question has no end; that is the point."]
+			dependencies: ["72753966581602EC"]
+			description: [
+				"There are builds and then there are legends. Stand in front of the skill tree and count: how many keystones can you put in one character, and what does each one cost you?"
+				"That question has no end; that is the point."
+			]
 			icon: "minecraft:nether_star"
+			id: "19060D24B4283ECC"
+			rewards: [
+				{
+					id: "475DAF0BFAAE6CE6"
+					type: "xp"
+					xp: 3000
+				}
+				{
+					command: "skilltree points add {p} 5"
+					id: "134D5D30033C0293"
+					silent: true
+					title: "5 skill points"
+					type: "command"
+				}
+				{
+					command: "loot give {p} loot aldreth:quest/t6"
+					id: "457F3C57E3D6592C"
+					silent: true
+					title: "Legend cache"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			size: 1.8d
+			tasks: [{
+				id: "3E6B75D41996B650"
+				type: "checkmark"
+			}]
+			title: "Legend"
 			x: 6.6000000000000005d
 			y: -3.45d
-			size: 1.8d
-			shape: "diamond"
-			tasks: [
-					{
-						id: "B9C6BADDB6A97FE5"
-						type: "checkmark"
-					}
-			]
-			rewards: [
-					{
-						id: "475DAF0BFAAE6CE6"
-						type: "xp"
-						xp: 3000
-					},
-					{
-						id: "134D5D30033C0293"
-						type: "command"
-						command: "skilltree points add {p} 5"
-						elevate: true
-						silent: true
-						title: "5 skill points"
-					},
-					{
-						id: "457F3C57E3D6592C"
-						type: "command"
-						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
-						silent: true
-						title: "Legend cache"
-					}
-			]
-			dependencies: ["72753966581602EC", "85D75E45776E917A"]
 		}
 	]
+	title: "Postgame: The Long Dark After"
 }
