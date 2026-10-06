@@ -44,9 +44,9 @@
 	[Dragons.Griefing]
 		#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default. This value is also affected by minecrafts mob griefing rule.
 		#Range: 0 ~ 2
-		"Dragon Griefing" = 0
+		"Dragon Griefing" = 1
 		#True if tamed dragons can follow the griefing rules.
-		"Tamed Dragon Griefing" = true
+		"Tamed Dragon Griefing" = false
 		#The percentage chance for a block to drop as an item when a dragon breaks it.
 		#Range: 0.0 ~ 1.0
 		"Dragon Block Breaking Drop Chance" = 0.10000000149011612
@@ -80,7 +80,7 @@
 		#Range: 0.0 ~ 2.0
 		"Dragon Flight Speed Modifier" = 1.0
 		#Enable this if your server is being bombarded with moved wrongly or moved too fast console messages. REQUIRES RESTART!
-		"Dragon Moved Wrongly Error Fix" = false
+		"Dragon Moved Wrongly Error Fix" = true
 
 	[Dragons.Behaviour]
 		#How high dragons can fly, in Y height.
@@ -280,7 +280,7 @@
 		"Amphithere Tame Time" = 400
 		#How fast amphitheres fly.
 		#Range: 0.0 ~ 3.0
-		"Amphithere Flight Speed" = 1.75
+		"Amphithere Flight Speed" = 1.5
 		#Maximum amphithere health
 		#Range: 1.0 ~ 10000.0
 		"Amphithere Max Health" = 50.0
@@ -317,7 +317,7 @@
 		"Hippogryph Spawn Weight" = 2
 		#Change this to slow down or speed up hippogryph flight.
 		#Range: 0.0 ~ 2.0
-		"Hippogryph Flight Speed Modifier" = 1.0
+		"Hippogryph Flight Speed Modifier" = 0.75
 
 	[Mobs.Gorgons]
 		#Maximum gorgon health

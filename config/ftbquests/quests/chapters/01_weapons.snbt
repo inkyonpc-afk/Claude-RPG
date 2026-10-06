@@ -1,962 +1,772 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	id: "B27A803ED346FBBF"
 	filename: "01_weapons"
-	group: "40103B7AFEA824B7"
-	icon: {
-		Count: 1
-		id: "minecraft:diamond_sword"
-		tag: {
-			Damage: 0
-		}
-	}
-	id: "2EF575E7A5D321AE"
-	images: [{
-		alpha: 0
-		height: 16.88d
-		image: "aldreth:textures/quests/weapons.png"
-		rotation: 0.0d
-		width: 30.0d
-		x: -11.7d
-		y: -8.44d
-	}]
+	title: "The Weapon Sandbox"
+	subtitle: "Twenty-one classes of weapon, each with its own rhythm, its own scaling and its own place on the tree."
+	icon: "minecraft:diamond_sword"
 	order_index: 1
+	group: "40103B7AFEA824B7"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
 	progression_mode: "flexible"
-	quest_links: [ ]
+	images: [{
+			x: -11.7d
+			y: -8.44d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/weapons.png"
+			order: 0
+			alpha: 0.55d
+		}]
 	quests: [
 		{
-			description: [
-				"Every weapon in Aldreth belongs to a class, and every class plays differently: speed, reach, stagger, sweep, windup. Combat has weight and direction: the sword you pick tells the world who you are."
-				"Find an example of each class and see how it feels. Your skill tree rewards sticking to a class, so play with a few before you commit."
-			]
-			icon: {
-				Count: 1
-				id: "minecraft:iron_sword"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "5AD5497DA8492BD9"
-			rewards: [{
-				id: "5E16DC5B62BE39A6"
-				type: "xp"
-				xp: 20
-			}]
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				id: "32D0A895AE2F19CC"
-				type: "checkmark"
-			}]
+			id: "D7061B23D6A24A12"
 			title: "An Arsenal of Many Hands"
+			description: ["Every weapon in Aldreth belongs to a class, and every class plays differently: speed, reach, stagger, sweep, windup. Combat has weight and direction: the sword you pick tells the world who you are.", "Find an example of each class and see how it feels. Your skill tree rewards sticking to a class, so play with a few before you commit."]
+			icon: "minecraft:iron_sword"
 			x: 0.0d
 			y: 0.0d
-		}
-		{
-			description: [
-				"The generalist: balanced speed, reach and damage. Blocks, parries, never lets you down. Best on: Warrior."
-				"Obtain any longsword to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:iron_longsword"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "0AFB18F7D4BC0484"
-			optional: true
-			rewards: [{
-				id: "4CCDE7B0D2BB9558"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "72349ECDA6A4CAE5"
-				item: {
-					Count: 1
-					id: "simplyswords:iron_longsword"
-					tag: {
-						Damage: 0
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "32D0A895AE2F19CC"
+						type: "checkmark"
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "5E16DC5B62BE39A6"
+						type: "xp"
+						xp: 20
+					}
+			]
+		},
+		{
+			id: "AFE2E8EA5BFA1DB1"
 			title: "Longsword"
+			description: ["The generalist: balanced speed, reach and damage. Blocks, parries, never lets you down. Best on: Warrior.", "Obtain any longsword to complete this step; every class is represented."]
+			icon: "simplyswords:iron_longsword"
 			x: 2.2d
 			y: -18.9d
-		}
-		{
-			description: [
-				"Faster than a longsword and quicker to find an opening. Bleed on crits; draw-cut combos. Best on: Rogue or Warrior."
-				"Obtain any katana to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_katana"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "0BECB1B969B13D98"
-			optional: true
-			rewards: [{
-				id: "0281ADF865363AF2"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "399796A7DD6789D4"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_katana"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "72349ECDA6A4CAE5"
+						type: "item"
+						item: "simplyswords:iron_longsword"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "4CCDE7B0D2BB9558"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "C9A7C51EFB04A609"
 			title: "Katana"
+			description: ["Faster than a longsword and quicker to find an opening. Bleed on crits; draw-cut combos. Best on: Rogue or Warrior.", "Obtain any katana to complete this step; every class is represented."]
+			icon: "simplyswords:gold_katana"
 			x: 2.2d
 			y: -17.1d
-		}
-		{
-			description: [
-				"Thrust, riposte, flourish. Great critical scaling, light armor, light everything. Best on: Rogue or Spellblade."
-				"Obtain any rapier to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_rapier"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "774F8CB30E4EB323"
-			optional: true
-			rewards: [{
-				id: "3F2AD0B1517F7258"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "240B205855A68A38"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_rapier"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "399796A7DD6789D4"
+						type: "item"
+						item: "simplyswords:gold_katana"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "0281ADF865363AF2"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "774F8CB30E4EB323"
 			title: "Rapier"
+			description: ["Thrust, riposte, flourish. Great critical scaling, light armor, light everything. Best on: Rogue or Spellblade.", "Obtain any rapier to complete this step; every class is represented."]
+			icon: "simplyswords:gold_rapier"
 			x: 2.2d
 			y: -15.3d
-		}
-		{
-			description: [
-				"The fastest weapon in the game. Dual-wielding daggers is an entire build. Best on: Rogue."
-				"Obtain any dagger to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_sai"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "01E889140C36D0C8"
-			optional: true
-			rewards: [{
-				id: "7495460742110F52"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "1AFC9E7F3AC5B229"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_sai"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "84FDDD4E4BBB28A0"
+						type: "item"
+						item: "simplyswords:gold_rapier"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "3F2AD0B1517F7258"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "BC56E1D50F393C67"
 			title: "Dagger"
+			description: ["The fastest weapon in the game. Dual-wielding daggers is an entire build. Best on: Rogue.", "Obtain any dagger to complete this step; every class is represented."]
+			icon: "simplyswords:gold_sai"
 			x: 2.2d
 			y: -13.5d
-		}
-		{
-			description: [
-				"Slow, heavy, wide. The windup is your cost and the stagger is your reward. Best on: Warrior or Berserker."
-				"Obtain any greatsword to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_claymore"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "4D7EA497EB53D2EE"
-			optional: true
-			rewards: [{
-				id: "3C57BC52D536D2E0"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "197B7C558D8BF403"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_claymore"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "9E670C4B81EC938B"
+						type: "item"
+						item: "simplyswords:gold_sai"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "7495460742110F52"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "4D7EA497EB53D2EE"
 			title: "Greatsword"
+			description: ["Slow, heavy, wide. The windup is your cost and the stagger is your reward. Best on: Warrior or Berserker.", "Obtain any greatsword to complete this step; every class is represented."]
+			icon: "simplyswords:gold_claymore"
 			x: 2.2d
 			y: -11.7d
-		}
-		{
-			description: [
-				"A double-bladed spin machine. Hits twice, rewards aggression, punishes hesitation. Best on: Berserker."
-				"Obtain any twinblade to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_twinblade"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "07E385095B134181"
-			optional: true
-			rewards: [{
-				id: "15FDF4578969366C"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "1B11A16745DF0D2B"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_twinblade"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "197B7C558D8BF403"
+						type: "item"
+						item: "simplyswords:gold_claymore"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "CE06E843FAC47BFA"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "07E385095B134181"
 			title: "Twinblade"
+			description: ["A double-bladed spin machine. Hits twice, rewards aggression, punishes hesitation. Best on: Berserker.", "Obtain any twinblade to complete this step; every class is represented."]
+			icon: "simplyswords:gold_twinblade"
 			x: 2.2d
 			y: -9.9d
-		}
-		{
-			description: [
-				"One-handed and brutal. Cleaves shields and armor. Bleeds. Best on: Berserker."
-				"Obtain any axe to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "soulsweapons:leviathan_axe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "37C89147B23B41FB"
-			optional: true
-			rewards: [{
-				id: "67E623F4C5A0FBEF"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "694E0000E95C142F"
-				item: {
-					Count: 1
-					id: "soulsweapons:leviathan_axe"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "1B11A16745DF0D2B"
+						type: "item"
+						item: "simplyswords:gold_twinblade"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "15FDF4578969366C"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "9D2923D0495F5594"
 			title: "Axe"
+			description: ["One-handed and brutal. Cleaves shields and armor. Bleeds. Best on: Berserker.", "Obtain any axe to complete this step; every class is represented."]
+			icon: "soulsweapons:leviathan_axe"
 			x: 2.2d
 			y: -8.1d
-		}
-		{
-			description: [
-				"An axe on steroids. Huge sweeps, huge windup, huge sound. Best on: Berserker."
-				"Obtain any greataxe to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_greataxe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "6DB09E5D77E3D92E"
-			optional: true
-			rewards: [{
-				id: "521E9C91C2B095AD"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "7451D9AE5C9FC740"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_greataxe"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "9E687D09E7F13F6E"
+						type: "item"
+						item: "soulsweapons:leviathan_axe"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "67E623F4C5A0FBEF"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "A4B8A96CBA98A712"
 			title: "Greataxe"
+			description: ["An axe on steroids. Huge sweeps, huge windup, huge sound. Best on: Berserker.", "Obtain any greataxe to complete this step; every class is represented."]
+			icon: "simplyswords:gold_greataxe"
 			x: 2.2d
 			y: -6.3d
-		}
-		{
-			description: [
-				"Staggers and breaks things. The best partner of a shield and a cleric. Best on: Guardian or Paladin."
-				"Obtain any warhammer to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_greathammer"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "6E291B621BF125A6"
-			optional: true
-			rewards: [{
-				id: "6667EA693FCBEFEB"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "35EFC37AEAF4AF42"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_greathammer"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "984CE39A6BA3245A"
+						type: "item"
+						item: "simplyswords:gold_greataxe"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "521E9C91C2B095AD"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "CEADE6F1DB54818C"
 			title: "Warhammer"
+			description: ["Staggers and breaks things. The best partner of a shield and a cleric. Best on: Guardian or Paladin.", "Obtain any warhammer to complete this step; every class is represented."]
+			icon: "simplyswords:gold_greathammer"
 			x: 2.2d
 			y: -4.5d
-		}
-		{
-			description: [
-				"Crushing blows against armor and undead. The paladin's best friend. Best on: Paladin."
-				"Obtain any mace to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "magistuarmory:club"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "723EFBDC2524C64C"
-			optional: true
-			rewards: [{
-				id: "3DE79822EA272BAC"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "6A8D05B2401BE74F"
-				item: {
-					Count: 1
-					id: "magistuarmory:club"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "B03506B22BE09A30"
+						type: "item"
+						item: "simplyswords:gold_greathammer"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "97A4B7C6C2C6F4F1"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "723EFBDC2524C64C"
 			title: "Mace"
+			description: ["Crushing blows against armor and undead. The paladin's best friend. Best on: Paladin.", "Obtain any mace to complete this step; every class is represented."]
+			icon: "magistuarmory:club"
 			x: 2.2d
 			y: -2.7d
-		}
-		{
-			description: [
-				"Reach and thrust. Keep them away, hit them first, retreat. Best on: Warrior or Ranger."
-				"Obtain any spear to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:iron_spear"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "3CA11602449E00C4"
-			optional: true
-			rewards: [{
-				id: "73A4CDE0B0582788"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "290F82566B1E9BD7"
-				item: {
-					Count: 1
-					id: "simplyswords:iron_spear"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "6A8D05B2401BE74F"
+						type: "item"
+						item: "magistuarmory:club"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "3DE79822EA272BAC"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "C07CAE40F9258877"
 			title: "Spear"
+			description: ["Reach and thrust. Keep them away, hit them first, retreat. Best on: Warrior or Ranger.", "Obtain any spear to complete this step; every class is represented."]
+			icon: "simplyswords:iron_spear"
 			x: 2.2d
 			y: -0.9d
-		}
-		{
-			description: [
-				"Halberds and glaives sweep wide arcs. A fortress built out of one weapon. Best on: Guardian."
-				"Obtain any polearm to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_warglaive"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "736E6A1AF0CE343C"
-			optional: true
-			rewards: [{
-				id: "40A19AEA0739E3BD"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "26BDCE38232F2F87"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_warglaive"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "290F82566B1E9BD7"
+						type: "item"
+						item: "simplyswords:iron_spear"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "D15BD5313AD50638"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "736E6A1AF0CE343C"
 			title: "Polearm"
+			description: ["Halberds and glaives sweep wide arcs. A fortress built out of one weapon. Best on: Guardian.", "Obtain any polearm to complete this step; every class is represented."]
+			icon: "simplyswords:gold_warglaive"
 			x: 2.2d
 			y: 0.9d
-		}
-		{
-			description: [
-				"A reaper's tool: wide arcs, soul-lashing, gets stronger as the dead pile up. Best on: Necromancer or Blood Mage."
-				"Obtain any scythe to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:iron_scythe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "78527037A65A3FC0"
-			optional: true
-			rewards: [{
-				id: "5301442E03E72541"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "3A0234B8BB296F4D"
-				item: {
-					Count: 1
-					id: "simplyswords:iron_scythe"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "26BDCE38232F2F87"
+						type: "item"
+						item: "simplyswords:gold_warglaive"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "8A7243D74BC1B408"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "DA6A62515D0B0F32"
 			title: "Scythe"
+			description: ["A reaper's tool: wide arcs, soul-lashing, gets stronger as the dead pile up. Best on: Necromancer or Blood Mage.", "Obtain any scythe to complete this step; every class is represented."]
+			icon: "simplyswords:iron_scythe"
 			x: 2.2d
 			y: 2.7d
-		}
-		{
-			description: [
-				"Two ends, spin and sweep. A traveller's weapon and a warrior's cane. Best on: Wanderer."
-				"Obtain any quarterstaff to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "ageofweapons:heavy_staff_gold"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2D037106E790DBCF"
-			optional: true
-			rewards: [{
-				id: "2C5D72E3973959A1"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "3BE79A526645FC9F"
-				item: {
-					Count: 1
-					id: "ageofweapons:heavy_staff_gold"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "DE78F5F6DF9978E7"
+						type: "item"
+						item: "simplyswords:iron_scythe"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "E68DFCC1026447F4"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "F40BBC079B91E1ED"
 			title: "Quarterstaff"
+			description: ["Two ends, spin and sweep. A traveller's weapon and a warrior's cane. Best on: Wanderer.", "Obtain any quarterstaff to complete this step; every class is represented."]
+			icon: "ageofweapons:heavy_staff_gold"
 			x: 2.2d
 			y: 4.5d
-		}
-		{
-			description: [
-				"Long reach, light damage, every stat that dislikes you being close. Best on: Rogue."
-				"Obtain any whip to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "simplyswords:gold_chakram"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1A053A043F17B0D2"
-			optional: true
-			rewards: [{
-				id: "7A9E6F83096620D0"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "49B730B445BEA523"
-				item: {
-					Count: 1
-					id: "simplyswords:gold_chakram"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "A7D387F9B8551CBE"
+						type: "item"
+						item: "ageofweapons:heavy_staff_gold"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "AF5DD2C6F7ADE41F"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "A84D0ED41EBE75C1"
 			title: "Whip"
+			description: ["Long reach, light damage, every stat that dislikes you being close. Best on: Rogue.", "Obtain any whip to complete this step; every class is represented."]
+			icon: "simplyswords:gold_chakram"
 			x: 2.2d
 			y: 6.3d
-		}
-		{
-			description: [
-				"The classic. Draw speed, arrow velocity, elemental shots and the long wait for the perfect line. Best on: Ranger."
-				"Obtain any bow to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "magistuarmory:longbow"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "5C7DD75760E95300"
-			optional: true
-			rewards: [{
-				id: "161E86A493742853"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "469C4255039E2601"
-				item: {
-					Count: 1
-					id: "magistuarmory:longbow"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "49B730B445BEA523"
+						type: "item"
+						item: "simplyswords:gold_chakram"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "F19920E4EF3061B5"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "5C7DD75760E95300"
 			title: "Bow"
+			description: ["The classic. Draw speed, arrow velocity, elemental shots and the long wait for the perfect line. Best on: Ranger.", "Obtain any bow to complete this step; every class is represented."]
+			icon: "magistuarmory:longbow"
 			x: 2.2d
 			y: 8.1d
-		}
-		{
-			description: [
-				"Slow, strong, and satisfying. Multishot and piercing bolts reward planning. Best on: Ranger."
-				"Obtain any crossbow to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "magistuarmory:heavy_crossbow"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "0C6ACD176A27CE47"
-			optional: true
-			rewards: [{
-				id: "1A25BB64A5C077F3"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "14EA25C70ECCA79C"
-				item: {
-					Count: 1
-					id: "magistuarmory:heavy_crossbow"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "FCDCC156CF572F70"
+						type: "item"
+						item: "magistuarmory:longbow"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "F384B70E71B99DBB"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "0C6ACD176A27CE47"
 			title: "Crossbow"
+			description: ["Slow, strong, and satisfying. Multishot and piercing bolts reward planning. Best on: Ranger.", "Obtain any crossbow to complete this step; every class is represented."]
+			icon: "magistuarmory:heavy_crossbow"
 			x: 2.2d
 			y: 9.9d
-		}
-		{
-			description: [
-				"A conduit for school magic: spell power, mana, and a good grip. Best on: Arcanist, Elementalist."
-				"Obtain any staff to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "soulsweapons:chungus_staff"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "79E65AF16DAA2594"
-			optional: true
-			rewards: [{
-				id: "0E651C457AFCB1F8"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "59F1E836EF774DFB"
-				item: {
-					Count: 1
-					id: "soulsweapons:chungus_staff"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "EC125E23BA0637A0"
+						type: "item"
+						item: "magistuarmory:heavy_crossbow"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "1A25BB64A5C077F3"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "79E65AF16DAA2594"
 			title: "Staff"
+			description: ["A conduit for school magic: spell power, mana, and a good grip. Best on: Arcanist, Elementalist.", "Obtain any staff to complete this step; every class is represented."]
+			icon: "soulsweapons:chungus_staff"
 			x: 2.2d
 			y: 11.7d
-		}
-		{
-			description: [
-				"Light, fast casting. Great for a spellblade who still wants a sword in the other hand. Best on: Arcanist."
-				"Obtain any wand and focus to complete this step; every class is represented."
-			]
-			icon: "soulsweapons:chaos_orb"
-			id: "4C65B2446EBB0AFC"
-			optional: true
-			rewards: [{
-				id: "38FD466923836782"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "69F03E93DD2C6A27"
-				item: "soulsweapons:chaos_orb"
-				type: "item"
-			}]
+			shape: "circle"
+			tasks: [
+					{
+						id: "E4F641EFFD2AF090"
+						type: "item"
+						item: "soulsweapons:chungus_staff"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "CF5CC3A5438525FF"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "4C65B2446EBB0AFC"
 			title: "Wand and Focus"
+			description: ["Light, fast casting. Great for a spellblade who still wants a sword in the other hand. Best on: Arcanist.", "Obtain any wand and focus to complete this step; every class is represented."]
+			icon: "soulsweapons:chaos_orb"
 			x: 2.2d
 			y: 13.5d
-		}
-		{
-			description: [
-				"Books are the heart of a spellcaster's kit: slots, schools, and the lore of every spell you know. Best on: Any caster."
-				"Obtain any spellbook to complete this step; every class is represented."
-			]
-			icon: "celestisynth:celestial_spell_book"
-			id: "1A36C16A115D6AC8"
-			optional: true
-			rewards: [{
-				id: "13F91A4045405595"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "21F5E5B9565FD40E"
-				item: "celestisynth:celestial_spell_book"
-				type: "item"
-			}]
+			shape: "circle"
+			tasks: [
+					{
+						id: "69F03E93DD2C6A27"
+						type: "item"
+						item: "soulsweapons:chaos_orb"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "CBAE89C7ADDE5AF8"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "1A36C16A115D6AC8"
 			title: "Spellbook"
+			description: ["Books are the heart of a spellcaster's kit: slots, schools, and the lore of every spell you know. Best on: Any caster.", "Obtain any spellbook to complete this step; every class is represented."]
+			icon: "celestisynth:celestial_spell_book"
 			x: 2.2d
 			y: 15.3d
-		}
-		{
-			description: [
-				"Raise it in time and the enemy staggers. Block, riposte, repeat. Best on: Guardian, Paladin."
-				"Obtain any shield to complete this step; every class is represented."
-			]
-			icon: {
-				Count: 1
-				id: "magistuarmory:gold_buckler"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "3F42AA3117B85CAE"
-			optional: true
-			rewards: [{
-				id: "573484A5C9313CF9"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "5C2A2865FC3839FC"
-				item: {
-					Count: 1
-					id: "magistuarmory:gold_buckler"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "21F5E5B9565FD40E"
+						type: "item"
+						item: "celestisynth:celestial_spell_book"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "D4AAD00C6999990F"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
+		{
+			id: "B41A59E978DF2D80"
 			title: "Shield"
+			description: ["Raise it in time and the enemy staggers. Block, riposte, repeat. Best on: Guardian, Paladin.", "Obtain any shield to complete this step; every class is represented."]
+			icon: "magistuarmory:gold_buckler"
 			x: 2.2d
 			y: 17.1d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "5C2A2865FC3839FC"
+						type: "item"
+						item: "magistuarmory:gold_buckler"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "AAD1E431C8A320EB"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["D7061B23D6A24A12"]
+		},
 		{
+			id: "47AEEA9FBF7FE0C3"
+			title: "A Weapon Remembers"
 			description: ["Weapons gain levels as you use them: hit things, earn bonuses. The best weapon is not the highest-damage one; it is the one you invest in."]
 			icon: "minecraft:experience_bottle"
-			id: "47AEEA9FBF7FE0C3"
-			rewards: [{
-				id: "45CADB8F781675D1"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "62941778948BB429"
-				type: "checkmark"
-			}]
-			title: "A Weapon Remembers"
 			x: 2.2d
 			y: 18.9d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "A026266BCEB5983A"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "45CADB8F781675D1"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["D7061B23D6A24A12"]
+		},
 		{
-			dependencies: ["47AEEA9FBF7FE0C3"]
+			id: "9CA9908183A08A22"
+			title: "Rarity"
 			description: ["A common sword and a mythic sword differ in affixes, not in kind. Salvage trash, socket gems, reforge: let your favourite weapon grow into its rarity."]
 			icon: "apotheosis:common_material"
-			id: "56146F1ABA0433C6"
-			rewards: [{
-				id: "25B20970B2561BA2"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "03A95505135E3865"
-				type: "checkmark"
-			}]
-			title: "Rarity"
 			x: 4.4d
 			y: 18.9d
-		}
-		{
-			dependencies: [
-				"5C7DD75760E95300"
-				"79E65AF16DAA2594"
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "03A95505135E3865"
+						type: "checkmark"
+					}
 			]
+			rewards: [
+					{
+						id: "D1016DF385E5BE62"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["47AEEA9FBF7FE0C3"]
+		},
+		{
+			id: "E4A30BCD1DAC8DE5"
+			title: "A Properly Stocked Armory"
 			description: ["A longsword, a bow, a staff and a shield. Four classes, four stances: you have a favourite, but you can swap."]
 			icon: "minecraft:smithing_table"
-			id: "33D8291C5A9A9708"
-			rewards: [
-				{
-					id: "1E9DF96709C9F6CE"
-					type: "xp"
-					xp: 200
-				}
-				{
-					command: "skilltree points add {p} 1"
-					id: "292F01BF77EA85FD"
-					silent: true
-					title: "1 skill point"
-					type: "command"
-				}
-			]
-			shape: "hexagon"
-			size: 1.3d
-			tasks: [
-				{
-					consume_items: false
-					id: "0E432669AD36D6B3"
-					item: {
-						Count: 1
-						id: "simplyswords:iron_longsword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "6ADFB068BCCBE2F1"
-					item: {
-						Count: 1
-						id: "magistuarmory:longbow"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "4EEA629C7E297A54"
-					item: {
-						Count: 1
-						id: "soulsweapons:chungus_staff"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "49C1001B622D9412"
-					item: {
-						Count: 1
-						id: "magistuarmory:gold_buckler"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "A Properly Stocked Armory"
 			x: 4.4d
 			y: 4.5d
-		}
-		{
-			dependencies: ["4D7EA497EB53D2EE"]
-			description: ["Own at least one weapon from every melee class. You will not use them all. You will understand them all."]
-			icon: {
-				Count: 1
-				id: "minecraft:netherite_sword"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "266FD5591072F108"
-			rewards: [
-				{
-					id: "167A5466467C4305"
-					type: "xp"
-					xp: 400
-				}
-				{
-					command: "skilltree points add {p} 2"
-					id: "25D14E4EAF3FA43C"
-					silent: true
-					title: "2 skill points"
-					type: "command"
-				}
+			size: 1.3d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "0E432669AD36D6B3"
+						type: "item"
+						item: "simplyswords:iron_longsword"
+						count: 1
+						consume_items: false
+					},
+					{
+						id: "8B26D8BA2ED137F6"
+						type: "item"
+						item: "magistuarmory:longbow"
+						count: 1
+						consume_items: false
+					},
+					{
+						id: "4EEA629C7E297A54"
+						type: "item"
+						item: "soulsweapons:chungus_staff"
+						count: 1
+						consume_items: false
+					},
+					{
+						id: "49C1001B622D9412"
+						type: "item"
+						item: "magistuarmory:gold_buckler"
+						count: 1
+						consume_items: false
+					}
 			]
-			shape: "diamond"
-			size: 1.4d
-			tasks: [{
-				id: "3256454CEE73616D"
-				type: "checkmark"
-			}]
+			rewards: [
+					{
+						id: "80BA482B8AC69679"
+						type: "xp"
+						xp: 200
+					},
+					{
+						id: "CE0422AE146D3D76"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["AFE2E8EA5BFA1DB1", "5C7DD75760E95300", "79E65AF16DAA2594", "B41A59E978DF2D80"]
+		},
+		{
+			id: "266FD5591072F108"
 			title: "Master of Many Hands"
+			description: ["Own at least one weapon from every melee class. You will not use them all. You will understand them all."]
+			icon: "minecraft:netherite_sword"
 			x: 6.6000000000000005d
 			y: -7.02d
+			size: 1.4d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "3256454CEE73616D"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "B65BA10B8C39D148"
+						type: "xp"
+						xp: 400
+					},
+					{
+						id: "25D14E4EAF3FA43C"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					}
+			]
+			dependencies: ["E4A30BCD1DAC8DE5", "C9A7C51EFB04A609", "4D7EA497EB53D2EE", "BC56E1D50F393C67", "DA6A62515D0B0F32"]
 		}
 	]
-	title: "The Weapon Sandbox"
 }

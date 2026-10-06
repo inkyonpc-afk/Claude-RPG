@@ -1,0 +1,292 @@
+[
+ {
+  "name": "Fresh Animations",
+  "fileName": "FreshAnimations_v1.10.4.zip",
+  "kind": "resourcepacks",
+  "projectID": 453763,
+  "fileID": 7670377,
+  "downloadUrl": "https://edge.forgecdn.net/files/7670/377/FreshAnimations_v1.10.4.zip",
+  "sha1": "73db740a6868e043c5e615c036fca2c912615b6e",
+  "from": "Codex RPG"
+ },
+ {
+  "name": "Fresh Animations: Extensions",
+  "fileName": "FA+All_Extensions-v1.4.zip",
+  "kind": "resourcepacks",
+  "projectID": 813608,
+  "fileID": 5489243,
+  "downloadUrl": "https://edge.forgecdn.net/files/5489/243/FA%2bAll_Extensions-v1.4.zip",
+  "sha1": "112c33f88dc9de26a5c85f25d4a27fdde2c14fc9",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Fresh Compats (EMF pack)",
+  "fileName": "FreshCompats_v1.6.zip",
+  "kind": "resourcepacks",
+  "projectID": 852603,
+  "fileID": 5638270,
+  "downloadUrl": "https://edge.forgecdn.net/files/5638/270/FreshCompats_v1.6.zip",
+  "sha1": "1f23f04e7b5b1240be46b3ab1959eb6c3485b368",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Fresh mowzie's mobs textures",
+  "fileName": "Fresh mowzie mobs v. 1.2.1.zip",
+  "kind": "resourcepacks",
+  "projectID": 1400608,
+  "fileID": 7818815,
+  "downloadUrl": "https://edge.forgecdn.net/files/7818/815/Fresh%20mowzie%20mobs%20v.%201.2.1.zip",
+  "sha1": "beb14f721d714fbcda8df2b8b53b67ca4ea1d59d",
+  "from": "Prodigium Reforged"
+ },
+ {
+  "name": "(Bee's) Fancy Crops",
+  "fileName": "Fancy Crops v1.3.zip",
+  "kind": "resourcepacks",
+  "projectID": 884709,
+  "fileID": 7094029,
+  "downloadUrl": "https://edge.forgecdn.net/files/7094/29/Fancy%20Crops%20v1.3.zip",
+  "sha1": "788e5169eb064b696b2e20d4c5d998cceb387a2e",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Better Lanterns",
+  "fileName": "Better+Lanterns+v1.2(mc-1.20.1).zip",
+  "kind": "resourcepacks",
+  "projectID": 618339,
+  "fileID": 5296814,
+  "downloadUrl": "https://edge.forgecdn.net/files/5296/814/Better%2bLanterns%2bv1.2(mc-1.20.1).zip",
+  "sha1": "705b7fa82c39ff568f0b2ea4ebebe71ce2c9be19",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Just Fancy Torches",
+  "fileName": "Just Fancy Torches v2.0.zip",
+  "kind": "resourcepacks",
+  "projectID": 1050626,
+  "fileID": 7085331,
+  "downloadUrl": "https://edge.forgecdn.net/files/7085/331/Just%20Fancy%20Torches%20v2.0.zip",
+  "sha1": "d1359c7b5e8bab9360a5866029d8106f60d30c15",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Better End Portal Frame",
+  "fileName": "Better_End_Portal_Frame_(1.20).zip",
+  "kind": "resourcepacks",
+  "projectID": 465479,
+  "fileID": 4912153,
+  "downloadUrl": "https://edge.forgecdn.net/files/4912/153/Better_End_Portal_Frame_(1.20).zip",
+  "sha1": "5a8e5900a1989d6b3973fbe13f5bcbf63b3e2d72",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Low On Fire",
+  "fileName": "LowOnFire_1.20.1.zip",
+  "kind": "resourcepacks",
+  "projectID": 580683,
+  "fileID": 4606406,
+  "downloadUrl": "https://edge.forgecdn.net/files/4606/406/LowOnFire_1.20.1.zip",
+  "sha1": "08db918bc8642b5501402fe25c9b6a8286a538b5",
+  "from": "Prodigium Reforged"
+ },
+ {
+  "name": "Simply Swords  Whimscape add-on",
+  "fileName": "SimplySwordsWhimscape_v1.1.zip",
+  "kind": "resourcepacks",
+  "projectID": 1124089,
+  "fileID": 6750310,
+  "downloadUrl": "https://edge.forgecdn.net/files/6750/310/SimplySwordsWhimscape_v1.1.zip",
+  "sha1": "e69b83a64eb7f5faa2d20f0e843d24a1e12dcef8",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Medieval Style Lootr",
+  "fileName": "Medieval_Style_Lootr.zip",
+  "kind": "resourcepacks",
+  "projectID": 867471,
+  "fileID": 7281678,
+  "downloadUrl": "https://edge.forgecdn.net/files/7281/678/Medieval_Style_Lootr.zip",
+  "sha1": "cb8cc5682de7419eaf72c1f0b14652d0189c3dac",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Enchant Icons",
+  "fileName": "enchant icons 1.20 v1.3.zip",
+  "kind": "resourcepacks",
+  "projectID": 861241,
+  "fileID": 4572373,
+  "downloadUrl": "https://edge.forgecdn.net/files/4572/373/enchant%20icons%201.20%20v1.3.zip",
+  "sha1": "d9eb0746e396f3382a81d91288d8f88600d8c760",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Alternative Rain Sounds",
+  "fileName": "[Compressed] Alternative Rain Sounds 1.20-1.20.1.zip",
+  "kind": "resourcepacks",
+  "projectID": 858484,
+  "fileID": 6515911,
+  "downloadUrl": "https://edge.forgecdn.net/files/6515/911/%5bCompressed%5d%20Alternative%20Rain%20Sounds%201.20-1.20.1.zip",
+  "sha1": "a803d7dfda56bbb1a68272ca8199569969036641",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "More Cave Sounds",
+  "fileName": "More Cave Sounds.zip",
+  "kind": "resourcepacks",
+  "projectID": 898373,
+  "fileID": 4680308,
+  "downloadUrl": "https://edge.forgecdn.net/files/4680/308/More%20Cave%20Sounds.zip",
+  "sha1": "e97d9c800d36420f01f8896f962627b4989e0dd0",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Soft Weather",
+  "fileName": "Soft-Weather-1.0-1.20.zip",
+  "kind": "resourcepacks",
+  "projectID": 537890,
+  "fileID": 4666175,
+  "downloadUrl": "https://edge.forgecdn.net/files/4666/175/Soft-Weather-1.0-1.20.zip",
+  "sha1": "8c9a42d073e7054d26cdde9cae411c609319101a",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Cataclysmic tunes",
+  "fileName": "Cataclysmic_tunes_V8(Maledictus_update).zip",
+  "kind": "resourcepacks",
+  "projectID": 989768,
+  "fileID": 7276096,
+  "downloadUrl": "https://edge.forgecdn.net/files/7276/96/Cataclysmic_tunes_V8(Maledictus_update).zip",
+  "sha1": "3f3d902374f757d5086ad1857b8d63a1fb57c60a",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Visual Traveler's Titles",
+  "fileName": "Visual Titles.zip",
+  "kind": "resourcepacks",
+  "projectID": 679106,
+  "fileID": 4061316,
+  "downloadUrl": "https://edge.forgecdn.net/files/4061/316/Visual%20Titles.zip",
+  "sha1": "69614273876f412ae3d4ebebe9449d7112e6ccea",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Alex's Titles (Alex's Caves and Traveler's Titles compatibility)",
+  "fileName": "Alex's Titles 2.0.zip",
+  "kind": "resourcepacks",
+  "projectID": 979204,
+  "fileID": 5895914,
+  "downloadUrl": "https://edge.forgecdn.net/files/5895/914/Alex%27s%20Titles%202.0.zip",
+  "sha1": "b43f9202ebefcbe6f081ac663a0caf5529ccb62b",
+  "from": "Beyond Depth"
+ },
+ {
+  "name": "Eclectic Trove (Legendary Tooltips)",
+  "fileName": "EclecticTrove-1.20.1-1.3.0.zip",
+  "kind": "resourcepacks",
+  "projectID": 538850,
+  "fileID": 4933725,
+  "downloadUrl": "https://edge.forgecdn.net/files/4933/725/EclecticTrove-1.20.1-1.3.0.zip",
+  "sha1": "75ebb00a23833419bf4b6042e66068daaf43c1f4",
+  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
+ },
+ {
+  "name": "Better Mana Bar for Iron's Spells 'n Spellbooks",
+  "fileName": "Better Fitting XP Mana Bar for Iron's Spells 'n Spellbooks.zip",
+  "kind": "resourcepacks",
+  "projectID": 1071368,
+  "fileID": 5903132,
+  "downloadUrl": "https://edge.forgecdn.net/files/5903/132/Better%20Fitting%20XP%20Mana%20Bar%20for%20Iron%27s%20Spells%20%27n%20Spellbooks.zip",
+  "sha1": "02e40ef4418d5d83a493c222ec948dfeb7ddf258",
+  "from": "Prodigium Reforged"
+ },
+ {
+  "name": "Enhanced Boss Bars",
+  "fileName": "[1.4.1] Enhanced Boss Bars.zip",
+  "kind": "resourcepacks",
+  "projectID": 580036,
+  "fileID": 5420262,
+  "downloadUrl": "https://edge.forgecdn.net/files/5420/262/%5b1.4.1%5d%20Enhanced%20Boss%20Bars.zip",
+  "sha1": "3dfe3e45e973179d924b7ff462aae5a1a36c2c6d",
+  "from": "Prodigium Reforged"
+ },
+ {
+  "name": "Embellished Stone (Advancement Plaques)",
+  "fileName": "EmbellishedStone-1.20.1-1.0.0.zip",
+  "kind": "resourcepacks",
+  "projectID": 503839,
+  "fileID": 4827548,
+  "downloadUrl": "https://edge.forgecdn.net/files/4827/548/EmbellishedStone-1.20.1-1.0.0.zip",
+  "sha1": "7e681fdb997ca95a56e7394977955b2e2624b29e",
+  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
+ },
+ {
+  "name": "FTBQuests Extra Quest Shapes",
+  "fileName": "FTBQuestsShapesHeyKatu.zip",
+  "kind": "resourcepacks",
+  "projectID": 1089131,
+  "fileID": 5654662,
+  "downloadUrl": "https://edge.forgecdn.net/files/5654/662/FTBQuestsShapesHeyKatu.zip",
+  "sha1": "187a098134f5cf2c7ae79f7a37488c0b5fa51273",
+  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
+ },
+ {
+  "name": "STONEBORN - Dwarven-Fantasy Inspired UI Overhaul",
+  "fileName": "STONEBORN+-+1.20-1.20.1+-+V3.2.3.zip",
+  "kind": "resourcepacks",
+  "projectID": 455845,
+  "fileID": 5803898,
+  "downloadUrl": "https://edge.forgecdn.net/files/5803/898/STONEBORN%2b-%2b1.20-1.20.1%2b-%2bV3.2.3.zip",
+  "sha1": "f87e639a9bea63c091e71581c695edcbc1e9bff9",
+  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
+ },
+ {
+  "name": "STONEBORN - Modded Compatibility GUI (SBMC)",
+  "fileName": "SBMC-1.20.1-3.10.1.zip",
+  "kind": "resourcepacks",
+  "projectID": 783566,
+  "fileID": 7712782,
+  "downloadUrl": "https://edge.forgecdn.net/files/7712/782/SBMC-1.20.1-3.10.1.zip",
+  "sha1": "caf08a338a61d5ab247de70af4e18b65b312c806",
+  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
+ },
+ {
+  "name": "STONEBORN - Me\u00ef's Additions for Modded GUIs",
+  "fileName": "STONEBORN - 1.4-1.20.1 MeiAdditions.zip",
+  "kind": "resourcepacks",
+  "projectID": 870056,
+  "fileID": 5152574,
+  "downloadUrl": "https://edge.forgecdn.net/files/5152/574/STONEBORN%20-%201.4-1.20.1%20MeiAdditions.zip",
+  "sha1": "d2ce27e5e25eb1675476a65051d0f3dece7ea7d8",
+  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
+ },
+ {
+  "name": "STONEBORN - Denis' Mod Compats",
+  "fileName": "STONEBORN - Denis' Mod Compats v2.1.zip",
+  "kind": "resourcepacks",
+  "projectID": 1014677,
+  "fileID": 6425540,
+  "downloadUrl": "https://edge.forgecdn.net/files/6425/540/STONEBORN%20-%20Denis%27%20Mod%20Compats%20v2.1.zip",
+  "sha1": "b8172c97350c5440691dc5cd0075e2be7cc70c16",
+  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
+ },
+ {
+  "name": "Complementary Shaders - Reimagined",
+  "fileName": "ComplementaryReimagined_r5.9.3.zip",
+  "kind": "shaderpacks",
+  "projectID": 627557,
+  "fileID": 8884654,
+  "downloadUrl": "https://edge.forgecdn.net/files/8884/654/ComplementaryReimagined_r5.9.3.zip",
+  "sha1": "838139b54cddb56b2e83cd260d8efd960ac536d6",
+  "from": "Codex RPG"
+ },
+ {
+  "name": "Complementary Shaders - Unbound",
+  "fileName": "ComplementaryUnbound_r5.9.3.zip",
+  "kind": "shaderpacks",
+  "projectID": 385587,
+  "fileID": 8884656,
+  "downloadUrl": "https://edge.forgecdn.net/files/8884/656/ComplementaryUnbound_r5.9.3.zip",
+  "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67",
+  "from": "Mastering Magic  A Magic World with Quests"
+ }
+]

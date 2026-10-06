@@ -1,436 +1,475 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
-	filename: "18_grand"
-	group: ""
-	icon: "minecraft:crying_obsidian"
 	id: "662F0059608902AA"
-	images: [{
-		alpha: 0
-		height: 16.88d
-		image: "aldreth:textures/quests/structures.png"
-		rotation: 0.0d
-		width: 30.0d
-		x: -9.5d
-		y: -9.79d
-	}]
-	order_index: 9
+	filename: "18_grand"
+	title: "Castles, Citadels and Legends"
+	subtitle: "Rare, huge and dangerous. Plan a trip."
+	icon: "minecraft:crying_obsidian"
+	order_index: 18
+	group: "BA29B6D65C079795"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
 	progression_mode: "flexible"
-	quest_links: [ ]
+	images: [{
+			x: -9.5d
+			y: -9.79d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/structures.png"
+			order: 0
+			alpha: 0.55d
+		}]
 	quests: [
 		{
+			id: "C2F265822FE2AC67"
+			title: "Places of Legend"
 			description: ["The greatest structures are rare, far apart and heavily defended. Their loot is rarer too. Pack food, potions, a waystone and a plan."]
 			icon: "minecraft:crying_obsidian"
-			id: "096D91CBA315C33D"
-			rewards: [{
-				id: "5F6A828995E42A08"
-				type: "xp"
-				xp: 30
-			}]
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				id: "5766BD7CA1429EBC"
-				type: "checkmark"
-			}]
-			title: "Places of Legend"
 			x: 0.0d
 			y: 0.0d
-		}
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "80937909863D4CB2"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "5F6A828995E42A08"
+						type: "xp"
+						xp: 30
+					}
+			]
+		},
 		{
+			id: "217EFBB850CFB92F"
+			title: "A Castle"
 			description: ["A fortress of walls and guards."]
 			icon: "minecraft:iron_door"
-			id: "217EFBB850CFB92F"
-			rewards: [
-				{
-					id: "0306D6382C06CB84"
-					type: "xp"
-					xp: 150
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t3"
-					id: "137022BF812EB5BA"
-					silent: true
-					title: "Tier 3 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "66D07AAEBCE17CB9"
-				structure: "dungeons_enhanced:castle"
-				type: "structure"
-			}]
-			title: "A Castle"
 			x: 2.2d
 			y: 0.0d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "88751EE42BA2C619"
+						type: "structure"
+						structure: "dungeons_enhanced:castle"
+					}
+			]
+			rewards: [
+					{
+						id: "9DC6940481CD65FC"
+						type: "xp"
+						xp: 150
+					},
+					{
+						id: "9D4952F798CFEC82"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
+			dependencies: ["C2F265822FE2AC67"]
+		},
 		{
-			dependencies: ["217EFBB850CFB92F"]
+			id: "3A299F0F57E8CD25"
+			title: "Woodland Mansion"
 			description: ["Illagers, a maze, and a totem at the end."]
 			icon: "minecraft:totem_of_undying"
-			id: "3A299F0F57E8CD25"
-			rewards: [
-				{
-					id: "3A992BA1A28BDF7E"
-					type: "xp"
-					xp: 200
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t3"
-					id: "01338D73CE770B53"
-					silent: true
-					title: "Tier 3 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "4B2BF50A4DA7C635"
-				structure: "minecraft:mansion"
-				type: "structure"
-			}]
-			title: "Woodland Mansion"
 			x: 4.4d
 			y: -3.6d
-		}
-		{
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "4B2BF50A4DA7C635"
+						type: "structure"
+						structure: "minecraft:mansion"
+					}
+			]
+			rewards: [
+					{
+						id: "3A992BA1A28BDF7E"
+						type: "xp"
+						xp: 200
+					},
+					{
+						id: "01338D73CE770B53"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
 			dependencies: ["217EFBB850CFB92F"]
+		},
+		{
+			id: "B2D9178888D7AC66"
+			title: "A Stronghold"
 			description: ["Silverfish halls, libraries and a gateway. The road to the End begins here."]
 			icon: "minecraft:ender_eye"
-			id: "2213C8A4FB4CA3AA"
-			rewards: [{
-				id: "37CA74F41EC3E307"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "245AD72F6AA4129A"
-				structure: "betterstrongholds:stronghold"
-				type: "structure"
-			}]
-			title: "A Stronghold"
 			x: 4.4d
 			y: -1.8d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "AADC1B08E8CB1DAC"
+						type: "structure"
+						structure: "betterstrongholds:stronghold"
+					}
+			]
+			rewards: [
+					{
+						id: "8623EF32BEEDA65B"
+						type: "xp"
+						xp: 200
+					}
+			]
+			dependencies: ["217EFBB850CFB92F"]
+		},
 		{
-			dependencies: ["3A299F0F57E8CD25"]
+			id: "58F4C2A1AE8400B1"
+			title: "Keep Kayra"
 			description: ["A sprawling, haunted keep."]
 			icon: "minecraft:iron_bars"
-			id: "58F4C2A1AE8400B1"
-			rewards: [
-				{
-					id: "3845F2766A9D4D9C"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "5AECB4E6B028B7F5"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "0E4C0A5B43E87557"
-				structure: "dungeons_arise:keep_kayra"
-				type: "structure"
-			}]
-			title: "Keep Kayra"
 			x: 6.6000000000000005d
 			y: -4.5d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "0E4C0A5B43E87557"
+						type: "structure"
+						structure: "dungeons_arise:keep_kayra"
+					}
+			]
+			rewards: [
+					{
+						id: "BB53A218DA4971D4"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "5AECB4E6B028B7F5"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			dependencies: ["3A299F0F57E8CD25"]
+		},
 		{
-			dependencies: ["58F4C2A1AE8400B1"]
+			id: "106B769E7C3F07FA"
+			title: "Shiraz Palace"
 			description: ["A palace of traps and coin."]
 			icon: "minecraft:gold_block"
-			id: "106B769E7C3F07FA"
-			optional: true
-			rewards: [
-				{
-					id: "4702444883620BE7"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "1D3637607CCB6193"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "5FBBB8CC182D7B58"
-				structure: "dungeons_arise:shiraz_palace"
-				type: "structure"
-			}]
-			title: "Shiraz Palace"
 			x: 8.8d
 			y: -6.3d
-		}
-		{
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "5FBBB8CC182D7B58"
+						type: "structure"
+						structure: "dungeons_arise:shiraz_palace"
+					}
+			]
+			rewards: [
+					{
+						id: "C984D6D145FFBB52"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "D9ED21B515BE1CC9"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
 			dependencies: ["58F4C2A1AE8400B1"]
+		},
+		{
+			id: "C435E9798DA7F384"
+			title: "The Black Citadel"
 			description: ["An obsidian fortress."]
 			icon: "minecraft:crying_obsidian"
-			id: "19347D79186C84A2"
-			rewards: [
-				{
-					id: "09511705F9EF00F1"
-					type: "xp"
-					xp: 350
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "5CFB2B72E328E8A0"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "317F11A059C72FCE"
-				structure: "dungeons_enhanced:black_citadel"
-				type: "structure"
-			}]
-			title: "The Black Citadel"
 			x: 8.8d
 			y: -4.5d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "317F11A059C72FCE"
+						type: "structure"
+						structure: "dungeons_enhanced:black_citadel"
+					}
+			]
+			rewards: [
+					{
+						id: "EB30DF1051608BF5"
+						type: "xp"
+						xp: 350
+					},
+					{
+						id: "F4183B850AF44695"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			dependencies: ["58F4C2A1AE8400B1"]
+		},
 		{
-			dependencies: ["3A299F0F57E8CD25"]
+			id: "8A14E41EE74547B2"
+			title: "Tower of the Undead"
 			description: ["A tower of corpses and necromancers."]
 			icon: "minecraft:wither_skeleton_skull"
-			id: "127B9EC4C5CE3D94"
-			optional: true
-			rewards: [
-				{
-					id: "0CC409F42C0CD7D8"
-					type: "xp"
-					xp: 250
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "55AA098BD3DDC6C6"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "541E0A0AE0F8DD51"
-				structure: "dungeons_enhanced:tower_of_the_undead"
-				type: "structure"
-			}]
-			title: "Tower of the Undead"
 			x: 6.6000000000000005d
 			y: -2.7d
-		}
-		{
-			dependencies: ["58F4C2A1AE8400B1"]
-			description: ["A gladiators' arena, enormous and loud."]
-			icon: {
-				Count: 1
-				id: "minecraft:iron_sword"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "6CDDA1643EBDEF0E"
-			optional: true
-			rewards: [
-				{
-					id: "2E2386C75EF1B7E9"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "6DBDFB89A50A68C2"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				id: "478779F22AEED27C"
-				structure: "dungeons_arise:coliseum"
-				type: "structure"
-			}]
+			shape: "circle"
+			tasks: [
+					{
+						id: "9DBB9CD017345445"
+						type: "structure"
+						structure: "dungeons_enhanced:tower_of_the_undead"
+					}
+			]
+			rewards: [
+					{
+						id: "A12EB94AD93C41E3"
+						type: "xp"
+						xp: 250
+					},
+					{
+						id: "EF57FAFA17EC353A"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["3A299F0F57E8CD25"]
+		},
+		{
+			id: "6CDDA1643EBDEF0E"
 			title: "The Coliseum"
+			description: ["A gladiators' arena, enormous and loud."]
+			icon: "minecraft:iron_sword"
 			x: 8.8d
 			y: -2.7d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "478779F22AEED27C"
+						type: "structure"
+						structure: "dungeons_arise:coliseum"
+					}
+			]
+			rewards: [
+					{
+						id: "9A2EBA275B7EDC63"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "6DBDFB89A50A68C2"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["58F4C2A1AE8400B1"]
+		},
 		{
-			dependencies: ["217EFBB850CFB92F"]
+			id: "A8EE8FD8A85596C4"
+			title: "A Ruined Citadel"
 			description: ["Cataclysm's Nether fortress, guarded by Ignis' kin."]
 			icon: "minecraft:blackstone"
-			id: "2D7D16B0BDBBE46A"
-			optional: true
-			rewards: [
-				{
-					id: "633699C99540C4C8"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "3A5E8420D4CA2CC5"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "29FAE7A745DB9A1E"
-				structure: "cataclysm:ruined_citadel"
-				type: "structure"
-			}]
-			title: "A Ruined Citadel"
 			x: 4.4d
 			y: 0.0d
-		}
-		{
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "DD273205815BE06F"
+						type: "structure"
+						structure: "cataclysm:ruined_citadel"
+					}
+			]
+			rewards: [
+					{
+						id: "633699C99540C4C8"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "3A5E8420D4CA2CC5"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
 			dependencies: ["217EFBB850CFB92F"]
+		},
+		{
+			id: "A961020B625D3868"
+			title: "The Acropolis"
 			description: ["A sunken marble city."]
 			icon: "minecraft:chiseled_quartz_block"
-			id: "7F2A78237266C46A"
-			optional: true
-			rewards: [
-				{
-					id: "5357C2ADEC12AF4B"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "4CB48E6D5FF6C01A"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "090E5606597172BF"
-				structure: "cataclysm:acropolis"
-				type: "structure"
-			}]
-			title: "The Acropolis"
 			x: 4.4d
 			y: 1.8d
-		}
-		{
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "FB49E22AEDAAE04D"
+						type: "structure"
+						structure: "cataclysm:acropolis"
+					}
+			]
+			rewards: [
+					{
+						id: "EB8963D1DB214B04"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "4CB48E6D5FF6C01A"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
 			dependencies: ["217EFBB850CFB92F"]
+		},
+		{
+			id: "16D8A1BFD11CA50D"
+			title: "The Great Crypt"
 			description: ["A crypt as large as a village. The dead outnumber you."]
 			icon: "minecraft:sculk"
-			id: "16D8A1BFD11CA50D"
-			optional: true
-			rewards: [
-				{
-					id: "1D473EA75DB566A4"
-					type: "xp"
-					xp: 250
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "65079C135B1C859A"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "3E42E4F439E20273"
-				structure: "dungeons_enhanced:deep_crypt"
-				type: "structure"
-			}]
-			title: "The Great Crypt"
 			x: 4.4d
 			y: 3.6d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D8E63547EBA7E8E5"
+						type: "structure"
+						structure: "dungeons_enhanced:deep_crypt"
+					}
+			]
+			rewards: [
+					{
+						id: "1D473EA75DB566A4"
+						type: "xp"
+						xp: 250
+					},
+					{
+						id: "D37FFBE35088A36E"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["217EFBB850CFB92F"]
+		},
 		{
+			id: "DEA25EFE0B9ABD41"
+			title: "The Keeping Castle"
 			description: ["Prodigium's great castle."]
 			icon: "minecraft:chain"
-			id: "176D3181F7C0C56E"
-			optional: true
-			rewards: [
-				{
-					id: "3C5C2CD777032957"
-					type: "xp"
-					xp: 350
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t5"
-					id: "39004A42F19F70EB"
-					silent: true
-					title: "Tier 5 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "22AE98F0C3CF24CD"
-				structure: "prodigium_dungeons:keeping_castle"
-				type: "structure"
-			}]
-			title: "The Keeping Castle"
 			x: 11.0d
 			y: -5.25d
-		}
-		{
-			dependencies: [
-				"58F4C2A1AE8400B1"
-				"3A299F0F57E8CD25"
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "9DB6C7268A45E5A6"
+						type: "structure"
+						structure: "prodigium_dungeons:keeping_castle"
+					}
 			]
+			rewards: [
+					{
+						id: "E27D9958E6D096B0"
+						type: "xp"
+						xp: 350
+					},
+					{
+						id: "39004A42F19F70EB"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			optional: true
+			dependencies: ["C435E9798DA7F384"]
+		},
+		{
+			id: "1162B416D50F0CD9"
+			title: "Delver of Legends"
 			description: ["Clear three of the great structures. The loot is excellent; the memories are better."]
 			icon: "minecraft:nether_star"
-			id: "1162B416D50F0CD9"
-			rewards: [
-				{
-					id: "4CB3BE3CA165A067"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "skilltree points add {p} 2"
-					id: "1F9F13ED0E9C4A06"
-					silent: true
-					title: "2 skill points"
-					type: "command"
-				}
-			]
-			shape: "hexagon"
-			size: 1.3d
-			tasks: [{
-				id: "3A13561ECE4798E6"
-				type: "checkmark"
-			}]
-			title: "Delver of Legends"
 			x: 11.0d
 			y: -3.45d
+			size: 1.3d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "3A13561ECE4798E6"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "D91B6F33530CCE88"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "D8EE218692AECF98"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					}
+			]
+			dependencies: ["58F4C2A1AE8400B1", "C435E9798DA7F384", "3A299F0F57E8CD25"]
 		}
 	]
-	title: "Castles, Citadels and Legends"
 }

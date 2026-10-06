@@ -1,6 +1,7 @@
 """The Wide Road (part 2): structures, dimensions, bosses, secrets."""
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "tools"))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from questlib import *
 
 CHAPTERS = []
@@ -64,47 +65,7 @@ CHAPTERS.append(c)
 # =============================================================== BOSS COMPENDIUM ==================================================
 c = Chapter("bosses", "The Compendium of Bosses", "minecraft:wither_skeleton_skull", "road", "Fifty-odd bosses. Each drops something nobody else does.", bg="bosses")
 c.q("intro", "A Record of Kills", "minecraft:writable_book", ["Bosses drop unique weapons, armor, spells, relics, trophies and crafting materials. They never drop generic diamonds.", "Defeat each once; defeat them again with a different build."], [check()], [xp(30)], shape="diamond", size=1.3)
-BOSSES = [
-    ("wroughtnaut", "Ferrous Wroughtnaut", "minecraft:iron_block", "mowziesmobs:ferrous_wroughtnaut", 250, 2),
-    ("naga", "The Naga", "twilightforest:naga_scale", "twilightforest:naga", 200, 2),
-    ("lich", "The Lich", "twilightforest:lich_trophy", "twilightforest:lich", 300, 3),
-    ("minoshroom", "The Minoshroom", "twilightforest:minoshroom_trophy", "twilightforest:minoshroom", 220, 3),
-    ("hydra", "The Hydra", "twilightforest:hydra_trophy", "twilightforest:hydra", 350, 4),
-    ("knight", "The Phantom Knights", "twilightforest:knightmetal_ingot", "twilightforest:knight_phantom", 250, 3),
-    ("urghast", "The Ur-Ghast", "twilightforest:ur_ghast_trophy", "twilightforest:ur_ghast", 400, 4),
-    ("yeti", "The Alpha Yeti", "twilightforest:arctic_fur", "twilightforest:alpha_yeti", 300, 3),
-    ("snowqueen", "The Snow Queen", "minecraft:snow_block", "twilightforest:snow_queen", 350, 4),
-    ("forgotten", "Forgotten Guardian", "undergarden:forgotten_ingot", "undergarden:forgotten_guardian", 350, 4),
-    ("slider", "The Slider", "aether:bronze_dungeon_key", "aether:slider", 300, 4),
-    ("valkyrie", "Valkyrie Queen", "aether:valkyrie_lance", "aether:valkyrie_queen", 450, 4),
-    ("sunspirit", "Sun Spirit", "aether:victory_medal", "aether:sun_spirit", 600, 5),
-    ("summoner", "The Summoner", "blue_skies:diopside_gem", "blue_skies:summoner", 350, 4),
-    ("crusher", "Starlit Crusher", "blue_skies:horizonite_ingot", "blue_skies:starlit_crusher", 500, 5),
-    ("alchemist", "The Alchemist", "blue_skies:pyrope_gem", "blue_skies:alchemist", 350, 4),
-    ("arachnarch", "The Arachnarch", "blue_skies:falsite_ingot", "blue_skies:arachnarch", 500, 5),
-    ("ignis", "Ignis", "cataclysm:ignitium_ingot", "cataclysm:ignis", 700, 5),
-    ("monstrosity", "Netherite Monstrosity", "minecraft:netherite_block", "cataclysm:netherite_monstrosity", 700, 5),
-    ("harbinger", "The Harbinger", "cataclysm:void_core", "cataclysm:the_harbinger", 800, 5),
-    ("leviathan", "The Leviathan", "cataclysm:tidal_claws", "cataclysm:the_leviathan", 850, 5),
-    ("remnant", "Ancient Remnant", "minecraft:chiseled_sandstone", "cataclysm:ancient_remnant", 850, 5),
-    ("guardian", "Ender Guardian", "cataclysm:void_forge", "cataclysm:ender_guardian", 1000, 6),
-    ("maledictus", "Maledictus", "cataclysm:witherite_ingot", "cataclysm:maledictus", 1500, 6),
-    ("scylla", "Scylla", "cataclysm:abyssal_egg", "cataclysm:scylla", 1500, 6),
-    ("warden", "The Warden", "deeperdarker:warden_carapace", "minecraft:warden", 900, 5),
-    ("dead_king", "The Dead King", "irons_spellbooks:legendary_spell_book", "irons_spellbooks:dead_king", 1000, 5),
-    ("apostle", "The Apostle", "goety:nameless_staff", "goety:apostle", 900, 5),
-    ("lichking", "The Lich (BOMD)", "minecraft:soul_lantern", "bosses_of_mass_destruction:lich", 800, 5),
-    ("void_blossom", "Void Blossom", "minecraft:end_rod", "bosses_of_mass_destruction:void_blossom", 1200, 6),
-    ("obsidilith", "The Obsidilith", "minecraft:obsidian", "bosses_of_mass_destruction:obsidilith", 1200, 6),
-    ("firedrag", "Fire Dragon", "iceandfire:dragon_skull_fire", "iceandfire:fire_dragon", 700, 5),
-    ("icedrag", "Ice Dragon", "iceandfire:dragonsteel_ice_ingot", "iceandfire:ice_dragon", 1000, 6),
-    ("dread", "Dread Lich", "minecraft:wither_skeleton_skull", "iceandfire:dread_lich", 1200, 6),
-    ("pumpkin", "Lord Pumpkinhead", "minecraft:carved_pumpkin", "born_in_chaos_v1:lord_pumpkinhead", 300, 4),
-    ("mother", "Mother Spider", "minecraft:spider_eye", "born_in_chaos_v1:mother_spider", 250, 3),
-    ("wither", "The Wither", "minecraft:nether_star", "minecraft:wither", 800, 5),
-    ("dragon", "The Ender Dragon", "minecraft:dragon_head", "minecraft:ender_dragon", 2000, 6),
-    ("elder", "Elder Guardian", "minecraft:prismarine_crystals", "minecraft:elder_guardian", 250, 3),
-]
+from bosses import BOSSES  # noqa: E402  (design/bosses.py)
 prev = ["intro"]
 for key, name, icon, ent, xpv, tier in BOSSES:
     c.q("b_" + key, name, icon, "Defeat %s. Its drops are unique to it; no other source will give you them." % name, [kill(ent)], [xp(xpv), cache(tier)], deps=["intro"], optional=True, shape="octagon" if tier >= 5 else "circle", size=1.2 if tier >= 5 else 1.0)

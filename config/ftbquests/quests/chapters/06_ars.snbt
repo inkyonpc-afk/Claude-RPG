@@ -1,293 +1,347 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
+	id: "EDB18509E4A0C917"
 	filename: "06_ars"
-	group: "40103B7AFEA824B7"
+	title: "Spellcraft: Glyphs and Source"
+	subtitle: "Build your own spells, glyph by glyph."
 	icon: "ars_nouveau:novice_spell_book"
-	id: "3E8F5D8736CAD7C2"
-	images: [{
-		alpha: 0
-		height: 16.88d
-		image: "aldreth:textures/quests/ars.png"
-		rotation: 0.0d
-		width: 30.0d
-		x: -8.4d
-		y: -8.44d
-	}]
 	order_index: 6
+	group: "40103B7AFEA824B7"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
 	progression_mode: "flexible"
-	quest_links: [ ]
+	images: [{
+			x: -8.4d
+			y: -8.44d
+			width: 30.0d
+			height: 16.88d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/ars.png"
+			order: 0
+			alpha: 0.55d
+		}]
 	quests: [
 		{
-			description: [
-				"Ars Nouveau spells are assembled from three parts: a form (how it is delivered), an effect (what it does) and augments (how it does it). Source mana comes from the world, not from you."
-				"It is a different kind of magic from Iron's: more utility, more freedom, more patience."
-			]
-			icon: "ars_nouveau:novice_spell_book"
-			id: "3D00832E1856F670"
-			rewards: [{
-				id: "284D2F568AFC6114"
-				type: "xp"
-				xp: 30
-			}]
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				consume_items: false
-				id: "3824FCA7BA92DDC2"
-				item: "ars_nouveau:novice_spell_book"
-				type: "item"
-			}]
+			id: "9B27131290CC87C1"
 			title: "Glyph by Glyph"
+			description: ["Ars Nouveau spells are assembled from three parts: a form (how it is delivered), an effect (what it does) and augments (how it does it). Source mana comes from the world, not from you.", "It is a different kind of magic from Iron's: more utility, more freedom, more patience."]
+			icon: "ars_nouveau:novice_spell_book"
 			x: 0.0d
 			y: 0.0d
-		}
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "816E6385ADBAB956"
+						type: "item"
+						item: "ars_nouveau:novice_spell_book"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "DE41A6C063D87E79"
+						type: "xp"
+						xp: 30
+					}
+			]
+		},
 		{
+			id: "1B582320B743AA25"
+			title: "Source Gems"
 			description: ["Source is gathered from the world and fed into jars and machines. Without it, nothing works."]
 			icon: "minecraft:amethyst_shard"
-			id: "1B582320B743AA25"
-			rewards: [{
-				id: "528AF0AE7A0E747C"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "6F9DB62AE0689B13"
-				type: "checkmark"
-			}]
-			title: "Source Gems"
 			x: 2.2d
 			y: -0.9d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "ABFEC6FA54A73436"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "C994B470053E69AD"
+						type: "xp"
+						xp: 25
+					}
+			]
+			dependencies: ["9B27131290CC87C1"]
+		},
 		{
+			id: "0B306B744FEC8AF9"
+			title: "A First Glyph"
 			description: ["Glyphs are learned and crafted. Start with projectile, harm and a little amplify."]
 			icon: "ars_nouveau:glyph_projectile"
-			id: "0B306B744FEC8AF9"
-			rewards: [{
-				id: "668C98B096C7B8F4"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "65FE6D079BD04F8A"
-				item: "ars_nouveau:glyph_projectile"
-				type: "item"
-			}]
-			title: "A First Glyph"
 			x: 2.2d
 			y: 0.9d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "A5ACFE9E48EC6D7C"
+						type: "item"
+						item: "ars_nouveau:glyph_projectile"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "668C98B096C7B8F4"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["9B27131290CC87C1"]
+		},
 		{
-			dependencies: ["0B306B744FEC8AF9"]
+			id: "3CAEA6EFB3322E12"
+			title: "Heal"
 			description: ["A heal glyph on yourself: the first healing spell any traveller learns."]
 			icon: "ars_nouveau:glyph_heal"
-			id: "3CAEA6EFB3322E12"
-			rewards: [{
-				id: "0988C4EDF5F1D5CF"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "73D30C3773E1D31B"
-				item: "ars_nouveau:glyph_heal"
-				type: "item"
-			}]
-			title: "Heal"
 			x: 4.4d
 			y: -0.9d
-		}
-		{
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "EE51D042213607BF"
+						type: "item"
+						item: "ars_nouveau:glyph_heal"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "0988C4EDF5F1D5CF"
+						type: "xp"
+						xp: 40
+					}
+			]
 			dependencies: ["0B306B744FEC8AF9"]
+		},
+		{
+			id: "47B097798EBE4FA0"
+			title: "Blink"
 			description: ["A short-range teleport you own. It does not replace Waystones, but it makes cliffs and doorways optional."]
 			icon: "ars_nouveau:glyph_blink"
-			id: "47B097798EBE4FA0"
-			rewards: [{
-				id: "0D01CE1587C56A09"
-				type: "xp"
-				xp: 60
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "2A7D2C3B45AABF87"
-				item: "ars_nouveau:glyph_blink"
-				type: "item"
-			}]
-			title: "Blink"
 			x: 4.4d
 			y: 0.9d
-		}
-		{
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "2A7D2C3B45AABF87"
+						type: "item"
+						item: "ars_nouveau:glyph_blink"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "F77DD29873C5138B"
+						type: "xp"
+						xp: 60
+					}
+			]
 			dependencies: ["0B306B744FEC8AF9"]
+		},
+		{
+			id: "EEE776604DB6BEDC"
+			title: "Glide"
 			description: ["A glyph for controlled falls. Not true flight: just a very good descent."]
 			icon: "ars_nouveau:glyph_glide"
-			id: "0A2B944ACE1C5517"
-			optional: true
-			rewards: [{
-				id: "0CC527D8A155AA1F"
-				type: "xp"
-				xp: 60
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "6E0A9B4B5FDD0EB4"
-				item: "ars_nouveau:glyph_glide"
-				type: "item"
-			}]
-			title: "Glide"
 			x: 4.4d
 			y: 2.7d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "AA3CDDEF72CFAF2F"
+						type: "item"
+						item: "ars_nouveau:glyph_glide"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "FF1391B41DAA608F"
+						type: "xp"
+						xp: 60
+					}
+			]
+			optional: true
+			dependencies: ["0B306B744FEC8AF9"]
+		},
 		{
-			dependencies: ["3CAEA6EFB3322E12"]
+			id: "5D39818CAF58D237"
+			title: "Enchanting Apparatus"
 			description: ["A workbench for the high end: imbue gear, craft glyphs, make ritual items."]
 			icon: "ars_nouveau:enchanting_apparatus"
-			id: "5D39818CAF58D237"
-			rewards: [{
-				id: "6AD09C76E5D6E3A8"
-				type: "xp"
-				xp: 80
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "4293500FC72E8D6B"
-				item: "ars_nouveau:enchanting_apparatus"
-				type: "item"
-			}]
-			title: "Enchanting Apparatus"
 			x: 6.6000000000000005d
 			y: -0.9d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "BC7436BA6F94087B"
+						type: "item"
+						item: "ars_nouveau:enchanting_apparatus"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "6AD09C76E5D6E3A8"
+						type: "xp"
+						xp: 80
+					}
+			]
+			dependencies: ["3CAEA6EFB3322E12"]
+		},
 		{
-			dependencies: ["5D39818CAF58D237"]
+			id: "15FF728006B80D94"
+			title: "Apprentice Spell Book"
 			description: ["More glyph slots, more complex spells."]
 			icon: "ars_nouveau:apprentice_spell_book"
-			id: "15FF728006B80D94"
-			rewards: [{
-				id: "354A54609D4B76BE"
-				type: "xp"
-				xp: 100
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				advancement: "ars_nouveau:apprentice_spell_book"
-				criterion: ""
-				id: "37EFD4756F2DC96F"
-				type: "advancement"
-			}]
-			title: "Apprentice Spell Book"
 			x: 8.8d
 			y: -2.7d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "925ABB5D0B9ABCE1"
+						type: "advancement"
+						advancement: "ars_nouveau:apprentice_spell_book"
+					}
+			]
+			rewards: [
+					{
+						id: "354A54609D4B76BE"
+						type: "xp"
+						xp: 100
+					}
+			]
+			dependencies: ["5D39818CAF58D237"]
+		},
 		{
-			dependencies: ["15FF728006B80D94"]
+			id: "F464F5018CAC7E0F"
+			title: "Archmage Spell Book"
 			description: ["The final tier: huge, powerful, expensive."]
 			icon: "ars_nouveau:archmage_spell_book"
-			id: "16DE90D91652D5CB"
-			rewards: [
-				{
-					id: "1923675A05C81989"
-					type: "xp"
-					xp: 250
-				}
-				{
-					command: "skilltree points add {p} 1"
-					id: "01B154939AE4D13C"
-					silent: true
-					title: "1 skill point"
-					type: "command"
-				}
-			]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				advancement: "ars_nouveau:archmage_spell_book"
-				criterion: ""
-				id: "16855C90DD4A331E"
-				type: "advancement"
-			}]
-			title: "Archmage Spell Book"
 			x: 11.0d
 			y: -2.7d
-		}
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "CCD68AF4979D843D"
+						type: "advancement"
+						advancement: "ars_nouveau:archmage_spell_book"
+					}
+			]
+			rewards: [
+					{
+						id: "F8DD6A29604C0CBE"
+						type: "xp"
+						xp: 250
+					},
+					{
+						id: "A557A964BBCC30D7"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["15FF728006B80D94"]
+		},
 		{
-			dependencies: ["5D39818CAF58D237"]
+			id: "09AEE29842570414"
+			title: "Imbuement Chamber"
 			description: ["Imbues items with spell-like properties. A craftsman's cathedral."]
 			icon: "ars_nouveau:imbuement_chamber"
-			id: "09AEE29842570414"
-			optional: true
-			rewards: [{
-				id: "596FC69461286826"
-				type: "xp"
-				xp: 80
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "7283DCCE35F94C4C"
-				item: "ars_nouveau:imbuement_chamber"
-				type: "item"
-			}]
-			title: "Imbuement Chamber"
 			x: 8.8d
 			y: -0.9d
-		}
-		{
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "7283DCCE35F94C4C"
+						type: "item"
+						item: "ars_nouveau:imbuement_chamber"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "596FC69461286826"
+						type: "xp"
+						xp: 80
+					}
+			]
+			optional: true
 			dependencies: ["5D39818CAF58D237"]
+		},
+		{
+			id: "427FDAF70E09AC23"
+			title: "A Ritual"
 			description: ["Rituals do big things slowly: summon, bless, awaken. Set up a brazier and be patient."]
 			icon: "ars_nouveau:ritual_awakening"
-			id: "427FDAF70E09AC23"
-			optional: true
-			rewards: [{
-				id: "7AE227677B894CF8"
-				type: "xp"
-				xp: 120
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "1A174759C11CF7DA"
-				type: "checkmark"
-			}]
-			title: "A Ritual"
 			x: 8.8d
 			y: 0.9d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "E66F853AC64474B2"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "7AE227677B894CF8"
+						type: "xp"
+						xp: 120
+					}
+			]
+			optional: true
+			dependencies: ["5D39818CAF58D237"]
+		},
 		{
+			id: "EB71E5305A958443"
+			title: "Spell Fusion"
 			description: ["Mix Iron's and Ars spells in the same loadout: one for combat, one for utility. Bring both."]
 			icon: "ars_nouveau:arcane_core"
-			id: "15419EB46B61F705"
-			optional: true
-			rewards: [{
-				id: "4847003171D47CE5"
-				type: "xp"
-				xp: 150
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "25CF880DC8D8E453"
-				type: "checkmark"
-			}]
-			title: "Spell Fusion"
 			x: 13.200000000000001d
 			y: -2.7d
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "C503234F1A4B4316"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "AC87CA10F8E0B36C"
+						type: "xp"
+						xp: 150
+					}
+			]
+			optional: true
+			dependencies: ["F464F5018CAC7E0F"]
 		}
 	]
-	title: "Spellcraft: Glyphs and Source"
 }

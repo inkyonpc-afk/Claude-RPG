@@ -135,7 +135,7 @@ for idx, fn in faces.items():
     Image.fromarray(out).save(os.path.join(TITLE, "background", "panorama_%d.png" % idx), optimize=True)
 Image.fromarray(np.clip(sample(np.linspace(0, 1, 360, endpoint=False)[None, :].repeat(180, 0), np.linspace(0, 1, 180)[:, None].repeat(360, 1)), 0, 255).astype("uint8")).save(os.path.join(TITLE, "background", "panorama_overlay.png"))
 
-# ---------------------------------------------------------------- logo: 310x44 split into two 155x44 halves on a 256x256 sheet
+# ---------------------------------------------------------------- logo: 1.20 draws minecraft.png as one 256x44 strip of a 256x64 texture (vanilla ships it at 4x: 1024x256)
 def font(size, bold=True):
     for f in ("georgiab.ttf", "cambriab.ttf", "constanb.ttf", "georgia.ttf"):
         p = os.path.join("C:/Windows/Fonts", f)
@@ -144,14 +144,14 @@ def font(size, bold=True):
     return ImageFont.load_default()
 
 
-logo = Image.new("RGBA", (310 * 4, 44 * 4), (0, 0, 0, 0))
+logo = Image.new("RGBA", (1024, 176), (0, 0, 0, 0))
 ld = ImageDraw.Draw(logo)
 text = "EMBERS OF ALDRETH"
 size = 150
 while True:
     ft = font(size)
     bbox = ld.textbbox((0, 0), text, font=ft)
-    if (bbox[2] - bbox[0]) <= 1170 and (bbox[3] - bbox[1]) <= 150 or size <= 40:
+    if (bbox[2] - bbox[0]) <= 980 and (bbox[3] - bbox[1]) <= 140 or size <= 40:
         break
     size -= 4
 tx = (logo.width - (bbox[2] - bbox[0])) // 2
@@ -159,10 +159,10 @@ ty = (logo.height - (bbox[3] - bbox[1])) // 2 - bbox[1]
 glow = Image.new("RGBA", logo.size, (0, 0, 0, 0))
 gd = ImageDraw.Draw(glow)
 gd.text((tx, ty), text, font=ft, fill=(255, 140, 50, 255))
-glow = glow.filter(ImageFilter.GaussianBlur(14))
+glow = glow.filter(ImageFilter.GaussianBlur(10))
 logo = Image.alpha_composite(logo, glow)
 ld = ImageDraw.Draw(logo)
-for off in range(6, 0, -1):
+for off in range(5, 0, -1):
     ld.text((tx + off, ty + off), text, font=ft, fill=(40, 14, 6, 255))
 ld.text((tx, ty), text, font=ft, fill=(255, 226, 170, 255))
 # gradient tint: ember orange at the bottom of letters
@@ -175,17 +175,24 @@ for y in range(logo.height):
 mask = Image.new("L", logo.size, 0)
 ImageDraw.Draw(mask).text((tx, ty), text, font=ft, fill=255)
 logo = Image.composite(Image.alpha_composite(logo, grad), logo, mask)
-logo = logo.resize((310, 44), Image.LANCZOS)
-sheet = Image.new("RGBA", (256, 256), (0, 0, 0, 0))
-sheet.paste(logo.crop((0, 0, 155, 44)), (0, 0))
-sheet.paste(logo.crop((155, 0, 310, 44)), (0, 45))
+sheet = Image.new("RGBA", (1024, 256), (0, 0, 0, 0))
+sheet.paste(logo, (0, 0))
 sheet.save(os.path.join(TITLE, "minecraft.png"))
-edition = Image.new("RGBA", (128, 14), (0, 0, 0, 0))
+# edition: drawn as 128x14 of a 128x16 texture, 7px under the logo (4x: 512x64, text inside the top 512x56)
+edition = Image.new("RGBA", (512, 64), (0, 0, 0, 0))
 ed = ImageDraw.Draw(edition)
-ef = font(10, False)
 etext = "A FANTASY ACTION RPG"
-eb = ed.textbbox((0, 0), etext, font=ef)
-ed.text(((128 - (eb[2] - eb[0])) // 2, 1 - eb[1]), etext, font=ef, fill=(255, 200, 140, 255))
+esize = 44
+while True:
+    ef = font(esize, False)
+    eb = ed.textbbox((0, 0), etext, font=ef)
+    if (eb[2] - eb[0]) <= 470 and (eb[3] - eb[1]) <= 44 or esize <= 12:
+        break
+    esize -= 2
+ex, ey = (512 - (eb[2] - eb[0])) // 2 - eb[0], (56 - (eb[3] - eb[1])) // 2 - eb[1]
+for off in (3, 2, 1):
+    ed.text((ex + off, ey + off), etext, font=ef, fill=(40, 14, 6, 255))
+ed.text((ex, ey), etext, font=ef, fill=(255, 200, 140, 255))
 edition.save(os.path.join(TITLE, "edition.png"))
 
 # ---------------------------------------------------------------- splashes

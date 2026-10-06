@@ -27,6 +27,10 @@ for e in lock:
         files.append({"projectID": e["addonID"], "fileID": e["fileId"], "required": True})
     else:
         extra.append(e["fileName"])
+# resource/shader packs tracked on CurseForge are referenced, not bundled
+vis = json.load(open(os.path.join(ROOT, "pack", "visual_packs.json"), encoding="utf-8")) if os.path.isfile(os.path.join(ROOT, "pack", "visual_packs.json")) else []
+vis_cf = {v["fileName"] for v in vis if v.get("projectID") and v.get("fileID")}
+files += [{"projectID": v["projectID"], "fileID": v["fileID"], "required": True} for v in vis if v["fileName"] in vis_cf]
 manifest = {"minecraft": {"version": "1.20.1", "modLoaders": [{"id": "forge-47.4.10", "primary": True}]}, "manifestType": "minecraftModpack", "manifestVersion": 1,
             "name": "Embers of Aldreth", "version": a.version, "author": "Claude + Connor", "overrides": "overrides", "files": files}
 os.makedirs(os.path.join(ROOT, a.out), exist_ok=True)
@@ -41,11 +45,14 @@ with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
         for dp, dn, fn in os.walk(base):
             dn[:] = [x for x in dn if x not in EXCLUDE_PARTS]
             for f in fn:
+                if f in vis_cf and d in ("resourcepacks", "shaderpacks"):
+                    continue
                 full = os.path.join(dp, f)
                 z.write(full, "overrides/" + os.path.relpath(full, ROOT).replace("\\", "/"))
-    for f in ("options.txt",):
-        if os.path.isfile(os.path.join(ROOT, f)):
-            z.write(os.path.join(ROOT, f), "overrides/" + f)
+    # options travel as Default Options defaults: applied on first launch only, so updates never clobber a player's settings
+    if os.path.isfile(os.path.join(ROOT, "options.txt")):
+        keep = [l for l in open(os.path.join(ROOT, "options.txt"), encoding="utf-8").read().splitlines() if not l.startswith(("lastServer:", "fullscreen", "overrideWidth", "overrideHeight"))]
+        z.writestr("overrides/config/defaultoptions/options.txt", "\n".join(keep) + "\n")
     for fn in extra:   # jars without a CurseForge id travel inside the pack (personal/friends distribution)
         z.write(os.path.join(mods_dir, fn), "overrides/mods/" + fn)
 print("exported", zp, "| CurseForge-hosted mods:", len(files), "| bundled jars:", len(extra), "| size MB: %.1f" % (os.path.getsize(zp) / 1e6))

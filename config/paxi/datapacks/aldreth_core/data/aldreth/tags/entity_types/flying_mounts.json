@@ -11,7 +11,13 @@
   "wyrmroost:overworld_drake",
   "wyrmroost:silver_glider",
   "wyrmroost:butterfly_leviathan",
+  "wyrmroost:alpine",
   "alexscaves:subterranodon",
-  "endertrigon:baby_ender_dragon"
+  "endertrigon:baby_ender_dragon",
+  "goety:haunted_broom",
+  "tameablebeasts:argentavis",
+  "tameablebeasts:quetzalcoatlus",
+  "tameablebeasts:graptera",
+  "tameablebeasts:beetle_drone"
  ]
 }

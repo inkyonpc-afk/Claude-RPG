@@ -1,707 +1,791 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
-	filename: "25_act3"
-	group: "66515315CBB6E386"
-	icon: "minecraft:feather"
 	id: "29C8BB1E3CC54F30"
-	images: [{
-		alpha: 0
-		height: 19.01d
-		image: "aldreth:textures/quests/act3.png"
-		rotation: 0.0d
-		width: 33.8d
-		x: -7.0d
-		y: -9.21d
-	}]
-	order_index: 3
+	filename: "25_act3"
+	title: "Act III: Beyond the Veil"
+	subtitle: "Above the weather: sky islands, dream-realms and the first true flight."
+	icon: "minecraft:feather"
+	order_index: 25
+	group: "66515315CBB6E386"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
 	progression_mode: "flexible"
-	quest_links: [ ]
+	images: [{
+			x: -7.0d
+			y: -9.21d
+			width: 33.8d
+			height: 19.01d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/act3.png"
+			order: 0
+			alpha: 0.55d
+		}]
 	quests: [
 		{
+			id: "2F6473DE1E123A28"
+			title: "A Country in the Clouds"
 			description: ["Glowstone, water and a sky-blue light: the Aether is a realm of floating islands, gentle fauna and dangerous architecture. Keep a slowfall potion close."]
 			icon: "aether:aether_portal_frame"
-			id: "2F6473DE1E123A28"
-			rewards: [
-				{
-					id: "4580DB180E9DBFBA"
-					type: "xp"
-					xp: 200
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t3"
-					id: "160D7CB4519E9E20"
-					silent: true
-					title: "Tier 3 supply cache"
-					type: "command"
-				}
-			]
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				dimension: "minecraft:"
-				id: "39EC6F2C567D2F23"
-				type: "dimension"
-			}]
-			title: "A Country in the Clouds"
 			x: 0.0d
 			y: 0.0d
-		}
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "39EC6F2C567D2F23"
+						type: "dimension"
+						dim: "aether:the_aether"
+					}
+			]
+			rewards: [
+					{
+						id: "A8AFDD8106D29307"
+						type: "xp"
+						xp: 200
+					},
+					{
+						id: "9B5F17E8BB44AD7F"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					},
+					{
+						id: "06A0F48E831BDBE3"
+						type: "command"
+						command: "kubejs stages add {p} aldreth_flight"
+						elevate: true
+						silent: true
+						title: "Flight unlocked: winged mounts may carry you through the overworld sky"
+					}
+			]
+			dependencies: ["C03E0599B39D05F6"]
+		},
 		{
-			dependencies: ["2F6473DE1E123A28"]
+			id: "C8708508F38D0893"
+			title: "Zanite"
 			description: ["The Aether's tools are made from gemstones, not metal. Holystone, zanite, gravitite: each is a tier of lightness."]
 			icon: "aether:zanite_gemstone"
-			id: "434D322142C5DECF"
-			rewards: [{
-				id: "2389F4B6E19DD2B4"
-				type: "xp"
-				xp: 80
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				count: 8L
-				id: "3CC48F7BC5AAA84C"
-				item: "aether:zanite_gemstone"
-				type: "item"
-			}]
-			title: "Zanite"
 			x: 2.2d
 			y: -2.4d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "A776A828C39692FA"
+						type: "item"
+						item: "aether:zanite_gemstone"
+						count: 8
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "C04492BC1BF68A95"
+						type: "xp"
+						xp: 80
+					}
+			]
+			dependencies: ["2F6473DE1E123A28"]
+		},
 		{
+			id: "25B5C6C3E04E0A1F"
+			title: "Moa"
 			description: ["The Moa is a tall, fast, gentle bird that can jump higher than any horse. It is the first sky-mount: not flight, but close to it. Incubate an egg."]
 			icon: "aether:blue_moa_egg"
-			id: "25B5C6C3E04E0A1F"
-			rewards: [{
-				id: "2A9DF32328B574BC"
-				type: "xp"
-				xp: 120
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				advancement: "aether:incubate_moa"
-				criterion: ""
-				id: "3AFA61D28E9BCC05"
-				type: "advancement"
-			}]
-			title: "Moa"
 			x: 4.4d
 			y: -4.2d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "3AFA61D28E9BCC05"
+						type: "advancement"
+						advancement: "aether:incubate_moa"
+					}
+			]
+			rewards: [
+					{
+						id: "2A9DF32328B574BC"
+						type: "xp"
+						xp: 120
+					}
+			]
+			dependencies: ["C8708508F38D0893"]
+		},
 		{
-			dependencies: ["25B5C6C3E04E0A1F"]
+			id: "D7498346877ADF06"
+			title: "A Saddle for a Pig"
 			description: ["Flying pigs: the Aether's joke and its best ride. Saddle a phyg and you can glide above any island. Remember: this flight stays in the Aether."]
 			icon: "minecraft:saddle"
-			id: "12786A9B5AF73373"
-			rewards: [{
-				id: "6EA4362CFF2843CA"
-				type: "xp"
-				xp: 140
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				advancement: "aether:mount_phyg"
-				criterion: ""
-				id: "35A6D09E0F27837F"
-				type: "advancement"
-			}]
-			title: "A Saddle for a Pig"
 			x: 6.6000000000000005d
 			y: -4.2d
-		}
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "A1E2B77B271090B6"
+						type: "advancement"
+						advancement: "aether:mount_phyg"
+					}
+			]
+			rewards: [
+					{
+						id: "6EA4362CFF2843CA"
+						type: "xp"
+						xp: 140
+					}
+			]
+			dependencies: ["25B5C6C3E04E0A1F"]
+		},
 		{
+			id: "710AB2CC7C721232"
+			title: "The Bronze Dungeon"
 			description: ["Stone and slider; chests and traps. Bronze is the first of three dungeons whose keys you must earn."]
 			icon: "aether:bronze_dungeon_key"
-			id: "710AB2CC7C721232"
-			rewards: [
-				{
-					id: "1BD6861DF10C9797"
-					type: "xp"
-					xp: 150
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t3"
-					id: "7FBAA24F639401F7"
-					silent: true
-					title: "Tier 3 supply cache"
-					type: "command"
-				}
-			]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				advancement: "aether:bronze_dungeon"
-				criterion: ""
-				id: "1B5E62253DC626AD"
-				type: "advancement"
-			}]
-			title: "The Bronze Dungeon"
 			x: 4.4d
 			y: -2.4d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "1B5E62253DC626AD"
+						type: "advancement"
+						advancement: "aether:bronze_dungeon"
+					}
+			]
+			rewards: [
+					{
+						id: "827BD0438C85A8CB"
+						type: "xp"
+						xp: 150
+					},
+					{
+						id: "7FBAA24F639401F7"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t3"
+						elevate: true
+						silent: true
+						title: "Tier 3 supply cache"
+					}
+			]
+			dependencies: ["C8708508F38D0893"]
+		},
 		{
-			dependencies: ["710AB2CC7C721232"]
+			id: "6DE5B62F96455C37"
+			title: "The Slider"
 			description: ["A cube of stone that wants to hit you. It remembers every attack you tried last time; do not repeat yourself."]
 			icon: "aether:bronze_dungeon_key"
-			id: "6DE5B62F96455C37"
-			rewards: [
-				{
-					id: "5C331A552059C659"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "skilltree points add {p} 1"
-					id: "674573C058BAA488"
-					silent: true
-					title: "1 skill point"
-					type: "command"
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "324476243D0D1645"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				entity: "aether:slider"
-				id: "08F1C755DD1F249D"
-				type: "kill"
-				value: 1L
-			}]
-			title: "The Slider"
 			x: 6.6000000000000005d
 			y: -2.4d
-		}
+			size: 1.5d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "08F1C755DD1F249D"
+						type: "kill"
+						entity: "aether:slider"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "5C331A552059C659"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "674573C058BAA488"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					},
+					{
+						id: "324476243D0D1645"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			dependencies: ["710AB2CC7C721232"]
+		},
 		{
-			dependencies: ["6DE5B62F96455C37"]
+			id: "44ADE11FFBA5DF29"
+			title: "The Silver Dungeon"
 			description: ["A pyramid of puzzles and angels. The Valkyrie Queen is the third stage of the Aether, and she dislikes visitors."]
 			icon: "aether:silver_dungeon_key"
-			id: "44ADE11FFBA5DF29"
-			rewards: [{
-				id: "313EEA12446BA967"
-				type: "xp"
-				xp: 180
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "164B24AE8D3188B4"
-				structure: "aether:silver_dungeon"
-				type: "structure"
-			}]
-			title: "The Silver Dungeon"
 			x: 8.8d
 			y: -2.4d
-		}
-		{
-			dependencies: ["44ADE11FFBA5DF29"]
-			description: ["A duel, not a boss fight. She is quick, accurate and fair; the lance she drops is the first truly legendary weapon in this campaign."]
-			icon: {
-				Count: 1
-				id: "aether:valkyrie_lance"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1D4597A9F8DE556C"
-			rewards: [
-				{
-					id: "02E09A79CBFC1C91"
-					type: "xp"
-					xp: 450
-				}
-				{
-					command: "skilltree points add {p} 2"
-					id: "5476BABE589B1464"
-					silent: true
-					title: "2 skill points"
-					type: "command"
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "18CDA4987813D751"
-					silent: true
-					title: "Valkyrie spoils"
-					type: "command"
-				}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "B5D5FFDBCC49256C"
+						type: "structure"
+						structure: "aether:silver_dungeon"
+					}
 			]
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				entity: "aether:valkyrie_queen"
-				id: "13E4B43643000993"
-				type: "kill"
-				value: 1L
-			}]
+			rewards: [
+					{
+						id: "FACFBF1A9CAD8C04"
+						type: "xp"
+						xp: 180
+					}
+			]
+			dependencies: ["6DE5B62F96455C37"]
+		},
+		{
+			id: "C5352C0399EAFA68"
 			title: "The Valkyrie Queen"
+			description: ["A duel, not a boss fight. She is quick, accurate and fair; the lance she drops is the first truly legendary weapon in this campaign."]
+			icon: "aether:valkyrie_lance"
 			x: 11.0d
 			y: -2.4d
-		}
+			size: 1.5d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "13E4B43643000993"
+						type: "kill"
+						entity: "aether:valkyrie_queen"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "BC5EDECA099CAEAF"
+						type: "xp"
+						xp: 450
+					},
+					{
+						id: "FD0A637C81710217"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					},
+					{
+						id: "18CDA4987813D751"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Valkyrie spoils"
+					}
+			]
+			dependencies: ["44ADE11FFBA5DF29"]
+		},
 		{
+			id: "089A9CEC7C1FBC85"
+			title: "The Gold Dungeon"
 			description: ["Sun on the water, fire in the air. The last Aether dungeon belongs to the Sun Spirit, who is angry at the world."]
 			icon: "aether:gold_dungeon_key"
-			id: "089A9CEC7C1FBC85"
-			rewards: [{
-				id: "29E6C78C694E9B4A"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "6F5661DD4A67AE1E"
-				structure: "aether:gold_dungeon"
-				type: "structure"
-			}]
-			title: "The Gold Dungeon"
 			x: 13.200000000000001d
 			y: -2.4d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "6F5661DD4A67AE1E"
+						type: "structure"
+						structure: "aether:gold_dungeon"
+					}
+			]
+			rewards: [
+					{
+						id: "29E6C78C694E9B4A"
+						type: "xp"
+						xp: 200
+					}
+			]
+			dependencies: ["C5352C0399EAFA68"]
+		},
 		{
-			dependencies: ["089A9CEC7C1FBC85"]
+			id: "5671669CEF35DC34"
+			title: "The Sun Spirit"
 			description: ["A boss of fire and fury at the roof of the sky. Beat him and the Aether is yours; the Warden of Sky has no more to say."]
 			icon: "aether:victory_medal"
-			id: "5671669CEF35DC34"
-			rewards: [
-				{
-					id: "4ABF782C7F72CF23"
-					type: "xp"
-					xp: 600
-				}
-				{
-					command: "skilltree points add {p} 2"
-					id: "44E5455312102862"
-					silent: true
-					title: "2 skill points"
-					type: "command"
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t5"
-					id: "711D0713594900C1"
-					silent: true
-					title: "Sun Spirit spoils"
-					type: "command"
-				}
-			]
-			shape: "octagon"
-			size: 1.6d
-			tasks: [{
-				entity: "aether:sun_spirit"
-				id: "1DFF470A9CEB3ECA"
-				type: "kill"
-				value: 1L
-			}]
-			title: "The Sun Spirit"
 			x: 15.400000000000002d
 			y: -2.4d
-		}
+			size: 1.6d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "8D5A13E21DEB2EC2"
+						type: "kill"
+						entity: "aether:sun_spirit"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "FB4A821E1FC32AA7"
+						type: "xp"
+						xp: 600
+					},
+					{
+						id: "B627044FDFEE30A4"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					},
+					{
+						id: "711D0713594900C1"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Sun Spirit spoils"
+					}
+			]
+			dependencies: ["089A9CEC7C1FBC85"]
+		},
 		{
+			id: "38F3CE8DF1EEA861"
+			title: "Whale-Rider"
 			description: ["Aerwhales drift through the clouds like cathedrals. A saddle, patience and a lot of fruit, and you ride the sky like a ship."]
 			icon: "deep_aether:aerwhale_saddle"
-			id: "38F3CE8DF1EEA861"
-			optional: true
-			rewards: [{
-				id: "4AA566937FB5AD3D"
-				type: "xp"
-				xp: 180
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "73C072F2EE54716B"
-				item: "deep_aether:aerwhale_saddle"
-				type: "item"
-			}]
-			title: "Whale-Rider"
 			x: 8.8d
 			y: -4.2d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "73C072F2EE54716B"
+						type: "item"
+						item: "deep_aether:aerwhale_saddle"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "4AA566937FB5AD3D"
+						type: "xp"
+						xp: 180
+					}
+			]
+			optional: true
+			dependencies: ["D7498346877ADF06"]
+		},
 		{
-			dependencies: ["5671669CEF35DC34"]
+			id: "3433E3DFD61EE112"
+			title: "Hippogryph"
 			description: ["A real flying mount for the overworld: slow, honest, limited. It cannot enter dungeons and it tires. Even so, the first time you land on a mountaintop you will want to stay."]
 			icon: "iceandfire:hippogryph_egg"
-			id: "3433E3DFD61EE112"
-			rewards: [{
-				id: "2F95684F60DA8E3D"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "2AF2770700C83C19"
-				item: "iceandfire:hippogryph_egg"
-				type: "item"
-			}]
-			title: "Hippogryph"
 			x: 17.6d
 			y: -2.4d
-		}
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "A538C8442B253AC1"
+						type: "item"
+						item: "iceandfire:hippogryph_egg"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "2F95684F60DA8E3D"
+						type: "xp"
+						xp: 200
+					}
+			]
+			dependencies: ["5671669CEF35DC34"]
+		},
 		{
-			dependencies: ["3433E3DFD61EE112"]
+			id: "62117F17C808EF13"
+			title: "Wings of the First Flight"
 			description: ["The Straddleboard, the aerwhale, the hippogryph: you have three ways into the sky now. The Wardens' structures are built to keep fliers out. Respect that; or break it, and learn why."]
 			icon: "alexsmobs:straddle_saddle"
-			id: "62117F17C808EF13"
-			rewards: [
-				{
-					id: "21C3B94DB6174708"
-					type: "xp"
-					xp: 150
-				}
-				{
-					command: "skilltree points add {p} 1"
-					id: "761C30C0AB09656B"
-					silent: true
-					title: "1 skill point"
-					type: "command"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			tasks: [{
-				id: "19327C056833086C"
-				type: "checkmark"
-			}]
-			title: "Wings of the First Flight"
 			x: 19.8d
 			y: -2.4d
-		}
-		{
-			dependencies: ["2F6473DE1E123A28"]
-			description: ["Blue Skies is two realms: Everbright, where it is always noon, and Everdawn, where it never finishes midnight. Both are beautiful, both have teeth."]
-			icon: {
-				Count: 1
-				id: "blue_skies:zeal_lighter"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "76C9DA2C4FE7B38F"
-			rewards: [{
-				id: "411B6D0F9167D6A8"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "diamond"
 			size: 1.0d
-			tasks: [{
-				dimension: "minecraft:"
-				id: "143734C7FAB37757"
-				type: "dimension"
-			}]
+			shape: "diamond"
+			tasks: [
+					{
+						id: "19327C056833086C"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "A52626EC14C0DB63"
+						type: "xp"
+						xp: 150
+					},
+					{
+						id: "D10633BFB733C1EC"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["3433E3DFD61EE112"]
+		},
+		{
+			id: "D7B969B2B979F798"
 			title: "A Dream of Light"
+			description: ["Blue Skies is two realms: Everbright, where it is always noon, and Everdawn, where it never finishes midnight. Both are beautiful, both have teeth."]
+			icon: "blue_skies:zeal_lighter"
 			x: 2.2d
 			y: -0.6d
-		}
+			size: 1.0d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "E5CA7DA47185FCD6"
+						type: "dimension"
+						dim: "blue_skies:everbright"
+					}
+			]
+			rewards: [
+					{
+						id: "9148AC601E4DD667"
+						type: "xp"
+						xp: 200
+					}
+			]
+			dependencies: ["2F6473DE1E123A28"]
+		},
 		{
+			id: "5E75753DB2D6353D"
+			title: "The Summoner"
 			description: ["A dungeon of nature, a Summoner who does not fight alone. Bring a ranged weapon and a friend."]
 			icon: "blue_skies:diopside_gem"
-			id: "5E75753DB2D6353D"
-			rewards: [
-				{
-					id: "05E0F6529BD1B062"
-					type: "xp"
-					xp: 350
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "24A0160CA307F0C6"
-					silent: true
-					title: "Tier 4 supply cache"
-					type: "command"
-				}
-			]
-			shape: "octagon"
-			size: 1.4d
-			tasks: [{
-				entity: "blue_skies:summoner"
-				id: "27B647CDC08B39FB"
-				type: "kill"
-				value: 1L
-			}]
-			title: "The Summoner"
 			x: 4.4d
 			y: -0.6d
-		}
+			size: 1.4d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "27B647CDC08B39FB"
+						type: "kill"
+						entity: "blue_skies:summoner"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "05E0F6529BD1B062"
+						type: "xp"
+						xp: 350
+					},
+					{
+						id: "24A0160CA307F0C6"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Tier 4 supply cache"
+					}
+			]
+			dependencies: ["D7B969B2B979F798"]
+		},
 		{
-			dependencies: ["5E75753DB2D6353D"]
+			id: "6B325FDF4B171EB9"
+			title: "The Starlit Crusher"
 			description: ["A giant of crystal and rock. The Everbright's last stand."]
 			icon: "blue_skies:horizonite_ingot"
-			id: "6B325FDF4B171EB9"
-			rewards: [
-				{
-					id: "619851D6A3A4C986"
-					type: "xp"
-					xp: 500
-				}
-				{
-					command: "skilltree points add {p} 1"
-					id: "4A00F823CC54EB1E"
-					silent: true
-					title: "1 skill point"
-					type: "command"
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t5"
-					id: "2E400F84E6C47F85"
-					silent: true
-					title: "Tier 5 supply cache"
-					type: "command"
-				}
-			]
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				entity: "blue_skies:starlit_crusher"
-				id: "78636EB98417E7EC"
-				type: "kill"
-				value: 1L
-			}]
-			title: "The Starlit Crusher"
 			x: 6.6000000000000005d
 			y: -0.6d
-		}
+			size: 1.5d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "78636EB98417E7EC"
+						type: "kill"
+						entity: "blue_skies:starlit_crusher"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "619851D6A3A4C986"
+						type: "xp"
+						xp: 500
+					},
+					{
+						id: "98D5A26F1E257F96"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					},
+					{
+						id: "897C9BF1D68FBF4A"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			dependencies: ["5E75753DB2D6353D"]
+		},
 		{
+			id: "92C46F18BA505B11"
+			title: "Under Forever Moon"
 			description: ["Everdawn's dungeons are poison and webs. Antidotes first, adventure second."]
 			icon: "blue_skies:pyrope_gem"
-			id: "3275CBCD4C27EBDF"
-			rewards: [{
-				id: "021BEA9778A70EA7"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				dimension: "minecraft:"
-				id: "180C15EAA40FE2DE"
-				type: "dimension"
-			}]
-			title: "Under Forever Moon"
 			x: 4.4d
 			y: 1.2d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "E1A95449412824D4"
+						type: "dimension"
+						dim: "blue_skies:everdawn"
+					}
+			]
+			rewards: [
+					{
+						id: "021BEA9778A70EA7"
+						type: "xp"
+						xp: 200
+					}
+			]
+			dependencies: ["D7B969B2B979F798"]
+		},
 		{
+			id: "9DD1C900BD970093"
+			title: "The Arachnarch"
 			description: ["A spider the size of a cottage. Fight on the edges of its web and bring something to clear the poison."]
 			icon: "blue_skies:falsite_ingot"
-			id: "23C95474FF2BD8AA"
-			rewards: [
-				{
-					id: "29EFA46B39B3268F"
-					type: "xp"
-					xp: 500
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t5"
-					id: "47FF8008819DAF5C"
-					silent: true
-					title: "Tier 5 supply cache"
-					type: "command"
-				}
-			]
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				entity: "blue_skies:arachnarch"
-				id: "5C06169C035F0745"
-				type: "kill"
-				value: 1L
-			}]
-			title: "The Arachnarch"
 			x: 6.6000000000000005d
 			y: 1.2d
-		}
+			size: 1.5d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "5C06169C035F0745"
+						type: "kill"
+						entity: "blue_skies:arachnarch"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "29EFA46B39B3268F"
+						type: "xp"
+						xp: 500
+					},
+					{
+						id: "47FF8008819DAF5C"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Tier 5 supply cache"
+					}
+			]
+			dependencies: ["92C46F18BA505B11"]
+		},
 		{
+			id: "ACC2CBABCAC9BCAD"
+			title: "A Mouth in the Earth"
 			description: ["Alex's Caves hides entire worlds under the surface: candy caverns, acid pits, abyssal trenches. Pick a biome and descend."]
 			icon: "alexscaves:uranium"
-			id: "161ACCAD77533C5A"
-			optional: true
-			rewards: [{
-				id: "4E38B1C74356B970"
-				type: "xp"
-				xp: 150
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "350F6D8BC7C413AE"
-				structure: "alexscaves:ocean_trench"
-				type: "structure"
-			}]
-			title: "A Mouth in the Earth"
 			x: 0.0d
 			y: 2.0d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "350F6D8BC7C413AE"
+						type: "structure"
+						structure: "alexscaves:ocean_trench"
+					}
+			]
+			rewards: [
+					{
+						id: "4E38B1C74356B970"
+						type: "xp"
+						xp: 150
+					}
+			]
+			optional: true
+			dependencies: ["C03E0599B39D05F6"]
+		},
 		{
+			id: "1AFE6F6E18365B0A"
+			title: "Subterranodon"
 			description: ["A cave flier you can ride. Short flights, strong dives: a mount built for caverns, and a clue to what the underground will give you later."]
 			icon: "alexscaves:heavy_bone"
-			id: "1AFE6F6E18365B0A"
-			optional: true
-			rewards: [{
-				id: "61254581A9829F89"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				entity: "alexscaves:subterranodon"
-				id: "567605FA04910C27"
-				type: "kill"
-				value: 1L
-			}]
-			title: "Subterranodon"
 			x: 2.2d
 			y: 3.0d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "A8036764806BE270"
+						type: "kill"
+						entity: "alexscaves:subterranodon"
+						value: 1
+					}
+			]
+			rewards: [
+					{
+						id: "D699A073E773A229"
+						type: "xp"
+						xp: 200
+					}
+			]
+			optional: true
+			dependencies: ["ACC2CBABCAC9BCAD"]
+		},
 		{
+			id: "B4F5A9B8E200DEA1"
+			title: "Fire and Forge"
 			description: ["Ignitium is the first of Cataclysm's metals. Its gear is magnificent and its source is a creature that does not forgive."]
 			icon: "cataclysm:infernal_forge"
-			id: "3B1423B78D37EA90"
-			optional: true
-			rewards: [{
-				id: "06D7C0B6E724264C"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				id: "70BBA7B417464898"
-				structure: "cataclysm:burning_arena"
-				type: "structure"
-			}]
-			title: "Fire and Forge"
 			x: 0.0d
 			y: 4.0d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D23C551BD0BA228D"
+						type: "structure"
+						structure: "cataclysm:burning_arena"
+					}
+			]
+			rewards: [
+					{
+						id: "06D7C0B6E724264C"
+						type: "xp"
+						xp: 200
+					}
+			]
+			optional: true
+			dependencies: ["B9425B50B7055682"]
+		},
 		{
+			id: "4ADA7D068A2CA431"
+			title: "Ignis"
 			description: ["The Fallen Knight of the Nether: a duel against someone better than you. Take a shield, take a potion of resistance, take your time."]
 			icon: "cataclysm:ignitium_ingot"
-			id: "4ADA7D068A2CA431"
-			rewards: [
-				{
-					id: "7FADC202BC6433D6"
-					type: "xp"
-					xp: 700
-				}
-				{
-					command: "skilltree points add {p} 2"
-					id: "276C65930A0BD87A"
-					silent: true
-					title: "2 skill points"
-					type: "command"
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t5"
-					id: "6BB372D6C964D6AD"
-					silent: true
-					title: "Ignis spoils"
-					type: "command"
-				}
-			]
-			shape: "octagon"
-			size: 1.6d
-			tasks: [
-				{
-					entity: "cataclysm:ignis"
-					id: "7C4B32CD490CCCA5"
-					type: "kill"
-					value: 1L
-				}
-				{
-					advancement: "cataclysm:kill_ignis"
-					criterion: ""
-					id: "23FC3ED3F8F69A4D"
-					type: "advancement"
-				}
-			]
-			title: "Ignis"
 			x: 2.2d
 			y: 4.8d
-		}
+			size: 1.6d
+			shape: "octagon"
+			tasks: [
+					{
+						id: "7C4B32CD490CCCA5"
+						type: "kill"
+						entity: "cataclysm:ignis"
+						value: 1
+					},
+					{
+						id: "23FC3ED3F8F69A4D"
+						type: "advancement"
+						advancement: "cataclysm:kill_ignis"
+					}
+			]
+			rewards: [
+					{
+						id: "7FADC202BC6433D6"
+						type: "xp"
+						xp: 700
+					},
+					{
+						id: "276C65930A0BD87A"
+						type: "command"
+						command: "skilltree points add {p} 2"
+						elevate: true
+						silent: true
+						title: "2 skill points"
+					},
+					{
+						id: "6BB372D6C964D6AD"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t5"
+						elevate: true
+						silent: true
+						title: "Ignis spoils"
+					}
+			]
+			dependencies: ["B4F5A9B8E200DEA1"]
+		},
 		{
-			dependencies: ["2F6473DE1E123A28"]
+			id: "67345C4119C13F3B"
+			title: "Epic"
 			description: ["Your gear has entered the middle of the rarity ladder. Epic items have four affixes and often a named bonus. Think about what you would give them up for."]
 			icon: "apotheosis:epic_material"
-			id: "67345C4119C13F3B"
-			optional: true
-			rewards: [{
-				id: "7F563A1B4C496E4F"
-				type: "xp"
-				xp: 250
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				advancement: "apotheosis:affix/epic"
-				criterion: ""
-				id: "5FEDF94D9FA77048"
-				type: "advancement"
-			}]
-			title: "Epic"
 			x: 2.2d
 			y: 1.2d
-		}
-		{
-			dependencies: [
-				"5671669CEF35DC34"
-				"6B325FDF4B171EB9"
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "D4A02018E6A4548C"
+						type: "advancement"
+						advancement: "apotheosis:affix/epic"
+					}
 			]
-			description: [
-				"The Sun Spirit's flame and the Crusher's stone both carry the same sigil. The Wardens did not just guard realms; they guarded one another. Two have fallen. The Crown's pieces ring like a bell when you hold them close."
-				"Below, a darker place calls: a city at the bottom of the dark, a hall of echoes. And the Ember has begun to speak in whispers."
-			]
-			icon: {
-				Count: 1
-				id: "minecraft:elytra"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "7F4F0E8F987A162A"
 			rewards: [
-				{
-					id: "4EC2F4D06DF3716C"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "skilltree points add {p} 3"
-					id: "2F1840C9400C1653"
-					silent: true
-					title: "3 skill points"
-					type: "command"
-				}
-				{
-					command: "loot give {p} loot aldreth:quest/t4"
-					id: "3437A12DDB772A1C"
-					silent: true
-					title: "Act III cache"
-					type: "command"
-				}
+					{
+						id: "7F563A1B4C496E4F"
+						type: "xp"
+						xp: 250
+					}
 			]
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				id: "39A45E16BB693498"
-				type: "checkmark"
-			}]
+			optional: true
+			dependencies: ["2F6473DE1E123A28"]
+		},
+		{
+			id: "7F4F0E8F987A162A"
 			title: "What the Sky Remembers"
+			description: ["The Sun Spirit's flame and the Crusher's stone both carry the same sigil. The Wardens did not just guard realms; they guarded one another. Two have fallen. The Crown's pieces ring like a bell when you hold them close.", "Below, a darker place calls: a city at the bottom of the dark, a hall of echoes. And the Ember has begun to speak in whispers."]
+			icon: "minecraft:elytra"
 			x: 17.6d
 			y: -0.6d
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "39A45E16BB693498"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "4EC2F4D06DF3716C"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "2F1840C9400C1653"
+						type: "command"
+						command: "skilltree points add {p} 3"
+						elevate: true
+						silent: true
+						title: "3 skill points"
+					},
+					{
+						id: "C469EC7DBCE5B2C2"
+						type: "command"
+						command: "loot give {p} loot aldreth:quest/t4"
+						elevate: true
+						silent: true
+						title: "Act III cache"
+					}
+			]
+			dependencies: ["5671669CEF35DC34", "6B325FDF4B171EB9", "9DD1C900BD970093"]
 		}
 	]
-	title: "Act III: Beyond the Veil"
 }

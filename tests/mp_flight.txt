@@ -1,0 +1,41 @@
+# Multiplayer flight-guard test: run with tools/server_test.py --cmds tests/mp_flight.txt while a client joins 127.0.0.1:25599 as AldrethTest.
+wait 330
+list
+kubejs stages remove AldrethTest aldreth_flight
+execute at AldrethTest run summon tameablebeasts:argentavis ~3 ~ ~ {Tags:["aldtest"],PersistenceRequired:1b}
+wait 3
+ride AldrethTest mount @e[tag=aldtest,limit=1]
+wait 2
+# EXPECT riding: prints tameablebeasts:argentavis
+data get entity AldrethTest RootVehicle.Entity.id
+effect give @e[tag=aldtest] minecraft:levitation 15 1
+wait 6
+# EXPECT dropped (no stage): "Found no elements"
+data get entity AldrethTest RootVehicle.Entity.id
+effect clear @e[tag=aldtest]
+kubejs stages add AldrethTest aldreth_flight
+wait 8
+ride AldrethTest mount @e[tag=aldtest,limit=1]
+wait 2
+effect give @e[tag=aldtest] minecraft:levitation 15 1
+wait 6
+# EXPECT still riding (stage held): prints tameablebeasts:argentavis
+data get entity AldrethTest RootVehicle.Entity.id
+kubejs stages remove AldrethTest aldreth_flight
+kill @e[tag=aldtest]
+# --- boss reward hook: kill a Naga next to the player, expect an affixed item on the ground ---
+execute at AldrethTest run kill @e[type=item,distance=..30]
+execute at AldrethTest run summon twilightforest:naga ~6 ~ ~ {Tags:["aldboss"]}
+wait 2
+kill @e[tag=aldboss]
+wait 3
+# EXPECT "Test passed, count: 1" (or more)
+execute at AldrethTest if entity @e[type=item,distance=..30,nbt={Item:{tag:{affix_data:{}}}}]
+execute at AldrethTest run kill @e[type=item,distance=..30]
+# --- loot gate: Incendium's Nether 'Infernal Wings' artifact table only holds an elytra; EXPECT "Dropped 0 items" ---
+execute at AldrethTest run loot spawn ~ ~ ~ loot incendium:artifact/tool/infernal_wings
+# control: the End city table still works (EXPECT "Dropped N items", N > 0)
+execute at AldrethTest run loot spawn ~ ~ ~ loot minecraft:chests/end_city_treasure
+execute at AldrethTest run kill @e[type=item,distance=..30]
+forge tps
+wait 3

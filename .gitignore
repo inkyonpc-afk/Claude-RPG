@@ -34,3 +34,5 @@ __pycache__/
 minecraftinstance.json
 .curseclient
 kubejs/exported/
+resourcepacks/*.zip
+shaderpacks/*.zip

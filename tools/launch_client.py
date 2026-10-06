@@ -11,6 +11,7 @@ INSTALL = pathlib.Path("G:/curseforge/Install")
 LIBS = INSTALL / "libraries"
 ap = argparse.ArgumentParser()
 ap.add_argument("--world", default="")
+ap.add_argument("--join", default="", help="host:port of a server to join (multiplayer test)")
 ap.add_argument("--wait", type=int, default=180)
 ap.add_argument("--shot", default="")
 ap.add_argument("--shot-at", default="")
@@ -86,6 +87,8 @@ game = ["--username", "AldrethTest", "--version", "forge-47.4.10", "--gameDir", 
         "--versionType", "release", "--width", "1280", "--height", "720"]
 if a.world:
     game += ["--quickPlaySingleplayer", a.world]
+elif a.join:
+    game += ["--quickPlayMultiplayer", a.join]
 game += [x for x in forge["arguments"]["game"] if isinstance(x, str)]
 args = jvm + [forge["mainClass"]] + game
 argfile = ROOT / ".build" / "client-args.txt"

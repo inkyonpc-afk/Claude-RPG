@@ -1,457 +1,529 @@
 {
-	default_hide_dependency_lines: false
-	default_quest_shape: "circle"
-	filename: "05_irons"
-	group: "40103B7AFEA824B7"
-	icon: "irons_spellbooks:scroll"
 	id: "102BECF5FB0B651E"
-	images: [{
-		alpha: 0
-		height: 17.78d
-		image: "aldreth:textures/quests/irons.png"
-		rotation: 0.0d
-		width: 31.6d
-		x: -7.0d
-		y: -11.68d
-	}]
+	filename: "05_irons"
+	title: "Spellcraft: The Schools of Iron"
+	subtitle: "Nine schools, one grammar: mana, cast time, cooldown."
+	icon: "irons_spellbooks:scroll"
 	order_index: 5
+	group: "40103B7AFEA824B7"
+	default_quest_shape: "circle"
+	default_quest_size: 1.0d
+	default_hide_dependency_lines: false
 	progression_mode: "flexible"
-	quest_links: [ ]
+	images: [{
+			x: -7.0d
+			y: -11.68d
+			width: 31.6d
+			height: 17.78d
+			rotation: 0.0d
+			image: "aldreth:textures/quests/irons.png"
+			order: 0
+			alpha: 0.55d
+		}]
 	quests: [
 		{
-			description: [
-				"Every spell belongs to a school (fire, ice, lightning, holy, ender, blood, evocation, nature, eldritch) and has a level, a cast time and a cooldown. Spell power scales damage; max mana is your pool."
-				"Cast by selecting a spell in your book and holding the cast key. Start with a scroll and learn the feel before committing to a book."
-			]
-			icon: "irons_spellbooks:scroll"
 			id: "0D2AC016928033D5"
-			rewards: [{
-				id: "622613D3D88EDBAE"
-				type: "xp"
-				xp: 20
-			}]
-			shape: "diamond"
-			size: 1.3d
-			tasks: [{
-				id: "5844FEBBD3EB872C"
-				type: "checkmark"
-			}]
 			title: "What a Spell Is"
+			description: ["Every spell belongs to a school (fire, ice, lightning, holy, ender, blood, evocation, nature, eldritch) and has a level, a cast time and a cooldown. Spell power scales damage; max mana is your pool.", "Cast by selecting a spell in your book and holding the cast key. Start with a scroll and learn the feel before committing to a book."]
+			icon: "irons_spellbooks:scroll"
 			x: 0.0d
 			y: 0.0d
-		}
+			size: 1.3d
+			shape: "diamond"
+			tasks: [
+					{
+						id: "5844FEBBD3EB872C"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "97F4EC458860521B"
+						type: "xp"
+						xp: 20
+					}
+			]
+		},
 		{
-			dependencies: ["0D2AC016928033D5"]
+			id: "FBB94C7294FF69CE"
+			title: "A Scroll to Learn On"
 			description: ["Scrolls hold one spell at one level, once. Collect them from dungeons and trade for the rest."]
 			icon: "irons_spellbooks:scroll"
-			id: "7F917202B987CE99"
-			rewards: [{
-				id: "5A0C1246A04E8EB2"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "2ACE8386B93B4D4D"
-				item: "irons_spellbooks:scroll"
-				type: "item"
-			}]
-			title: "A Scroll to Learn On"
 			x: 2.2d
 			y: -0.9d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "2ACE8386B93B4D4D"
+						type: "item"
+						item: "irons_spellbooks:scroll"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "EE6DF12720059187"
+						type: "xp"
+						xp: 25
+					}
+			]
+			dependencies: ["0D2AC016928033D5"]
+		},
 		{
+			id: "A112C13D44A2C02B"
+			title: "Inscription Table"
 			description: ["Writes spells into books. The difference between a mage and a person holding a scroll."]
 			icon: "irons_spellbooks:inscription_table"
-			id: "008C5372CBF08806"
-			rewards: [{
-				id: "5D99685058ACF484"
-				type: "xp"
-				xp: 30
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "08D4D8B9AD258825"
-				item: "irons_spellbooks:inscription_table"
-				type: "item"
-			}]
-			title: "Inscription Table"
 			x: 4.4d
 			y: -1.8d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "08D4D8B9AD258825"
+						type: "item"
+						item: "irons_spellbooks:inscription_table"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "A92D53EBE4EECA65"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["FBB94C7294FF69CE"]
+		},
 		{
+			id: "66A66CFF5335426D"
+			title: "Copper Spell Book"
 			description: ["Two spell slots and a lot of ambition."]
 			icon: "irons_spellbooks:copper_spell_book"
-			id: "66A66CFF5335426D"
-			rewards: [{
-				id: "6E00CED525279309"
-				type: "xp"
-				xp: 30
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "33224CCC6AAFCB53"
-				item: "irons_spellbooks:copper_spell_book"
-				type: "item"
-			}]
-			title: "Copper Spell Book"
 			x: 6.6000000000000005d
 			y: -2.7d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "33224CCC6AAFCB53"
+						type: "item"
+						item: "irons_spellbooks:copper_spell_book"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "6E00CED525279309"
+						type: "xp"
+						xp: 30
+					}
+			]
+			dependencies: ["A112C13D44A2C02B"]
+		},
 		{
-			dependencies: ["66A66CFF5335426D"]
+			id: "289CFF065C902297"
+			title: "Iron Spell Book"
 			description: ["More slots, slightly more power."]
 			icon: "irons_spellbooks:iron_spell_book"
-			id: "289CFF065C902297"
-			rewards: [{
-				id: "672C74B4FDDE7309"
-				type: "xp"
-				xp: 45
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "3774A8FAE78E77AA"
-				item: "irons_spellbooks:iron_spell_book"
-				type: "item"
-			}]
-			title: "Iron Spell Book"
 			x: 8.8d
 			y: -5.94d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "9464F4B1D8AFFFC2"
+						type: "item"
+						item: "irons_spellbooks:iron_spell_book"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "672C74B4FDDE7309"
+						type: "xp"
+						xp: 45
+					}
+			]
+			dependencies: ["66A66CFF5335426D"]
+		},
 		{
-			dependencies: ["289CFF065C902297"]
+			id: "D5C8B1AFDF1A2E9F"
+			title: "Gold Spell Book"
 			description: ["A book fit for a dungeon-delver."]
 			icon: "irons_spellbooks:gold_spell_book"
-			id: "35EFB73CAE9022A4"
-			rewards: [{
-				id: "6DDD83C09D2EA8CE"
-				type: "xp"
-				xp: 60
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "3A31F53AB0C5A960"
-				item: "irons_spellbooks:gold_spell_book"
-				type: "item"
-			}]
-			title: "Gold Spell Book"
 			x: 11.0d
 			y: -5.94d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "3A31F53AB0C5A960"
+						type: "item"
+						item: "irons_spellbooks:gold_spell_book"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "C90CA6E4236530B9"
+						type: "xp"
+						xp: 60
+					}
+			]
+			dependencies: ["289CFF065C902297"]
+		},
 		{
+			id: "62F1F49118E536A6"
+			title: "Diamond Spell Book"
 			description: ["A real tool for a real caster. Heavily sought, hard to craft."]
 			icon: "irons_spellbooks:diamond_spell_book"
-			id: "62F1F49118E536A6"
-			rewards: [{
-				id: "0AAB5CAB89FD8790"
-				type: "xp"
-				xp: 100
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "247A8963DAB3E9DA"
-				item: "irons_spellbooks:diamond_spell_book"
-				type: "item"
-			}]
-			title: "Diamond Spell Book"
 			x: 13.200000000000001d
 			y: -6.84d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "247A8963DAB3E9DA"
+						type: "item"
+						item: "irons_spellbooks:diamond_spell_book"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "0AAB5CAB89FD8790"
+						type: "xp"
+						xp: 100
+					}
+			]
+			dependencies: ["D5C8B1AFDF1A2E9F"]
+		},
 		{
-			dependencies: ["62F1F49118E536A6"]
+			id: "D0F2534E259C23E4"
+			title: "Netherite Spell Book"
 			description: ["Nine slots. The last craftable tier; the best ones are found, not made."]
 			icon: "irons_spellbooks:netherite_spell_book"
-			id: "3E9D5F94E955386D"
-			rewards: [
-				{
-					id: "3863791D24939142"
-					type: "xp"
-					xp: 200
-				}
-				{
-					command: "skilltree points add {p} 1"
-					id: "00A89D863E28550F"
-					silent: true
-					title: "1 skill point"
-					type: "command"
-				}
-			]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "2A1CA4FD009B6A1C"
-				item: "irons_spellbooks:netherite_spell_book"
-				type: "item"
-			}]
-			title: "Netherite Spell Book"
 			x: 15.400000000000002d
 			y: -6.84d
-		}
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "B3DD60DDF2202274"
+						type: "item"
+						item: "irons_spellbooks:netherite_spell_book"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "3863791D24939142"
+						type: "xp"
+						xp: 200
+					},
+					{
+						id: "00A89D863E28550F"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["62F1F49118E536A6"]
+		},
 		{
+			id: "27439A9663AD6F2E"
+			title: "A Legendary Book"
 			description: ["Legendary tomes hold twelve slots and a name. Only the deepest vaults and the hardest bosses give them."]
 			icon: "irons_spellbooks:legendary_spell_book"
-			id: "27439A9663AD6F2E"
-			rewards: [
-				{
-					id: "301455AF2461804F"
-					type: "xp"
-					xp: 400
-				}
-				{
-					command: "skilltree points add {p} 1"
-					id: "6ABE76551C562EC0"
-					silent: true
-					title: "1 skill point"
-					type: "command"
-				}
-			]
-			shape: "hexagon"
-			size: 1.3d
-			tasks: [{
-				consume_items: false
-				id: "7B3CF9CCB7867940"
-				item: "irons_spellbooks:legendary_spell_book"
-				type: "item"
-			}]
-			title: "A Legendary Book"
 			x: 17.6d
 			y: -6.84d
-		}
+			size: 1.3d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "C2F50A0053671807"
+						type: "item"
+						item: "irons_spellbooks:legendary_spell_book"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "A691BEC2C16F25B6"
+						type: "xp"
+						xp: 400
+					},
+					{
+						id: "A92B89F36CAED36D"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["D0F2534E259C23E4"]
+		},
 		{
+			id: "BA417552BBF6F86A"
+			title: "Arcane Anvil"
 			description: ["Upgrade scrolls and merge spells; imbue weapons with a spell. This is the heart of the Spellblade."]
 			icon: "irons_spellbooks:arcane_anvil"
-			id: "1F1D0BCBB2CD5FCE"
-			rewards: [{
-				id: "3A7595E57527E6C6"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "3928C4155295D21A"
-				item: "irons_spellbooks:arcane_anvil"
-				type: "item"
-			}]
-			title: "Arcane Anvil"
 			x: 6.6000000000000005d
 			y: -0.9d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "ACC89A9E5F59872D"
+						type: "item"
+						item: "irons_spellbooks:arcane_anvil"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "3A7595E57527E6C6"
+						type: "xp"
+						xp: 40
+					}
+			]
+			dependencies: ["A112C13D44A2C02B"]
+		},
 		{
-			dependencies: ["0D2AC016928033D5"]
+			id: "E3B9DE3FCC266079"
+			title: "Alchemist Cauldron"
 			description: ["Brewing is a second kind of casting: ingredient combinations with real consequences."]
 			icon: "irons_spellbooks:alchemist_cauldron"
-			id: "018D1144DCCDD951"
-			optional: true
-			rewards: [{
-				id: "32F00F013AB91892"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "446C6CF4273ED286"
-				item: "irons_spellbooks:alchemist_cauldron"
-				type: "item"
-			}]
-			title: "Alchemist Cauldron"
 			x: 2.2d
 			y: 0.9d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "446C6CF4273ED286"
+						type: "item"
+						item: "irons_spellbooks:alchemist_cauldron"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "32F00F013AB91892"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["0D2AC016928033D5"]
+		},
 		{
+			id: "63DFFAA6FDFB6888"
+			title: "The Scroll Forge"
 			description: ["Turn ink and parchment into scrolls with the right pigments."]
 			icon: "irons_spellbooks:scroll_forge"
-			id: "63DFFAA6FDFB6888"
-			optional: true
-			rewards: [{
-				id: "187A7342F06A6B29"
-				type: "xp"
-				xp: 40
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "6A3C15D1EE556FA1"
-				item: "irons_spellbooks:scroll_forge"
-				type: "item"
-			}]
-			title: "The Scroll Forge"
 			x: 4.4d
 			y: 0.0d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "9A3B9B2614C03740"
+						type: "item"
+						item: "irons_spellbooks:scroll_forge"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "187A7342F06A6B29"
+						type: "xp"
+						xp: 40
+					}
+			]
+			optional: true
+			dependencies: ["FBB94C7294FF69CE"]
+		},
 		{
-			dependencies: ["66A66CFF5335426D"]
+			id: "3C81C112657BD04D"
+			title: "Fire Rune"
 			description: ["Runes unlock school specializations. Fire is hungry; ice is patient; lightning is impatient."]
 			icon: "irons_spellbooks:fire_rune"
-			id: "3C81C112657BD04D"
-			optional: true
-			rewards: [{
-				id: "398FEB345438221E"
-				type: "xp"
-				xp: 60
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "22A3DDCCFF426FCC"
-				item: "irons_spellbooks:fire_rune"
-				type: "item"
-			}]
-			title: "Fire Rune"
 			x: 8.8d
 			y: -4.14d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "22A3DDCCFF426FCC"
+						type: "item"
+						item: "irons_spellbooks:fire_rune"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "A14D8D8E0686E561"
+						type: "xp"
+						xp: 60
+					}
+			]
+			optional: true
+			dependencies: ["66A66CFF5335426D"]
+		},
 		{
+			id: "E8F6410CAFE9C4B3"
+			title: "Upgrade Orbs"
 			description: ["Orbs boost mana, cooldown, spell power, and school stats on your gear. Choose one for each piece."]
 			icon: "irons_spellbooks:mana_upgrade_orb"
-			id: "30D76628D822D067"
-			rewards: [{
-				id: "793DAD638051B4CC"
-				type: "xp"
-				xp: 80
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "3354AF04AB74932E"
-				item: "irons_spellbooks:mana_upgrade_orb"
-				type: "item"
-			}]
-			title: "Upgrade Orbs"
 			x: 8.8d
 			y: 1.26d
-		}
-		{
-			dependencies: ["66A66CFF5335426D"]
-			description: ["Wizard gear brings spell power and mana in exchange for armor."]
-			icon: {
-				Count: 1
-				id: "irons_spellbooks:pyromancer_helmet"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "01E2F92E6D9D7528"
-			rewards: [{
-				id: "7BC00E89CFFD4CA9"
-				type: "xp"
-				xp: 60
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "720687CF80761852"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:pyromancer_helmet"
-					tag: {
-						Damage: 0
+			shape: "circle"
+			tasks: [
+					{
+						id: "F87951995B52EBBB"
+						type: "item"
+						item: "irons_spellbooks:mana_upgrade_orb"
+						count: 1
+						consume_items: false
 					}
-				}
-				type: "item"
-			}]
+			]
+			rewards: [
+					{
+						id: "793DAD638051B4CC"
+						type: "xp"
+						xp: 80
+					}
+			]
+			dependencies: ["BA417552BBF6F86A"]
+		},
+		{
+			id: "01E2F92E6D9D7528"
 			title: "Robes"
+			description: ["Wizard gear brings spell power and mana in exchange for armor."]
+			icon: "irons_spellbooks:pyromancer_helmet"
 			x: 8.8d
 			y: -2.34d
-		}
-		{
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "F28F73BB05DEC93B"
+						type: "item"
+						item: "irons_spellbooks:pyromancer_helmet"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "940988E6D5EC2FE1"
+						type: "xp"
+						xp: 60
+					}
+			]
 			dependencies: ["66A66CFF5335426D"]
+		},
+		{
+			id: "BDD2523DEA298FF1"
+			title: "Ring of Power"
 			description: ["Casters carry rings: mana, cooldown, cast time. They are cheap, and critical."]
 			icon: "irons_spellbooks:mana_ring"
-			id: "2526A8F7DB345D78"
-			rewards: [{
-				id: "7AEA3A14372B1E69"
-				type: "xp"
-				xp: 50
-			}]
-			shape: "circle"
-			size: 1.0d
-			tasks: [{
-				consume_items: false
-				id: "560644A67C24E029"
-				item: "irons_spellbooks:mana_ring"
-				type: "item"
-			}]
-			title: "Ring of Power"
 			x: 8.8d
 			y: -0.54d
-		}
-		{
-			description: ["A dungeon of cultists, wraiths and the Dead King. Your first real boss in the schools of Iron."]
-			icon: {
-				Count: 1
-				id: "irons_spellbooks:cultist_helmet"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1CE7CD13188159BB"
-			rewards: [{
-				id: "0C20BE75E446D0A9"
-				type: "xp"
-				xp: 150
-			}]
-			shape: "circle"
 			size: 1.0d
-			tasks: [{
-				advancement: "irons_spellbooks:irons_spellbooks/enter_catacombs"
-				criterion: ""
-				id: "281114472C6E2F7A"
-				type: "advancement"
-			}]
+			shape: "circle"
+			tasks: [
+					{
+						id: "560644A67C24E029"
+						type: "item"
+						item: "irons_spellbooks:mana_ring"
+						count: 1
+						consume_items: false
+					}
+			]
+			rewards: [
+					{
+						id: "ED4B839389263341"
+						type: "xp"
+						xp: 50
+					}
+			]
+			dependencies: ["66A66CFF5335426D"]
+		},
+		{
+			id: "1CE7CD13188159BB"
 			title: "The Catacombs"
+			description: ["A dungeon of cultists, wraiths and the Dead King. Your first real boss in the schools of Iron."]
+			icon: "irons_spellbooks:cultist_helmet"
 			x: 13.200000000000001d
 			y: -5.04d
-		}
+			size: 1.0d
+			shape: "circle"
+			tasks: [
+					{
+						id: "281114472C6E2F7A"
+						type: "advancement"
+						advancement: "irons_spellbooks:irons_spellbooks/enter_catacombs"
+					}
+			]
+			rewards: [
+					{
+						id: "892E8480A0224FF6"
+						type: "xp"
+						xp: 150
+					}
+			]
+			dependencies: ["D5C8B1AFDF1A2E9F"]
+		},
 		{
-			dependencies: ["01E2F92E6D9D7528"]
+			id: "59ABF2A2F683039C"
+			title: "Master of a School"
 			description: ["Choose a school and drive it as far as you can. The tree, the gear and your books can focus on one at a time."]
 			icon: "irons_spellbooks:nature_rune"
-			id: "59ABF2A2F683039C"
-			rewards: [
-				{
-					id: "277692193B6FB090"
-					type: "xp"
-					xp: 300
-				}
-				{
-					command: "skilltree points add {p} 1"
-					id: "22F76A038D744748"
-					silent: true
-					title: "1 skill point"
-					type: "command"
-				}
-			]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				id: "0084B7DF0BD98B67"
-				type: "checkmark"
-			}]
-			title: "Master of a School"
 			x: 11.0d
 			y: -0.54d
+			size: 1.0d
+			shape: "hexagon"
+			tasks: [
+					{
+						id: "0084B7DF0BD98B67"
+						type: "checkmark"
+					}
+			]
+			rewards: [
+					{
+						id: "E09786AA4B0BA541"
+						type: "xp"
+						xp: 300
+					},
+					{
+						id: "E99426BE6FCEDDE5"
+						type: "command"
+						command: "skilltree points add {p} 1"
+						elevate: true
+						silent: true
+						title: "1 skill point"
+					}
+			]
+			dependencies: ["E8F6410CAFE9C4B3", "01E2F92E6D9D7528"]
 		}
 	]
-	title: "Spellcraft: The Schools of Iron"
 }
