@@ -1,0 +1,911 @@
+# Embers of Aldreth candidate list.  Format:  category | name (case-insens prefix match on bracket-stripped CurseForge name) | status | note
+# status: core = architecture-critical, std = planned, test = experimental (drop on conflict), skip = rejected (kept for the record).
+# Libraries are auto-added from CurseForge dependency data. ext| lines = not in the local cache; resolved from Modrinth by tools/resolve.py.
+
+# ---------------- PERFORMANCE / FIXES ----------------
+perf | Embeddium | core | renderer (last good pair with Oculus)
+perf | Sodium/Embeddium Extras | std |
+perf | Embeddium Extra | std |
+perf | Sodium/Embeddium Options API | std |
+perf | Sodium/Embeddium Options Mod Compat | std |
+perf | ModernFix | core |
+perf | FerriteCore | core |
+perf | ImmediatelyFast | std |
+perf | Entity Culling | std |
+perf | CullLessLeaves | std |
+perf | Clumps | std |
+perf | AI Improvements | std |
+perf | Structure Layout Optimizer | std |
+perf | Fast Async World Save | std |
+perf | Server Performance | std |
+perf | Chunk Sending | std |
+perf | Krypton Reforged | std |
+perf | Neruina | std |
+perf | Packet Fixer | std |
+perf | Mobtimizations | std |
+perf | Alternate Current | std |
+perf | BadOptimizations | std |
+perf | Canary | test |
+perf | FastBoot | test |
+perf | Fastload | test |
+perf | Smooth Boot | test |
+perf | GeckolibBetterFPS | test |
+perf | Particle Core | std |
+perf | Fast Item Frames | std |
+perf | Fast Paintings | std |
+perf | Faster Random | std |
+perf | Chloride | test |
+perf | Saturn | test |
+perf | Memory Settings | std |
+perf | MCreatorMemFix | std |
+perf | fix GPU memory leak | std |
+perf | Despawn Tweaks | std |
+perf | Let Me Despawn | std |
+perf | Chunky | std | pregeneration
+perf | spark | std | profiler
+perf | AttributeFix | core |
+perf | Max Health Fix | core |
+perf | Load My F***ing Tags | std |
+perf | Long NBT Killer | std |
+perf | Log Begone | std |
+perf | NaNny | std |
+perf | NaN Health Fixer | std |
+perf | DEUF | std |
+perf | Connectivity | std |
+perf | CrashExploitFixer | std |
+perf | Night Config Fixes | std |
+perf | Worldgen Guard | test |
+perf | Dimensional Sync Fixes | std |
+perf | Boat Break Fix | std |
+perf | NetherPortalFix | std |
+perf | Squid No Glitch | std |
+perf | Model Gap Fix | std |
+perf | FlickerFix | std |
+perf | DoesPotatoTick | std |
+perf | Observable | test |
+perf | Mixin Booster | test |
+perf | Crash Assistant | std |
+perf | Better Compatibility Checker | std |
+perf | My Server Is Compatible | std |
+perf | Duplicationless | std |
+perf | Create Better FPS | skip | no Create
+perf | Redirected | skip | needs txnilib
+perf | Radium Reforged | skip | Connor RPG marked broken
+perf | AllTheLeaks | skip | Connor RPG marked broken
+
+# ---------------- QOL / UI ----------------
+qol | EMI | core | main recipe viewer
+qol | EMI Loot | std |
+qol | Just Enough Items | core | pinned for Apotheosis socketing
+qol | Just Enough Professions | std |
+qol | Just Enough Effect Descriptions | std |
+qol | Reliable EMI | test |
+qol | Jade 🔍 | core |
+qol | Jade Addons | std |
+qol | AppleSkin | std |
+qol | Mouse Tweaks | std |
+qol | Controlling | std |
+qol | Controllable | test |
+qol | Inventory Sorter | std |
+qol | Client Sort | skip | duplicate of Inventory Sorter
+qol | Inventory Essentials | std |
+qol | Inventory HUD+ | test |
+qol | Better Advancements | core |
+qol | Advancement Plaques | std |
+qol | Clickable advancements | std |
+qol | Nature's Compass | std |
+qol | Explorer's Compass | std |
+qol | Xaero's Minimap | core |
+qol | Xaero's World Map | core |
+qol | Xaero's Minimap & World Map - Waystones Compatibility | std |
+qol | Xaero's Maps x Waystones | test |
+qol | Waystones | core |
+qol | Waystones Teleport Pets | std |
+qol | FTB Chunks | std |
+qol | FTB Ultimine | std |
+qol | FTB Backups 2 | std |
+qol | Sophisticated Backpacks | core |
+qol | Sophisticated Storage | std |
+qol | Carry On | std |
+qol | Corpse | core | grave system
+qol | Corpse x Curios API Compat | std |
+qol | Corpse x Cosmetic Armor Reworked Compat | std |
+qol | Lootr | core |
+qol | Legendary Tooltips | core | rarity borders
+qol | Legendary Tabs | std |
+qol | Item Borders | std |
+qol | Obscure Tooltips | skip | conflicts with Legendary Tooltips design
+qol | Clean Tooltips | skip |
+qol | Simply Tooltips | std |
+qol | Tooltip Overhaul | skip |
+qol | Better Advanced Tooltips Backport | std |
+qol | Equipment Compare | std |
+qol | Tool Stats | std |
+qol | Enchantment Descriptions | std |
+qol | Beautiful Enchanted Books | test |
+qol | Overflowing Bars | std |
+qol | Colorful Hearts | std |
+qol | Status Effect Bars Reforged | std |
+qol | Better Mods Button | std |
+qol | Better Ping Display | std |
+qol | Ping Wheel | std |
+qol | BetterF3 | std |
+qol | More Overlays Updated | std |
+qol | Just Zoom | std |
+qol | Ok Zoomer | std |
+qol | Cinematic Zoom | test |
+qol | Spyglass Improvements | std |
+qol | Useful Spyglass | test |
+qol | Default Options | core |
+qol | Configured Defaults | std |
+qol | Configured | std |
+qol | Searchables | std |
+qol | Highlight | std |
+qol | Item Highlighter | std |
+qol | FindMe | std |
+qol | Traveler's Titles | std |
+qol | Loot Beams | std |
+qol | Loot Journal | std |
+qol | Dynamic Crosshair | std |
+qol | Smart Key Prompts | test |
+qol | Easy Anvils | std |
+qol | Anvil Repairing | std |
+qol | Easy Shulker Boxes | std |
+qol | Easy Villagers | std |
+qol | Trade Cycling | std |
+qol | Crafting Tweaks | std |
+qol | Client Crafting | test |
+qol | Not Enough Recipe Book | std |
+qol | Polymorph | std |
+qol | Recipe Essentials | test |
+qol | Visual Workbench | std |
+qol | FastWorkbench | std |
+qol | FastFurnace | std |
+qol | Quickstack | std |
+qol | Stack Refill | std |
+qol | TrashSlot | std |
+qol | Trash Cans | std |
+qol | Tool Belt | std |
+qol | Map Atlases | std |
+qol | RightClickHarvest | std |
+qol | HT's TreeChop | std |
+qol | Panda's Falling Trees | test |
+qol | Fast Leaf Decay | std |
+qol | Leaves Be Gone | std |
+qol | Vein Mining | skip | FTB Ultimine covers
+qol | Construction Wand | std |
+qol | Block Swapper | skip |
+qol | Crab Claws | skip |
+qol | Auto Feed Animals | skip |
+qol | Animal Feeding Trough | std |
+qol | Omni Sprint | std |
+qol | Easy Elytra Takeoff | std |
+qol | No Chat Reports | std |
+qol | Chat Heads | std |
+qol | Emojiful | skip |
+qol | Simple Voice Chat | std | multiplayer
+qol | Open Parties and Claims | std |
+qol | Parties | skip |
+qol | FTB Quests Optimizer | std |
+qol | FTB Quest Localizer | skip |
+qol | Time On Display | skip |
+qol | GUI Clock | std |
+qol | Toast Control | std |
+qol | Tips | std |
+qol | Better Third Person | std |
+qol | Shoulder Surfing Reloaded | skip | conflict with Better Third Person
+qol | Do a Barrel Roll | skip |
+qol | Leave My Bars Alone | std |
+qol | Rebind Narrator | std |
+qol | Unlocked Typing | std |
+qol | Raw's Visual keybinder | test |
+qol | Item Obliterator | std |
+qol | Get It Together, Drops! | std |
+qol | Gadgets Against Grind | skip |
+qol | Starter Kit | skip |
+qol | Cherished Worlds | std |
+qol | Better World Loading | std |
+qol | Better Biome Reblend | test |
+qol | Completionist's Index | test |
+
+# ---------------- UI / VISUAL / AUDIO ----------------
+vis | FancyMenu | core | custom menus
+vis | Drippy Loading Screen | core |
+vis | Konkrete | std |
+vis | Melody | std |
+vis | Loading Backgrounds | std |
+vis | Custom Credits | test |
+vis | Oculus | core | shader loader
+vis | Iris & Oculus Search | test |
+vis | EntityModelShadersFix | std |
+vis | Euphoria Patches | skip | unproven with Oculus
+vis | Colorwheel | std |
+vis | Entity Model Features | core | Fresh Animations
+vis | Entity Texture Features | core |
+vis | Not Enough Animations | std |
+vis | Better Animations Collection | std |
+vis | Eating Animation | std |
+vis | JumpAnimation | std |
+vis | First-person Model | test |
+vis | Serious Player Animations | skip |
+vis | Particular | std |
+vis | Particle Rain | std |
+vis | Falling Leaves | std |
+vis | Snow! Real Magic! | std |
+vis | Cool Rain Reforged | skip |
+vis | Pretty Rain | skip |
+vis | Subtle Effects | std |
+vis | Visuality | std |
+vis | Better Burning | std |
+vis | Smart Particles | test |
+vis | Better Clouds Reforged | std |
+vis | Ambient Environment | std |
+vis | Colourful Earth | skip |
+vis | EnhancedVisuals | skip |
+vis | CameraOverhaul | std |
+vis | Blur | std |
+vis | Bobby Reforged | std |
+vis | Connected Glass | std |
+vis | Continuity | skip | requires Fabric
+vis | Fusion | std | connected textures
+vis | Polytone | test |
+vis | MoreMcmeta | std |
+vis | MoreMcmeta Emissive Textures | std |
+vis | Skin Layers 3D | std |
+vis | Ears | std |
+vis | Cosmetic Armor Reworked | std |
+vis | Simple Hats | std |
+vis | Immersive UI | skip |
+vis | Blessfulled: Damage Indicators+ | std |
+vis | JeremySeq's Damage Indicators | skip |
+vis | Enhanced Boss Bars | std |
+vis | EEEAB's Mobs: Custom Bossbars | std |
+vis | Better Block Sounds | std |
+vis | AmbientSounds 6 | core |
+vis | Sound Physics Remastered | std |
+vis | Presence Footsteps | std |
+vis | Drip Sounds | std |
+vis | ExtraSounds Next | skip |
+vis | Biome Music | std |
+vis | Medieval Music | std |
+vis | Illager Raid Music | std |
+vis | ♪ Alex's Mobs Extra Music ♪ | std |
+vis | ♬ Aquamirae - Boss Music Tweaks ♬ | std |
+vis | Extreme sound muffler | std |
+vis | FootprintParticle | std |
+vis | Enhanced Celestials | std |
+vis | Better Days | std |
+vis | Daily Weather | skip | conflicts with shader weather
+vis | Night Lights | skip |
+vis | Torch hit! | skip |
+
+# ---------------- RPG CORE / PROGRESSION ----------------
+rpg | Passive Skill Trees | core | skill tree centerpiece
+rpg | Apotheosis | core |
+rpg | Apothic Attributes | core |
+rpg | Apotheotic Additions | core |
+rpg | Apotheotic Hostility | skip | L2 Hostility replaces; revisit
+rpg | Apothic Curios | core |
+rpg | Apothic Category Compat | std |
+rpg | Apothic Amendments - Enchanting | std |
+rpg | ApothSB | std |
+rpg | Ancient Reforging | core |
+rpg | Esoteric Reforging | test |
+rpg | Lukas' Weapon Leveling | core |
+rpg | Weapon Leveling x Better Combat Compat | core |
+rpg | Origins :: origins-forge | core | native Forge Origins
+rpg | Apoli | core |
+rpg | Origins: Classes | skip | superseded by skill tree
+rpg | Alternate Origin GUI | std |
+rpg | Gateways to Eternity | core | endgame arenas
+rpg | EMI fixes Gateways to Eternity | std |
+rpg | Bountiful | core | bounty board
+rpg | BountyBags | std |
+rpg | Global XP | std |
+rpg | Better HP | skip |
+rpg | Spice of Life: Apple Pie | std |
+rpg | Diet | skip |
+rpg | Tax Free Levels | std |
+rpg | Dropped Buffs | test |
+rpg | Cardiac | std |
+rpg | Armor Set Bonuses | std |
+rpg | Attributizer | test |
+rpg | Additional Attributes | std |
+rpg | Projectile Damage Attribute | std |
+rpg | Undertaker's Attributes | skip |
+rpg | Armor & damage scaling | test |
+rpg | Armor Damage Limit | test |
+rpg | Scaling Health | skip | duplicates L2 Hostility
+rpg | L2 Hostility | core | mob level scaling by distance/dimension
+rpg | L2 Complements | std |
+rpg | L2 Library | std |
+rpg | Majrusz's Progressive Difficulty | skip | second scaling system
+rpg | Epic RPG: Average DPS | test |
+rpg | Harvest Level Tweaker | std |
+rpg | Game Stages | test |
+rpg | SDM Ore Stages | skip |
+rpg | Totally Harmonious Item Stages | test |
+rpg | Restricted Portals | core | gate portals behind progression
+rpg | Custom Nether Portals | test |
+rpg | Boss Health Regain | std |
+rpg | Second Chance | skip |
+rpg | PlayerRevive | std | multiplayer revive
+rpg | Soul Bound Enchantment | std |
+rpg | Bed Benefits | std |
+rpg | Easy NPC | std | story NPCs
+rpg | Easy NPC: Core | std |
+rpg | Custom Villager Trades | std |
+rpg | Society Trading | skip |
+rpg | Numismatic Overhaul | skip |
+rpg | Mob Lassos | std |
+rpg | Realm RPG: Quests & Rewards | skip | duplicates our quest book
+rpg | Certain Questing Additions | std |
+rpg | Quests Kill Task Tweaks | std |
+rpg | Quests Freeze Fix | std |
+rpg | Quests Additions | std |
+rpg | FTB Quests | core |
+rpg | FTB Teams | core |
+rpg | FTB Library | core |
+rpg | FTB XMod Compat | std |
+rpg | Patchouli | core | lore codex
+rpg | Modonomicon | test |
+rpg | Eccentric Tome | std |
+rpg | Almanac Lib | std |
+rpg | Tome of Blood: Rebirth | skip |
+rpg | Simply Skills | skip | would add second skill system
+rpg | Pufferfish's Skills | skip |
+rpg | Dis-Enchanting Table | skip |
+rpg | Enchantment Blacklister | std |
+rpg | Max Enchant X | skip | fights controlled power scaling
+rpg | Universal Enchants | skip |
+rpg | Majrusz's Enchantments | std | unique enchantments
+rpg | Allurement | std |
+rpg | Better Than Mending | skip |
+rpg | Easy Magic | skip |
+rpg | Enchanting Infuser | skip |
+
+# ---------------- ACCESSORIES / RELICS / ARTIFACTS ----------------
+acc | Curios API | core |
+acc | Artifacts | core |
+acc | Relics | core |
+acc | Relics: Alex's Caves Compat | std |
+acc | Relics: Alex's Mobs Compat | std |
+acc | Reliquified Artifacts | test |
+acc | Enigmatic Legacy | std |
+acc | Enigmatic Addons | std |
+acc | Majrusz's Accessories | std |
+acc | Rings of Ascension | std |
+acc | Jewelry | std |
+acc | Additional Jewelry | std |
+acc | Epic Power Bracelets | test |
+acc | Terra Curio | std |
+acc | Wizard Terra Curios | test |
+acc | Curious Armor Stands | std |
+acc | Curious Lanterns | std |
+acc | Convenient Curios Container | std |
+acc | Runes | test |
+acc | Runelic | test |
+acc | Elytra Slot | std |
+acc | Icarus | std | gated to End via KubeJS
+acc | Charm of Undying | std |
+acc | Void Totem | std |
+acc | Wormhole Artifact | skip | breaks traversal progression
+acc | Sweet Charm O' Mine | test |
+acc | Vestiges of the Present | std |
+
+# ---------------- COMBAT / WEAPONS / ARMOR ----------------
+combat | Better Combat | core |
+combat | Better Combat Particle | std |
+combat | Better Combat x Apotheosis Compat | core |
+combat | Combat Roll | core |
+combat | Simply Swords | core |
+combat | Simply Swords: Overhaul | test |
+combat | Simple Weapons for Better Combat | test |
+combat | Marium's Soulslike Weaponry | core |
+combat | Celestisynth | std |
+combat | Epic Knights | core |
+combat | Immersive Armors | std |
+combat | Dreadsteel | std |
+combat | Advanced Netherite | std |
+combat | Copper Equipment | std |
+combat | Blaze Gear | std |
+combat | Age of Weapons | std |
+combat | Exclusive Weapons | std |
+combat | YDM's Weapon Master | std |
+combat | Blossom Blade | std |
+combat | JustHammers | std |
+combat | Too Many Bows | std |
+combat | More Bows and Arrows | std |
+combat | Better Crossbows | std |
+combat | Better Tridents | std |
+combat | Multi Arrow Effects | std |
+combat | Projectile Tweaks | std |
+combat | Archer's Paradox | std |
+combat | Bow Infinity Fix | std |
+combat | Ranged Weapon API | std |
+combat | Shield Expansion | std |
+combat | New Shield Variants | std |
+combat | Blowguns | std |
+combat | Quality Equipment | test |
+combat | Radiant Gear | test |
+combat | Cataclysmic Combat | test |
+combat | Unified Combat | test |
+combat | Don't Deflect my FREAKING Projectiles | std |
+combat | Armor Points ++ | std |
+combat | Friendly Fire | std |
+combat | Danger Close | skip |
+combat | Better Swords Trims | std |
+combat | Better Pickaxe Trims | std |
+combat | TrimsEffects | std |
+combat | Animal Armor Trims | std |
+combat | Simple Netherite Horse Armor | std | mount equipment
+combat | Armor Statues | std |
+combat | Sewing Kit | std |
+combat | Guns Without Roses | skip |
+combat | Timeless and Classics Zero Guns | skip |
+combat | Gucci & Vuitton Attachments | skip |
+combat | MmmMmmMmmMmm | skip |
+combat | Stylish Effects | std |
+combat | Clean Swing Through Grass | std |
+combat | Explosive Enhancement | std |
+
+# ---------------- MAGIC ----------------
+magic | Iron's Spells 'n Spellbooks | core |
+magic | Iron's Spells' Recipe Additions | std |
+magic | Iron's Rpg Tweaks | std |
+magic | KubeJS Iron's Spells | core |
+magic | Mana Unification | core |
+magic | Ars Nouveau | core |
+magic | Ars Elemental | std |
+magic | Too Many Glyphs | std |
+magic | Ars Ocultas | test |
+magic | Forbidden and Arcanus | std |
+magic | Alshanex's Familiars | std |
+magic | Majo's Spell Enchantment | test |
+magic | The Conjurer | test |
+magic | Mahou Tsukai | test |
+magic | Sorcerous Nether | test |
+magic | Extra Alchemy | skip | Fabric-only build
+magic | Beautiful Potions | std |
+magic | Dave's Potioneering | std |
+magic | Potion Combiner | skip |
+magic | Spell Engine | skip | second spell system rejected
+magic | Spell Power Attributes | skip |
+magic | Wizards | skip |
+magic | Paladins & Priests | skip |
+magic | Archers | skip |
+magic | Botania | skip |
+magic | Blood Magic | skip |
+magic | Occultism | skip |
+ext | goety | std | necromancy and summoning
+ext | eidolon-repraised | test |
+ext | iceandfire-ce | core | dragons (Community Edition)
+ext | wyrmroost | std | dragons
+ext | cataclysm-spellbooks | std |
+ext | to-tweaks-irons-spells | std | T.O Magic 'n Extras (CurseForge only)
+ext | irons-spells-n-spellbooks-ice-and-fire | std |
+ext | ars-n-spells | std |
+
+# ---------------- MOBS / BOSSES ----------------
+mobs | L_Ender 's Cataclysm | core |
+mobs | Mowzie's Mobs | core |
+mobs | Mowzie's Cataclysm | std |
+mobs | Mowzie's Mobs Respawner | std |
+mobs | Alex's Mobs | core |
+mobs | Alex's Caves | core |
+mobs | TACT | std |
+mobs | Born in Chaos | std |
+mobs | Born In Configuration | std |
+mobs | Bosses of Mass Destruction | std |
+mobs | Bosses'Rise | std |
+mobs | Ash Of Sin | std |
+mobs | Legendary Monsters | std |
+mobs | Legendary Creatures | std |
+mobs | Meet Your Fight | std |
+mobs | Mutant Monsters | std |
+mobs | Aquamirae | std |
+mobs | Sons Of Sins | std |
+mobs | EEEAB's Mobs | std |
+mobs | Enemy Expansion | std |
+mobs | Araxer's Bestiary | std |
+mobs | LUMINOUS: BEASTS | test |
+mobs | LUMINOUS: MONSTERS | test |
+mobs | LUMINOUS: NETHER | test |
+mobs | LUMINOUS TAG | test |
+mobs | THE UNDEAD REVAMPED | std |
+mobs | Illager Invasion | std |
+mobs | It Takes a Pillage | std |
+mobs | Raided | std |
+mobs | Savage & Ravage | std |
+mobs | Savage Ender Dragon | skip | True Ending covers
+mobs | True Ending | std | ender dragon overhaul
+mobs | Ender Trigon | std |
+mobs | Enderman Overhaul | std |
+mobs | Creeper Overhaul | std |
+mobs | Rotten Creatures | std |
+mobs | Zombie Variants | std |
+mobs | Wither Storm Combat | skip |
+mobs | Cracker's Wither Storm Mod | skip |
+mobs | Wither's Wrath | std |
+mobs | Wither: Reincarnated | test |
+mobs | Wither Spawn Animation | std |
+mobs | Wither Spawn Fix | std |
+mobs | Wither Skeleton Tweaks | std |
+mobs | Bad Mobs | std |
+mobs | The Orcs! | std |
+mobs | Kobolds! | std |
+mobs | Piglin Proliferation | std |
+mobs | Goblin Traders | std |
+mobs | Friends&Foes | std |
+mobs | Guard Villagers | std |
+mobs | More Villagers | std |
+mobs | Golem Overhaul | std |
+mobs | Golems Are Friends Not Fodder | std |
+mobs | Extra Golems | std |
+mobs | Realm RPG: Fallen Adventurers | std |
+mobs | Realm RPG: Pots & Mimics | std |
+mobs | Realm RPG: Dragon Wyrms | std |
+mobs | Species | std |
+mobs | Naturalist | std |
+mobs | Vanimals | std |
+mobs | Unusual Fish | std |
+mobs | Unusual Prehistory | std |
+mobs | Similar Prehistory | skip |
+mobs | Ribbits | std |
+mobs | Fins and Tails | std |
+mobs | Critters and Companions | std |
+mobs | Companions! | skip |
+mobs | Domestication Innovation | std |
+mobs | Tameable Beasts | std |
+mobs | Eyes of Ice and Fire | std |
+mobs | Ice and Fire: Dragons | skip | replaced by iceandfire-ce
+mobs | Ice And Fire Patcher | skip |
+mobs | Ice and Fire: Dragonseeker | skip |
+mobs | Hellion's Sniffer+ | skip |
+mobs | Odd Organisms | std |
+mobs | Terra Entity | test |
+mobs | Splendid Slimes | std |
+mobs | Enhanced AI | test |
+mobs | Farsighted Mobs | std |
+mobs | Aggro Fix | std |
+mobs | Spawn Balance Utility | std |
+mobs | In Control! | core | spawn-rule tuning
+mobs | Harder Spawners | std |
+mobs | Mobs Properties Randomness | test |
+mobs | Respawning Animals | std |
+mobs | Mob Drops Recipes :: overworld | std |
+mobs | Mob Drops Recipes :: nether | std |
+mobs | Mob Drops Recipes :: _end | skip |
+mobs | Ender Dragon Loot | std |
+mobs | Cinematic Cataclysm | test |
+
+# ---------------- STRUCTURES / DUNGEONS ----------------
+struct | When Dungeons Arise - Forge! | core |
+struct | When Dungeons Arise - Seven Seas | std |
+struct | YUNG's API | core |
+struct | YUNG's Better Desert Temples | std |
+struct | YUNG's Better Dungeons | std |
+struct | YUNG's Better End Island | std |
+struct | YUNG's Better Jungle Temples | std |
+struct | YUNG's Better Mineshafts | std |
+struct | YUNG's Better Nether Fortresses | std |
+struct | YUNG's Better Ocean Monuments | std |
+struct | YUNG's Better Strongholds | std |
+struct | YUNG's Better Witch Huts | std |
+struct | YUNG's Bridges | std |
+struct | YUNG's Cave Biomes | std |
+struct | YUNG's Extras | std |
+struct | YUNG's Menu Tweaks | skip |
+struct | Yung Structures Addon for Loot Integrations | std |
+struct | Repurposed Structures | core |
+struct | Towns and Towers | std |
+struct | Dungeon Crawl | std |
+struct | Dungeons Enhanced | std |
+struct | Dungeons Plus | std |
+struct | Dungeons and Taverns | std |
+struct | Explorify | std |
+struct | Structory | std |
+struct | Structory: Towers | std |
+struct | ATi Structures | std |
+struct | Stalwart Dungeons | std |
+struct | Prodigium Dungeons | std |
+struct | Prodigium Additions | test |
+struct | Ember's Underground Rooms | std |
+struct | MES - Moog's End Structures | std |
+struct | MNS - Moog's Nether Structures | std |
+struct | MSS - Moog's Soaring Structures | std |
+struct | MVS - Moog's Voyager Structures | std |
+struct | Moog's Structure Lib | std |
+struct | Medieval Buildings - New Structures! | std |
+struct | The Lost Castle | std |
+struct | Wabi-Sabi Structures | std |
+struct | Red’s More Structures | std |
+struct | Bygone Nether | std |
+struct | Formations Nether | std |
+struct | Formations Overworld | std |
+struct | Formations | std |
+struct | Sky Villages | std |
+struct | Aether Villages | std |
+struct | Better Villages - Forge | std |
+struct | ChoiceTheorem's Overhauled Village | std |
+struct | Improved Village Placement | std |
+struct | Farmers Structures | std |
+struct | Structure Essentials | std |
+struct | Structure Expansion | std |
+struct | Structure Pool API | std |
+struct | Structure Gel API | std |
+struct | Sparse Structures Reforged | std |
+struct | Structurify | core | per-structure tuning
+struct | Additional Structures | std |
+struct | Valhelsia Structures | std |
+struct | Philip's Ruins | std |
+struct | Hopo Better Mineshaft | std |
+struct | Hopo Better Ruined Portals | std |
+struct | Tidal Towns | std |
+struct | Underwater Village | std |
+struct | Buried Wrecks | std |
+struct | Terraria Structures | std |
+struct | Hearths | std |
+struct | Lios Hobbit Hill Village | std |
+struct | Luki's Grand Capitals | test |
+struct | Snowy Tents | std |
+struct | Respawning Structures | std |
+struct | Trials Chambers Reuploaded | std |
+struct | End Remastered | std |
+struct | By Powder and Steel | std |
+struct | Better Archeology | std |
+struct | Unearthed Journey | test |
+struct | Feur - Extension Desert | test |
+struct | Feur - Extension Fossil | test |
+struct | Loot Integrations | core |
+struct | Advanced Loot Info | std |
+
+# ---------------- WORLDGEN / DIMENSIONS ----------------
+world | Tectonic | core |
+world | Terralith | core |
+world | TerraBlender | core |
+world | Lithostitched | core |
+world | AeroBlender | std |
+world | Oh The Biomes We've Gone | std |
+world | Oh The Trees You'll Grow | std |
+world | Biomes O' Plenty | test |
+world | Regions Unexplored | test |
+world | Vanilla Backport | std |
+world | Underground Rivers | std |
+world | Incendium | std |
+world | Nullscape | std |
+world | Nether Depths Upgrade | std |
+world | Gardens of the Dead | std |
+world | Large Ore Deposits | std |
+world | Feature Recycler | std |
+world | Yeetus Experimentus | std |
+world | Biome Spawn Point | std |
+world | The Twilight Forest | core | dimension
+world | The Aether | core | dimension
+world | The Aether: Redux | std |
+world | Deep Aether | std |
+world | Aether: Lost Content Addon | std |
+world | Aether Delight | std |
+world | Ancient Aether | std |
+world | Aether Compat: Gloves For All | std |
+world | The Undergarden | core | dimension
+world | Undergarden Delight | std |
+world | Deeper and Darker | core | dimension
+world | Blue Skies | core | dimension
+world | The Bumblezone | test | dimension
+world | Seafarer | std |
+world | Upgrade Aquatic | std |
+world | Mysterious Mountain Lib | std |
+world | Geophilic | skip | second terrain stack
+world | Windswept! | skip |
+world | Autumnity | skip |
+world | Atmospheric | skip |
+world | Biome Makeover | skip |
+world | Ecologics | skip |
+world | Galosphere | skip |
+world | Starlight | skip |
+world | Pale Garden Backport | skip |
+world | Caverns & Chasms | skip |
+world | Voidscape | skip |
+world | Jaden's Nether Expansion | skip |
+world | Rubinated Nether | skip |
+world | Darker Depths | skip |
+world | Bigger Trees | skip |
+
+# ---------------- MOUNTS / TRAVERSAL ----------------
+trav | Paragliders | core | glider
+trav | ReHooked | core | grapple
+trav | Better Climbing | core |
+trav | Faster Ladder Climbing | std |
+trav | Small Ships | core | sea travel
+trav | AstikorCarts Redux | std |
+trav | Trotting Wagons | test |
+trav | Via Romana | std | road fast travel
+trav | Horseman | std |
+trav | Crazy Chocobos! | std | rideable bird mount
+trav | Longwings | std |
+trav | Caelus API | std | elytra control API
+trav | Fall Control | std |
+trav | Simple Recall Potion | std |
+trav | Chunk Loaders | std |
+trav | ExpandAbility | std |
+trav | Sit | std |
+trav | Little Tractor | skip |
+trav | Automobility | skip |
+trav | Forgiving Void | skip |
+trav | Pyrotechnic Elytra | skip |
+
+# ---------------- FOOD / FARMING ----------------
+food | Farmer's Delight | core |
+food | Farmer's Respite | std |
+food | Alex's Delight | std |
+food | Alex's Caves Delight | std |
+food | Aquamirae Delight | std |
+food | Aquaculture Delight | std |
+food | Ocean's Delight | std |
+food | Nether's Delight | std |
+food | My Nether's Delight | std |
+food | End's Delight | std |
+food | Cultural Delights | std |
+food | Delightful | std |
+food | Large Meals | std |
+food | Brewin' And Chewin' | std |
+food | Butcher's Delight | std |
+food | Chef's Delight | std |
+food | Corn Delight | std |
+food | Crabber's Delight | std |
+food | Veggies Delight | std |
+food | Vintage Delight | std |
+food | Display Delight | std |
+food | Miner's Delight | std |
+food | Tide's Delight | std |
+food | Tide 2 | std |
+food | Aquaculture 2 | std |
+food | Farm & Charm | std |
+food | Vinery | std |
+food | NetherVinery | std |
+food | Candlelight | std |
+food | Meadow | std |
+food | Beachparty | std |
+food | HerbalBrews | std |
+food | WilderNature | std |
+food | Dracovita Farm Life | test |
+food | Croptania | std |
+food | Botany Pots | std |
+food | Botany Trees | std |
+food | Cooking for Blockheads | std |
+food | Golden Foods! | std |
+food | Quality Food | std |
+food | No Farmland Trample | std |
+food | Sturdy Farmland | std |
+food | Watering Cans | std |
+food | Universal Bone Meal | std |
+food | Smarter Farmers | std |
+food | Buzzier Bees | std |
+food | Bushier Flowers | std |
+food | Stackable Stew and Soup | std |
+food | Healing Campfire | std |
+food | Comforts | std |
+food | Ender's Delight | skip |
+food | Stardew Fishing | skip |
+food | Legacy: Bakery | skip |
+food | Botany Pots Tiers | skip |
+food | Farming for Blockheads | skip |
+food | Pam's HarvestCraft 2 - Trees | skip |
+food | Healthy Water | skip |
+food | Saturation Plus | skip |
+
+# ---------------- BUILDING / DECOR / STORAGE ----------------
+build | Supplementaries | core |
+build | Supplementaries Squared | std |
+build | Amendments | std |
+build | Handcrafted | std |
+build | Chipped | std |
+build | Macaw's Bridges | std |
+build | Macaw's Doors | std |
+build | Macaw's Fences and Walls | std |
+build | Macaw's Furniture | std |
+build | Macaw's Lights and Lamps | std |
+build | Macaw's Paintings | std |
+build | Macaw's Paths and Pavings | std |
+build | Macaw's Roofs | std |
+build | Macaw's Trapdoors | std |
+build | Macaw's Windows | std |
+build | Decorative Blocks | std |
+build | Twigs | std |
+build | Another Furniture | std |
+build | Fantasy's Furniture | std |
+build | MrCrayfish's Furniture Mod: Refurbished | std |
+build | Valhelsia Furniture | std |
+build | Valhelsia Core | std |
+build | Beautify! | std |
+build | Medieval Deco | std |
+build | MEDIEVAL CRAFT :: structures | std |
+build | Medieval craft :: weapons | std |
+build | Medieval Paintings | std |
+build | Whimsy Deco | std |
+build | Tanuki Decor | std |
+build | Hearth & Home | std |
+build | Stoneworks | std |
+build | Clayworks | std |
+build | Woodworks | std |
+build | Quark | core |
+build | Quark Oddities | std |
+build | Zeta | core |
+build | Every Compat | std |
+build | Extra Compat | test |
+build | The New Shutters | std |
+build | Double Doors | std |
+build | Diagonal Fences | std |
+build | Diagonal Walls | std |
+build | Diagonal Windows | std |
+build | New Slab Variants | std |
+build | More Beautiful Torches | std |
+build | Swinging Lanterns | std |
+build | Connectible Chains | std |
+build | Bedspreads | std |
+build | Cluttered | std |
+build | Dark Paintings | std |
+build | Immersive Paintings | std |
+build | Joy of Painting | std |
+build | Etched | std |
+build | Perfect Plushies | std |
+build | Straw Statues | std |
+build | Trofers | std |
+build | Royal Variations | std |
+build | Days in the Middle Ages | test |
+build | Sawmill | std |
+build | Corail Woodcutter | std |
+build | Building Gadgets | std |
+build | Iron Chests | std |
+build | Iron Furnaces | std |
+build | Storage Drawers | std |
+build | Tom's Simple Storage Mod | std |
+build | Drawers Tooltip | std |
+build | Storage Labels | std |
+build | Nether Chested | std |
+build | Wider Ender Chests | std |
+build | Simple Magnets | std |
+build | Torchmaster | std |
+build | Better Lily Pads | std |
+build | Snow Under Trees | std |
+build | Passable Foliage | std |
+build | VerdantVibes | std |
+build | Just Outdoor Stuffs | std |
+build | Tumbleweed | std |
+build | SelectiveBounds | std |
+build | WorldEdit | std |
+build | Medieval Buildings | skip | duplicate-name check
+build | Dramatic Doors | skip | Connor RPG: invalid recipes
+build | KleeSlabs | skip |
+build | Prehistoric Paintings | skip |
+build | Zetter | skip |
+build | Exposure | skip |
+build | Game Discs | skip |
+build | Plushie Mod | skip |
+build | Chisels & Bits | skip | heavy
+build | Functional Storage | skip |
+build | Tom's Performant Storage | skip |
+build | Pipez | skip |
+build | Pretty Pipes | skip |
+build | Lychee | skip |
+build | KubeJS Additions | skip |
+
+# ---------------- SCRIPTING / INTEGRATION ----------------
+script | KubeJS | core |
+script | KubeJS Curios | core |
+script | LootJS: KubeJS Addon | core |
+script | MoreJS | std |
+script | EntityJS | std |
+script | EventJS | test |
+script | KeyBindJS | test |
+script | FilesJS | std |
+script | PowerfulJS | test |
+script | RangedJS | test |
+script | GeckoJS | test |
+script | ProbeJS | std | dev only
+script | Paxi | core | datapack/resource-pack injection
+script | Resource Pack Overrides | std |
+script | Rhino | core |
+script | Property Modifier | std |
+script | CraftTweaker | skip | one scripting layer only

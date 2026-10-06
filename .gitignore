@@ -1,0 +1,35 @@
+# Jars are reproduced from pack/mods.lock.json by tools/install.py
+mods/*.jar
+mods/*.disabled
+mods/.index/
+
+# Runtime / generated
+saves/
+logs/
+crash-reports/
+screenshots/
+.build/
+local/
+downloads/
+backups/
+modernfix/
+.mixin.out/
+journeymap/
+xaero/
+XaeroWaypoints*/
+schematics/
+usercache.json
+usernamecache.json
+patchouli_data.json
+emi.json
+*.dat_old
+command_history.txt
+servers.dat
+config/ftbquests/local/
+.cache/
+__pycache__/
+*.pyc
+
+# CurseForge app-managed
+minecraftinstance.json
+.curseclient
