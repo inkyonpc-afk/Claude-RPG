@@ -1,0 +1,94 @@
+"""Install mods from pack/mods.lock.json into a mods directory.
+
+  python tools/install.py [--cats perf,qol,...] [--status core,std,test] [--server] [--dest DIR] [--only NAME,NAME]
+Selected = lock entries whose category/status match, plus the transitive required dependencies.
+Prefers the local cached jar (sha1-verified), falls back to the CDN url. Only jars previously installed by this tool
+(tracked in <dest>/.installed.json) are ever removed. --server skips pack/client_only.txt.
+"""
+import argparse, hashlib, json, os, shutil, sys, urllib.request
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.normpath(os.path.join(HERE, ".."))
+ap = argparse.ArgumentParser()
+ap.add_argument("--cats", default="")
+ap.add_argument("--status", default="core,std,test")
+ap.add_argument("--only", default="")
+ap.add_argument("--server", action="store_true")
+ap.add_argument("--dest", default="")
+ap.add_argument("--dry", action="store_true")
+a = ap.parse_args()
+
+lock = json.load(open(os.path.join(ROOT, "pack", "mods.lock.json"), encoding="utf-8"))
+byid = {e["addonID"]: e for e in lock}
+cats = set(filter(None, a.cats.split(",")))
+status = set(a.status.split(","))
+only = {x.strip().lower() for x in a.only.split(",") if x.strip()}
+cfile = os.path.join(ROOT, "pack", "client_only.txt")
+client_only = set()
+if a.server and os.path.isfile(cfile):
+    client_only = {l.strip().lower() for l in open(cfile, encoding="utf-8") if l.strip() and not l.startswith("#")}
+rej = os.path.join(ROOT, "pack", "rejects.txt")
+rejected = set()
+if os.path.isfile(rej):
+    rejected = {l.split("|")[0].strip().lower() for l in open(rej, encoding="utf-8") if l.strip() and not l.startswith("#")}
+
+sel = {}
+stack = []
+for e in lock:
+    if e["why"] != "candidate" or e["status"] not in status:
+        continue
+    if cats and e["category"] not in cats:
+        continue
+    if only and e["name"].lower() not in only:
+        continue
+    if e["name"].lower() in rejected:
+        continue
+    stack.append(e["addonID"])
+while stack:
+    i = stack.pop()
+    if i in sel or i not in byid:
+        continue
+    sel[i] = byid[i]
+    stack.extend(byid[i]["deps"])
+
+if a.server:
+    sel = {i: e for i, e in sel.items() if e["name"].lower() not in client_only}
+
+dest = a.dest or os.path.join(ROOT, "mods")
+os.makedirs(dest, exist_ok=True)
+track = os.path.join(dest, ".installed.json")
+prev = json.load(open(track)) if os.path.isfile(track) else []
+want = {e["fileName"] for e in sel.values()}
+for fn in prev:
+    if fn not in want and os.path.isfile(os.path.join(dest, fn)):
+        if not a.dry:
+            os.remove(os.path.join(dest, fn))
+        print("removed", fn)
+
+
+def sha1(p):
+    h = hashlib.sha1()
+    with open(p, "rb") as f:
+        for ch in iter(lambda: f.read(1 << 20), b""):
+            h.update(ch)
+    return h.hexdigest()
+
+
+n_copy = n_dl = 0
+for e in sorted(sel.values(), key=lambda x: x["name"].lower()):
+    out = os.path.join(dest, e["fileName"])
+    if os.path.isfile(out) and (not e["sha1"] or sha1(out) == e["sha1"]):
+        continue
+    if a.dry:
+        continue
+    src = e["localJar"]
+    if src and os.path.isfile(src) and (not e["sha1"] or sha1(src) == e["sha1"]):
+        shutil.copyfile(src, out)
+        n_copy += 1
+    else:
+        req = urllib.request.Request(e["url"], headers={"User-Agent": "ClaudeRPG-packbuilder/0.1"})
+        with urllib.request.urlopen(req, timeout=60) as r, open(out, "wb") as f:
+            shutil.copyfileobj(r, f)
+        n_dl += 1
+json.dump(sorted(want), open(track, "w"))
+print("selected %d mods -> %s (copied %d, downloaded %d)" % (len(sel), dest, n_copy, n_dl))

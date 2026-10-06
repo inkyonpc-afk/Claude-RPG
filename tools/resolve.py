@@ -80,7 +80,7 @@ lock = []
 for k, s in sorted(selected.items(), key=lambda kv: (kv[1]["cat"], mods[kv[0]]["name"].lower())):
     m = mods[k]
     lock.append(dict(addonID=int(k), name=m["name"], fileId=m["fileId"], fileName=m["fileName"], sha1=m["sha1"],
-                     url=m["downloadUrl"], localJar=m["jar"], category=s["cat"], status=s["status"], why=s["why"]))
+                     url=m["downloadUrl"], localJar=m["jar"], category=s["cat"], status=s["status"], why=s["why"], deps=[int(d) for d in m["deps"] if str(d) in mods]))
 json.dump(lock, open(os.path.join(PACK, "mods.lock.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 fab = [l["name"] + " :: " + l["fileName"] for l in lock if FABRIC.search(l["fileName"])]
