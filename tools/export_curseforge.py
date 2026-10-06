@@ -70,7 +70,7 @@ manifest = {"minecraft": {"version": "1.20.1", "modLoaders": [{"id": "forge-47.4
             "name": "Embers of Aldreth", "version": a.version, "author": "Claude + Connor", "overrides": "overrides", "files": files}
 os.makedirs(os.path.join(ROOT, a.out), exist_ok=True)
 zp = os.path.join(ROOT, a.out, "EmbersOfAldreth-%s.zip" % a.version)
-INCLUDE_DIRS = ["config", "defaultconfigs", "kubejs", "mod_data", "resourcepacks", "shaderpacks", "datapacks"]
+INCLUDE_DIRS = ["config", "defaultconfigs", "kubejs", "resourcepacks", "shaderpacks", "datapacks"]   # mod_data is a regenerated cache (GML mappings): never shipped
 EXCLUDE_PARTS = ("exported", "__pycache__", "local", "crash_assistant", "backups")
 with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
     z.writestr("manifest.json", json.dumps(manifest, indent=1))
@@ -81,6 +81,8 @@ with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
             dn[:] = [x for x in dn if x not in EXCLUDE_PARTS]
             for f in fn:
                 if f in vis_cf and d in ("resourcepacks", "shaderpacks"):
+                    continue
+                if f.endswith(".db") or f == "player-volumes.properties":   # per-player / runtime state
                     continue
                 full = os.path.join(dp, f)
                 z.write(full, "overrides/" + os.path.relpath(full, ROOT).replace("\\", "/"))

@@ -36,3 +36,4 @@ minecraftinstance.json
 kubejs/exported/
 resourcepacks/*.zip
 shaderpacks/*.zip
+dist/
