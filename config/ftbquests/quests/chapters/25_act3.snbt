@@ -237,6 +237,7 @@
 						xp: 180
 					}
 			]
+			optional: true
 			dependencies: ["6DE5B62F96455C37"]
 		},
 		{
@@ -304,6 +305,7 @@
 						xp: 200
 					}
 			]
+			optional: true
 			dependencies: ["C5352C0399EAFA68"]
 		},
 		{

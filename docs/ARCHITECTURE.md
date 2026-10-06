@@ -16,7 +16,7 @@ Source of truth for system decisions. Update deliberately (with a CHANGELOG entr
 | Attributes | Apothic Attributes backbone + Iron's spell attrs; AttributeFix + Max Health Fix | RPGStats |
 | Races | Origins (Forge), ~8 original races w/ small perks, no class lock | Origins: Classes, Medieval Origins, Strictly Origins (broken powers per Connor RPG) |
 | Gear | Apotheosis 7.4.8 (rarity/affixes/sockets/gems/reforge/salvage/enchanting) + Apotheotic Additions + Apothic Curios + Lukas' Weapon Leveling + Ancient Reforging | Tetra, Silent Gear (second gear identity) |
-| Rarity | Common, Uncommon, Rare, Epic, Mythic(display "Legendary"), Ancient + hand-authored Uniques | |
+| Rarity | Common, Uncommon, Rare, Epic, Mythic, Ancient (Apotheosis names kept as shipped; the planned "Legendary" display rename was not built) + hand-authored Uniques | |
 | Magic | Iron's Spells (combat) + addons; Ars Nouveau/Elemental (utility); Goety (summoning/necro) | Spell Engine/Wizards/Paladins (second spell stat system) |
 | Accessories | Curios, Artifacts, Relics, Enigmatic Legacy, Majrusz's Accessories | |
 | Quests | FTB Quests + FTB Teams, generated from design JSON | Odyssey (1.21 only) |

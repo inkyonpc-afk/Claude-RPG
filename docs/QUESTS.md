@@ -26,20 +26,20 @@ _You wake beside a cold hearth with a shard of crown-glass burning in your palm.
 - **First Blood**: kill:minecraft:zombie
 - **Four Walls**: item:minecraft:red_bed
 - **Mark the Road**: item:waystones:waystone
-- **Smoke on the Horizon**: structure:minecraft:village_plains
+- **Smoke on the Horizon** (optional): structure:minecraft:village_plains
 - **The Road Calls**: checkmark
 
 ### Act I: The Awakening (24 quests)
 
 _The Ember wants fuel. The old ruins are full of it, and so are the things that guard them._
 
-- **Into the Dark**: structure:minecraft:mineshaft
+- **Into the Dark** (optional): structure:minecraft:mineshaft
 - **A Crack in the Stone**: item:minecraft:iron_ingot
 - **A Proper Forge**: item:minecraft:blast_furnace
 - **Iron Shell**: item:minecraft:iron_chestplate
-- **The Ruin That Hums**: structure:dungeons_arise:abandoned_temple
-- **Down the Stairs**: structure:betterdungeons:small_dungeon
-- **The Bandit Towers**: structure:dungeons_arise:bandit_towers, kill:minecraft:pillager
+- **The Ruin That Hums** (optional): structure:dungeons_arise:abandoned_temple
+- **Down the Stairs** (optional): structure:betterdungeons:small_dungeon
+- **The Bandit Towers** (optional): structure:dungeons_arise:bandit_towers, kill:minecraft:pillager
 - **Nothing Wasted**: item:apotheosis:salvaging_table
 - **A Glimmer of Power**: item:apotheosis:gem
 - **Set in Stone**: item:apotheosis:sigil_of_socketing
@@ -52,7 +52,7 @@ _The Ember wants fuel. The old ruins are full of it, and so are the things that 
 - **A Friend with Hooves**: advancement:minecraft:husbandry/tame_an_animal, item:minecraft:saddle
 - **A Leaf for the Wind**: item:paraglider:paraglider
 - **A Hook and a Prayer**: item:rehooked:wood_hook
-- **The Quiet Keep**: structure:dungeons_enhanced:castle
+- **The Quiet Keep** (optional): structure:dungeons_enhanced:castle
 - **The Wrought Chamber**: kill:mowziesmobs:ferrous_wroughtnaut
 - **Shield Wall** (optional): item:minecraft:shield
 - **From a Distance** (optional): item:minecraft:bow
@@ -63,19 +63,19 @@ _The Ember wants fuel. The old ruins are full of it, and so are the things that 
 _The tablet named seven Wardens. The first of them kept a forest where it is always dusk._
 
 - **Where the Sun Forgot**: dimension:twilightforest:twilight_forest
-- **Hollow Hill**: structure:twilightforest:small_hollow_hill
+- **Hollow Hill** (optional): structure:twilightforest:small_hollow_hill
 - **Ironwood**: item:twilightforest:ironwood_ingot
-- **The Courtyard Serpent**: structure:twilightforest:naga_courtyard, kill:twilightforest:naga
+- **The Courtyard Serpent** (optional): structure:twilightforest:naga_courtyard, kill:twilightforest:naga
 - **Serpent Scale**: item:twilightforest:naga_scale
-- **Down the Labyrinth**: structure:twilightforest:labyrinth
+- **Down the Labyrinth** (optional): structure:twilightforest:labyrinth
 - **The Minoshroom**: kill:twilightforest:minoshroom
-- **A Tower That Hums**: structure:twilightforest:lich_tower
+- **A Tower That Hums** (optional): structure:twilightforest:lich_tower
 - **King of the Dead Hours**: kill:twilightforest:lich, advancement:twilightforest:progress_lich
 - **Knightmetal**: item:twilightforest:knightmetal_ingot
-- **The Hydra's Lair**: structure:twilightforest:hydra_lair, kill:twilightforest:hydra
+- **The Hydra's Lair** (optional): structure:twilightforest:hydra_lair, kill:twilightforest:hydra
 - **The Land Below**: dimension:minecraft:the_nether
-- **Brick and Cinder**: structure:minecraft:fortress
-- **Gold and Pigs**: structure:minecraft:bastion_remnant
+- **Brick and Cinder** (optional): structure:minecraft:fortress
+- **Gold and Pigs** (optional): structure:minecraft:bastion_remnant
 - **Ancient Debris**: item:minecraft:ancient_debris
 - **A Heavier Metal**: item:minecraft:netherite_ingot
 - **The Tower Beyond Twilight**: kill:twilightforest:ur_ghast, advancement:twilightforest:progress_ur_ghast
@@ -101,9 +101,9 @@ _Above the weather: sky islands, dream-realms and the first true flight._
 - **A Saddle for a Pig**: advancement:aether:mount_phyg
 - **The Bronze Dungeon**: advancement:aether:bronze_dungeon
 - **The Slider**: kill:aether:slider
-- **The Silver Dungeon**: structure:aether:silver_dungeon
+- **The Silver Dungeon** (optional): structure:aether:silver_dungeon
 - **The Valkyrie Queen**: kill:aether:valkyrie_queen
-- **The Gold Dungeon**: structure:aether:gold_dungeon
+- **The Gold Dungeon** (optional): structure:aether:gold_dungeon
 - **The Sun Spirit**: kill:aether:sun_spirit
 - **Whale-Rider** (optional): item:deep_aether:aerwhale_saddle
 - **Hippogryph**: item:iceandfire:hippogryph_egg
@@ -125,14 +125,14 @@ _Above the weather: sky islands, dream-realms and the first true flight._
 _The Wardens guarded their realms. Others, long ago, lost theirs._
 
 - **The Hall of Echoes**: dimension:deeperdarker:otherside
-- **A City Under the Stone**: structure:minecraft:ancient_city, advancement:deeperdarker:main/find_ancient_city
+- **A City Under the Stone** (optional): structure:minecraft:ancient_city, advancement:deeperdarker:main/find_ancient_city
 - **Reinforced Echo**: item:deeperdarker:reinforced_echo_shard
 - **The Warden of Echoes**: kill:minecraft:warden, advancement:deeperdarker:main/kill_warden
-- **The Ancient Factory**: structure:cataclysm:ancient_factory
+- **The Ancient Factory** (optional): structure:cataclysm:ancient_factory
 - **The Harbinger**: kill:cataclysm:the_harbinger, advancement:cataclysm:kill_harbinger
-- **The Sunken City**: structure:cataclysm:sunken_city
+- **The Sunken City** (optional): structure:cataclysm:sunken_city
 - **The Leviathan**: kill:cataclysm:the_leviathan, advancement:cataclysm:kill_leviathan
-- **Cursed Pyramid**: structure:cataclysm:cursed_pyramid
+- **Cursed Pyramid** (optional): structure:cataclysm:cursed_pyramid
 - **The Ancient Remnant**: kill:cataclysm:ancient_remnant, advancement:cataclysm:kill_remnant
 - **A Dragon's Egg**: advancement:iceandfire:iceandfire/dragon_egg
 - **A Horn for a Beast**: advancement:iceandfire:iceandfire/dragon_horn
@@ -140,10 +140,10 @@ _The Wardens guarded their realms. Others, long ago, lost theirs._
 - **The Fire Dragon**: kill:iceandfire:fire_dragon
 - **The Rider**: advancement:iceandfire:iceandfire/dragonarmor
 - **Wyrmroost Wings** (optional): item:wyrmroost:dragon_egg
-- **Keep Kayra**: structure:dungeons_arise:keep_kayra
+- **Keep Kayra** (optional): structure:dungeons_arise:keep_kayra
 - **Shiraz Palace** (optional): structure:dungeons_arise:shiraz_palace
 - **The Heavenly Challenger** (optional): structure:dungeons_arise:heavenly_challenger
-- **The Black Citadel**: structure:dungeons_enhanced:black_citadel
+- **The Black Citadel** (optional): structure:dungeons_enhanced:black_citadel
 - **The Keeping Castle** (optional): structure:prodigium_dungeons:keeping_castle
 - **The Apostle**: kill:goety:apostle
 - **Catacombs**: advancement:irons_spellbooks:irons_spellbooks/enter_catacombs
@@ -157,7 +157,7 @@ _The Wardens guarded their realms. Others, long ago, lost theirs._
 _The Hollow Crown was never broken. It was split, to be gathered by someone willing to finish what the Wardens started._
 
 - **The End**: dimension:minecraft:the_end
-- **A City at the Edge**: structure:minecraft:end_city, advancement:minecraft:end/find_end_city
+- **A City at the Edge** (optional): structure:minecraft:end_city, advancement:minecraft:end/find_end_city
 - **Shell of the Ender**: item:minecraft:shulker_shell
 - **Wings Earned**: advancement:minecraft:end/elytra
 - **The Ender Guardian**: kill:cataclysm:ender_guardian, advancement:cataclysm:kill_ender_guardian
@@ -350,8 +350,8 @@ _A different kind of power: servants, curses, and the price of command._
 - **Focus Bag** (optional): item:goety:focus_bag
 - **A Servant**: item:goety:animation_core
 - **Become a Lich**: advancement:goety:goety/become_lich
-- **Crypt Dwellers**: structure:goety:crypt
-- **The Dark Manor**: structure:goety:dark_manor
+- **Crypt Dwellers** (optional): structure:goety:crypt
+- **The Dark Manor** (optional): structure:goety:dark_manor
 - **The Apostle**: kill:goety:apostle
 - **Cursed Cage** (optional): item:goety:cursed_cage
 
@@ -449,19 +449,19 @@ _Flight is earned, rationed and fenced. That is what makes it joyful._
 _Common places hold common things: supplies, a story, a little luck._
 
 - **A World That Remembers**: checkmark
-- **A Village**: structure:minecraft:village_plains
-- **Pillager Outpost**: structure:minecraft:pillager_outpost
-- **An Old Mineshaft**: structure:minecraft:mineshaft
-- **Ruined Portal**: structure:minecraft:ruined_portal
-- **Abandoned Temple**: structure:dungeons_arise:abandoned_temple
-- **Bandit Towers**: structure:dungeons_arise:bandit_towers
-- **Illager Fort**: structure:dungeons_arise:illager_fort
+- **A Village** (optional): structure:minecraft:village_plains
+- **Pillager Outpost** (optional): structure:minecraft:pillager_outpost
+- **An Old Mineshaft** (optional): structure:minecraft:mineshaft
+- **Ruined Portal** (optional): structure:minecraft:ruined_portal
+- **Abandoned Temple** (optional): structure:dungeons_arise:abandoned_temple
+- **Bandit Towers** (optional): structure:dungeons_arise:bandit_towers
+- **Illager Fort** (optional): structure:dungeons_arise:illager_fort
 - **A Lighthouse** (optional): structure:dungeons_arise:lighthouse
 - **Monastery** (optional): structure:dungeons_arise:monastery
-- **A Dungeon**: structure:betterdungeons:skeleton_dungeon
-- **Desert Temple**: structure:minecraft:desert_pyramid
+- **A Dungeon** (optional): structure:betterdungeons:skeleton_dungeon
+- **Desert Temple** (optional): structure:minecraft:desert_pyramid
 - **Jungle Temple** (optional): structure:minecraft:jungle_pyramid
-- **Ocean Monument**: structure:minecraft:monument
+- **Ocean Monument** (optional): structure:minecraft:monument
 - **A Shipwreck** (optional): structure:minecraft:shipwreck
 - **Ancient Ruins** (optional): structure:minecraft:ocean_ruin_cold
 - **Explorer**: checkmark
@@ -471,12 +471,12 @@ _Common places hold common things: supplies, a story, a little luck._
 _Rare, huge and dangerous. Plan a trip._
 
 - **Places of Legend**: checkmark
-- **A Castle**: structure:dungeons_enhanced:castle
-- **Woodland Mansion**: structure:minecraft:mansion
-- **A Stronghold**: structure:betterstrongholds:stronghold
-- **Keep Kayra**: structure:dungeons_arise:keep_kayra
+- **A Castle** (optional): structure:dungeons_enhanced:castle
+- **Woodland Mansion** (optional): structure:minecraft:mansion
+- **A Stronghold** (optional): structure:betterstrongholds:stronghold
+- **Keep Kayra** (optional): structure:dungeons_arise:keep_kayra
 - **Shiraz Palace** (optional): structure:dungeons_arise:shiraz_palace
-- **The Black Citadel**: structure:dungeons_enhanced:black_citadel
+- **The Black Citadel** (optional): structure:dungeons_enhanced:black_citadel
 - **Tower of the Undead** (optional): structure:dungeons_enhanced:tower_of_the_undead
 - **The Coliseum** (optional): structure:dungeons_arise:coliseum
 - **A Ruined Citadel** (optional): structure:cataclysm:ruined_citadel

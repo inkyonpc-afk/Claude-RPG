@@ -67,6 +67,7 @@
 						xp: 30
 					}
 			]
+			optional: true
 			dependencies: ["34CFC877343A8EC2"]
 		},
 		{
@@ -92,6 +93,7 @@
 						xp: 60
 					}
 			]
+			optional: true
 			dependencies: ["43E4E65DBC1216C6"]
 		},
 		{
@@ -117,6 +119,7 @@
 						xp: 40
 					}
 			]
+			optional: true
 			dependencies: ["34CFC877343A8EC2"]
 		},
 		{
@@ -142,6 +145,7 @@
 						xp: 30
 					}
 			]
+			optional: true
 			dependencies: ["34CFC877343A8EC2"]
 		},
 		{
@@ -167,6 +171,7 @@
 						xp: 60
 					}
 			]
+			optional: true
 			dependencies: ["34CFC877343A8EC2"]
 		},
 		{
@@ -192,6 +197,7 @@
 						xp: 70
 					}
 			]
+			optional: true
 			dependencies: ["E7343E5B16186ECC"]
 		},
 		{
@@ -217,6 +223,7 @@
 						xp: 80
 					}
 			]
+			optional: true
 			dependencies: ["73C693D42E5B3508"]
 		},
 		{
@@ -302,6 +309,7 @@
 						xp: 60
 					}
 			]
+			optional: true
 			dependencies: ["34CFC877343A8EC2"]
 		},
 		{
@@ -327,6 +335,7 @@
 						xp: 60
 					}
 			]
+			optional: true
 			dependencies: ["27C94687CE8F95A3"]
 		},
 		{
@@ -386,6 +395,7 @@
 						title: "Tier 2 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["2CA53FC2A165217A"]
 		},
 		{

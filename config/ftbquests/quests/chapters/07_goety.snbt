@@ -239,6 +239,7 @@
 						xp: 100
 					}
 			]
+			optional: true
 			dependencies: ["8DE9658C55A454AE"]
 		},
 		{
@@ -272,6 +273,7 @@
 						title: "Tier 3 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["A92E014FC6CD6525"]
 		},
 		{

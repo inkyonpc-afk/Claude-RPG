@@ -82,6 +82,7 @@
 						xp: 200
 					}
 			]
+			optional: true
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
@@ -181,6 +182,7 @@
 						xp: 200
 					}
 			]
+			optional: true
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
@@ -245,6 +247,7 @@
 						xp: 200
 					}
 			]
+			optional: true
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
@@ -309,6 +312,7 @@
 						xp: 200
 					}
 			]
+			optional: true
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
@@ -551,6 +555,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
@@ -652,6 +657,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{

@@ -44,3 +44,10 @@
   - The flight guard hit a Rhino scripting bug (`const` inside a nested block): fixed.
   - `install.py --dry` rewrote the install tracker and orphaned a jar.
 - Verified server-side with `tests/mp_flight.txt`: unstaged flying-mount riders are dropped; staged riders keep flying; elytra loot gate strips the Nether table and keeps the End table; boss kills roll `aldreth:boss/t<tier>` (Naga dropped Apotheosis materials).
+
+## 2026-10-06: later fixes (validator, title, quest gating)
+- `tools/verify.py` (43 checks, green): found and removed 4 Fabric-format jars, duplicate Ice and Fire and Easy NPC jars; `pack/dep_replaced.txt` stops dependencies re-adding duplicates.
+- Ice and Fire: the original 2.1.13 ships; Community Edition alone crashes client and server (registry ID mismatch).
+- Title screen: three mods that hijacked it (Ancient Aether menu, Ice and Fire bestiary menu, Blue Skies panorama) switched off; our panorama and logo verified in-client.
+- Quests: every quest with a structure task is now optional (233 optional quests), so a far-away or biome-bound structure can never stall the story (an optional quest counts as satisfied for dependents; rewards are kept).
+- Realm gate messages no longer print raw item keys; PERFORMANCE.md filled with measured data; first export built and audited (no caches or runtime state).

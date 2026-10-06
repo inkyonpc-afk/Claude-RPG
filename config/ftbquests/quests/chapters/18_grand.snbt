@@ -75,6 +75,7 @@
 						title: "Tier 3 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["C2F265822FE2AC67"]
 		},
 		{
@@ -108,6 +109,7 @@
 						title: "Tier 3 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["217EFBB850CFB92F"]
 		},
 		{
@@ -133,6 +135,7 @@
 						xp: 200
 					}
 			]
+			optional: true
 			dependencies: ["217EFBB850CFB92F"]
 		},
 		{
@@ -166,6 +169,7 @@
 						title: "Tier 4 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["3A299F0F57E8CD25"]
 		},
 		{
@@ -233,6 +237,7 @@
 						title: "Tier 4 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["58F4C2A1AE8400B1"]
 		},
 		{

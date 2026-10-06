@@ -332,6 +332,7 @@
 						count: 3
 					}
 			]
+			optional: true
 			dependencies: ["147D3552E12D98AC"]
 		},
 		{

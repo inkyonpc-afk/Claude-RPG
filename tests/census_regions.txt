@@ -1,23 +1,23 @@
-# Spacing calibration sample: four fresh regions far from spawn, all generated under the current sparsestructures.json5.
+# Spacing calibration sample: four fresh regions (radius 400 = 2,601 chunks each; 480 s per region at the measured 5-9 chunks/s) far from spawn, all generated under the current sparsestructures.json5.
 # Run: python tools/server_test.py --fresh --cmds tests/census_regions.txt --timeout 2800 --tag census2
 # then: python tools/structure_census.py --json .build/census2.json
 chunky world minecraft:overworld
-chunky radius 500
+chunky radius 400
 chunky center 7000 0
 chunky start
-wait 360
+wait 480
 chunky progress
 chunky center -7000 0
 chunky start
-wait 360
+wait 480
 chunky progress
 chunky center 0 7000
 chunky start
-wait 360
+wait 480
 chunky progress
 chunky center 0 -7000
 chunky start
-wait 360
+wait 480
 chunky progress
 spark tps
 wait 5

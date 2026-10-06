@@ -44,6 +44,7 @@
 						xp: 40
 					}
 			]
+			optional: true
 			dependencies: ["601EF5F679CC4521"]
 		},
 		{
@@ -164,6 +165,7 @@
 						title: "Tier 1 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
@@ -189,6 +191,7 @@
 						xp: 50
 					}
 			]
+			optional: true
 			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
@@ -226,6 +229,7 @@
 						count: 32
 					}
 			]
+			optional: true
 			dependencies: ["D33394F9709D56EC"]
 		},
 		{
@@ -604,6 +608,7 @@
 						title: "Tier 2 supply cache"
 					}
 			]
+			optional: true
 			dependencies: ["A363B3116D3544A1"]
 		},
 		{

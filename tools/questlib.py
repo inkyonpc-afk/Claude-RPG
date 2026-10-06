@@ -77,6 +77,10 @@ class Chapter:
 
     def q(self, key, title, icon, desc, tasks, rewards, deps=(), shape="circle", size=1.0, optional=False, sub="", x=None, y=None):
         assert key not in self.keys, "duplicate quest key %s in %s" % (key, self.key)
+        # structure hunts depend on biome and seed (a plains village can be thousands of blocks away), so they never gate progression: FTB Quests treats an
+        # optional quest as satisfied for its dependents (Quest.isOptionalForProgression); the rewards stay.
+        if any(t.get("type") == "structure" for t in tasks):
+            optional = True
         d = dict(key=key, title=title, icon=icon, desc=desc if isinstance(desc, list) else [desc], tasks=tasks, rewards=rewards, deps=list(deps), shape=shape,
                  size=size, optional=optional, sub=sub, x=x, y=y)
         self.quests.append(d)

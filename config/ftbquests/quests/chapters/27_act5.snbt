@@ -82,6 +82,7 @@
 						xp: 250
 					}
 			]
+			optional: true
 			dependencies: ["07883EB0022042D3"]
 		},
 		{
