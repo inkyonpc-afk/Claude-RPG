@@ -33,9 +33,9 @@ PlayerEvents.tick(event => {
   }
   const flyMount = mountId && FLYERS.has(mountId)
   if (flyMount && !p.stages.has(FLIGHT_STAGE)) {
-    const air = mount.onGround() || mount.isInWater() ? 0 : p.persistentData.getInt('aldFlyAir') + 1
-    p.persistentData.putInt('aldFlyAir', air)
-    if (air >= 2) {
+    var aldAirTicks = mount.onGround() || mount.isInWater() ? 0 : p.persistentData.getInt('aldFlyAir') + 1
+    p.persistentData.putInt('aldFlyAir', aldAirTicks)
+    if (aldAirTicks >= 2) {
       p.stopRiding()
       p.persistentData.putInt('aldFlyAir', 0)
       aldDrop(p, 'Your mount will walk with you, but it will not yet trust you with the sky. (Flight opens in Act III.)')

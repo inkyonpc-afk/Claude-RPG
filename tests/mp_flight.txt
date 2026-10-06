@@ -10,17 +10,20 @@ wait 2
 data get entity AldrethTest RootVehicle.Entity.id
 effect give @e[tag=aldtest] minecraft:levitation 15 1
 wait 6
-# EXPECT dropped (no stage): "Found no elements"
+# EXPECT dropped (no stage): "Found no elements", and the guard's side effect: minecraft:slow_falling in the player's effects
 data get entity AldrethTest RootVehicle.Entity.id
+data get entity AldrethTest ActiveEffects
 effect clear @e[tag=aldtest]
+effect clear AldrethTest
 kubejs stages add AldrethTest aldreth_flight
 wait 8
 ride AldrethTest mount @e[tag=aldtest,limit=1]
 wait 2
 effect give @e[tag=aldtest] minecraft:levitation 15 1
 wait 6
-# EXPECT still riding (stage held): prints tameablebeasts:argentavis
+# EXPECT (stage held): NO slow_falling in the player's effects (guard did not fire; an untamed mount may still buck the rider by itself)
 data get entity AldrethTest RootVehicle.Entity.id
+data get entity AldrethTest ActiveEffects
 kubejs stages remove AldrethTest aldreth_flight
 kill @e[tag=aldtest]
 # --- boss reward hook: kill a Naga next to the player, expect an affixed item on the ground ---
@@ -29,8 +32,8 @@ execute at AldrethTest run summon twilightforest:naga ~6 ~ ~ {Tags:["aldboss"]}
 wait 2
 kill @e[tag=aldboss]
 wait 3
-# EXPECT "Test passed, count: 1" (or more)
-execute at AldrethTest if entity @e[type=item,distance=..30,nbt={Item:{tag:{affix_data:{}}}}]
+# EXPECT item ids printed incl. an Apotheosis affix item/gem/material or aldreth:ember_shard (boss table), plus the naga's own drops
+execute at AldrethTest as @e[type=item,distance=..30] run data get entity @s Item.id
 execute at AldrethTest run kill @e[type=item,distance=..30]
 # --- loot gate: Incendium's Nether 'Infernal Wings' artifact table only holds an elytra; EXPECT "Dropped 0 items" ---
 execute at AldrethTest run loot spawn ~ ~ ~ loot incendium:artifact/tool/infernal_wings

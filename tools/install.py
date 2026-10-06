@@ -103,5 +103,6 @@ for e in sorted(sel.values(), key=lambda x: x["name"].lower()):
         with urllib.request.urlopen(req, timeout=60) as r, open(out, "wb") as f:
             shutil.copyfileobj(r, f)
         n_dl += 1
-json.dump(sorted(want), open(track, "w"))
+if not a.dry:
+    json.dump(sorted(want), open(track, "w"))
 print("selected %d mods -> %s (copied %d, downloaded %d)" % (len(sel), dest, n_copy, n_dl))
