@@ -17,7 +17,7 @@ Power curve: ordinary adventurer -> specialised hero -> legendary. Gear tiers (r
 Rules: no tier-skipping via chests (see LOOT.md); portals to later realms are gated (Restricted Portals + quest dependencies); the skill tree budget (~110 points by level 75 + quest points) is deliberately smaller than the tree so builds specialise.
 
 ## Realm gating: Ember Shards and Warden Sigils (`tools/build_sigils.py`, source `design/custom_items.py`)
-Each realm's portal is sealed per player by Restricted Portals until that player **crafts** the realm's Sigil (an advancement is granted; the portal then works for them forever). Sigils are shapeless recipes around **Ember Shards**.
+Each realm's portal is sealed per player by Restricted Portals until that player **holds** the realm's Sigil (crafting is the intended route; an advancement fires on inventory change; the portal then works for them forever). Sigils are shapeless recipes around **Ember Shards**.
 
 | Sigil | Unseals | Recipe | Act |
 |---|---|---|---|
@@ -29,4 +29,4 @@ Each realm's portal is sealed per player by Restricted Portals until that player
 | Sigil of Echo | Otherside | 3 shards, echo shard, sculk catalyst | IV |
 | Sigil of the End | End | 4 shards, eye of ender, nether star | V |
 
-**Shard income:** Act I finale 3, Act II finale 4, Act III finale 3, Act IV finale 4 (14, one short of all 15 by design), plus boss kills (t2-t3 50 %, t4-t5 one, t6 one or two). The Naga scale, blaze rod, echo shard and nether star tie each Sigil to the previous act's content. The Doors chapter has a quest per Sigil, and each realm quest depends on its Sigil.
+**Shard income:** Act I finale 3, Act II finale 4, Act III finale 3, Act IV finale 4 = 14, exactly the 14 shards the seven Sigils cost (3 for the Act II realms, 4 for Sky and Dream, 3 for Echo, 4 for the End), plus boss kills (t2-t3 50 %, t4-t5 one, t6 one or two). The Naga scale, blaze rod, echo shard and nether star tie each Sigil to the previous act's content. The Doors chapter has a quest per Sigil, and each realm quest depends on its Sigil.

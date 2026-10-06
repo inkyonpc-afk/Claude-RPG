@@ -2,11 +2,11 @@
 	#Prevents Death by Teleporting Player to Spawn if trying to enter an Ender Portal
 	preventdeath = true
 	#Message that displays when Teleport is blocked
-	blockedmessage = "The way is sealed. Craft a %item% to open the %dim%."
+	blockedmessage = "The way to the %dim% is sealed. Craft its Warden Sigil (see the Doors chapter in the quest book)."
 	#Title for the Advancements
 	craftedmessage = "%dim% Unsealed"
 	#Description for the Advancements
-	description = "Craft a %item%"
+	description = "Craft the Warden Sigil of this realm"
 	#Comma seperated list of items that when crafted unlock the corresponding dimension
 	craftitems = "aldreth:sigil_of_flame,aldreth:sigil_of_root,aldreth:sigil_of_stone,aldreth:sigil_of_sky,aldreth:sigil_of_dream,aldreth:sigil_of_dream,aldreth:sigil_of_echo,aldreth:sigil_of_the_end"
 	#Comma seperated list of Dimension Resource Names

@@ -1,0 +1,29 @@
+# Realm gate test. Run with tools/server_test.py --cmds tests/mp_realms.txt while a client joins 127.0.0.1:25599 as AldrethTest.
+wait 330
+list
+advancement revoke AldrethTest only restrictedportals:nether
+clear AldrethTest aldreth:sigil_of_flame
+# 1. no sigil: EXPECT the dimension stays minecraft:overworld
+execute in minecraft:the_nether run tp AldrethTest 0 100 0
+wait 3
+data get entity AldrethTest Dimension
+# 2. receive the sigil: EXPECT the advancement to complete
+give AldrethTest aldreth:sigil_of_flame
+wait 3
+advancement test AldrethTest only restrictedportals:nether
+# 3. EXPECT the dimension becomes minecraft:the_nether
+execute in minecraft:the_nether run tp AldrethTest 0 100 0
+wait 4
+data get entity AldrethTest Dimension
+execute in minecraft:overworld run tp AldrethTest 0 100 0
+wait 2
+# 4. other realms stay sealed: EXPECT still overworld (Aether)
+advancement revoke AldrethTest only restrictedportals:aether
+execute in aether:the_aether run tp AldrethTest 0 100 0
+wait 3
+data get entity AldrethTest Dimension
+# 5. recipe sanity: the sigil recipes registered (EXPECT a recipe list including aldreth:sigil/flame)
+recipe give AldrethTest aldreth:sigil/flame
+wait 2
+forge tps
+wait 3

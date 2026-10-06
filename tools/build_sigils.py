@@ -98,11 +98,11 @@ toml = """[options]
 \t#Prevents Death by Teleporting Player to Spawn if trying to enter an Ender Portal
 \tpreventdeath = true
 \t#Message that displays when Teleport is blocked
-\tblockedmessage = "The way is sealed. Craft a %%item%% to open the %%dim%%."
+\tblockedmessage = "The way to the %%dim%% is sealed. Craft its Warden Sigil (see the Doors chapter in the quest book)."
 \t#Title for the Advancements
 \tcraftedmessage = "%%dim%% Unsealed"
 \t#Description for the Advancements
-\tdescription = "Craft a %%item%%"
+\tdescription = "Craft the Warden Sigil of this realm"
 \t#Comma seperated list of items that when crafted unlock the corresponding dimension
 \tcraftitems = "%s"
 \t#Comma seperated list of Dimension Resource Names
