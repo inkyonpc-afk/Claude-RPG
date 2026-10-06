@@ -32,7 +32,9 @@ TIERS = [
 FORCE = [
     ("ocean_decor", r"^aquamirae:surface|^underwater_village:|^formationsoverworld:(raft|rafts)|wreckage_ocean"),
     ("clutter", r"^terrariastructures:|^valhelsia_structures:(deep_spawner|spawner_room|big_trees)|^buriedwrecks:"),
-    ("dungeon", r"^aquamirae:(outpost|shelter|ship)|^betterdungeons:"),
+    ("clutter", r"^prodigium_dungeons:house|^dungeons_arise:(fishing_hut|bathhouse|aviary)"),
+    # Dungeons Arise ships both mega-dungeons and small huts: only the named mega ones are "great"
+    ("dungeon", r"^aquamirae:(outpost|shelter|ship)|^betterdungeons:|^dungeons_arise:(?!keep_kayra|shiraz|coliseum|typhon|heavenly_|illager_fort|monastery|plague_asylum|thornborn|mechanical_nest|foundry)|^dungeons_arise_seven_seas:|^prodigium_dungeons:(icy_temple|frostmaw_cavern|temple|castle)"),
 ]
 
 
