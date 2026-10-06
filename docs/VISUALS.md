@@ -13,7 +13,7 @@ Name **Embers of Aldreth**. Palette: ember orange and gold on deep indigo. Gener
   - *World detail:* Fancy Crops, Better Lanterns, Just Fancy Torches, Shiny Trims, Better End Portal Frame, Low On Fire, Simply Swords Whimscape, Medieval Style Lootr, Enchant Icons.
   - *Audio:* Alternative Rain Sounds, More Cave Sounds, Soft Weather, Cataclysmic Tunes (boss themes).
   - *Presentation:* Visual Traveler's Titles + Alex's Titles, Eclectic Trove (Legendary Tooltips frames), Better XP/Mana bar for Iron's Spells, Enhanced Boss Bars, Embellished Stone (advancement plaques), FTB Quests Extra Shapes.
-  - *UI theme, top priority:* STONEBORN (dwarven-fantasy UI) + SBMC (modded GUIs) + Meï's Additions + Denis' Mod Compats.
+  - *UI theme:* none on purpose. The STONEBORN UI pack was tried and dropped: it replaces the title panorama with a wooden-table scene and overrides our brand. Our own panorama, logo and quest art carry the identity.
 - Players can reorder or disable any of these in Options > Resource Packs. Order lives in `options.txt` (`build_visuals.py --options`).
 
 ## Shaders

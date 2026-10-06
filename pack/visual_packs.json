@@ -230,46 +230,6 @@
   "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
  },
  {
-  "name": "STONEBORN - Dwarven-Fantasy Inspired UI Overhaul",
-  "fileName": "STONEBORN+-+1.20-1.20.1+-+V3.2.3.zip",
-  "kind": "resourcepacks",
-  "projectID": 455845,
-  "fileID": 5803898,
-  "downloadUrl": "https://edge.forgecdn.net/files/5803/898/STONEBORN%2b-%2b1.20-1.20.1%2b-%2bV3.2.3.zip",
-  "sha1": "f87e639a9bea63c091e71581c695edcbc1e9bff9",
-  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
- },
- {
-  "name": "STONEBORN - Modded Compatibility GUI (SBMC)",
-  "fileName": "SBMC-1.20.1-3.10.1.zip",
-  "kind": "resourcepacks",
-  "projectID": 783566,
-  "fileID": 7712782,
-  "downloadUrl": "https://edge.forgecdn.net/files/7712/782/SBMC-1.20.1-3.10.1.zip",
-  "sha1": "caf08a338a61d5ab247de70af4e18b65b312c806",
-  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
- },
- {
-  "name": "STONEBORN - Me\u00ef's Additions for Modded GUIs",
-  "fileName": "STONEBORN - 1.4-1.20.1 MeiAdditions.zip",
-  "kind": "resourcepacks",
-  "projectID": 870056,
-  "fileID": 5152574,
-  "downloadUrl": "https://edge.forgecdn.net/files/5152/574/STONEBORN%20-%201.4-1.20.1%20MeiAdditions.zip",
-  "sha1": "d2ce27e5e25eb1675476a65051d0f3dece7ea7d8",
-  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
- },
- {
-  "name": "STONEBORN - Denis' Mod Compats",
-  "fileName": "STONEBORN - Denis' Mod Compats v2.1.zip",
-  "kind": "resourcepacks",
-  "projectID": 1014677,
-  "fileID": 6425540,
-  "downloadUrl": "https://edge.forgecdn.net/files/6425/540/STONEBORN%20-%20Denis%27%20Mod%20Compats%20v2.1.zip",
-  "sha1": "b8172c97350c5440691dc5cd0075e2be7cc70c16",
-  "from": "Cisco's Fantasy Medieval RPG [Dragonfyre]"
- },
- {
   "name": "Complementary Shaders - Reimagined",
   "fileName": "ComplementaryReimagined_r5.9.3.zip",
   "kind": "shaderpacks",

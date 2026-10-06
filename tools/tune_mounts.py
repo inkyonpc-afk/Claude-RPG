@@ -11,6 +11,12 @@ PATCH = {
         "Amphithere Flight Speed": "1.5",            # fast but below a grown dragon
         "Dragon Moved Wrongly Error Fix": "true",    # dedicated-server log spam / rubber-banding fix
     },
+    "config/blue_skies-client.toml": {
+        "custom_panorama": "false",                  # Blue Skies' rotating realm panorama replaces ours
+    },
+    "config/iceandfire-client.toml": {
+        "Custom main menu": "false",                 # Ice and Fire's bestiary-book title screen replaces our panorama and logo
+    },
     "config/l2_configs/l2hostility-common.toml": {   # safety-only changes; scaling numbers stay at defaults until play-tested
         "newPlayerProtectRange": "160",              # no hostility scaling near a new player (spawn area stays gentle)
         "maxTraitCount": "6",                        # cap stacked mob traits (default 9)

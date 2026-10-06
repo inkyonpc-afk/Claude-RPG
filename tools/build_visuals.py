@@ -12,8 +12,7 @@ RESOURCE = ["FreshAnimations_v1.10.4.zip", "FA+All_Extensions-v1.4.zip", "FreshC
             "Better_End_Portal_Frame_(1.20).zip", "LowOnFire_1.20.1.zip", "SimplySwordsWhimscape_v1.1.zip", "Medieval_Style_Lootr.zip", "enchant icons 1.20 v1.3.zip",
             "[Compressed] Alternative Rain Sounds 1.20-1.20.1.zip", "More Cave Sounds.zip", "Soft-Weather-1.0-1.20.zip", "Cataclysmic_tunes_V8(Maledictus_update).zip",
             "Visual Titles.zip", "Alex's Titles 2.0.zip", "EclecticTrove-1.20.1-1.3.0.zip", "Better Fitting XP Mana Bar for Iron's Spells 'n Spellbooks.zip",
-            "[1.4.1] Enhanced Boss Bars.zip", "EmbellishedStone-1.20.1-1.0.0.zip", "FTBQuestsShapesHeyKatu.zip",
-            "STONEBORN+-+1.20-1.20.1+-+V3.2.3.zip", "SBMC-1.20.1-3.10.1.zip", "STONEBORN - 1.4-1.20.1 MeiAdditions.zip", "STONEBORN - Denis' Mod Compats v2.1.zip"]
+            "[1.4.1] Enhanced Boss Bars.zip", "EmbellishedStone-1.20.1-1.0.0.zip", "FTBQuestsShapesHeyKatu.zip"]
 SHADERS = ["ComplementaryReimagined_r5.9.3.zip", "ComplementaryUnbound_r5.9.3.zip"]
 DEFAULT_SHADER = SHADERS[0]
 
