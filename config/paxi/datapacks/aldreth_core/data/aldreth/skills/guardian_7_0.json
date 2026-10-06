@@ -1,0 +1,50 @@
+{
+ "id": "aldreth:guardian_7_0",
+ "title": "Fortress",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "e4e0eae9-c693-54a6-bee4-449e8def9ab6",
+   "name": "Aldreth",
+   "amount": 0.15,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor_toughness",
+   "id": "3d7c9883-bc26-50bb-af2a-d27d8ec5fb2c",
+   "name": "Aldreth",
+   "amount": 0.15,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_6_0",
+  "aldreth:guardian_8_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": -537.25,
+ "positionY": -480.84
+}

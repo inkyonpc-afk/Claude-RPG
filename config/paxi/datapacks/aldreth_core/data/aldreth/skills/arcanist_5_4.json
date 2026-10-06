@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:arcanist_5_4",
+ "title": "Quick Hands V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:cast_time_reduction",
+   "id": "89d16594-614c-5060-9c76-bfdbbbee9ad3",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_4_4",
+  "aldreth:arcanist_6_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/glove_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -180.37,
+ "positionY": 535.44
+}

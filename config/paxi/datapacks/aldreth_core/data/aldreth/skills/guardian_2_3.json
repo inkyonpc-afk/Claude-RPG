@@ -1,0 +1,58 @@
+{
+ "id": "aldreth:guardian_2_3",
+ "title": "Thorned Armor",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "972e2a5e-56c9-5532-93ea-5d385bd344ed",
+   "name": "Aldreth",
+   "amount": 2.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:thorns"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_1_2",
+  "aldreth:guardian_2_2",
+  "aldreth:guardian_2_4",
+  "aldreth:guardian_3_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_bronze_fur.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -184.0,
+ "positionY": -275.15
+}

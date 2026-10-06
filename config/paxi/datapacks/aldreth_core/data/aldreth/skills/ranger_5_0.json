@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:ranger_5_0",
+ "title": "Strong Draw V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:draw_speed",
+   "id": "d565aed1-8cd3-53e5-b7ff-8b6d72c36215",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_wanderer_ranger_b",
+  "aldreth:ranger_4_0",
+  "aldreth:ranger_6_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/bow_gold.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 32.1,
+ "positionY": -564.09
+}

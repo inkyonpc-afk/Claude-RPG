@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:berserker_4_3",
+ "title": "Bloodthirst IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:life_steal",
+   "id": "e4369fc1-0342-5df9-aeee-d4f831bbc544",
+   "name": "Aldreth",
+   "amount": 0.005,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:berserker_3_3",
+  "aldreth:berserker_4_2",
+  "aldreth:berserker_4_4",
+  "aldreth:berserker_5_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/heart_black.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 431.45,
+ "positionY": 225.88
+}

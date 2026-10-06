@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:guardian_3_1",
+ "title": "Resolve III",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor_toughness",
+   "id": "961bcd77-bd8c-55ca-8fbc-9289a73ee186",
+   "name": "Aldreth",
+   "amount": 0.5,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_2_1",
+  "aldreth:guardian_4_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/helmet_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -285.81,
+ "positionY": -292.56
+}

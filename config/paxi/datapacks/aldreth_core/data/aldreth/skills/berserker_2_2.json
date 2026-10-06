@@ -1,0 +1,39 @@
+{
+ "id": "aldreth:berserker_2_2",
+ "title": "Bloodthirst II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:life_steal",
+   "id": "1b2b66da-f487-5b95-adde-a0ba24f6365a",
+   "name": "Aldreth",
+   "amount": 0.005,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:berserker_1_2",
+  "aldreth:berserker_2_1",
+  "aldreth:berserker_2_3",
+  "aldreth:berserker_3_2",
+  "aldreth:berserker_3_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/heart_black.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 298.22,
+ "positionY": 143.62
+}

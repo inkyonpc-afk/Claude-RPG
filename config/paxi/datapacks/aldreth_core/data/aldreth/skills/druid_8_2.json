@@ -1,0 +1,69 @@
+{
+ "id": "aldreth:druid_8_2",
+ "title": "Pack Leader",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:summon_damage",
+   "id": "9d89b849-55a3-5655-a7d5-d1d3bcbe8e90",
+   "name": "Aldreth",
+   "amount": 0.4,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "cb576e06-045b-50c8-9e12-1933c9377158",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": -0.15,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:druid_7_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/bone.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": -767.61,
+ "positionY": 221.77
+}

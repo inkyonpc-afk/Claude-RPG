@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:druid_6_4",
+ "title": "Green Thumb VI",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:nature_spell_power",
+   "id": "91aa1f66-8145-5e1a-a37f-cfa8e42fbe12",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:druid_5_5",
+  "aldreth:druid_6_3",
+  "aldreth:druid_7_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/apple_green.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -617.74,
+ "positionY": 178.47
+}

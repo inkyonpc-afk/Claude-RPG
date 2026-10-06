@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:rogue_6_4",
+ "title": "Quick Fingers VI",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "8a6f0d82-9c3b-589d-9c80-81bfb8a431b2",
+   "name": "Aldreth",
+   "amount": 0.025,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_5_5",
+  "aldreth:rogue_6_3",
+  "aldreth:rogue_7_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/glove_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 479.13,
+ "positionY": -428.82
+}

@@ -1,0 +1,53 @@
+{
+ "id": "aldreth:elementalist_4_4",
+ "title": "Permafrost",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:inflict_effect",
+   "chance": 0.4,
+   "max_stacks": 0,
+   "effect": "minecraft:slowness",
+   "duration": 80,
+   "amplifier": 1,
+   "event_listener": {
+    "type": "skilltree:attack",
+    "target": "enemy",
+    "damage_condition": {
+     "type": "skilltree:none"
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:ice_spell_power",
+   "id": "1f1fd391-2caf-5be4-a213-0da317995f67",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_3_4",
+  "aldreth:elementalist_4_3",
+  "aldreth:elementalist_4_5",
+  "aldreth:elementalist_5_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_big.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -340.32,
+ "positionY": 348.36
+}

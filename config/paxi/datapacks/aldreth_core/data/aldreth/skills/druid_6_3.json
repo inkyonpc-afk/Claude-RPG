@@ -1,0 +1,59 @@
+{
+ "id": "aldreth:druid_6_3",
+ "title": "Mount Bond",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.movement_speed",
+   "id": "b5248cf0-1ac9-58b7-bb7d-0431081ea331",
+   "name": "Aldreth",
+   "amount": 0.08,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.luck",
+   "id": "18201035-ee6b-5bda-9802-f389cd8f4999",
+   "name": "Aldreth",
+   "amount": 0.3,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:jump_height",
+   "multiplier": 0.1,
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:druid_5_4",
+  "aldreth:druid_6_2",
+  "aldreth:druid_6_4",
+  "aldreth:druid_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/boots_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -600.64,
+ "positionY": 229.53
+}

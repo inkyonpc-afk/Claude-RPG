@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:paladin_1_1",
+ "title": "Devotion",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "a852a992-da33-5aeb-82ec-8c8d76cab9fd",
+   "name": "Aldreth",
+   "amount": 2.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:paladin_0_1",
+  "aldreth:paladin_2_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/heart_yellow.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -233.72,
+ "positionY": -96.88
+}

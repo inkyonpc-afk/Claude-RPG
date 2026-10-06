@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:bloodmage_5_4",
+ "title": "Hemomancy V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "fcb3d748-c57b-5225-b0e7-2f41fdd66d70",
+   "name": "Aldreth",
+   "amount": 0.02,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_4_4",
+  "aldreth:bloodmage_6_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/chili_pepper_red.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 306.16,
+ "positionY": 474.86
+}

@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:arcanist_6_1",
+ "title": "Spell Echo",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:cooldown_reduction",
+   "id": "ea31baad-26d0-5e71-a3d7-13d0e1fdd3b2",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "900874a2-cc7a-5c51-a973-8fef1097fa88",
+   "name": "Aldreth",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_5_1",
+  "aldreth:arcanist_6_0",
+  "aldreth:arcanist_6_2",
+  "aldreth:arcanist_7_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/eye_green.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -90.12,
+ "positionY": 636.65
+}

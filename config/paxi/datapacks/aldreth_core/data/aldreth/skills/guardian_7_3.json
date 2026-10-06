@@ -1,0 +1,58 @@
+{
+ "id": "aldreth:guardian_7_3",
+ "title": "Guardian's Grace",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:overheal",
+   "id": "05798230-8bed-5791-8e8e-ed333eb5913f",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.03,
+   "event_listener": {
+    "type": "skilltree:block",
+    "target": "enemy",
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_6_4",
+  "aldreth:guardian_8_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_green.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": -349.23,
+ "positionY": -630.78
+}

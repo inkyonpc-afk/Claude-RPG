@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:elementalist_4_2",
+ "title": "Static Charge IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:lightning_spell_power",
+   "id": "3571cbb9-7946-5c13-b18d-86d48aae4aa8",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_3_2",
+  "aldreth:elementalist_4_1",
+  "aldreth:elementalist_4_3",
+  "aldreth:elementalist_5_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_yellow_big.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -290.71,
+ "positionY": 390.71
+}

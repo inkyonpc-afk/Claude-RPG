@@ -1,0 +1,61 @@
+{
+ "id": "aldreth:warrior_3_5",
+ "title": "Spear Reach",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "forge:entity_reach",
+   "id": "32dd3131-0b2b-5603-ad9a-1b5cc31a209b",
+   "name": "Aldreth",
+   "amount": 0.5,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": 0.05,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:has_item_in_hand",
+    "item_condition": {
+     "type": "skilltree:tag",
+     "tag_id": "aldreth:weapons/spear"
+    }
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_warrior_berserker_a",
+  "aldreth:warrior_2_4",
+  "aldreth:warrior_4_5"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/arrow_steel.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 403.27,
+ "positionY": 68.21
+}

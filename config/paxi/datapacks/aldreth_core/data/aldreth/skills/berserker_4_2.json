@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:berserker_4_2",
+ "title": "Quickened Pulse IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "14894ab9-d68d-58b2-9102-cff7dc376de5",
+   "name": "Aldreth",
+   "amount": 0.02,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:berserker_3_2",
+  "aldreth:berserker_4_1",
+  "aldreth:berserker_4_3",
+  "aldreth:berserker_5_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/glove_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 445.6,
+ "positionY": 196.48
+}

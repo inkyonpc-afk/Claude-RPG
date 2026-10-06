@@ -1,0 +1,54 @@
+{
+ "id": "aldreth:druid_4_1",
+ "title": "Heart of the Forest",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "ef0051e1-fb29-51c1-80f8-1f0798d263ee",
+   "name": "Aldreth",
+   "amount": 8.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.02,
+   "event_listener": {
+    "type": "skilltree:ticking",
+    "cooldown": 40,
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:druid_3_1",
+  "aldreth:druid_4_0",
+  "aldreth:druid_4_2",
+  "aldreth:druid_5_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_green.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -415.35,
+ "positionY": 254.27
+}

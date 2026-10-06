@@ -1,0 +1,53 @@
+{
+ "id": "aldreth:spellblade_6_2",
+ "title": "Arcane Reserves",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "df385009-8e3f-58b9-ba52-1f8a0b97b230",
+   "name": "Aldreth",
+   "amount": 50.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:mana_regen",
+   "id": "1fc0c129-da95-52c1-a256-b1a544afb127",
+   "name": "Aldreth",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:spellblade_5_2",
+  "aldreth:spellblade_5_3",
+  "aldreth:spellblade_6_1",
+  "aldreth:spellblade_6_3",
+  "aldreth:spellblade_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 579.32,
+ "positionY": -278.99
+}

@@ -1,0 +1,53 @@
+{
+ "id": "aldreth:necromancer_0_1",
+ "title": "Necromancer's Pact",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "goety:necromancy_potency",
+   "id": "74717620-3068-52d8-a56d-28fa1290dbeb",
+   "name": "Aldreth",
+   "amount": 0.04,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:summon_damage",
+   "id": "b3363c74-2f24-5f03-a84f-972a47c36e21",
+   "name": "Aldreth",
+   "amount": 0.04,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:necromancer_0_0",
+  "aldreth:necromancer_0_2",
+  "aldreth:necromancer_1_1",
+  "aldreth:necromancer_1_2",
+  "aldreth:start_arcane"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/gateway.png",
+ "iconTexture": "skilltree:textures/icons/skull.png",
+ "borderTexture": "skilltree:textures/tooltip/gateway.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 38.94,
+ "positionY": 170.61
+}

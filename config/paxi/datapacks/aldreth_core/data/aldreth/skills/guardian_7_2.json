@@ -1,0 +1,51 @@
+{
+ "id": "aldreth:guardian_7_2",
+ "title": "Living Wall",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "590c9699-6068-50fb-9cbe-b0aedc8aff92",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.knockback_resistance",
+   "id": "d0aa967e-7af5-547c-a35f-c8ba8943f882",
+   "name": "Aldreth",
+   "amount": 0.3,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_6_2",
+  "aldreth:guardian_6_3",
+  "aldreth:guardian_8_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/helmet_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": -417.37,
+ "positionY": -587.92
+}

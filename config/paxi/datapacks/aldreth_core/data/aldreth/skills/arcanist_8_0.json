@@ -1,0 +1,69 @@
+{
+ "id": "aldreth:arcanist_8_0",
+ "title": "Mana Shield",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage_taken",
+   "amount": -0.3,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "attacker_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "attacker_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:mana_regen",
+   "id": "ec0ffd78-0e3e-527f-a886-194544e4ec82",
+   "name": "Aldreth",
+   "amount": -0.3,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "bb053bb5-4ba5-5948-9b11-31bd7af81605",
+   "name": "Aldreth",
+   "amount": 0.2,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_big.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": -45.4,
+ "positionY": 797.71
+}

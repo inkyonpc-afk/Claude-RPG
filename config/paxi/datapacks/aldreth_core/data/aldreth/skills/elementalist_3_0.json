@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:elementalist_3_0",
+ "title": "Frost Touch III",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:ice_spell_power",
+   "id": "9b957461-06fe-54fc-bfd1-6a3038671548",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_arcanist_elementalist_a",
+  "aldreth:elementalist_2_0",
+  "aldreth:elementalist_4_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_small.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -198.11,
+ "positionY": 357.82
+}

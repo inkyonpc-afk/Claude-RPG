@@ -1,0 +1,67 @@
+{
+ "id": "aldreth:necromancer_6_3",
+ "title": "Harvester of Souls",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.04,
+   "event_listener": {
+    "type": "skilltree:on_kill",
+    "damage_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "9a099588-8530-5b62-a191-1a56e72bc6f6",
+   "name": "Aldreth",
+   "amount": 40.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:numeric_value",
+    "divisor": 1.0,
+    "value_provider": {
+     "type": "skilltree:effect_amount",
+     "effect_type": "beneficial"
+    }
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:necromancer_5_4",
+  "aldreth:necromancer_6_2",
+  "aldreth:necromancer_6_4",
+  "aldreth:necromancer_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_black.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 90.12,
+ "positionY": 636.65
+}

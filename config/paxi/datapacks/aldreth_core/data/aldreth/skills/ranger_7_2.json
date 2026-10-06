@@ -1,0 +1,47 @@
+{
+ "id": "aldreth:ranger_7_2",
+ "title": "Arrowstorm",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:draw_speed",
+   "id": "39ba1ed3-ac84-5e91-af37-07a965cdb610",
+   "name": "Aldreth",
+   "amount": 0.15,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:projectile_duplication",
+   "chance": 0.1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:ranger_6_2",
+  "aldreth:ranger_6_3",
+  "aldreth:ranger_8_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/arrow_diamond.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": 199.43,
+ "positionY": -692.87
+}

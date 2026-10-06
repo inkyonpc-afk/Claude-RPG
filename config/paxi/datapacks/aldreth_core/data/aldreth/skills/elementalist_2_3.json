@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:elementalist_2_3",
+ "title": "Cryomancy",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:ice_spell_power",
+   "id": "28dc179b-73c3-5408-9de9-199f7541539a",
+   "name": "Aldreth",
+   "amount": 0.08,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:ice_magic_resist",
+   "id": "00496957-5c78-5d1b-8d9d-2adc85095068",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_1_2",
+  "aldreth:elementalist_2_2",
+  "aldreth:elementalist_2_4",
+  "aldreth:elementalist_3_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -227.31,
+ "positionY": 240.61
+}

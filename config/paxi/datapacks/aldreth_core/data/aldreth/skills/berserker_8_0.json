@@ -1,0 +1,65 @@
+{
+ "id": "aldreth:berserker_8_0",
+ "title": "Blood Pact",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:health_reservation",
+   "amount": 0.25,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:life_steal",
+   "id": "84613e0b-e8c4-508d-b5b7-45c2065c1887",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": 0.25,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:berserker_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/heart_black.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": 767.61,
+ "positionY": 221.77
+}

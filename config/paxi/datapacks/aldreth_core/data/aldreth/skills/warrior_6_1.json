@@ -1,0 +1,70 @@
+{
+ "id": "aldreth:warrior_6_1",
+ "title": "Parry Master",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.03,
+   "event_listener": {
+    "type": "skilltree:block",
+    "target": "enemy",
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:has_item_equipped",
+    "item_condition": {
+     "type": "skilltree:equipment_type",
+     "equipment_type": "shield"
+    }
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:warrior_5_1",
+  "aldreth:warrior_6_0",
+  "aldreth:warrior_6_2",
+  "aldreth:warrior_7_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/glove_steel.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 640.74,
+ "positionY": -53.8
+}

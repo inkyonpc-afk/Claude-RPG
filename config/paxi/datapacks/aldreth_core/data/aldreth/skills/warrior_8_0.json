@@ -1,0 +1,63 @@
+{
+ "id": "aldreth:warrior_8_0",
+ "title": "Unbroken Line",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "90e3b728-e7fe-5bcf-a24d-b92d1443b03f",
+   "name": "Aldreth",
+   "amount": 0.5,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor_toughness",
+   "id": "24f67171-b09e-5319-ae17-bf3e26cb7ba5",
+   "name": "Aldreth",
+   "amount": 0.5,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.movement_speed",
+   "id": "c5ff3912-d03f-5c2e-9041-e567a39c5458",
+   "name": "Aldreth",
+   "amount": -0.15,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:warrior_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_bronze_fur.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": 787.81,
+ "positionY": -133.25
+}

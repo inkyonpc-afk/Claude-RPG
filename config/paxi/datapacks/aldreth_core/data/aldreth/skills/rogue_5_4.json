@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:rogue_5_4",
+ "title": "Venom Vial V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:crit_damage",
+   "id": "1bde5674-472e-5e25-99bd-475213728dbd",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_4_4",
+  "aldreth:rogue_6_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_green_small.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 394.83,
+ "positionY": -404.15
+}

@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:spellblade_5_2",
+ "title": "Fluid Steps V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.movement_speed",
+   "id": "be9088e5-17e6-59ea-83a6-1a8c84d7a8ea",
+   "name": "Aldreth",
+   "amount": 0.015,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:spellblade_4_2",
+  "aldreth:spellblade_6_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/boots_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 500.55,
+ "positionY": -262.06
+}

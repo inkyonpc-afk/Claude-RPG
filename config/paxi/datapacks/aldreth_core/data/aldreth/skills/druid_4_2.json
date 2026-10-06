@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:druid_4_2",
+ "title": "Thick Bark IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "0318cc7a-c776-51f2-b15f-8ba88bb9b849",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:druid_3_2",
+  "aldreth:druid_4_1",
+  "aldreth:druid_4_3",
+  "aldreth:druid_5_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_fur.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -431.45,
+ "positionY": 225.88
+}

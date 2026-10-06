@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:arcanist_4_4",
+ "title": "Hasty Chants",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:cast_time_reduction",
+   "id": "59454cdf-fb27-53c8-af96-d5ba407814f8",
+   "name": "Aldreth",
+   "amount": 0.12,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:casting_movespeed",
+   "id": "f8d3a097-281c-5d23-a867-ef2f36d33d8f",
+   "name": "Aldreth",
+   "amount": 0.15,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_3_4",
+  "aldreth:arcanist_4_3",
+  "aldreth:arcanist_4_5",
+  "aldreth:arcanist_5_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/glove_diamond.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -155.47,
+ "positionY": 461.52
+}

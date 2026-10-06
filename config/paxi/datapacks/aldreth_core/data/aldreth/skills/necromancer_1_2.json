@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:necromancer_1_2",
+ "title": "Grave Whisper II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "goety:necromancy_potency",
+   "id": "de954bc8-9e07-5161-aff1-8130bf25e7f2",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:necromancer_0_1",
+  "aldreth:necromancer_2_2",
+  "aldreth:necromancer_2_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/skull.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 42.44,
+ "positionY": 249.41
+}

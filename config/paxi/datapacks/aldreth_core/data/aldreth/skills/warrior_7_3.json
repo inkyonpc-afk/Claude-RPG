@@ -1,0 +1,57 @@
+{
+ "id": "aldreth:warrior_7_3",
+ "title": "Relentless Advance",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.movement_speed",
+   "id": "1aff2245-6e7d-5dd0-8020-b43fa8dd13fe",
+   "name": "Aldreth",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "4f2b0f5f-e534-5e1b-9db7-767c1c9d15ac",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "MORE",
+    "required_value": 0.8,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:warrior_6_4",
+  "aldreth:warrior_8_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/boots_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": 710.9,
+ "positionY": 120.24
+}

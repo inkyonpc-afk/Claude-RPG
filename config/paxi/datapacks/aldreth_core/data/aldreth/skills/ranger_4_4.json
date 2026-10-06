@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:ranger_4_4",
+ "title": "Piercing Arrows",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:armor_pierce",
+   "id": "84b6d9f5-ec6c-58e9-acd3-22311fb05eb9",
+   "name": "Aldreth",
+   "amount": 2.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:prot_pierce",
+   "id": "ea8af7d7-1833-55d3-9d2c-82746b973b1f",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:ranger_3_4",
+  "aldreth:ranger_4_3",
+  "aldreth:ranger_4_5",
+  "aldreth:ranger_5_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/arrow_steel.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 155.47,
+ "positionY": -461.52
+}

@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:paladin_3_4",
+ "title": "Blessed Armor IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "754db913-8939-56d0-873e-851518f9df58",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:paladin_2_3",
+  "aldreth:paladin_4_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_bronze_fur.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -348.83,
+ "positionY": -213.55
+}

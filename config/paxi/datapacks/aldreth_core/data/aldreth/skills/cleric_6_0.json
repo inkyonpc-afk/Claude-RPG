@@ -1,0 +1,57 @@
+{
+ "id": "aldreth:cleric_6_0",
+ "title": "Protective Bubble",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage_taken",
+   "amount": -0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "attacker_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "attacker_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:overheal",
+   "id": "5d61818b-fc2e-59d9-a65d-133c95417200",
+   "name": "Aldreth",
+   "amount": 0.06,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:cleric_5_0",
+  "aldreth:cleric_6_1",
+  "aldreth:cleric_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_gray.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -634.0,
+ "positionY": 107.23
+}

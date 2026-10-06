@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:guardian_1_3",
+ "title": "Plating II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "50051a00-b346-5d8f-956e-6fcdcd9d89b5",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_0_2",
+  "aldreth:guardian_2_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -122.55,
+ "positionY": -221.34
+}

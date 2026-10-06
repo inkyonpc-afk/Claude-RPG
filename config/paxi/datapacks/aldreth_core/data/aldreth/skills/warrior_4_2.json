@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:warrior_4_2",
+ "title": "Trained Grip IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "93bf1eff-73d9-52b3-87bf-9c21c6411419",
+   "name": "Aldreth",
+   "amount": 0.02,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:warrior_3_2",
+  "aldreth:warrior_4_1",
+  "aldreth:warrior_4_3",
+  "aldreth:warrior_5_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/glove_iron.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 486.73,
+ "positionY": -16.32
+}

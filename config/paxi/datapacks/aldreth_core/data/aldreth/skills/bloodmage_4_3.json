@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:bloodmage_4_3",
+ "title": "Hemomancy IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "5beec977-5788-59c7-9d30-7ba8c2337105",
+   "name": "Aldreth",
+   "amount": 0.02,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_3_3",
+  "aldreth:bloodmage_4_2",
+  "aldreth:bloodmage_4_4",
+  "aldreth:bloodmage_5_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/chili_pepper_red.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 290.71,
+ "positionY": 390.71
+}

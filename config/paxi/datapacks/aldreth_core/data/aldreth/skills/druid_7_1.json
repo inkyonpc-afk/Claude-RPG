@@ -1,0 +1,70 @@
+{
+ "id": "aldreth:druid_7_1",
+ "title": "Primal Fury",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage",
+   "amount": 0.12,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "4bbc4eaa-de5f-59bc-b937-f07ce4e81fe8",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "ee35493f-4529-5cad-bd5f-b2e4895a7825",
+   "name": "Aldreth",
+   "amount": 6.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:druid_6_1",
+  "aldreth:druid_8_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/bone.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": -631.12,
+ "positionY": 348.6
+}

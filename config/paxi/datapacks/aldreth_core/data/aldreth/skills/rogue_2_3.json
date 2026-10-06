@@ -1,0 +1,71 @@
+{
+ "id": "aldreth:rogue_2_3",
+ "title": "Assassinate",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:crit_damage",
+   "amount": 0.18,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "MORE",
+    "required_value": 0.8,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_1_2",
+  "aldreth:rogue_2_2",
+  "aldreth:rogue_2_4",
+  "aldreth:rogue_3_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/skull.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 227.31,
+ "positionY": -240.61
+}

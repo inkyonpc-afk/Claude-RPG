@@ -1,0 +1,51 @@
+{
+ "id": "aldreth:cleric_3_5",
+ "title": "Prayer",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:holy_spell_power",
+   "id": "e8902c9f-86f5-5597-87d3-3b0d83df54d5",
+   "name": "Aldreth",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:cooldown_reduction",
+   "id": "934d3fd4-0537-53a2-a1eb-217ccd7023e9",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_cleric_paladin_a",
+  "aldreth:cleric_2_4",
+  "aldreth:cleric_4_5"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_white_big.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -403.27,
+ "positionY": -68.21
+}

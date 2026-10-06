@@ -1,0 +1,74 @@
+{
+ "id": "aldreth:bridge_bloodmage_necromancer_b",
+ "title": "Sanguine Pact",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:blood_spell_power",
+   "id": "aff13731-fc02-539a-bdd2-cf598570f9c8",
+   "name": "Aldreth",
+   "amount": 0.07,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:summon_damage",
+   "id": "657757be-1d06-50dd-8a9e-15dbdde1df14",
+   "name": "Aldreth",
+   "amount": 0.07,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.02,
+   "event_listener": {
+    "type": "skilltree:on_kill",
+    "damage_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_5_5",
+  "aldreth:necromancer_5_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_black.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 245.14,
+ "positionY": 509.05
+}

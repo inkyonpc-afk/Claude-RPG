@@ -1,0 +1,69 @@
+{
+ "id": "aldreth:guardian_8_0",
+ "title": "Bastion",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "fd00efef-b693-5c64-9091-5e066db2719e",
+   "name": "Aldreth",
+   "amount": 0.4,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.knockback_resistance",
+   "id": "9ab0ff19-6cf9-5c7b-8eb2-45882a2fd144",
+   "name": "Aldreth",
+   "amount": 0.5,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": -0.2,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": -595.37,
+ "positionY": -532.86
+}

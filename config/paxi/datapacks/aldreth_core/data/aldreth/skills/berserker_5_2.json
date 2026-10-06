@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:berserker_5_2",
+ "title": "Quickened Pulse V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "3bf52c23-4c5a-5979-9bbd-529ff926ad73",
+   "name": "Aldreth",
+   "amount": 0.02,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:berserker_4_2",
+  "aldreth:berserker_6_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/glove_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 516.97,
+ "positionY": 227.95
+}

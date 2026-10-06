@@ -1,0 +1,65 @@
+{
+ "id": "aldreth:paladin_4_1",
+ "title": "Judgement",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage",
+   "amount": 0.12,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "LESS",
+    "required_value": 0.5,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:holy_spell_power",
+   "id": "ad0b5176-2766-5adb-aa16-971e6d3931d6",
+   "name": "Aldreth",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:paladin_3_1",
+  "aldreth:paladin_4_0",
+  "aldreth:paladin_4_2",
+  "aldreth:paladin_5_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/sword_gold.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -457.76,
+ "positionY": -166.2
+}

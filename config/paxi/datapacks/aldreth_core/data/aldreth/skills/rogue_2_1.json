@@ -1,0 +1,62 @@
+{
+ "id": "aldreth:rogue_2_1",
+ "title": "Dagger Dance",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage",
+   "amount": 0.07,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:has_item_in_hand",
+    "item_condition": {
+     "type": "skilltree:tag",
+     "tag_id": "aldreth:weapons/dagger"
+    }
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "d8d1f9de-626a-599d-959c-ac2d1a345181",
+   "name": "Aldreth",
+   "amount": 0.04,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_1_1",
+  "aldreth:rogue_2_0",
+  "aldreth:rogue_2_2",
+  "aldreth:rogue_3_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/sword_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 184.0,
+ "positionY": -275.15
+}

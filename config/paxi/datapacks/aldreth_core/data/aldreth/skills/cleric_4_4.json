@@ -1,0 +1,62 @@
+{
+ "id": "aldreth:cleric_4_4",
+ "title": "Spirit Link",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:mana_regen",
+   "id": "8382c036-32f3-5c0e-8ba4-831fb68881bf",
+   "name": "Aldreth",
+   "amount": 0.15,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.02,
+   "event_listener": {
+    "type": "skilltree:on_kill",
+    "damage_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:cleric_3_4",
+  "aldreth:cleric_4_3",
+  "aldreth:cleric_4_5",
+  "aldreth:cleric_5_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_indigo.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -484.54,
+ "positionY": -48.88
+}

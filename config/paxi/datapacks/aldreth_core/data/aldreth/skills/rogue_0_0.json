@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:rogue_0_0",
+ "title": "Quick Fingers",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "6f21ebde-bec3-55e2-a1ee-224cd9b2ece4",
+   "name": "Aldreth",
+   "amount": 0.025,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_0_1",
+  "aldreth:rogue_1_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/glove_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 84.77,
+ "positionY": -153.1
+}

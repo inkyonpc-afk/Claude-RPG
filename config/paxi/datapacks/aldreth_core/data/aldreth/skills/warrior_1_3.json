@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:warrior_1_3",
+ "title": "Hardened Plate II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "d6a59619-75f7-5cce-93f7-3fd8675e9c6a",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:warrior_0_2",
+  "aldreth:warrior_2_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_bronze_fur.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 249.46,
+ "positionY": 42.19
+}

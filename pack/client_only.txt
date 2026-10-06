@@ -45,3 +45,5 @@ CoFH Core
 Blowguns
 Fragmentum
 Enhanced Boss Bars
+Entity Texture Features
+Entity Texture Features -

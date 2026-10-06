@@ -1,0 +1,53 @@
+{
+ "id": "aldreth:ranger_0_1",
+ "title": "Ranger's Mark",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:arrow_damage",
+   "id": "8b01a296-7943-568d-a67b-b3ab9249638d",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:draw_speed",
+   "id": "44fded8d-ff86-56e0-a3f0-7d348dfa1d9c",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:ranger_0_0",
+  "aldreth:ranger_0_2",
+  "aldreth:ranger_1_1",
+  "aldreth:ranger_1_2",
+  "aldreth:start_finesse"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/gateway.png",
+ "iconTexture": "skilltree:textures/icons/bow_gold.png",
+ "borderTexture": "skilltree:textures/tooltip/gateway.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 38.94,
+ "positionY": -170.61
+}

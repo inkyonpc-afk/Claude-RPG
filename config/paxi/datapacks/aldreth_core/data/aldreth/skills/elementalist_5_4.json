@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:elementalist_5_4",
+ "title": "Attunement V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "054d497a-246c-513b-8af9-c474afba8e3b",
+   "name": "Aldreth",
+   "amount": 15.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_4_4",
+  "aldreth:elementalist_6_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_indigo_small.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -394.83,
+ "positionY": 404.15
+}

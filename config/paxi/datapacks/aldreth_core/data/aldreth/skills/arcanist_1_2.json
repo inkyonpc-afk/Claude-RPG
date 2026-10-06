@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:arcanist_1_2",
+ "title": "Mana Well II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "b51b6773-c329-54e0-b5b5-adf04679b15b",
+   "name": "Aldreth",
+   "amount": 20.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_0_1",
+  "aldreth:arcanist_2_2",
+  "aldreth:arcanist_2_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_small.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -69.98,
+ "positionY": 243.13
+}

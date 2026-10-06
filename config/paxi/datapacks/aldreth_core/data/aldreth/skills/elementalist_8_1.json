@@ -1,0 +1,64 @@
+{
+ "id": "aldreth:elementalist_8_1",
+ "title": "Heart of Winter",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:ice_spell_power",
+   "id": "750ec8b3-acff-52dd-9316-aa481e1ee6a7",
+   "name": "Aldreth",
+   "amount": 0.45,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:fire_spell_power",
+   "id": "f438a3ab-f102-58c2-8ca0-87512e0c8b29",
+   "name": "Aldreth",
+   "amount": -0.4,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:fire_magic_resist",
+   "id": "2718e45a-5141-5daf-8172-1563cbb235ed",
+   "name": "Aldreth",
+   "amount": -0.3,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_7_1",
+  "aldreth:elementalist_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_big.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": -498.17,
+ "positionY": 624.68
+}

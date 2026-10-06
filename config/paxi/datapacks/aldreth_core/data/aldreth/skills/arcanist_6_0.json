@@ -1,0 +1,57 @@
+{
+ "id": "aldreth:arcanist_6_0",
+ "title": "Spell Ward",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage_taken",
+   "amount": -0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "attacker_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:magic"
+   },
+   "attacker_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_resist",
+   "id": "fc96f893-0858-5f4e-9e20-4e5a047514f1",
+   "name": "Aldreth",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_5_0",
+  "aldreth:arcanist_6_1",
+  "aldreth:arcanist_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_gray.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -36.53,
+ "positionY": 641.96
+}

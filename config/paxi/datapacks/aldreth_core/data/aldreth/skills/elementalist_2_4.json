@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:elementalist_2_4",
+ "title": "Spark III",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:fire_spell_power",
+   "id": "2d00cf4c-b577-5da5-abfd-c52f7a1a9dc0",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_1_3",
+  "aldreth:elementalist_2_3",
+  "aldreth:elementalist_3_5"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/torch.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -246.64,
+ "positionY": 220.75
+}

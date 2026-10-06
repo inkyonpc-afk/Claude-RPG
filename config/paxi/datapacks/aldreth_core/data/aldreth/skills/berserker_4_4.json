@@ -1,0 +1,66 @@
+{
+ "id": "aldreth:berserker_4_4",
+ "title": "Blood Frenzy",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "8ae23eea-5517-5711-b878-8b6ee055126e",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "LESS",
+    "required_value": 0.5,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:life_steal",
+   "id": "fbaa8ec1-6b51-5af1-a337-0faf7f294395",
+   "name": "Aldreth",
+   "amount": 0.02,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "LESS",
+    "required_value": 0.5,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:berserker_3_4",
+  "aldreth:berserker_4_3",
+  "aldreth:berserker_4_5",
+  "aldreth:berserker_5_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_red.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 415.35,
+ "positionY": 254.27
+}

@@ -1,0 +1,50 @@
+{
+ "id": "aldreth:arcanist_7_0",
+ "title": "Archmage",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "c05d39a3-9a9e-5d3a-ac1f-0b84046b5937",
+   "name": "Aldreth",
+   "amount": 0.14,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "e163dcb0-9be8-5e12-8aa6-03f34d4e3a68",
+   "name": "Aldreth",
+   "amount": 100.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_6_0",
+  "aldreth:arcanist_8_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_big.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": -40.97,
+ "positionY": 719.84
+}

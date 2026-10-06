@@ -1,0 +1,59 @@
+{
+ "id": "aldreth:rogue_5_5",
+ "title": "Evasion",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:dodge_chance",
+   "id": "8a2cc401-3894-5048-a904-8f20bfa07f3f",
+   "name": "Aldreth",
+   "amount": 0.04,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.01,
+   "event_listener": {
+    "type": "skilltree:evasion",
+    "target": "enemy",
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_rogue_spellblade_b",
+  "aldreth:rogue_4_5",
+  "aldreth:rogue_6_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/boots_gold.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 421.01,
+ "positionY": -376.8
+}

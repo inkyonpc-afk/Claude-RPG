@@ -1,0 +1,69 @@
+{
+ "id": "aldreth:ranger_8_2",
+ "title": "Lone Wolf",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage",
+   "amount": 0.3,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "MORE",
+    "required_value": 0.8,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   },
+   "damage_condition": {
+    "type": "skilltree:projectile"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:dodge_chance",
+   "id": "0cb043fb-b9c9-5160-8198-5a804d57d0a5",
+   "name": "Aldreth",
+   "amount": 0.08,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:cant_use_item",
+   "item_condition": {
+    "type": "skilltree:tag",
+    "tag_id": "aldreth:weapons/heavy"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:ranger_7_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/bow_emerald.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": 305.21,
+ "positionY": -738.41
+}

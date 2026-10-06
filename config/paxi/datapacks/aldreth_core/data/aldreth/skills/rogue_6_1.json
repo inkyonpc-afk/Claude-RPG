@@ -1,0 +1,69 @@
+{
+ "id": "aldreth:rogue_6_1",
+ "title": "Opportunist",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage",
+   "amount": 0.12,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "MORE",
+    "required_value": 0.0,
+    "value_provider": {
+     "type": "skilltree:effect_amount",
+     "effect_type": "harmful"
+    }
+   }
+  },
+  {
+   "type": "skilltree:crit_chance",
+   "chance": 0.03,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_5_1",
+  "aldreth:rogue_6_0",
+  "aldreth:rogue_6_2",
+  "aldreth:rogue_7_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/sword_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 357.43,
+ "positionY": -534.5
+}

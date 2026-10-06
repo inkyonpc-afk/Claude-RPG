@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:warrior_5_0",
+ "title": "Hardened Plate V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "a70473a2-7e2b-5236-9ce5-de16f654a292",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_spellblade_warrior_b",
+  "aldreth:warrior_4_0",
+  "aldreth:warrior_6_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_bronze_fur.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 557.09,
+ "positionY": -94.22
+}

@@ -1,0 +1,50 @@
+{
+ "id": "aldreth:elementalist_4_1",
+ "title": "Wildfire",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:inflict_ignite",
+   "chance": 0.25,
+   "duration": 4,
+   "event_listener": {
+    "type": "skilltree:attack",
+    "target": "enemy",
+    "damage_condition": {
+     "type": "skilltree:none"
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:fire_spell_power",
+   "id": "ed9fbc3a-66a7-57c2-9c38-2900853fb923",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_3_1",
+  "aldreth:elementalist_4_0",
+  "aldreth:elementalist_4_2",
+  "aldreth:elementalist_5_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/chili_pepper_red.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -263.89,
+ "positionY": 409.3
+}

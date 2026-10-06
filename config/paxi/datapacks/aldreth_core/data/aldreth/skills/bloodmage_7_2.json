@@ -1,0 +1,63 @@
+{
+ "id": "aldreth:bloodmage_7_2",
+ "title": "Pain is Power",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "1e932138-dbab-5b61-8075-8db36e2e77eb",
+   "name": "Aldreth",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:numeric_value",
+    "divisor": 0.1,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": true
+    }
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "36af2b8e-207c-529a-b794-b098348cf504",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:numeric_value",
+    "divisor": 0.1,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": true
+    }
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_6_2",
+  "aldreth:bloodmage_6_3",
+  "aldreth:bloodmage_8_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_violet.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": 417.37,
+ "positionY": 587.92
+}

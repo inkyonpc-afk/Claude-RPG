@@ -1,0 +1,51 @@
+{
+ "id": "aldreth:berserker_5_5",
+ "title": "Iron Jaw",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.knockback_resistance",
+   "id": "838e7aa3-124b-5b9c-b1d1-522759ef1cd1",
+   "name": "Aldreth",
+   "amount": 0.2,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "8e1bcb5e-5b71-5c44-bd78-66bd59e3a3ec",
+   "name": "Aldreth",
+   "amount": 4.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:berserker_4_5",
+  "aldreth:berserker_6_4",
+  "aldreth:bridge_berserker_bloodmage_b"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/skull.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 461.04,
+ "positionY": 326.6
+}

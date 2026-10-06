@@ -1,0 +1,50 @@
+{
+ "id": "aldreth:necromancer_7_3",
+ "title": "Veil of Death",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:dodge_chance",
+   "id": "4d777e99-a03f-527f-9ed2-8fecb30502fb",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_resist",
+   "id": "565d4dec-ac98-5a74-8d0d-be6f49b559fe",
+   "name": "Aldreth",
+   "amount": 0.12,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:necromancer_6_4",
+  "aldreth:necromancer_8_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/void.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": 40.97,
+ "positionY": 719.84
+}

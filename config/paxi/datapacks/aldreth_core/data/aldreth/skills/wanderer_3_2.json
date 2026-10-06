@@ -1,0 +1,50 @@
+{
+ "id": "aldreth:wanderer_3_2",
+ "title": "Swimmer",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "forge:swim_speed",
+   "id": "8b29a698-e0ab-5d72-a39d-79c50a84f572",
+   "name": "Aldreth",
+   "amount": 0.25,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.movement_speed",
+   "id": "d1a836d3-9082-5b0d-b947-237ec5ff9492",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:underwater"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:wanderer_2_2",
+  "aldreth:wanderer_4_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_small.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -104.32,
+ "positionY": -395.47
+}

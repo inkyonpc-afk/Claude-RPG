@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:rogue_5_2",
+ "title": "Nimble V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:dodge_chance",
+   "id": "636875be-7aa3-56d6-8781-2281a09f4023",
+   "name": "Aldreth",
+   "amount": 0.01,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_4_2",
+  "aldreth:rogue_6_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/boots_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 337.27,
+ "positionY": -453.29
+}

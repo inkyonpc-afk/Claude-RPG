@@ -1,0 +1,60 @@
+{
+ "id": "aldreth:bloodmage_4_1",
+ "title": "Lifetap",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.03,
+   "event_listener": {
+    "type": "skilltree:critical_hit",
+    "target": "enemy",
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:mana_regen",
+   "id": "a7d7aba5-d277-5122-8c1f-587f7c9db56d",
+   "name": "Aldreth",
+   "amount": 0.12,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_3_1",
+  "aldreth:bloodmage_4_0",
+  "aldreth:bloodmage_4_2",
+  "aldreth:bloodmage_5_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_red.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 340.32,
+ "positionY": 348.36
+}

@@ -1,0 +1,51 @@
+{
+ "id": "aldreth:spellblade_3_5",
+ "title": "Battle Channeling",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:cast_time_reduction",
+   "id": "c968424a-0142-5b17-8d67-20dd8c2b07f9",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_speed",
+   "id": "dfa30748-7f9d-5bbc-9e9d-94b142ce021f",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_spellblade_warrior_a",
+  "aldreth:spellblade_2_4",
+  "aldreth:spellblade_4_5"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/glove_gold.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 392.93,
+ "positionY": -113.52
+}

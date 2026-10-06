@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:cleric_4_2",
+ "title": "Warding IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_resist",
+   "id": "5221ccb9-ca09-55fa-a678-5c5a4f91f08f",
+   "name": "Aldreth",
+   "amount": 0.02,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:cleric_3_2",
+  "aldreth:cleric_4_1",
+  "aldreth:cleric_4_3",
+  "aldreth:cleric_5_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_cyan.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -486.73,
+ "positionY": 16.32
+}

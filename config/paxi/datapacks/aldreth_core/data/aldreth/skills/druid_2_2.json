@@ -1,0 +1,39 @@
+{
+ "id": "aldreth:druid_2_2",
+ "title": "Forager's Luck II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.luck",
+   "id": "2cc99cd9-2ac9-50b1-8286-66af476c747c",
+   "name": "Aldreth",
+   "amount": 0.2,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:druid_1_2",
+  "aldreth:druid_2_1",
+  "aldreth:druid_2_3",
+  "aldreth:druid_3_2",
+  "aldreth:druid_3_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/treasure_chest.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -298.22,
+ "positionY": 143.62
+}

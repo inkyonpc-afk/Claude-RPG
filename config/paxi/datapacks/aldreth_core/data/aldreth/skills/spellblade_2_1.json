@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:spellblade_2_1",
+ "title": "Fire Edge",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:fire_damage",
+   "id": "b06b8610-3b77-5fca-954e-1185a361280c",
+   "name": "Aldreth",
+   "amount": 2.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:fire_spell_power",
+   "id": "84962c20-5002-5feb-934b-be833bf1ce0f",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:spellblade_1_1",
+  "aldreth:spellblade_2_0",
+  "aldreth:spellblade_2_2",
+  "aldreth:spellblade_3_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/sword_gold.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 285.16,
+ "positionY": -168.07
+}

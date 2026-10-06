@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:wanderer_2_3",
+ "title": "Roll With It",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "combatroll:count",
+   "id": "7834ebba-1232-544e-b7da-608e15a52401",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "combatroll:recharge",
+   "id": "9fe5d34d-d65f-5fae-a1ac-ee59df70865f",
+   "name": "Aldreth",
+   "amount": 0.15,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:wanderer_1_2",
+  "aldreth:wanderer_2_2",
+  "aldreth:wanderer_2_4",
+  "aldreth:wanderer_3_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/glove_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -46.39,
+ "positionY": -327.73
+}

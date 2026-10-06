@@ -1,0 +1,70 @@
+{
+ "id": "aldreth:warrior_5_3",
+ "title": "Fighting Retreat",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage_taken",
+   "amount": -0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "attacker_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "LESS",
+    "required_value": 0.5,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "attacker_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.movement_speed",
+   "id": "9faff216-56c8-5643-8e31-3165c6472aa1",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "LESS",
+    "required_value": 0.5,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:warrior_4_3",
+  "aldreth:warrior_6_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/boots_gold.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 564.68,
+ "positionY": 18.93
+}

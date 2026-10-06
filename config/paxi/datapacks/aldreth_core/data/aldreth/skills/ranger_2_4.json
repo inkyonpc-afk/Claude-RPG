@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:ranger_2_4",
+ "title": "Steady Aim III",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:arrow_damage",
+   "id": "0cdd3bd0-6a48-5bec-9b2b-03ef762fbb92",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:ranger_1_3",
+  "aldreth:ranger_2_3",
+  "aldreth:ranger_3_5"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/arrow_steel.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 126.44,
+ "positionY": -305.9
+}

@@ -1,0 +1,71 @@
+{
+ "id": "aldreth:rogue_6_2",
+ "title": "Mark of Death",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:crit_chance",
+   "chance": 0.03,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "target_condition": {
+    "type": "skilltree:numeric_value",
+    "logic": "LESS",
+    "required_value": 0.5,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": false
+    }
+   }
+  },
+  {
+   "type": "skilltree:crit_damage",
+   "amount": 0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:none"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_5_2",
+  "aldreth:rogue_5_3",
+  "aldreth:rogue_6_1",
+  "aldreth:rogue_6_3",
+  "aldreth:rogue_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/cross_red.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 400.9,
+ "positionY": -502.72
+}

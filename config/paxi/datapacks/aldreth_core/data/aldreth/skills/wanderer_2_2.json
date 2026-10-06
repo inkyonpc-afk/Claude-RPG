@@ -1,0 +1,33 @@
+{
+ "id": "aldreth:wanderer_2_2",
+ "title": "Curious Mind II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:gained_experience",
+   "multiplier": 0.03,
+   "experience_source": "any",
+   "player_multiplier": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:wanderer_1_2",
+  "aldreth:wanderer_2_1",
+  "aldreth:wanderer_2_3",
+  "aldreth:wanderer_3_2",
+  "aldreth:wanderer_3_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/eye_green.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -73.65,
+ "positionY": -322.7
+}

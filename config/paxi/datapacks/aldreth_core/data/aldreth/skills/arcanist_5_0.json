@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:arcanist_5_0",
+ "title": "Arcane Study V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "0db12c91-f67b-5828-8a7e-a1239e40af6c",
+   "name": "Aldreth",
+   "amount": 0.025,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_4_0",
+  "aldreth:arcanist_6_0",
+  "aldreth:bridge_necromancer_arcanist_b"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/eye_green.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -32.1,
+ "positionY": 564.09
+}

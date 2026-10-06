@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:cleric_6_1",
+ "title": "Overflowing Grace",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:overheal",
+   "id": "617379e6-3535-5d14-9852-e30be4ec5954",
+   "name": "Aldreth",
+   "amount": 0.15,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "4326c091-58a9-51ce-97e4-28dd62df3515",
+   "name": "Aldreth",
+   "amount": 6.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:cleric_5_1",
+  "aldreth:cleric_6_0",
+  "aldreth:cleric_6_2",
+  "aldreth:cleric_7_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_green_big.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -640.74,
+ "positionY": 53.8
+}

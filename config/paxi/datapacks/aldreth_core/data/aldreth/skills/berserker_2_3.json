@@ -1,0 +1,50 @@
+{
+ "id": "aldreth:berserker_2_3",
+ "title": "Pain Fuels Rage",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage",
+   "amount": 0.04,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:numeric_value",
+    "divisor": 0.1,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": true
+    }
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:berserker_1_2",
+  "aldreth:berserker_2_2",
+  "aldreth:berserker_2_4",
+  "aldreth:berserker_3_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_red.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 285.16,
+ "positionY": 168.07
+}

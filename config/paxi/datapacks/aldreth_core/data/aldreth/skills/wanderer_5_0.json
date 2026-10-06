@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:wanderer_5_0",
+ "title": "Sure Footing V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "forge:step_height_addition",
+   "id": "bd00ebf4-4437-5502-ae51-553e4f9c1ca2",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_guardian_wanderer_b",
+  "aldreth:wanderer_4_0",
+  "aldreth:wanderer_6_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/boots_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -215.83,
+ "positionY": -522.15
+}

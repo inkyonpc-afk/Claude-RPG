@@ -1,0 +1,58 @@
+{
+ "id": "aldreth:arcanist_6_3",
+ "title": "Aether Barrier",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage_taken",
+   "amount": -0.1,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "attacker_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:magic"
+   },
+   "attacker_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_resist",
+   "id": "f3b3201b-575f-5879-97af-2448695862bc",
+   "name": "Aldreth",
+   "amount": 0.12,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_5_4",
+  "aldreth:arcanist_6_2",
+  "aldreth:arcanist_6_4",
+  "aldreth:arcanist_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_gray.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -195.04,
+ "positionY": 612.71
+}

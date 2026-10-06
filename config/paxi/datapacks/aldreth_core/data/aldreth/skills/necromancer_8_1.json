@@ -1,0 +1,64 @@
+{
+ "id": "aldreth:necromancer_8_1",
+ "title": "Lichdom",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "goety:necromancy_potency",
+   "id": "e9423443-ce25-5f57-a03e-46d301b8385d",
+   "name": "Aldreth",
+   "amount": 0.35,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "e19fac1e-c435-591b-bf4b-e4fc6730135b",
+   "name": "Aldreth",
+   "amount": 0.35,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:healing_received",
+   "id": "a8169716-74e0-53a9-accc-3cb741ede3f2",
+   "name": "Aldreth",
+   "amount": -0.3,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:necromancer_7_1",
+  "aldreth:necromancer_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/heart_black.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": 177.79,
+ "positionY": 778.97
+}

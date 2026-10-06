@@ -1,0 +1,55 @@
+{
+ "id": "aldreth:guardian_6_2",
+ "title": "Second Wind",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.02,
+   "event_listener": {
+    "type": "skilltree:ticking",
+    "cooldown": 60,
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:healing_received",
+   "id": "c7215dfc-1e5c-5261-9b1d-b605126f0c66",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_5_2",
+  "aldreth:guardian_5_3",
+  "aldreth:guardian_6_1",
+  "aldreth:guardian_6_3",
+  "aldreth:guardian_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_green.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -400.9,
+ "positionY": -502.72
+}

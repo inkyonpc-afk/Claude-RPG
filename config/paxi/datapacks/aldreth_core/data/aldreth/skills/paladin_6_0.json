@@ -1,0 +1,51 @@
+{
+ "id": "aldreth:paladin_6_0",
+ "title": "Mercy",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:healing_received",
+   "id": "47c50244-2e1c-5c2d-afcf-c714e3b8b4ba",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "e85b7250-f6b3-5271-8a2b-685e7e2a6ff4",
+   "name": "Aldreth",
+   "amount": 4.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:paladin_5_0",
+  "aldreth:paladin_6_1",
+  "aldreth:paladin_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_white.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -617.74,
+ "positionY": -178.47
+}

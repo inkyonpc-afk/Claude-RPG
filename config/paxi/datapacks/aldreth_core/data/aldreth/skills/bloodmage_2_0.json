@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:bloodmage_2_0",
+ "title": "Drain II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:life_steal",
+   "id": "97d72751-102e-5a1d-8bd3-5a4dae7167f8",
+   "name": "Aldreth",
+   "amount": 0.005,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_1_0",
+  "aldreth:bloodmage_2_1",
+  "aldreth:bloodmage_3_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_red.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 246.64,
+ "positionY": 220.75
+}

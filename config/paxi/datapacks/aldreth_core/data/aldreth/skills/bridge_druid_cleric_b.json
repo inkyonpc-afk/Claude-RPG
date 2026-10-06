@@ -1,0 +1,66 @@
+{
+ "id": "aldreth:bridge_druid_cleric_b",
+ "title": "Lifebloom",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:healing_received",
+   "id": "2e76ff6e-201f-5567-ad08-9000f41941e6",
+   "name": "Aldreth",
+   "amount": 0.12,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.02,
+   "event_listener": {
+    "type": "skilltree:ticking",
+    "cooldown": 40,
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:nature_spell_power",
+   "id": "c7c68541-2d6d-54af-8be6-525790051dc8",
+   "name": "Aldreth",
+   "amount": 0.05,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:cleric_5_0",
+  "aldreth:druid_5_5"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_green.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -550.83,
+ "positionY": 125.72
+}

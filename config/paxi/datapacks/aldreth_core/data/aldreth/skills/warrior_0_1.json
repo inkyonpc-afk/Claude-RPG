@@ -1,0 +1,53 @@
+{
+ "id": "aldreth:warrior_0_1",
+ "title": "Warrior's Oath",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.attack_damage",
+   "id": "6a86077c-9b38-5936-a861-9e20ebdcd9b6",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "4c99e35e-1b99-5fec-b816-d97ec193e9a7",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:start_might",
+  "aldreth:warrior_0_0",
+  "aldreth:warrior_0_2",
+  "aldreth:warrior_1_1",
+  "aldreth:warrior_1_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/gateway.png",
+ "iconTexture": "skilltree:textures/icons/sword_gold.png",
+ "borderTexture": "skilltree:textures/tooltip/gateway.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 175.0,
+ "positionY": 0.0
+}

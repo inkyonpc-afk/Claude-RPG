@@ -1,0 +1,39 @@
+{
+ "id": "aldreth:spellblade_2_2",
+ "title": "Mana-Fed II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "dc5efe93-1687-5c2b-81e6-78fdbe5a660b",
+   "name": "Aldreth",
+   "amount": 15.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:spellblade_1_2",
+  "aldreth:spellblade_2_1",
+  "aldreth:spellblade_2_3",
+  "aldreth:spellblade_3_2",
+  "aldreth:spellblade_3_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_indigo_small.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 298.22,
+ "positionY": -143.62
+}

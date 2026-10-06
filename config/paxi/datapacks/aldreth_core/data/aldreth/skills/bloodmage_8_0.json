@@ -1,0 +1,59 @@
+{
+ "id": "aldreth:bloodmage_8_0",
+ "title": "Blood Magic",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:health_reservation",
+   "amount": 0.3,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "0867c123-6391-5228-8c74-7cbb91dc9e4c",
+   "name": "Aldreth",
+   "amount": 0.35,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "745ec9a9-e72e-5237-ba2e-52bcb9e4fc87",
+   "name": "Aldreth",
+   "amount": 0.3,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/keystone.png",
+ "iconTexture": "skilltree:textures/icons/heart_black.png",
+ "borderTexture": "skilltree:textures/tooltip/keystone.png",
+ "buttonSize": 36,
+ "isStartingPoint": false,
+ "positionX": 595.37,
+ "positionY": 532.86
+}

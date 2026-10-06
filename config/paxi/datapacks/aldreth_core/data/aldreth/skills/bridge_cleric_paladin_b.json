@@ -1,0 +1,64 @@
+{
+ "id": "aldreth:bridge_cleric_paladin_b",
+ "title": "Healing Crusade",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:holy_spell_power",
+   "id": "746b5576-eae6-51a5-8315-8146715dca2a",
+   "name": "Aldreth",
+   "amount": 0.07,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:healing_received",
+   "id": "49058b17-f2e7-5a30-bca8-4267ab73b5cd",
+   "name": "Aldreth",
+   "amount": 0.1,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "2b9ec8f3-01b3-5a29-b0a3-d094719b10b8",
+   "name": "Aldreth",
+   "amount": 2.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:cleric_5_5",
+  "aldreth:paladin_5_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_yellow_big.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -550.83,
+ "positionY": -125.72
+}

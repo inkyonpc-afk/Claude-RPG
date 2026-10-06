@@ -1,0 +1,42 @@
+{
+ "id": "aldreth:bloodmage_5_1",
+ "title": "Pain Channel",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "385138a2-4eb1-54de-bc69-2c4a343820d4",
+   "name": "Aldreth",
+   "amount": 0.04,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:numeric_value",
+    "divisor": 0.1,
+    "value_provider": {
+     "type": "skilltree:health_level",
+     "percentage": true,
+     "missing": true
+    }
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_4_1",
+  "aldreth:bloodmage_6_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_violet.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 394.83,
+ "positionY": 404.15
+}

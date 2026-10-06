@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:elementalist_6_0",
+ "title": "Chill Aura",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:inflict_effect",
+   "chance": 0.25,
+   "max_stacks": 0,
+   "effect": "minecraft:slowness",
+   "duration": 60,
+   "amplifier": 0,
+   "event_listener": {
+    "type": "skilltree:attack",
+    "target": "enemy",
+    "damage_condition": {
+     "type": "skilltree:none"
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:ice_spell_power",
+   "id": "adfc747e-c869-5559-8a17-1078d018e874",
+   "name": "Aldreth",
+   "amount": 0.04,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_5_0",
+  "aldreth:elementalist_6_1",
+  "aldreth:elementalist_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/void.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -311.45,
+ "positionY": 562.54
+}

@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:paladin_2_1",
+ "title": "Holy Armor",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "bf4f9155-ab9b-59aa-bd62-589cc1e63a3b",
+   "name": "Aldreth",
+   "amount": 2.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:holy_magic_resist",
+   "id": "0cba356c-cb6c-51c2-ba23-003c05916968",
+   "name": "Aldreth",
+   "amount": 0.08,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:paladin_1_1",
+  "aldreth:paladin_2_0",
+  "aldreth:paladin_2_2",
+  "aldreth:paladin_3_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/chestplate_bronze_fur.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -309.19,
+ "positionY": -118.16
+}

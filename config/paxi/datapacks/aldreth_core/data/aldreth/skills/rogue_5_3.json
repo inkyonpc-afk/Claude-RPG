@@ -1,0 +1,66 @@
+{
+ "id": "aldreth:rogue_5_3",
+ "title": "Deadly Poison",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:inflict_effect",
+   "chance": 0.5,
+   "max_stacks": 0,
+   "effect": "minecraft:poison",
+   "duration": 120,
+   "amplifier": 2,
+   "event_listener": {
+    "type": "skilltree:critical_hit",
+    "target": "enemy",
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   }
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": 0.08,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:poison"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_4_3",
+  "aldreth:rogue_6_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_green_big.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 366.87,
+ "positionY": -429.68
+}

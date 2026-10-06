@@ -1,0 +1,53 @@
+{
+ "id": "aldreth:elementalist_0_1",
+ "title": "Elementalist's Spark",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "438c7642-a890-5ab2-a3fa-0dd1aed2f693",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "f1b4e624-e1dc-5672-b72b-a3b071671b4a",
+   "name": "Aldreth",
+   "amount": 20.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:elementalist_0_0",
+  "aldreth:elementalist_0_2",
+  "aldreth:elementalist_1_1",
+  "aldreth:elementalist_1_2",
+  "aldreth:start_arcane"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/gateway.png",
+ "iconTexture": "skilltree:textures/icons/torch.png",
+ "borderTexture": "skilltree:textures/tooltip/gateway.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -109.11,
+ "positionY": 136.82
+}

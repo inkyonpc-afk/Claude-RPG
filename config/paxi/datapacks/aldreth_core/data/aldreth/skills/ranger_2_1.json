@@ -1,0 +1,56 @@
+{
+ "id": "aldreth:ranger_2_1",
+ "title": "Longbow Training",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:arrow_damage",
+   "id": "a0342ea4-1dea-5420-b725-079b7ffa722c",
+   "name": "Aldreth",
+   "amount": 0.07,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:has_item_in_hand",
+    "item_condition": {
+     "type": "skilltree:tag",
+     "tag_id": "aldreth:weapons/bow"
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:arrow_velocity",
+   "id": "e8de93c6-b815-5828-b475-22f3298d907f",
+   "name": "Aldreth",
+   "amount": 0.08,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:ranger_1_1",
+  "aldreth:ranger_2_0",
+  "aldreth:ranger_2_2",
+  "aldreth:ranger_3_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/bow_diamond.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 46.39,
+ "positionY": -327.73
+}

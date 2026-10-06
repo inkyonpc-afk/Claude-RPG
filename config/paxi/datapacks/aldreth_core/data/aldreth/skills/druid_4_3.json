@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:druid_4_3",
+ "title": "Forager's Luck IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.luck",
+   "id": "fb65efa0-0002-52c6-b464-04bcfdc55747",
+   "name": "Aldreth",
+   "amount": 0.2,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:druid_3_3",
+  "aldreth:druid_4_2",
+  "aldreth:druid_4_4",
+  "aldreth:druid_5_3"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/treasure_chest.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -445.6,
+ "positionY": 196.48
+}

@@ -1,0 +1,58 @@
+{
+ "id": "aldreth:rogue_7_2",
+ "title": "Toxicologist",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage",
+   "amount": 0.12,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:poison"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:inflict_effect",
+   "chance": 0.3,
+   "max_stacks": 0,
+   "effect": "minecraft:poison",
+   "duration": 120,
+   "amplifier": 1,
+   "event_listener": {
+    "type": "skilltree:attack",
+    "target": "enemy",
+    "damage_condition": {
+     "type": "skilltree:none"
+    }
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_6_2",
+  "aldreth:rogue_6_3",
+  "aldreth:rogue_8_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_green_big.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 30,
+ "isStartingPoint": false,
+ "positionX": 480.3,
+ "positionY": -537.73
+}

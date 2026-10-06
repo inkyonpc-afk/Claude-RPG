@@ -1,0 +1,66 @@
+{
+ "id": "aldreth:guardian_4_4",
+ "title": "Shield Bash Training",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:inflict_effect",
+   "chance": 0.6,
+   "max_stacks": 0,
+   "effect": "minecraft:slowness",
+   "duration": 60,
+   "amplifier": 2,
+   "event_listener": {
+    "type": "skilltree:block",
+    "target": "enemy",
+    "enemy_condition": {
+     "type": "skilltree:none"
+    },
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "enemy_multiplier": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.armor",
+   "id": "d1b3fbd0-a4f7-5162-889f-28e2cce052c7",
+   "name": "Aldreth",
+   "amount": 2.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:has_item_equipped",
+    "item_condition": {
+     "type": "skilltree:equipment_type",
+     "equipment_type": "shield"
+    }
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:guardian_3_4",
+  "aldreth:guardian_4_3",
+  "aldreth:guardian_4_5",
+  "aldreth:guardian_5_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/glove_steel.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -263.89,
+ "positionY": -409.3
+}

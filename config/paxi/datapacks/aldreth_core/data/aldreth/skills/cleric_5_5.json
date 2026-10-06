@@ -1,0 +1,53 @@
+{
+ "id": "aldreth:cleric_5_5",
+ "title": "Soothing Presence",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:healing",
+   "chance": 1.0,
+   "amount": 0.015,
+   "event_listener": {
+    "type": "skilltree:ticking",
+    "cooldown": 40,
+    "player_condition": {
+     "type": "skilltree:none"
+    },
+    "player_multiplier": {
+     "type": "skilltree:none"
+    }
+   },
+   "percentage_healing": true
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.max_health",
+   "id": "d1621cef-9861-53a6-b39a-cfdaa06aae9f",
+   "name": "Aldreth",
+   "amount": 4.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_cleric_paladin_b",
+  "aldreth:cleric_4_5",
+  "aldreth:cleric_6_4"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/heart_cyan.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -557.09,
+ "positionY": -94.22
+}

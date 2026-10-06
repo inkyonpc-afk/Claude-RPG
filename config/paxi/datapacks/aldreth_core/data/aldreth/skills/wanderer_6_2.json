@@ -1,0 +1,47 @@
+{
+ "id": "aldreth:wanderer_6_2",
+ "title": "Cartographer",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:gained_experience",
+   "multiplier": 0.08,
+   "experience_source": "any",
+   "player_multiplier": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.luck",
+   "id": "fc61fc5c-dc66-5359-a5da-80f959cb8b00",
+   "name": "Aldreth",
+   "amount": 0.2,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:wanderer_5_2",
+  "aldreth:wanderer_5_3",
+  "aldreth:wanderer_6_1",
+  "aldreth:wanderer_6_3",
+  "aldreth:wanderer_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/eye_green.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": -143.08,
+ "positionY": -626.88
+}

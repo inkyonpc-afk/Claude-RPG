@@ -1,0 +1,60 @@
+{
+ "id": "aldreth:spellblade_0_1",
+ "title": "Spellblade's Union",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:damage",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:melee"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:spell_power",
+   "id": "d2b3153a-f02b-5a7b-ba61-b1657a039308",
+   "name": "Aldreth",
+   "amount": 0.03,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:spellblade_0_0",
+  "aldreth:spellblade_0_2",
+  "aldreth:spellblade_1_1",
+  "aldreth:spellblade_1_2",
+  "aldreth:start_arcane",
+  "aldreth:start_might"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/gateway.png",
+ "iconTexture": "skilltree:textures/icons/sword_iron.png",
+ "borderTexture": "skilltree:textures/tooltip/gateway.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 157.67,
+ "positionY": -75.93
+}

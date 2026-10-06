@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:rogue_2_0",
+ "title": "Nimble II",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:dodge_chance",
+   "id": "fca0afc0-7335-59d8-92a4-a9ed4b0eb11c",
+   "name": "Aldreth",
+   "amount": 0.01,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_1_0",
+  "aldreth:rogue_2_1",
+  "aldreth:rogue_3_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/boots_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 160.33,
+ "positionY": -289.58
+}

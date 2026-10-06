@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:bloodmage_6_0",
+ "title": "Hexblood",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:inflict_effect",
+   "chance": 0.25,
+   "max_stacks": 0,
+   "effect": "minecraft:wither",
+   "duration": 80,
+   "amplifier": 0,
+   "event_listener": {
+    "type": "skilltree:attack",
+    "target": "enemy",
+    "damage_condition": {
+     "type": "skilltree:none"
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:blood_spell_power",
+   "id": "5c35afc8-0eab-5cdb-a4db-1b193c565bf7",
+   "name": "Aldreth",
+   "amount": 0.04,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bloodmage_5_0",
+  "aldreth:bloodmage_6_1",
+  "aldreth:bloodmage_7_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/potion_black.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 24,
+ "isStartingPoint": false,
+ "positionX": 479.13,
+ "positionY": 428.82
+}

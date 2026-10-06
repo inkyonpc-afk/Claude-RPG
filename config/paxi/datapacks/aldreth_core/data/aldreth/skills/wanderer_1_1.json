@@ -1,0 +1,30 @@
+{
+ "id": "aldreth:wanderer_1_1",
+ "title": "Curious Mind",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:gained_experience",
+   "multiplier": 0.03,
+   "experience_source": "any",
+   "player_multiplier": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:wanderer_0_1",
+  "aldreth:wanderer_2_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/eye_green.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -69.98,
+ "positionY": -243.13
+}

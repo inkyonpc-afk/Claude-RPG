@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:arcanist_4_5",
+ "title": "Mana Well V",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "f17b11a5-aef6-5a29-a2db-d6af726e658a",
+   "name": "Aldreth",
+   "amount": 20.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:arcanist_3_5",
+  "aldreth:arcanist_4_4",
+  "aldreth:arcanist_5_5"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_small.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -186.03,
+ "positionY": 450.07
+}

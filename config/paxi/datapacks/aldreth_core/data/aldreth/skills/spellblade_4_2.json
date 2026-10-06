@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:spellblade_4_2",
+ "title": "Fluid Steps IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.movement_speed",
+   "id": "b46a5502-7447-5957-8ff9-18a9fc3d422f",
+   "name": "Aldreth",
+   "amount": 0.015,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:spellblade_3_2",
+  "aldreth:spellblade_4_1",
+  "aldreth:spellblade_4_3",
+  "aldreth:spellblade_5_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/boots_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 431.45,
+ "positionY": -225.88
+}

@@ -1,0 +1,52 @@
+{
+ "id": "aldreth:wanderer_6_1",
+ "title": "Reach Beyond",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "forge:entity_reach",
+   "id": "a7cd21c9-50c8-5ae3-8266-ea3ed0b1fab7",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "forge:block_reach",
+   "id": "1ff899b2-bc4f-5fa9-9f2c-c80ecfba8f75",
+   "name": "Aldreth",
+   "amount": 1.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:wanderer_5_1",
+  "aldreth:wanderer_6_0",
+  "aldreth:wanderer_6_2",
+  "aldreth:wanderer_7_1"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/glove_diamond.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": -195.04,
+ "positionY": -612.71
+}

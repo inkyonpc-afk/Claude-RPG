@@ -1,0 +1,36 @@
+{
+ "id": "aldreth:wanderer_1_0",
+ "title": "Fortune's Favor",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "minecraft:generic.luck",
+   "id": "de04ba40-2e97-5cde-9eee-4dad8183999e",
+   "name": "Aldreth",
+   "amount": 0.2,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:wanderer_0_0",
+  "aldreth:wanderer_2_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/treasure_chest.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -96.64,
+ "positionY": -233.81
+}

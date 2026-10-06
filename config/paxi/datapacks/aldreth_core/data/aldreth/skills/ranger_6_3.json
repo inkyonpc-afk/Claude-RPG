@@ -1,0 +1,70 @@
+{
+ "id": "aldreth:ranger_6_3",
+ "title": "Elemental Shots",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:inflict_ignite",
+   "chance": 0.2,
+   "duration": 4,
+   "event_listener": {
+    "type": "skilltree:attack",
+    "target": "enemy",
+    "damage_condition": {
+     "type": "skilltree:none"
+    }
+   }
+  },
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:cold_damage",
+   "id": "c58b9081-d4e8-5b19-b58f-379dfae65db0",
+   "name": "Aldreth",
+   "amount": 1.5,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  },
+  {
+   "type": "skilltree:damage",
+   "amount": 0.06,
+   "operation": 1,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "enemy_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   },
+   "damage_condition": {
+    "type": "skilltree:projectile"
+   },
+   "target_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:ranger_5_4",
+  "aldreth:ranger_6_2",
+  "aldreth:ranger_6_4",
+  "aldreth:ranger_7_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/notable.png",
+ "iconTexture": "skilltree:textures/icons/arrow_bronze.png",
+ "borderTexture": "skilltree:textures/tooltip/notable.png",
+ "buttonSize": 28,
+ "isStartingPoint": false,
+ "positionX": 195.04,
+ "positionY": -612.71
+}

@@ -1,0 +1,38 @@
+{
+ "id": "aldreth:rogue_4_2",
+ "title": "Nimble IV",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "attributeslib:dodge_chance",
+   "id": "18d64e70-90b7-5766-935f-a45c943b866e",
+   "name": "Aldreth",
+   "amount": 0.01,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:rogue_3_2",
+  "aldreth:rogue_4_1",
+  "aldreth:rogue_4_3",
+  "aldreth:rogue_5_2"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/boots_leather.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": 290.71,
+ "positionY": -390.71
+}

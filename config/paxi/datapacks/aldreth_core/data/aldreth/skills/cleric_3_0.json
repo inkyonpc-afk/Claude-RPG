@@ -1,0 +1,37 @@
+{
+ "id": "aldreth:cleric_3_0",
+ "title": "Calm Mind III",
+ "titleColor": "",
+ "bonuses": [
+  {
+   "type": "skilltree:attribute",
+   "attribute": "irons_spellbooks:max_mana",
+   "id": "dac22d34-18a2-5deb-ba7d-1b616193fa3d",
+   "name": "Aldreth",
+   "amount": 15.0,
+   "operation": 0,
+   "player_multiplier": {
+    "type": "skilltree:none"
+   },
+   "player_condition": {
+    "type": "skilltree:none"
+   }
+  }
+ ],
+ "requirements": [],
+ "directConnections": [
+  "aldreth:bridge_druid_cleric_a",
+  "aldreth:cleric_2_0",
+  "aldreth:cleric_4_0"
+ ],
+ "longConnections": [],
+ "oneWayConnections": [],
+ "tags": [],
+ "backgroundTexture": "skilltree:textures/icons/background/lesser.png",
+ "iconTexture": "skilltree:textures/icons/potion_blue_small.png",
+ "borderTexture": "skilltree:textures/tooltip/lesser.png",
+ "buttonSize": 16,
+ "isStartingPoint": false,
+ "positionX": -403.27,
+ "positionY": 68.21
+}
