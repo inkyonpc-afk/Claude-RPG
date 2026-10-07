@@ -1,0 +1,247 @@
+# L2 Hostility base curve, measured server-side with no player online (player level 0): for each realm and distance, 8 husks
+# report their L2 level and max health. Tabulate with: python tools/hostility_model.py --measured .build/logs/<tag>.log
+# Run: python tools/server_test.py --no-install --tag l2_curve --cmds tests/l2_curve.txt
+# NoGravity keeps the husks from falling to their death before the read; new chunks need time to generate (25 s on a 4-core VM).
+gamerule doMobSpawning false
+execute in minecraft:overworld run forceload add 0 0
+wait 25
+execute in minecraft:overworld run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_ow_0"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_ow_0"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_ow_0"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_ow_0"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_ow_0"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_ow_0"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_ow_0"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_ow_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE ow_0 minecraft:overworld 0
+execute as @e[tag=s_ow_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_ow_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_ow_0]
+execute in minecraft:overworld run forceload remove 0 0
+execute in minecraft:overworld run forceload add 200 0
+wait 25
+execute in minecraft:overworld run summon minecraft:husk 200 200 0 {NoGravity:1b,Tags:["l2p","s_ow_200"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 200 200 0 {NoGravity:1b,Tags:["l2p","s_ow_200"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 200 200 0 {NoGravity:1b,Tags:["l2p","s_ow_200"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 200 200 0 {NoGravity:1b,Tags:["l2p","s_ow_200"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 200 200 0 {NoGravity:1b,Tags:["l2p","s_ow_200"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 200 200 0 {NoGravity:1b,Tags:["l2p","s_ow_200"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 200 200 0 {NoGravity:1b,Tags:["l2p","s_ow_200"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 200 200 0 {NoGravity:1b,Tags:["l2p","s_ow_200"],PersistenceRequired:1b}
+wait 6
+say SAMPLE ow_200 minecraft:overworld 200
+execute as @e[tag=s_ow_200] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_ow_200] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_ow_200]
+execute in minecraft:overworld run forceload remove 200 0
+execute in minecraft:overworld run forceload add 500 0
+wait 25
+execute in minecraft:overworld run summon minecraft:husk 500 200 0 {NoGravity:1b,Tags:["l2p","s_ow_500"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 500 200 0 {NoGravity:1b,Tags:["l2p","s_ow_500"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 500 200 0 {NoGravity:1b,Tags:["l2p","s_ow_500"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 500 200 0 {NoGravity:1b,Tags:["l2p","s_ow_500"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 500 200 0 {NoGravity:1b,Tags:["l2p","s_ow_500"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 500 200 0 {NoGravity:1b,Tags:["l2p","s_ow_500"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 500 200 0 {NoGravity:1b,Tags:["l2p","s_ow_500"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 500 200 0 {NoGravity:1b,Tags:["l2p","s_ow_500"],PersistenceRequired:1b}
+wait 6
+say SAMPLE ow_500 minecraft:overworld 500
+execute as @e[tag=s_ow_500] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_ow_500] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_ow_500]
+execute in minecraft:overworld run forceload remove 500 0
+execute in minecraft:overworld run forceload add 1000 0
+wait 25
+execute in minecraft:overworld run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_1000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_1000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_1000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_1000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_1000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_1000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_1000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_1000"],PersistenceRequired:1b}
+wait 6
+say SAMPLE ow_1000 minecraft:overworld 1000
+execute as @e[tag=s_ow_1000] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_ow_1000] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_ow_1000]
+execute in minecraft:overworld run forceload remove 1000 0
+execute in minecraft:overworld run forceload add 3000 0
+wait 25
+execute in minecraft:overworld run summon minecraft:husk 3000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_3000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 3000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_3000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 3000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_3000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 3000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_3000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 3000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_3000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 3000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_3000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 3000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_3000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 3000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_3000"],PersistenceRequired:1b}
+wait 6
+say SAMPLE ow_3000 minecraft:overworld 3000
+execute as @e[tag=s_ow_3000] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_ow_3000] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_ow_3000]
+execute in minecraft:overworld run forceload remove 3000 0
+execute in minecraft:overworld run forceload add 10000 0
+wait 25
+execute in minecraft:overworld run summon minecraft:husk 10000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_10000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 10000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_10000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 10000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_10000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 10000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_10000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 10000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_10000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 10000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_10000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 10000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_10000"],PersistenceRequired:1b}
+execute in minecraft:overworld run summon minecraft:husk 10000 200 0 {NoGravity:1b,Tags:["l2p","s_ow_10000"],PersistenceRequired:1b}
+wait 6
+say SAMPLE ow_10000 minecraft:overworld 10000
+execute as @e[tag=s_ow_10000] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_ow_10000] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_ow_10000]
+execute in minecraft:overworld run forceload remove 10000 0
+execute in minecraft:the_nether run forceload add 0 0
+wait 25
+execute in minecraft:the_nether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_nether_0"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_nether_0"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_nether_0"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_nether_0"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_nether_0"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_nether_0"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_nether_0"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_nether_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE nether_0 minecraft:the_nether 0
+execute as @e[tag=s_nether_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_nether_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_nether_0]
+execute in minecraft:the_nether run forceload remove 0 0
+execute in minecraft:the_nether run forceload add 1000 0
+wait 25
+execute in minecraft:the_nether run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_nether_1000"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_nether_1000"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_nether_1000"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_nether_1000"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_nether_1000"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_nether_1000"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_nether_1000"],PersistenceRequired:1b}
+execute in minecraft:the_nether run summon minecraft:husk 1000 200 0 {NoGravity:1b,Tags:["l2p","s_nether_1000"],PersistenceRequired:1b}
+wait 6
+say SAMPLE nether_1000 minecraft:the_nether 1000
+execute as @e[tag=s_nether_1000] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_nether_1000] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_nether_1000]
+execute in minecraft:the_nether run forceload remove 1000 0
+execute in minecraft:the_end run forceload add 0 0
+wait 25
+execute in minecraft:the_end run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_end_0"],PersistenceRequired:1b}
+execute in minecraft:the_end run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_end_0"],PersistenceRequired:1b}
+execute in minecraft:the_end run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_end_0"],PersistenceRequired:1b}
+execute in minecraft:the_end run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_end_0"],PersistenceRequired:1b}
+execute in minecraft:the_end run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_end_0"],PersistenceRequired:1b}
+execute in minecraft:the_end run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_end_0"],PersistenceRequired:1b}
+execute in minecraft:the_end run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_end_0"],PersistenceRequired:1b}
+execute in minecraft:the_end run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_end_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE end_0 minecraft:the_end 0
+execute as @e[tag=s_end_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_end_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_end_0]
+execute in minecraft:the_end run forceload remove 0 0
+execute in twilightforest:twilight_forest run forceload add 0 0
+wait 25
+execute in twilightforest:twilight_forest run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_twilight_0"],PersistenceRequired:1b}
+execute in twilightforest:twilight_forest run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_twilight_0"],PersistenceRequired:1b}
+execute in twilightforest:twilight_forest run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_twilight_0"],PersistenceRequired:1b}
+execute in twilightforest:twilight_forest run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_twilight_0"],PersistenceRequired:1b}
+execute in twilightforest:twilight_forest run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_twilight_0"],PersistenceRequired:1b}
+execute in twilightforest:twilight_forest run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_twilight_0"],PersistenceRequired:1b}
+execute in twilightforest:twilight_forest run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_twilight_0"],PersistenceRequired:1b}
+execute in twilightforest:twilight_forest run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_twilight_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE twilight_0 twilightforest:twilight_forest 0
+execute as @e[tag=s_twilight_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_twilight_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_twilight_0]
+execute in twilightforest:twilight_forest run forceload remove 0 0
+execute in undergarden:undergarden run forceload add 0 0
+wait 25
+execute in undergarden:undergarden run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_undergarden_0"],PersistenceRequired:1b}
+execute in undergarden:undergarden run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_undergarden_0"],PersistenceRequired:1b}
+execute in undergarden:undergarden run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_undergarden_0"],PersistenceRequired:1b}
+execute in undergarden:undergarden run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_undergarden_0"],PersistenceRequired:1b}
+execute in undergarden:undergarden run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_undergarden_0"],PersistenceRequired:1b}
+execute in undergarden:undergarden run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_undergarden_0"],PersistenceRequired:1b}
+execute in undergarden:undergarden run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_undergarden_0"],PersistenceRequired:1b}
+execute in undergarden:undergarden run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_undergarden_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE undergarden_0 undergarden:undergarden 0
+execute as @e[tag=s_undergarden_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_undergarden_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_undergarden_0]
+execute in undergarden:undergarden run forceload remove 0 0
+execute in aether:the_aether run forceload add 0 0
+wait 25
+execute in aether:the_aether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_aether_0"],PersistenceRequired:1b}
+execute in aether:the_aether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_aether_0"],PersistenceRequired:1b}
+execute in aether:the_aether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_aether_0"],PersistenceRequired:1b}
+execute in aether:the_aether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_aether_0"],PersistenceRequired:1b}
+execute in aether:the_aether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_aether_0"],PersistenceRequired:1b}
+execute in aether:the_aether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_aether_0"],PersistenceRequired:1b}
+execute in aether:the_aether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_aether_0"],PersistenceRequired:1b}
+execute in aether:the_aether run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_aether_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE aether_0 aether:the_aether 0
+execute as @e[tag=s_aether_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_aether_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_aether_0]
+execute in aether:the_aether run forceload remove 0 0
+execute in blue_skies:everbright run forceload add 0 0
+wait 25
+execute in blue_skies:everbright run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everbright_0"],PersistenceRequired:1b}
+execute in blue_skies:everbright run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everbright_0"],PersistenceRequired:1b}
+execute in blue_skies:everbright run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everbright_0"],PersistenceRequired:1b}
+execute in blue_skies:everbright run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everbright_0"],PersistenceRequired:1b}
+execute in blue_skies:everbright run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everbright_0"],PersistenceRequired:1b}
+execute in blue_skies:everbright run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everbright_0"],PersistenceRequired:1b}
+execute in blue_skies:everbright run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everbright_0"],PersistenceRequired:1b}
+execute in blue_skies:everbright run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everbright_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE everbright_0 blue_skies:everbright 0
+execute as @e[tag=s_everbright_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_everbright_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_everbright_0]
+execute in blue_skies:everbright run forceload remove 0 0
+execute in blue_skies:everdawn run forceload add 0 0
+wait 25
+execute in blue_skies:everdawn run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everdawn_0"],PersistenceRequired:1b}
+execute in blue_skies:everdawn run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everdawn_0"],PersistenceRequired:1b}
+execute in blue_skies:everdawn run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everdawn_0"],PersistenceRequired:1b}
+execute in blue_skies:everdawn run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everdawn_0"],PersistenceRequired:1b}
+execute in blue_skies:everdawn run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everdawn_0"],PersistenceRequired:1b}
+execute in blue_skies:everdawn run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everdawn_0"],PersistenceRequired:1b}
+execute in blue_skies:everdawn run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everdawn_0"],PersistenceRequired:1b}
+execute in blue_skies:everdawn run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_everdawn_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE everdawn_0 blue_skies:everdawn 0
+execute as @e[tag=s_everdawn_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_everdawn_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_everdawn_0]
+execute in blue_skies:everdawn run forceload remove 0 0
+execute in deeperdarker:otherside run forceload add 0 0
+wait 25
+execute in deeperdarker:otherside run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_otherside_0"],PersistenceRequired:1b}
+execute in deeperdarker:otherside run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_otherside_0"],PersistenceRequired:1b}
+execute in deeperdarker:otherside run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_otherside_0"],PersistenceRequired:1b}
+execute in deeperdarker:otherside run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_otherside_0"],PersistenceRequired:1b}
+execute in deeperdarker:otherside run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_otherside_0"],PersistenceRequired:1b}
+execute in deeperdarker:otherside run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_otherside_0"],PersistenceRequired:1b}
+execute in deeperdarker:otherside run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_otherside_0"],PersistenceRequired:1b}
+execute in deeperdarker:otherside run summon minecraft:husk 0 200 0 {NoGravity:1b,Tags:["l2p","s_otherside_0"],PersistenceRequired:1b}
+wait 6
+say SAMPLE otherside_0 deeperdarker:otherside 0
+execute as @e[tag=s_otherside_0] run data get entity @s ForgeCaps."l2hostility:traits".lv
+execute as @e[tag=s_otherside_0] run attribute @s minecraft:generic.max_health get
+kill @e[tag=s_otherside_0]
+execute in deeperdarker:otherside run forceload remove 0 0
+say SAMPLE end
+wait 3

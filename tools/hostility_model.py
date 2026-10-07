@@ -11,7 +11,7 @@ Built-in dimension entries (src/generated/.../l2hostility_config/difficulty): ov
 end 40 / 1.5 / 16. Any other dimension uses the config defaults (defaultLevelBase/Scale/Var) unless some mod ships its own entry.
 Not modeled: biome bonuses (overworld biomes add 5-20, deep dark 50), per-chunk-section adaptive levels, traits, per-boss health/attack scales.
 
-Usage: python tools/hostility_model.py [--md]"""
+Usage: python tools/hostility_model.py [--md] | --measured .build/logs/<tag>.log (a tests/l2_curve.txt server run)"""
 import os, re, sys
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -92,6 +92,37 @@ def report(md=False):
     return "\n".join(out), c
 
 
+def measured(log):
+    """Compare a tests/l2_curve.txt run (player level 0: no player online) with the model's dimension base + distance bonus."""
+    c = load_cfg()
+    rows, cur = [], None
+    for ln in open(log, encoding="utf-8", errors="replace"):
+        m = re.search(r"SAMPLE (\S+) (\S+) (-?\d+)", ln)
+        if m:
+            cur = dict(name=m.group(1), dim=m.group(2), x=int(m.group(3)), lv=[], hp=[])
+            if cur["name"] != "end":
+                rows.append(cur)
+            continue
+        if cur is None:
+            continue
+        m = re.search(r"has the following entity data: (-?\d+)", ln)
+        if m:
+            cur["lv"].append(int(m.group(1)))
+        m = re.search(r"Value of attribute Max Health for (?:entity )?\S+ is ([\d.]+)", ln)
+        if m:
+            cur["hp"].append(float(m.group(1)))
+    out = ["| sample | dimension | blocks from 0,0 | husks | L2 level (mean, range) | model at player level 0 | max health (husk base 20) |", "|---|---|---|---|---|---|---|"]
+    for r in rows:
+        base = dim_params(r["dim"], c)[0] + round(c["distanceFactor"] * abs(r["x"]))
+        lv = ("%.1f (%d-%d)" % (sum(r["lv"]) / len(r["lv"]), min(r["lv"]), max(r["lv"]))) if r["lv"] else "none"
+        hp = ("%.0f" % (sum(r["hp"]) / len(r["hp"]))) if r["hp"] else "n/a"
+        out.append("| %s | %s | %d | %d | %s | %d | %s |" % (r["name"], r["dim"], r["x"], len(r["lv"]), lv, base, hp))
+    return "\n".join(out)
+
+
 if __name__ == "__main__":
-    text, _ = report("--md" in sys.argv)
-    print(text)
+    if "--measured" in sys.argv:
+        print(measured(sys.argv[sys.argv.index("--measured") + 1]))
+    else:
+        text, _ = report("--md" in sys.argv)
+        print(text)
