@@ -15,7 +15,7 @@ _Status: skeleton — filled in during its phase (see ARCHITECTURE.md)._
 ## Multiplayer handshake (found 2026-10-06 by the first dedicated-server join test)
 Mods that register network channels must be on BOTH sides, or Forge refuses the join ("mismatched mod list"). Earlier `pack/client_only.txt` entries were guesses and wrongly excluded content/channel mods from the server: Blaze Gear (`blazegear:main`), EMI + EMI Loot (loot sync), Relics, CoFH Core, Blowguns, Fragmentum, Certain Questing Additions, Fusion. They are now installed server-side (679-jar server, boots in ~142 s). Rule: add a mod to `client_only.txt` only with evidence (server crash on a client class), never by category.
 
-## Quest book (found 2026-10-07 by reading FTB Quests 2001.4.22 source; fixed in the generator)
+## Quest book (found 2026-10-07 by reading FTB Quests 2001.4.22 source; fixed in the generator; confirmed in a running client the same day)
 FTB Quests does not log any of these; the book just looks or behaves wrong. `tools/questmap_check.py` (part of `verify.py`) now catches each one.
 - **Chapters looked empty:** an image's `x`/`y` is its center, and a chapter opens centered on the bounding box of quests and images, so a backdrop placed by its corner moved the view off the quests. `alpha` is an int 0-255 (a double like 0.55 reads as 0).
 - **Cross-chapter dependencies** must hash the target chapter: `chapter.quest` -> `hid(chapter, quest)`. Unknown ids are dropped without a warning.
@@ -24,13 +24,15 @@ FTB Quests does not log any of these; the book just looks or behaves wrong. `too
 - **Flexible progression:** tasks progress before their dependencies are done, but the quest completes and pays out only once they are.
 - **Certain Questing Additions** draws the selected chapter as "Name ◀" in gray (no white frame) when `panel_button_hover` is on (default). That explains the earlier "clicking a chapter does nothing" observation; it is not a fault. It stays.
 
+## Downloads: CurseForge edge CDN (found 2026-10-07)
+`edge.forgecdn.net` answered 404 for every sampled file of the lock, while `mediafilez.forgecdn.net` served the same paths. `tools/install.py` now tries both and checks each jar's sha1 before it replaces anything. The Windows machine rarely hit this because `install.py` copies jars from the other local CurseForge instances first; the export is unaffected (it references CurseForge ids).
+
 ## Open items (2026-10-07)
-Done and verified earlier: title screen, spacing calibration, performance numbers, export audit, validator, multiplayer join, flight gate, realm gate, boss rewards, elytra loot gate. Done 2026-10-07 from mod source (cloud session, no game): quest book opening view, links, keys and gating; L2 protect range; hostility model.
+Done and verified earlier: title screen, spacing calibration, performance numbers, export audit, validator, multiplayer join, flight gate, realm gate, boss rewards, elytra loot gate. Done 2026-10-07: quest book fixes, confirmed in a running client with the quest mods and in a runtime probe (HANDOFF section 6); full-pack server boot (665 jars, 0 KubeJS errors, all quests loaded, 20 TPS); `verify.py` 44/44 with real jars; export rebuilt; L2 protect range; hostility model.
 
 Still open:
-- **Quest book in a running client (do first):** open the book (J) at 1280x720 and confirm the Prologue's quests show at once, each chapter opens on its quests and the backdrops show at about 55 % opacity. Then complete one dimension quest and one command-reward quest as a non-op player (skill point and supply cache arrive), and check that "The Road Calls" completes without a village.
-- **Re-run after the quest changes:** `tools/verify.py` with jars installed, `tests/mp_realms.txt`, `tests/mp_flight.txt`, and the export. The mod set did not change on 2026-10-07; quest ids are unchanged.
-- **Balance is unverified by play.** Time-to-kill targets, skill-tree power curve, shard income. The L2 Hostility model (BALANCE.md) predicts about 4x mob health in the Act II Nether and 10x in the End, mostly from +10 levels per visited dimension. Check this first in play. Whether any installed mod ships L2 difficulty entries for the modded realms is unchecked (needs the jars).
+- **Full-pack client on the Windows machine:** one look at the quest book with every icon resolved, one command-reward claim through the GUI, and the multiplayer smoke tests (`tests/mp_realms.txt`, `tests/mp_flight.txt`). A cloud session cannot run the full client next to a server (memory).
+- **Balance is unverified by play.** Time-to-kill targets, skill-tree power curve, shard income. L2 Hostility: modeled from source and measured server-side without a player (BALANCE.md); the player-level part of the curve still needs play.
 - **Not measured:** client FPS in combat, long-session client memory, TPS with several players, `/spark` hot spots during boss fights.
 - **Spacing:** clutter structures are still somewhat denser than the 12/km2 target (about 16/km2 expected); factors are a first calibration from 6.9 km2 and should be re-censused after any mod change. Boss-tier structures were not seen at all in 2.8 km2 of the second sample (intended rarity, but unconfirmed by data).
 - **Cosmetic:** custom skill-tree icons (PST's stock set is used); FancyMenu loading-screen layouts; resource packs are not individually license-checked (they are referenced by CurseForge id, not bundled).

@@ -2,7 +2,7 @@
 
   python tools/install.py [--cats perf,qol,...] [--status core,std,test] [--server] [--dest DIR] [--only NAME,NAME]
 Selected = lock entries whose category/status match, plus the transitive required dependencies.
-Prefers the local cached jar (sha1-verified), falls back to the CDN url. Only jars previously installed by this tool
+Prefers the local cached jar or a --cache folder (sha1-verified), falls back to the CDN url. Only jars previously installed by this tool
 (tracked in <dest>/.installed.json) are ever removed. --server skips pack/client_only.txt.
 """
 import argparse, hashlib, json, os, re, shutil, sys, urllib.request
@@ -22,6 +22,7 @@ ap.add_argument("--only", default="")
 ap.add_argument("--server", action="store_true")
 ap.add_argument("--dest", default="")
 ap.add_argument("--dry", action="store_true")
+ap.add_argument("--cache", default="", help="comma-separated folders to copy sha1-matching jars from before downloading (e.g. mods)")
 a = ap.parse_args()
 
 lock = json.load(open(os.path.join(ROOT, "pack", "mods.lock.json"), encoding="utf-8"))
@@ -117,8 +118,9 @@ for e in sorted(sel.values(), key=lambda x: x["name"].lower()):
         continue
     if a.dry:
         continue
-    src = e["localJar"]
-    if src and os.path.isfile(src) and (not e["sha1"] or sha1(src) == e["sha1"]):
+    src = next((c for c in [e["localJar"]] + [os.path.join(d, e["fileName"]) for d in filter(None, a.cache.split(","))]
+                if c and os.path.isfile(c) and (not e["sha1"] or sha1(c) == e["sha1"])), None)
+    if src:
         shutil.copyfile(src, out)
         n_copy += 1
     else:
