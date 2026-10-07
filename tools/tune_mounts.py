@@ -18,7 +18,8 @@ PATCH = {
         "Custom main menu": "false",                 # Ice and Fire's bestiary-book title screen replaces our panorama and logo
     },
     "config/l2_configs/l2hostility-common.toml": {   # safety-only changes; scaling numbers stay at defaults until play-tested
-        "newPlayerProtectRange": "160",              # no hostility scaling near a new player (spawn area stays gentle)
+        "newPlayerProtectRange": "128",              # mobs within this range of players take the LOWEST nearby player's level (groups scale to their
+                                                     # weakest member); 128 is the maximum the spec allows (160 was clamped by Forge on load)
         "maxTraitCount": "6",                        # cap stacked mob traits (default 9)
     },
     "config/waystones-common.toml": {                # 1 level per 1000 blocks, capped at 5; +3 levels across dimensions

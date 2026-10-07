@@ -31,7 +31,20 @@ Fun, challenging RPG, not punishing hardcore. Difficulty comes from mechanics an
 | V/Post | 6-12 min (superbosses 12-20) | 60-100 s | 4-8 s |
 
 ## Mob scaling as configured (L2 Hostility 2.5.19)
-Defaults, unchanged except two safety edits (`tools/tune_mounts.py`): +3 % mob health and +2 % damage per level, +0.3 levels per 100 blocks from spawn (`distanceFactor` 0.003), +10 levels per dimension tier, adaptive leveling from the nearest player's kills, 30 kills per level, 80 % difficulty kept after death. **Changed:** `newPlayerProtectRange` 160 (spawn stays gentle) and `maxTraitCount` 6 (default 9).
+Defaults, unchanged except two edits (`tools/tune_mounts.py`): +3 % mob health and +2 % damage per level, +3 levels per 1000 blocks from 0,0 (`distanceFactor` 0.003), +10 player levels per extra dimension visited since the last death (`dimensionFactor`, `deathDecayDimension`), adaptive leveling from kills (`killsPerLevel` 30), 80 % of the adaptive level kept after death. **Changed:** `maxTraitCount` 6 (default 9) and `newPlayerProtectRange` 128 (default 48; the spec maximum, an earlier 160 was clamped by Forge). That setting does not make spawn gentle: a mob spawning within that range of players takes the level of the *lowest*-level player there instead of the nearest one, so a group is scaled to its weakest member.
+
+### Model of the curve (`tools/hostility_model.py`, from the mod's source, not from play)
+Mob level = dimension base + distance bonus + player level P x dimension scale (+ biome bonus, +/- variation). Built-in entries: overworld 0 / x1.0, Nether 20 / x1.2, End 40 / x1.5; every other dimension (Twilight, Undergarden, Aether, Blue Skies, Otherside, Iron's pocket dimension) falls back to the config default 20 / x1.5 unless a mod ships its own entry (not checked: needs the jars). P = adaptive level + 10 per extra dimension.
+
+| Act | dims visited | assumed kills (total) | adaptive | P | newest realm: mob lv / HP x / dmg x | overworld at 0 / 3000 blocks: mob lv / HP x |
+|---|---|---|---|---|---|---|
+| I Awakening | 1 | 300 | 10 | 10 | overworld 10 / 1.3 / 1.2 | 10 / 1.3, 19 / 1.6 |
+| II A Wider World | 4 | 800 | 43 | 73 | Nether 108 / 4.2 / 3.2 | 73 / 3.2, 82 / 3.5 |
+| III Beyond the Veil | 7 | 1300 | 66 | 126 | Aether 209 / 7.3 / 5.2 | 126 / 4.8, 135 / 5.0 |
+| IV Fallen Kingdoms | 8 | 1800 | 87 | 157 | Otherside 256 / 8.7 / 6.1 | 157 / 5.7, 166 / 6.0 |
+| V End of the Age | 9 | 2200 | 103 | 183 | End 314 / 10.4 / 7.3 | 183 / 6.5, 192 / 6.8 |
+
+Kill budgets per act are assumptions; adaptive level alone is about 10 after 300 kills, 34 after 1,000 and 100 after 3,000. Reading: Act I is mild, but from Act II on ordinary mobs carry 3-4x health, rising to about 10x health and 7x damage in the End, and the jump comes mostly from the dimension bonus (three realms open at once in Act II = +30 levels) and the steep default for modded realms. If Act II-III feels spongy in play, the first levers are `dimensionFactor` (10) and a datapack `levelMap` entry for the modded realms; `healthFactor`/`damageFactor` scale everything at once.
 
 ## Status: what is verified and what is not
 - **Verified by test:** every ID, loot table, quest, skill and recipe loads (zero errors on server and client); rarity tiers drop per the Apotheosis rules; boss tables roll; flight, realm and elytra gates work on a dedicated server with a joined client.
