@@ -34,7 +34,7 @@
 					{
 						id: "39EC6F2C567D2F23"
 						type: "dimension"
-						dim: "aether:the_aether"
+						dimension: "aether:the_aether"
 					}
 			]
 			rewards: [
@@ -47,7 +47,7 @@
 						id: "1B5F17E8BB44AD7F"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					},
@@ -55,7 +55,7 @@
 						id: "06A0F48E831BDBE3"
 						type: "command"
 						command: "kubejs stages add {p} aldreth_flight"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Flight unlocked: winged mounts may carry you through the overworld sky"
 					}
@@ -165,7 +165,7 @@
 						id: "7FBAA24F639401F7"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -199,7 +199,7 @@
 						id: "674573C058BAA488"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					},
@@ -207,7 +207,7 @@
 						id: "324476243D0D1645"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -267,7 +267,7 @@
 						id: "7D0A637C81710217"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					},
@@ -275,7 +275,7 @@
 						id: "18CDA4987813D751"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Valkyrie spoils"
 					}
@@ -335,7 +335,7 @@
 						id: "3627044FDFEE30A4"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					},
@@ -343,7 +343,7 @@
 						id: "711D0713594900C1"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Sun Spirit spoils"
 					}
@@ -430,7 +430,7 @@
 						id: "510633BFB733C1EC"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					}
@@ -450,7 +450,7 @@
 					{
 						id: "65CA7DA47185FCD6"
 						type: "dimension"
-						dim: "blue_skies:everbright"
+						dimension: "blue_skies:everbright"
 					}
 			]
 			rewards: [
@@ -489,7 +489,7 @@
 						id: "24A0160CA307F0C6"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -523,7 +523,7 @@
 						id: "18D5A26F1E257F96"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					},
@@ -531,7 +531,7 @@
 						id: "097C9BF1D68FBF4A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -551,7 +551,7 @@
 					{
 						id: "61A95449412824D4"
 						type: "dimension"
-						dim: "blue_skies:everdawn"
+						dimension: "blue_skies:everdawn"
 					}
 			]
 			rewards: [
@@ -590,7 +590,7 @@
 						id: "47FF8008819DAF5C"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -708,7 +708,7 @@
 						id: "276C65930A0BD87A"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					},
@@ -716,7 +716,7 @@
 						id: "6BB372D6C964D6AD"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Ignis spoils"
 					}
@@ -780,7 +780,7 @@
 						id: "4469EC7DBCE5B2C2"
 						type: "command"
 						command: "skilltree points add {p} 3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "3 skill points"
 					},
@@ -788,7 +788,7 @@
 						id: "617E11DD42F66B29"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Act III cache"
 					}

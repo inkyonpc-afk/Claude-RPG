@@ -77,7 +77,7 @@
 						id: "305BAD816ACC1AC9"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 1 supply cache"
 					}
@@ -117,7 +117,7 @@
 						id: "00B3FCB1D2D4AC81"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 1 supply cache"
 					}
@@ -151,7 +151,7 @@
 						id: "1215573F788B4328"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 1 supply cache"
 					}
@@ -185,7 +185,7 @@
 						id: "0840FBD2052E3903"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 2 supply cache"
 					}
@@ -225,7 +225,7 @@
 						id: "633E91C11FF15986"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 2 supply cache"
 					}
@@ -259,7 +259,7 @@
 						id: "79E47943F01F8427"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 2 supply cache"
 					}
@@ -293,7 +293,7 @@
 						id: "16FED288621D0E63"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -327,7 +327,7 @@
 						id: "1C6019B52255466D"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -361,7 +361,7 @@
 						id: "37B47F0851FCC7DF"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -395,7 +395,7 @@
 						id: "4074972E00E83895"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -429,7 +429,7 @@
 						id: "498C49FB0C4C389B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -464,7 +464,7 @@
 						id: "35E7D5E45B98D9F4"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -505,7 +505,7 @@
 						id: "65C12C2B29FA42E6"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -540,7 +540,7 @@
 						id: "3D74AAAF7E6083BD"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					},
@@ -548,7 +548,7 @@
 						id: "6BAFFA05B1377566"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -605,7 +605,7 @@
 						id: "2A3A23F194F76C85"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					}
@@ -638,7 +638,7 @@
 						id: "6BC5C40CAF200FA2"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					}
@@ -671,7 +671,7 @@
 						id: "2D880E8E24E3F5A2"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					}

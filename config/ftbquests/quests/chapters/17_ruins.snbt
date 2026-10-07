@@ -278,7 +278,7 @@
 						id: "56BE6EF054397B5E"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 2 supply cache"
 					}
@@ -390,7 +390,7 @@
 						id: "42F9AE9CB8F76CFC"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 2 supply cache"
 					}
@@ -475,7 +475,7 @@
 						id: "6FE82EA62686DBB0"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					}

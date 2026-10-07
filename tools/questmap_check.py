@@ -8,11 +8,11 @@ Why: a chapter image counts toward the map's bounding box and FTB centers the op
 CENTER; an image placed by its top-left corner shifts the view off the quests, and with alpha 0 the map then looks empty.
 
 Also checks quest dependency links: ids that match no quest (FTB silently drops them) and dependency loops (FTB then deletes all of that quest's
-dependencies).
+dependencies); and that every task/reward key is one FTB actually reads (unknown keys are silently ignored).
 
 Usage: python tools/questmap_check.py [--dir config/ftbquests/quests/chapters] [--spacing 1.0] [--zoom 16] [--verbose]
-Exit code 1 if any chapter opens with no quest in view at a common screen size, any image is effectively invisible, or any dependency
-link is broken or loops."""
+Exit code 1 if any chapter opens with no quest in view at a common screen size, any image is effectively invisible, any dependency
+link is broken or loops, or a task/reward carries a key FTB does not read."""
 import argparse, glob, math, os, re, sys
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -157,6 +157,30 @@ def opening_view(chapter, screen_w, screen_h, zoom=16, spacing=1.0):
     return visible, titles, center
 
 
+# NBT keys FTB Quests 2001.4.22 reads (readData of QuestObjectBase/Task/Reward and each type). A key outside these is silently ignored by FTB,
+# which is how "dim" (DimensionTask reads "dimension") and "elevate" (CommandReward reads "elevate_perms") went unnoticed.
+COMMON_TASK = {"id", "type", "title", "icon", "tags", "custom_id", "disable_toast", "optional_task"}
+COMMON_REWARD = {"id", "type", "title", "icon", "tags", "custom_id", "disable_toast", "auto", "exclude_from_claim_all", "ignore_reward_blocking", "team_reward"}
+TASK_KEYS = {"checkmark": set(), "item": {"item", "count", "consume_items", "match_nbt", "weak_nbt_match", "only_from_crafting", "task_screen_only"},
+             "kill": {"entity", "value"}, "structure": {"structure"}, "dimension": {"dimension"}, "advancement": {"advancement", "criterion"}, "biome": {"biome"}}
+REWARD_KEYS = {"xp": {"xp"}, "item": {"item", "count", "random_bonus", "only_one"}, "command": {"command", "elevate_perms", "silent"}}
+
+
+def check_keys(chapters):
+    problems = []
+    for name, ch in chapters:
+        for qd in ch.get("quests", []):
+            for kind, entries, known, common in (("task", qd.get("tasks", []), TASK_KEYS, COMMON_TASK), ("reward", qd.get("rewards", []), REWARD_KEYS, COMMON_REWARD)):
+                for e in entries:
+                    if e.get("type") not in known:
+                        problems.append("%s/%s: %s type %s has no key table here (add one from FTB's readData)" % (name, qd.get("title"), kind, e.get("type")))
+                        continue
+                    unread = set(e) - known[e["type"]] - common
+                    if unread:
+                        problems.append("%s/%s: %s %s keys FTB never reads: %s" % (name, qd.get("title"), e["type"], kind, ", ".join(sorted(unread))))
+    return problems
+
+
 def check_links(chapters):
     """Dependency ids FTB would silently drop (Quest.readData ignores ids that match no object) and loops (Quest.verifyDependencies deletes
     ALL dependencies of a quest that can reach itself)."""
@@ -191,6 +215,7 @@ def check_dir(chapter_dir, zoom=16, spacing=1.0, verbose=False, out=print):
     files = sorted(glob.glob(os.path.join(chapter_dir, "*.snbt")))
     chapters = [(os.path.basename(f), parse_snbt(open(f, encoding="utf-8").read())) for f in files]
     problems += check_links(chapters)
+    problems += check_keys(chapters)
     for name, ch in chapters:
         for img in ch.get("images", []):
             alpha = img.get("alpha", 255)

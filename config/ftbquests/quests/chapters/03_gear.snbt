@@ -282,7 +282,7 @@
 						id: "455148FE9C42FA51"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					}
@@ -315,7 +315,7 @@
 						id: "70BCDE22C95745F3"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					}

@@ -154,7 +154,7 @@ def task_snbt(ch, qd, i, t):
     elif ty == "structure":
         out += ['\t\t\t\t\t\tstructure: %s' % q(t["structure"])]
     elif ty == "dimension":
-        out += ['\t\t\t\t\t\tdim: %s' % q(t["dim"])]
+        out += ['\t\t\t\t\t\tdimension: %s' % q(t["dim"])]   # NBT key is "dimension" ("dim" is only the editor label; FTB read it as "")
     elif ty == "advancement":
         out += ['\t\t\t\t\t\tadvancement: %s' % q(t["advancement"])]
     elif ty == "biome":
@@ -171,7 +171,8 @@ def reward_snbt(ch, qd, i, r):
     elif r["type"] == "item":
         out += ['\t\t\t\t\t\titem: %s' % q(r["item"]), '\t\t\t\t\t\tcount: %d' % r["count"]]
     elif r["type"] == "command":
-        out += ['\t\t\t\t\t\tcommand: %s' % q(r["command"]), '\t\t\t\t\t\televate: true', '\t\t\t\t\t\tsilent: true']
+        # elevate_perms: run at permission level 2 (loot give, skilltree, kubejs stages); a non-op player's own level runs none of them
+        out += ['\t\t\t\t\t\tcommand: %s' % q(r["command"]), '\t\t\t\t\t\televate_perms: true', '\t\t\t\t\t\tsilent: true']
         if r.get("label"):
             out.append('\t\t\t\t\t\ttitle: %s' % q(r["label"]))
     out.append('\t\t\t\t\t}')

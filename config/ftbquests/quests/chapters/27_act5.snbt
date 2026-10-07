@@ -34,7 +34,7 @@
 					{
 						id: "230AEE5D47D5CBE1"
 						type: "dimension"
-						dim: "minecraft:the_end"
+						dimension: "minecraft:the_end"
 					}
 			]
 			rewards: [
@@ -47,7 +47,7 @@
 						id: "028D1A2B6E17CD1C"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -138,7 +138,7 @@
 						id: "194890D21C527C47"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					}
@@ -177,7 +177,7 @@
 						id: "06606C44C2C17F58"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -216,7 +216,7 @@
 						id: "447D6C5BEB392CCE"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -280,7 +280,7 @@
 						id: "241A69C98BEA7BBB"
 						type: "command"
 						command: "skilltree points add {p} 3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "3 skill points"
 					},
@@ -288,7 +288,7 @@
 						id: "1310DC4219D87BB0"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Dragon spoils"
 					}
@@ -403,7 +403,7 @@
 						id: "6C0B1A93A61240BF"
 						type: "command"
 						command: "skilltree points add {p} 3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "3 skill points"
 					},
@@ -411,7 +411,7 @@
 						id: "1EFF53BE7F15199B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -443,7 +443,7 @@
 						id: "388CC97CF3F8AC4C"
 						type: "command"
 						command: "skilltree points add {p} 5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "5 skill points"
 					},
@@ -451,7 +451,7 @@
 						id: "0BE688FA403B54FD"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Ending cache"
 					}

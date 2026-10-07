@@ -525,7 +525,7 @@
 						id: "72850CD24F984783"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					}

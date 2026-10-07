@@ -273,7 +273,7 @@
 					{
 						id: "56DB79F6DB2CF210"
 						type: "dimension"
-						dim: "minecraft:the_nether"
+						dimension: "minecraft:the_nether"
 					}
 			]
 			rewards: [
@@ -298,7 +298,7 @@
 					{
 						id: "473A8782D1E32AC9"
 						type: "dimension"
-						dim: "twilightforest:twilight_forest"
+						dimension: "twilightforest:twilight_forest"
 					}
 			]
 			rewards: [
@@ -323,7 +323,7 @@
 					{
 						id: "3BC043083444B8B8"
 						type: "dimension"
-						dim: "undergarden:undergarden"
+						dimension: "undergarden:undergarden"
 					}
 			]
 			rewards: [
@@ -348,7 +348,7 @@
 					{
 						id: "6D6267C3CB9BA09A"
 						type: "dimension"
-						dim: "aether:the_aether"
+						dimension: "aether:the_aether"
 					}
 			]
 			rewards: [
@@ -373,7 +373,7 @@
 					{
 						id: "55C41DC327EF0DEC"
 						type: "dimension"
-						dim: "blue_skies:everbright"
+						dimension: "blue_skies:everbright"
 					}
 			]
 			rewards: [
@@ -398,7 +398,7 @@
 					{
 						id: "00900924D4EEE774"
 						type: "dimension"
-						dim: "blue_skies:everdawn"
+						dimension: "blue_skies:everdawn"
 					}
 			]
 			rewards: [
@@ -423,7 +423,7 @@
 					{
 						id: "7DFB5AE881FD3635"
 						type: "dimension"
-						dim: "deeperdarker:otherside"
+						dimension: "deeperdarker:otherside"
 					}
 			]
 			rewards: [
@@ -448,7 +448,7 @@
 					{
 						id: "07E58181C5AE75DA"
 						type: "dimension"
-						dim: "minecraft:the_end"
+						dimension: "minecraft:the_end"
 					}
 			]
 			rewards: [
@@ -473,7 +473,7 @@
 					{
 						id: "35ADCCE84CD8B569"
 						type: "dimension"
-						dim: "irons_spellbooks:pocket_dimension"
+						dimension: "irons_spellbooks:pocket_dimension"
 					}
 			]
 			rewards: [
@@ -565,7 +565,7 @@
 						id: "2CB7F04EA2BC06DF"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					},
@@ -573,7 +573,7 @@
 						id: "0C2D44B269E940F8"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}

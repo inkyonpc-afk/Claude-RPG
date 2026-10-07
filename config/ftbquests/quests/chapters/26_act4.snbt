@@ -34,7 +34,7 @@
 					{
 						id: "554729C7D6D5B8DC"
 						type: "dimension"
-						dim: "deeperdarker:otherside"
+						dimension: "deeperdarker:otherside"
 					}
 			]
 			rewards: [
@@ -47,7 +47,7 @@
 						id: "6375B90BA0953990"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -144,7 +144,7 @@
 						id: "6F5E96F92DFF44A7"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					},
@@ -152,7 +152,7 @@
 						id: "32BF2F0239B06DAB"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Warden spoils"
 					}
@@ -217,7 +217,7 @@
 						id: "36F63442D7EA5839"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -282,7 +282,7 @@
 						id: "36DB2977FD6CF1F2"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -347,7 +347,7 @@
 						id: "3D088552A193D92B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -456,7 +456,7 @@
 						id: "14160B002E37654F"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -489,7 +489,7 @@
 						id: "10FFF62303F4F1A6"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					}
@@ -550,7 +550,7 @@
 						id: "2DBFB7A30BEA5FE9"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -584,7 +584,7 @@
 						id: "7995F07A2F9738C6"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -618,7 +618,7 @@
 						id: "4C4FFAE6277B2A78"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -652,7 +652,7 @@
 						id: "1A7E18262C6CB49D"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -686,7 +686,7 @@
 						id: "3566AAEC8DF5481F"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -721,7 +721,7 @@
 						id: "008582E0ACC85D2D"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					},
@@ -729,7 +729,7 @@
 						id: "1CA236E2CDD32A19"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -788,7 +788,7 @@
 						id: "1793895A426F6D79"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					},
@@ -796,7 +796,7 @@
 						id: "493124EDAF862616"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Dead King spoils"
 					}
@@ -829,7 +829,7 @@
 						id: "48C1A339588E5B10"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -894,7 +894,7 @@
 						id: "0F3BBBF679E2059A"
 						type: "command"
 						command: "skilltree points add {p} 3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "3 skill points"
 					},
@@ -902,7 +902,7 @@
 						id: "41487DBCEA72BA97"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Act IV cache"
 					}

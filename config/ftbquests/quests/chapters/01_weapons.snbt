@@ -729,7 +729,7 @@
 						id: "4E0422AE146D3D76"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					}
@@ -761,7 +761,7 @@
 						id: "25D14E4EAF3FA43C"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					}

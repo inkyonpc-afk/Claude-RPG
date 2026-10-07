@@ -71,7 +71,7 @@
 						id: "548FC035B774A871"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 2 supply cache"
 					}
@@ -106,7 +106,7 @@
 						id: "43695446DFFF320F"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 2 supply cache"
 					}
@@ -141,7 +141,7 @@
 						id: "37AB9303389A6A25"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -176,7 +176,7 @@
 						id: "274B1DBE4D17C99B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -211,7 +211,7 @@
 						id: "64715850A1AABFBD"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -246,7 +246,7 @@
 						id: "68C7CDA072439EF2"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -281,7 +281,7 @@
 						id: "471EC7D452D9718A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -316,7 +316,7 @@
 						id: "5D7D10C879E3D02B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -351,7 +351,7 @@
 						id: "03F528624CC7DD87"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -386,7 +386,7 @@
 						id: "0D0DE0CEE3D2945A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -421,7 +421,7 @@
 						id: "021EF84803C3C4FE"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -456,7 +456,7 @@
 						id: "22E9D1E4466FAC7E"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -491,7 +491,7 @@
 						id: "2EEC0640BF0F1D5C"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -526,7 +526,7 @@
 						id: "2D84CBBDCAE24AC2"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -561,7 +561,7 @@
 						id: "39FF28D5BDC270E7"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -596,7 +596,7 @@
 						id: "1BE5F7143CB5FE8E"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -631,7 +631,7 @@
 						id: "3B4564DEFD5BE392"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -666,7 +666,7 @@
 						id: "77C2A5BBC50CA690"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -701,7 +701,7 @@
 						id: "20B147880D62F101"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -736,7 +736,7 @@
 						id: "2125F2F776F80297"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -771,7 +771,7 @@
 						id: "02A9447B840EBA5C"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -806,7 +806,7 @@
 						id: "33BE11DCF3887631"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -841,7 +841,7 @@
 						id: "0983F2F9E7FE7B7A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -876,7 +876,7 @@
 						id: "1D0CB8B22F5BB5C5"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -911,7 +911,7 @@
 						id: "69C2B733DE1E0740"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -946,7 +946,7 @@
 						id: "582CB3A92424DE82"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -981,7 +981,7 @@
 						id: "5EAF7DEB22093FDD"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -1016,7 +1016,7 @@
 						id: "5F8B36E68AC42699"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -1051,7 +1051,7 @@
 						id: "1E0507C94CE9EBF3"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -1086,7 +1086,7 @@
 						id: "5B6C2C58128AD95D"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -1121,7 +1121,7 @@
 						id: "057A2FF8E3C1B343"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -1156,7 +1156,7 @@
 						id: "1662F5F61F42701C"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -1191,7 +1191,7 @@
 						id: "1C5C17DA7D2F8B16"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -1226,7 +1226,7 @@
 						id: "79CD3E25750CF568"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -1261,7 +1261,7 @@
 						id: "00D9E4072E7415A0"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 4 supply cache"
 					}
@@ -1296,7 +1296,7 @@
 						id: "667479B207B3BD1F"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -1331,7 +1331,7 @@
 						id: "40EE00F4340D443B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 5 supply cache"
 					}
@@ -1366,7 +1366,7 @@
 						id: "55926566D9C62054"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 6 supply cache"
 					}
@@ -1401,7 +1401,7 @@
 						id: "6CEAB8359D49C68A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Tier 3 supply cache"
 					}
@@ -1434,7 +1434,7 @@
 						id: "47A4ADAD23A3795B"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					}
@@ -1466,7 +1466,7 @@
 						id: "58FD19D16CB66931"
 						type: "command"
 						command: "skilltree points add {p} 3"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "3 skill points"
 					}

@@ -93,7 +93,7 @@
 						id: "53DE8B5FBB10BFC0"
 						type: "command"
 						command: "skilltree points add {p} 1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "1 skill point"
 					}
@@ -360,7 +360,7 @@
 						id: "100F6421C3CC30DB"
 						type: "command"
 						command: "skilltree points add {p} 2"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "2 skill points"
 					},
@@ -368,7 +368,7 @@
 						id: "7B4125EBE0257779"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t1"
-						elevate: true
+						elevate_perms: true
 						silent: true
 						title: "Prologue supply cache"
 					}
