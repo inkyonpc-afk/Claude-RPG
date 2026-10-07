@@ -1,0 +1,20 @@
+# FTB Quests runtime probe (tools/quest_probe.py). Install the probe chapter first: python tools/quest_probe.py --install
+# Run: python tools/server_test.py --tag quest_probe --cmds tests/quest_probe.txt   and let the client join 127.0.0.1:25599 as AldrethTest (non-op)
+# within the first wait. Afterwards: python tools/quest_probe.py --report --log .build/logs/quest_probe.log, then --remove.
+wait 170
+list
+# command rewards: EXPECT only the diamond (elevate_perms) to arrive; the old "elevate" key runs at the player's level and fails
+ftbquests change_progress AldrethTest complete 7A0B0C0D0E0F1101
+wait 3
+ftbquests change_progress AldrethTest complete 7A0B0C0D0E0F1102
+wait 3
+data get entity AldrethTest Inventory
+# dimension tasks: EXPECT the "dimension" probe to complete and the old "dim" probe not to; real Nether quests progress but wait for their dependencies
+execute in minecraft:the_nether run fill -1 99 -1 1 102 1 minecraft:air
+execute in minecraft:the_nether run setblock 0 98 0 minecraft:obsidian
+execute in minecraft:the_nether run tp AldrethTest 0 99 0
+wait 20
+data get entity AldrethTest Dimension
+execute in minecraft:overworld run tp AldrethTest 0 100 0
+save-all
+wait 8

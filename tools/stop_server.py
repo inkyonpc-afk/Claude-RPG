@@ -2,5 +2,11 @@
 import os, subprocess
 pid = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".build", "server.pid")
 if os.path.isfile(pid):
-    subprocess.run(["taskkill", "/F", "/T", "/PID", open(pid).read().strip()], capture_output=True)
+    if os.name == "nt":
+        subprocess.run(["taskkill", "/F", "/T", "/PID", open(pid).read().strip()], capture_output=True)
+    else:
+        try:
+            os.kill(int(open(pid).read().strip()), 9)
+        except (ValueError, OSError):
+            pass
     print("stopped", open(pid).read().strip())

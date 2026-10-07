@@ -6,6 +6,7 @@ Prefers the local cached jar (sha1-verified), falls back to the CDN url. Only ja
 (tracked in <dest>/.installed.json) are ever removed. --server skips pack/client_only.txt.
 """
 import argparse, hashlib, json, os, re, shutil, sys, urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 
 def norm(n):
@@ -87,7 +88,29 @@ def sha1(p):
     return h.hexdigest()
 
 
-n_copy = n_dl = 0
+def download(e, out):
+    """CDN download, sha1-verified before it replaces anything. edge.forgecdn.net answers 404 for these files (seen 2026-10-07 for every sampled
+    file) while mediafilez.forgecdn.net serves the same paths, so it is tried second."""
+    urls = [e["url"]] + ([e["url"].replace("://edge.forgecdn.net/", "://mediafilez.forgecdn.net/")] if "://edge.forgecdn.net/" in e["url"] else [])
+    err = None
+    for u in urls:
+        try:
+            req = urllib.request.Request(u, headers={"User-Agent": "ClaudeRPG-packbuilder/0.1"})
+            with urllib.request.urlopen(req, timeout=120) as r, open(out + ".part", "wb") as f:
+                shutil.copyfileobj(r, f)
+            if e["sha1"] and sha1(out + ".part") != e["sha1"]:
+                raise ValueError("sha1 mismatch for %s" % u)
+            os.replace(out + ".part", out)
+            return
+        except Exception as ex:   # try the next mirror; report the last error
+            err = ex
+            if os.path.isfile(out + ".part"):
+                os.remove(out + ".part")
+    raise RuntimeError("%s: %s" % (e["fileName"], err))
+
+
+n_copy = 0
+todo = []
 for e in sorted(sel.values(), key=lambda x: x["name"].lower()):
     out = os.path.join(dest, e["fileName"])
     if os.path.isfile(out) and (not e["sha1"] or sha1(out) == e["sha1"]):
@@ -99,10 +122,10 @@ for e in sorted(sel.values(), key=lambda x: x["name"].lower()):
         shutil.copyfile(src, out)
         n_copy += 1
     else:
-        req = urllib.request.Request(e["url"], headers={"User-Agent": "ClaudeRPG-packbuilder/0.1"})
-        with urllib.request.urlopen(req, timeout=60) as r, open(out, "wb") as f:
-            shutil.copyfileobj(r, f)
-        n_dl += 1
+        todo.append((e, out))
+with ThreadPoolExecutor(8) as ex:
+    list(ex.map(lambda t: download(*t), todo))
+n_dl = len(todo)
 if not a.dry:
     json.dump(sorted(want), open(track, "w"))
 print("selected %d mods -> %s (copied %d, downloaded %d)" % (len(sel), dest, n_copy, n_dl))

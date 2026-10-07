@@ -4,11 +4,13 @@
 Syncs config/defaultconfigs/kubejs/global datapacks from the instance, installs the selected mod tier with --server,
 boots, waits for 'Done', runs commands, stops, then copies the log to .build/logs/<tag>.log and prints a summary.
 """
-import argparse, os, shutil, subprocess, sys, threading, time, re, json
+import argparse, os, shutil, subprocess, sys, threading, time, re, json, urllib.request
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 SRV = os.path.join(ROOT, ".build", "server")
-JAVA = r"C:\Program Files\Microsoft\jdk-17.0.20.101-hotspot\bin\java.exe"
+WIN = os.name == "nt"
+JAVA = r"C:\Program Files\Microsoft\jdk-17.0.20.101-hotspot\bin\java.exe" if WIN else os.environ.get("JAVA17", "/usr/lib/jvm/java-17-openjdk-amd64/bin/java")
+FORGE = "1.20.1-47.4.10"
 ap = argparse.ArgumentParser()
 ap.add_argument("--cats", default="")
 ap.add_argument("--status", default="core,std")
@@ -25,8 +27,15 @@ sys.stdout.reconfigure(line_buffering=True)   # runner logs readable while the s
 lockf = os.path.join(ROOT, ".build", "server_test.lock")
 if os.path.isfile(lockf):
     old = open(lockf).read().strip()
-    alive = subprocess.run(["tasklist", "/FI", "PID eq " + old], capture_output=True, text=True).stdout
-    if old and (" " + old + " ") in alive:
+    if WIN:
+        alive = old and (" " + old + " ") in subprocess.run(["tasklist", "/FI", "PID eq " + old], capture_output=True, text=True).stdout
+    else:
+        try:
+            os.kill(int(old), 0)
+            alive = True
+        except (ValueError, OSError):
+            alive = False
+    if alive:
         sys.exit("RESULT BUSY | another server_test (pid %s) is running" % old)
 open(lockf, "w").write(str(os.getpid()))
 
@@ -50,10 +59,24 @@ if a.fresh and os.path.isdir(os.path.join(SRV, "world")):
     shutil.rmtree(os.path.join(SRV, "world"))
 shutil.rmtree(os.path.join(SRV, "logs"), ignore_errors=True)
 
-args_file = None
-for dp, dn, fn in os.walk(os.path.join(SRV, "libraries", "net", "minecraftforge", "forge")):
-    if "win_args.txt" in fn:
-        args_file = os.path.relpath(os.path.join(dp, "win_args.txt"), SRV).replace("\\", "/")
+ARGS = "win_args.txt" if WIN else "unix_args.txt"
+
+
+def find_args():
+    for dp, dn, fn in os.walk(os.path.join(SRV, "libraries", "net", "minecraftforge", "forge")):
+        if ARGS in fn:
+            return os.path.relpath(os.path.join(dp, ARGS), SRV).replace("\\", "/")
+
+
+args_file = find_args()
+if not args_file:   # first run on a new machine: install the Forge server into .build/server (the only EULA-approved server folder)
+    inst = os.path.join(ROOT, ".build", "dl", "forge-%s-installer.jar" % FORGE)
+    if not os.path.isfile(inst):
+        os.makedirs(os.path.dirname(inst), exist_ok=True)
+        urllib.request.urlretrieve("https://maven.minecraftforge.net/net/minecraftforge/forge/%s/forge-%s-installer.jar" % (FORGE, FORGE), inst)
+    r = subprocess.run([JAVA, "-jar", inst, "--installServer", SRV], capture_output=True, text=True)
+    print("forge server install:", (r.stdout.strip().splitlines() or ["?"])[-1])
+    args_file = find_args()
 cmd = [JAVA, "@user_jvm_args.txt", "@" + args_file, "nogui"]
 t0 = time.time()
 p = subprocess.Popen(cmd, cwd=SRV, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding="utf-8", errors="replace")
