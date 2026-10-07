@@ -42,7 +42,9 @@ for idx, ch in enumerate(chapters):
     cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
     w = max(30.0, (max(xs) - min(xs)) + 14)
     h = round(w * 9 / 16, 2)
-    image = (round(cx - w / 2, 2), round(cy - h / 2, 2), w, h, '"aldreth:textures/quests/%s.png"' % ch.bg) if ch.bg else None
+    # FTB places a chapter image by its CENTER (QuestPanel.alignWidgets) and opens a chapter centered on the bounding box of quests + images,
+    # so a corner-placed backdrop pushed the opening view off the quests (empty map). tools/questmap_check.py guards this.
+    image = (round(cx, 2), round(cy, 2), w, h, '"aldreth:textures/quests/%s.png"' % ch.bg) if ch.bg else None
     open(os.path.join(cdir, "%02d_%s.snbt" % (idx, ch.key)), "w", encoding="utf-8").write(chapter_snbt(ch, group_ids, idx, image))
     total += len(ch.quests)
 

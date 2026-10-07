@@ -11,14 +11,14 @@
 	default_hide_dependency_lines: false
 	progression_mode: "flexible"
 	images: [{
-			x: -7.0d
-			y: -13.03d
+			x: 13.2d
+			y: -1.67d
 			width: 40.400000000000006d
 			height: 22.73d
 			rotation: 0.0d
 			image: "aldreth:textures/quests/act2.png"
 			order: 0
-			alpha: 0.55d
+			alpha: 140
 		}]
 	quests: [
 		{

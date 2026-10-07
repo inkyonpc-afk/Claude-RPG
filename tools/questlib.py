@@ -9,6 +9,7 @@ Usage in design/quests/*.py:
 import hashlib, json, os
 
 DIMS = {"overworld": "minecraft:overworld", "nether": "minecraft:the_nether", "end": "minecraft:the_end"}
+IMAGE_ALPHA = 140   # chapter backdrop opacity, 0-255 (about 55%)
 
 
 def hid(*parts):
@@ -202,7 +203,9 @@ def chapter_snbt(ch, group_ids, idx, image=None):
     out += ['\ticon: %s' % q(ch.icon), '\torder_index: %d' % idx, '\tgroup: "%s"' % group_ids[ch.group], '\tdefault_quest_shape: "circle"', '\tdefault_quest_size: 1.0d',
             '\tdefault_hide_dependency_lines: false', '\tprogression_mode: "flexible"']
     if image:
-        out.append("\timages: [{\n\t\t\tx: %sd\n\t\t\ty: %sd\n\t\t\twidth: %sd\n\t\t\theight: %sd\n\t\t\trotation: 0.0d\n\t\t\timage: %s\n\t\t\torder: 0\n\t\t\talpha: 0.55d\n\t\t}]" % image)
+        # x/y is the image center; alpha is an int 0-255 (ChapterImage.readData uses getInt, so 0.55d was read as 0 = invisible)
+        out.append("\timages: [{\n\t\t\tx: %sd\n\t\t\ty: %sd\n\t\t\twidth: %sd\n\t\t\theight: %sd\n\t\t\trotation: 0.0d\n\t\t\timage: %s\n\t\t\torder: 0\n\t\t\talpha: %d\n\t\t}]"
+                   % (image + (IMAGE_ALPHA,)))
     out.append("\tquests: [\n" + ",\n".join(quest_snbt(ch, qd) for qd in ch.quests) + "\n\t]")
     out.append('}')
     return "\n".join(out) + "\n"

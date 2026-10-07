@@ -11,14 +11,14 @@
 	default_hide_dependency_lines: false
 	progression_mode: "flexible"
 	images: [{
-			x: -7.0d
-			y: -11.29d
+			x: 8.8d
+			y: -2.4d
 			width: 31.6d
 			height: 17.78d
 			rotation: 0.0d
 			image: "aldreth:textures/quests/bounties.png"
 			order: 0
-			alpha: 0.55d
+			alpha: 140
 		}]
 	quests: [
 		{

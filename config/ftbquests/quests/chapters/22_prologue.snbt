@@ -11,14 +11,14 @@
 	default_hide_dependency_lines: false
 	progression_mode: "flexible"
 	images: [{
-			x: -8.4d
-			y: -7.99d
+			x: 6.6d
+			y: 0.45d
 			width: 30.0d
 			height: 16.88d
 			rotation: 0.0d
 			image: "aldreth:textures/quests/prologue.png"
 			order: 0
-			alpha: 0.55d
+			alpha: 140
 		}]
 	quests: [
 		{

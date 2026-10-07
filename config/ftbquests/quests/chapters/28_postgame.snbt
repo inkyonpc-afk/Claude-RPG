@@ -11,14 +11,14 @@
 	default_hide_dependency_lines: false
 	progression_mode: "flexible"
 	images: [{
-			x: -11.7d
-			y: -8.44d
+			x: 3.3d
+			y: 0.0d
 			width: 30.0d
 			height: 16.88d
 			rotation: 0.0d
 			image: "aldreth:textures/quests/postgame.png"
 			order: 0
-			alpha: 0.55d
+			alpha: 140
 		}]
 	quests: [
 		{

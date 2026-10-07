@@ -11,14 +11,14 @@
 	default_hide_dependency_lines: false
 	progression_mode: "flexible"
 	images: [{
-			x: -9.5d
-			y: -10.02d
+			x: 5.5d
+			y: -1.58d
 			width: 30.0d
 			height: 16.88d
 			rotation: 0.0d
 			image: "aldreth:textures/quests/apotheosis.png"
 			order: 0
-			alpha: 0.55d
+			alpha: 140
 		}]
 	quests: [
 		{
