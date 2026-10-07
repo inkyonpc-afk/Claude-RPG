@@ -82,7 +82,7 @@ for rel in ("config/ftbquests/quests/chapter_groups.snbt", "kubejs/server_script
 nq = len(glob.glob(os.path.join(ROOT, "config", "ftbquests", "quests", "chapters", "*.snbt")))
 check("quest chapters >= 25", nq >= 25, str(nq))
 rc, out = run(["tools/questmap_check.py"])
-check("every chapter opens with quests in view (FTB layout replica)", rc == 0, out.splitlines()[-1][-100:] if out else "")
+check("quest book: every chapter opens with quests in view, all dependency links resolve", rc == 0, out.splitlines()[-1][-100:] if out else "")
 
 # ---- no secrets / no foreign assets
 bad = [f for f in glob.glob(os.path.join(ROOT, "**", "*.zip"), recursive=True) if not any(x in f for x in ("resourcepacks", "shaderpacks", ".build", "dist", "backups", os.sep + "local" + os.sep, "saves", "logs", "mod_data", "xaero"))]

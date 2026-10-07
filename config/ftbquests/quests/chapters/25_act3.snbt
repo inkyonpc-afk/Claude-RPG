@@ -60,7 +60,7 @@
 						title: "Flight unlocked: winged mounts may carry you through the overworld sky"
 					}
 			]
-			dependencies: ["403E0599B39D05F6"]
+			dependencies: ["44668D8C5ADC0F5C"]
 		},
 		{
 			id: "48708508F38D0893"
@@ -621,7 +621,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["403E0599B39D05F6"]
+			dependencies: ["44668D8C5ADC0F5C"]
 		},
 		{
 			id: "1AFE6F6E18365B0A"
@@ -674,7 +674,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["39425B50B7055682"]
+			dependencies: ["0DADC9605E959E60"]
 		},
 		{
 			id: "4ADA7D068A2CA431"

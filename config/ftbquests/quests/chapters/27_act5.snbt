@@ -52,7 +52,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["07BADE03B26D28D4"]
+			dependencies: ["2F48C415BEB616F7"]
 		},
 		{
 			id: "351ADCC34FDCF1EC"
@@ -416,7 +416,7 @@
 						title: "Tier 6 supply cache"
 					}
 			]
-			dependencies: ["0A37C18E17ACE14B", "17840F175BACF2A4", "19BF2B58EFD9E1B1", "383296697E619404"]
+			dependencies: ["0A37C18E17ACE14B", "76667232CC5DDA8C", "5671669CEF35DC34", "7F8BB328DB020DA6"]
 		},
 		{
 			id: "7841C57FE2AE91FD"

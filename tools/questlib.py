@@ -178,6 +178,11 @@ def reward_snbt(ch, qd, i, r):
     return "\n".join(out)
 
 
+def dep_id(ch, d):
+    """Quest id of a dependency: 'key' is a quest in this chapter, 'chapter.key' a quest in another chapter. FTB silently drops ids that match no quest."""
+    return hid(*d.split(".", 1)) if "." in d else hid(ch.key, d)
+
+
 def quest_snbt(ch, qd):
     qid = hid(ch.key, qd["key"])
     lines = ['\t\t{', '\t\t\tid: "%s"' % qid, '\t\t\ttitle: %s' % q(qd["title"])]
@@ -190,7 +195,7 @@ def quest_snbt(ch, qd):
     if qd["optional"]:
         lines.append('\t\t\toptional: true')
     if qd["deps"]:
-        lines.append("\t\t\tdependencies: [" + ", ".join('"%s"' % hid(ch.key, d) for d in qd["deps"]) + "]")
+        lines.append("\t\t\tdependencies: [" + ", ".join('"%s"' % dep_id(ch, d) for d in qd["deps"]) + "]")
     lines.append('\t\t}')
     return "\n".join(lines)
 

@@ -52,7 +52,7 @@
 						title: "Tier 2 supply cache"
 					}
 			]
-			dependencies: ["26130032E9FC999A"]
+			dependencies: ["6A4BB1D5D4A01882"]
 		},
 		{
 			id: "2BCA19B2DA4C52DD"
@@ -802,7 +802,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["44453684CC134345"]
+			dependencies: ["0B35ACD06752C438"]
 		},
 		{
 			id: "0CEB43486C2BA243"

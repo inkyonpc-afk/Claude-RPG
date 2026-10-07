@@ -52,7 +52,7 @@
 						title: "Tier 4 supply cache"
 					}
 			]
-			dependencies: ["42C74C79990062A3"]
+			dependencies: ["7F4F0E8F987A162A"]
 		},
 		{
 			id: "643C79ECFFF46A48"
@@ -377,7 +377,7 @@
 						xp: 200
 					}
 			]
-			dependencies: ["5A1A31BA4C8788F7"]
+			dependencies: ["3433E3DFD61EE112"]
 		},
 		{
 			id: "1F951CD02E520322"
@@ -624,7 +624,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["392E969CECF67FAA"]
+			dependencies: ["2F6473DE1E123A28"]
 		},
 		{
 			id: "2CE54B2273CF4C49"
@@ -861,7 +861,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["0D53F8706A926416"]
+			dependencies: ["0CEB43486C2BA243"]
 		},
 		{
 			id: "2F48C415BEB616F7"

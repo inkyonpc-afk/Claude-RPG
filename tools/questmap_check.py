@@ -7,8 +7,12 @@ images whose `alpha` FTB reads as 0 (ChapterImage.readData uses nbt.getInt, so a
 Why: a chapter image counts toward the map's bounding box and FTB centers the opening view on that box. FTB treats an image's x/y as its
 CENTER; an image placed by its top-left corner shifts the view off the quests, and with alpha 0 the map then looks empty.
 
+Also checks quest dependency links: ids that match no quest (FTB silently drops them) and dependency loops (FTB then deletes all of that quest's
+dependencies).
+
 Usage: python tools/questmap_check.py [--dir config/ftbquests/quests/chapters] [--spacing 1.0] [--zoom 16] [--verbose]
-Exit code 1 if any chapter opens with no quest in view at a common screen size, or any image is effectively invisible."""
+Exit code 1 if any chapter opens with no quest in view at a common screen size, any image is effectively invisible, or any dependency
+link is broken or loops."""
 import argparse, glob, math, os, re, sys
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -153,12 +157,41 @@ def opening_view(chapter, screen_w, screen_h, zoom=16, spacing=1.0):
     return visible, titles, center
 
 
+def check_links(chapters):
+    """Dependency ids FTB would silently drop (Quest.readData ignores ids that match no object) and loops (Quest.verifyDependencies deletes
+    ALL dependencies of a quest that can reach itself)."""
+    problems, deps, where = [], {}, {}
+    for name, ch in chapters:
+        for qd in ch.get("quests", []):
+            deps[qd["id"]] = list(qd.get("dependencies", []))
+            where[qd["id"]] = "%s/%s" % (name, qd.get("title", qd["id"]))
+    for qid, ds in deps.items():
+        for d in ds:
+            if d not in deps:
+                problems.append("%s: dependency %s matches no quest (FTB silently drops the link)" % (where[qid], d))
+    state = {}
+
+    def visit(q, stack):
+        state[q] = 1
+        for d in deps.get(q, []):
+            if state.get(d) == 1:
+                problems.append("dependency loop: %s" % " -> ".join(where[x] for x in stack[stack.index(d):] + [d]))
+            elif d in deps and d not in state:
+                visit(d, stack + [d])
+        state[q] = 2
+
+    for q in deps:
+        if q not in state:
+            visit(q, [q])
+    return problems
+
+
 def check_dir(chapter_dir, zoom=16, spacing=1.0, verbose=False, out=print):
     problems = []
     files = sorted(glob.glob(os.path.join(chapter_dir, "*.snbt")))
-    for f in files:
-        ch = parse_snbt(open(f, encoding="utf-8").read())
-        name = os.path.basename(f)
+    chapters = [(os.path.basename(f), parse_snbt(open(f, encoding="utf-8").read())) for f in files]
+    problems += check_links(chapters)
+    for name, ch in chapters:
         for img in ch.get("images", []):
             alpha = img.get("alpha", 255)
             if int(math.floor(alpha)) <= 0:

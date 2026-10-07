@@ -45,7 +45,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["601EF5F679CC4521"]
+			dependencies: ["5DBA91ABE234AA2B"]
 		},
 		{
 			id: "33DA4BD9C2458D1C"
@@ -521,7 +521,7 @@
 						count: 8
 					}
 			]
-			dependencies: ["7FC3B515ABB81E32"]
+			dependencies: ["1D4C104EB604A3C8"]
 		},
 		{
 			id: "4DD2719E552F1554"
@@ -707,7 +707,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["12AE6D78D04C3825"]
+			dependencies: ["6E03BFA0BE440DF0"]
 		},
 		{
 			id: "6A4BB1D5D4A01882"
