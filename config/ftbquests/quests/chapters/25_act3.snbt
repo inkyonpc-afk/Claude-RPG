@@ -39,12 +39,12 @@
 			]
 			rewards: [
 					{
-						id: "A8AFDD8106D29307"
+						id: "28AFDD8106D29307"
 						type: "xp"
 						xp: 200
 					},
 					{
-						id: "9B5F17E8BB44AD7F"
+						id: "1B5F17E8BB44AD7F"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
 						elevate: true
@@ -60,10 +60,10 @@
 						title: "Flight unlocked: winged mounts may carry you through the overworld sky"
 					}
 			]
-			dependencies: ["C03E0599B39D05F6"]
+			dependencies: ["403E0599B39D05F6"]
 		},
 		{
-			id: "C8708508F38D0893"
+			id: "48708508F38D0893"
 			title: "Zanite"
 			description: ["The Aether's tools are made from gemstones, not metal. Holystone, zanite, gravitite: each is a tier of lightness."]
 			icon: "aether:zanite_gemstone"
@@ -73,7 +73,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A776A828C39692FA"
+						id: "2776A828C39692FA"
 						type: "item"
 						item: "aether:zanite_gemstone"
 						count: 8
@@ -82,7 +82,7 @@
 			]
 			rewards: [
 					{
-						id: "C04492BC1BF68A95"
+						id: "404492BC1BF68A95"
 						type: "xp"
 						xp: 80
 					}
@@ -112,10 +112,10 @@
 						xp: 120
 					}
 			]
-			dependencies: ["C8708508F38D0893"]
+			dependencies: ["48708508F38D0893"]
 		},
 		{
-			id: "D7498346877ADF06"
+			id: "57498346877ADF06"
 			title: "A Saddle for a Pig"
 			description: ["Flying pigs: the Aether's joke and its best ride. Saddle a phyg and you can glide above any island. Remember: this flight stays in the Aether."]
 			icon: "minecraft:saddle"
@@ -125,7 +125,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "A1E2B77B271090B6"
+						id: "21E2B77B271090B6"
 						type: "advancement"
 						advancement: "aether:mount_phyg"
 					}
@@ -157,7 +157,7 @@
 			]
 			rewards: [
 					{
-						id: "827BD0438C85A8CB"
+						id: "027BD0438C85A8CB"
 						type: "xp"
 						xp: 150
 					},
@@ -170,7 +170,7 @@
 						title: "Tier 3 supply cache"
 					}
 			]
-			dependencies: ["C8708508F38D0893"]
+			dependencies: ["48708508F38D0893"]
 		},
 		{
 			id: "6DE5B62F96455C37"
@@ -225,14 +225,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B5D5FFDBCC49256C"
+						id: "35D5FFDBCC49256C"
 						type: "structure"
 						structure: "aether:silver_dungeon"
 					}
 			]
 			rewards: [
 					{
-						id: "FACFBF1A9CAD8C04"
+						id: "7ACFBF1A9CAD8C04"
 						type: "xp"
 						xp: 180
 					}
@@ -241,7 +241,7 @@
 			dependencies: ["6DE5B62F96455C37"]
 		},
 		{
-			id: "C5352C0399EAFA68"
+			id: "45352C0399EAFA68"
 			title: "The Valkyrie Queen"
 			description: ["A duel, not a boss fight. She is quick, accurate and fair; the lance she drops is the first truly legendary weapon in this campaign."]
 			icon: "aether:valkyrie_lance"
@@ -259,12 +259,12 @@
 			]
 			rewards: [
 					{
-						id: "BC5EDECA099CAEAF"
+						id: "3C5EDECA099CAEAF"
 						type: "xp"
 						xp: 450
 					},
 					{
-						id: "FD0A637C81710217"
+						id: "7D0A637C81710217"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -306,7 +306,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["C5352C0399EAFA68"]
+			dependencies: ["45352C0399EAFA68"]
 		},
 		{
 			id: "5671669CEF35DC34"
@@ -319,7 +319,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "8D5A13E21DEB2EC2"
+						id: "0D5A13E21DEB2EC2"
 						type: "kill"
 						entity: "aether:sun_spirit"
 						value: 1
@@ -327,12 +327,12 @@
 			]
 			rewards: [
 					{
-						id: "FB4A821E1FC32AA7"
+						id: "7B4A821E1FC32AA7"
 						type: "xp"
 						xp: 600
 					},
 					{
-						id: "B627044FDFEE30A4"
+						id: "3627044FDFEE30A4"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -376,7 +376,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7498346877ADF06"]
+			dependencies: ["57498346877ADF06"]
 		},
 		{
 			id: "3433E3DFD61EE112"
@@ -389,7 +389,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "A538C8442B253AC1"
+						id: "2538C8442B253AC1"
 						type: "item"
 						item: "iceandfire:hippogryph_egg"
 						count: 1
@@ -422,12 +422,12 @@
 			]
 			rewards: [
 					{
-						id: "A52626EC14C0DB63"
+						id: "252626EC14C0DB63"
 						type: "xp"
 						xp: 150
 					},
 					{
-						id: "D10633BFB733C1EC"
+						id: "510633BFB733C1EC"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -438,7 +438,7 @@
 			dependencies: ["3433E3DFD61EE112"]
 		},
 		{
-			id: "D7B969B2B979F798"
+			id: "57B969B2B979F798"
 			title: "A Dream of Light"
 			description: ["Blue Skies is two realms: Everbright, where it is always noon, and Everdawn, where it never finishes midnight. Both are beautiful, both have teeth."]
 			icon: "blue_skies:zeal_lighter"
@@ -448,14 +448,14 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "E5CA7DA47185FCD6"
+						id: "65CA7DA47185FCD6"
 						type: "dimension"
 						dim: "blue_skies:everbright"
 					}
 			]
 			rewards: [
 					{
-						id: "9148AC601E4DD667"
+						id: "1148AC601E4DD667"
 						type: "xp"
 						xp: 200
 					}
@@ -494,7 +494,7 @@
 						title: "Tier 4 supply cache"
 					}
 			]
-			dependencies: ["D7B969B2B979F798"]
+			dependencies: ["57B969B2B979F798"]
 		},
 		{
 			id: "6B325FDF4B171EB9"
@@ -520,7 +520,7 @@
 						xp: 500
 					},
 					{
-						id: "98D5A26F1E257F96"
+						id: "18D5A26F1E257F96"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -528,7 +528,7 @@
 						title: "1 skill point"
 					},
 					{
-						id: "897C9BF1D68FBF4A"
+						id: "097C9BF1D68FBF4A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -539,7 +539,7 @@
 			dependencies: ["5E75753DB2D6353D"]
 		},
 		{
-			id: "92C46F18BA505B11"
+			id: "12C46F18BA505B11"
 			title: "Under Forever Moon"
 			description: ["Everdawn's dungeons are poison and webs. Antidotes first, adventure second."]
 			icon: "blue_skies:pyrope_gem"
@@ -549,7 +549,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "E1A95449412824D4"
+						id: "61A95449412824D4"
 						type: "dimension"
 						dim: "blue_skies:everdawn"
 					}
@@ -561,10 +561,10 @@
 						xp: 200
 					}
 			]
-			dependencies: ["D7B969B2B979F798"]
+			dependencies: ["57B969B2B979F798"]
 		},
 		{
-			id: "9DD1C900BD970093"
+			id: "1DD1C900BD970093"
 			title: "The Arachnarch"
 			description: ["A spider the size of a cottage. Fight on the edges of its web and bring something to clear the poison."]
 			icon: "blue_skies:falsite_ingot"
@@ -595,10 +595,10 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["92C46F18BA505B11"]
+			dependencies: ["12C46F18BA505B11"]
 		},
 		{
-			id: "ACC2CBABCAC9BCAD"
+			id: "2CC2CBABCAC9BCAD"
 			title: "A Mouth in the Earth"
 			description: ["Alex's Caves hides entire worlds under the surface: candy caverns, acid pits, abyssal trenches. Pick a biome and descend."]
 			icon: "alexscaves:uranium"
@@ -621,7 +621,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["C03E0599B39D05F6"]
+			dependencies: ["403E0599B39D05F6"]
 		},
 		{
 			id: "1AFE6F6E18365B0A"
@@ -634,7 +634,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A8036764806BE270"
+						id: "28036764806BE270"
 						type: "kill"
 						entity: "alexscaves:subterranodon"
 						value: 1
@@ -642,16 +642,16 @@
 			]
 			rewards: [
 					{
-						id: "D699A073E773A229"
+						id: "5699A073E773A229"
 						type: "xp"
 						xp: 200
 					}
 			]
 			optional: true
-			dependencies: ["ACC2CBABCAC9BCAD"]
+			dependencies: ["2CC2CBABCAC9BCAD"]
 		},
 		{
-			id: "B4F5A9B8E200DEA1"
+			id: "34F5A9B8E200DEA1"
 			title: "Fire and Forge"
 			description: ["Ignitium is the first of Cataclysm's metals. Its gear is magnificent and its source is a creature that does not forgive."]
 			icon: "cataclysm:infernal_forge"
@@ -661,7 +661,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D23C551BD0BA228D"
+						id: "523C551BD0BA228D"
 						type: "structure"
 						structure: "cataclysm:burning_arena"
 					}
@@ -674,7 +674,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["B9425B50B7055682"]
+			dependencies: ["39425B50B7055682"]
 		},
 		{
 			id: "4ADA7D068A2CA431"
@@ -721,7 +721,7 @@
 						title: "Ignis spoils"
 					}
 			]
-			dependencies: ["B4F5A9B8E200DEA1"]
+			dependencies: ["34F5A9B8E200DEA1"]
 		},
 		{
 			id: "67345C4119C13F3B"
@@ -734,7 +734,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D4A02018E6A4548C"
+						id: "54A02018E6A4548C"
 						type: "advancement"
 						advancement: "apotheosis:affix/epic"
 					}
@@ -777,7 +777,7 @@
 						xp: 300
 					},
 					{
-						id: "C469EC7DBCE5B2C2"
+						id: "4469EC7DBCE5B2C2"
 						type: "command"
 						command: "skilltree points add {p} 3"
 						elevate: true
@@ -785,7 +785,7 @@
 						title: "3 skill points"
 					},
 					{
-						id: "E17E11DD42F66B29"
+						id: "617E11DD42F66B29"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -793,7 +793,7 @@
 						title: "Act III cache"
 					}
 			]
-			dependencies: ["5671669CEF35DC34", "6B325FDF4B171EB9", "9DD1C900BD970093"]
+			dependencies: ["5671669CEF35DC34", "6B325FDF4B171EB9", "1DD1C900BD970093"]
 		}
 	]
 }

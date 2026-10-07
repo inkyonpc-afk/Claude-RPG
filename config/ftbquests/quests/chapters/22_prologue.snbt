@@ -1,5 +1,5 @@
 {
-	id: "B6BE887CCDA64786"
+	id: "36BE887CCDA64786"
 	filename: "22_prologue"
 	title: "Prologue: The Ember Wakes"
 	subtitle: "You wake beside a cold hearth with a shard of crown-glass burning in your palm."
@@ -38,7 +38,7 @@
 			]
 			rewards: [
 					{
-						id: "B2CE3410AF35B729"
+						id: "32CE3410AF35B729"
 						type: "xp"
 						xp: 10
 					}
@@ -90,7 +90,7 @@
 						xp: 20
 					},
 					{
-						id: "D3DE8B5FBB10BFC0"
+						id: "53DE8B5FBB10BFC0"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -125,7 +125,7 @@
 						xp: 15
 					},
 					{
-						id: "AB4CF81275B561E6"
+						id: "2B4CF81275B561E6"
 						type: "item"
 						item: "minecraft:torch"
 						count: 8
@@ -144,13 +144,13 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "AABCD152C6B8DB62"
+						id: "2ABCD152C6B8DB62"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "E43DC290C21C42EE"
+						id: "643DC290C21C42EE"
 						type: "xp"
 						xp: 15
 					}
@@ -168,7 +168,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B5ACB26C5AA3F53D"
+						id: "35ACB26C5AA3F53D"
 						type: "item"
 						item: "minecraft:bread"
 						count: 3
@@ -177,7 +177,7 @@
 			]
 			rewards: [
 					{
-						id: "C1A506172D433710"
+						id: "41A506172D433710"
 						type: "xp"
 						xp: 15
 					},
@@ -201,7 +201,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BE3717B79C483735"
+						id: "3E3717B79C483735"
 						type: "item"
 						item: "minecraft:stone_sword"
 						count: 1
@@ -218,7 +218,7 @@
 			dependencies: ["6E03BFA0BE440DF0"]
 		},
 		{
-			id: "F213054DDE1EF42F"
+			id: "7213054DDE1EF42F"
 			title: "First Blood"
 			description: ["Night brings the hollow things up out of the earth. Put three of them back."]
 			icon: "minecraft:zombie_head"
@@ -241,7 +241,7 @@
 						xp: 30
 					},
 					{
-						id: "C5C14693A734E647"
+						id: "45C14693A734E647"
 						type: "item"
 						item: "minecraft:iron_ingot"
 						count: 4
@@ -287,7 +287,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "C0B532646F5E590F"
+						id: "40B532646F5E590F"
 						type: "item"
 						item: "waystones:waystone"
 						count: 1
@@ -301,7 +301,7 @@
 						xp: 30
 					}
 			]
-			dependencies: ["4CE30D0B3514A889", "F213054DDE1EF42F"]
+			dependencies: ["4CE30D0B3514A889", "7213054DDE1EF42F"]
 		},
 		{
 			id: "1D4C104EB604A3C8"
@@ -314,19 +314,19 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "FA5E390129499A19"
+						id: "7A5E390129499A19"
 						type: "structure"
 						structure: "minecraft:village_plains"
 					}
 			]
 			rewards: [
 					{
-						id: "E1F7D2CCFCE8BFE9"
+						id: "61F7D2CCFCE8BFE9"
 						type: "xp"
 						xp: 40
 					},
 					{
-						id: "EAD2B88E44DDCA70"
+						id: "6AD2B88E44DDCA70"
 						type: "item"
 						item: "minecraft:emerald"
 						count: 3
@@ -346,13 +346,13 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "AD0E6BAA1219C10C"
+						id: "2D0E6BAA1219C10C"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "BFC78483A855A089"
+						id: "3FC78483A855A089"
 						type: "xp"
 						xp: 100
 					},
@@ -365,7 +365,7 @@
 						title: "2 skill points"
 					},
 					{
-						id: "FB4125EBE0257779"
+						id: "7B4125EBE0257779"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t1"
 						elevate: true

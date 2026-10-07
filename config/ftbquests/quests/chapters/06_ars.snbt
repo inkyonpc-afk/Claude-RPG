@@ -1,5 +1,5 @@
 {
-	id: "EDB18509E4A0C917"
+	id: "6DB18509E4A0C917"
 	filename: "06_ars"
 	title: "Spellcraft: Glyphs and Source"
 	subtitle: "Build your own spells, glyph by glyph."
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "9B27131290CC87C1"
+			id: "1B27131290CC87C1"
 			title: "Glyph by Glyph"
 			description: ["Ars Nouveau spells are assembled from three parts: a form (how it is delivered), an effect (what it does) and augments (how it does it). Source mana comes from the world, not from you.", "It is a different kind of magic from Iron's: more utility, more freedom, more patience."]
 			icon: "ars_nouveau:novice_spell_book"
@@ -32,7 +32,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "816E6385ADBAB956"
+						id: "016E6385ADBAB956"
 						type: "item"
 						item: "ars_nouveau:novice_spell_book"
 						count: 1
@@ -41,7 +41,7 @@
 			]
 			rewards: [
 					{
-						id: "DE41A6C063D87E79"
+						id: "5E41A6C063D87E79"
 						type: "xp"
 						xp: 30
 					}
@@ -58,18 +58,18 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "ABFEC6FA54A73436"
+						id: "2BFEC6FA54A73436"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "C994B470053E69AD"
+						id: "4994B470053E69AD"
 						type: "xp"
 						xp: 25
 					}
 			]
-			dependencies: ["9B27131290CC87C1"]
+			dependencies: ["1B27131290CC87C1"]
 		},
 		{
 			id: "0B306B744FEC8AF9"
@@ -82,7 +82,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A5ACFE9E48EC6D7C"
+						id: "25ACFE9E48EC6D7C"
 						type: "item"
 						item: "ars_nouveau:glyph_projectile"
 						count: 1
@@ -96,7 +96,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["9B27131290CC87C1"]
+			dependencies: ["1B27131290CC87C1"]
 		},
 		{
 			id: "3CAEA6EFB3322E12"
@@ -109,7 +109,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "EE51D042213607BF"
+						id: "6E51D042213607BF"
 						type: "item"
 						item: "ars_nouveau:glyph_heal"
 						count: 1
@@ -145,7 +145,7 @@
 			]
 			rewards: [
 					{
-						id: "F77DD29873C5138B"
+						id: "777DD29873C5138B"
 						type: "xp"
 						xp: 60
 					}
@@ -153,7 +153,7 @@
 			dependencies: ["0B306B744FEC8AF9"]
 		},
 		{
-			id: "EEE776604DB6BEDC"
+			id: "6EE776604DB6BEDC"
 			title: "Glide"
 			description: ["A glyph for controlled falls. Not true flight: just a very good descent."]
 			icon: "ars_nouveau:glyph_glide"
@@ -163,7 +163,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "AA3CDDEF72CFAF2F"
+						id: "2A3CDDEF72CFAF2F"
 						type: "item"
 						item: "ars_nouveau:glyph_glide"
 						count: 1
@@ -172,7 +172,7 @@
 			]
 			rewards: [
 					{
-						id: "FF1391B41DAA608F"
+						id: "7F1391B41DAA608F"
 						type: "xp"
 						xp: 60
 					}
@@ -191,7 +191,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BC7436BA6F94087B"
+						id: "3C7436BA6F94087B"
 						type: "item"
 						item: "ars_nouveau:enchanting_apparatus"
 						count: 1
@@ -218,7 +218,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "925ABB5D0B9ABCE1"
+						id: "125ABB5D0B9ABCE1"
 						type: "advancement"
 						advancement: "ars_nouveau:apprentice_spell_book"
 					}
@@ -233,7 +233,7 @@
 			dependencies: ["5D39818CAF58D237"]
 		},
 		{
-			id: "F464F5018CAC7E0F"
+			id: "7464F5018CAC7E0F"
 			title: "Archmage Spell Book"
 			description: ["The final tier: huge, powerful, expensive."]
 			icon: "ars_nouveau:archmage_spell_book"
@@ -243,19 +243,19 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "CCD68AF4979D843D"
+						id: "4CD68AF4979D843D"
 						type: "advancement"
 						advancement: "ars_nouveau:archmage_spell_book"
 					}
 			]
 			rewards: [
 					{
-						id: "F8DD6A29604C0CBE"
+						id: "78DD6A29604C0CBE"
 						type: "xp"
 						xp: 250
 					},
 					{
-						id: "A557A964BBCC30D7"
+						id: "2557A964BBCC30D7"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -304,7 +304,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "E66F853AC64474B2"
+						id: "666F853AC64474B2"
 						type: "checkmark"
 					}
 			]
@@ -319,7 +319,7 @@
 			dependencies: ["5D39818CAF58D237"]
 		},
 		{
-			id: "EB71E5305A958443"
+			id: "6B71E5305A958443"
 			title: "Spell Fusion"
 			description: ["Mix Iron's and Ars spells in the same loadout: one for combat, one for utility. Bring both."]
 			icon: "ars_nouveau:arcane_core"
@@ -329,19 +329,19 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "C503234F1A4B4316"
+						id: "4503234F1A4B4316"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "AC87CA10F8E0B36C"
+						id: "2C87CA10F8E0B36C"
 						type: "xp"
 						xp: 150
 					}
 			]
 			optional: true
-			dependencies: ["F464F5018CAC7E0F"]
+			dependencies: ["7464F5018CAC7E0F"]
 		}
 	]
 }

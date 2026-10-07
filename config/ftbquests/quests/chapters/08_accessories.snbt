@@ -32,7 +32,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "AE1715F2869BC381"
+						id: "2E1715F2869BC381"
 						type: "checkmark"
 					}
 			]
@@ -45,7 +45,7 @@
 			]
 		},
 		{
-			id: "C47BFA2F406B5748"
+			id: "447BFA2F406B5748"
 			title: "A Ring"
 			description: ["Rings are the cheapest accessory and the first one you will find. Wear two."]
 			icon: "irons_spellbooks:silver_ring"
@@ -55,7 +55,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "C9C65CDEAD9096DA"
+						id: "49C65CDEAD9096DA"
 						type: "item"
 						item: "irons_spellbooks:silver_ring"
 						count: 1
@@ -99,7 +99,7 @@
 			dependencies: ["2CB603D5E6065AF5"]
 		},
 		{
-			id: "F1FE5AC1F570DAB2"
+			id: "71FE5AC1F570DAB2"
 			title: "Power Glove"
 			description: ["More damage, no cost: the classic. Some artifacts are simply good."]
 			icon: "artifacts:power_glove"
@@ -109,7 +109,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9D0921DB8B54E0BE"
+						id: "1D0921DB8B54E0BE"
 						type: "item"
 						item: "artifacts:power_glove"
 						count: 1
@@ -118,7 +118,7 @@
 			]
 			rewards: [
 					{
-						id: "EBEA1AB27A35F167"
+						id: "6BEA1AB27A35F167"
 						type: "xp"
 						xp: 40
 					}
@@ -126,7 +126,7 @@
 			dependencies: ["2CB603D5E6065AF5"]
 		},
 		{
-			id: "F9AA19F7AED6AEE1"
+			id: "79AA19F7AED6AEE1"
 			title: "Bunny Hoppers"
 			description: ["Jump higher, land softer. A traveller's staple."]
 			icon: "artifacts:bunny_hoppers"
@@ -145,7 +145,7 @@
 			]
 			rewards: [
 					{
-						id: "89E925CAED42C0FF"
+						id: "09E925CAED42C0FF"
 						type: "xp"
 						xp: 40
 					}
@@ -163,7 +163,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "DBCAF808AEB99F9B"
+						id: "5BCAF808AEB99F9B"
 						type: "item"
 						item: "artifacts:flippers"
 						count: 1
@@ -172,7 +172,7 @@
 			]
 			rewards: [
 					{
-						id: "FAC7874EA59C9BCB"
+						id: "7AC7874EA59C9BCB"
 						type: "xp"
 						xp: 40
 					}
@@ -204,7 +204,7 @@
 						xp: 80
 					}
 			]
-			dependencies: ["F9AA19F7AED6AEE1"]
+			dependencies: ["79AA19F7AED6AEE1"]
 		},
 		{
 			id: "2183FF6B83A01951"
@@ -217,7 +217,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "FB44F0D8802BF2B2"
+						id: "7B44F0D8802BF2B2"
 						type: "item"
 						item: "artifacts:crystal_heart"
 						count: 1
@@ -234,7 +234,7 @@
 			dependencies: ["2CB603D5E6065AF5"]
 		},
 		{
-			id: "F786252D160B690B"
+			id: "7786252D160B690B"
 			title: "Elemental Pendants"
 			description: ["Pendants ignite, shock, and ward. Choose the element to match your build."]
 			icon: "artifacts:flame_pendant"
@@ -262,7 +262,7 @@
 			dependencies: ["2CB603D5E6065AF5"]
 		},
 		{
-			id: "E52D9BFA33295EB2"
+			id: "652D9BFA33295EB2"
 			title: "Horseshoe"
 			description: ["A little luck and a faster mount. The first accessory every rider wants."]
 			icon: "majruszsaccessories:horseshoe"
@@ -299,7 +299,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "84A45E30F876F71A"
+						id: "04A45E30F876F71A"
 						type: "item"
 						item: "majruszsaccessories:ancient_scarab"
 						count: 1
@@ -308,13 +308,13 @@
 			]
 			rewards: [
 					{
-						id: "D47B87CC2C7B9A59"
+						id: "547B87CC2C7B9A59"
 						type: "xp"
 						xp: 60
 					}
 			]
 			optional: true
-			dependencies: ["E52D9BFA33295EB2"]
+			dependencies: ["652D9BFA33295EB2"]
 		},
 		{
 			id: "182643C60CA47D6E"
@@ -336,7 +336,7 @@
 			]
 			rewards: [
 					{
-						id: "BBE32FDB0FF8106C"
+						id: "3BE32FDB0FF8106C"
 						type: "xp"
 						xp: 150
 					}
@@ -345,7 +345,7 @@
 			dependencies: ["2183FF6B83A01951"]
 		},
 		{
-			id: "90A8932605236B0F"
+			id: "10A8932605236B0F"
 			title: "Magnet Ring"
 			description: ["Items fly to you. A QoL luxury that sometimes feels like a necessity."]
 			icon: "enigmaticlegacy:magnet_ring"
@@ -370,7 +370,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["C47BFA2F406B5748"]
+			dependencies: ["447BFA2F406B5748"]
 		},
 		{
 			id: "4D0BA6B62932F891"
@@ -383,13 +383,13 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "FB47538AE7CFD8A2"
+						id: "7B47538AE7CFD8A2"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "F9D610A15AFC7090"
+						id: "79D610A15AFC7090"
 						type: "xp"
 						xp: 100
 					},

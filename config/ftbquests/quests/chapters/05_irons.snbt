@@ -38,14 +38,14 @@
 			]
 			rewards: [
 					{
-						id: "97F4EC458860521B"
+						id: "17F4EC458860521B"
 						type: "xp"
 						xp: 20
 					}
 			]
 		},
 		{
-			id: "FBB94C7294FF69CE"
+			id: "7BB94C7294FF69CE"
 			title: "A Scroll to Learn On"
 			description: ["Scrolls hold one spell at one level, once. Collect them from dungeons and trade for the rest."]
 			icon: "irons_spellbooks:scroll"
@@ -64,7 +64,7 @@
 			]
 			rewards: [
 					{
-						id: "EE6DF12720059187"
+						id: "6E6DF12720059187"
 						type: "xp"
 						xp: 25
 					}
@@ -72,7 +72,7 @@
 			dependencies: ["0D2AC016928033D5"]
 		},
 		{
-			id: "A112C13D44A2C02B"
+			id: "2112C13D44A2C02B"
 			title: "Inscription Table"
 			description: ["Writes spells into books. The difference between a mage and a person holding a scroll."]
 			icon: "irons_spellbooks:inscription_table"
@@ -91,12 +91,12 @@
 			]
 			rewards: [
 					{
-						id: "A92D53EBE4EECA65"
+						id: "292D53EBE4EECA65"
 						type: "xp"
 						xp: 30
 					}
 			]
-			dependencies: ["FBB94C7294FF69CE"]
+			dependencies: ["7BB94C7294FF69CE"]
 		},
 		{
 			id: "66A66CFF5335426D"
@@ -123,7 +123,7 @@
 						xp: 30
 					}
 			]
-			dependencies: ["A112C13D44A2C02B"]
+			dependencies: ["2112C13D44A2C02B"]
 		},
 		{
 			id: "289CFF065C902297"
@@ -136,7 +136,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9464F4B1D8AFFFC2"
+						id: "1464F4B1D8AFFFC2"
 						type: "item"
 						item: "irons_spellbooks:iron_spell_book"
 						count: 1
@@ -153,7 +153,7 @@
 			dependencies: ["66A66CFF5335426D"]
 		},
 		{
-			id: "D5C8B1AFDF1A2E9F"
+			id: "55C8B1AFDF1A2E9F"
 			title: "Gold Spell Book"
 			description: ["A book fit for a dungeon-delver."]
 			icon: "irons_spellbooks:gold_spell_book"
@@ -172,7 +172,7 @@
 			]
 			rewards: [
 					{
-						id: "C90CA6E4236530B9"
+						id: "490CA6E4236530B9"
 						type: "xp"
 						xp: 60
 					}
@@ -204,10 +204,10 @@
 						xp: 100
 					}
 			]
-			dependencies: ["D5C8B1AFDF1A2E9F"]
+			dependencies: ["55C8B1AFDF1A2E9F"]
 		},
 		{
-			id: "D0F2534E259C23E4"
+			id: "50F2534E259C23E4"
 			title: "Netherite Spell Book"
 			description: ["Nine slots. The last craftable tier; the best ones are found, not made."]
 			icon: "irons_spellbooks:netherite_spell_book"
@@ -217,7 +217,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "B3DD60DDF2202274"
+						id: "33DD60DDF2202274"
 						type: "item"
 						item: "irons_spellbooks:netherite_spell_book"
 						count: 1
@@ -252,7 +252,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "C2F50A0053671807"
+						id: "42F50A0053671807"
 						type: "item"
 						item: "irons_spellbooks:legendary_spell_book"
 						count: 1
@@ -261,12 +261,12 @@
 			]
 			rewards: [
 					{
-						id: "A691BEC2C16F25B6"
+						id: "2691BEC2C16F25B6"
 						type: "xp"
 						xp: 400
 					},
 					{
-						id: "A92B89F36CAED36D"
+						id: "292B89F36CAED36D"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -274,10 +274,10 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["D0F2534E259C23E4"]
+			dependencies: ["50F2534E259C23E4"]
 		},
 		{
-			id: "BA417552BBF6F86A"
+			id: "3A417552BBF6F86A"
 			title: "Arcane Anvil"
 			description: ["Upgrade scrolls and merge spells; imbue weapons with a spell. This is the heart of the Spellblade."]
 			icon: "irons_spellbooks:arcane_anvil"
@@ -287,7 +287,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "ACC89A9E5F59872D"
+						id: "2CC89A9E5F59872D"
 						type: "item"
 						item: "irons_spellbooks:arcane_anvil"
 						count: 1
@@ -301,10 +301,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A112C13D44A2C02B"]
+			dependencies: ["2112C13D44A2C02B"]
 		},
 		{
-			id: "E3B9DE3FCC266079"
+			id: "63B9DE3FCC266079"
 			title: "Alchemist Cauldron"
 			description: ["Brewing is a second kind of casting: ingredient combinations with real consequences."]
 			icon: "irons_spellbooks:alchemist_cauldron"
@@ -342,7 +342,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9A3B9B2614C03740"
+						id: "1A3B9B2614C03740"
 						type: "item"
 						item: "irons_spellbooks:scroll_forge"
 						count: 1
@@ -357,7 +357,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["FBB94C7294FF69CE"]
+			dependencies: ["7BB94C7294FF69CE"]
 		},
 		{
 			id: "3C81C112657BD04D"
@@ -379,7 +379,7 @@
 			]
 			rewards: [
 					{
-						id: "A14D8D8E0686E561"
+						id: "214D8D8E0686E561"
 						type: "xp"
 						xp: 60
 					}
@@ -388,7 +388,7 @@
 			dependencies: ["66A66CFF5335426D"]
 		},
 		{
-			id: "E8F6410CAFE9C4B3"
+			id: "68F6410CAFE9C4B3"
 			title: "Upgrade Orbs"
 			description: ["Orbs boost mana, cooldown, spell power, and school stats on your gear. Choose one for each piece."]
 			icon: "irons_spellbooks:mana_upgrade_orb"
@@ -398,7 +398,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F87951995B52EBBB"
+						id: "787951995B52EBBB"
 						type: "item"
 						item: "irons_spellbooks:mana_upgrade_orb"
 						count: 1
@@ -412,7 +412,7 @@
 						xp: 80
 					}
 			]
-			dependencies: ["BA417552BBF6F86A"]
+			dependencies: ["3A417552BBF6F86A"]
 		},
 		{
 			id: "01E2F92E6D9D7528"
@@ -425,7 +425,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F28F73BB05DEC93B"
+						id: "728F73BB05DEC93B"
 						type: "item"
 						item: "irons_spellbooks:pyromancer_helmet"
 						count: 1
@@ -434,7 +434,7 @@
 			]
 			rewards: [
 					{
-						id: "940988E6D5EC2FE1"
+						id: "140988E6D5EC2FE1"
 						type: "xp"
 						xp: 60
 					}
@@ -442,7 +442,7 @@
 			dependencies: ["66A66CFF5335426D"]
 		},
 		{
-			id: "BDD2523DEA298FF1"
+			id: "3DD2523DEA298FF1"
 			title: "Ring of Power"
 			description: ["Casters carry rings: mana, cooldown, cast time. They are cheap, and critical."]
 			icon: "irons_spellbooks:mana_ring"
@@ -461,7 +461,7 @@
 			]
 			rewards: [
 					{
-						id: "ED4B839389263341"
+						id: "6D4B839389263341"
 						type: "xp"
 						xp: 50
 					}
@@ -486,12 +486,12 @@
 			]
 			rewards: [
 					{
-						id: "892E8480A0224FF6"
+						id: "092E8480A0224FF6"
 						type: "xp"
 						xp: 150
 					}
 			]
-			dependencies: ["D5C8B1AFDF1A2E9F"]
+			dependencies: ["55C8B1AFDF1A2E9F"]
 		},
 		{
 			id: "59ABF2A2F683039C"
@@ -510,12 +510,12 @@
 			]
 			rewards: [
 					{
-						id: "E09786AA4B0BA541"
+						id: "609786AA4B0BA541"
 						type: "xp"
 						xp: 300
 					},
 					{
-						id: "E99426BE6FCEDDE5"
+						id: "699426BE6FCEDDE5"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -523,7 +523,7 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["E8F6410CAFE9C4B3", "01E2F92E6D9D7528"]
+			dependencies: ["68F6410CAFE9C4B3", "01E2F92E6D9D7528"]
 		}
 	]
 }

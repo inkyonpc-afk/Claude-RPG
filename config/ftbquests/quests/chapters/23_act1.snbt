@@ -1,5 +1,5 @@
 {
-	id: "FCAADF4AD9502F37"
+	id: "7CAADF4AD9502F37"
 	filename: "23_act1"
 	title: "Act I: The Awakening"
 	subtitle: "The Ember wants fuel. The old ruins are full of it, and so are the things that guard them."
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "CC214F471961B804"
+			id: "4C214F471961B804"
 			title: "Into the Dark"
 			description: ["Every kingdom is built on what somebody dug up. Find a mineshaft, take what is useful, and remember where the exits are."]
 			icon: "minecraft:iron_pickaxe"
@@ -48,7 +48,7 @@
 			dependencies: ["601EF5F679CC4521"]
 		},
 		{
-			id: "B3DA4BD9C2458D1C"
+			id: "33DA4BD9C2458D1C"
 			title: "A Crack in the Stone"
 			description: ["Iron is the first honest metal: heavy, plentiful, unromantic. You will need a lot of it."]
 			icon: "minecraft:iron_ingot"
@@ -72,10 +72,10 @@
 						xp: 30
 					}
 			]
-			dependencies: ["CC214F471961B804"]
+			dependencies: ["4C214F471961B804"]
 		},
 		{
-			id: "EE5D556BEF23AC31"
+			id: "6E5D556BEF23AC31"
 			title: "A Proper Forge"
 			description: ["A blast furnace doubles smelting speed. Rarer metals will want it."]
 			icon: "minecraft:blast_furnace"
@@ -94,12 +94,12 @@
 			]
 			rewards: [
 					{
-						id: "8E64BA18ED0F097B"
+						id: "0E64BA18ED0F097B"
 						type: "xp"
 						xp: 30
 					}
 			]
-			dependencies: ["B3DA4BD9C2458D1C"]
+			dependencies: ["33DA4BD9C2458D1C"]
 		},
 		{
 			id: "5CD9FDEAB4DA6196"
@@ -132,10 +132,10 @@
 						count: 1
 					}
 			]
-			dependencies: ["EE5D556BEF23AC31"]
+			dependencies: ["6E5D556BEF23AC31"]
 		},
 		{
-			id: "D33394F9709D56EC"
+			id: "533394F9709D56EC"
 			title: "The Ruin That Hums"
 			description: ["West of the village the traders pointed to: a temple half-swallowed by roots, still humming a note too low to hear.", "Structures hold better loot the harder they are to reach, and the rarer they are. Small ruins give supplies; dungeons give gear; the great fortresses give legends."]
 			icon: "minecraft:mossy_stone_bricks"
@@ -152,12 +152,12 @@
 			]
 			rewards: [
 					{
-						id: "A6F93411C276BA5A"
+						id: "26F93411C276BA5A"
 						type: "xp"
 						xp: 60
 					},
 					{
-						id: "AA8AEC7E1A55DD85"
+						id: "2A8AEC7E1A55DD85"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t1"
 						elevate: true
@@ -169,7 +169,7 @@
 			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
-			id: "BF95F400362745B0"
+			id: "3F95F400362745B0"
 			title: "Down the Stairs"
 			description: ["Skeletons, spiders, zombies: three old rooms, three old grudges. Break a dungeon and see what the dark was hoarding."]
 			icon: "minecraft:spawner"
@@ -186,7 +186,7 @@
 			]
 			rewards: [
 					{
-						id: "93735D6213EBA007"
+						id: "13735D6213EBA007"
 						type: "xp"
 						xp: 50
 					}
@@ -195,7 +195,7 @@
 			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
-			id: "A363B3116D3544A1"
+			id: "2363B3116D3544A1"
 			title: "The Bandit Towers"
 			description: ["Somebody has been robbing the caravans. Their towers are tall and badly defended."]
 			icon: "minecraft:crossbow"
@@ -210,7 +210,7 @@
 						structure: "dungeons_arise:bandit_towers"
 					},
 					{
-						id: "C65C5E1AFA37E6E0"
+						id: "465C5E1AFA37E6E0"
 						type: "kill"
 						entity: "minecraft:pillager"
 						value: 5
@@ -230,7 +230,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["D33394F9709D56EC"]
+			dependencies: ["533394F9709D56EC"]
 		},
 		{
 			id: "5756762097574B69"
@@ -243,7 +243,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F4E97B0098658221"
+						id: "74E97B0098658221"
 						type: "item"
 						item: "apotheosis:salvaging_table"
 						count: 1
@@ -263,10 +263,10 @@
 						count: 8
 					}
 			]
-			dependencies: ["BF95F400362745B0"]
+			dependencies: ["3F95F400362745B0"]
 		},
 		{
-			id: "FC56B244B713C5D3"
+			id: "7C56B244B713C5D3"
 			title: "A Glimmer of Power"
 			description: ["Gems are the first gift of the dungeons: small, socketable, strangely heavy. Each carries a bonus keyed to the kind of item it sits in. Find a socketed item; the sigil of socketing opens more slots."]
 			icon: "apotheosis:gem"
@@ -276,7 +276,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "DDAB96BFD5981D18"
+						id: "5DAB96BFD5981D18"
 						type: "item"
 						item: "apotheosis:gem"
 						count: 1
@@ -293,7 +293,7 @@
 			dependencies: ["5756762097574B69"]
 		},
 		{
-			id: "C522DD19382DA2DF"
+			id: "4522DD19382DA2DF"
 			title: "Set in Stone"
 			description: ["A socket is a promise. Fill it with something you believe in."]
 			icon: "apotheosis:sigil_of_socketing"
@@ -312,12 +312,12 @@
 			]
 			rewards: [
 					{
-						id: "FAE08F720604AE83"
+						id: "7AE08F720604AE83"
 						type: "xp"
 						xp: 50
 					}
 			]
-			dependencies: ["FC56B244B713C5D3"]
+			dependencies: ["7C56B244B713C5D3"]
 		},
 		{
 			id: "127C30514CCDDED2"
@@ -330,7 +330,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "E17CCA031C1B5C06"
+						id: "617CCA031C1B5C06"
 						type: "item"
 						item: "minecraft:enchanting_table"
 						count: 1
@@ -357,14 +357,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "963B540365614F5B"
+						id: "163B540365614F5B"
 						type: "advancement"
 						advancement: "minecraft:story/enchant_item"
 					}
 			]
 			rewards: [
 					{
-						id: "BA1777BF2E69DD34"
+						id: "3A1777BF2E69DD34"
 						type: "xp"
 						xp: 60
 					},
@@ -388,7 +388,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D22937786E7C4FF0"
+						id: "522937786E7C4FF0"
 						type: "item"
 						item: "irons_spellbooks:scroll"
 						count: 1
@@ -397,12 +397,12 @@
 			]
 			rewards: [
 					{
-						id: "9EF1A2D87838813E"
+						id: "1EF1A2D87838813E"
 						type: "xp"
 						xp: 40
 					}
 			]
-			dependencies: ["D33394F9709D56EC"]
+			dependencies: ["533394F9709D56EC"]
 		},
 		{
 			id: "4FB27A8034769B73"
@@ -415,7 +415,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "8B9AE570D7AA6725"
+						id: "0B9AE570D7AA6725"
 						type: "item"
 						item: "irons_spellbooks:inscription_table"
 						count: 1
@@ -424,7 +424,7 @@
 			]
 			rewards: [
 					{
-						id: "F2F011523249FB70"
+						id: "72F011523249FB70"
 						type: "xp"
 						xp: 40
 					}
@@ -442,7 +442,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B70F045FFF618B72"
+						id: "370F045FFF618B72"
 						type: "item"
 						item: "irons_spellbooks:copper_spell_book"
 						count: 1
@@ -451,7 +451,7 @@
 			]
 			rewards: [
 					{
-						id: "F6C302F091F1F84E"
+						id: "76C302F091F1F84E"
 						type: "xp"
 						xp: 50
 					}
@@ -478,7 +478,7 @@
 			]
 			rewards: [
 					{
-						id: "91FE322702AA2878"
+						id: "11FE322702AA2878"
 						type: "xp"
 						xp: 50
 					}
@@ -486,7 +486,7 @@
 			dependencies: ["0B35ACD06752C438"]
 		},
 		{
-			id: "955FBD7286A46F72"
+			id: "155FBD7286A46F72"
 			title: "A Friend with Hooves"
 			description: ["Horses are the oldest mount and the first good one. Find a wild horse, tame it, and ride. They carry a chest, wear armor, and will not abandon you in a fight.", "Much faster, stranger and far larger mounts wait for you later. Keep your first horse. It earned the right."]
 			icon: "minecraft:saddle"
@@ -501,7 +501,7 @@
 						advancement: "minecraft:husbandry/tame_an_animal"
 					},
 					{
-						id: "85B9936A00E1FBA6"
+						id: "05B9936A00E1FBA6"
 						type: "item"
 						item: "minecraft:saddle"
 						count: 1
@@ -510,12 +510,12 @@
 			]
 			rewards: [
 					{
-						id: "A957A398D3AEDA17"
+						id: "2957A398D3AEDA17"
 						type: "xp"
 						xp: 60
 					},
 					{
-						id: "9D0C0BE2412FE85C"
+						id: "1D0C0BE2412FE85C"
 						type: "item"
 						item: "minecraft:golden_carrot"
 						count: 8
@@ -524,7 +524,7 @@
 			dependencies: ["7FC3B515ABB81E32"]
 		},
 		{
-			id: "CDD2719E552F1554"
+			id: "4DD2719E552F1554"
 			title: "A Leaf for the Wind"
 			description: ["Gliding spends stamina but costs nothing else. Cliffs become runways; chasms become shortcuts. Stamina grows with spirit orbs found in shrines."]
 			icon: "paraglider:paraglider"
@@ -534,7 +534,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "878D66FEC45117AF"
+						id: "078D66FEC45117AF"
 						type: "item"
 						item: "paraglider:paraglider"
 						count: 1
@@ -548,10 +548,10 @@
 						xp: 60
 					}
 			]
-			dependencies: ["955FBD7286A46F72"]
+			dependencies: ["155FBD7286A46F72"]
 		},
 		{
-			id: "8AFE70CA8FDB3713"
+			id: "0AFE70CA8FDB3713"
 			title: "A Hook and a Prayer"
 			description: ["Hooks and chains: swing, climb, cross gaps. Better hooks use better chains and stronger materials."]
 			icon: "rehooked:wood_hook"
@@ -561,7 +561,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F97755452710FBB5"
+						id: "797755452710FBB5"
 						type: "item"
 						item: "rehooked:wood_hook"
 						count: 1
@@ -575,7 +575,7 @@
 						xp: 50
 					}
 			]
-			dependencies: ["CDD2719E552F1554"]
+			dependencies: ["4DD2719E552F1554"]
 		},
 		{
 			id: "014760ADC96BE3CC"
@@ -588,7 +588,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "F4B4AE83E8B14408"
+						id: "74B4AE83E8B14408"
 						type: "structure"
 						structure: "dungeons_enhanced:castle"
 					}
@@ -609,7 +609,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["A363B3116D3544A1"]
+			dependencies: ["2363B3116D3544A1"]
 		},
 		{
 			id: "1AAD9663D104D15E"
@@ -635,7 +635,7 @@
 						xp: 250
 					},
 					{
-						id: "E80A5A77C47EB8AA"
+						id: "680A5A77C47EB8AA"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -654,7 +654,7 @@
 			dependencies: ["014760ADC96BE3CC", "5D7F00BE20F218E8"]
 		},
 		{
-			id: "A351D2D9B2ACC361"
+			id: "2351D2D9B2ACC361"
 			title: "Shield Wall"
 			description: ["Block with a raised shield at the right moment and the enemy staggers. Shields are a build of their own: Guardian and Paladin nodes love them."]
 			icon: "minecraft:shield"
@@ -673,7 +673,7 @@
 			]
 			rewards: [
 					{
-						id: "F2A9591BBA22C7EC"
+						id: "72A9591BBA22C7EC"
 						type: "xp"
 						xp: 30
 					}
@@ -682,7 +682,7 @@
 			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
-			id: "842E1ECAF1F8EFFF"
+			id: "042E1ECAF1F8EFFF"
 			title: "From a Distance"
 			description: ["Bows reward patience: draw speed, arrow damage and crit chance all scale in the Ranger branch."]
 			icon: "minecraft:bow"
@@ -707,10 +707,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["92AE6D78D04C3825"]
+			dependencies: ["12AE6D78D04C3825"]
 		},
 		{
-			id: "EA4BB1D5D4A01882"
+			id: "6A4BB1D5D4A01882"
 			title: "What the Ember Wants"
 			description: ["The Wroughtnaut's chamber holds a tablet in a language that predates the Crown. You can read it, which is odd: Seven Wardens bound seven realms to the Crown, and the realms are waking.", "Westward is a forest where it is always dusk. The tablet calls it the Root Ward. The Ember in your palm burns hot at the name."]
 			icon: "minecraft:blaze_powder"
@@ -720,24 +720,24 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "A7B14AF7B6B7D274"
+						id: "27B14AF7B6B7D274"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "B56D6123ED2DEE69"
+						id: "356D6123ED2DEE69"
 						type: "item"
 						item: "aldreth:ember_shard"
 						count: 3
 					},
 					{
-						id: "D9FEFE8F5A2C668A"
+						id: "59FEFE8F5A2C668A"
 						type: "xp"
 						xp: 150
 					},
 					{
-						id: "86DB705759084AB3"
+						id: "06DB705759084AB3"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true

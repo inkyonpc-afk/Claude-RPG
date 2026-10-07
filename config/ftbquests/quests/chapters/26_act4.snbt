@@ -32,19 +32,19 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "D54729C7D6D5B8DC"
+						id: "554729C7D6D5B8DC"
 						type: "dimension"
 						dim: "deeperdarker:otherside"
 					}
 			]
 			rewards: [
 					{
-						id: "A7ACC694A3E3ADE0"
+						id: "27ACC694A3E3ADE0"
 						type: "xp"
 						xp: 250
 					},
 					{
-						id: "E375B90BA0953990"
+						id: "6375B90BA0953990"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -70,14 +70,14 @@
 						structure: "minecraft:ancient_city"
 					},
 					{
-						id: "CE94EA2EC0B0C340"
+						id: "4E94EA2EC0B0C340"
 						type: "advancement"
 						advancement: "deeperdarker:main/find_ancient_city"
 					}
 			]
 			rewards: [
 					{
-						id: "CBE6833181F01553"
+						id: "4BE6833181F01553"
 						type: "xp"
 						xp: 200
 					}
@@ -86,7 +86,7 @@
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
-			id: "891698CC8BDEBBEE"
+			id: "091698CC8BDEBBEE"
 			title: "Reinforced Echo"
 			description: ["The shard is the key to the rest of the Otherside's deeper secrets. Take it from the deepest vault."]
 			icon: "deeperdarker:reinforced_echo_shard"
@@ -105,7 +105,7 @@
 			]
 			rewards: [
 					{
-						id: "8E0648D439C4BE19"
+						id: "0E0648D439C4BE19"
 						type: "xp"
 						xp: 150
 					}
@@ -129,19 +129,19 @@
 						value: 1
 					},
 					{
-						id: "A3003D1B0F7E00AC"
+						id: "23003D1B0F7E00AC"
 						type: "advancement"
 						advancement: "deeperdarker:main/kill_warden"
 					}
 			]
 			rewards: [
 					{
-						id: "ECAB98534BD63BF2"
+						id: "6CAB98534BD63BF2"
 						type: "xp"
 						xp: 900
 					},
 					{
-						id: "EF5E96F92DFF44A7"
+						id: "6F5E96F92DFF44A7"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -149,7 +149,7 @@
 						title: "2 skill points"
 					},
 					{
-						id: "B2BF2F0239B06DAB"
+						id: "32BF2F0239B06DAB"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -157,7 +157,7 @@
 						title: "Warden spoils"
 					}
 			]
-			dependencies: ["891698CC8BDEBBEE"]
+			dependencies: ["091698CC8BDEBBEE"]
 		},
 		{
 			id: "7F2213975A0D7908"
@@ -196,7 +196,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "C18F6AE2AA4C42F3"
+						id: "418F6AE2AA4C42F3"
 						type: "kill"
 						entity: "cataclysm:the_harbinger"
 						value: 1
@@ -214,7 +214,7 @@
 						xp: 800
 					},
 					{
-						id: "B6F63442D7EA5839"
+						id: "36F63442D7EA5839"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -225,7 +225,7 @@
 			dependencies: ["7F2213975A0D7908"]
 		},
 		{
-			id: "82CE0B41B3245D22"
+			id: "02CE0B41B3245D22"
 			title: "The Sunken City"
 			description: ["A drowned acropolis whose guardians are older than the sea. Bring water breathing and a spear."]
 			icon: "minecraft:prismarine_bricks"
@@ -251,7 +251,7 @@
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
-			id: "80148EC92218BA30"
+			id: "00148EC92218BA30"
 			title: "The Leviathan"
 			description: ["Jaws the size of a cottage, patience the size of an ocean. The Leviathan is an exam in positioning."]
 			icon: "cataclysm:tidal_claws"
@@ -274,12 +274,12 @@
 			]
 			rewards: [
 					{
-						id: "8E26D2C0D725DF6D"
+						id: "0E26D2C0D725DF6D"
 						type: "xp"
 						xp: 850
 					},
 					{
-						id: "B6DB2977FD6CF1F2"
+						id: "36DB2977FD6CF1F2"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -287,10 +287,10 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["82CE0B41B3245D22"]
+			dependencies: ["02CE0B41B3245D22"]
 		},
 		{
-			id: "EF5B47397C602A3C"
+			id: "6F5B47397C602A3C"
 			title: "Cursed Pyramid"
 			description: ["Wadjet, then the Ancient Remnant. The desert does not forgive tomb-robbers and neither does its master."]
 			icon: "minecraft:sandstone"
@@ -300,14 +300,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "87E8F3063F222BB7"
+						id: "07E8F3063F222BB7"
 						type: "structure"
 						structure: "cataclysm:cursed_pyramid"
 					}
 			]
 			rewards: [
 					{
-						id: "FA8DC8C62CB0B338"
+						id: "7A8DC8C62CB0B338"
 						type: "xp"
 						xp: 200
 					}
@@ -352,10 +352,10 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["EF5B47397C602A3C"]
+			dependencies: ["6F5B47397C602A3C"]
 		},
 		{
-			id: "8CE2B4BD52BE7817"
+			id: "0CE2B4BD52BE7817"
 			title: "A Dragon's Egg"
 			description: ["The old dragons are not gone; they sleep in the mountains. An egg is a long journey: it needs warmth, fire or ice, and attention for days."]
 			icon: "iceandfire:dragonegg_red"
@@ -365,14 +365,14 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "BA619A4EA90F891B"
+						id: "3A619A4EA90F891B"
 						type: "advancement"
 						advancement: "iceandfire:iceandfire/dragon_egg"
 					}
 			]
 			rewards: [
 					{
-						id: "C035BB8AABAF92F4"
+						id: "4035BB8AABAF92F4"
 						type: "xp"
 						xp: 200
 					}
@@ -380,7 +380,7 @@
 			dependencies: ["5A1A31BA4C8788F7"]
 		},
 		{
-			id: "9F951CD02E520322"
+			id: "1F951CD02E520322"
 			title: "A Horn for a Beast"
 			description: ["The horn of a fallen dragon commands its kin. Your hatchling listens, if you have earned it."]
 			icon: "iceandfire:dragon_horn"
@@ -390,19 +390,19 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BFF6572CAF7BFFDF"
+						id: "3FF6572CAF7BFFDF"
 						type: "advancement"
 						advancement: "iceandfire:iceandfire/dragon_horn"
 					}
 			]
 			rewards: [
 					{
-						id: "FDCAE4A8B25A017D"
+						id: "7DCAE4A8B25A017D"
 						type: "xp"
 						xp: 200
 					}
 			]
-			dependencies: ["8CE2B4BD52BE7817"]
+			dependencies: ["0CE2B4BD52BE7817"]
 		},
 		{
 			id: "20612A1F7AAD7AF4"
@@ -422,15 +422,15 @@
 			]
 			rewards: [
 					{
-						id: "BC4140CE075C99C0"
+						id: "3C4140CE075C99C0"
 						type: "xp"
 						xp: 200
 					}
 			]
-			dependencies: ["9F951CD02E520322"]
+			dependencies: ["1F951CD02E520322"]
 		},
 		{
-			id: "DEEE11AA3A15FE9B"
+			id: "5EEE11AA3A15FE9B"
 			title: "The Fire Dragon"
 			description: ["A mature fire dragon is the hardest thing in the open overworld. It remembers who burns it."]
 			icon: "iceandfire:dragon_skull_fire"
@@ -453,7 +453,7 @@
 						xp: 700
 					},
 					{
-						id: "94160B002E37654F"
+						id: "14160B002E37654F"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -464,7 +464,7 @@
 			dependencies: ["20612A1F7AAD7AF4"]
 		},
 		{
-			id: "E7D16397C2FCD98F"
+			id: "67D16397C2FCD98F"
 			title: "The Rider"
 			description: ["At stage three, a dragon will carry you. Flight on dragonback is the greatest freedom in this world, and the most carefully fenced: dungeon roofs, boss arenas and the Wardens' cities refuse it."]
 			icon: "iceandfire:dragonsteel_fire_ingot"
@@ -481,12 +481,12 @@
 			]
 			rewards: [
 					{
-						id: "F68B8B5ACF57B2D9"
+						id: "768B8B5ACF57B2D9"
 						type: "xp"
 						xp: 300
 					},
 					{
-						id: "90FFF62303F4F1A6"
+						id: "10FFF62303F4F1A6"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -494,10 +494,10 @@
 						title: "2 skill points"
 					}
 			]
-			dependencies: ["DEEE11AA3A15FE9B"]
+			dependencies: ["5EEE11AA3A15FE9B"]
 		},
 		{
-			id: "CAC61584192C7821"
+			id: "4AC61584192C7821"
 			title: "Wyrmroost Wings"
 			description: ["Drakes, wyverns, and stranger things: Wyrmroost's creatures are smaller than dragons and mean in different ways. Find an egg and raise something unexpected."]
 			icon: "wyrmroost:dragon_egg"
@@ -507,7 +507,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "993B9841C6C2299F"
+						id: "193B9841C6C2299F"
 						type: "item"
 						item: "wyrmroost:dragon_egg"
 						count: 1
@@ -522,7 +522,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["E7D16397C2FCD98F"]
+			dependencies: ["67D16397C2FCD98F"]
 		},
 		{
 			id: "4F20F556669471E0"
@@ -535,19 +535,19 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "822AF37570FB284B"
+						id: "022AF37570FB284B"
 						type: "structure"
 						structure: "dungeons_arise:keep_kayra"
 					}
 			]
 			rewards: [
 					{
-						id: "D24C5A4C82F726B3"
+						id: "524C5A4C82F726B3"
 						type: "xp"
 						xp: 350
 					},
 					{
-						id: "ADBFB7A30BEA5FE9"
+						id: "2DBFB7A30BEA5FE9"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -559,7 +559,7 @@
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
-			id: "CAEE5C1914E99283"
+			id: "4AEE5C1914E99283"
 			title: "Shiraz Palace"
 			description: ["A jewel-box of a palace with a bad habit of ambushes."]
 			icon: "minecraft:gold_block"
@@ -593,7 +593,7 @@
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
-			id: "B74CD219CDC2ACA1"
+			id: "374CD219CDC2ACA1"
 			title: "The Heavenly Challenger"
 			description: ["The sky has its own challengers. Three trials, three towers; each of them taller than the last."]
 			icon: "minecraft:white_glazed_terracotta"
@@ -615,7 +615,7 @@
 						xp: 300
 					},
 					{
-						id: "CC4FFAE6277B2A78"
+						id: "4C4FFAE6277B2A78"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -624,10 +624,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["B92E969CECF67FAA"]
+			dependencies: ["392E969CECF67FAA"]
 		},
 		{
-			id: "ACE54B2273CF4C49"
+			id: "2CE54B2273CF4C49"
 			title: "The Black Citadel"
 			description: ["A fortress of obsidian and old oaths, big enough to get lost in."]
 			icon: "minecraft:crying_obsidian"
@@ -637,14 +637,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BBE6B35463954FA6"
+						id: "3BE6B35463954FA6"
 						type: "structure"
 						structure: "dungeons_enhanced:black_citadel"
 					}
 			]
 			rewards: [
 					{
-						id: "DE4D6CAFE18D9A89"
+						id: "5E4D6CAFE18D9A89"
 						type: "xp"
 						xp: 350
 					},
@@ -661,7 +661,7 @@
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
-			id: "D82DEBC45EFA3510"
+			id: "582DEBC45EFA3510"
 			title: "The Keeping Castle"
 			description: ["Prodigium's great castle: a fortress with a story, a gauntlet, and a ledger of everyone who failed here."]
 			icon: "minecraft:chain"
@@ -671,7 +671,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D260C0204D0C83CC"
+						id: "5260C0204D0C83CC"
 						type: "structure"
 						structure: "prodigium_dungeons:keeping_castle"
 					}
@@ -683,7 +683,7 @@
 						xp: 350
 					},
 					{
-						id: "B566AAEC8DF5481F"
+						id: "3566AAEC8DF5481F"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -695,7 +695,7 @@
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
-			id: "9AB5CD6437606078"
+			id: "1AB5CD6437606078"
 			title: "The Apostle"
 			description: ["A priest who forgot what he served. Goety's tallest boss. The tools he drops reshape any necromancer."]
 			icon: "goety:nameless_staff"
@@ -705,7 +705,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "ACD52531976CB390"
+						id: "2CD52531976CB390"
 						type: "kill"
 						entity: "goety:apostle"
 						value: 1
@@ -713,12 +713,12 @@
 			]
 			rewards: [
 					{
-						id: "D1E8DDA314FFA2F1"
+						id: "51E8DDA314FFA2F1"
 						type: "xp"
 						xp: 900
 					},
 					{
-						id: "808582E0ACC85D2D"
+						id: "008582E0ACC85D2D"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -726,7 +726,7 @@
 						title: "1 skill point"
 					},
 					{
-						id: "9CA236E2CDD32A19"
+						id: "1CA236E2CDD32A19"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -737,7 +737,7 @@
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
-			id: "BB802552AFEF4EB0"
+			id: "3B802552AFEF4EB0"
 			title: "Catacombs"
 			description: ["Under a collapsed keep: an entire catacomb of cultists, wraiths and one very patient king."]
 			icon: "irons_spellbooks:cultist_helmet"
@@ -747,14 +747,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "922982D4782228BC"
+						id: "122982D4782228BC"
 						type: "advancement"
 						advancement: "irons_spellbooks:irons_spellbooks/enter_catacombs"
 					}
 			]
 			rewards: [
 					{
-						id: "C48A735020BDDADD"
+						id: "448A735020BDDADD"
 						type: "xp"
 						xp: 250
 					}
@@ -762,7 +762,7 @@
 			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
-			id: "81B8164470EB16F4"
+			id: "01B8164470EB16F4"
 			title: "The Dead King"
 			description: ["Hordes, then the king. Bring a tank, a healer or both. His spellbook is the first truly legendary casting tool."]
 			icon: "irons_spellbooks:legendary_spell_book"
@@ -772,7 +772,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "A8233BB2F5B203EF"
+						id: "28233BB2F5B203EF"
 						type: "kill"
 						entity: "irons_spellbooks:dead_king"
 						value: 1
@@ -785,7 +785,7 @@
 						xp: 1000
 					},
 					{
-						id: "9793895A426F6D79"
+						id: "1793895A426F6D79"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -801,7 +801,7 @@
 						title: "Dead King spoils"
 					}
 			]
-			dependencies: ["BB802552AFEF4EB0"]
+			dependencies: ["3B802552AFEF4EB0"]
 		},
 		{
 			id: "3C6671F6C8710588"
@@ -814,7 +814,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9837E735A0AEF168"
+						id: "1837E735A0AEF168"
 						type: "advancement"
 						advancement: "apotheosis:affix/mythic"
 					}
@@ -826,7 +826,7 @@
 						xp: 300
 					},
 					{
-						id: "C8C1A339588E5B10"
+						id: "48C1A339588E5B10"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -848,23 +848,23 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "8B92809E836B153E"
+						id: "0B92809E836B153E"
 						type: "advancement"
 						advancement: "apotheosis:enchanting/60ench"
 					}
 			]
 			rewards: [
 					{
-						id: "DFF96F83FDAC9225"
+						id: "5FF96F83FDAC9225"
 						type: "xp"
 						xp: 300
 					}
 			]
 			optional: true
-			dependencies: ["8D53F8706A926416"]
+			dependencies: ["0D53F8706A926416"]
 		},
 		{
-			id: "AF48C415BEB616F7"
+			id: "2F48C415BEB616F7"
 			title: "Seven Roads, Three Open"
 			description: ["The Warden of Echoes is down, and the Harbinger. The factory's machines speak of one more place: not a realm but an ending, hung in a darkness above everything.", "Four Wardens have fallen. Three realms remain. The Ember has grown large enough to see by."]
 			icon: "minecraft:crying_obsidian"
@@ -874,7 +874,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "FFD0F7AF5ABD459E"
+						id: "7FD0F7AF5ABD459E"
 						type: "checkmark"
 					}
 			]
@@ -891,7 +891,7 @@
 						xp: 500
 					},
 					{
-						id: "8F3BBBF679E2059A"
+						id: "0F3BBBF679E2059A"
 						type: "command"
 						command: "skilltree points add {p} 3"
 						elevate: true
@@ -907,7 +907,7 @@
 						title: "Act IV cache"
 					}
 			]
-			dependencies: ["76667232CC5DDA8C", "785A9E0B92CE8FAD", "80148EC92218BA30", "40AAF5A140835843"]
+			dependencies: ["76667232CC5DDA8C", "785A9E0B92CE8FAD", "00148EC92218BA30", "40AAF5A140835843"]
 		}
 	]
 }

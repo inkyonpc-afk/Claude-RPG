@@ -1,11 +1,11 @@
 {
-	id: "88FE8A20E301EE4A"
+	id: "08FE8A20E301EE4A"
 	filename: "15_mounts"
 	title: "The Stable: Mounts of Aldreth"
 	subtitle: "A mount is a partner: they have strengths, they have limits, and you will find a use for every one."
 	icon: "minecraft:saddle"
 	order_index: 15
-	group: "BA29B6D65C079795"
+	group: "3A29B6D65C079795"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "F1FE383732AFB0A2"
+			id: "71FE383732AFB0A2"
 			title: "A Place in the Saddle"
 			description: ["Every mount has a niche: a horse for roads, a chocobo for forests, a tusklin for hills, a ship for rivers, a hippogryph for mountains, a dragon for everything the others cannot reach.", "Mounts can be tamed, equipped and named. Some breed; some are found as eggs; some are earned from bosses. Do not expect every mount to feel the same."]
 			icon: "minecraft:saddle"
@@ -38,14 +38,14 @@
 			]
 			rewards: [
 					{
-						id: "9AC0CF0067823855"
+						id: "1AC0CF0067823855"
 						type: "xp"
 						xp: 20
 					}
 			]
 		},
 		{
-			id: "BD082F40F7F7A2F5"
+			id: "3D082F40F7F7A2F5"
 			title: "A Horse"
 			description: ["The default mount. Cheap, fast enough, carries a chest, wears armor. Tame one, saddle it, learn the controls."]
 			icon: "minecraft:saddle"
@@ -55,7 +55,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F5870DCC764D338D"
+						id: "75870DCC764D338D"
 						type: "advancement"
 						advancement: "minecraft:husbandry/tame_an_animal"
 					},
@@ -74,10 +74,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["F1FE383732AFB0A2"]
+			dependencies: ["71FE383732AFB0A2"]
 		},
 		{
-			id: "DED1B8541EBBDD2B"
+			id: "5ED1B8541EBBDD2B"
 			title: "Horse Armor"
 			description: ["A little protection turns a horse into a real war mount."]
 			icon: "minecraft:diamond_horse_armor"
@@ -96,15 +96,15 @@
 			]
 			rewards: [
 					{
-						id: "9BA59589559B3FC5"
+						id: "1BA59589559B3FC5"
 						type: "xp"
 						xp: 40
 					}
 			]
-			dependencies: ["BD082F40F7F7A2F5"]
+			dependencies: ["3D082F40F7F7A2F5"]
 		},
 		{
-			id: "E4AF405828E17E98"
+			id: "64AF405828E17E98"
 			title: "Pack Animals"
 			description: ["Donkeys and mules carry chests. Not fast, but they never complain."]
 			icon: "minecraft:chest"
@@ -114,7 +114,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "C9FC05B5B7E36858"
+						id: "49FC05B5B7E36858"
 						type: "item"
 						item: "minecraft:chest"
 						count: 4
@@ -129,7 +129,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["BD082F40F7F7A2F5"]
+			dependencies: ["3D082F40F7F7A2F5"]
 		},
 		{
 			id: "48796BB59FCBA3A8"
@@ -142,7 +142,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "811EE178762803B7"
+						id: "011EE178762803B7"
 						type: "item"
 						item: "minecraft:lead"
 						count: 1
@@ -151,13 +151,13 @@
 			]
 			rewards: [
 					{
-						id: "F11E27F7A6D46033"
+						id: "711E27F7A6D46033"
 						type: "xp"
 						xp: 25
 					}
 			]
 			optional: true
-			dependencies: ["BD082F40F7F7A2F5"]
+			dependencies: ["3D082F40F7F7A2F5"]
 		},
 		{
 			id: "7C2CE05434020376"
@@ -170,7 +170,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9E40AABF7FD4603F"
+						id: "1E40AABF7FD4603F"
 						type: "item"
 						item: "chocobos:chocobo_egg"
 						count: 1
@@ -179,15 +179,15 @@
 			]
 			rewards: [
 					{
-						id: "9110A7EB6999C87D"
+						id: "1110A7EB6999C87D"
 						type: "xp"
 						xp: 80
 					}
 			]
-			dependencies: ["BD082F40F7F7A2F5"]
+			dependencies: ["3D082F40F7F7A2F5"]
 		},
 		{
-			id: "E36568C25D84FF35"
+			id: "636568C25D84FF35"
 			title: "Chocobo Barding"
 			description: ["Armor for the bird who cannot afford to be hit."]
 			icon: "chocobos:iron_chocobo_armor"
@@ -225,7 +225,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A309B02BE5CE306D"
+						id: "2309B02BE5CE306D"
 						type: "item"
 						item: "alexsmobs:vine_lasso"
 						count: 1
@@ -253,7 +253,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "EFA8703D1505EFF1"
+						id: "6FA8703D1505EFF1"
 						type: "item"
 						item: "blue_skies:camel_saddle"
 						count: 1
@@ -271,7 +271,7 @@
 			dependencies: ["7C2CE05434020376"]
 		},
 		{
-			id: "8965CB7CAD1C9618"
+			id: "0965CB7CAD1C9618"
 			title: "Raptor Rider"
 			description: ["Vallumraptors are the fastest land mount in the deep caves; they are small, mean and loyal."]
 			icon: "alexscaves:heavy_bone"
@@ -281,7 +281,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "86DB522474B79254"
+						id: "06DB522474B79254"
 						type: "kill"
 						entity: "alexscaves:vallumraptor"
 						value: 1
@@ -298,7 +298,7 @@
 			dependencies: ["7C2CE05434020376"]
 		},
 		{
-			id: "8566160CFA40DB0A"
+			id: "0566160CFA40DB0A"
 			title: "A T. Rex"
 			description: ["Unusual Prehistory's big predator: rideable, huge and not tame by default. For people who like to be noticed."]
 			icon: "minecraft:bone_block"
@@ -316,12 +316,12 @@
 			]
 			rewards: [
 					{
-						id: "A03DA7AECFE1D26E"
+						id: "203DA7AECFE1D26E"
 						type: "xp"
 						xp: 300
 					},
 					{
-						id: "BE8F36BA12EDF9D0"
+						id: "3E8F36BA12EDF9D0"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -330,10 +330,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["8965CB7CAD1C9618"]
+			dependencies: ["0965CB7CAD1C9618"]
 		},
 		{
-			id: "A64E46FCFBEEB84D"
+			id: "264E46FCFBEEB84D"
 			title: "The Felsteed"
 			description: ["A night-black horse from a darker world: faster than any horse, harder to keep."]
 			icon: "minecraft:soul_lantern"
@@ -343,7 +343,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "ACE389283FF6FD54"
+						id: "2CE389283FF6FD54"
 						type: "kill"
 						entity: "born_in_chaos_v1:lord_pumpkinhead"
 						value: 1
@@ -351,12 +351,12 @@
 			]
 			rewards: [
 					{
-						id: "8C7A04F10DE0BADE"
+						id: "0C7A04F10DE0BADE"
 						type: "xp"
 						xp: 250
 					},
 					{
-						id: "8E5342FF1DA0FE05"
+						id: "0E5342FF1DA0FE05"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -365,7 +365,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["BD082F40F7F7A2F5"]
+			dependencies: ["3D082F40F7F7A2F5"]
 		},
 		{
 			id: "0E0D8B2603A3B9E7"
@@ -378,7 +378,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "EFA1566C23F2CA04"
+						id: "6FA1566C23F2CA04"
 						type: "item"
 						item: "alexsmobs:straddle_saddle"
 						count: 1
@@ -393,7 +393,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["BD082F40F7F7A2F5"]
+			dependencies: ["3D082F40F7F7A2F5"]
 		},
 		{
 			id: "304172DFF712AAAB"
@@ -420,10 +420,10 @@
 						xp: 60
 					}
 			]
-			dependencies: ["BD082F40F7F7A2F5"]
+			dependencies: ["3D082F40F7F7A2F5"]
 		},
 		{
-			id: "93461F762C014C8E"
+			id: "13461F762C014C8E"
 			title: "A Galley"
 			description: ["A sea-going ship with oars and sails. Faster than a cog, more fragile."]
 			icon: "smallships:acacia_galley"
@@ -433,7 +433,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B53A5F19636846EF"
+						id: "353A5F19636846EF"
 						type: "item"
 						item: "smallships:acacia_galley"
 						count: 1
@@ -442,7 +442,7 @@
 			]
 			rewards: [
 					{
-						id: "9078497136C25A83"
+						id: "1078497136C25A83"
 						type: "xp"
 						xp: 100
 					}
@@ -461,7 +461,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BFBAE521087F3E09"
+						id: "3FBAE521087F3E09"
 						type: "item"
 						item: "minecraft:warped_fungus_on_a_stick"
 						count: 1
@@ -476,10 +476,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["F1FE383732AFB0A2"]
+			dependencies: ["71FE383732AFB0A2"]
 		},
 		{
-			id: "83A82189061D0598"
+			id: "03A82189061D0598"
 			title: "A Stable"
 			description: ["A good stable keeps mounts safe. Build one with fences, a trough and a roof."]
 			icon: "minecraft:hay_block"
@@ -504,7 +504,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["BD082F40F7F7A2F5"]
+			dependencies: ["3D082F40F7F7A2F5"]
 		},
 		{
 			id: "431BF0A7EDE30B3B"
@@ -517,7 +517,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "C15FBB4040B410E2"
+						id: "415FBB4040B410E2"
 						type: "checkmark"
 					}
 			]
@@ -528,7 +528,7 @@
 						xp: 300
 					},
 					{
-						id: "C417FD5A64FAC996"
+						id: "4417FD5A64FAC996"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -536,7 +536,7 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["7C2CE05434020376", "304172DFF712AAAB", "DED1B8541EBBDD2B"]
+			dependencies: ["7C2CE05434020376", "304172DFF712AAAB", "5ED1B8541EBBDD2B"]
 		}
 	]
 }

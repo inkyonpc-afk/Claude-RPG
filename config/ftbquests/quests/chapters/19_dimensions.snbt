@@ -1,11 +1,11 @@
 {
-	id: "F412B80E160B6973"
+	id: "7412B80E160B6973"
 	filename: "19_dimensions"
 	title: "The Seven Realms and More"
 	subtitle: "Seven realms bound to a Crown; a few more the Crown never knew."
 	icon: "minecraft:ender_pearl"
 	order_index: 19
-	group: "BA29B6D65C079795"
+	group: "3A29B6D65C079795"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "FE4F3514D6AF0829"
+			id: "7E4F3514D6AF0829"
 			title: "A Map of Doors"
 			description: ["Aldreth has seven Warden-realms: Root (Twilight Forest), Stone (Undergarden), Sky (Aether), Dream (Blue Skies), Flame (Nether), Echo (Otherside) and the End.", "The order matters: each realm unlocks the materials, bosses and mounts of the next. You can visit early, but you will not come back unchanged."]
 			icon: "minecraft:filled_map"
@@ -38,14 +38,14 @@
 			]
 			rewards: [
 					{
-						id: "E569C8402CE4CE7A"
+						id: "6569C8402CE4CE7A"
 						type: "xp"
 						xp: 20
 					}
 			]
 		},
 		{
-			id: "A9276D8C43CEC184"
+			id: "29276D8C43CEC184"
 			title: "Ember Shards"
 			description: ["Every Warden-realm is sealed. A Sigil opens one, and every Sigil is crafted around Ember Shards: splinters of the Crown that burn in your palm.", "Shards come from the story's turning points (the end of each Act) and, now and then, from a fallen boss. Spend them in order: the realms open in the order the Wardens fell."]
 			icon: "aldreth:ember_shard"
@@ -55,7 +55,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "EC72A55AA985994B"
+						id: "6C72A55AA985994B"
 						type: "item"
 						item: "aldreth:ember_shard"
 						count: 1
@@ -69,10 +69,10 @@
 						xp: 30
 					}
 			]
-			dependencies: ["FE4F3514D6AF0829"]
+			dependencies: ["7E4F3514D6AF0829"]
 		},
 		{
-			id: "DC96EA7EED22922A"
+			id: "5C96EA7EED22922A"
 			title: "Sigil of Flame"
 			description: ["Unseals the Flame Ward: the Nether. Craft it (shapeless) from 1 Ember Shard and the realm's offerings; crafting it unlocks the portal for you."]
 			icon: "aldreth:sigil_of_flame"
@@ -82,7 +82,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "FF81C702457CA095"
+						id: "7F81C702457CA095"
 						type: "item"
 						item: "aldreth:sigil_of_flame"
 						count: 1
@@ -96,7 +96,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A9276D8C43CEC184"]
+			dependencies: ["29276D8C43CEC184"]
 		},
 		{
 			id: "082F0BEFA662720E"
@@ -123,10 +123,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A9276D8C43CEC184"]
+			dependencies: ["29276D8C43CEC184"]
 		},
 		{
-			id: "9204959A6E914CD5"
+			id: "1204959A6E914CD5"
 			title: "Sigil of Stone"
 			description: ["Unseals the Stone Ward: the Undergarden. Craft it (shapeless) from 1 Ember Shard and the realm's offerings; crafting it unlocks the portal for you."]
 			icon: "aldreth:sigil_of_stone"
@@ -136,7 +136,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "C4378813806DD24D"
+						id: "44378813806DD24D"
 						type: "item"
 						item: "aldreth:sigil_of_stone"
 						count: 1
@@ -150,7 +150,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A9276D8C43CEC184"]
+			dependencies: ["29276D8C43CEC184"]
 		},
 		{
 			id: "6A8B7C2EED064793"
@@ -163,7 +163,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "FC4E10F5556DA00E"
+						id: "7C4E10F5556DA00E"
 						type: "item"
 						item: "aldreth:sigil_of_sky"
 						count: 1
@@ -177,10 +177,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A9276D8C43CEC184"]
+			dependencies: ["29276D8C43CEC184"]
 		},
 		{
-			id: "B0196353A99F269C"
+			id: "30196353A99F269C"
 			title: "Sigil of Dream"
 			description: ["Unseals the Dream Ward: Everbright and Everdawn. Craft it (shapeless) from 2 Ember Shards and the realm's offerings; crafting it unlocks the portal for you."]
 			icon: "aldreth:sigil_of_dream"
@@ -190,7 +190,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B5EAFB1847557FE8"
+						id: "35EAFB1847557FE8"
 						type: "item"
 						item: "aldreth:sigil_of_dream"
 						count: 1
@@ -204,7 +204,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A9276D8C43CEC184"]
+			dependencies: ["29276D8C43CEC184"]
 		},
 		{
 			id: "3AEA766F0318F2A1"
@@ -217,7 +217,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B645C19910A9BFAA"
+						id: "3645C19910A9BFAA"
 						type: "item"
 						item: "aldreth:sigil_of_echo"
 						count: 1
@@ -231,7 +231,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A9276D8C43CEC184"]
+			dependencies: ["29276D8C43CEC184"]
 		},
 		{
 			id: "70B547DBD8AEB55E"
@@ -244,7 +244,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "88E1358605E6FBB9"
+						id: "08E1358605E6FBB9"
 						type: "item"
 						item: "aldreth:sigil_of_the_end"
 						count: 1
@@ -258,7 +258,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A9276D8C43CEC184"]
+			dependencies: ["29276D8C43CEC184"]
 		},
 		{
 			id: "2BF4B5B43CB0CB3D"
@@ -283,7 +283,7 @@
 						xp: 80
 					}
 			]
-			dependencies: ["DC96EA7EED22922A", "FE4F3514D6AF0829"]
+			dependencies: ["5C96EA7EED22922A", "7E4F3514D6AF0829"]
 		},
 		{
 			id: "0B822C3F5BDC798F"
@@ -308,10 +308,10 @@
 						xp: 120
 					}
 			]
-			dependencies: ["082F0BEFA662720E", "FE4F3514D6AF0829"]
+			dependencies: ["082F0BEFA662720E", "7E4F3514D6AF0829"]
 		},
 		{
-			id: "90CA8371BE5D19D9"
+			id: "10CA8371BE5D19D9"
 			title: "Stone"
 			description: ["A cold, humid second world under the first."]
 			icon: "minecraft:deepslate"
@@ -328,15 +328,15 @@
 			]
 			rewards: [
 					{
-						id: "E42308B5AF147B38"
+						id: "642308B5AF147B38"
 						type: "xp"
 						xp: 120
 					}
 			]
-			dependencies: ["9204959A6E914CD5", "0B822C3F5BDC798F"]
+			dependencies: ["1204959A6E914CD5", "0B822C3F5BDC798F"]
 		},
 		{
-			id: "E5ACEA89B759A938"
+			id: "65ACEA89B759A938"
 			title: "Sky"
 			description: ["A country on clouds."]
 			icon: "aether:aether_portal_frame"
@@ -346,14 +346,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "ED6267C3CB9BA09A"
+						id: "6D6267C3CB9BA09A"
 						type: "dimension"
 						dim: "aether:the_aether"
 					}
 			]
 			rewards: [
 					{
-						id: "BCF2E3B8D0F03C4D"
+						id: "3CF2E3B8D0F03C4D"
 						type: "xp"
 						xp: 150
 					}
@@ -361,7 +361,7 @@
 			dependencies: ["6A8B7C2EED064793", "0B822C3F5BDC798F"]
 		},
 		{
-			id: "C2A0DB22B19B92F5"
+			id: "42A0DB22B19B92F5"
 			title: "Dream, Bright"
 			description: ["A world of noon."]
 			icon: "blue_skies:zeal_lighter"
@@ -383,7 +383,7 @@
 						xp: 150
 					}
 			]
-			dependencies: ["B0196353A99F269C", "E5ACEA89B759A938"]
+			dependencies: ["30196353A99F269C", "65ACEA89B759A938"]
 		},
 		{
 			id: "668C743AB520F13D"
@@ -396,7 +396,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "80900924D4EEE774"
+						id: "00900924D4EEE774"
 						type: "dimension"
 						dim: "blue_skies:everdawn"
 					}
@@ -408,10 +408,10 @@
 						xp: 150
 					}
 			]
-			dependencies: ["C2A0DB22B19B92F5"]
+			dependencies: ["42A0DB22B19B92F5"]
 		},
 		{
-			id: "BB6E52E34E7ED7D8"
+			id: "3B6E52E34E7ED7D8"
 			title: "Echo"
 			description: ["A mirror of the world, drained of colour and full of listening."]
 			icon: "deeperdarker:soul_crystal"
@@ -433,10 +433,10 @@
 						xp: 200
 					}
 			]
-			dependencies: ["3AEA766F0318F2A1", "E5ACEA89B759A938", "90CA8371BE5D19D9"]
+			dependencies: ["3AEA766F0318F2A1", "65ACEA89B759A938", "10CA8371BE5D19D9"]
 		},
 		{
-			id: "89F6B8DFB19D7329"
+			id: "09F6B8DFB19D7329"
 			title: "The End"
 			description: ["A final island, a final dragon."]
 			icon: "minecraft:end_stone"
@@ -458,10 +458,10 @@
 						xp: 250
 					}
 			]
-			dependencies: ["70B547DBD8AEB55E", "BB6E52E34E7ED7D8"]
+			dependencies: ["70B547DBD8AEB55E", "3B6E52E34E7ED7D8"]
 		},
 		{
-			id: "FF01FAFE528FCD78"
+			id: "7F01FAFE528FCD78"
 			title: "A Pocket World"
 			description: ["Iron's Spells' pocket dimension: a private room tucked into the Veil. Few people find the door."]
 			icon: "irons_spellbooks:arcane_essence"
@@ -471,7 +471,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "B5ADCCE84CD8B569"
+						id: "35ADCCE84CD8B569"
 						type: "dimension"
 						dim: "irons_spellbooks:pocket_dimension"
 					}
@@ -484,7 +484,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["FE4F3514D6AF0829"]
+			dependencies: ["7E4F3514D6AF0829"]
 		},
 		{
 			id: "77FB2B68A260D3F4"
@@ -504,16 +504,16 @@
 			]
 			rewards: [
 					{
-						id: "D37A223F8062966B"
+						id: "537A223F8062966B"
 						type: "xp"
 						xp: 120
 					}
 			]
 			optional: true
-			dependencies: ["FE4F3514D6AF0829"]
+			dependencies: ["7E4F3514D6AF0829"]
 		},
 		{
-			id: "92B4FCC06F53EA74"
+			id: "12B4FCC06F53EA74"
 			title: "Gate Pearls"
 			description: ["A gate pearl opens a wave arena in the open world. Postgame challenge, with prizes."]
 			icon: "gateways:gate_pearl"
@@ -523,7 +523,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "AE9BB4278CDB058B"
+						id: "2E9BB4278CDB058B"
 						type: "item"
 						item: "gateways:gate_pearl"
 						count: 1
@@ -532,16 +532,16 @@
 			]
 			rewards: [
 					{
-						id: "CD8C46B8EE445BD6"
+						id: "4D8C46B8EE445BD6"
 						type: "xp"
 						xp: 150
 					}
 			]
 			optional: true
-			dependencies: ["89F6B8DFB19D7329"]
+			dependencies: ["09F6B8DFB19D7329"]
 		},
 		{
-			id: "B5C32C147DB7B9EF"
+			id: "35C32C147DB7B9EF"
 			title: "Realm-Walker"
 			description: ["Visit every Warden realm. The seven doors are open to you."]
 			icon: "minecraft:nether_star"
@@ -551,7 +551,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "93413FB942AAD0E5"
+						id: "13413FB942AAD0E5"
 						type: "checkmark"
 					}
 			]
@@ -570,7 +570,7 @@
 						title: "2 skill points"
 					},
 					{
-						id: "8C2D44B269E940F8"
+						id: "0C2D44B269E940F8"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -578,7 +578,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["2BF4B5B43CB0CB3D", "0B822C3F5BDC798F", "90CA8371BE5D19D9", "E5ACEA89B759A938", "C2A0DB22B19B92F5", "668C743AB520F13D", "BB6E52E34E7ED7D8", "89F6B8DFB19D7329"]
+			dependencies: ["2BF4B5B43CB0CB3D", "0B822C3F5BDC798F", "10CA8371BE5D19D9", "65ACEA89B759A938", "42A0DB22B19B92F5", "668C743AB520F13D", "3B6E52E34E7ED7D8", "09F6B8DFB19D7329"]
 		}
 	]
 }

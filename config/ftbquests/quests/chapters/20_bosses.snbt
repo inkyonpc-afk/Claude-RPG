@@ -1,11 +1,11 @@
 {
-	id: "F8F53CC5173C0FB2"
+	id: "78F53CC5173C0FB2"
 	filename: "20_bosses"
 	title: "The Compendium of Bosses"
 	subtitle: "Fifty-odd bosses. Each drops something nobody else does."
 	icon: "minecraft:wither_skeleton_skull"
 	order_index: 20
-	group: "BA29B6D65C079795"
+	group: "3A29B6D65C079795"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "AEA574B7C6ED1F66"
+			id: "2EA574B7C6ED1F66"
 			title: "A Record of Kills"
 			description: ["Bosses drop unique weapons, armor, spells, relics, trophies and crafting materials. They never drop generic diamonds.", "Defeat each once; defeat them again with a different build."]
 			icon: "minecraft:writable_book"
@@ -32,7 +32,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "ADF1AC6193B98F98"
+						id: "2DF1AC6193B98F98"
 						type: "checkmark"
 					}
 			]
@@ -45,7 +45,7 @@
 			]
 		},
 		{
-			id: "B8E08C6534E82516"
+			id: "38E08C6534E82516"
 			title: "Ferrous Wroughtnaut"
 			description: ["Defeat Ferrous Wroughtnaut. Its drops are unique to it; no other source will give you them."]
 			icon: "minecraft:iron_block"
@@ -63,7 +63,7 @@
 			]
 			rewards: [
 					{
-						id: "EBC7C9C83424ECB4"
+						id: "6BC7C9C83424ECB4"
 						type: "xp"
 						xp: 250
 					},
@@ -77,7 +77,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "0A3C1893B42236C5"
@@ -98,7 +98,7 @@
 			]
 			rewards: [
 					{
-						id: "C087465A9824B49C"
+						id: "4087465A9824B49C"
 						type: "xp"
 						xp: 200
 					},
@@ -112,7 +112,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "06A02EF3CB8703D1"
@@ -125,7 +125,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B764730409B561CB"
+						id: "3764730409B561CB"
 						type: "kill"
 						entity: "twilightforest:lich"
 						value: 1
@@ -147,10 +147,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "80FBC1F720F96721"
+			id: "00FBC1F720F96721"
 			title: "The Minoshroom"
 			description: ["Defeat The Minoshroom. Its drops are unique to it; no other source will give you them."]
 			icon: "twilightforest:minoshroom_trophy"
@@ -168,12 +168,12 @@
 			]
 			rewards: [
 					{
-						id: "85E88BEBC69F768C"
+						id: "05E88BEBC69F768C"
 						type: "xp"
 						xp: 220
 					},
 					{
-						id: "A74B1DBE4D17C99B"
+						id: "274B1DBE4D17C99B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
 						elevate: true
@@ -182,7 +182,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "3F436D517672AAED"
@@ -203,12 +203,12 @@
 			]
 			rewards: [
 					{
-						id: "CC6C18866B0BC665"
+						id: "4C6C18866B0BC665"
 						type: "xp"
 						xp: 350
 					},
 					{
-						id: "E4715850A1AABFBD"
+						id: "64715850A1AABFBD"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -217,7 +217,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "121CFC3D36356081"
@@ -252,7 +252,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "62AD3CB771EE5B88"
@@ -273,7 +273,7 @@
 			]
 			rewards: [
 					{
-						id: "D2B5FF7FC79E1F78"
+						id: "52B5FF7FC79E1F78"
 						type: "xp"
 						xp: 400
 					},
@@ -287,7 +287,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "52CC956124294072"
@@ -322,10 +322,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "C2CECEA6E8FBE8ED"
+			id: "42CECEA6E8FBE8ED"
 			title: "The Snow Queen"
 			description: ["Defeat The Snow Queen. Its drops are unique to it; no other source will give you them."]
 			icon: "minecraft:snow_block"
@@ -343,12 +343,12 @@
 			]
 			rewards: [
 					{
-						id: "803409C194DD6134"
+						id: "003409C194DD6134"
 						type: "xp"
 						xp: 350
 					},
 					{
-						id: "83F528624CC7DD87"
+						id: "03F528624CC7DD87"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -357,7 +357,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "5876F83C32796C1B"
@@ -370,7 +370,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "E707839830F9A28B"
+						id: "6707839830F9A28B"
 						type: "kill"
 						entity: "undergarden:forgotten_guardian"
 						value: 1
@@ -378,12 +378,12 @@
 			]
 			rewards: [
 					{
-						id: "90B4901A00AC3EAD"
+						id: "10B4901A00AC3EAD"
 						type: "xp"
 						xp: 350
 					},
 					{
-						id: "8D0DE0CEE3D2945A"
+						id: "0D0DE0CEE3D2945A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -392,7 +392,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "70793642B1887646"
@@ -405,7 +405,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "8C9576E016830755"
+						id: "0C9576E016830755"
 						type: "kill"
 						entity: "aether:slider"
 						value: 1
@@ -418,7 +418,7 @@
 						xp: 300
 					},
 					{
-						id: "821EF84803C3C4FE"
+						id: "021EF84803C3C4FE"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -427,10 +427,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "C5D404117CD3410A"
+			id: "45D404117CD3410A"
 			title: "Valkyrie Queen"
 			description: ["Defeat Valkyrie Queen. Its drops are unique to it; no other source will give you them."]
 			icon: "aether:valkyrie_lance"
@@ -440,7 +440,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F153E38ED5A7E050"
+						id: "7153E38ED5A7E050"
 						type: "kill"
 						entity: "aether:valkyrie_queen"
 						value: 1
@@ -462,7 +462,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "7E9979754E9CD742"
@@ -475,7 +475,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "E2A2470B22988C13"
+						id: "62A2470B22988C13"
 						type: "kill"
 						entity: "aether:sun_spirit"
 						value: 1
@@ -488,7 +488,7 @@
 						xp: 600
 					},
 					{
-						id: "AEEC0640BF0F1D5C"
+						id: "2EEC0640BF0F1D5C"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -497,7 +497,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "7812CDB859A1EC40"
@@ -510,7 +510,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A48DFCEB8646C877"
+						id: "248DFCEB8646C877"
 						type: "kill"
 						entity: "blue_skies:summoner"
 						value: 1
@@ -523,7 +523,7 @@
 						xp: 350
 					},
 					{
-						id: "AD84CBBDCAE24AC2"
+						id: "2D84CBBDCAE24AC2"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -532,7 +532,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "5A35344822F9F326"
@@ -545,7 +545,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "CF1BC5DD43EE95BB"
+						id: "4F1BC5DD43EE95BB"
 						type: "kill"
 						entity: "blue_skies:starlit_crusher"
 						value: 1
@@ -567,10 +567,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "D576D1E0744B6D4A"
+			id: "5576D1E0744B6D4A"
 			title: "The Alchemist"
 			description: ["Defeat The Alchemist. Its drops are unique to it; no other source will give you them."]
 			icon: "blue_skies:pyrope_gem"
@@ -602,7 +602,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "09223D09AF0370AE"
@@ -615,7 +615,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "920675E59799D8D9"
+						id: "120675E59799D8D9"
 						type: "kill"
 						entity: "blue_skies:arachnarch"
 						value: 1
@@ -623,7 +623,7 @@
 			]
 			rewards: [
 					{
-						id: "EE4DFFE8B000D601"
+						id: "6E4DFFE8B000D601"
 						type: "xp"
 						xp: 500
 					},
@@ -637,7 +637,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "4B1830FE903FC6AB"
@@ -650,7 +650,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "B6CC6BC78048791E"
+						id: "36CC6BC78048791E"
 						type: "kill"
 						entity: "cataclysm:ignis"
 						value: 1
@@ -672,7 +672,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "2D51010023118371"
@@ -685,7 +685,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "C7025FF41E3279CF"
+						id: "47025FF41E3279CF"
 						type: "kill"
 						entity: "cataclysm:netherite_monstrosity"
 						value: 1
@@ -698,7 +698,7 @@
 						xp: 700
 					},
 					{
-						id: "A0B147880D62F101"
+						id: "20B147880D62F101"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -707,10 +707,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "CE34261B6B2E745D"
+			id: "4E34261B6B2E745D"
 			title: "The Harbinger"
 			description: ["Defeat The Harbinger. Its drops are unique to it; no other source will give you them."]
 			icon: "cataclysm:void_core"
@@ -720,7 +720,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "8F37CAC2524CC456"
+						id: "0F37CAC2524CC456"
 						type: "kill"
 						entity: "cataclysm:the_harbinger"
 						value: 1
@@ -733,7 +733,7 @@
 						xp: 800
 					},
 					{
-						id: "A125F2F776F80297"
+						id: "2125F2F776F80297"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -742,7 +742,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "64DAFF370566C1B0"
@@ -777,7 +777,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "775D4792AF50163E"
@@ -790,7 +790,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "F0EDBF1D3211369E"
+						id: "70EDBF1D3211369E"
 						type: "kill"
 						entity: "cataclysm:ancient_remnant"
 						value: 1
@@ -798,12 +798,12 @@
 			]
 			rewards: [
 					{
-						id: "BE52F0D93ECF568F"
+						id: "3E52F0D93ECF568F"
 						type: "xp"
 						xp: 850
 					},
 					{
-						id: "B3BE11DCF3887631"
+						id: "33BE11DCF3887631"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -812,10 +812,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "ED2488360097AF03"
+			id: "6D2488360097AF03"
 			title: "Ender Guardian"
 			description: ["Defeat Ender Guardian. Its drops are unique to it; no other source will give you them."]
 			icon: "cataclysm:void_forge"
@@ -838,7 +838,7 @@
 						xp: 1000
 					},
 					{
-						id: "8983F2F9E7FE7B7A"
+						id: "0983F2F9E7FE7B7A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
 						elevate: true
@@ -847,10 +847,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "975338D5192448EA"
+			id: "175338D5192448EA"
 			title: "Maledictus"
 			description: ["Defeat Maledictus. Its drops are unique to it; no other source will give you them."]
 			icon: "cataclysm:witherite_ingot"
@@ -860,7 +860,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "A3B78E886D6D829B"
+						id: "23B78E886D6D829B"
 						type: "kill"
 						entity: "cataclysm:maledictus"
 						value: 1
@@ -868,7 +868,7 @@
 			]
 			rewards: [
 					{
-						id: "AC819BB0DFF17E83"
+						id: "2C819BB0DFF17E83"
 						type: "xp"
 						xp: 1500
 					},
@@ -882,7 +882,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "27166BCC7A1CEDAD"
@@ -903,7 +903,7 @@
 			]
 			rewards: [
 					{
-						id: "EBE662421174B476"
+						id: "6BE662421174B476"
 						type: "xp"
 						xp: 1500
 					},
@@ -917,10 +917,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "940211A1F80D9966"
+			id: "140211A1F80D9966"
 			title: "The Warden"
 			description: ["Defeat The Warden. Its drops are unique to it; no other source will give you them."]
 			icon: "deeperdarker:warden_carapace"
@@ -930,7 +930,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "D5277D753C8E6963"
+						id: "55277D753C8E6963"
 						type: "kill"
 						entity: "minecraft:warden"
 						value: 1
@@ -952,10 +952,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "BB1D4A630CDE69B2"
+			id: "3B1D4A630CDE69B2"
 			title: "The Dead King"
 			description: ["Defeat The Dead King. Its drops are unique to it; no other source will give you them."]
 			icon: "irons_spellbooks:legendary_spell_book"
@@ -978,7 +978,7 @@
 						xp: 1000
 					},
 					{
-						id: "DEAF7DEB22093FDD"
+						id: "5EAF7DEB22093FDD"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -987,10 +987,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "DF33B7684E58CD10"
+			id: "5F33B7684E58CD10"
 			title: "The Apostle"
 			description: ["Defeat The Apostle. Its drops are unique to it; no other source will give you them."]
 			icon: "goety:nameless_staff"
@@ -1013,7 +1013,7 @@
 						xp: 900
 					},
 					{
-						id: "DF8B36E68AC42699"
+						id: "5F8B36E68AC42699"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -1022,7 +1022,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "1FE10FD954CBBA35"
@@ -1035,7 +1035,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "876B5D88920DB0BB"
+						id: "076B5D88920DB0BB"
 						type: "kill"
 						entity: "bosses_of_mass_destruction:lich"
 						value: 1
@@ -1043,7 +1043,7 @@
 			]
 			rewards: [
 					{
-						id: "9FD99F8F9213FBAF"
+						id: "1FD99F8F9213FBAF"
 						type: "xp"
 						xp: 800
 					},
@@ -1057,7 +1057,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "3E2DC14D8E1EE13A"
@@ -1092,7 +1092,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "1FB4C57FAF54DB24"
@@ -1113,7 +1113,7 @@
 			]
 			rewards: [
 					{
-						id: "A75C4610A2F78B13"
+						id: "275C4610A2F78B13"
 						type: "xp"
 						xp: 1200
 					},
@@ -1127,7 +1127,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "49D8F43CE2AC27AD"
@@ -1140,7 +1140,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "CA74A0473FDD7CDD"
+						id: "4A74A0473FDD7CDD"
 						type: "kill"
 						entity: "iceandfire:fire_dragon"
 						value: 1
@@ -1148,7 +1148,7 @@
 			]
 			rewards: [
 					{
-						id: "A280732295492545"
+						id: "2280732295492545"
 						type: "xp"
 						xp: 700
 					},
@@ -1162,7 +1162,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "67C105CFD54A014E"
@@ -1175,7 +1175,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "D6567AA2E9425B39"
+						id: "56567AA2E9425B39"
 						type: "kill"
 						entity: "iceandfire:ice_dragon"
 						value: 1
@@ -1183,7 +1183,7 @@
 			]
 			rewards: [
 					{
-						id: "8DB466842CE9F7B1"
+						id: "0DB466842CE9F7B1"
 						type: "xp"
 						xp: 1000
 					},
@@ -1197,10 +1197,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "A255017B4228725A"
+			id: "2255017B4228725A"
 			title: "Dread Lich"
 			description: ["Defeat Dread Lich. Its drops are unique to it; no other source will give you them."]
 			icon: "minecraft:wither_skeleton_skull"
@@ -1210,7 +1210,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "834C837E0C801280"
+						id: "034C837E0C801280"
 						type: "kill"
 						entity: "iceandfire:dread_lich"
 						value: 1
@@ -1218,7 +1218,7 @@
 			]
 			rewards: [
 					{
-						id: "937D8F0F8B117371"
+						id: "137D8F0F8B117371"
 						type: "xp"
 						xp: 1200
 					},
@@ -1232,10 +1232,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "B20AA096008EAB83"
+			id: "320AA096008EAB83"
 			title: "Lord Pumpkinhead"
 			description: ["Defeat Lord Pumpkinhead. Its drops are unique to it; no other source will give you them."]
 			icon: "minecraft:carved_pumpkin"
@@ -1253,12 +1253,12 @@
 			]
 			rewards: [
 					{
-						id: "C61A9BA84E10C890"
+						id: "461A9BA84E10C890"
 						type: "xp"
 						xp: 300
 					},
 					{
-						id: "80D9E4072E7415A0"
+						id: "00D9E4072E7415A0"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -1267,7 +1267,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "3AA3670098908FDD"
@@ -1280,7 +1280,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D55693971E1CA5A7"
+						id: "555693971E1CA5A7"
 						type: "kill"
 						entity: "born_in_chaos_v1:mother_spider"
 						value: 1
@@ -1302,10 +1302,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "C5920BD527ADD1BE"
+			id: "45920BD527ADD1BE"
 			title: "The Wither"
 			description: ["Defeat The Wither. Its drops are unique to it; no other source will give you them."]
 			icon: "minecraft:nether_star"
@@ -1315,7 +1315,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "E1F41DB49A20B4A3"
+						id: "61F41DB49A20B4A3"
 						type: "kill"
 						entity: "minecraft:wither"
 						value: 1
@@ -1323,12 +1323,12 @@
 			]
 			rewards: [
 					{
-						id: "CA09901AC5DD3719"
+						id: "4A09901AC5DD3719"
 						type: "xp"
 						xp: 800
 					},
 					{
-						id: "C0EE00F4340D443B"
+						id: "40EE00F4340D443B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -1337,7 +1337,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
 			id: "4AE82E1F8C4C35F9"
@@ -1363,7 +1363,7 @@
 						xp: 2000
 					},
 					{
-						id: "D5926566D9C62054"
+						id: "55926566D9C62054"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t6"
 						elevate: true
@@ -1372,10 +1372,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "E4E839F3438AABC4"
+			id: "64E839F3438AABC4"
 			title: "Elder Guardian"
 			description: ["Defeat Elder Guardian. Its drops are unique to it; no other source will give you them."]
 			icon: "minecraft:prismarine_crystals"
@@ -1385,7 +1385,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "96EF9233B1E935E6"
+						id: "16EF9233B1E935E6"
 						type: "kill"
 						entity: "minecraft:elder_guardian"
 						value: 1
@@ -1393,7 +1393,7 @@
 			]
 			rewards: [
 					{
-						id: "E5E489A2353946E4"
+						id: "65E489A2353946E4"
 						type: "xp"
 						xp: 250
 					},
@@ -1407,10 +1407,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["AEA574B7C6ED1F66"]
+			dependencies: ["2EA574B7C6ED1F66"]
 		},
 		{
-			id: "C4E736DE01DD64F2"
+			id: "44E736DE01DD64F2"
 			title: "Slayer"
 			description: ["Defeat ten bosses. You are a dangerous person."]
 			icon: "minecraft:diamond_sword"
@@ -1431,7 +1431,7 @@
 						xp: 500
 					},
 					{
-						id: "C7A4ADAD23A3795B"
+						id: "47A4ADAD23A3795B"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -1442,7 +1442,7 @@
 			dependencies: ["0A3C1893B42236C5", "06A02EF3CB8703D1", "3F436D517672AAED", "7E9979754E9CD742", "4B1830FE903FC6AB"]
 		},
 		{
-			id: "96815B06C679232B"
+			id: "16815B06C679232B"
 			title: "Boss Slayer, Legendary"
 			description: ["Defeat twenty-five bosses. The Wardens would have asked for your help."]
 			icon: "minecraft:nether_star"
@@ -1458,7 +1458,7 @@
 			]
 			rewards: [
 					{
-						id: "BAF6F00281A61431"
+						id: "3AF6F00281A61431"
 						type: "xp"
 						xp: 1500
 					},
@@ -1471,7 +1471,7 @@
 						title: "3 skill points"
 					}
 			]
-			dependencies: ["C4E736DE01DD64F2", "CE34261B6B2E745D", "64DAFF370566C1B0", "4AE82E1F8C4C35F9"]
+			dependencies: ["44E736DE01DD64F2", "4E34261B6B2E745D", "64DAFF370566C1B0", "4AE82E1F8C4C35F9"]
 		}
 	]
 }

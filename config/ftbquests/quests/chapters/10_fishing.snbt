@@ -1,11 +1,11 @@
 {
-	id: "819A07AFA4ABC866"
+	id: "019A07AFA4ABC866"
 	filename: "10_fishing"
 	title: "The Patient Hand: Fishing and Foraging"
 	subtitle: "Quiet work for the weary."
 	icon: "aquaculture:iron_fishing_rod"
 	order_index: 10
-	group: "CF1E96262114D2FD"
+	group: "4F1E96262114D2FD"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "AE8FE9E881CCEE3A"
+			id: "2E8FE9E881CCEE3A"
 			title: "A Rod and a Line"
 			description: ["Fishing is a pastime and an economy: crates, treasure, rare fish, and ingredients for the best meals. Bait and hooks change what you catch."]
 			icon: "aquaculture:iron_fishing_rod"
@@ -32,7 +32,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "D96AA58344DFD800"
+						id: "596AA58344DFD800"
 						type: "item"
 						item: "aquaculture:iron_fishing_rod"
 						count: 1
@@ -72,7 +72,7 @@
 						xp: 30
 					}
 			]
-			dependencies: ["AE8FE9E881CCEE3A"]
+			dependencies: ["2E8FE9E881CCEE3A"]
 		},
 		{
 			id: "7EC917D1FB5F27A2"
@@ -94,16 +94,16 @@
 			]
 			rewards: [
 					{
-						id: "9F91DAC687E7A1C4"
+						id: "1F91DAC687E7A1C4"
 						type: "xp"
 						xp: 30
 					}
 			]
 			optional: true
-			dependencies: ["AE8FE9E881CCEE3A"]
+			dependencies: ["2E8FE9E881CCEE3A"]
 		},
 		{
-			id: "C79EAAADD62FEF99"
+			id: "479EAAADD62FEF99"
 			title: "A Tackle Box"
 			description: ["Store your hooks, line and bait."]
 			icon: "aquaculture:tackle_box"
@@ -141,7 +141,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "EECCD042B37F1AC3"
+						id: "6ECCD042B37F1AC3"
 						type: "item"
 						item: "aquaculture:fish_fillet_cooked"
 						count: 1
@@ -150,7 +150,7 @@
 			]
 			rewards: [
 					{
-						id: "AB1FAECC493AF667"
+						id: "2B1FAECC493AF667"
 						type: "xp"
 						xp: 30
 					}
@@ -168,7 +168,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "C29B9DDF47497284"
+						id: "429B9DDF47497284"
 						type: "item"
 						item: "aquaculture:neptunium_ingot"
 						count: 1
@@ -177,7 +177,7 @@
 			]
 			rewards: [
 					{
-						id: "9BBA1992866C1E45"
+						id: "1BBA1992866C1E45"
 						type: "xp"
 						xp: 150
 					},
@@ -190,7 +190,7 @@
 						title: "Tier 3 supply cache"
 					}
 			]
-			dependencies: ["C79EAAADD62FEF99"]
+			dependencies: ["479EAAADD62FEF99"]
 		},
 		{
 			id: "625C03898CEDEFF8"
@@ -240,13 +240,13 @@
 			]
 			rewards: [
 					{
-						id: "F8B3DD7769089548"
+						id: "78B3DD7769089548"
 						type: "xp"
 						xp: 25
 					}
 			]
 			optional: true
-			dependencies: ["AE8FE9E881CCEE3A"]
+			dependencies: ["2E8FE9E881CCEE3A"]
 		},
 		{
 			id: "495FD9C80A566586"
@@ -287,7 +287,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "C4DA3EB1F8EE8381"
+						id: "44DA3EB1F8EE8381"
 						type: "checkmark"
 					}
 			]

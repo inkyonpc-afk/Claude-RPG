@@ -1,5 +1,5 @@
 {
-	id: "C429E46AFB0D3762"
+	id: "4429E46AFB0D3762"
 	filename: "04_enchanting"
 	title: "Enchanting, Beyond the Table"
 	subtitle: "The ceiling is shelves."
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "F374129DA3F597FC"
+			id: "7374129DA3F597FC"
 			title: "Beyond Level Thirty"
 			description: ["The enchanting table stops at thirty in vanilla. Here it does not: bookshelves, hellshelves, seashelves and more drive the maximum up, and with it the quality of enchantments."]
 			icon: "minecraft:enchanting_table"
@@ -41,14 +41,14 @@
 			]
 			rewards: [
 					{
-						id: "D975E606C09F662E"
+						id: "5975E606C09F662E"
 						type: "xp"
 						xp: 20
 					}
 			]
 		},
 		{
-			id: "CD33A3C691290106"
+			id: "4D33A3C691290106"
 			title: "A Well-Stocked Shelf"
 			description: ["Plain bookshelves give small, steady power. Bring many."]
 			icon: "minecraft:bookshelf"
@@ -72,7 +72,7 @@
 						xp: 25
 					}
 			]
-			dependencies: ["F374129DA3F597FC"]
+			dependencies: ["7374129DA3F597FC"]
 		},
 		{
 			id: "2D3317BE79F92932"
@@ -92,12 +92,12 @@
 			]
 			rewards: [
 					{
-						id: "ABAE20D3681687F1"
+						id: "2BAE20D3681687F1"
 						type: "xp"
 						xp: 60
 					}
 			]
-			dependencies: ["CD33A3C691290106"]
+			dependencies: ["4D33A3C691290106"]
 		},
 		{
 			id: "32C748B78BFC373C"
@@ -110,7 +110,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "DB468DA7B213F15E"
+						id: "5B468DA7B213F15E"
 						type: "item"
 						item: "apotheosis:hellshelf"
 						count: 8
@@ -127,7 +127,7 @@
 			dependencies: ["2D3317BE79F92932"]
 		},
 		{
-			id: "8B97536CF10F0281"
+			id: "0B97536CF10F0281"
 			title: "Seashelf"
 			description: ["Adds arcana and prismarine-tinted power."]
 			icon: "apotheosis:seashelf"
@@ -137,7 +137,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BC80742543A3D71C"
+						id: "3C80742543A3D71C"
 						type: "item"
 						item: "apotheosis:seashelf"
 						count: 8
@@ -154,7 +154,7 @@
 			dependencies: ["2D3317BE79F92932"]
 		},
 		{
-			id: "D1C81D0701342BB6"
+			id: "51C81D0701342BB6"
 			title: "Level Sixty"
 			description: ["Sixty-level enchants reach into rare and treasure enchantments. Your table is now a project."]
 			icon: "apotheosis:infused_hellshelf"
@@ -176,10 +176,10 @@
 						xp: 150
 					}
 			]
-			dependencies: ["32C748B78BFC373C", "8B97536CF10F0281"]
+			dependencies: ["32C748B78BFC373C", "0B97536CF10F0281"]
 		},
 		{
-			id: "B645A2B3E3DFE9B2"
+			id: "3645A2B3E3DFE9B2"
 			title: "Endshelf"
 			description: ["Adds levels and a lot of arcana. Made from End stone and dragon fire."]
 			icon: "apotheosis:endshelf"
@@ -198,12 +198,12 @@
 			]
 			rewards: [
 					{
-						id: "E2E86A9C5CEBEEA9"
+						id: "62E86A9C5CEBEEA9"
 						type: "xp"
 						xp: 150
 					}
 			]
-			dependencies: ["D1C81D0701342BB6"]
+			dependencies: ["51C81D0701342BB6"]
 		},
 		{
 			id: "3D77768A52928044"
@@ -223,7 +223,7 @@
 			]
 			rewards: [
 					{
-						id: "E5A7E5375DBB6AEE"
+						id: "65A7E5375DBB6AEE"
 						type: "xp"
 						xp: 400
 					},
@@ -236,7 +236,7 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["B645A2B3E3DFE9B2"]
+			dependencies: ["3645A2B3E3DFE9B2"]
 		},
 		{
 			id: "50495A4E33973051"
@@ -263,10 +263,10 @@
 						xp: 120
 					}
 			]
-			dependencies: ["D1C81D0701342BB6"]
+			dependencies: ["51C81D0701342BB6"]
 		},
 		{
-			id: "EBD926E401E8EA62"
+			id: "6BD926E401E8EA62"
 			title: "Filtering Shelf"
 			description: ["Tune the enchants your table offers by installing a filter."]
 			icon: "apotheosis:filtering_shelf"
@@ -276,7 +276,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A5123EFE992B2987"
+						id: "25123EFE992B2987"
 						type: "item"
 						item: "apotheosis:filtering_shelf"
 						count: 1
@@ -291,10 +291,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D1C81D0701342BB6"]
+			dependencies: ["51C81D0701342BB6"]
 		},
 		{
-			id: "DC0BAD73232E6551"
+			id: "5C0BAD73232E6551"
 			title: "Treasure Shelf"
 			description: ["Unlocks treasure enchantments: mending, frost walker, soul speed. Opens the door to power that normal tables hide."]
 			icon: "apotheosis:treasure_shelf"
@@ -319,10 +319,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D1C81D0701342BB6"]
+			dependencies: ["51C81D0701342BB6"]
 		},
 		{
-			id: "CC88F67ACD4F8B40"
+			id: "4C88F67ACD4F8B40"
 			title: "Maxed"
 			description: ["Reach maximum stability and rectified enchants: max-level, stable, and without the wild swings."]
 			icon: "minecraft:enchanted_golden_apple"
@@ -332,7 +332,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B51B093AB6A4B368"
+						id: "351B093AB6A4B368"
 						type: "advancement"
 						advancement: "apotheosis:enchanting/max_stable"
 					}

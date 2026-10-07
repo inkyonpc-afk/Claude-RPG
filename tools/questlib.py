@@ -12,7 +12,9 @@ DIMS = {"overworld": "minecraft:overworld", "nether": "minecraft:the_nether", "e
 
 
 def hid(*parts):
-    return hashlib.md5("|".join(parts).encode()).hexdigest()[:16].upper()
+    """16-hex-digit object id, always below 2^63: FTB Quests parses ids with a signed Long.parseLong(s, 16) (QuestObjectBase.parseHexId), so an id
+    with the top bit set fails to parse and silently drops chapter groups and dependency links."""
+    return "%016X" % (int(hashlib.md5("|".join(parts).encode()).hexdigest()[:16], 16) & 0x7FFFFFFFFFFFFFFF)
 
 
 def q(s):

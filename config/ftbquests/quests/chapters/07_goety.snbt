@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "8DE9658C55A454AE"
+			id: "0DE9658C55A454AE"
 			title: "The Dark Altar"
 			description: ["Goety is the school of the summoner and necromancer: minions that fight for you, foci that cast for you, and an altar to bring it all together.", "The Dark Wand and Nameless Staff are your tools; foci are your spells. Servants cost souls."]
 			icon: "goety:dark_altar"
@@ -58,7 +58,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BE7712393A56CD9B"
+						id: "3E7712393A56CD9B"
 						type: "item"
 						item: "goety:dark_wand"
 						count: 1
@@ -72,10 +72,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["8DE9658C55A454AE"]
+			dependencies: ["0DE9658C55A454AE"]
 		},
 		{
-			id: "F95B5F0E63261761"
+			id: "795B5F0E63261761"
 			title: "A First Focus"
 			description: ["Foci are the spells you swap into a wand: fireball, ice, summon, command. Mix them for your build."]
 			icon: "goety:empty_focus"
@@ -85,7 +85,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B51D9F2AA824E8E5"
+						id: "351D9F2AA824E8E5"
 						type: "item"
 						item: "goety:empty_focus"
 						count: 1
@@ -94,7 +94,7 @@
 			]
 			rewards: [
 					{
-						id: "D761411E9EEC519B"
+						id: "5761411E9EEC519B"
 						type: "xp"
 						xp: 40
 					}
@@ -121,7 +121,7 @@
 			]
 			rewards: [
 					{
-						id: "B27057D140B1BEE7"
+						id: "327057D140B1BEE7"
 						type: "xp"
 						xp: 50
 					}
@@ -129,7 +129,7 @@
 			dependencies: ["516974AF69A7F503"]
 		},
 		{
-			id: "ECB80014B3D6B5F4"
+			id: "6CB80014B3D6B5F4"
 			title: "Focus Bag"
 			description: ["Carry a dozen foci in a bag. Quick-swap in the middle of a fight."]
 			icon: "goety:focus_bag"
@@ -148,16 +148,16 @@
 			]
 			rewards: [
 					{
-						id: "87F9549D7A266631"
+						id: "07F9549D7A266631"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["F95B5F0E63261761"]
+			dependencies: ["795B5F0E63261761"]
 		},
 		{
-			id: "C34EBB8B1974E121"
+			id: "434EBB8B1974E121"
 			title: "A Servant"
 			description: ["Animation cores bind minions: undead, blazes, bears, ghasts. They die, you rebuild, the soul bill keeps coming."]
 			icon: "goety:animation_core"
@@ -176,15 +176,15 @@
 			]
 			rewards: [
 					{
-						id: "CA789ACB0039011B"
+						id: "4A789ACB0039011B"
 						type: "xp"
 						xp: 60
 					}
 			]
-			dependencies: ["F95B5F0E63261761"]
+			dependencies: ["795B5F0E63261761"]
 		},
 		{
-			id: "ED68007309A86FA0"
+			id: "6D68007309A86FA0"
 			title: "Become a Lich"
 			description: ["The long road ends in a transformation. It makes you stronger and worse at being alive."]
 			icon: "goety:black_crystal"
@@ -201,12 +201,12 @@
 			]
 			rewards: [
 					{
-						id: "B66431142D2B7BCE"
+						id: "366431142D2B7BCE"
 						type: "xp"
 						xp: 300
 					},
 					{
-						id: "BE70CD251DD9679C"
+						id: "3E70CD251DD9679C"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -214,10 +214,10 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["C34EBB8B1974E121"]
+			dependencies: ["434EBB8B1974E121"]
 		},
 		{
-			id: "A92E014FC6CD6525"
+			id: "292E014FC6CD6525"
 			title: "Crypt Dwellers"
 			description: ["Crypts, graveyards, ruined monasteries: Goety's structures are full of loot and the occasional necromancer."]
 			icon: "goety:crypt_bookshelf"
@@ -234,16 +234,16 @@
 			]
 			rewards: [
 					{
-						id: "F40EA54CF85E71D3"
+						id: "740EA54CF85E71D3"
 						type: "xp"
 						xp: 100
 					}
 			]
 			optional: true
-			dependencies: ["8DE9658C55A454AE"]
+			dependencies: ["0DE9658C55A454AE"]
 		},
 		{
-			id: "E751E46C90B456FF"
+			id: "6751E46C90B456FF"
 			title: "The Dark Manor"
 			description: ["A haunted manor with a ritual at its heart and a very bad host."]
 			icon: "minecraft:dark_oak_door"
@@ -253,7 +253,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BDE9BC02C634F279"
+						id: "3DE9BC02C634F279"
 						type: "structure"
 						structure: "goety:dark_manor"
 					}
@@ -274,10 +274,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["A92E014FC6CD6525"]
+			dependencies: ["292E014FC6CD6525"]
 		},
 		{
-			id: "9DCF84D6D12E5D8B"
+			id: "1DCF84D6D12E5D8B"
 			title: "The Apostle"
 			description: ["A priest of the old order, forced to serve a thing he no longer remembers. His staff is one of the best minion casters in the game."]
 			icon: "goety:nameless_staff"
@@ -308,7 +308,7 @@
 						title: "1 skill point"
 					},
 					{
-						id: "901AA0FD6AE08B20"
+						id: "101AA0FD6AE08B20"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -316,7 +316,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["E751E46C90B456FF", "ED68007309A86FA0"]
+			dependencies: ["6751E46C90B456FF", "6D68007309A86FA0"]
 		},
 		{
 			id: "2C602EB00BD248E7"
@@ -329,7 +329,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "DFE461DD52E15022"
+						id: "5FE461DD52E15022"
 						type: "item"
 						item: "goety:cursed_cage"
 						count: 1
@@ -338,13 +338,13 @@
 			]
 			rewards: [
 					{
-						id: "D9299F9FCDDB8E7F"
+						id: "59299F9FCDDB8E7F"
 						type: "xp"
 						xp: 60
 					}
 			]
 			optional: true
-			dependencies: ["C34EBB8B1974E121"]
+			dependencies: ["434EBB8B1974E121"]
 		}
 	]
 }

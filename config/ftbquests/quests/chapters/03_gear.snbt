@@ -1,5 +1,5 @@
 {
-	id: "FAE005CF393A8EC6"
+	id: "7AE005CF393A8EC6"
 	filename: "03_gear"
 	title: "Gear and the Craft of Upgrading"
 	subtitle: "Rarity, affixes, sockets, gems and reforging: the long path from found to forged."
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "C71936BC57E5B82D"
+			id: "471936BC57E5B82D"
 			title: "From Found to Forged"
 			description: ["Every piece of gear carries a rarity and, from uncommon upward, affixes: extra stats, special effects, even names. Rarity is a ceiling, not a verdict: invest in a favourite and it stays useful.", "Rarities: Common, Uncommon, Rare, Epic, Mythic, Ancient. Chests and bosses decide how high they roll."]
 			icon: "apotheosis:common_material"
@@ -32,20 +32,20 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "A211773BA6EA5E75"
+						id: "2211773BA6EA5E75"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "A34EECD859737228"
+						id: "234EECD859737228"
 						type: "xp"
 						xp: 20
 					}
 			]
 		},
 		{
-			id: "891095E71AFEB50A"
+			id: "091095E71AFEB50A"
 			title: "Salvaging Table"
 			description: ["Break gear into materials. A rare weapon yields rare materials: the cost of a wasted drop is never zero."]
 			icon: "apotheosis:salvaging_table"
@@ -55,7 +55,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "8784047E262F6C2F"
+						id: "0784047E262F6C2F"
 						type: "item"
 						item: "apotheosis:salvaging_table"
 						count: 1
@@ -69,10 +69,10 @@
 						xp: 30
 					}
 			]
-			dependencies: ["C71936BC57E5B82D"]
+			dependencies: ["471936BC57E5B82D"]
 		},
 		{
-			id: "F92D6F62419F6540"
+			id: "792D6F62419F6540"
 			title: "Reforging Table"
 			description: ["Reroll an item's affixes using materials and levels. Costs rise with rarity: reforge something worth saving."]
 			icon: "apotheosis:reforging_table"
@@ -82,7 +82,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F59A7CA924B9FBB9"
+						id: "759A7CA924B9FBB9"
 						type: "item"
 						item: "apotheosis:simple_reforging_table"
 						count: 1
@@ -91,12 +91,12 @@
 			]
 			rewards: [
 					{
-						id: "9885A126AF4EE14C"
+						id: "1885A126AF4EE14C"
 						type: "xp"
 						xp: 40
 					}
 			]
-			dependencies: ["891095E71AFEB50A"]
+			dependencies: ["091095E71AFEB50A"]
 		},
 		{
 			id: "07E9AC5B2563FF70"
@@ -118,15 +118,15 @@
 			]
 			rewards: [
 					{
-						id: "C903D815C1E95D61"
+						id: "4903D815C1E95D61"
 						type: "xp"
 						xp: 40
 					}
 			]
-			dependencies: ["891095E71AFEB50A"]
+			dependencies: ["091095E71AFEB50A"]
 		},
 		{
-			id: "FAA9270465EFF82C"
+			id: "7AA9270465EFF82C"
 			title: "Gems"
 			description: ["Gems are keyed to item types: armor gems, weapon gems, tool gems. Pick ones that fit your build."]
 			icon: "apotheosis:gem"
@@ -136,7 +136,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9A75305F0167523C"
+						id: "1A75305F0167523C"
 						type: "item"
 						item: "apotheosis:gem"
 						count: 1
@@ -153,7 +153,7 @@
 			dependencies: ["07E9AC5B2563FF70"]
 		},
 		{
-			id: "DBDA10606D5DFA3A"
+			id: "5BDA10606D5DFA3A"
 			title: "Gem Cutting"
 			description: ["Combine gems to improve their purity. A flawless gem is worth a hundred ordinary ones."]
 			icon: "apotheosis:gem_cutting_table"
@@ -163,7 +163,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "EB2B0A123A001664"
+						id: "6B2B0A123A001664"
 						type: "item"
 						item: "apotheosis:gem_cutting_table"
 						count: 1
@@ -172,12 +172,12 @@
 			]
 			rewards: [
 					{
-						id: "E07D859715A99C2A"
+						id: "607D859715A99C2A"
 						type: "xp"
 						xp: 60
 					}
 			]
-			dependencies: ["FAA9270465EFF82C"]
+			dependencies: ["7AA9270465EFF82C"]
 		},
 		{
 			id: "1D46260A3CDFED91"
@@ -204,7 +204,7 @@
 						xp: 80
 					}
 			]
-			dependencies: ["F92D6F62419F6540"]
+			dependencies: ["792D6F62419F6540"]
 		},
 		{
 			id: "74A868EE4267E969"
@@ -217,19 +217,19 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F12F2B379F69D3EB"
+						id: "712F2B379F69D3EB"
 						type: "advancement"
 						advancement: "apotheosis:affix/rare"
 					}
 			]
 			rewards: [
 					{
-						id: "C05EEC7A0634E6FD"
+						id: "405EEC7A0634E6FD"
 						type: "xp"
 						xp: 80
 					}
 			]
-			dependencies: ["C71936BC57E5B82D"]
+			dependencies: ["471936BC57E5B82D"]
 		},
 		{
 			id: "66CE8A9F61473584"
@@ -242,7 +242,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "CDAEFD4E6D7C0C8E"
+						id: "4DAEFD4E6D7C0C8E"
 						type: "advancement"
 						advancement: "apotheosis:affix/epic"
 					}
@@ -267,7 +267,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "F46C2F544850310A"
+						id: "746C2F544850310A"
 						type: "advancement"
 						advancement: "apotheosis:affix/mythic"
 					}
@@ -279,7 +279,7 @@
 						xp: 250
 					},
 					{
-						id: "C55148FE9C42FA51"
+						id: "455148FE9C42FA51"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -300,7 +300,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "AA7ACA9A9A57C076"
+						id: "2A7ACA9A9A57C076"
 						type: "advancement"
 						advancement: "apotheosis:affix/ancient"
 					}
@@ -323,7 +323,7 @@
 			dependencies: ["6AE3F817AF5427EA"]
 		},
 		{
-			id: "C04A19F2F1C99AB1"
+			id: "404A19F2F1C99AB1"
 			title: "Boss Gear"
 			description: ["Apotheosis bosses roam the world carrying specially affixed gear. Defeat one for your first truly named item."]
 			icon: "apotheosis:boss_summoner"
@@ -333,7 +333,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "F9491874D5D8B58A"
+						id: "79491874D5D8B58A"
 						type: "advancement"
 						advancement: "apotheosis:affix/boss"
 					}
@@ -368,16 +368,16 @@
 			]
 			rewards: [
 					{
-						id: "E02B84153BE354C4"
+						id: "602B84153BE354C4"
 						type: "xp"
 						xp: 60
 					}
 			]
 			optional: true
-			dependencies: ["F92D6F62419F6540"]
+			dependencies: ["792D6F62419F6540"]
 		},
 		{
-			id: "DBDEEC65661351C8"
+			id: "5BDEEC65661351C8"
 			title: "Tomes of Making"
 			description: ["Tomes add enchantment rules: weapon tomes unlock weapon enchantments on anything, extraction tomes pull them back out."]
 			icon: "apotheosis:weapon_tome"
@@ -396,13 +396,13 @@
 			]
 			rewards: [
 					{
-						id: "AAF683D27CA3D2AC"
+						id: "2AF683D27CA3D2AC"
 						type: "xp"
 						xp: 60
 					}
 			]
 			optional: true
-			dependencies: ["C71936BC57E5B82D"]
+			dependencies: ["471936BC57E5B82D"]
 		},
 		{
 			id: "4669589FFE4E1BF7"

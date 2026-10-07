@@ -26,13 +26,25 @@ Start-Sleep -Milliseconds 400
 $r = New-Object GuiWin+RECT
 [GuiWin]::GetWindowRect($h, [ref]$r) | Out-Null
 if ($Action -eq "click") {
+  # pre-move a few pixels (so the game sees a mouse-move over the widget), then press and hold long enough to span several frames
   $xy = $Arg.Split(",")
-  [GuiWin]::SetCursorPos($r.L + [int]$xy[0], $r.T + [int]$xy[1]) | Out-Null
-  Start-Sleep -Milliseconds 250
+  $cx = $r.L + [int]$xy[0]; $cy = $r.T + [int]$xy[1]
+  [GuiWin]::SetCursorPos($cx - 6, $cy - 3) | Out-Null
+  Start-Sleep -Milliseconds 200
+  [GuiWin]::SetCursorPos($cx, $cy) | Out-Null
+  Start-Sleep -Milliseconds 350
   [GuiWin]::mouse_event(2, 0, 0, 0, [UIntPtr]::Zero)
-  Start-Sleep -Milliseconds 80
+  Start-Sleep -Milliseconds 220
   [GuiWin]::mouse_event(4, 0, 0, 0, [UIntPtr]::Zero)
   Write-Output "CLICK $Arg"
+} elseif ($Action -eq "scroll") {
+  # Arg "x,y,delta": mouse wheel at (x,y) relative to the window; delta in wheel units (120 per notch, positive = up)
+  $a3 = $Arg.Split(",")
+  [GuiWin]::SetCursorPos($r.L + [int]$a3[0], $r.T + [int]$a3[1]) | Out-Null
+  Start-Sleep -Milliseconds 200
+  $d = [BitConverter]::ToUInt32([BitConverter]::GetBytes([int]$a3[2]), 0)
+  [GuiWin]::mouse_event(0x0800, 0, 0, $d, [UIntPtr]::Zero)
+  Write-Output "SCROLL $Arg"
 } elseif ($Action -eq "key") {
   [System.Windows.Forms.SendKeys]::SendWait($Arg)
   Write-Output "KEY $Arg"

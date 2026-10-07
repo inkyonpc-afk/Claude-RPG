@@ -5,7 +5,7 @@
 	subtitle: "Rare, huge and dangerous. Plan a trip."
 	icon: "minecraft:crying_obsidian"
 	order_index: 18
-	group: "BA29B6D65C079795"
+	group: "3A29B6D65C079795"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "C2F265822FE2AC67"
+			id: "42F265822FE2AC67"
 			title: "Places of Legend"
 			description: ["The greatest structures are rare, far apart and heavily defended. Their loot is rarer too. Pack food, potions, a waystone and a plan."]
 			icon: "minecraft:crying_obsidian"
@@ -32,7 +32,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "80937909863D4CB2"
+						id: "00937909863D4CB2"
 						type: "checkmark"
 					}
 			]
@@ -55,19 +55,19 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "88751EE42BA2C619"
+						id: "08751EE42BA2C619"
 						type: "structure"
 						structure: "dungeons_enhanced:castle"
 					}
 			]
 			rewards: [
 					{
-						id: "9DC6940481CD65FC"
+						id: "1DC6940481CD65FC"
 						type: "xp"
 						xp: 150
 					},
 					{
-						id: "9D4952F798CFEC82"
+						id: "1D4952F798CFEC82"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
 						elevate: true
@@ -76,7 +76,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["C2F265822FE2AC67"]
+			dependencies: ["42F265822FE2AC67"]
 		},
 		{
 			id: "3A299F0F57E8CD25"
@@ -113,7 +113,7 @@
 			dependencies: ["217EFBB850CFB92F"]
 		},
 		{
-			id: "B2D9178888D7AC66"
+			id: "32D9178888D7AC66"
 			title: "A Stronghold"
 			description: ["Silverfish halls, libraries and a gateway. The road to the End begins here."]
 			icon: "minecraft:ender_eye"
@@ -123,14 +123,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "AADC1B08E8CB1DAC"
+						id: "2ADC1B08E8CB1DAC"
 						type: "structure"
 						structure: "betterstrongholds:stronghold"
 					}
 			]
 			rewards: [
 					{
-						id: "8623EF32BEEDA65B"
+						id: "0623EF32BEEDA65B"
 						type: "xp"
 						xp: 200
 					}
@@ -156,7 +156,7 @@
 			]
 			rewards: [
 					{
-						id: "BB53A218DA4971D4"
+						id: "3B53A218DA4971D4"
 						type: "xp"
 						xp: 300
 					},
@@ -190,12 +190,12 @@
 			]
 			rewards: [
 					{
-						id: "C984D6D145FFBB52"
+						id: "4984D6D145FFBB52"
 						type: "xp"
 						xp: 300
 					},
 					{
-						id: "D9ED21B515BE1CC9"
+						id: "59ED21B515BE1CC9"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -207,7 +207,7 @@
 			dependencies: ["58F4C2A1AE8400B1"]
 		},
 		{
-			id: "C435E9798DA7F384"
+			id: "4435E9798DA7F384"
 			title: "The Black Citadel"
 			description: ["An obsidian fortress."]
 			icon: "minecraft:crying_obsidian"
@@ -224,12 +224,12 @@
 			]
 			rewards: [
 					{
-						id: "EB30DF1051608BF5"
+						id: "6B30DF1051608BF5"
 						type: "xp"
 						xp: 350
 					},
 					{
-						id: "F4183B850AF44695"
+						id: "74183B850AF44695"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -241,7 +241,7 @@
 			dependencies: ["58F4C2A1AE8400B1"]
 		},
 		{
-			id: "8A14E41EE74547B2"
+			id: "0A14E41EE74547B2"
 			title: "Tower of the Undead"
 			description: ["A tower of corpses and necromancers."]
 			icon: "minecraft:wither_skeleton_skull"
@@ -251,19 +251,19 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9DBB9CD017345445"
+						id: "1DBB9CD017345445"
 						type: "structure"
 						structure: "dungeons_enhanced:tower_of_the_undead"
 					}
 			]
 			rewards: [
 					{
-						id: "A12EB94AD93C41E3"
+						id: "212EB94AD93C41E3"
 						type: "xp"
 						xp: 250
 					},
 					{
-						id: "EF57FAFA17EC353A"
+						id: "6F57FAFA17EC353A"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -292,7 +292,7 @@
 			]
 			rewards: [
 					{
-						id: "9A2EBA275B7EDC63"
+						id: "1A2EBA275B7EDC63"
 						type: "xp"
 						xp: 300
 					},
@@ -309,7 +309,7 @@
 			dependencies: ["58F4C2A1AE8400B1"]
 		},
 		{
-			id: "A8EE8FD8A85596C4"
+			id: "28EE8FD8A85596C4"
 			title: "A Ruined Citadel"
 			description: ["Cataclysm's Nether fortress, guarded by Ignis' kin."]
 			icon: "minecraft:blackstone"
@@ -319,7 +319,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "DD273205815BE06F"
+						id: "5D273205815BE06F"
 						type: "structure"
 						structure: "cataclysm:ruined_citadel"
 					}
@@ -343,7 +343,7 @@
 			dependencies: ["217EFBB850CFB92F"]
 		},
 		{
-			id: "A961020B625D3868"
+			id: "2961020B625D3868"
 			title: "The Acropolis"
 			description: ["A sunken marble city."]
 			icon: "minecraft:chiseled_quartz_block"
@@ -353,14 +353,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "FB49E22AEDAAE04D"
+						id: "7B49E22AEDAAE04D"
 						type: "structure"
 						structure: "cataclysm:acropolis"
 					}
 			]
 			rewards: [
 					{
-						id: "EB8963D1DB214B04"
+						id: "6B8963D1DB214B04"
 						type: "xp"
 						xp: 300
 					},
@@ -387,7 +387,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D8E63547EBA7E8E5"
+						id: "58E63547EBA7E8E5"
 						type: "structure"
 						structure: "dungeons_enhanced:deep_crypt"
 					}
@@ -399,7 +399,7 @@
 						xp: 250
 					},
 					{
-						id: "D37FFBE35088A36E"
+						id: "537FFBE35088A36E"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -411,7 +411,7 @@
 			dependencies: ["217EFBB850CFB92F"]
 		},
 		{
-			id: "DEA25EFE0B9ABD41"
+			id: "5EA25EFE0B9ABD41"
 			title: "The Keeping Castle"
 			description: ["Prodigium's great castle."]
 			icon: "minecraft:chain"
@@ -421,14 +421,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9DB6C7268A45E5A6"
+						id: "1DB6C7268A45E5A6"
 						type: "structure"
 						structure: "prodigium_dungeons:keeping_castle"
 					}
 			]
 			rewards: [
 					{
-						id: "E27D9958E6D096B0"
+						id: "627D9958E6D096B0"
 						type: "xp"
 						xp: 350
 					},
@@ -442,7 +442,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["C435E9798DA7F384"]
+			dependencies: ["4435E9798DA7F384"]
 		},
 		{
 			id: "1162B416D50F0CD9"
@@ -461,12 +461,12 @@
 			]
 			rewards: [
 					{
-						id: "D91B6F33530CCE88"
+						id: "591B6F33530CCE88"
 						type: "xp"
 						xp: 300
 					},
 					{
-						id: "D8EE218692AECF98"
+						id: "58EE218692AECF98"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -474,7 +474,7 @@
 						title: "2 skill points"
 					}
 			]
-			dependencies: ["58F4C2A1AE8400B1", "C435E9798DA7F384", "3A299F0F57E8CD25"]
+			dependencies: ["58F4C2A1AE8400B1", "4435E9798DA7F384", "3A299F0F57E8CD25"]
 		}
 	]
 }

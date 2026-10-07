@@ -1,5 +1,5 @@
 {
-	id: "FC5F48267AA29259"
+	id: "7C5F48267AA29259"
 	filename: "27_act5"
 	title: "Act V: The End of the Age"
 	subtitle: "The Hollow Crown was never broken. It was split, to be gathered by someone willing to finish what the Wardens started."
@@ -32,7 +32,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "A30AEE5D47D5CBE1"
+						id: "230AEE5D47D5CBE1"
 						type: "dimension"
 						dim: "minecraft:the_end"
 					}
@@ -44,7 +44,7 @@
 						xp: 300
 					},
 					{
-						id: "828D1A2B6E17CD1C"
+						id: "028D1A2B6E17CD1C"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t5"
 						elevate: true
@@ -52,10 +52,10 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["87BADE03B26D28D4"]
+			dependencies: ["07BADE03B26D28D4"]
 		},
 		{
-			id: "B51ADCC34FDCF1EC"
+			id: "351ADCC34FDCF1EC"
 			title: "A City at the Edge"
 			description: ["End cities hold shulkers, elytra and the first honest glimpse of what comes next."]
 			icon: "minecraft:purpur_block"
@@ -96,7 +96,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "E26D47F93D609686"
+						id: "626D47F93D609686"
 						type: "item"
 						item: "minecraft:shulker_shell"
 						count: 4
@@ -105,12 +105,12 @@
 			]
 			rewards: [
 					{
-						id: "F66038E85859E51B"
+						id: "766038E85859E51B"
 						type: "xp"
 						xp: 150
 					}
 			]
-			dependencies: ["B51ADCC34FDCF1EC"]
+			dependencies: ["351ADCC34FDCF1EC"]
 		},
 		{
 			id: "517410FDEC06C632"
@@ -130,7 +130,7 @@
 			]
 			rewards: [
 					{
-						id: "F159BCF69B749DBE"
+						id: "7159BCF69B749DBE"
 						type: "xp"
 						xp: 500
 					},
@@ -143,7 +143,7 @@
 						title: "2 skill points"
 					}
 			]
-			dependencies: ["B51ADCC34FDCF1EC"]
+			dependencies: ["351ADCC34FDCF1EC"]
 		},
 		{
 			id: "12AA1D3AC30FCFB3"
@@ -162,7 +162,7 @@
 						value: 1
 					},
 					{
-						id: "A87EA5C81FF62362"
+						id: "287EA5C81FF62362"
 						type: "advancement"
 						advancement: "cataclysm:kill_ender_guardian"
 					}
@@ -182,10 +182,10 @@
 						title: "Tier 6 supply cache"
 					}
 			]
-			dependencies: ["B51ADCC34FDCF1EC"]
+			dependencies: ["351ADCC34FDCF1EC"]
 		},
 		{
-			id: "FEECDEE70BC783D3"
+			id: "7EECDEE70BC783D3"
 			title: "The Withered One"
 			description: ["A star made of sorrow. Summon it somewhere you can afford to lose."]
 			icon: "minecraft:nether_star"
@@ -195,13 +195,13 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "9230F9C98ECB3B8E"
+						id: "1230F9C98ECB3B8E"
 						type: "kill"
 						entity: "minecraft:wither"
 						value: 1
 					},
 					{
-						id: "ABFB1266BBC5D43E"
+						id: "2BFB1266BBC5D43E"
 						type: "advancement"
 						advancement: "minecraft:nether/summon_wither"
 					}
@@ -241,12 +241,12 @@
 			]
 			rewards: [
 					{
-						id: "E5CF3936121FFAE2"
+						id: "65CF3936121FFAE2"
 						type: "xp"
 						xp: 400
 					}
 			]
-			dependencies: ["FEECDEE70BC783D3"]
+			dependencies: ["7EECDEE70BC783D3"]
 		},
 		{
 			id: "0A37C18E17ACE14B"
@@ -259,7 +259,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "F5CDD7B665D760E3"
+						id: "75CDD7B665D760E3"
 						type: "kill"
 						entity: "minecraft:ender_dragon"
 						value: 1
@@ -272,7 +272,7 @@
 			]
 			rewards: [
 					{
-						id: "8F5CCAF11E6C79AE"
+						id: "0F5CCAF11E6C79AE"
 						type: "xp"
 						xp: 2000
 					},
@@ -306,7 +306,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "FF65891501A216BA"
+						id: "7F65891501A216BA"
 						type: "item"
 						item: "minecraft:dragon_egg"
 						count: 1
@@ -315,7 +315,7 @@
 			]
 			rewards: [
 					{
-						id: "C50273021806E852"
+						id: "450273021806E852"
 						type: "xp"
 						xp: 500
 					}
@@ -351,7 +351,7 @@
 			dependencies: ["0A37C18E17ACE14B"]
 		},
 		{
-			id: "C912DE2A9B3CEEF7"
+			id: "4912DE2A9B3CEEF7"
 			title: "The Last Wings"
 			description: ["Wing-gear that is not an elytra: craftable only from End materials, only with Ember-fire. They glide, they hover, they have a stamina bar. This is the fastest way to cross the world."]
 			icon: "icarus:black_dragon_wings"
@@ -361,7 +361,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "A3D7B37C74EEF3F0"
+						id: "23D7B37C74EEF3F0"
 						type: "item"
 						item: "icarus:black_dragon_wings"
 						count: 1
@@ -395,7 +395,7 @@
 			]
 			rewards: [
 					{
-						id: "9BFE7E199B2D9736"
+						id: "1BFE7E199B2D9736"
 						type: "xp"
 						xp: 1000
 					},
@@ -416,7 +416,7 @@
 						title: "Tier 6 supply cache"
 					}
 			]
-			dependencies: ["0A37C18E17ACE14B", "97840F175BACF2A4", "19BF2B58EFD9E1B1", "383296697E619404"]
+			dependencies: ["0A37C18E17ACE14B", "17840F175BACF2A4", "19BF2B58EFD9E1B1", "383296697E619404"]
 		},
 		{
 			id: "7841C57FE2AE91FD"
@@ -429,18 +429,18 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "C83CE5F803587291"
+						id: "483CE5F803587291"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "96277E15D0805E94"
+						id: "16277E15D0805E94"
 						type: "xp"
 						xp: 2000
 					},
 					{
-						id: "B88CC97CF3F8AC4C"
+						id: "388CC97CF3F8AC4C"
 						type: "command"
 						command: "skilltree points add {p} 5"
 						elevate: true

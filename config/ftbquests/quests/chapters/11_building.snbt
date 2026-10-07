@@ -5,7 +5,7 @@
 	subtitle: "A base is a story you tell with blocks."
 	icon: "minecraft:oak_door"
 	order_index: 11
-	group: "CF1E96262114D2FD"
+	group: "4F1E96262114D2FD"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "E1B115E6731AC949"
+			id: "61B115E6731AC949"
 			title: "A Place to Come Home To"
 			description: ["The pack has a huge decoration library: furniture, lighting, windows, paths, roofs, paintings and more. Build a house you are proud of; the quest book will not tell you how."]
 			icon: "minecraft:red_bed"
@@ -45,7 +45,7 @@
 			]
 		},
 		{
-			id: "BD38A8DC8ED6CBDF"
+			id: "3D38A8DC8ED6CBDF"
 			title: "Furniture"
 			description: ["Chairs, tables, couches, shelves. Handcrafted and Macaw's furniture are everywhere."]
 			icon: "minecraft:oak_stairs"
@@ -55,7 +55,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B7794EA5E85AF038"
+						id: "37794EA5E85AF038"
 						type: "checkmark"
 					}
 			]
@@ -66,7 +66,7 @@
 						xp: 30
 					}
 			]
-			dependencies: ["E1B115E6731AC949"]
+			dependencies: ["61B115E6731AC949"]
 		},
 		{
 			id: "0B73270ED95979D7"
@@ -88,12 +88,12 @@
 			]
 			rewards: [
 					{
-						id: "FEE08FB8E6D0DDE0"
+						id: "7EE08FB8E6D0DDE0"
 						type: "xp"
 						xp: 30
 					}
 			]
-			dependencies: ["E1B115E6731AC949"]
+			dependencies: ["61B115E6731AC949"]
 		},
 		{
 			id: "60B581FE81032116"
@@ -106,21 +106,21 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "CD4B61379CEB1A83"
+						id: "4D4B61379CEB1A83"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "FDFD22FC1AB5DCEB"
+						id: "7DFD22FC1AB5DCEB"
 						type: "xp"
 						xp: 30
 					}
 			]
-			dependencies: ["E1B115E6731AC949"]
+			dependencies: ["61B115E6731AC949"]
 		},
 		{
-			id: "8D25B24D36C0843C"
+			id: "0D25B24D36C0843C"
 			title: "Storage"
 			description: ["Sophisticated Backpacks and Storage replace a wall of chests. Carry a backpack."]
 			icon: "minecraft:chest"
@@ -130,7 +130,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A491E7923070B3B7"
+						id: "2491E7923070B3B7"
 						type: "item"
 						item: "minecraft:chest"
 						count: 4
@@ -144,10 +144,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["E1B115E6731AC949"]
+			dependencies: ["61B115E6731AC949"]
 		},
 		{
-			id: "BF5620C740F50E7E"
+			id: "3F5620C740F50E7E"
 			title: "A Workshop"
 			description: ["A smithing table, anvil, grindstone and enchanting table in one room is a workshop."]
 			icon: "minecraft:smithing_table"
@@ -178,10 +178,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["8D25B24D36C0843C"]
+			dependencies: ["0D25B24D36C0843C"]
 		},
 		{
-			id: "A6DAEE1B80485AEE"
+			id: "26DAEE1B80485AEE"
 			title: "A Garden"
 			description: ["Plants make a house a home."]
 			icon: "minecraft:flower_pot"
@@ -209,7 +209,7 @@
 			dependencies: ["0B73270ED95979D7"]
 		},
 		{
-			id: "C6EE77C551529696"
+			id: "46EE77C551529696"
 			title: "A Library"
 			description: ["Shelves, tomes, an enchanting table: the nerve centre of a caster's house."]
 			icon: "minecraft:bookshelf"
@@ -219,7 +219,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BB59A582351EE125"
+						id: "3B59A582351EE125"
 						type: "item"
 						item: "minecraft:bookshelf"
 						count: 12
@@ -228,16 +228,16 @@
 			]
 			rewards: [
 					{
-						id: "9067EF553DE8F366"
+						id: "1067EF553DE8F366"
 						type: "xp"
 						xp: 50
 					}
 			]
 			optional: true
-			dependencies: ["BF5620C740F50E7E"]
+			dependencies: ["3F5620C740F50E7E"]
 		},
 		{
-			id: "B9D33E43A26C6D99"
+			id: "39D33E43A26C6D99"
 			title: "A Stable"
 			description: ["Keep your mounts safe, fed and happy."]
 			icon: "minecraft:hay_block"
@@ -247,7 +247,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A734165660E3560A"
+						id: "2734165660E3560A"
 						type: "item"
 						item: "minecraft:hay_block"
 						count: 4
@@ -261,7 +261,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["E1B115E6731AC949"]
+			dependencies: ["61B115E6731AC949"]
 		},
 		{
 			id: "39112235C461D44E"
@@ -274,7 +274,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "ABBE7972AD9B51DC"
+						id: "2BBE7972AD9B51DC"
 						type: "checkmark"
 					}
 			]
@@ -285,10 +285,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["E1B115E6731AC949"]
+			dependencies: ["61B115E6731AC949"]
 		},
 		{
-			id: "CCB8E57C33027B73"
+			id: "4CB8E57C33027B73"
 			title: "Your Own Keep"
 			description: ["A castle of your own. Walls, towers and a gate."]
 			icon: "minecraft:stone_bricks"
@@ -298,7 +298,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "9070F4437B0841EA"
+						id: "1070F4437B0841EA"
 						type: "checkmark"
 					}
 			]
@@ -309,7 +309,7 @@
 						xp: 150
 					},
 					{
-						id: "8CED3D061CBCD240"
+						id: "0CED3D061CBCD240"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -317,10 +317,10 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["BF5620C740F50E7E", "B9D33E43A26C6D99"]
+			dependencies: ["3F5620C740F50E7E", "39D33E43A26C6D99"]
 		},
 		{
-			id: "B5DB3400267CCDC7"
+			id: "35DB3400267CCDC7"
 			title: "A Gallery"
 			description: ["Paintings and posters give a house its personality."]
 			icon: "minecraft:painting"
@@ -339,13 +339,13 @@
 			]
 			rewards: [
 					{
-						id: "899B81ED691F3E47"
+						id: "099B81ED691F3E47"
 						type: "xp"
 						xp: 30
 					}
 			]
 			optional: true
-			dependencies: ["BD38A8DC8ED6CBDF"]
+			dependencies: ["3D38A8DC8ED6CBDF"]
 		},
 		{
 			id: "01F61B6D40AB4582"
@@ -358,7 +358,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A3F678446FB36A6D"
+						id: "23F678446FB36A6D"
 						type: "item"
 						item: "minecraft:oak_sign"
 						count: 2
@@ -367,13 +367,13 @@
 			]
 			rewards: [
 					{
-						id: "D7641C939A7DC275"
+						id: "57641C939A7DC275"
 						type: "xp"
 						xp: 20
 					}
 			]
 			optional: true
-			dependencies: ["E1B115E6731AC949"]
+			dependencies: ["61B115E6731AC949"]
 		}
 	]
 }

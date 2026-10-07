@@ -5,7 +5,7 @@
 	subtitle: "A well-fed hero is a dangerous hero. Food gives real, lasting boons."
 	icon: "farmersdelight:cooking_pot"
 	order_index: 9
-	group: "CF1E96262114D2FD"
+	group: "4F1E96262114D2FD"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -32,7 +32,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "E3562B0787F5E47C"
+						id: "63562B0787F5E47C"
 						type: "item"
 						item: "farmersdelight:cooking_pot"
 						count: 1
@@ -48,7 +48,7 @@
 			]
 		},
 		{
-			id: "D7CEF9F7705A5410"
+			id: "57CEF9F7705A5410"
 			title: "A Good Knife"
 			description: ["A knife and a cutting board turn raw ingredients into good ones."]
 			icon: "farmersdelight:iron_knife"
@@ -58,7 +58,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D41054FBC3936299"
+						id: "541054FBC3936299"
 						type: "item"
 						item: "farmersdelight:iron_knife"
 						count: 1
@@ -67,7 +67,7 @@
 			]
 			rewards: [
 					{
-						id: "AF21960954B9791F"
+						id: "2F21960954B9791F"
 						type: "xp"
 						xp: 20
 					}
@@ -75,7 +75,7 @@
 			dependencies: ["0EF13C1A72F9B48E"]
 		},
 		{
-			id: "CFE45A4EB8645947"
+			id: "4FE45A4EB8645947"
 			title: "The Cutting Board"
 			description: ["Slice, dice and strip. Cutting is half of cooking."]
 			icon: "farmersdelight:cutting_board"
@@ -94,15 +94,15 @@
 			]
 			rewards: [
 					{
-						id: "BC5F544FA3C065B2"
+						id: "3C5F544FA3C065B2"
 						type: "xp"
 						xp: 20
 					}
 			]
-			dependencies: ["D7CEF9F7705A5410"]
+			dependencies: ["57CEF9F7705A5410"]
 		},
 		{
-			id: "CA9EB3F9E566905D"
+			id: "4A9EB3F9E566905D"
 			title: "A Garden"
 			description: ["Onions, cabbages, tomatoes, rice. Plant, wait, harvest."]
 			icon: "farmersdelight:onion"
@@ -112,7 +112,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "AC5BE9028705F171"
+						id: "2C5BE9028705F171"
 						type: "item"
 						item: "farmersdelight:onion"
 						count: 4
@@ -121,7 +121,7 @@
 			]
 			rewards: [
 					{
-						id: "C428B77591542F52"
+						id: "4428B77591542F52"
 						type: "xp"
 						xp: 25
 					}
@@ -148,15 +148,15 @@
 			]
 			rewards: [
 					{
-						id: "87D96F505EF51975"
+						id: "07D96F505EF51975"
 						type: "xp"
 						xp: 40
 					}
 			]
-			dependencies: ["CFE45A4EB8645947", "CA9EB3F9E566905D"]
+			dependencies: ["4FE45A4EB8645947", "4A9EB3F9E566905D"]
 		},
 		{
-			id: "9537E6AD84228FDA"
+			id: "1537E6AD84228FDA"
 			title: "Chicken Soup"
 			description: ["The simple remedy."]
 			icon: "farmersdelight:chicken_soup"
@@ -175,7 +175,7 @@
 			]
 			rewards: [
 					{
-						id: "8C38B86CE7822EA9"
+						id: "0C38B86CE7822EA9"
 						type: "xp"
 						xp: 40
 					}
@@ -203,7 +203,7 @@
 			]
 			rewards: [
 					{
-						id: "C305F713F962BC46"
+						id: "4305F713F962BC46"
 						type: "xp"
 						xp: 50
 					}
@@ -212,7 +212,7 @@
 			dependencies: ["7F0F6FF100CB8533"]
 		},
 		{
-			id: "EE241D2B27CEF3E5"
+			id: "6E241D2B27CEF3E5"
 			title: "Honey-Glazed Ham"
 			description: ["A feast dish. It feeds a table and restores a lot."]
 			icon: "farmersdelight:honey_glazed_ham"
@@ -222,7 +222,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "915187F2F744A2FB"
+						id: "115187F2F744A2FB"
 						type: "item"
 						item: "farmersdelight:honey_glazed_ham"
 						count: 1
@@ -239,7 +239,7 @@
 			dependencies: ["7F0F6FF100CB8533"]
 		},
 		{
-			id: "D465C6D594E1DEBC"
+			id: "5465C6D594E1DEBC"
 			title: "Fish Stew"
 			description: ["From the water, into the pot."]
 			icon: "farmersdelight:fish_stew"
@@ -305,7 +305,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BFBE1DF1B1BFD632"
+						id: "3FBE1DF1B1BFD632"
 						type: "item"
 						item: "farmersdelight:dumplings"
 						count: 1
@@ -314,7 +314,7 @@
 			]
 			rewards: [
 					{
-						id: "9BB7DEF7DEA61D18"
+						id: "1BB7DEF7DEA61D18"
 						type: "xp"
 						xp: 40
 					}
@@ -323,7 +323,7 @@
 			dependencies: ["7F0F6FF100CB8533"]
 		},
 		{
-			id: "B1A1905EA47C387F"
+			id: "31A1905EA47C387F"
 			title: "A Varied Diet"
 			description: ["Eat a dozen different dishes. Variety is its own buff."]
 			icon: "minecraft:golden_apple"
@@ -344,7 +344,7 @@
 						xp: 100
 					},
 					{
-						id: "DDFBD9E0823B9880"
+						id: "5DFBD9E0823B9880"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -352,7 +352,7 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["EE241D2B27CEF3E5"]
+			dependencies: ["6E241D2B27CEF3E5"]
 		},
 		{
 			id: "686FF05911D11AAB"
@@ -365,22 +365,22 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "8B4700CF0EEBA20D"
+						id: "0B4700CF0EEBA20D"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "BB164DE586709ED4"
+						id: "3B164DE586709ED4"
 						type: "xp"
 						xp: 120
 					}
 			]
 			optional: true
-			dependencies: ["B1A1905EA47C387F"]
+			dependencies: ["31A1905EA47C387F"]
 		},
 		{
-			id: "FCF30CC7CAEA65BA"
+			id: "7CF30CC7CAEA65BA"
 			title: "Horse Feed"
 			description: ["A good meal for a good mount."]
 			icon: "farmersdelight:horse_feed"
@@ -390,7 +390,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "EADFBC4261AAE610"
+						id: "6ADFBC4261AAE610"
 						type: "item"
 						item: "farmersdelight:horse_feed"
 						count: 1
@@ -408,7 +408,7 @@
 			dependencies: ["0EF13C1A72F9B48E"]
 		},
 		{
-			id: "D79B7C80E77C1E01"
+			id: "579B7C80E77C1E01"
 			title: "Dog Food"
 			description: ["Feed your dog properly."]
 			icon: "farmersdelight:dog_food"
@@ -427,7 +427,7 @@
 			]
 			rewards: [
 					{
-						id: "BD8032D6FEE6E8A3"
+						id: "3D8032D6FEE6E8A3"
 						type: "xp"
 						xp: 50
 					}

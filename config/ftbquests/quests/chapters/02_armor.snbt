@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "F2C507BE48502FF7"
+			id: "72C507BE48502FF7"
 			title: "What Armor Is For"
 			description: ["Armor reduces physical damage. Toughness caps what each hit can do. Resistances and wards cover magic. Armor is never enough alone."]
 			icon: "minecraft:iron_chestplate"
@@ -32,13 +32,13 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "C714580EA9E9E2ED"
+						id: "4714580EA9E9E2ED"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "817F3B5A9ABC5AC4"
+						id: "017F3B5A9ABC5AC4"
 						type: "xp"
 						xp: 15
 					}
@@ -55,7 +55,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "C70A6DC3C42A9D55"
+						id: "470A6DC3C42A9D55"
 						type: "item"
 						item: "minecraft:leather_chestplate"
 						count: 1
@@ -69,10 +69,10 @@
 						xp: 15
 					}
 			]
-			dependencies: ["F2C507BE48502FF7"]
+			dependencies: ["72C507BE48502FF7"]
 		},
 		{
-			id: "E5B0BD8866552606"
+			id: "65B0BD8866552606"
 			title: "Chain"
 			description: ["Middle ground: flexible and decently protective."]
 			icon: "minecraft:chainmail_chestplate"
@@ -91,15 +91,15 @@
 			]
 			rewards: [
 					{
-						id: "EBAADA98015086AC"
+						id: "6BAADA98015086AC"
 						type: "xp"
 						xp: 20
 					}
 			]
-			dependencies: ["F2C507BE48502FF7"]
+			dependencies: ["72C507BE48502FF7"]
 		},
 		{
-			id: "8BB5079ADC7C823E"
+			id: "0BB5079ADC7C823E"
 			title: "Iron"
 			description: ["The honest standard: solid, available, repairable."]
 			icon: "minecraft:iron_chestplate"
@@ -118,15 +118,15 @@
 			]
 			rewards: [
 					{
-						id: "92A1EF809873DDE6"
+						id: "12A1EF809873DDE6"
 						type: "xp"
 						xp: 20
 					}
 			]
-			dependencies: ["F2C507BE48502FF7"]
+			dependencies: ["72C507BE48502FF7"]
 		},
 		{
-			id: "AF8BA5B98960664C"
+			id: "2F8BA5B98960664C"
 			title: "Knight's Plate"
 			description: ["Epic Knights armors bring distinct medieval silhouettes: barbute, sallet, armet. Heavy plate slows you; the skill tree decides how much you mind."]
 			icon: "minecraft:iron_helmet"
@@ -136,21 +136,21 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "857879DEBAE2F1F4"
+						id: "057879DEBAE2F1F4"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "EB8FF9ECB557322E"
+						id: "6B8FF9ECB557322E"
 						type: "xp"
 						xp: 30
 					}
 			]
-			dependencies: ["8BB5079ADC7C823E"]
+			dependencies: ["0BB5079ADC7C823E"]
 		},
 		{
-			id: "C8D6C6935B9F34B9"
+			id: "48D6C6935B9F34B9"
 			title: "Shield Craft"
 			description: ["Shields block, parry and bash. They use stamina and durability; the best ones are earned, not crafted."]
 			icon: "minecraft:shield"
@@ -169,12 +169,12 @@
 			]
 			rewards: [
 					{
-						id: "DA44843325A64F01"
+						id: "5A44843325A64F01"
 						type: "xp"
 						xp: 25
 					}
 			]
-			dependencies: ["8BB5079ADC7C823E"]
+			dependencies: ["0BB5079ADC7C823E"]
 		},
 		{
 			id: "20D8276B978016B6"
@@ -202,7 +202,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["AF8BA5B98960664C"]
+			dependencies: ["2F8BA5B98960664C"]
 		},
 		{
 			id: "4B99403D749D096E"
@@ -233,7 +233,7 @@
 			dependencies: ["1141BF6A1B050AFE"]
 		},
 		{
-			id: "8FD1FD8ABA541229"
+			id: "0FD1FD8ABA541229"
 			title: "Netherite Plate"
 			description: ["The last tier of vanilla armor. It is where progression began, not where it ends."]
 			icon: "minecraft:netherite_chestplate"
@@ -257,10 +257,10 @@
 						xp: 120
 					}
 			]
-			dependencies: ["AF8BA5B98960664C"]
+			dependencies: ["2F8BA5B98960664C"]
 		},
 		{
-			id: "F0D685F31A86E73F"
+			id: "70D685F31A86E73F"
 			title: "Mage Robes"
 			description: ["Robes and cowls add spell power and cooldown reduction at the cost of armor. Choose a school: pyromancer, cryomancer, priest, archevoker."]
 			icon: "irons_spellbooks:pyromancer_helmet"
@@ -284,7 +284,7 @@
 						xp: 60
 					}
 			]
-			dependencies: ["F2C507BE48502FF7"]
+			dependencies: ["72C507BE48502FF7"]
 		},
 		{
 			id: "4C8B50EF502DD38C"
@@ -297,7 +297,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "E5BBE679459A6F80"
+						id: "65BBE679459A6F80"
 						type: "item"
 						item: "irons_spellbooks:netherite_mage_chestplate"
 						count: 1
@@ -311,7 +311,7 @@
 						xp: 150
 					}
 			]
-			dependencies: ["F0D685F31A86E73F", "8FD1FD8ABA541229"]
+			dependencies: ["70D685F31A86E73F", "0FD1FD8ABA541229"]
 		},
 		{
 			id: "6ED9CB1458CF239A"
@@ -324,18 +324,18 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D2A1BF1EA2A9D43D"
+						id: "52A1BF1EA2A9D43D"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "82C46670B4B4E66D"
+						id: "02C46670B4B4E66D"
 						type: "xp"
 						xp: 50
 					}
 			]
-			dependencies: ["AF8BA5B98960664C"]
+			dependencies: ["2F8BA5B98960664C"]
 		}
 	]
 }

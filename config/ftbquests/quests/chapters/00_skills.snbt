@@ -1,5 +1,5 @@
 {
-	id: "A658279F9B983958"
+	id: "2658279F9B983958"
 	filename: "00_skills"
 	title: "The Constellation of Embers"
 	subtitle: "620 stars. A hundred points. Every road costs something."
@@ -45,7 +45,7 @@
 			]
 		},
 		{
-			id: "B17CB3F8206F68F1"
+			id: "317CB3F8206F68F1"
 			title: "Eight Peoples"
 			description: ["Each people carries a gift and a burden: Dwarves dig, Elves dodge, Orcs smash, Halflings stumble into luck. Your choice is permanent: there is no cheap respec for blood."]
 			icon: "minecraft:player_head"
@@ -61,7 +61,7 @@
 			]
 			rewards: [
 					{
-						id: "DA6CF124396DCAF8"
+						id: "5A6CF124396DCAF8"
 						type: "xp"
 						xp: 20
 					}
@@ -90,7 +90,7 @@
 						xp: 20
 					},
 					{
-						id: "84BBBE5658832CCB"
+						id: "04BBBE5658832CCB"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -111,13 +111,13 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "E9532E477A7DD5BE"
+						id: "69532E477A7DD5BE"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "96A3A0BE32D62884"
+						id: "16A3A0BE32D62884"
 						type: "xp"
 						xp: 25
 					}
@@ -170,7 +170,7 @@
 						xp: 60
 					},
 					{
-						id: "B93317F35066737F"
+						id: "393317F35066737F"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -181,7 +181,7 @@
 			dependencies: ["05259D60F9F1E768"]
 		},
 		{
-			id: "8B15AE3AA3DD61AC"
+			id: "0B15AE3AA3DD61AC"
 			title: "Cross-Region Bridges"
 			description: ["Between every pair of neighbouring regions sit two hybrid stars. They are the only cheap way to mix archetypes: Battlemage, Blood Knight, Druid-Cleric, Shadowblade."]
 			icon: "minecraft:chain"
@@ -197,7 +197,7 @@
 			]
 			rewards: [
 					{
-						id: "917C1E07CC9B845F"
+						id: "117C1E07CC9B845F"
 						type: "xp"
 						xp: 40
 					}
@@ -205,7 +205,7 @@
 			dependencies: ["5EE77653295A5C3C"]
 		},
 		{
-			id: "AF8AE96638A3C630"
+			id: "2F8AE96638A3C630"
 			title: "A Clean Slate"
 			description: ["The Amnesia Scroll resets your tree for a ten percent loss of levels. It is a luxury; use it when your build has changed, not when it has failed."]
 			icon: "minecraft:grindstone"
@@ -215,21 +215,21 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "FB9367A830FEB0C5"
+						id: "7B9367A830FEB0C5"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "89F29B7CAF92FC1D"
+						id: "09F29B7CAF92FC1D"
 						type: "xp"
 						xp: 40
 					}
 			]
-			dependencies: ["8B15AE3AA3DD61AC"]
+			dependencies: ["0B15AE3AA3DD61AC"]
 		},
 		{
-			id: "D127C307ED32723A"
+			id: "5127C307ED32723A"
 			title: "XP Is Currency"
 			description: ["Skill points are bought with experience, not found. Every quest pays XP; some pay points directly. Enchanting and the tree compete for the same pool: plan."]
 			icon: "minecraft:experience_bottle"
@@ -239,13 +239,13 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "AFC0302D0E50B5F6"
+						id: "2FC0302D0E50B5F6"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "E4EFE5BFA259F1FB"
+						id: "64EFE5BFA259F1FB"
 						type: "xp"
 						xp: 30
 					}
@@ -254,7 +254,7 @@
 			dependencies: ["05259D60F9F1E768"]
 		},
 		{
-			id: "F1C062A3001DEE6E"
+			id: "71C062A3001DEE6E"
 			title: "Oath of Might"
 			description: ["Warrior, Berserker and Spellblade begin here. Hit things; get hit less."]
 			icon: "minecraft:iron_sword"
@@ -264,7 +264,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A43A4CDECC0C0767"
+						id: "243A4CDECC0C0767"
 						type: "checkmark"
 					}
 			]
@@ -279,7 +279,7 @@
 			dependencies: ["2888A377034D31A4"]
 		},
 		{
-			id: "C70FA38512D61976"
+			id: "470FA38512D61976"
 			title: "Oath of Finesse"
 			description: ["Ranger, Rogue and Wanderer begin here. Choose your moment."]
 			icon: "minecraft:bow"
@@ -295,7 +295,7 @@
 			]
 			rewards: [
 					{
-						id: "F6AFFC2B1CAD4DFC"
+						id: "76AFFC2B1CAD4DFC"
 						type: "xp"
 						xp: 15
 					}
@@ -320,7 +320,7 @@
 			]
 			rewards: [
 					{
-						id: "D1C465D0ABFB756B"
+						id: "51C465D0ABFB756B"
 						type: "xp"
 						xp: 15
 					}
@@ -329,7 +329,7 @@
 			dependencies: ["2888A377034D31A4"]
 		},
 		{
-			id: "E9E781C3FEBC6B58"
+			id: "69E781C3FEBC6B58"
 			title: "Oath of Faith"
 			description: ["Paladin, Cleric, Druid and Guardian begin here. Keep the line standing."]
 			icon: "minecraft:golden_apple"
@@ -364,7 +364,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "97C54AEA4DA2127F"
+						id: "17C54AEA4DA2127F"
 						type: "checkmark"
 					}
 			]
@@ -383,7 +383,7 @@
 						title: "2 skill points"
 					}
 			]
-			dependencies: ["5EE77653295A5C3C", "8B15AE3AA3DD61AC"]
+			dependencies: ["5EE77653295A5C3C", "0B15AE3AA3DD61AC"]
 		}
 	]
 }

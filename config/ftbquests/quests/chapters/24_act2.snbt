@@ -1,5 +1,5 @@
 {
-	id: "8AAE8C5B183F9276"
+	id: "0AAE8C5B183F9276"
 	filename: "24_act2"
 	title: "Act II: A Wider World"
 	subtitle: "The tablet named seven Wardens. The first of them kept a forest where it is always dusk."
@@ -32,7 +32,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "BBBEFE0C4659982C"
+						id: "3BBEFE0C4659982C"
 						type: "dimension"
 						dim: "twilightforest:twilight_forest"
 					}
@@ -44,7 +44,7 @@
 						xp: 120
 					},
 					{
-						id: "A311ED108E9000AF"
+						id: "2311ED108E9000AF"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
 						elevate: true
@@ -65,14 +65,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "8AD8DF23C5CE29B3"
+						id: "0AD8DF23C5CE29B3"
 						type: "structure"
 						structure: "twilightforest:small_hollow_hill"
 					}
 			]
 			rewards: [
 					{
-						id: "847C1C897F7AE6FF"
+						id: "047C1C897F7AE6FF"
 						type: "xp"
 						xp: 60
 					}
@@ -81,7 +81,7 @@
 			dependencies: ["4D23F71DA9CEE2F9"]
 		},
 		{
-			id: "94D8472B0A009416"
+			id: "14D8472B0A009416"
 			title: "Ironwood"
 			description: ["A tree that remembers iron. The first honest material of the Twilight."]
 			icon: "twilightforest:ironwood_ingot"
@@ -91,7 +91,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D57058B1CF459ABC"
+						id: "557058B1CF459ABC"
 						type: "item"
 						item: "twilightforest:ironwood_ingot"
 						count: 4
@@ -100,7 +100,7 @@
 			]
 			rewards: [
 					{
-						id: "DC5043550EEA5400"
+						id: "5C5043550EEA5400"
 						type: "xp"
 						xp: 50
 					}
@@ -108,7 +108,7 @@
 			dependencies: ["2BCA19B2DA4C52DD"]
 		},
 		{
-			id: "E06478B6A15D9DF2"
+			id: "606478B6A15D9DF2"
 			title: "The Courtyard Serpent"
 			description: ["The Naga coils through a courtyard of broken stone. It is the Root Warden's first mistake: the oldest, tiredest guardian, still doing its duty.", "Strafe, don't retreat; the tail hits harder than the head."]
 			icon: "twilightforest:naga_scale"
@@ -136,7 +136,7 @@
 						xp: 200
 					},
 					{
-						id: "891182677B11A08D"
+						id: "091182677B11A08D"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -153,7 +153,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["94D8472B0A009416"]
+			dependencies: ["14D8472B0A009416"]
 		},
 		{
 			id: "248783257B1E3F6F"
@@ -175,15 +175,15 @@
 			]
 			rewards: [
 					{
-						id: "A6C76FC84A545730"
+						id: "26C76FC84A545730"
 						type: "xp"
 						xp: 70
 					}
 			]
-			dependencies: ["E06478B6A15D9DF2"]
+			dependencies: ["606478B6A15D9DF2"]
 		},
 		{
-			id: "CE05BE5386A43ABD"
+			id: "4E05BE5386A43ABD"
 			title: "Down the Labyrinth"
 			description: ["A maze under the hills, built to be forgotten. The Minoshroom waits at its heart, and the cheese is not worth the trouble."]
 			icon: "minecraft:oak_trapdoor"
@@ -193,14 +193,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "80475C3B93C379C3"
+						id: "00475C3B93C379C3"
 						type: "structure"
 						structure: "twilightforest:labyrinth"
 					}
 			]
 			rewards: [
 					{
-						id: "87DD94A353537258"
+						id: "07DD94A353537258"
 						type: "xp"
 						xp: 80
 					}
@@ -219,7 +219,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "A7E320AB8C0D3526"
+						id: "27E320AB8C0D3526"
 						type: "kill"
 						entity: "twilightforest:minoshroom"
 						value: 1
@@ -227,12 +227,12 @@
 			]
 			rewards: [
 					{
-						id: "B19ABBC556E807AA"
+						id: "319ABBC556E807AA"
 						type: "xp"
 						xp: 220
 					},
 					{
-						id: "ECCADD69D25E78F2"
+						id: "6CCADD69D25E78F2"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
 						elevate: true
@@ -240,10 +240,10 @@
 						title: "Tier 3 supply cache"
 					}
 			]
-			dependencies: ["CE05BE5386A43ABD"]
+			dependencies: ["4E05BE5386A43ABD"]
 		},
 		{
-			id: "9BB44DAA72034723"
+			id: "1BB44DAA72034723"
 			title: "A Tower That Hums"
 			description: ["The Lich keeps a tower of floors and spawners, each stronger than the last. Make your way up; the stairs are the easy part."]
 			icon: "minecraft:purple_stained_glass"
@@ -253,7 +253,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "87C6FCC1508D17EE"
+						id: "07C6FCC1508D17EE"
 						type: "structure"
 						structure: "twilightforest:lich_tower"
 					}
@@ -279,20 +279,20 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "DBE09ED43F248627"
+						id: "5BE09ED43F248627"
 						type: "kill"
 						entity: "twilightforest:lich"
 						value: 1
 					},
 					{
-						id: "82FFE49A54A70DE0"
+						id: "02FFE49A54A70DE0"
 						type: "advancement"
 						advancement: "twilightforest:progress_lich"
 					}
 			]
 			rewards: [
 					{
-						id: "FEA28B273E59E83F"
+						id: "7EA28B273E59E83F"
 						type: "xp"
 						xp: 300
 					},
@@ -305,7 +305,7 @@
 						title: "2 skill points"
 					},
 					{
-						id: "EC9B934B6900F354"
+						id: "6C9B934B6900F354"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
 						elevate: true
@@ -313,10 +313,10 @@
 						title: "Lich spoils"
 					}
 			]
-			dependencies: ["9BB44DAA72034723"]
+			dependencies: ["1BB44DAA72034723"]
 		},
 		{
-			id: "E948F2306ABC51DF"
+			id: "6948F2306ABC51DF"
 			title: "Knightmetal"
 			description: ["The Knight Phantoms kept their armor when they lost everything else. It is a good metal: green-black, heavy, and a little too loyal."]
 			icon: "twilightforest:knightmetal_ingot"
@@ -335,7 +335,7 @@
 			]
 			rewards: [
 					{
-						id: "C8BD605B0F84F49D"
+						id: "48BD605B0F84F49D"
 						type: "xp"
 						xp: 80
 					}
@@ -353,7 +353,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "8F8BB25DFC499D6E"
+						id: "0F8BB25DFC499D6E"
 						type: "structure"
 						structure: "twilightforest:hydra_lair"
 					},
@@ -380,10 +380,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["E948F2306ABC51DF"]
+			dependencies: ["6948F2306ABC51DF"]
 		},
 		{
-			id: "D7BCE9326B41A10C"
+			id: "57BCE9326B41A10C"
 			title: "The Land Below"
 			description: ["The Seven Wardens bound seven realms, and the Nether is the one that never forgave them. It burns, but not for the Warden's reasons.", "Bring fire resistance, a good bow, and a route back: Waystones will not follow you through the portal."]
 			icon: "minecraft:netherrack"
@@ -408,7 +408,7 @@
 			dependencies: ["248783257B1E3F6F"]
 		},
 		{
-			id: "ACF3FABA149C39D0"
+			id: "2CF3FABA149C39D0"
 			title: "Brick and Cinder"
 			description: ["Fortresses guard blaze spawners and little else. Take the rods; leave the wither skeletons their dignity."]
 			icon: "minecraft:nether_bricks"
@@ -425,7 +425,7 @@
 			]
 			rewards: [
 					{
-						id: "9E627EB1DE0F275B"
+						id: "1E627EB1DE0F275B"
 						type: "xp"
 						xp: 80
 					},
@@ -437,7 +437,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7BCE9326B41A10C"]
+			dependencies: ["57BCE9326B41A10C"]
 		},
 		{
 			id: "2DAEF71D1C4A249C"
@@ -463,7 +463,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7BCE9326B41A10C"]
+			dependencies: ["57BCE9326B41A10C"]
 		},
 		{
 			id: "274A8F597226C54C"
@@ -490,10 +490,10 @@
 						xp: 80
 					}
 			]
-			dependencies: ["ACF3FABA149C39D0"]
+			dependencies: ["2CF3FABA149C39D0"]
 		},
 		{
-			id: "8DADC9605E959E60"
+			id: "0DADC9605E959E60"
 			title: "A Heavier Metal"
 			description: ["Netherite is a plateau, not a summit. The gear beyond it makes it look like an apprenticeship."]
 			icon: "minecraft:netherite_ingot"
@@ -503,7 +503,7 @@
 			shape: "hexagon"
 			tasks: [
 					{
-						id: "FD08E98EFB20C32E"
+						id: "7D08E98EFB20C32E"
 						type: "item"
 						item: "minecraft:netherite_ingot"
 						count: 1
@@ -538,7 +538,7 @@
 			shape: "octagon"
 			tasks: [
 					{
-						id: "A99059997144B260"
+						id: "299059997144B260"
 						type: "kill"
 						entity: "twilightforest:ur_ghast"
 						value: 1
@@ -551,7 +551,7 @@
 			]
 			rewards: [
 					{
-						id: "C0C635AAE542D5C0"
+						id: "40C635AAE542D5C0"
 						type: "xp"
 						xp: 400
 					},
@@ -564,7 +564,7 @@
 						title: "2 skill points"
 					},
 					{
-						id: "E7C62AE16EBBB490"
+						id: "67C62AE16EBBB490"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -572,10 +572,10 @@
 						title: "Ur-Ghast spoils"
 					}
 			]
-			dependencies: ["32D3D627098B86C6", "8DADC9605E959E60"]
+			dependencies: ["32D3D627098B86C6", "0DADC9605E959E60"]
 		},
 		{
-			id: "E10267CB85F6FB04"
+			id: "610267CB85F6FB04"
 			title: "Beneath the Roots"
 			description: ["A second world sits under the first. The Undergarden is cold, humid and full of things that evolved without sunlight."]
 			icon: "minecraft:deepslate"
@@ -600,7 +600,7 @@
 			dependencies: ["248783257B1E3F6F"]
 		},
 		{
-			id: "EBCD7A9FA710B915"
+			id: "6BCD7A9FA710B915"
 			title: "Cloggrum"
 			description: ["Wet metal, strange alloy. Surprisingly good armor."]
 			icon: "undergarden:cloggrum_ingot"
@@ -610,7 +610,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A897539BAF71EB5F"
+						id: "2897539BAF71EB5F"
 						type: "item"
 						item: "undergarden:cloggrum_ingot"
 						count: 8
@@ -619,12 +619,12 @@
 			]
 			rewards: [
 					{
-						id: "F5D21AA49C279ECD"
+						id: "75D21AA49C279ECD"
 						type: "xp"
 						xp: 80
 					}
 			]
-			dependencies: ["E10267CB85F6FB04"]
+			dependencies: ["610267CB85F6FB04"]
 		},
 		{
 			id: "159D28A8F217413B"
@@ -645,12 +645,12 @@
 			]
 			rewards: [
 					{
-						id: "B47788E81CB68EC2"
+						id: "347788E81CB68EC2"
 						type: "xp"
 						xp: 350
 					},
 					{
-						id: "A9AED41BC6C11CDA"
+						id: "29AED41BC6C11CDA"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -658,7 +658,7 @@
 						title: "Tier 4 supply cache"
 					}
 			]
-			dependencies: ["EBCD7A9FA710B915"]
+			dependencies: ["6BCD7A9FA710B915"]
 		},
 		{
 			id: "2E626F06DA6357C8"
@@ -689,7 +689,7 @@
 			dependencies: ["4D23F71DA9CEE2F9"]
 		},
 		{
-			id: "D1E3E7860E2CE22C"
+			id: "51E3E7860E2CE22C"
 			title: "A Very Fast Bird"
 			description: ["Chocobos are the best land mount you can get before the sky opens: fast, quick to jump, willing to carry a second rider. They need nests, greens, and a good reputation."]
 			icon: "chocobos:chocobo_nest"
@@ -708,12 +708,12 @@
 			]
 			rewards: [
 					{
-						id: "8B7AF15D8763D62F"
+						id: "0B7AF15D8763D62F"
 						type: "xp"
 						xp: 90
 					},
 					{
-						id: "C0A6910F3E6E416A"
+						id: "40A6910F3E6E416A"
 						type: "item"
 						item: "chocobos:leather_chocobo_armor"
 						count: 1
@@ -747,10 +747,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D1E3E7860E2CE22C"]
+			dependencies: ["51E3E7860E2CE22C"]
 		},
 		{
-			id: "A7ED3045F516C6FE"
+			id: "27ED3045F516C6FE"
 			title: "Out on the Water"
 			description: ["A cog is a floating base: cargo, cannons and a very large number of ways to sink. Seas are not obstacles any more; they are roads."]
 			icon: "smallships:oak_cog"
@@ -769,7 +769,7 @@
 			]
 			rewards: [
 					{
-						id: "80D16F5B2D2570D3"
+						id: "00D16F5B2D2570D3"
 						type: "xp"
 						xp: 80
 					}
@@ -777,7 +777,7 @@
 			dependencies: ["2E626F06DA6357C8"]
 		},
 		{
-			id: "904AD7DB5B50B5B8"
+			id: "104AD7DB5B50B5B8"
 			title: "Iron-Bound"
 			description: ["More slots, more spells, more ways to be wrong in public. Upgrade your book as you learn what you actually use."]
 			icon: "irons_spellbooks:iron_spell_book"
@@ -796,13 +796,13 @@
 			]
 			rewards: [
 					{
-						id: "8BF44CCE0B024761"
+						id: "0BF44CCE0B024761"
 						type: "xp"
 						xp: 80
 					}
 			]
 			optional: true
-			dependencies: ["C4453684CC134345"]
+			dependencies: ["44453684CC134345"]
 		},
 		{
 			id: "0CEB43486C2BA243"
@@ -815,20 +815,20 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "8ABA8C69EC727A63"
+						id: "0ABA8C69EC727A63"
 						type: "advancement"
 						advancement: "apotheosis:enchanting/30ench"
 					}
 			]
 			rewards: [
 					{
-						id: "A85A450C6CB72036"
+						id: "285A450C6CB72036"
 						type: "xp"
 						xp: 120
 					}
 			]
 			optional: true
-			dependencies: ["ACF3FABA149C39D0"]
+			dependencies: ["2CF3FABA149C39D0"]
 		},
 		{
 			id: "7D63898FEEF4031E"
@@ -848,12 +848,12 @@
 			]
 			rewards: [
 					{
-						id: "DCEEFD26BCFFC6A7"
+						id: "5CEEFD26BCFFC6A7"
 						type: "xp"
 						xp: 120
 					},
 					{
-						id: "B13342E36A04ED12"
+						id: "313342E36A04ED12"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
 						elevate: true
@@ -865,7 +865,7 @@
 			dependencies: ["0CEB43486C2BA243"]
 		},
 		{
-			id: "C4668D8C5ADC0F5C"
+			id: "44668D8C5ADC0F5C"
 			title: "The Veil Has Edges"
 			description: ["Five Wardens remain. Each held a realm: Sky, Dream, Echo, Flame, End. The Root Ward's last words, torn from the Ur-Ghast's ruin, give a direction: up.", "Past the clouds is a country built on islands, and the first of its gates is guarded by a sleeping thing. The Ember does not like the sky; it has been there before."]
 			icon: "minecraft:nether_star"
@@ -881,7 +881,7 @@
 			]
 			rewards: [
 					{
-						id: "E4CCE9C6D832AD66"
+						id: "64CCE9C6D832AD66"
 						type: "item"
 						item: "aldreth:ember_shard"
 						count: 4
@@ -900,7 +900,7 @@
 						title: "2 skill points"
 					},
 					{
-						id: "C42E870D94B9DAB7"
+						id: "442E870D94B9DAB7"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
 						elevate: true

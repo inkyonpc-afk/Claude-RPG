@@ -1,11 +1,11 @@
 {
-	id: "D5472CDE0923FA02"
+	id: "55472CDE0923FA02"
 	filename: "17_ruins"
 	title: "Ruins, Towers and Camps"
 	subtitle: "Common places hold common things: supplies, a story, a little luck."
 	icon: "minecraft:mossy_stone_bricks"
 	order_index: 17
-	group: "BA29B6D65C079795"
+	group: "3A29B6D65C079795"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -32,13 +32,13 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "EDB6F6501C5EF515"
+						id: "6DB6F6501C5EF515"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "86C2553FA0F673A4"
+						id: "06C2553FA0F673A4"
 						type: "xp"
 						xp: 20
 					}
@@ -55,7 +55,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D425BDAAE8AF06B3"
+						id: "5425BDAAE8AF06B3"
 						type: "structure"
 						structure: "minecraft:village_plains"
 					}
@@ -71,7 +71,7 @@
 			dependencies: ["34CFC877343A8EC2"]
 		},
 		{
-			id: "E7343E5B16186ECC"
+			id: "67343E5B16186ECC"
 			title: "Pillager Outpost"
 			description: ["Hard to approach, rewarding to clear."]
 			icon: "minecraft:crossbow"
@@ -123,7 +123,7 @@
 			dependencies: ["34CFC877343A8EC2"]
 		},
 		{
-			id: "BF8304B6EEC535B7"
+			id: "3F8304B6EEC535B7"
 			title: "Ruined Portal"
 			description: ["A half-built gate in a field. Loot, obsidian, and a place to rest."]
 			icon: "minecraft:crying_obsidian"
@@ -133,7 +133,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "DC6284CA47C81DBD"
+						id: "5C6284CA47C81DBD"
 						type: "structure"
 						structure: "minecraft:ruined_portal"
 					}
@@ -159,7 +159,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "DEB297ED04A5D609"
+						id: "5EB297ED04A5D609"
 						type: "structure"
 						structure: "dungeons_arise:abandoned_temple"
 					}
@@ -198,7 +198,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["E7343E5B16186ECC"]
+			dependencies: ["67343E5B16186ECC"]
 		},
 		{
 			id: "3ECF4C404E7B005C"
@@ -218,7 +218,7 @@
 			]
 			rewards: [
 					{
-						id: "D97366A8FFFAAC7E"
+						id: "597366A8FFFAAC7E"
 						type: "xp"
 						xp: 80
 					}
@@ -275,7 +275,7 @@
 						xp: 80
 					},
 					{
-						id: "D6BE6EF054397B5E"
+						id: "56BE6EF054397B5E"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
 						elevate: true
@@ -297,14 +297,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D99422928EA5683C"
+						id: "599422928EA5683C"
 						type: "structure"
 						structure: "betterdungeons:skeleton_dungeon"
 					}
 			]
 			rewards: [
 					{
-						id: "B3713F6B57E886C5"
+						id: "33713F6B57E886C5"
 						type: "xp"
 						xp: 60
 					}
@@ -330,7 +330,7 @@
 			]
 			rewards: [
 					{
-						id: "876A67FD94ACED52"
+						id: "076A67FD94ACED52"
 						type: "xp"
 						xp: 60
 					}
@@ -349,14 +349,14 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "90729BBFDFDBBC3D"
+						id: "10729BBFDFDBBC3D"
 						type: "structure"
 						structure: "minecraft:jungle_pyramid"
 					}
 			]
 			rewards: [
 					{
-						id: "E8F7DC1F08D9F67B"
+						id: "68F7DC1F08D9F67B"
 						type: "xp"
 						xp: 60
 					}
@@ -365,7 +365,7 @@
 			dependencies: ["27C94687CE8F95A3"]
 		},
 		{
-			id: "A6CA80F8E2AE3333"
+			id: "26CA80F8E2AE3333"
 			title: "Ocean Monument"
 			description: ["A sea-temple with guardians that hate air. Bring water breathing."]
 			icon: "minecraft:prismarine"
@@ -382,7 +382,7 @@
 			]
 			rewards: [
 					{
-						id: "B5F1FBFED2D640D7"
+						id: "35F1FBFED2D640D7"
 						type: "xp"
 						xp: 120
 					},
@@ -399,7 +399,7 @@
 			dependencies: ["2CA53FC2A165217A"]
 		},
 		{
-			id: "F2746ED10AB9FB7F"
+			id: "72746ED10AB9FB7F"
 			title: "A Shipwreck"
 			description: ["A hull on a reef. Treasure maps and rot."]
 			icon: "minecraft:oak_boat"
@@ -409,7 +409,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B654F7EA157F2842"
+						id: "3654F7EA157F2842"
 						type: "structure"
 						structure: "minecraft:shipwreck"
 					}
@@ -425,7 +425,7 @@
 			dependencies: ["34CFC877343A8EC2"]
 		},
 		{
-			id: "AAFB6944B498FC9F"
+			id: "2AFB6944B498FC9F"
 			title: "Ancient Ruins"
 			description: ["A ruin from before the Crown's fall. Some holds a staircase down."]
 			icon: "minecraft:mossy_cobblestone"
@@ -472,7 +472,7 @@
 						xp: 150
 					},
 					{
-						id: "EFE82EA62686DBB0"
+						id: "6FE82EA62686DBB0"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -480,7 +480,7 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["A6CA80F8E2AE3333", "3ECF4C404E7B005C", "2CA53FC2A165217A"]
+			dependencies: ["26CA80F8E2AE3333", "3ECF4C404E7B005C", "2CA53FC2A165217A"]
 		}
 	]
 }

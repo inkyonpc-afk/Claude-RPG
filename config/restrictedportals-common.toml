@@ -1,3 +1,4 @@
+
 [options]
 	#Prevents Death by Teleporting Player to Spawn if trying to enter an Ender Portal
 	preventdeath = true
@@ -13,3 +14,4 @@
 	dimresname = "minecraft:the_nether,twilightforest:twilight_forest,undergarden:undergarden,aether:the_aether,blue_skies:everbright,blue_skies:everdawn,deeperdarker:otherside,minecraft:the_end"
 	#Comma seperated list of Dimension Display Names
 	dimnames = "Nether,Twilight Forest,Undergarden,Aether,Everbright,Everdawn,Otherside,End"
+

@@ -1,5 +1,5 @@
 {
-	id: "B27A803ED346FBBF"
+	id: "327A803ED346FBBF"
 	filename: "01_weapons"
 	title: "The Weapon Sandbox"
 	subtitle: "Twenty-one classes of weapon, each with its own rhythm, its own scaling and its own place on the tree."
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "D7061B23D6A24A12"
+			id: "57061B23D6A24A12"
 			title: "An Arsenal of Many Hands"
 			description: ["Every weapon in Aldreth belongs to a class, and every class plays differently: speed, reach, stagger, sweep, windup. Combat has weight and direction: the sword you pick tells the world who you are.", "Find an example of each class and see how it feels. Your skill tree rewards sticking to a class, so play with a few before you commit."]
 			icon: "minecraft:iron_sword"
@@ -45,7 +45,7 @@
 			]
 		},
 		{
-			id: "AFE2E8EA5BFA1DB1"
+			id: "2FE2E8EA5BFA1DB1"
 			title: "Longsword"
 			description: ["The generalist: balanced speed, reach and damage. Blocks, parries, never lets you down. Best on: Warrior.", "Obtain any longsword to complete this step; every class is represented."]
 			icon: "simplyswords:iron_longsword"
@@ -70,10 +70,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "C9A7C51EFB04A609"
+			id: "49A7C51EFB04A609"
 			title: "Katana"
 			description: ["Faster than a longsword and quicker to find an opening. Bleed on crits; draw-cut combos. Best on: Rogue or Warrior.", "Obtain any katana to complete this step; every class is represented."]
 			icon: "simplyswords:gold_katana"
@@ -98,7 +98,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "774F8CB30E4EB323"
@@ -111,7 +111,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "84FDDD4E4BBB28A0"
+						id: "04FDDD4E4BBB28A0"
 						type: "item"
 						item: "simplyswords:gold_rapier"
 						count: 1
@@ -126,10 +126,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "BC56E1D50F393C67"
+			id: "3C56E1D50F393C67"
 			title: "Dagger"
 			description: ["The fastest weapon in the game. Dual-wielding daggers is an entire build. Best on: Rogue.", "Obtain any dagger to complete this step; every class is represented."]
 			icon: "simplyswords:gold_sai"
@@ -139,7 +139,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9E670C4B81EC938B"
+						id: "1E670C4B81EC938B"
 						type: "item"
 						item: "simplyswords:gold_sai"
 						count: 1
@@ -154,7 +154,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "4D7EA497EB53D2EE"
@@ -176,13 +176,13 @@
 			]
 			rewards: [
 					{
-						id: "CE06E843FAC47BFA"
+						id: "4E06E843FAC47BFA"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "07E385095B134181"
@@ -210,10 +210,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "9D2923D0495F5594"
+			id: "1D2923D0495F5594"
 			title: "Axe"
 			description: ["One-handed and brutal. Cleaves shields and armor. Bleeds. Best on: Berserker.", "Obtain any axe to complete this step; every class is represented."]
 			icon: "soulsweapons:leviathan_axe"
@@ -223,7 +223,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "9E687D09E7F13F6E"
+						id: "1E687D09E7F13F6E"
 						type: "item"
 						item: "soulsweapons:leviathan_axe"
 						count: 1
@@ -238,10 +238,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "A4B8A96CBA98A712"
+			id: "24B8A96CBA98A712"
 			title: "Greataxe"
 			description: ["An axe on steroids. Huge sweeps, huge windup, huge sound. Best on: Berserker.", "Obtain any greataxe to complete this step; every class is represented."]
 			icon: "simplyswords:gold_greataxe"
@@ -251,7 +251,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "984CE39A6BA3245A"
+						id: "184CE39A6BA3245A"
 						type: "item"
 						item: "simplyswords:gold_greataxe"
 						count: 1
@@ -266,10 +266,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "CEADE6F1DB54818C"
+			id: "4EADE6F1DB54818C"
 			title: "Warhammer"
 			description: ["Staggers and breaks things. The best partner of a shield and a cleric. Best on: Guardian or Paladin.", "Obtain any warhammer to complete this step; every class is represented."]
 			icon: "simplyswords:gold_greathammer"
@@ -279,7 +279,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "B03506B22BE09A30"
+						id: "303506B22BE09A30"
 						type: "item"
 						item: "simplyswords:gold_greathammer"
 						count: 1
@@ -288,13 +288,13 @@
 			]
 			rewards: [
 					{
-						id: "97A4B7C6C2C6F4F1"
+						id: "17A4B7C6C2C6F4F1"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "723EFBDC2524C64C"
@@ -322,10 +322,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "C07CAE40F9258877"
+			id: "407CAE40F9258877"
 			title: "Spear"
 			description: ["Reach and thrust. Keep them away, hit them first, retreat. Best on: Warrior or Ranger.", "Obtain any spear to complete this step; every class is represented."]
 			icon: "simplyswords:iron_spear"
@@ -344,13 +344,13 @@
 			]
 			rewards: [
 					{
-						id: "D15BD5313AD50638"
+						id: "515BD5313AD50638"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "736E6A1AF0CE343C"
@@ -372,16 +372,16 @@
 			]
 			rewards: [
 					{
-						id: "8A7243D74BC1B408"
+						id: "0A7243D74BC1B408"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "DA6A62515D0B0F32"
+			id: "5A6A62515D0B0F32"
 			title: "Scythe"
 			description: ["A reaper's tool: wide arcs, soul-lashing, gets stronger as the dead pile up. Best on: Necromancer or Blood Mage.", "Obtain any scythe to complete this step; every class is represented."]
 			icon: "simplyswords:iron_scythe"
@@ -391,7 +391,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "DE78F5F6DF9978E7"
+						id: "5E78F5F6DF9978E7"
 						type: "item"
 						item: "simplyswords:iron_scythe"
 						count: 1
@@ -400,16 +400,16 @@
 			]
 			rewards: [
 					{
-						id: "E68DFCC1026447F4"
+						id: "668DFCC1026447F4"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "F40BBC079B91E1ED"
+			id: "740BBC079B91E1ED"
 			title: "Quarterstaff"
 			description: ["Two ends, spin and sweep. A traveller's weapon and a warrior's cane. Best on: Wanderer.", "Obtain any quarterstaff to complete this step; every class is represented."]
 			icon: "ageofweapons:heavy_staff_gold"
@@ -419,7 +419,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A7D387F9B8551CBE"
+						id: "27D387F9B8551CBE"
 						type: "item"
 						item: "ageofweapons:heavy_staff_gold"
 						count: 1
@@ -428,16 +428,16 @@
 			]
 			rewards: [
 					{
-						id: "AF5DD2C6F7ADE41F"
+						id: "2F5DD2C6F7ADE41F"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "A84D0ED41EBE75C1"
+			id: "284D0ED41EBE75C1"
 			title: "Whip"
 			description: ["Long reach, light damage, every stat that dislikes you being close. Best on: Rogue.", "Obtain any whip to complete this step; every class is represented."]
 			icon: "simplyswords:gold_chakram"
@@ -456,13 +456,13 @@
 			]
 			rewards: [
 					{
-						id: "F19920E4EF3061B5"
+						id: "719920E4EF3061B5"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "5C7DD75760E95300"
@@ -475,7 +475,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "FCDCC156CF572F70"
+						id: "7CDCC156CF572F70"
 						type: "item"
 						item: "magistuarmory:longbow"
 						count: 1
@@ -484,13 +484,13 @@
 			]
 			rewards: [
 					{
-						id: "F384B70E71B99DBB"
+						id: "7384B70E71B99DBB"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "0C6ACD176A27CE47"
@@ -503,7 +503,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "EC125E23BA0637A0"
+						id: "6C125E23BA0637A0"
 						type: "item"
 						item: "magistuarmory:heavy_crossbow"
 						count: 1
@@ -518,7 +518,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "79E65AF16DAA2594"
@@ -531,7 +531,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "E4F641EFFD2AF090"
+						id: "64F641EFFD2AF090"
 						type: "item"
 						item: "soulsweapons:chungus_staff"
 						count: 1
@@ -540,13 +540,13 @@
 			]
 			rewards: [
 					{
-						id: "CF5CC3A5438525FF"
+						id: "4F5CC3A5438525FF"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "4C65B2446EBB0AFC"
@@ -568,13 +568,13 @@
 			]
 			rewards: [
 					{
-						id: "CBAE89C7ADDE5AF8"
+						id: "4BAE89C7ADDE5AF8"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "1A36C16A115D6AC8"
@@ -596,16 +596,16 @@
 			]
 			rewards: [
 					{
-						id: "D4AAD00C6999990F"
+						id: "54AAD00C6999990F"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "B41A59E978DF2D80"
+			id: "341A59E978DF2D80"
 			title: "Shield"
 			description: ["Raise it in time and the enemy staggers. Block, riposte, repeat. Best on: Guardian, Paladin.", "Obtain any shield to complete this step; every class is represented."]
 			icon: "magistuarmory:gold_buckler"
@@ -624,13 +624,13 @@
 			]
 			rewards: [
 					{
-						id: "AAD1E431C8A320EB"
+						id: "2AD1E431C8A320EB"
 						type: "xp"
 						xp: 40
 					}
 			]
 			optional: true
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
 			id: "47AEEA9FBF7FE0C3"
@@ -643,7 +643,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "A026266BCEB5983A"
+						id: "2026266BCEB5983A"
 						type: "checkmark"
 					}
 			]
@@ -654,10 +654,10 @@
 						xp: 40
 					}
 			]
-			dependencies: ["D7061B23D6A24A12"]
+			dependencies: ["57061B23D6A24A12"]
 		},
 		{
-			id: "9CA9908183A08A22"
+			id: "1CA9908183A08A22"
 			title: "Rarity"
 			description: ["A common sword and a mythic sword differ in affixes, not in kind. Salvage trash, socket gems, reforge: let your favourite weapon grow into its rarity."]
 			icon: "apotheosis:common_material"
@@ -673,7 +673,7 @@
 			]
 			rewards: [
 					{
-						id: "D1016DF385E5BE62"
+						id: "51016DF385E5BE62"
 						type: "xp"
 						xp: 40
 					}
@@ -681,7 +681,7 @@
 			dependencies: ["47AEEA9FBF7FE0C3"]
 		},
 		{
-			id: "E4A30BCD1DAC8DE5"
+			id: "64A30BCD1DAC8DE5"
 			title: "A Properly Stocked Armory"
 			description: ["A longsword, a bow, a staff and a shield. Four classes, four stances: you have a favourite, but you can swap."]
 			icon: "minecraft:smithing_table"
@@ -698,7 +698,7 @@
 						consume_items: false
 					},
 					{
-						id: "8B26D8BA2ED137F6"
+						id: "0B26D8BA2ED137F6"
 						type: "item"
 						item: "magistuarmory:longbow"
 						count: 1
@@ -721,12 +721,12 @@
 			]
 			rewards: [
 					{
-						id: "80BA482B8AC69679"
+						id: "00BA482B8AC69679"
 						type: "xp"
 						xp: 200
 					},
 					{
-						id: "CE0422AE146D3D76"
+						id: "4E0422AE146D3D76"
 						type: "command"
 						command: "skilltree points add {p} 1"
 						elevate: true
@@ -734,7 +734,7 @@
 						title: "1 skill point"
 					}
 			]
-			dependencies: ["AFE2E8EA5BFA1DB1", "5C7DD75760E95300", "79E65AF16DAA2594", "B41A59E978DF2D80"]
+			dependencies: ["2FE2E8EA5BFA1DB1", "5C7DD75760E95300", "79E65AF16DAA2594", "341A59E978DF2D80"]
 		},
 		{
 			id: "266FD5591072F108"
@@ -753,7 +753,7 @@
 			]
 			rewards: [
 					{
-						id: "B65BA10B8C39D148"
+						id: "365BA10B8C39D148"
 						type: "xp"
 						xp: 400
 					},
@@ -766,7 +766,7 @@
 						title: "2 skill points"
 					}
 			]
-			dependencies: ["E4A30BCD1DAC8DE5", "C9A7C51EFB04A609", "4D7EA497EB53D2EE", "BC56E1D50F393C67", "DA6A62515D0B0F32"]
+			dependencies: ["64A30BCD1DAC8DE5", "49A7C51EFB04A609", "4D7EA497EB53D2EE", "3C56E1D50F393C67", "5A6A62515D0B0F32"]
 		}
 	]
 }

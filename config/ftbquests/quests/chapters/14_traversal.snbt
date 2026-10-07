@@ -5,7 +5,7 @@
 	subtitle: "Every way of crossing the world, and why you will keep using the old ones."
 	icon: "minecraft:leather_boots"
 	order_index: 14
-	group: "BA29B6D65C079795"
+	group: "3A29B6D65C079795"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -22,7 +22,7 @@
 		}]
 	quests: [
 		{
-			id: "A7C29626C8B84763"
+			id: "27C29626C8B84763"
 			title: "A World Worth Crossing"
 			description: ["You can sprint, roll, climb, glide, grapple, ride, sail, blink, recall and, eventually, fly. None of them replaces the others: horses win on roads, boats win on rivers, a grapple wins in a dungeon, a recall wins when you are late.", "Flight is the last thing you earn and the most fenced: it should be a reward, not a skip."]
 			icon: "minecraft:compass"
@@ -38,7 +38,7 @@
 			]
 			rewards: [
 					{
-						id: "91C153547F49A88D"
+						id: "11C153547F49A88D"
 						type: "xp"
 						xp: 20
 					}
@@ -61,12 +61,12 @@
 			]
 			rewards: [
 					{
-						id: "CF9FEA1366854C08"
+						id: "4F9FEA1366854C08"
 						type: "xp"
 						xp: 20
 					}
 			]
-			dependencies: ["A7C29626C8B84763"]
+			dependencies: ["27C29626C8B84763"]
 		},
 		{
 			id: "00F9432E4AACC958"
@@ -79,7 +79,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D63936B0C20303DC"
+						id: "563936B0C20303DC"
 						type: "checkmark"
 					}
 			]
@@ -90,10 +90,10 @@
 						xp: 20
 					}
 			]
-			dependencies: ["A7C29626C8B84763"]
+			dependencies: ["27C29626C8B84763"]
 		},
 		{
-			id: "C0812D1B78C5D785"
+			id: "40812D1B78C5D785"
 			title: "A Waystone Home"
 			description: ["Link places you have visited. Cross-world travel is quick but only goes to the places you have already earned."]
 			icon: "waystones:waystone"
@@ -112,7 +112,7 @@
 			]
 			rewards: [
 					{
-						id: "AC05C795B7310BA0"
+						id: "2C05C795B7310BA0"
 						type: "xp"
 						xp: 30
 					}
@@ -139,15 +139,15 @@
 			]
 			rewards: [
 					{
-						id: "F2E1CECB8005A3EE"
+						id: "72E1CECB8005A3EE"
 						type: "xp"
 						xp: 40
 					}
 			]
-			dependencies: ["C0812D1B78C5D785"]
+			dependencies: ["40812D1B78C5D785"]
 		},
 		{
-			id: "AC0FE89ADD31949A"
+			id: "2C0FE89ADD31949A"
 			title: "A Sharestone"
 			description: ["Sharestones connect in pairs: bind two points for a private shortcut."]
 			icon: "waystones:sharestone"
@@ -172,10 +172,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["C0812D1B78C5D785"]
+			dependencies: ["40812D1B78C5D785"]
 		},
 		{
-			id: "F426434730A816D6"
+			id: "7426434730A816D6"
 			title: "Portstone"
 			description: ["Portstones carry you from anywhere to a waystone you know. Use them to save time on the way back from an adventure."]
 			icon: "waystones:portstone"
@@ -203,7 +203,7 @@
 			dependencies: ["01A9C8441ED8BDF9"]
 		},
 		{
-			id: "82468C2A942CA770"
+			id: "02468C2A942CA770"
 			title: "Paraglider"
 			description: ["Glide with stamina; stamina is spirit. A good glider lets you jump off a mountain and keep your dignity."]
 			icon: "paraglider:paraglider"
@@ -213,7 +213,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "90DF8DD64EF6AE90"
+						id: "10DF8DD64EF6AE90"
 						type: "item"
 						item: "paraglider:paraglider"
 						count: 1
@@ -249,7 +249,7 @@
 			]
 			rewards: [
 					{
-						id: "BFA173ED3F5DB43F"
+						id: "3FA173ED3F5DB43F"
 						type: "xp"
 						xp: 50
 					}
@@ -267,7 +267,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "D8C14BA258273E40"
+						id: "58C14BA258273E40"
 						type: "item"
 						item: "rehooked:diamond_hook"
 						count: 1
@@ -276,7 +276,7 @@
 			]
 			rewards: [
 					{
-						id: "FB4347FE4F491EAA"
+						id: "7B4347FE4F491EAA"
 						type: "xp"
 						xp: 120
 					}
@@ -285,7 +285,7 @@
 			dependencies: ["561F4A142B1F21CA"]
 		},
 		{
-			id: "9A8047C035B0773B"
+			id: "1A8047C035B0773B"
 			title: "Cloud in a Bottle"
 			description: ["A double jump with real height. It is the cheapest extra dimension of movement."]
 			icon: "artifacts:cloud_in_a_bottle"
@@ -304,7 +304,7 @@
 			]
 			rewards: [
 					{
-						id: "A8BE4495A8013C57"
+						id: "28BE4495A8013C57"
 						type: "xp"
 						xp: 60
 					}
@@ -312,7 +312,7 @@
 			dependencies: ["00F9432E4AACC958"]
 		},
 		{
-			id: "B84100E487612F42"
+			id: "384100E487612F42"
 			title: "Blink"
 			description: ["Short teleports in combat: the best defence against a boss you cannot read yet."]
 			icon: "ars_nouveau:glyph_blink"
@@ -331,7 +331,7 @@
 			]
 			rewards: [
 					{
-						id: "C06AFA0F64FB169F"
+						id: "406AFA0F64FB169F"
 						type: "xp"
 						xp: 60
 					}
@@ -363,10 +363,10 @@
 						xp: 20
 					}
 			]
-			dependencies: ["A7C29626C8B84763"]
+			dependencies: ["27C29626C8B84763"]
 		},
 		{
-			id: "A8B49CAE519FDCDD"
+			id: "28B49CAE519FDCDD"
 			title: "A Ship"
 			description: ["A real vessel: cargo hold, cannons, sails. Oceans become routes."]
 			icon: "smallships:oak_cog"
@@ -393,7 +393,7 @@
 			dependencies: ["7D6C2511EEBAE595"]
 		},
 		{
-			id: "A938256EA990DB95"
+			id: "2938256EA990DB95"
 			title: "A Cart"
 			description: ["A cart behind a mount carries more than a horse alone. It is a base on wheels."]
 			icon: "astikorcarts:supply_cart"
@@ -403,7 +403,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "C5F03ABBF8538984"
+						id: "45F03ABBF8538984"
 						type: "item"
 						item: "astikorcarts:supply_cart"
 						count: 1
@@ -431,7 +431,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "8D68A863CA0753B3"
+						id: "0D68A863CA0753B3"
 						type: "item"
 						item: "simplerecall:recall_potion"
 						count: 1
@@ -440,7 +440,7 @@
 			]
 			rewards: [
 					{
-						id: "E0C45C5A3E07AC16"
+						id: "60C45C5A3E07AC16"
 						type: "xp"
 						xp: 80
 					}
@@ -449,7 +449,7 @@
 			dependencies: ["01A9C8441ED8BDF9"]
 		},
 		{
-			id: "AC488C91073F6728"
+			id: "2C488C91073F6728"
 			title: "Chunk Loaders"
 			description: ["Keep a base running while you are away. Small areas, big convenience."]
 			icon: "chunkloaders:basic_chunk_loader"
@@ -468,16 +468,16 @@
 			]
 			rewards: [
 					{
-						id: "C32DA796DC7FD547"
+						id: "432DA796DC7FD547"
 						type: "xp"
 						xp: 80
 					}
 			]
 			optional: true
-			dependencies: ["C0812D1B78C5D785"]
+			dependencies: ["40812D1B78C5D785"]
 		},
 		{
-			id: "8F0AEC37F2170FCF"
+			id: "0F0AEC37F2170FCF"
 			title: "Know the Fences"
 			description: ["Boss arenas, great dungeons and the Wardens' cities refuse flying mounts and flight gear: you will be dismounted at the door. Cliffs and rooftops are not a shortcut here.", "Climb in, fight through, leave by the front. It is the way the old keepers designed it."]
 			icon: "minecraft:iron_bars"
@@ -498,7 +498,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["A7C29626C8B84763"]
+			dependencies: ["27C29626C8B84763"]
 		},
 		{
 			id: "3F5FA6D2A24866C1"
@@ -511,7 +511,7 @@
 			shape: "diamond"
 			tasks: [
 					{
-						id: "E0D04EFB46ECEA7F"
+						id: "60D04EFB46ECEA7F"
 						type: "checkmark"
 					}
 			]
@@ -530,7 +530,7 @@
 						title: "2 skill points"
 					}
 			]
-			dependencies: ["82468C2A942CA770", "561F4A142B1F21CA", "A8B49CAE519FDCDD", "B84100E487612F42", "9A8047C035B0773B"]
+			dependencies: ["02468C2A942CA770", "561F4A142B1F21CA", "28B49CAE519FDCDD", "384100E487612F42", "1A8047C035B0773B"]
 		}
 	]
 }

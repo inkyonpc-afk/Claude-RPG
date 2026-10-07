@@ -5,7 +5,7 @@
 	subtitle: "Hunt by contract. Prove yourself on purpose."
 	icon: "minecraft:iron_axe"
 	order_index: 13
-	group: "87B3A2C356D6233C"
+	group: "07B3A2C356D6233C"
 	default_quest_shape: "circle"
 	default_quest_size: 1.0d
 	default_hide_dependency_lines: false
@@ -69,7 +69,7 @@
 			]
 			rewards: [
 					{
-						id: "913B366A58829397"
+						id: "113B366A58829397"
 						type: "xp"
 						xp: 60
 					},
@@ -95,13 +95,13 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "BB61239019E2918E"
+						id: "3B61239019E2918E"
 						type: "kill"
 						entity: "minecraft:spider"
 						value: 15
 					},
 					{
-						id: "D5396AED2ADB525E"
+						id: "55396AED2ADB525E"
 						type: "kill"
 						entity: "minecraft:cave_spider"
 						value: 10
@@ -109,7 +109,7 @@
 			]
 			rewards: [
 					{
-						id: "FD5F1C7342034FA5"
+						id: "7D5F1C7342034FA5"
 						type: "xp"
 						xp: 60
 					},
@@ -125,7 +125,7 @@
 			dependencies: ["0199A99007E38B50"]
 		},
 		{
-			id: "F66270ECBE879F41"
+			id: "766270ECBE879F41"
 			title: "Fuses"
 			description: ["Creepers: kill them from a distance."]
 			icon: "minecraft:gunpowder"
@@ -143,7 +143,7 @@
 			]
 			rewards: [
 					{
-						id: "C1C9DAF68BA0FBE6"
+						id: "41C9DAF68BA0FBE6"
 						type: "xp"
 						xp: 50
 					},
@@ -159,7 +159,7 @@
 			dependencies: ["0199A99007E38B50"]
 		},
 		{
-			id: "CC705B93F6C79E1C"
+			id: "4C705B93F6C79E1C"
 			title: "Brewmasters"
 			description: ["Witches cook trouble."]
 			icon: "minecraft:potion"
@@ -177,12 +177,12 @@
 			]
 			rewards: [
 					{
-						id: "EA40CDE55F0661B0"
+						id: "6A40CDE55F0661B0"
 						type: "xp"
 						xp: 80
 					},
 					{
-						id: "8840FBD2052E3903"
+						id: "0840FBD2052E3903"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t2"
 						elevate: true
@@ -193,7 +193,7 @@
 			dependencies: ["6DEB2AE646DB2EC0"]
 		},
 		{
-			id: "9D21F6637CCBB40C"
+			id: "1D21F6637CCBB40C"
 			title: "A Raid"
 			description: ["Defend a village from a raid. Hero of the Village is the prize."]
 			icon: "minecraft:white_banner"
@@ -203,13 +203,13 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "96E7B7C52280A785"
+						id: "16E7B7C52280A785"
 						type: "kill"
 						entity: "minecraft:vindicator"
 						value: 10
 					},
 					{
-						id: "B467D4AFF0C62132"
+						id: "3467D4AFF0C62132"
 						type: "kill"
 						entity: "minecraft:evoker"
 						value: 3
@@ -230,10 +230,10 @@
 						title: "Tier 2 supply cache"
 					}
 			]
-			dependencies: ["CC705B93F6C79E1C"]
+			dependencies: ["4C705B93F6C79E1C"]
 		},
 		{
-			id: "F8A57F338833B1C1"
+			id: "78A57F338833B1C1"
 			title: "Blaze Hunt"
 			description: ["Blazes in the fortress. Bring fire resistance."]
 			icon: "minecraft:blaze_rod"
@@ -251,7 +251,7 @@
 			]
 			rewards: [
 					{
-						id: "9100E7C8BEB13DFB"
+						id: "1100E7C8BEB13DFB"
 						type: "xp"
 						xp: 100
 					},
@@ -264,7 +264,7 @@
 						title: "Tier 2 supply cache"
 					}
 			]
-			dependencies: ["9D21F6637CCBB40C"]
+			dependencies: ["1D21F6637CCBB40C"]
 		},
 		{
 			id: "335C613A57B1E7E1"
@@ -298,10 +298,10 @@
 						title: "Tier 3 supply cache"
 					}
 			]
-			dependencies: ["F8A57F338833B1C1"]
+			dependencies: ["78A57F338833B1C1"]
 		},
 		{
-			id: "A66CA774D2D836A9"
+			id: "266CA774D2D836A9"
 			title: "Sea Guardians"
 			description: ["Guardians in the monument. Be waterborne."]
 			icon: "minecraft:prismarine_shard"
@@ -332,10 +332,10 @@
 						title: "Tier 3 supply cache"
 					}
 			]
-			dependencies: ["9D21F6637CCBB40C"]
+			dependencies: ["1D21F6637CCBB40C"]
 		},
 		{
-			id: "F8D8AE9A73C1AB11"
+			id: "78D8AE9A73C1AB11"
 			title: "Enderman Hunt"
 			description: ["Pearls are valuable and endermen are rude."]
 			icon: "minecraft:ender_pearl"
@@ -353,7 +353,7 @@
 			]
 			rewards: [
 					{
-						id: "E577D131BB14A539"
+						id: "6577D131BB14A539"
 						type: "xp"
 						xp: 150
 					},
@@ -369,7 +369,7 @@
 			dependencies: ["335C613A57B1E7E1"]
 		},
 		{
-			id: "97E31A7E0B14D32E"
+			id: "17E31A7E0B14D32E"
 			title: "Shulker Hunt"
 			description: ["Shulkers in the End city."]
 			icon: "minecraft:shulker_shell"
@@ -387,12 +387,12 @@
 			]
 			rewards: [
 					{
-						id: "9A079DED89C3C487"
+						id: "1A079DED89C3C487"
 						type: "xp"
 						xp: 200
 					},
 					{
-						id: "C074972E00E83895"
+						id: "4074972E00E83895"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -400,10 +400,10 @@
 						title: "Tier 4 supply cache"
 					}
 			]
-			dependencies: ["F8D8AE9A73C1AB11"]
+			dependencies: ["78D8AE9A73C1AB11"]
 		},
 		{
-			id: "8F1D7876D88E051E"
+			id: "0F1D7876D88E051E"
 			title: "The Raptor Pack"
 			description: ["Umvuthana raptors, in a pack."]
 			icon: "minecraft:feather"
@@ -413,7 +413,7 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "90E40E365D10B538"
+						id: "10E40E365D10B538"
 						type: "kill"
 						entity: "mowziesmobs:umvuthana_raptor"
 						value: 6
@@ -426,7 +426,7 @@
 						xp: 150
 					},
 					{
-						id: "C98C49FB0C4C389B"
+						id: "498C49FB0C4C389B"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t3"
 						elevate: true
@@ -438,7 +438,7 @@
 			dependencies: ["335C613A57B1E7E1"]
 		},
 		{
-			id: "911366F233957445"
+			id: "111366F233957445"
 			title: "Nightmare Hunt"
 			description: ["Night creatures from Born in Chaos."]
 			icon: "minecraft:soul_lantern"
@@ -456,7 +456,7 @@
 			]
 			rewards: [
 					{
-						id: "8841950C84BFBBAC"
+						id: "0841950C84BFBBAC"
 						type: "xp"
 						xp: 180
 					},
@@ -473,7 +473,7 @@
 			dependencies: ["335C613A57B1E7E1"]
 		},
 		{
-			id: "A424B2B7159F8900"
+			id: "2424B2B7159F8900"
 			title: "Cave Predators"
 			description: ["Raptors, rexes, and other things that bite."]
 			icon: "alexscaves:heavy_bone"
@@ -483,13 +483,13 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "801C5E1B6F14B1A9"
+						id: "001C5E1B6F14B1A9"
 						type: "kill"
 						entity: "alexscaves:vallumraptor"
 						value: 5
 					},
 					{
-						id: "FF8B08B877725C71"
+						id: "7F8B08B877725C71"
 						type: "kill"
 						entity: "alexscaves:tremorsaurus"
 						value: 1
@@ -502,7 +502,7 @@
 						xp: 250
 					},
 					{
-						id: "E5C12C2B29FA42E6"
+						id: "65C12C2B29FA42E6"
 						type: "command"
 						command: "loot give {p} loot aldreth:quest/t4"
 						elevate: true
@@ -553,10 +553,10 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["97E31A7E0B14D32E", "A424B2B7159F8900"]
+			dependencies: ["17E31A7E0B14D32E", "2424B2B7159F8900"]
 		},
 		{
-			id: "A671CE35C9C9AFAC"
+			id: "2671CE35C9C9AFAC"
 			title: "Trial of Blades"
 			description: ["Defeat fifty monsters without dying. Count them: the Compendium will not."]
 			icon: "minecraft:iron_sword"
@@ -581,7 +581,7 @@
 			dependencies: ["6DEB2AE646DB2EC0"]
 		},
 		{
-			id: "C7B818017D6DA9EA"
+			id: "47B818017D6DA9EA"
 			title: "Trial of Silence"
 			description: ["Clear a dungeon without a single arrow or spell. Only blades."]
 			icon: "minecraft:feather"
@@ -591,13 +591,13 @@
 			shape: "circle"
 			tasks: [
 					{
-						id: "AC06ABC1262F0B6E"
+						id: "2C06ABC1262F0B6E"
 						type: "checkmark"
 					}
 			]
 			rewards: [
 					{
-						id: "B15FF29411D23FA7"
+						id: "315FF29411D23FA7"
 						type: "xp"
 						xp: 300
 					},
@@ -611,10 +611,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["A671CE35C9C9AFAC"]
+			dependencies: ["2671CE35C9C9AFAC"]
 		},
 		{
-			id: "C5AF0E18FC4B5CE9"
+			id: "45AF0E18FC4B5CE9"
 			title: "Trial of Hunger"
 			description: ["Complete a boss with no food and no potions. You do not need to."]
 			icon: "minecraft:bread"
@@ -644,10 +644,10 @@
 					}
 			]
 			optional: true
-			dependencies: ["C7B818017D6DA9EA"]
+			dependencies: ["47B818017D6DA9EA"]
 		},
 		{
-			id: "E4E69A190FBA07C2"
+			id: "64E69A190FBA07C2"
 			title: "Trial of One"
 			description: ["Beat a great structure alone, without any pets or summons."]
 			icon: "minecraft:totem_of_undying"
@@ -668,7 +668,7 @@
 						xp: 800
 					},
 					{
-						id: "AD880E8E24E3F5A2"
+						id: "2D880E8E24E3F5A2"
 						type: "command"
 						command: "skilltree points add {p} 2"
 						elevate: true
@@ -677,7 +677,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["C5AF0E18FC4B5CE9"]
+			dependencies: ["45AF0E18FC4B5CE9"]
 		}
 	]
 }
