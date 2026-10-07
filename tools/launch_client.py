@@ -18,7 +18,8 @@ ap.add_argument("--shot-at", default="")
 ap.add_argument("--tag", default="client")
 ap.add_argument("--keep", action="store_true")
 ap.add_argument("--script", default="", help="timed GUI actions: 'SECONDS:click x,y;SECONDS:key o;SECONDS:shot name'")
-ap.add_argument("--xmx", default="8G")
+ap.add_argument("--xmx", default="10G")
+ap.add_argument("--size", default="1280x720", help="window client size WxH")
 a = ap.parse_args()
 
 prof = json.loads((ROOT / "minecraftinstance.json").read_text(encoding="utf-8-sig"))
@@ -84,7 +85,7 @@ jvm = ["-Xms2G", "-Xmx" + a.xmx, "-XX:+UseG1GC", "-Djava.library.path=" + native
       [rep(x) for x in forge["arguments"]["jvm"] if isinstance(x, str)] + ["-DlegacyClassPath=" + cp, "-cp", cp]
 game = ["--username", "AldrethTest", "--version", "forge-47.4.10", "--gameDir", ROOT.as_posix(), "--assetsDir", (INSTALL / "assets").as_posix(),
         "--assetIndex", base["assetIndex"]["id"], "--uuid", "7044934c487f306d9e0d40257bbf3be1", "--accessToken", "0", "--userType", "legacy",
-        "--versionType", "release", "--width", "1280", "--height", "720"]
+        "--versionType", "release", "--width", a.size.split("x")[0], "--height", a.size.split("x")[1]]
 if a.world:
     game += ["--quickPlaySingleplayer", a.world]
 elif a.join:

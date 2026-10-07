@@ -5,8 +5,8 @@ Measured on the build machine (Ryzen 9 5900X, RTX 4070, 32 GB RAM, NVMe/SSD, Jav
 ## Scale
 | Item | Value |
 |---|---|
-| Shipping jars (client) | 710 (`tools/verify.py`: one mod id per jar, all mandatory dependencies present) |
-| Dedicated server jars | 670 to 678 (client-only list excluded) |
+| Shipping jars (client) | 705 (`tools/verify.py`: one mod id per jar, all mandatory dependencies present) |
+| Dedicated server jars | 665 to 678 (client-only list excluded) |
 | Mods reported by Forge (incl. nested libraries) | 753 |
 | Registries (KubeJS dump) | items about 38,000; blocks about 29,000; entity types about 2,900; attributes about 450 |
 | Quests / skills / bosses | 499 / 620 / 39 |
@@ -31,11 +31,28 @@ Startup is dominated by mod construction and registry work for 710 mods, plus EM
 - **Memory:** 6.8 of 8 GB heap used (84 %) while pregenerating; give a real server 6 to 8 GB.
 - **One player on the dedicated server:** overall mean tick 1.2 to 17 ms in the multiplayer tests (high end while scripted entity tests ran), 20 TPS.
 
+## Client memory and frame rate (measured; the most important finding)
+Test: singleplayer world, 1280x720, render distance 12, view idle at the saved position, vsync off, FPS read from the game every 5 s by a dev-only probe (`tools/dev_scripts/03_fps_probe.js`).
+
+| Heap | Result |
+|---|---|
+| **8 GB** | **Unplayable.** FPS is 40 to 80 for the first 25 s, then collapses to 0 to 8 FPS; in 13 minutes the game ran only 1,400 ticks (should be about 15,000). Cause: the live heap is about 8.7 GB, so the JVM spends nearly all its CPU in garbage collection (thread dumps: every G1 thread at 88 s of CPU in 348 s). |
+| **10 GB** | **Fine.** Steady state 300 to 390 FPS with shaders off; Balanced shaders 160 to 260 FPS; High shaders 195 to 260 FPS (all measured, RTX 4070). Live heap after a forced GC is 8.1 to 8.9 GB, so 10 GB leaves little slack. |
+| **12 GB** | Comfortable margin (recommended). |
+
+- **Why so much:** the class histogram shows 1.86 million block states (with 5.7 million baked-model keys and 6.5 million baked quads), 3.2 million EMI item stacks, 35 million hash-map nodes. That is the cost of about 29,000 registered blocks and 31,000 items across about 700 mods; there is no single hog.
+- **Pack settings:** `config/memorysettings.json` now warns below 9 GB and above 16 GB (the old 8.5 GB maximum made the 10 GB default raise a blocking dialog). The test harness defaults to 10 GB.
+- **After joining a world** the client spends one to two minutes in background work (EMI recipe baking, JEI indexing, Easy NPC variant registration): expect a slow first minute even at 10 GB.
+- **Measured levers:**
+  - ModernFix `mixin.perf.dynamic_resources=true` lowered the old-generation live set by about 1.6 GB with identical FPS; not enabled because its compatibility could not be verified for every mod.
+  - Pruning four cosmetic decor mods (about 2,400 blocks: More Beautiful Torches and the Diagonal Walls/Fences/Windows suite) saved about 0.6 GB and is applied.
+- **Startup:** client title screen in 144 to 183 s (varies run to run).
+
 ## Recommended settings
-- **Client:** 8 to 10 GB heap (`-Xms2G -Xmx8G -XX:+UseG1GC` used in tests). The process also holds about 4 GB outside the heap (textures, native buffers), so budget 12 GB of free RAM.
+- **Client: 10 GB minimum, 12 GB recommended** (`-Xms2G -XX:+UseG1GC`). The process also holds about 4 GB outside the heap, so budget 16 GB of free system RAM. Do not run it on 8 GB.
 - **Server:** 6 to 8 GB heap with `-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200`.
 - **Pregenerate** before opening a server: `chunky radius 2000` then `chunky start` (about 70 to 80 minutes for 62,500 chunks at the measured average).
-- **Shaders** are off by default; the four presets in VISUALS.md trade shadow distance, reflections and clouds. **Shader and in-world FPS were not measured.**
+- **Shaders** are off by default (Balanced costs about 40 % of the shaders-off frame rate on this GPU but is still well above 150 FPS).
 
 ## Rejected for performance or stability (evidence in KNOWN_ISSUES.md)
 - **WorldEdit:** stalled the server thread for minutes at startup building block-state maps for ~29k blocks.
@@ -50,4 +67,4 @@ Startup is dominated by mod construction and registry work for 710 mods, plus EM
 4. Reduce structure density by raising tier factors in `tools/spacing_tiers.py` (WORLDGEN.md).
 
 ## Not measured (open)
-Client FPS (vanilla and with shaders), client memory growth over a long session, TPS with several players and many tamed mounts, and `/spark profiler` hot spots during combat-heavy boss fights.
+Client memory growth beyond about 10 minutes, FPS on lower-end GPUs, TPS with several players and many tamed mounts, and `/spark profiler` hot spots during combat-heavy boss fights. FPS above was measured idle, not in combat.

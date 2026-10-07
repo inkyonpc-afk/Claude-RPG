@@ -836,11 +836,11 @@ build | Every Compat | skip | suspected cause of registry ID mismatch (testing)
 build | Extra Compat | test |
 build | The New Shutters | std |
 build | Double Doors | std |
-build | Diagonal Fences | std |
-build | Diagonal Walls | std |
-build | Diagonal Windows | std |
+build | Diagonal Fences | skip | memory: ~2,400 cosmetic blocks (1.9M block states pack-wide drive an 8.7 GB live heap); nothing depends on it
+build | Diagonal Walls | skip | memory: ~2,400 cosmetic blocks (1.9M block states pack-wide drive an 8.7 GB live heap); nothing depends on it
+build | Diagonal Windows | skip | memory: ~2,400 cosmetic blocks (1.9M block states pack-wide drive an 8.7 GB live heap); nothing depends on it
 build | New Slab Variants | std |
-build | More Beautiful Torches | std |
+build | More Beautiful Torches | skip | memory: ~2,400 cosmetic blocks (1.9M block states pack-wide drive an 8.7 GB live heap); nothing depends on it
 build | Swinging Lanterns | std |
 build | Connectible Chains | std |
 build | Bedspreads | std |
@@ -903,7 +903,7 @@ script | FilesJS | std |
 script | PowerfulJS | test |
 script | RangedJS | test |
 script | GeckoJS | test |
-script | ProbeJS | std | dev only
+script | ProbeJS | skip | dev tool: hooks every translatable Component under a global lock (thread dump showed the server thread stuck in it); never ship
 script | Paxi | core | datapack/resource-pack injection
 script | Resource Pack Overrides | std |
 script | Rhino | core |

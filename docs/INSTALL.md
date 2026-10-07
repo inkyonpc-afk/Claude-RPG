@@ -3,7 +3,7 @@
 ## For players (CurseForge app)
 1. Build the export zip (`python tools/export_curseforge.py --version X.Y.Z`) or receive `dist/EmbersOfAldreth-X.Y.Z.zip`.
 2. CurseForge app: **Create Custom Profile, Import**, select the zip. It installs Minecraft 1.20.1 + Forge 47.4.10, downloads the CurseForge-hosted mods, resource packs and shader packs, and unpacks `overrides/` (configs, KubeJS scripts, datapacks, the Default Options defaults, plus any bundled jars for mods that are not CurseForge-hosted).
-3. Allocate **8 to 10 GB** of RAM. The pack has about 710 mods; expect 2.5 to 4 minutes to reach the title screen and a little longer to enter a first world.
+3. Allocate **10 GB minimum, 12 GB recommended** of RAM (8 GB is not enough: the game's live memory is about 9 GB and it freezes in garbage collection). The pack has about 705 mods; expect 2.5 to 3 minutes to reach the title screen, and the first minute in a world is slow while recipe indexes build.
 4. First launch: pick a people on the Origins screen, open the quest book (**J**) and the skill tree (**K**).
 5. Shaders are **off by default**. To try them: Options, Video Settings, Shader Packs, pick Complementary Reimagined, then (optionally) a preset from `config/aldreth/shader_presets/` (see VISUALS.md).
 
@@ -43,6 +43,7 @@ python tools/launch_client.py --join 127.0.0.1:25599 --wait 420            # cli
 python tools/structure_census.py                                           # structure density from a generated world
 python tools/stop_server.py                                                # stops only the recorded test-server PID
 ```
+Developer-only scripts live in `tools/dev_scripts/` (registry dump, keybind dump, FPS probe): copy one into `kubejs/` for a run, then remove it; they must never ship.
 The test client uses an offline identity (`AldrethTest`). Never run `taskkill /IM java.exe`: it would kill your own Minecraft.
 
 ## Dedicated server

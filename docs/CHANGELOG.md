@@ -55,3 +55,8 @@
 ## 2026-10-06: spacing calibration, realm gate verified
 - Structure spacing calibrated from two world censuses (6.9 km2 pooled, `tools/calibrate_spacing.py`); final tier factors boss 2.55, great 2.35, settlement 1.4, vanilla 2.5, dungeon 3.55, clutter 4.25, ocean decor 4.5 (WORLDGEN.md has the measurements and caveats).
 - Realm gate verified on a dedicated server with a joined client (`tests/mp_realms.txt`): teleport into the Nether refused without the Sigil of Flame, advancement fires on receiving it, teleport then succeeds, the Aether stays sealed; 6/6 KubeJS server scripts, 0 errors, 20 TPS.
+
+## 2026-10-06: client memory finding
+- **8 GB heap freezes the client** (live set about 8.7 GB, GC death spiral). Minimum is now 10 GB, recommended 12 GB (INSTALL.md, PERFORMANCE.md, `config/memorysettings.json`). Measured idle FPS at 10 GB: 300 to 390 shaders off, 160 to 260 Balanced, 195 to 260 High.
+- **ProbeJS removed** (dev tool hooking every translatable component under a global lock); **dev scripts moved out of `kubejs/`** to `tools/dev_scripts/` (registry dump, keybind dump, FPS probe).
+- Pruned four cosmetic decor mods (More Beautiful Torches, Diagonal Walls/Fences/Windows): 705 client jars, 665 server jars; server boots in 126 s; `tools/verify.py` green.

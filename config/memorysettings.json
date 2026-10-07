@@ -2,25 +2,25 @@
   "minimumClient": {
     // Set the clients minimum memory warning threshold in MB. Choose the lowest value possible which keeps the pack playable.
     // Default:2500, min 2500, max 25000
-    "minimumClient": 2500
+    "minimumClient": 9000
   },
 
   "maximumClient": {
     // Set the clients maximum memory warning threshold in MB. Choose a generous maximum with some additional over the required,
     // e.g.recommended memory for the pack is 6000mb then set this to ~8000mb
-    "maximumClient": 8500
+    "maximumClient": 16000
   },
 
   "minimumServer": {
     // Set the servers minimum memory warning threshold in MB. Choose the lowest value possible which keeps the pack playable.
     // Default:2500, min 2500, max 25000
-    "minimumServer": 2500
+    "minimumServer": 6000
   },
 
   "maximumServer": {
     // Set the servers maximum memory warning threshold in MB. Choose a generous maximum with some additional over the required,
     // e.g.recommended is 6000mb then set this to ~8000mb
-    "maximumServer": 8500
+    "maximumServer": 12000
   },
 
   "disableWarnings": {
