@@ -110,7 +110,7 @@
 						xp: 150
 					}
 			]
-			dependencies: ["643C79ECFFF46A48"]
+			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
 			id: "76667232CC5DDA8C"
@@ -222,7 +222,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["7F2213975A0D7908"]
+			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
 			id: "02CE0B41B3245D22"
@@ -287,7 +287,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["02CE0B41B3245D22"]
+			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
 			id: "6F5B47397C602A3C"
@@ -352,7 +352,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["6F5B47397C602A3C"]
+			dependencies: ["35D6B7C599FE23F6"]
 		},
 		{
 			id: "0CE2B4BD52BE7817"

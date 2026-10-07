@@ -29,6 +29,8 @@ for c in chapters:
         for d in qd["deps"]:
             if "." in d and tuple(d.split(".")) not in allkeys:
                 errors.append("%s/%s: unknown cross-chapter dep %s" % (c.key, qd["key"], d))
+if not errors:
+    gating_deps(chapters)   # dependency ids actually written: no structure hunt blocks a dependent (questlib.gating_deps)
 seen = set()
 total = 0
 for idx, ch in enumerate(chapters):

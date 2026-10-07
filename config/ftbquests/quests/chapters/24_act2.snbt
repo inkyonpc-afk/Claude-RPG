@@ -105,7 +105,7 @@
 						xp: 50
 					}
 			]
-			dependencies: ["2BCA19B2DA4C52DD"]
+			dependencies: ["4D23F71DA9CEE2F9"]
 		},
 		{
 			id: "606478B6A15D9DF2"
@@ -180,7 +180,7 @@
 						xp: 70
 					}
 			]
-			dependencies: ["606478B6A15D9DF2"]
+			dependencies: ["14D8472B0A009416"]
 		},
 		{
 			id: "4E05BE5386A43ABD"
@@ -240,7 +240,7 @@
 						title: "Tier 3 supply cache"
 					}
 			]
-			dependencies: ["4E05BE5386A43ABD"]
+			dependencies: ["248783257B1E3F6F"]
 		},
 		{
 			id: "1BB44DAA72034723"
@@ -313,7 +313,7 @@
 						title: "Lich spoils"
 					}
 			]
-			dependencies: ["1BB44DAA72034723"]
+			dependencies: ["2C930645541CA40E"]
 		},
 		{
 			id: "6948F2306ABC51DF"
@@ -490,7 +490,7 @@
 						xp: 80
 					}
 			]
-			dependencies: ["2CF3FABA149C39D0"]
+			dependencies: ["57BCE9326B41A10C"]
 		},
 		{
 			id: "0DADC9605E959E60"
@@ -525,7 +525,7 @@
 						title: "Tier 3 supply cache"
 					}
 			]
-			dependencies: ["274A8F597226C54C", "2DAEF71D1C4A249C"]
+			dependencies: ["274A8F597226C54C", "57BCE9326B41A10C"]
 		},
 		{
 			id: "7F8BB328DB020DA6"
@@ -572,7 +572,7 @@
 						title: "Ur-Ghast spoils"
 					}
 			]
-			dependencies: ["32D3D627098B86C6", "0DADC9605E959E60"]
+			dependencies: ["6948F2306ABC51DF", "0DADC9605E959E60"]
 		},
 		{
 			id: "610267CB85F6FB04"
@@ -828,7 +828,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["2CF3FABA149C39D0"]
+			dependencies: ["57BCE9326B41A10C"]
 		},
 		{
 			id: "7D63898FEEF4031E"

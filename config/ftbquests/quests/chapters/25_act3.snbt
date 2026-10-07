@@ -280,7 +280,7 @@
 						title: "Valkyrie spoils"
 					}
 			]
-			dependencies: ["44ADE11FFBA5DF29"]
+			dependencies: ["6DE5B62F96455C37"]
 		},
 		{
 			id: "089A9CEC7C1FBC85"
@@ -348,7 +348,7 @@
 						title: "Sun Spirit spoils"
 					}
 			]
-			dependencies: ["089A9CEC7C1FBC85"]
+			dependencies: ["45352C0399EAFA68"]
 		},
 		{
 			id: "38F3CE8DF1EEA861"
@@ -648,7 +648,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["2CC2CBABCAC9BCAD"]
+			dependencies: ["44668D8C5ADC0F5C"]
 		},
 		{
 			id: "34F5A9B8E200DEA1"
@@ -721,7 +721,7 @@
 						title: "Ignis spoils"
 					}
 			]
-			dependencies: ["34F5A9B8E200DEA1"]
+			dependencies: ["0DADC9605E959E60"]
 		},
 		{
 			id: "67345C4119C13F3B"

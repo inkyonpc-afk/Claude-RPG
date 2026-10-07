@@ -8,11 +8,13 @@ Why: a chapter image counts toward the map's bounding box and FTB centers the op
 CENTER; an image placed by its top-left corner shifts the view off the quests, and with alpha 0 the map then looks empty.
 
 Also checks quest dependency links: ids that match no quest (FTB silently drops them) and dependency loops (FTB then deletes all of that quest's
-dependencies); and that every task/reward key is one FTB actually reads (unknown keys are silently ignored).
+dependencies); that every task/reward key is one FTB actually reads (unknown keys are silently ignored); and that no quest waits on a
+structure hunt except exploration capstones (FTB makes dependents wait even for optional quests).
 
 Usage: python tools/questmap_check.py [--dir config/ftbquests/quests/chapters] [--spacing 1.0] [--zoom 16] [--verbose]
 Exit code 1 if any chapter opens with no quest in view at a common screen size, any image is effectively invisible, any dependency
-link is broken or loops, or a task/reward carries a key FTB does not read."""
+link is broken or loops, a task/reward carries a key FTB does not read, or a
+structure hunt blocks a non-capstone quest."""
 import argparse, glob, math, os, re, sys
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -181,6 +183,28 @@ def check_keys(chapters):
     return problems
 
 
+def check_structure_gating(chapters):
+    """FTB makes a dependent wait for every dependency, optional or not (Quest.areDependenciesComplete), so a quest that depends on a structure
+    hunt is blocked until the player finds that structure. Allowed only for exploration capstones: checkmark tasks only, every dependency a
+    structure quest, and nothing depends on the capstone."""
+    quests, depended = {}, set()
+    for name, ch in chapters:
+        for qd in ch.get("quests", []):
+            quests[qd["id"]] = (name, qd)
+            depended.update(qd.get("dependencies", []))
+    struct = {k for k, (_, qd) in quests.items() if any(t.get("type") == "structure" for t in qd.get("tasks", []))}
+    problems = []
+    for qid, (name, qd) in quests.items():
+        deps = qd.get("dependencies", [])
+        hits = [d for d in deps if d in struct]
+        if not hits:
+            continue
+        capstone = all(t.get("type") == "checkmark" for t in qd.get("tasks", [])) and all(d in struct for d in deps) and qid not in depended
+        if not capstone:
+            problems.append("%s/%s waits on structure hunt(s) %s" % (name, qd.get("title"), ", ".join(quests[d][1].get("title", d) for d in hits)))
+    return problems
+
+
 def check_links(chapters):
     """Dependency ids FTB would silently drop (Quest.readData ignores ids that match no object) and loops (Quest.verifyDependencies deletes
     ALL dependencies of a quest that can reach itself)."""
@@ -216,6 +240,7 @@ def check_dir(chapter_dir, zoom=16, spacing=1.0, verbose=False, out=print):
     chapters = [(os.path.basename(f), parse_snbt(open(f, encoding="utf-8").read())) for f in files]
     problems += check_links(chapters)
     problems += check_keys(chapters)
+    problems += check_structure_gating(chapters)
     for name, ch in chapters:
         for img in ch.get("images", []):
             alpha = img.get("alpha", 255)

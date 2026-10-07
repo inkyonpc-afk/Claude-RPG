@@ -80,8 +80,9 @@ class Chapter:
 
     def q(self, key, title, icon, desc, tasks, rewards, deps=(), shape="circle", size=1.0, optional=False, sub="", x=None, y=None):
         assert key not in self.keys, "duplicate quest key %s in %s" % (key, self.key)
-        # structure hunts depend on biome and seed (a plains village can be thousands of blocks away), so they never gate progression: FTB Quests treats an
-        # optional quest as satisfied for its dependents (Quest.isOptionalForProgression); the rewards stay.
+        # structure hunts depend on biome and seed (a plains village can be thousands of blocks away), so they never gate progression. Optional only keeps
+        # them out of chapter completion; FTB still makes dependents wait for an optional quest (Quest.areDependenciesComplete), so gating_deps()
+        # routes dependents around structure quests. The rewards stay.
         if any(t.get("type") == "structure" for t in tasks):
             optional = True
         d = dict(key=key, title=title, icon=icon, desc=desc if isinstance(desc, list) else [desc], tasks=tasks, rewards=rewards, deps=list(deps), shape=shape,
@@ -179,6 +180,42 @@ def reward_snbt(ch, qd, i, r):
     return "\n".join(out)
 
 
+def is_structure_quest(qd):
+    return any(t.get("type") == "structure" for t in qd["tasks"])
+
+
+def gating_deps(chapters):
+    """Set qd["gate"] (the dependency ids written to SNBT) for every quest so that no structure hunt blocks anything: a dependency on a structure
+    quest is replaced by that quest's own dependencies (transitively). The visual layout keeps the design deps. Exception: an exploration capstone
+    (checkmark tasks only, every dependency a structure quest, nothing depends on it) keeps its structure dependencies; visiting them is its point."""
+    index = {c.key: c for c in chapters}
+
+    def resolve(c, d):
+        ck, qk = d.split(".", 1) if "." in d else (c.key, d)
+        return index[ck], index[ck].keys[qk]
+
+    depended = {(rc.key, rq["key"]) for c in chapters for qd in c.quests for d in qd["deps"] for rc, rq in [resolve(c, d)]}
+    for c in chapters:
+        for qd in c.quests:
+            targets = [resolve(c, d) for d in qd["deps"]]
+            capstone = (targets and all(t["type"] == "checkmark" for t in qd["tasks"]) and all(is_structure_quest(tq) for _, tq in targets)
+                        and (c.key, qd["key"]) not in depended)
+            out = []
+
+            def add(tc, tq, seen):
+                if is_structure_quest(tq) and not capstone:
+                    for d2 in tq["deps"]:
+                        nc, nq = resolve(tc, d2)
+                        if (nc.key, nq["key"]) not in seen:
+                            add(nc, nq, seen | {(nc.key, nq["key"])})
+                elif hid(tc.key, tq["key"]) not in out:
+                    out.append(hid(tc.key, tq["key"]))
+
+            for tc, tq in targets:
+                add(tc, tq, {(tc.key, tq["key"])})
+            qd["gate"] = out
+
+
 def dep_id(ch, d):
     """Quest id of a dependency: 'key' is a quest in this chapter, 'chapter.key' a quest in another chapter. FTB silently drops ids that match no quest."""
     return hid(*d.split(".", 1)) if "." in d else hid(ch.key, d)
@@ -195,8 +232,9 @@ def quest_snbt(ch, qd):
     lines.append("\t\t\trewards: [" + ("\n" + ",\n".join(reward_snbt(ch, qd, i, r) for i, r in enumerate(qd["rewards"])) + "\n\t\t\t]" if qd["rewards"] else "]"))
     if qd["optional"]:
         lines.append('\t\t\toptional: true')
-    if qd["deps"]:
-        lines.append("\t\t\tdependencies: [" + ", ".join('"%s"' % dep_id(ch, d) for d in qd["deps"]) + "]")
+    deps = qd["gate"] if "gate" in qd else [dep_id(ch, d) for d in qd["deps"]]
+    if deps:
+        lines.append("\t\t\tdependencies: [" + ", ".join('"%s"' % d for d in deps) + "]")
     lines.append('\t\t}')
     return "\n".join(lines)
 

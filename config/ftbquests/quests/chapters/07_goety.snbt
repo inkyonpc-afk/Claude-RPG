@@ -274,7 +274,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["292E014FC6CD6525"]
+			dependencies: ["0DE9658C55A454AE"]
 		},
 		{
 			id: "1DCF84D6D12E5D8B"
@@ -316,7 +316,7 @@
 						title: "Tier 5 supply cache"
 					}
 			]
-			dependencies: ["6751E46C90B456FF", "6D68007309A86FA0"]
+			dependencies: ["0DE9658C55A454AE", "6D68007309A86FA0"]
 		},
 		{
 			id: "2C602EB00BD248E7"

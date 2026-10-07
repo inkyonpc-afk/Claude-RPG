@@ -72,7 +72,7 @@
 						xp: 30
 					}
 			]
-			dependencies: ["4C214F471961B804"]
+			dependencies: ["5DBA91ABE234AA2B"]
 		},
 		{
 			id: "6E5D556BEF23AC31"
@@ -230,7 +230,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["533394F9709D56EC"]
+			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
 			id: "5756762097574B69"
@@ -263,7 +263,7 @@
 						count: 8
 					}
 			]
-			dependencies: ["3F95F400362745B0"]
+			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
 			id: "7C56B244B713C5D3"
@@ -402,7 +402,7 @@
 						xp: 40
 					}
 			]
-			dependencies: ["533394F9709D56EC"]
+			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
 			id: "4FB27A8034769B73"
@@ -521,7 +521,7 @@
 						count: 8
 					}
 			]
-			dependencies: ["1D4C104EB604A3C8"]
+			dependencies: ["147D3552E12D98AC"]
 		},
 		{
 			id: "4DD2719E552F1554"
@@ -609,7 +609,7 @@
 					}
 			]
 			optional: true
-			dependencies: ["2363B3116D3544A1"]
+			dependencies: ["5CD9FDEAB4DA6196"]
 		},
 		{
 			id: "1AAD9663D104D15E"
@@ -651,7 +651,7 @@
 						title: "Wroughtnaut spoils"
 					}
 			]
-			dependencies: ["014760ADC96BE3CC", "5D7F00BE20F218E8"]
+			dependencies: ["5CD9FDEAB4DA6196", "5D7F00BE20F218E8"]
 		},
 		{
 			id: "2351D2D9B2ACC361"

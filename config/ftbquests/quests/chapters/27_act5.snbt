@@ -110,7 +110,7 @@
 						xp: 150
 					}
 			]
-			dependencies: ["351ADCC34FDCF1EC"]
+			dependencies: ["07883EB0022042D3"]
 		},
 		{
 			id: "517410FDEC06C632"
@@ -143,7 +143,7 @@
 						title: "2 skill points"
 					}
 			]
-			dependencies: ["351ADCC34FDCF1EC"]
+			dependencies: ["07883EB0022042D3"]
 		},
 		{
 			id: "12AA1D3AC30FCFB3"
@@ -182,7 +182,7 @@
 						title: "Tier 6 supply cache"
 					}
 			]
-			dependencies: ["351ADCC34FDCF1EC"]
+			dependencies: ["07883EB0022042D3"]
 		},
 		{
 			id: "7EECDEE70BC783D3"
